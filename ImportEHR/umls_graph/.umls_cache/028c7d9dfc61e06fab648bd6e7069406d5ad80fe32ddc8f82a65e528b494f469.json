@@ -1,0 +1,28 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C0011847",
+    "name": "Diabetes",
+    "dateAdded": "09-30-1990",
+    "majorRevisionDate": "04-29-2021",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Disease or Syndrome",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T047"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011847/atoms",
+    "definitions": "NONE",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011847/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011847/atoms/preferred",
+    "atomCount": 9,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 17
+  }
+}

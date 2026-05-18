@@ -1,0 +1,13 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "NCI",
+      "value": "Evidence of other specified diabetes mellitus without complication not specified elsewhere.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

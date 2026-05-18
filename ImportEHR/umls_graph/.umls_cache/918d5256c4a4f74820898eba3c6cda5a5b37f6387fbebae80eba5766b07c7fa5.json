@@ -1,0 +1,36 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C0021641",
+    "name": "Insulin",
+    "dateAdded": "09-30-1990",
+    "majorRevisionDate": "08-12-2025",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Amino Acid, Peptide, or Protein",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T116"
+      },
+      {
+        "name": "Pharmacologic Substance",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T121"
+      },
+      {
+        "name": "Hormone",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T125"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0021641/atoms",
+    "definitions": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0021641/definitions",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0021641/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0021641/atoms/preferred",
+    "atomCount": 128,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 92
+  }
+}

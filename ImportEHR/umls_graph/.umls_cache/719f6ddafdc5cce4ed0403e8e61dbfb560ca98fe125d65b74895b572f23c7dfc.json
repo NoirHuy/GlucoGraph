@@ -1,0 +1,31 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "ORPHANET",
+      "value": "MODY (maturity-onset diabetes of the young) is a rare, familial, clinically and genetically heterogeneous form of diabetes characterized by young age of onset (generally 10-45 years of age) with maintenance of endogenous insulin production, lack of pancreatic beta-cell autoimmunity, absence of obesity and insulin resistance and extra-pancreatic manifestations in some subtypes.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "HPO",
+      "value": "The term Maturity-onset diabetes of the young (MODY) was initially used for patients diagnosed with fasting hyperglycemia that could be treated without insulin for more than two years, where the initial diagnosis was made at a young age (under 25 years). Thus, MODY combines characteristics of type 1 diabetes (young age at diagnosis) and type 2 diabetes (less insulin dependence than type 1 diabetes). The term MODY is now most often used to refer to a group of monogenic diseases with these characteristics. Here, the term is used to describe hyperglycemia diagnosed at a young age with no or minor insulin dependency, no evidence of insulin resistance, and lack of evidence of autoimmune destruction of the beta cells. [https://orcid.org/0000-0002-0736-9199]",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MEDLINEPLUS",
+      "value": "Maturity-onset diabetes of the young (MODY) is a group of several conditions characterized by abnormally high levels of blood glucose, also called blood sugar. These forms of diabetes typically begin before age 30, although they can occur later in life. In MODY, elevated blood glucose arises from reduced production of insulin, which is a hormone produced in the pancreas that helps regulate blood glucose levels. Specifically, insulin controls how much glucose (a type of sugar) is passed from the blood into cells, where it is used as an energy source.~The different types of MODY are distinguished by their genetic causes. The most common types are HNF1A-MODY (also known as MODY3), accounting for 50 to 70 percent of cases, and GCK-MODY (MODY2), accounting for 30 to 50 percent of cases. Less frequent types include HNF4A-MODY (MODY1) and renal cysts and diabetes (RCAD) syndrome (also known as HNF1B-MODY or MODY5), which each account for 5 to 10 percent of cases. At least ten other types have been identified, and these are very rare.~HNF1A-MODY and HNF4A-MODY have similar signs and symptoms that develop slowly over time. Early signs and symptoms in these types are caused by high blood glucose and may include frequent urination (polyuria), excessive thirst (polydipsia), fatigue, blurred vision, weight loss, and recurrent skin infections. Over time uncontrolled high blood glucose can damage small blood vessels in the eyes and kidneys. Damage to the light-sensitive tissue at the back of the eye (the retina) causes a condition known as diabetic retinopathy that can lead to vision loss and eventual blindness. Kidney damage (diabetic nephropathy) can lead to kidney failure and end-stage renal disease (ESRD). While these two types of MODY are very similar, certain features are particular to each type. For example, babies with HNF4A-MODY tend to weigh more than average or have abnormally low blood glucose at birth, even though other signs of the condition do not occur until childhood or young adulthood. People with HNF1A-MODY have a higher-than-average risk of developing noncancerous (benign) liver tumors known as hepatocellular adenomas.~GCK-MODY is a very mild type of the condition. People with this type have slightly elevated blood glucose levels, particularly in the morning before eating (fasting blood glucose). However, affected individuals often have no symptoms related to the disorder, and diabetes-related complications are extremely rare.~RCAD is associated with a combination of diabetes and kidney or urinary tract abnormalities (unrelated to the elevated blood glucose), most commonly fluid-filled sacs (cysts) in the kidneys. However, the signs and symptoms are variable, even within families, and not everyone with RCAD has both features. Affected individuals may have other features unrelated to diabetes, such as abnormalities of the pancreas or liver or a form of arthritis called gout.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "A rare autosomal dominant form of diabetes mellitus affecting young people with a positive family history. MODY is a form of monogenic diabetes, resulting from mutations in a single gene. The most common forms are HNF1alpha-MODY (MODY3) and GCK-MODY (MODY2), due to mutations in the HNF1A and GCK genes, respectively.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

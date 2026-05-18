@@ -1,0 +1,27 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "classType": "Atom",
+      "ui": "A8343926",
+      "sourceDescriptor": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/ICD9CM/250.8",
+      "sourceConcept": "NONE",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0154183",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "ICD9CM",
+      "termType": "HT",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/ICD9CM/250.8",
+      "language": "ENG",
+      "name": "Diabetes with other specified manifestations",
+      "ancestors": "NONE",
+      "descendants": "NONE",
+      "attributes": "NONE",
+      "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A8343926/relations",
+      "children": "NONE",
+      "parents": "NONE"
+    }
+  ]
+}

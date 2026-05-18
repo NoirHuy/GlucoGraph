@@ -1,0 +1,247 @@
+[
+    {
+        "index": 0,
+        "input_text": "Lyseren is a lake in the municipalities of Enebakk in Akershus county and Spydeberg in Østfold county , Norway .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Enebakk"
+            ],
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Spydeberg"
+            ],
+            [
+                "Lyseren",
+                "country",
+                "Norway"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the administrative territorial entity specified by the object entity.",
+            "country": "The subject entity is located in the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Enebakk"
+            ],
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Spydeberg"
+            ],
+            [
+                "Lyseren",
+                "country",
+                "Norway"
+            ]
+        ]
+    },
+    {
+        "index": 1,
+        "input_text": "Varavu Nalla Uravu is a 1990 Indian Tamil film , directed by Visu and produced by Rajam Balachandar .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 2,
+        "input_text": "Batura III , also known as Batura Muztagh III , is a peak in Batura Muztagh of Pakistan , which is the westernmost subrange of the Karakoram range .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 3,
+        "input_text": "Ramakuppam is a village in Chittoor district of the Indian state of Andhra Pradesh .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 4,
+        "input_text": "Kurniwadi is a village in Belgaum district in Karnataka , India .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Kurniwadi",
+                "country",
+                "India"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within or belongs to the administrative territorial entity specified by the object entity.",
+            "country": "The subject entity is located in the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Kurniwadi",
+                "country",
+                "India"
+            ]
+        ]
+    },
+    {
+        "index": 5,
+        "input_text": "Stadion Rankhof is a football stadium in Basel , Switzerland .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Stadion Rankhof",
+                "located in the administrative territorial entity",
+                "Basel"
+            ],
+            [
+                "Stadion Rankhof",
+                "country",
+                "Switzerland"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the administrative territorial entity specified by the object entity.",
+            "country": "The subject entity is situated in the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Stadion Rankhof",
+                "located in the administrative territorial entity",
+                "Basel"
+            ],
+            [
+                "Stadion Rankhof",
+                "country",
+                "Switzerland"
+            ]
+        ]
+    },
+    {
+        "index": 6,
+        "input_text": "Gozar is a village in Firuzeh Rural District , in the Central District of Firuzeh County , Razavi Khorasan Province , Iran .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 7,
+        "input_text": "Eslamabad, Dowreh is a village in Teshkan Rural District , Chegeni District , Dowreh County , Lorestan Province , Iran .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 8,
+        "input_text": "Alvan-e Eshareh is a village in Azadeh Rural District , Moshrageh District , Ramshir County , Khuzestan Province , Iran .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 9,
+        "input_text": "Vilakkum Velichavum is a 1978 Indian Malayalam film , directed by P. Bhaskaran and produced by Pavamani .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 10,
+        "input_text": "Gorabal is a village in Belgaum district in the southern state of Karnataka , India .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 11,
+        "input_text": "Vayasu Pilichindi is a 1978 Telugu - language film directed by C. V. Sridhar .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 12,
+        "input_text": "Kaharlyk is a town in Kiev Oblast ( province ) of Ukraine .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 13,
+        "input_text": "Paul E. Johnson taught at Princeton University , Yale University , University of Utah , and University of South Carolina .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 14,
+        "input_text": "Vilamana is a village in Kannur district in the Indian state of Kerala .",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    }
+]

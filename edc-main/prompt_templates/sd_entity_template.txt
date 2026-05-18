@@ -1,0 +1,33 @@
+You will be given a biomedical text about diabetes management and a list of relational triplets [Subject, Relation, Object] extracted from it.
+
+Your task has TWO parts:
+
+PART A — Entity Type Assignment:
+  For EVERY unique entity (subject or object) across all triplets, assign one Entity Type from this fixed list:
+    - Disease/Condition
+    - Treatment/Medication
+    - Symptom/Clinical Finding
+    - Clinical Metric/Lab Test
+    - Anatomical Site
+  Use the entity's role in the clinical text to choose the most appropriate type.
+
+PART B — Definition Writing:
+  For EVERY unique Relation label present in the triplets, write one concise, general definition.
+  The definition must describe the semantic direction: Subject → Relation → Object.
+
+OUTPUT FORMAT — Return a single, valid JSON object with exactly two keys:
+  "entity_types": a dict mapping each unique entity string to its assigned Entity Type string.
+  "relation_definitions": a dict mapping each unique relation label to its definition string.
+
+RULES:
+  - Cover EVERY entity and EVERY relation — do not skip any.
+  - Do NOT add markdown, code fences, or explanations outside the JSON.
+  - Entity type values must come EXACTLY from the five allowed types listed above.
+
+Here are some examples:
+{few_shot_examples}
+
+Now extract entity types and relation definitions from the following input.
+Text: {text}
+Triplets: {triples}
+Answer:

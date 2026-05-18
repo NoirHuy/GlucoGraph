@@ -1,0 +1,47 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "classType": "Atom",
+      "ui": "A1183105",
+      "sourceDescriptor": "NONE",
+      "sourceConcept": "NONE",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0262448",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "SNM",
+      "termType": "PT",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNM/D-2384",
+      "language": "ENG",
+      "name": "Diabetes mellitus, chemical",
+      "ancestors": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1183105/ancestors",
+      "descendants": "NONE",
+      "attributes": "NONE",
+      "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1183105/relations",
+      "children": "NONE",
+      "parents": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1183105/parents"
+    },
+    {
+      "classType": "Atom",
+      "ui": "A0546815",
+      "sourceDescriptor": "NONE",
+      "sourceConcept": "NONE",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0262448",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "COSTAR",
+      "termType": "PT",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/COSTAR/U000226",
+      "language": "ENG",
+      "name": "DIABETES MELLITUS (CHEMICAL)",
+      "ancestors": "NONE",
+      "descendants": "NONE",
+      "attributes": "NONE",
+      "relations": "NONE",
+      "children": "NONE",
+      "parents": "NONE"
+    }
+  ]
+}

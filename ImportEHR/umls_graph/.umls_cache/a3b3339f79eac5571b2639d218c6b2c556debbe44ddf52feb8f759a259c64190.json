@@ -1,0 +1,28 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C0554876",
+    "name": "poorly controlled diabetes mellitus",
+    "dateAdded": "01-01-1999",
+    "majorRevisionDate": "03-22-2017",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Disease or Syndrome",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T047"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0554876/atoms",
+    "definitions": "NONE",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0554876/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0554876/atoms/preferred",
+    "atomCount": 5,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 13
+  }
+}

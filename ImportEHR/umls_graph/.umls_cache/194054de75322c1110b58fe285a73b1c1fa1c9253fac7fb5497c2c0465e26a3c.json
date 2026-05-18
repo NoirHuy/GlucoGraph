@@ -1,0 +1,43 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Typ diabetu, který je charakterizovaný těžkou inzulinovou rezistencí a lipodystrofií. Lipodystrofie může být generalizovaná, částečná, získaná nebo vrozená.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "A rare syndrome characterized by almost complete absence of body fat, accentuated muscularity, insulin-resistant diabetes, hyperlipidemia, hepatomegaly, and hypermetabolism.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "A type of diabetes mellitus that is characterized by severe INSULIN RESISTANCE and LIPODYSTROPHY. The latter may be generalized, partial, acquired, or congenital (LIPODYSTROPHY, CONGENITAL GENERALIZED).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Tipo de diabetes mellitus caracterizado pela grave RESISTÊNCIA À INSULINA e LIPODISTROFIA. A lipodistrofia pode ser generalizada, parcial adquirida ou congênita (LIPODISTROFIA GENERALIZADA CONGÊNITA.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Tipo de diabetes mellitus que se caracteriza por insuficiencia de tejido adiposo (LIPODISTROFIA)y grave RESISTENCIA A LA INSULINA. Existen distintas formas que contienen alguno de los genes que codifican la proteina nuclear LAMINA TIPOO A, RECEPTORES ACTIVADOS DEL PEROXISOMA PROLIFERADOR u otras proteinas.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Sjukdomstillstånd kännetecknat av fullständig frånvaro av subkutan fettvävnad, insulinresistent diabetes med lten benägenhet för ketoacidos, hyperlipidemi med subkutan xantomatos (kolesterolansamlingar under huden), leverförstoring och förhöjd basal ämnesomsättning.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

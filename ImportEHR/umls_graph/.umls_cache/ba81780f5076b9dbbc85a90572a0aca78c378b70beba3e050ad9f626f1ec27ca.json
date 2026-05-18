@@ -1,0 +1,28 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C0865162",
+    "name": "Diabetes mellitus without mention of complication or manifestation",
+    "dateAdded": "10-01-2000",
+    "majorRevisionDate": "02-07-2005",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Disease or Syndrome",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T047"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0865162/atoms",
+    "definitions": "NONE",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0865162/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0865162/atoms/preferred",
+    "atomCount": 1,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 1
+  }
+}

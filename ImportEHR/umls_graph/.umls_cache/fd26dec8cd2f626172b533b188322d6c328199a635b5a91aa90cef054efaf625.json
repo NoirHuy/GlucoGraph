@@ -1,0 +1,73 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Stav, kdy jedinec mívá zvýšenou hladinu glukosy, avšak ještě nesplňuje kritéria pro diagnózu diabetu. Pojem prediabetes zahrnuje dvě již delší dobu zavedené kategorie, a to (a) poruchu glukosové tolerance a (b) hraniční glukosu nalačno. Patofyziologickým podkladem prediabetu je inzulinová rezistence. Většina jedinců postižených prediabetem nemá žádné klinické příznaky, při pečlivě odebrané anamnéze však můžeme zjistit mírnou nebo občasnou polyurii (event. též polakisurii, která je pro pacienta nápadnější) s následným zvýšeným příjmem tekutin, může být i častější pocit hladu, (event. projevy postprandiální hypoglykemie) a občasné poruchy vidění (kolísání osmolarity tkáňového moku). Stav je velmi často spojen s obezitou či nadváhou, U většiny jedinců s p. se později vyvine diabetes typu 2 (DM2), čemuž však lze předejít preventivními opatřeními. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz/)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "The time period before the development of symptomatic diabetes. For example, certain risk factors can be observed in subjects who subsequently develop INSULIN RESISTANCE as in type 2 diabetes (DIABETES MELLITUS, TYPE 2).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "CSP",
+      "value": "state of latent impairment of carbohydrate metabolism in which the criteria for diabetes mellitus are not all satisfied; sometimes controllable by diet alone; called also impaired glucose tolerance and impaired fasting glucose.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MEDLINEPLUS",
+      "value": "<h3>What is prediabetes?</h3> <p>Prediabetes means that your blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, levels are higher than normal but not high enough to be called <a href=\"https://medlineplus.gov/diabetes.html\">diabetes</a>. Glucose comes from the foods you eat. Too much glucose in your blood can damage your body over time.</p> <p>If you have prediabetes, you are more likely to develop <a href=\"https://medlineplus.gov/diabetestype2.html\">type 2 diabetes</a>, <a href=\"https://medlineplus.gov/heartdiseases.html\">heart disease</a>, and <a href=\"https://medlineplus.gov/stroke.html\">stroke</a>. But if you make some lifestyle changes now, you may be able to delay or prevent type 2 diabetes.</p> <h3>What causes prediabetes?</h3> <p>Prediabetes usually happens when your body has a problem with insulin. Insulin is a hormone that helps the glucose get into your cells to give them energy. A problem with insulin could be:</p><ul> <li>Insulin resistance, a condition in which the body can't use its insulin properly. It makes it hard for your cells to get glucose from your blood. This can cause your blood sugar levels to rise.</li> <li>Your body can't make enough insulin to keep your blood sugar levels at a healthy level</li> </ul> <p>Researchers think that being overweight and not getting regular physical activity are major factors in causing prediabetes.</p> <h3>Who is at risk for prediabetes?</h3> <p>About 1 out of every 3 adults has prediabetes. It is more common in people who:</p><ul> <li>Are overweight or have <a href=\"https://medlineplus.gov/obesity.html\">obesity</a></li> <li>Are age 45 or older</li> <li>Have a parent, brother, or sister with diabetes</li> <li>Are African American, Alaska Native, American Indian, Asian American, Hispanic/Latino, Native Hawaiian, or Pacific Islander American</li> <li>Are not physically active</li> <li>Have health conditions such as <a href=\"https://medlineplus.gov/highbloodpressure.html\">high blood pressure</a> and <a href=\"https://medlineplus.gov/cholesterol.html\">high cholesterol</a></li> <li>Have had <a href=\"https://medlineplus.gov/diabetesandpregnancy.html\">gestational diabetes</a> (diabetes in pregnancy)</li> <li>Have a history of heart disease or stroke</li> <li>Have <a href=\"https://medlineplus.gov/metabolicsyndrome.html\">metabolic syndrome</a></li> <li>Have <a href=\"https://medlineplus.gov/polycysticovarysyndrome.html\">polycystic ovary syndrome</a> (PCOS)</li> </ul> <h3>What are the symptoms of prediabetes?</h3> <p>Most people don't know they have prediabetes because usually there are no symptoms.</p> <p>Some people with prediabetes may have darkened skin in the armpit or on the back and sides of the neck. They may also have many small skin growths in those same areas.</p> <h3>How is prediabetes diagnosed?</h3> <p>There are a few different blood tests that can diagnose prediabetes. The most common ones are:</p><ul> <li><a href=\"https://medlineplus.gov/lab-tests/blood-glucose-test/\">Fasting plasma glucose</a> (FPG) test, which measures your blood sugar at a single point in time. You need to fast (not eat or drink) for at least 8 hours before the test. The results of the test are given in mg/dL (milligrams per deciliter): <ul> <li>A normal level is 99 or below</li> <li>Prediabetes is 100 to 125</li> <li>Type 2 diabetes is 126 and above</li> </ul> </li> <li><a href=\"https://medlineplus.gov/a1c.html\">A1C test</a>, which measures your average blood sugar over the past 3 months. The results of an A1C test are given as a percentage. The higher the percentage, the higher your blood sugar levels have been. <ul> <li>A normal level is below 5.7%</li> <li>Prediabetes is between 5.7 to 6.4%</li> <li>Type 2 diabetes is above 6.5%</li> </ul> </li> </ul> <h3>If I have prediabetes, will I get diabetes?</h3> <p>If you have prediabetes, you may be able to delay or <a href=\"https://medlineplus.gov/howtopreventdiabetes.html\">prevent</a> type 2 diabetes through lifestyle changes:</p><ul> <li><a href=\"https://medlineplus.gov/weightcontrol.html\">Losing weight</a>, if you are overweight</li> <li>Getting <a href=\"https://medlineplus.gov/howmuchexercisedoineed.html\">regular physical activity</a></li> <li>Following a healthy, reduced-calorie eating plan</li> </ul> <p>In some cases, your health care provider may also recommend taking <a href=\"https://medlineplus.gov/diabetesmedicines.html\">diabetes medicines</a>.</p> <h3>Can prediabetes be prevented?</h3> <p>If you are at risk for prediabetes, those same lifestyle changes (losing weight, regular physical activity, and a healthy eating plan) may prevent you from getting it.</p> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "A condition in which blood glucose levels are high, but not high enough to be classified as type 2 diabetes.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "SNOMEDCT_US",
+      "value": "Characterised by blood glucose levels that are higher than normal but not yet high enough to be classed as diabetes. Indicates a relatively high risk for the future development of diabetes.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "SNOMEDCT_US",
+      "value": "Characterized by blood glucose levels that are higher than normal but not yet high enough to be classed as diabetes. Indicates a relatively high risk for the future development of diabetes.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Período antes do desenvolvimento do diabetes sintomático. Por exemplo, pode-se observar alguns fatores de risco em indivíduos que desenvolverão RESISTÊNCIA À INSULINA como no DIABETES MELLITUS TIPO 2.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "SCTSPA",
+      "value": "Caracterizado por niveles de glucemia mayores que los normales pero aún no suficientemente elevados como para clasificarlos como diabetes. Indica un riesgo relativamente elevado de desarrollo futuro de diabetes.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Periodo de tiempo anterior al desarrollo de diabetes sintomática. Por ejemplo, pueden observarse algunos factores de riesgo en sujetos que posteriormente desarrollan RESISTENCIA A LA INSULINA como en la diabetes tipo 2 (DIABETES MELLITUS TIPO 2).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Tidsperioden innan utvecklingen av symptomatic diabetes. T ex kan vissa riskfaktorer observeras hos personer som senare utvecklar insulilnresistens som i typ 2-diabetes.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

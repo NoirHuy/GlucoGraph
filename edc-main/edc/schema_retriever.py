@@ -58,7 +58,7 @@ class SchemaRetriever:
                 )
             self.target_schema_embedding_dict[relation] = embedding
 
-    def retrieve_relevant_relations(self, query_input_text: str, top_k=10):
+    def retrieve_relevant_relations(self, query_input_text: str, top_k=3):
         target_relation_list = list(self.target_schema_embedding_dict.keys())
         target_relation_embedding_list = list(self.target_schema_embedding_dict.values())
 

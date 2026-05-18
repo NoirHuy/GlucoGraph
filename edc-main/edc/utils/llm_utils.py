@@ -65,10 +65,14 @@ def get_embedding_sts(model: SentenceTransformer, text: str, prompt_name=None, p
 
 def parse_raw_entities(raw_entities: str):
     parsed_entities = []
-    left_bracket_idx = raw_entities.index("[")
-    right_bracket_idx = raw_entities.index("]")
+    if not raw_entities:
+        return parsed_entities
     try:
+        left_bracket_idx = raw_entities.index("[")
+        right_bracket_idx = raw_entities.index("]")
         parsed_entities = ast.literal_eval(raw_entities[left_bracket_idx : right_bracket_idx + 1])
+    except ValueError:
+        pass
     except Exception as e:
         pass
     logging.debug(f"Entities {raw_entities} parsed as {parsed_entities}")
@@ -76,6 +80,9 @@ def parse_raw_entities(raw_entities: str):
 
 
 def parse_raw_triplets(raw_triplets: str):
+    if not raw_triplets:
+        return []
+        
     # Look for enclosing brackets
     unmatched_left_bracket_indices = []
     matched_bracket_pairs = []
@@ -109,6 +116,8 @@ def parse_raw_triplets(raw_triplets: str):
 
 
 def parse_relation_definition(raw_definitions: str):
+    if not raw_definitions:
+        return {}
     descriptions = raw_definitions.split("\n")
     relation_definition_dict = {}
 
@@ -117,6 +126,9 @@ def parse_relation_definition(raw_definitions: str):
             continue
         index_of_colon = description.index(":")
         relation = description[:index_of_colon].strip()
+        
+        # Strip common markdown formatting (like **relation**) or quotes
+        relation = relation.strip("*_`\"' ")
 
         relation_description = description[index_of_colon + 1 :].strip()
 
@@ -130,11 +142,15 @@ def parse_relation_definition(raw_definitions: str):
 
 def is_model_openai(model_name):
     """Returns True if the model should be called via an OpenAI-compatible API.
-    Detects: OpenAI (gpt in name), OpenRouter (/ in name), or Groq (GROQ_KEY is set).
+    Detects: OpenAI (gpt in name), OpenRouter (/ in name), Google (gemini in name), Xiaomi (mimo in name) or Groq (GROQ_KEY is set).
     """
     if "gpt" in model_name:
         return True
     if "/" in model_name:
+        return True
+    if "gemini" in model_name.lower():
+        return True
+    if "mimo" in model_name.lower():
         return True
     # If GROQ_KEY is set, route all models through Groq API
     if os.environ.get("GROQ_KEY", ""):
@@ -204,17 +220,21 @@ def openrouter_chat_completion(model, system_prompt, history, temperature=0, max
     Detection is automatic: if GROQ_KEY is set, Groq is used.
     """
     groq_key = os.environ.get("GROQ_KEY", "")
-    if groq_key:
+    openrouter_key = os.environ.get("OPENROUTER_KEY", os.environ.get("OPENROUTER_API_KEY", ""))
+    
+    # If the model has a '/' (like meta-llama/...), it MUST go to OpenRouter.
+    # Otherwise, if GROQ_KEY is present, send to Groq.
+    if "/" in model or not groq_key:
+        # Use OpenRouter API
+        client = openai.OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=openrouter_key,
+        )
+    else:
         # Use Groq API
         client = openai.OpenAI(
             base_url="https://api.groq.com/openai/v1",
             api_key=groq_key,
-        )
-    else:
-        # Use OpenRouter API
-        client = openai.OpenAI(
-            base_url="https://openrouter.ai/api/v1",
-            api_key=os.environ["OPENROUTER_KEY"],
         )
     response = None
     if system_prompt is not None:
@@ -233,10 +253,59 @@ def openrouter_chat_completion(model, system_prompt, history, temperature=0, max
     return response.choices[0].message.content
 
 
+def google_chat_completion(model, system_prompt, history, temperature=0, max_tokens=512):
+    """Call Google AI Studio API via the new OpenAI-compatible format."""
+    client = openai.OpenAI(
+        base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+        api_key=os.environ["GEMINI_API_KEY"],
+    )
+    response = None
+    if system_prompt is not None:
+        messages = [{"role": "system", "content": system_prompt}] + history
+    else:
+        messages = history
+    while response is None:
+        try:
+            response = client.chat.completions.create(
+                model=model, messages=messages, temperature=temperature, max_tokens=max_tokens
+            )
+        except Exception as e:
+            logger.warning(f"Google API error: {e}. Retrying in 5s...")
+            time.sleep(5)
+    logging.debug(f"Model: {model}\nPrompt:\n {messages}\n Result: {response.choices[0].message.content}")
+    return response.choices[0].message.content
+
+
+def xiaomi_chat_completion(model, system_prompt, history, temperature=0, max_tokens=512):
+    """Call Xiaomi MiMo API via OpenAI-compatible interface."""
+    client = openai.OpenAI(
+        base_url="https://token-plan-sgp.xiaomimimo.com/v1",
+        api_key=os.environ["XIAOMI_API_KEY"],
+    )
+    response = None
+    if system_prompt is not None:
+        messages = [{"role": "system", "content": system_prompt}] + history
+    else:
+        messages = history
+    while response is None:
+        try:
+            response = client.chat.completions.create(
+                model=model, messages=messages, temperature=temperature, max_tokens=max_tokens
+            )
+        except Exception as e:
+            logger.warning(f"Xiaomi MiMo API error: {e}. Retrying in 5s...")
+            time.sleep(5)
+    logging.debug(f"Model: {model}\nPrompt:\n {messages}\n Result: {response.choices[0].message.content}")
+    return response.choices[0].message.content
+
 
 def api_chat_completion(model, system_prompt, history, temperature=0, max_tokens=512):
-    """Unified entry point: routes to OpenRouter/Groq or OpenAI based on model name and env vars."""
-    if is_model_openrouter(model) or os.environ.get("GROQ_KEY", ""):
+    """Unified entry point: routes to Google, Xiaomi, OpenRouter/Groq, or OpenAI based on model name and env vars."""
+    if os.environ.get("XIAOMI_API_KEY", "") and "mimo" in model.lower():
+        return xiaomi_chat_completion(model, system_prompt, history, temperature, max_tokens)
+    elif os.environ.get("GEMINI_API_KEY", "") and "gemini" in model:
+        return google_chat_completion(model, system_prompt, history, temperature, max_tokens)
+    elif is_model_openrouter(model) or os.environ.get("GROQ_KEY", ""):
         return openrouter_chat_completion(model, system_prompt, history, temperature, max_tokens)
     else:
         return openai_chat_completion(model, system_prompt, history, temperature, max_tokens)

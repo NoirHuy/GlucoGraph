@@ -1,0 +1,55 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Postižení ledvin vznikající při diabetes mellitus, jedna z jeho chronických komplikací. Častá příčina renální insuficience a selhání. Podstatou je porucha drobných cév ledvin a poškození glomerulu. Patogeneticky se uplatňuje glykace (glykosylace) glomerulárních proteinů a hemodynamické změny (hyperfiltrace při hyperglykemii). V počátečních fázích bývá mikroalbuminurie, později se proteinurie zvyšuje a může dojít k nefrotickému syndromu. Dochází k poklesu glomerulární filtrace a postupně se rozvíjí renální selhání. U diabetiků je třeba sledovat zejm. proteinurii a zachytit včasná stadia nefropatie, kdy je nejlepší možnost zastavit její progresi. Sledují se rovněž známky mikroangiopatie na sítnici (diabetická retinopatie). Významnou skupinou léků používaných v léčbě jsou ACE-inhibitory. Poškození ledvin ještě může být zhoršeno současnou hypertenzí a častější infekcí močových cest u diabetiků. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "Progressive kidney disorder caused by vascular damage to the glomerular capillaries, in patients with diabetes mellitus. It is usually manifested with nephritic syndrome and glomerulosclerosis.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "KIDNEY injuries associated with diabetes mellitus and affecting KIDNEY GLOMERULUS; ARTERIOLES; KIDNEY TUBULES; and the interstitium. Clinical signs include persistent PROTEINURIA, from microalbuminuria progressing to ALBUMINURIA of greater than 300 mg/24 h, leading to reduced GLOMERULAR FILTRATION RATE and END-STAGE RENAL DISEASE.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "CSP",
+      "value": "kidney disease and resultant kidney function impairment due to the long standing effects of diabetes on the microvasculature (glomerulus) of the kidney; features include increased urine protein and declining kidney function.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MEDLINEPLUS",
+      "value": "<p>If you have <a href=\"https://medlineplus.gov/diabetes.html\">diabetes</a>, your blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, levels are too high. Over time, this can damage your kidneys. Your kidneys clean your blood. If they are damaged, waste and fluids build up in your blood instead of leaving your body.</p> <p>Kidney damage from diabetes is called diabetic nephropathy. It begins long before you have symptoms. People with diabetes should get regular screenings for kidney disease. <a href=\"https://medlineplus.gov/kidneytests.html\">Tests</a> include a urine test to detect protein in your urine and a blood test to show how well your kidneys are working.</p> <p>If the damage continues, your kidneys could fail. In fact, diabetes is the most common cause of <a href=\"https://medlineplus.gov/kidneyfailure.html\">kidney failure</a> in the United States. People with kidney failure need either <a href=\"https://medlineplus.gov/dialysis.html\">dialysis</a> or a <a href=\"https://medlineplus.gov/kidneytransplantation.html\">kidney transplant</a>.</p> <p>You can slow down kidney damage or keep it from getting worse. Controlling your blood sugar and blood pressure, taking your medicines and not eating too much <a href=\"https://medlineplus.gov/dietaryproteins.html\">protein</a> can help.</p> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Lesões no RIM associadas com diabetes mellitus que afetam os GLOMÉRULOS RENAIS, ARTERÍOLAS, TÚBULOS RENAIS e o interstício. Os sinais clínicos incluem PROTEINURIA persistente devido a microalbuminuria que progride para a ALBUMINURIA superior a 300 mg/24h, o que leva a uma TAXA DE FILTRAÇÃO GLOMERULAR reduzida e FALÊNCIA RENAL CRÔNICA.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Trastornos del RIÑON asociados con diabetes mellitus y que afectan a los GLOMÉRULOS RENALES, ARTERIOLAS, TÚBULOS RENALES y el intersticio. Los signos clínicos incluyen PROTEINURIA persistente, con una progresión de microalbuminuria a ALBUMINURIA de más de 300mg/24 h., dando lugar a una TASA DE FILTRACIÓN GLOMERULAR reducida y FALLO RENAL CRÓNICO.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Hit hör arterioskleros och arterioloskleros i njurarna, Kimmelstiel-Wilsons syndrom (interkapillär glomeruloskleros), akut och kronisk pyelonefrit, samt njurpapillnekros hos individer med diabetes mellitus.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

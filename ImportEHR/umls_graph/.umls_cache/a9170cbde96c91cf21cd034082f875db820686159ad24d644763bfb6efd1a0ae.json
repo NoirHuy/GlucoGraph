@@ -1,0 +1,37 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSH",
+      "value": "A heterogeneous group of compounds derived from rearrangements, oxidation, and cross-linking reactions that follow from non-enzymatic glycation of amino groups in PROTEINS; LIPIDS; or NUCLEIC ACIDS. Their accumulation in vivo accelerates under hyperglycemic, oxidative, or inflammatory conditions. Heat also accelerates the formation of advanced glycation end products (AGEs) such seen with the browning of food during cooking.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "Nonenzymatically glycosylated proteins or lipids which accumulate in vascular tissue during aging and at an accelerated rate in diabetes.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Grupo heterogêneo de compostos derivados de rearranjos, oxidação e reações de reticulação que se seguem à glicação não enzimática de grupamentos amino em PROTEÍNAS, LIPÍDEOS e ÁCIDOS NUCLEICOS. Seu acúmulo in vivo é acelerado sob condições hiperglicêmicas, inflamatórias e oxidativas. O calor também acelera a formação de produtos finais de glicação avançada (AGEs), tal como observado com o escurecimento (marrom) da comida durante o cozimento sob altas temperaturas.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Un grupo heterogéneo de compuestos derivados de reordenamientos, oxidación y reacciones de reticulación que se derivan de la glicación no enzimática de grupos amino en PROTEÍNAS, LÍPIDOS o ÁCIDOS NUCLEICOS. Su acumulación in vivo se acelera en condiciones hiperglucémicas, oxidativas o inflamatorias. El calor también acelera la formación de productos finales de glicación avanzada (AGEs) como los que se observan con el dorado de los alimentos durante la cocción.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Ämnen som erhålls genom icke-enzymatisk reaktion in vivo mellan glukos och proteiner och som uppvisar en gulbrun färg och förmåga att delta i protein-proteinkorslänkning. Dessa ämnen ingår i biologiska processer förknippade med proteinomsättningen, och man tror att för stor ansamling av dem bidrar till kroniska komplikationer till diabetes mellitus.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

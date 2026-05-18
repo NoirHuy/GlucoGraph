@@ -1,0 +1,28 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C2362516",
+    "name": "Sugar Diabetes",
+    "dateAdded": "11-03-2008",
+    "majorRevisionDate": "03-21-2013",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Disease or Syndrome",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T047"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C2362516/atoms",
+    "definitions": "NONE",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C2362516/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C2362516/atoms/preferred",
+    "atomCount": 2,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 1
+  }
+}

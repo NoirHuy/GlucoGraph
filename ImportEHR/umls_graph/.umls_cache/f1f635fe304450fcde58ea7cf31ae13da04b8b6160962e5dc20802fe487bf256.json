@@ -1,0 +1,28 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C0362046",
+    "name": "Prediabetes syndrome",
+    "dateAdded": "01-01-1997",
+    "majorRevisionDate": "01-15-2025",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Disease or Syndrome",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T047"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0362046/atoms",
+    "definitions": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0362046/definitions",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0362046/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0362046/atoms/preferred",
+    "atomCount": 184,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C2945676",
+    "name": "obesity in diabetes",
+    "dateAdded": "05-02-2011",
+    "majorRevisionDate": "11-23-2022",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Finding",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T033"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C2945676/atoms",
+    "definitions": "NONE",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C2945676/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C2945676/atoms/preferred",
+    "atomCount": 5,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 2
+  }
+}

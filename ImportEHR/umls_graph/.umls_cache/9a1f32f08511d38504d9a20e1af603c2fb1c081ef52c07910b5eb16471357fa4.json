@@ -1,0 +1,49 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Postižení nervů (neuropatie) při cukrovce. Může postihnout jak nervy motorické a senzitivní, tak nervy vegetativní. Může vzniknout u obou typů diabetu. Příznaky jsou rozmanité v závislosti na postižených nervech a oblasti. Zahrnují poruchy citlivosti (mravenčení, pálení, bolesti a jiné), někdy těžké hyperestezie a parestezie, poruchy hybnosti (svalová slabost až těžší poruchy hybnosti a obrny) a poruchy vegetativních funkcí (poruchy krevního oběhu, ortostatická hypotenze, gastroparéza, těžké průjmy, poruchy v oblasti močopohlavního ústrojí včetně poruch erekce aj). Kromě vlastních obtíží se d. n. podílí na dalších komplikacích (např. vznik diabetické nohy, závažnější a atypický průběh infarktu myokardu). Léčba spočívá v dobré kompenzaci cukrovky což je i prevence; jinak je převážně symptomatická. Zkoušejí se různé přípravky zlepšující metabolismus nervů. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "Peripheral, autonomic, and cranial nerve disorders that are associated with DIABETES MELLITUS. These conditions usually result from diabetic microvascular injury involving small blood vessels that supply nerves (VASA NERVORUM). Relatively common conditions which may be associated with diabetic neuropathy include third nerve palsy (see OCULOMOTOR NERVE DISEASES); MONONEUROPATHY; mononeuropathy multiplex; diabetic amyotrophy; a painful POLYNEUROPATHY; autonomic neuropathy; and thoracoabdominal neuropathy. (From Adams et al., Principles of Neurology, 6th ed, p1325)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "A chronic, pathological complication associated with diabetes mellitus, where nerve damages are incurred due to diabetic microvascular injury involving small blood vessels that supply these nerves, resulting in peripheral and/or autonomic nerve dysfunction.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "CSP",
+      "value": "common complication of diabetes mellitus in which nerves are damaged as a result of hyperglycemia (high blood sugar levels).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Transtornos periféricos autônomos do nervo craniano associados com DIABETES MELLITUS. Estas afecções normalmente resultam de lesão microvascular diabética envolvendo pequenos vasos sanguíneos que nutrem os nervos (VASA NERVORUM). Entre as afecções relativamente comuns que podem estar associadas com a doença diabética estão paralisia do terceiro nervo (v. DOENÇAS DO NERVO OCULOMOTOR), MONONEUROPATIA, mononeuropatia múltipla, amiotrofia diabética, POLINEUROPATIA dolorosa, neuropatia autônoma e neuropatia toracoabdominal. (Tradução livre do original: Adams et al., Principles of Neurology, 6th ed, p1325)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Trastornos de los nervios periféricos, autonómicos y craneales que se asocian con la DIABETES MELLITUS. Estas afecciones usualmente se producen por lesiones microvasculares diabéticas que afectan a los vasos sanguíneos pequeños que suministran a los nervios (VASA NERVORUM). Entre las afecciones relativamente comunes que pueden asociarse con la neuropatía diabética incluyen la parálisis del tercer par (ver ENFERMEDADES DE LOS NERVIOS OCULOMOTORES); MONONEUROPATÍA; mononeuropatía múltiplex; amiotrofia diabética; POLINEUROPATÍA dolorosa; neuropatía autonómica; y neuropatía toracoabdominal. (Traducción libre del original: Adams et al., Principles of Neurology, 6th ed, p1325)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Perifera, autonoma och kranialnervssjukdomar som har samband med diabetes mellitus. Tillstånden beror oftast på diabetesorsakade skador på mikrokärl som försörjer nerver (vasa nervorum). Till de förhållandevis vanliga sjukdomstillstånd som kan hänga samman med diabetesneuropati hör kramp i den tredje kranialnerven (ögonrörelsenerven; se ögonmuskelsjukdomar), mononeuropati, multiplex mononeuropati, diabetesamyotrofi, smärtsam polyneuropati, autonom neuropati och torakoabdominell neuropati.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

@@ -1,9 +1,13 @@
-Given the following text and a relational triplet extracted from it:
+Given the following clinical text and a relational triplet extracted from it:
 
 Text: {input_text}
 Triplet: {query_triplet}
 
-The relation '{query_relation}' in the triplet is defined as '{query_relation_definition}' In this context, is there any relation appropriate to replace it? Please answer by providing only the letter of your choice.
+The relation '{query_relation}' in the triplet is currently defined as: '{query_relation_definition}'
+
+Your task: Select the BEST matching relation from the schema choices below, or choose "None of the above" if no choice is a good semantic match.
+
+IMPORTANT: Your answer must be a SINGLE LETTER ONLY (e.g., A, B, C...). Do not output any words, explanation, or punctuation — just the letter.
 
 Choices:
 {choices}

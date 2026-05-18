@@ -1,0 +1,1260 @@
+The AACE Consensus Statement has an update to the article included at the end of the article.
+The update to the article is located at the end of the AACE Consensus Statement article.
+Susan L. Samson, MD, PhD, FRCPC, FACE is the Chair of the Task Force for the American Association of Clinical Endocrinology Consensus Statement.
+Susan L. Samson, MD, PhD, FRCPC, FACE is also the Chair of the Division of Endocrinology, Diabetes and Metabolism, Department of Medicine, at the Mayo Clinic in Jacksonville, Florida.
+Priyathama Vellanki, MD is the Vice Chair of the Task Force for the American Association of Clinical Endocrinology Consensus Statement.
+Priyathama Vellanki, MD is an Associate Professor of Medicine at the Department of Medicine, Division of Endocrinology, Metabolism and Lipids, Emory University School of Medicine, Emory University.
+Priyathama Vellanki, MD is the Section Chief of Endocrinology at Grady Memorial Hospital in Atlanta, Georgia.
+Lawrence Blonde, MD, FACP, MACE is the Director of the Ochsner Diabetes Clinical Research Unit, Frank Riddick Diabetes Institute, Department of Endocrinology, Ochsner Health, in New Orleans, Louisiana.
+Elena A. Christofides, MD, FACE is an endocrinologist at Endocrinology Associates, Inc., in Columbus, Ohio.
+Rodolfo J. Galindo, MD, FACE is an Associate Professor of Medicine at the University of Miami Miller School of Medicine.
+Rodolfo J. Galindo, MD, FACE is the Director of the Comprehensive Diabetes Center at Lennar Medical Center, UMiami Health System, in Miami, Florida.
+Rodolfo J. Galindo, MD, FACE is the Director of Diabetes Management at Jackson Memorial Health System in Miami, Florida.
+Irl B. Hirsch, MD is a Professor of Medicine at the Department of Medicine, University of Washington School of Medicine, in Seattle, Washington.
+Scott D. Isaacs, MD, FACP, FACE is a member of the Department of Medicine at Emory University School of Medicine in Atlanta, Georgia.
+Kenneth E. Izuora, MD, MBA, FACE is a Professor at the Department of Internal Medicine, Endocrinology, Kirk Kerkorian School of Medicine, University of Nevada Las Vegas, in Las Vegas, Nevada.
+Cecilia C. Low Wang, MD, FACP is a Professor of Medicine at the Department of Medicine, Division of Endocrinology, Metabolism, and Diabetes, University of Colorado Anschutz Medical Campus, in Aurora, Colorado.
+Christine L. Twining, MD, FACE is an endocrinologist at the Endocrinology, Diabetes and Metabolism department of Maine Medical Center, Maine Health, in Scarborough, Maine.
+Guillermo E. Umpierrez, MD, CDCES, MACP, FACE is a Professor of Medicine at Emory University School of Medicine, Division of Endocrinology, Metabolism.
+Guillermo E. Umpierrez, MD, CDCES, MACP, FACE is the Chief of Diabetes and Endocrinology at Grady Health Systems in Atlanta, Georgia.
+Willy Marcos Valencia, MD, MSc is an endocrinologist at the Endocrinology and Metabolism Institute, Center for Geriatric Medicine, Cleveland Clinic, in Cleveland, Ohio.
+The American Association of Clinical Endocrinology consensus statement provides visual guidance in concise graphic algorithms to assist with clinical decision-making of health care professionals in the management of persons with type 2 diabetes mellitus to improve patient care.
+The American Association of Clinical Endocrinology consensus statement provides a summary of details to support the visual guidance found in each algorithm for the management of persons with type 2 diabetes mellitus.
+The American Association of Clinical Endocrinology selected a task force of medical experts who updated the 2020 American Association of Clinical Endocrinology Comprehensive Type 2 Diabetes Management Algorithm based on the 2022 American Association of Clinical Endocrinology Clinical Practice Guideline: Developing a Diabetes Mellitus Comprehensive Care Plan and consensus of task force authors.
+The algorithm for management of persons with type 2 diabetes mellitus includes 11 distinct sections, including Principles for the Management of Type 2 Diabetes, Complications-Centric Model for the Care of Persons with Overweight/Obesity, and Prediabetes Algorithm.
+The algorithm for management of persons with type 2 diabetes mellitus includes Atherosclerotic Cardiovascular Disease Risk Reduction Algorithm: Dyslipidemia and Atherosclerotic Cardiovascular Disease Risk Reduction Algorithm: Hypertension.
+The American Association of Clinical Endocrinology represents the official position of the American Association of Clinical Endocrinology on the subject matter of type 2 diabetes mellitus management at the time of publication.
+Subject matter experts who participated on the task force used their judgment and experience supported by relevant scientific evidence as available to develop the consensus statement on type 2 diabetes mellitus management.
+Every effort was made to achieve consensus among the task force members who developed the consensus statement on type 2 diabetes mellitus management.
+The consensus statement on type 2 diabetes mellitus management is meant to provide guidance, but it is not to be considered prescriptive for any individual patient with type 2 diabetes mellitus and cannot replace the judgment of a clinician.
+Health care professionals are encouraged to use the information in the consensus statement on type 2 diabetes mellitus management in conjunction with their best clinical judgement.
+The presented guidance in the consensus statement on type 2 diabetes mellitus management may not be appropriate in all situations for patients with type 2 diabetes mellitus.
+Any decision by health care professionals to apply the guidance provided in the consensus statement on type 2 diabetes mellitus management must be made in consideration of local resources and individual patient circumstances for patients with type 2 diabetes mellitus.
+The 2023 diabetes algorithm update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and diabetes mellitus.
+The 2023 diabetes algorithm update highlights the importance of appropriate management of atherosclerotic risk factors of dyslipidemia and hypertension for patients with diabetes mellitus.
+The algorithm includes access and cost of medications as factors related to health equity to consider in clinical decision-making for patients with diabetes mellitus.
+The 2023 diabetes algorithm update includes a complication-centric approach, beyond glucose levels, to frame decisions regarding first-line pharmacologic choices for the treatment of persons with diabetes mellitus.
+The algorithm includes Vaccine Recommendations for Persons with Diabetes Mellitus, which summarizes recommendations from the Advisory Committee on Immunization Practices of the U.S. Centers for Disease Control and Prevention.
+The American Association of Clinical Endocrinology is referred to as AACE.
+The American Association of Endocrinology is referred to as AACE.
+Adiposity-based chronic disease is referred to as ABCD.
+The ankle-brachial index is referred to as ABI.
+The American College of Endocrinology is referred to as ACE.
+Angiotensin-converting enzyme inhibitor is referred to as ACEi.
+Alpha-glucosidase inhibitor is referred to as AGI.
+Acute kidney injury is referred to as AKI.
+Apolipoprotein B is referred to as apo B.
+Angiotensin II receptor blocker is referred to as ARB.
+Atherosclerotic cardiovascular disease is referred to as ASCVD.
+The Adult Treatment Panel is referred to as ATP.
+Hemoglobin A1C is referred to as A1C.
+Bedtime minus morning prebreakfast glucose is referred to as BeAM.
+Blood glucose is referred to as BG.
+Body mass index is referred to as BMI.
+Blood pressure is referred to as BP.
+Bromocriptine quick release is referred to as BRC-QR.
+Coronary artery disease is referred to as CAD.
+Calcium channel blocker is referred to as CCB.
+The U.S. Centers for Disease Control and Prevention is referred to as CDC.
+Continuous glucose monitoring is referred to as CGM.
+Congestive heart failure is referred to as CHF.
+Creatine kinase is referred to as CK.
+Chronic kidney disease is referred to as CKD.
+Colesevelam is referred to as COLSVL.
+Coenzyme q10 is referred to as CoQ10.
+Clinical practice guideline is referred to as CPG.
+Creatinine clearance is referred to as CrCl.
+Cardiovascular is referred to as CV.
+Cardiovascular disease is referred to as CVD.
+Cardiovascular outcomes trial is referred to as CVOT.
+Dopamine agonist is referred to as DA.
+Dietary Approaches to Stop Hypertension is referred to as DASH.
+Diabetic ketoacidosis is referred to as DKA.
+Diabetic kidney disease is referred to as DKD.
+Diabetes mellitus is referred to as DM.
+Dipeptidyl peptidase-4 inhibitor is referred to as DPP-4i.
+Estimated glomerular filtration rate is referred to as eGFR.
+Extended release is referred to as ER.
+Fasting blood glucose is referred to as FBG.
+The U.S. Food and Drug Administration is referred to as FDA.
+Fasting plasma glucose is referred to as FPG.
+Gastroesophageal reflux disease is referred to as GERD.
+Gastrointestinal is referred to as GI.
+Glucose-dependent insulinotropic polypeptide and glucagon-like peptide-1 receptor agonist is referred to as GIP/GLP-1 RA.
+Glinide is referred to as GLN.
+Glucagon-like peptide-1 receptor agonist is referred to as GLP-1 RA.
+Glucose management indicator is referred to as GMI.
+Genitourinary is referred to as GU.
+Health care professional is referred to as HCP.
+High-density lipoprotein cholesterol is referred to as HDL-C.
+Heart failure is referred to as HF.
+Heart failure with preserved ejection fraction is referred to as HFpEF.
+Hazard ratio is referred to as HR.
+Hypertension is referred to as HTN.
+Impaired fasting glucose is referred to as IFG.
+Impaired glucose tolerance is referred to as IGT.
+Icosapent ethyl is referred to as IPE.
+Intravenous is referred to as IV.
+Latent autoimmune diabetes in adults is referred to as LADA.
+Low-density lipoprotein cholesterol is referred to as LDL-C.
+Lipoprotein(a) is referred to as Lp(a).
+Left ventricle is referred to as LV.
+Major adverse cardiovascular event is referred to as MACE.
+Multiple endocrine neoplasia type 2 is referred to as MEN2.
+Metformin is referred to as MET.
+Myocardial infarction is referred to as MI.
+Mineralocorticoid receptor antagonist is referred to as MRA.
+Medullary thyroid carcinoma is referred to as MTC.
+Nonalcoholic fatty liver disease is referred to as NAFLD.
+Nonalcoholic steatohepatitis is referred to as NASH.
+The National Cholesterol Education Program is referred to as NCEP.
+Neutral protamine Hagedorn is referred to as NPH.
+Osteoarthritis is referred to as OA.
+Oral glucose tolerance test is referred to as OGTT.
+Obstructive sleep apnea is referred to as OSA.
+Polycystic ovary syndrome is referred to as PCOS.
+Proprotein convertase subtilisin/kexin type 9 is referred to as PCSK9.
+Plasma glucose is referred to as PG.
+Postprandial glucose is referred to as PPG.
+Pramlintide is referred to as PRAML.
+Peripheral vascular disease is referred to as PVD.
+Medical prescription is referred to as Rx.
+Statin-associated muscle symptoms is referred to as SAMS.
+Serum creatinine is referred to as sCR.
+Sodium glucose cotransporter 2 inhibitor is referred to as SGLT2i.
+Sulfonylurea is referred to as SU.
+Total daily dose is referred to as TDD.
+Triglyceride is referred to as TG.
+Transient ischemic attack is referred to as TIA.
+Time in range is referred to as TIR.
+Thiazolidinedione is referred to as TZD.
+Type 1 diabetes is referred to as T1D.
+Type 2 diabetes is referred to as T2D.
+Urine albumin-to-creatinine ratio is referred to as UACR.
+Very low-density lipoprotein is referred to as VLDL.
+The American Association of Clinical Endocrinology published the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control in 2009.
+The American Association of Clinical Endocrinology algorithm for glycemic control was expanded on the visual guidance provided by the American College of Endocrinology/American Association of Clinical Endocrinology Diabetes Road Maps.
+At the time of the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control, thiazolidinediones, alpha-glucosidase inhibitors, metformin, and sulfonylureas/glinides were in use.
+The first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control also included the addition of exenatide and dipeptidyl peptidase-4 inhibitors.
+The American Association of Clinical Endocrinology published the Comprehensive Type 2 Diabetes Management Algorithm in 2013, which incorporated new sections on the management of overweight/obesity, dyslipidemia, and hypertension.
+The Comprehensive Type 2 Diabetes Management Algorithm was revised on a yearly basis through 2020.
+The American Association of Clinical Endocrinology task force is grateful for the contributions and framework provided by previous authors of the American Association of Clinical Endocrinology algorithm.
+The American Association of Clinical Endocrinology published the Clinical Practice Guideline: Developing a Diabetes Mellitus Comprehensive Care Plan — 2022 Update, which provided 170 revised or new graded recommendations accompanied by detailed, evidence-based rationales.
+The 2023 American Association of Clinical Endocrinology algorithm update builds on previous versions of the American Association of Clinical Endocrinology algorithm but with the incorporation of new management approaches that align with the 2022 American Association of Clinical Endocrinology clinical practice guideline on diabetes mellitus.
+The 2023 American Association of Clinical Endocrinology algorithm is intended as a more concise document than the 2022 American Association of Clinical Endocrinology clinical practice guideline, providing easily accessible, visual guidance for decision-making in the clinic setting.
+The 2023 American Association of Clinical Endocrinology algorithm summary is not intended to iterate all of the evidence base behind the algorithmic pathways, as this is detailed in the 2022 American Association of Clinical Endocrinology Diabetes Mellitus Comprehensive Care Plan update.
+The objective of the 2023 American Association of Clinical Endocrinology algorithm summary is to provide a written guide or “roadmap” through the graphic depictions of the algorithm contents.
+The process for updating the 2023 American Association of Clinical Endocrinology algorithm involved multiple meetings of American Association of Clinical Endocrinology task force members/authors between January 2022 and November 2022.
+Smaller groups of American Association of Clinical Endocrinology task force members/authors focused on specific algorithm subsections, which were then brought to the complete American Association of Clinical Endocrinology task force for discussion and peer review.
+A proportion of American Association of Clinical Endocrinology algorithm task force members overlapped with the American Association of Clinical Endocrinology diabetes clinical practice guideline task force to ensure continuity and alignment with the 2022 published guideline recommendations.
+The 2023 American Association of Clinical Endocrinology algorithm continues to emphasize lifestyle modification and treatment of overweight/obesity as key pillars of the management of prediabetes and diabetes mellitus.
+The 2023 American Association of Clinical Endocrinology algorithm highlights the importance of appropriate management of the atherosclerotic risk factors of dyslipidemia and hypertension.
+The 2023 American Association of Clinical Endocrinology algorithm includes a complication-centric approach, beyond glucose levels, to frame decisions regarding first-line pharmacologic choices for the treatment of persons with diabetes mellitus.
+The American Association of Clinical Endocrinology task force members/authors acknowledge that health care disparities and lack of access to newer medications remain a significant barrier for some persons with diabetes mellitus.
+The 2023 American Association of Clinical Endocrinology algorithm is divided into discrete graphic sections that outline the principles for management of Type 2 Diabetes.
+The 2023 American Association of Clinical Endocrinology algorithm guides management of adiposity-based chronic disease, prediabetes, and atherosclerotic risk factors of dyslipidemia and hypertension.
+The 2023 American Association of Clinical Endocrinology algorithm includes direction for insulin initiation and titration.
+The 2023 American Association of Clinical Endocrinology algorithm provides convenient tables summarizing the benefits and risks of antihyperglycemic medications and weight-loss pharmacotherapy.
+A new table of immunization guidance is provided in the 2023 American Association of Clinical Endocrinology algorithm, summarizing recommendations from the Advisory Committee on Immunization Practices of the U.S. Centers for Disease Control and Prevention.
+Excess weight results in insulin resistance and increases the risk for prediabetes and Type 2 Diabetes.
+Excess weight leads to multiple complications beyond dysglycemia that comprise adiposity-based chronic disease and lead to excess morbidity and mortality.
+Lifestyle intervention to achieve weight loss is a key pillar of the comprehensive treatment of persons with prediabetes to decrease progression to Type 2 Diabetes.
+Weight loss improves many of the cardiometabolic and biomechanical components of adiposity-based chronic disease, including increased glycemia, dyslipidemia, elevated blood pressure, cardiovascular disease, nonalcoholic fatty liver disease, sleep apnea, and osteoarthritis.
+The American Association of Endocrinology Comprehensive Type 2 Diabetes Management Algorithm is based on principles that underlie all therapy for Type 2 Diabetes.
+Lifestyle modification for Type 2 Diabetes includes exercise, healthy dietary changes, smoking cessation, and reduced alcohol intake.
+Lifestyle modification for Type 2 Diabetes also includes assessment and management of sleep disorders and depression.
+The Complications-Centric Model for the Care of Persons with Overweight/Obesity provides guidance on proposed interventions to improve the overall health of persons with overweight/obesity in the context of Type 2 Diabetes.
+The choice of antihyperglycemic therapy for Type 2 Diabetes reflects glycemic targets, atherosclerotic cardiovascular disease, congestive heart failure, chronic kidney disease, overweight/obesity, and nonalcoholic fatty liver disease.
+Glycemic control has an essential role in the prevention and decreased progression of Type 2 Diabetes complications.
+The 2022 American Association of Endocrinology Clinical Practice Guidelines update recommends that clinicians prescribe a glucagon-like peptide-1 receptor agonist or a sodium glucose cotransporter 2 inhibitor for Type 2 Diabetes patients with established or high risk for atherosclerotic cardiovascular disease, heart failure, and/or chronic kidney disease.
+The choice of antihyperglycemic therapy for Type 2 Diabetes includes consideration of the potential benefit for stroke or nonalcoholic fatty liver disease.
+The choice of therapy for Type 2 Diabetes includes ease of use and access to antihyperglycemic agents.
+The armamentarium of antihyperglycemic agents for Type 2 Diabetes has expanded over the past 2 decades beyond insulin secretagogues, thiazolidinediones, and metformin.
+Large prospective clinical trials have confirmed the efficacy of new medical therapies for glycemic control in Type 2 Diabetes and their positive impact on progression of atherosclerotic cardiovascular disease, congestive heart failure, and diabetic kidney disease.
+The evolution of basal and rapid-acting analog insulins has led to improvements in predictability of glucose response with decreased hypoglycemia in Type 2 Diabetes.
+Decision-making regarding prescription of antihyperglycemic agents and insulin analogs for Type 2 Diabetes should be based on what is most likely to benefit the patient, balanced with the risks and potential side effects.
+Barriers to access, including availability, cost, insurance coverage, and formularies, need to be considered when prescribing antihyperglycemic agents and insulin analogs for Type 2 Diabetes.
+The optimal hemoglobin A1c target for most patients with Type 2 Diabetes is ≤6.5% or as close to normal as is safe and achievable.
+Achieving a hemoglobin A1c goal of ≤6.5% for Type 2 Diabetes may require targeting fasting plasma glucose to <110 mg/dL and 2-hour postprandial glucose to <140 mg/dL.
+Tight glycemic control has a well-established impact on the prevention and/or decreased progression of microvascular and microangiopathic complications of Type 2 Diabetes.
+Pharmacologic therapies with a lower risk of hypoglycemia, such as glucagon-like peptide-1 receptor agonists and sodium glucose cotransporter 2 inhibitors, may allow for stricter glycemic control in Type 2 Diabetes.
+Patient-specific characteristics, such as limited life expectancy, history of severe hypoglycemia, and advanced renal disease, may recommend a less stringent hemoglobin A1c target for Type 2 Diabetes.
+Glycemic targets, including hemoglobin A1c, glucose management indicator, time in range, fasting blood glucose, and postprandial glucose, should be individualized for each patient with Type 2 Diabetes.
+Hemoglobin A1c is a convenient measurement for assessing glycemic control in Type 2 Diabetes and should be measured every 3 months when not at goal and a minimum of twice per year in persons at goal.
+Alternative glucose parameters, such as time in range and glucose management indicator, should be incorporated for monitoring and adjustment of therapy in Type 2 Diabetes when available.
+Therapeutic changes to achieve targets for glucose, lipids, and blood pressure should be considered at each visit, ideally every 3 months, for patients with Type 2 Diabetes.
+Hypoglycemia, defined as blood glucose <70 mg/dL, is associated with an increased risk for adverse outcomes, including mortality, in Type 2 Diabetes.
+Antihyperglycemic agents and hemoglobin A1c goals should be chosen to avoid hypoglycemia in Type 2 Diabetes.
+Agents such as dipeptidyl peptidase-4 inhibitors, glucagon-like peptide-1 receptor agonists, and sodium glucose cotransporter 2 inhibitors have a lower risk of hypoglycemia compared with insulin and sulfonylureas.
+Continuous glucose monitoring is highly recommended to assist persons with Type 2 Diabetes in reaching goals safely.
+Continuous glucose monitoring has provided a major advance in the treatment of persons with all forms of diabetes mellitus, including Type 2 Diabetes.
+Clinical trials have shown that continuous glucose monitoring is associated with increased time in range, improved hemoglobin A1c, and decreased hypoglycemia in Type 2 Diabetes.
+The 2021 American Association of Endocrinology Clinical Practice Guidelines recommend the use of continuous glucose monitoring for all persons with diabetes mellitus on multiple-dose insulin or an insulin pump.
+Comorbidities, such as hypertension and dyslipidemia, must be managed for comprehensive care of Type 2 Diabetes.
+Improvements in glycemic control must be accompanied by treatment of concomitant dyslipidemia and hypertension for optimized outcomes in Type 2 Diabetes.
+Lifestyle intervention is the essential foundation for the management of persons with prediabetes and Type 2 Diabetes (T2D).
+A comprehensive lifestyle intervention plan for persons with prediabetes and T2D should include assessment, counseling, and intervention of sleep hygiene and sleep disorders.
+A comprehensive lifestyle intervention plan for persons with prediabetes and T2D should also include promotion of healthy habits beyond diet, including moderation of alcohol intake and cessation of smoking.
+A comprehensive lifestyle intervention plan for persons with prediabetes and T2D should include monitoring for mood disturbances that can impact success in incorporating durable change.
+Clinicians must consider and incorporate pharmacologic and surgical interventions, including bariatric procedures, as indicated based on a patient-centered assessment for persons with overweight/obesity.
+In 2017, the American Association of Clinical Endocrinologists (AACE) published a position statement on the diagnostic term ABCD.
+The objective of the AACE document on ABCD was to emphasize the importance of viewing overweight/obesity as a chronic disease.
+The AACE document on ABCD emphasizes the importance of assessing persons with overweight/obesity for the existence of or risk for associated complications, beyond body mass index (BMI).
+Associated complications of overweight/obesity include prediabetes, dyslipidemia, hypertension (HTN), non-alcoholic fatty liver disease (NAFLD), atherosclerotic cardiovascular disease (ASCVD), and congestive heart failure (CHF) with reduced ejection fraction.
+Associated complications of overweight/obesity also include heart failure with preserved ejection fraction, chronic kidney disease (CKD), obstructive sleep apnea (OSA), osteoarthritis, gastroesophageal reflux disease, urinary incontinence, hypogonadism, polycystic ovary syndrome, and reduced fertility.
+Determination of the presence of ABCD complications allows for staging of persons with overweight/obesity, which can impact the approach to interventions for persons with overweight/obesity.
+Step 1 in the assessment of persons with overweight/obesity is to calculate body mass index (BMI) with the understanding of the published thresholds of what is overweight (≥25 kg/m²) or obese (≥30 kg/m²).
+Lower thresholds for overweight/obesity may apply for South, East, and Southeast Asian persons, specifically ≥23.5 kg/m² for overweight and ≥25 kg/m² for obese.
+Step 2 in the assessment of persons with overweight/obesity provides further classification of the stage of overweight/obesity by assessing for the presence of ABCD complications.
+The American Association of Clinical Endocrinologists (AACE) recommends a shift to stages 1, 2, and 3 for ABCD severity to avoid inviting treatment inertia at stage 0.
+The revised staging of ABCD incorporates weight bias/stigma and mental health as key components of ABCD that should be addressed in addition to the cardiometabolic and biomechanical complications which can be improved by treatment of obesity.
+Patients with overweight/obesity may have an elevated body mass index (BMI) but lack physical complications, which is classified as Stage 1.
+Patients with overweight/obesity without a substantially elevated body mass index (BMI) may already have manifested components of ABCD, and action is required.
+Stage 2 obesity includes patients with overweight/obesity who have ≥1 mild-to-moderate obesity complications.
+Stage 3 obesity includes patients with overweight/obesity who have multiple and/or more severe complications, including those already diagnosed with Type 2 Diabetes (T2D) as a severe ABCD complication.
+The combination of body mass index (BMI) with stage is helpful to inform the clinician of needed interventions for persons with overweight/obesity.
+Step 3 in the management of persons with overweight/obesity requires implementation of a comprehensive lifestyle modification plan that encompasses all aspects of the health of the patient.
+A comprehensive lifestyle modification plan for persons with overweight/obesity should include nutrition, physical activity, sleep, counseling, medications, and interventions.
+Persons with overweight or obesity should initiate caloric deprivation of 500 to 1000 kcal daily energy deficit in the context of a healthy diet to promote weight loss.
+In the context of the Complications-Centric Model for the Care of Persons with Overweight/Obesity, a minimum threshold of >5% to ≥10% weight loss is needed to have a positive impact on glycemia, blood pressure, and lipids in persons with overweight or obesity.
+Weight loss of ≥15% may help to mitigate other complications of the Complications-Centric Model for the Care of Persons with Overweight/Obesity, such as obstructive sleep apnea and nonalcoholic steatohepatitis, in persons with overweight or obesity.
+The selection of a diet for persons with overweight or obesity should be personalized, and choices include Mediterranean, low-fat, low-carbohydrate, very low–carbohydrate, vegetarian, vegan, and Dietary Approaches to Stop Hypertension diets.
+Structured diets with prepared meals or liquid meal replacements may increase adherence to the calorie limitations for persons with overweight or obesity.
+Adherence to calorie limitations for persons with overweight or obesity may also be improved with weight-loss programs or apps that encourage external accountability.
+A plan for physical activity for persons with overweight/obesity should take into account any physical limitations and disabilities that persons with overweight/obesity may have.
+The physical limitations and disabilities that persons with overweight/obesity may have may derive from overweight/obesity itself.
+The amount of physical activity for persons with overweight/obesity should progress to include moderate, aerobic exercise ≥150 minutes per week.
+The moderate, aerobic exercise for persons with overweight/obesity should be divided into 3 to 5 sessions per week.
+The physical activity plan for persons with overweight/obesity should combine moderate, aerobic exercise with 2 to 3 sessions of resistance training per week.
+The resistance training for persons with overweight/obesity should be performed 2 to 3 times per week.
+Reduced sleep duration is associated with adverse outcomes, including obesity, Type 2 Diabetes, Hypertension, Cardiovascular Disease, and mortality in persons with Type 2 Diabetes.
+In adults older than 18 years of age, 6 to 8 hours of sleep per night is recommended for the care of persons with overweight or obesity.
+Obstructive Sleep Apnea is highly prevalent in persons with Type 2 Diabetes and/or obesity.
+Clinicians should incorporate routine screening for sleep disorders in persons with Type 2 Diabetes and/or obesity, either clinically, with questions about symptoms of Obstructive Sleep Apnea, such as snoring, choking, daytime sleepiness, fatigue, and nonrestorative sleep.
+Clinicians should incorporate routine screening for sleep disorders in persons with Type 2 Diabetes and/or obesity, using a formal screening tool, such as the STOP-Bang questionnaire.
+Testing with home oximetry or a formal sleep study may be indicated for persons with Type 2 Diabetes and/or obesity who are suspected of having Obstructive Sleep Apnea.
+Persons with Type 2 Diabetes and/or obesity who meet criteria for Obstructive Sleep Apnea should be referred for appropriate diagnostic studies and intervention.
+Persons with Type 2 Diabetes and/or obesity who meet criteria for Obstructive Sleep Apnea should be referred for intervention, such as with prescription of a continuous positive airway pressure device.
+Depression and diabetes distress are prevalent in persons with Type 2 Diabetes and can result in nonadherence to diet, exercise, and medication regimens for Type 2 Diabetes.
+The World Health Organization Wellbeing Index is a potential formal screening tool for depression and diabetes distress in persons with Type 2 Diabetes.
+The Patient Health Questionnaire-9 is a potential formal screening tool for depression and diabetes distress in persons with Type 2 Diabetes.
+The Beck Depression Inventory II is a potential formal screening tool for depression and diabetes distress in persons with Type 2 Diabetes.
+Appropriate referral for cognitive behavioral therapy or medical intervention for depression should be considered when depression is present in persons with Type 2 Diabetes.
+Weight-loss medications should be considered, in combination with a reduced-calorie diet, to achieve and sustain weight-loss goals in patients with Type 2 Diabetes and a Body Mass Index of 27 kg/m^2 to 29.9 kg/m^2 with at least one ABCD complication.
+Weight-loss medications should be considered, in combination with a reduced-calorie diet, to achieve and sustain weight-loss goals in all persons with a Body Mass Index greater than 30 kg/m^2.
+The AACE Comprehensive T2D Management Algorithm provides Profiles of Weight-Loss Medications in Algorithm Fig 10.
+Caution is required for persons older than 65 years of age with Type 2 Diabetes and ABCD complications.
+Assessment of bone health is important for persons older than 65 years of age with Type 2 Diabetes and ABCD complications.
+Assessment of sarcopenia is important for persons older than 65 years of age with Type 2 Diabetes and ABCD complications.
+Metabolic procedures are an effective option for persons with Type 2 Diabetes and complications-centric model for the care of persons with overweight or obesity.
+Metabolic procedures should be considered in persons with Type 2 Diabetes and a Body Mass Index of 30 kg/m^2 to 34.9 kg/m^2 with uncontrolled Diabetes Mellitus in spite of lifestyle and medical therapy.
+Metabolic procedures should be considered in persons with Type 2 Diabetes and a Body Mass Index of 35 kg/m^2 or greater and one or more complications-centric model for the care of persons with overweight or obesity complications.
+Weight loss can remedy prediabetes in persons with Type 2 Diabetes and complications-centric model for the care of persons with overweight or obesity.
+Prediabetes is a cardiometabolic state resulting from failure of the pancreas to compensate for insulin resistance most often caused by overweight/obesity.
+The pancreas fails to compensate for insulin resistance, resulting in prediabetes, which is often caused by overweight/obesity.
+Prediabetes is defined by the presence of impaired fasting glucose (IFG) (100-125 mg/dL) and/or impaired glucose tolerance (IGT) (140-199 mg/dL) at 2 hours of an oral glucose tolerance test (OGTT) with ingestion of 75 g of glucose.
+An oral glucose tolerance test (OGTT) with ingestion of 75 g of glucose is used to confirm the diagnosis of prediabetes.
+A1C values of 5.7% to 6.4% may indicate chronic hyperglycemia and the existence of prediabetes in persons with prediabetes.
+Metabolic syndrome using National Cholesterol Education Program Adult Treatment Panel III criteria is considered a prediabetes equivalent, putting persons diagnosed with metabolic syndrome at high risk for developing type 2 diabetes (T2D).
+The prediabetes algorithm includes medical nutrition therapy with reduction and modification of caloric intake to achieve weight loss in persons with overweight or obesity who have prediabetes.
+The prediabetes algorithm includes appropriately prescribed physical activity for persons with prediabetes.
+The prediabetes algorithm includes avoidance of tobacco products for persons with prediabetes.
+The prediabetes algorithm includes adequate sleep quantity and quality for persons with prediabetes.
+Prediabetes confers an increased risk for progression to type 2 diabetes (T2D) and atherosclerotic cardiovascular disease (ASCVD) in persons with prediabetes.
+The treatment of prediabetes and metabolic syndrome should include weight loss and/or prevention of weight gain in persons with prediabetes and metabolic syndrome.
+The treatment of prediabetes and metabolic syndrome should include mitigation of the cardiovascular disease (CVD) risk factors hypertension (HTN) and dyslipidemia in persons with prediabetes and metabolic syndrome.
+The treatment of prediabetes and metabolic syndrome should include prevention of progression of nonalcoholic fatty liver disease (NAFLD) in persons with prediabetes and metabolic syndrome.
+The presence of prediabetes should alert the clinician to assess for additional complications of adiposity-based chronic diseases (ABCD) to guide clinical decision-making and therapeutic choices for persons with prediabetes.
+If overweight/obesity and/or adiposity-based chronic diseases (ABCD) are absent, the possibility of other etiologies of elevated glucose beyond insulin resistance should be considered in persons with prediabetes.
+Weight loss is highly effective in preventing the progression of prediabetes to type 2 diabetes (T2D) in persons with prediabetes.
+Lifestyle intervention to promote weight loss is essential for persons with prediabetes.
+The addition of weight-loss pharmacotherapies or bariatric procedures may need to be considered depending on patient-specific characteristics, including stage of obesity, for persons with prediabetes.
+Weight reduction of 7% to 10% in persons with overweight/obesity is an important threshold for preventing progression to type 2 diabetes (T2D) in persons with prediabetes.
+Lifestyle interventions that have been shown to reduce progression to type 2 diabetes (T2D) and decrease the risk of cardiovascular disease (CVD) should be a part of the strategy for all individuals with prediabetes.
+A healthy meal plan, such as the Mediterranean or DASH diet, should be part of the strategy for all individuals with prediabetes.
+Other diets, including low-fat, low-carbohydrate, vegetarian, and vegan diets, can also be considered for persons with prediabetes.
+Regular physical activity through a combination of aerobic and resistance exercises should be added to the strategy for persons with prediabetes.
+Nonexercise active leisure activities should be encouraged to reduce sedentary behavior in persons with prediabetes.
+Behavioral health should be incorporated for optimal outcomes in persons with prediabetes.
+Pharmacotherapy for weight loss should be considered when lifestyle measures alone are inadequate to achieve goal weight loss in those with adiposity-based chronic diseases (ABCD) and prediabetes.
+The U.S. Food and Drug Administration (FDA)-approved agents semaglutide 2.4 mg, liraglutide 3 mg, and phentermine/topiramate-extended release (ER) have efficacy to achieve weight-loss goals that impact prediabetes.
+Tirzepatide is a weekly dual glucose-dependent insulinotropic polypeptide (GIP) and GLP-1 RA that has been shown to cause substantial weight loss in persons with overweight/obesity but has not received regulatory approval for this indication at this time.
+Other weight-loss medications approved by the FDA, such as naltrexone-ER/bupropion-ER, short-term phentermine, or orlistat, could be considered if the above medications are not tolerated or are not accessible to the patient with prediabetes.
+Hydrogel capsules, containing cellulose and citric acid, taken before meals, achieved ≥5% weight loss in a majority of participants in placebo-controlled trials, including persons with prediabetes and type 2 diabetes (T2D).
+Additional devices that have regulatory approval by the FDA for the treatment of obesity, but not type 2 diabetes (T2D), include intragastric balloons, transpyloric shuttle, and gastric aspiration.
+Bariatric procedures are more effective than lifestyle interventions and medications in weight reduction and should be considered in those with prediabetes with a body mass index (BMI) >35 kg/m².
+For patients with prediabetes who do not meet the BMI criteria of overweight/obesity but who still require intervention for prediabetes after implementation of lifestyle modifications, pharmacologic agents with evidence of efficacy in preventing progression to type 2 diabetes (T2D) should be considered.
+Metformin, pioglitazone, and acarbose have evidence of efficacy in clinical trials for preventing progression to type 2 diabetes (T2D) in persons with prediabetes.
+Despite the interventions discussed above, persons with prediabetes are at high risk to progress to type 2 diabetes (T2D).
+Clinicians are directed to sections on the Complications-Centric Algorithm for Glycemic Control and the Glucose-Centric Algorithm for Glycemic Control for further guidance on antihyperglycemic pharmacotherapy for persons with prediabetes.
+Treatment of dyslipidemia is an essential component of Diabetes Mellitus management and prediabetes management.
+The combined effects of insulin deficiency, insulin resistance, and hyperglycemia in patients with Diabetes Mellitus cause multiple disruptions in lipoprotein metabolism.
+The disruptions in lipoprotein metabolism in patients with Diabetes Mellitus lead to an especially atherogenic state characterized by increased levels of apolipoprotein B-containing particles.
+The atherogenic state in patients with Diabetes Mellitus is characterized by increased levels of triglyceride-rich very low-density lipoprotein, intermediate-density lipoprotein, and remnant particles.
+The atherogenic state in patients with Diabetes Mellitus results in low levels of high-density lipoprotein-cholesterol and increased levels of small, dense, low-density lipoprotein cholesterol.
+Additional detailed guidance for management of dyslipidemia in patients with Diabetes Mellitus is available in the 2017 AACE Guidelines for Management of Dyslipidemia and Prevention of Cardiovascular Disease.
+Additional detailed guidance for management of dyslipidemia in patients with Diabetes Mellitus is available in the 2020 Algorithm on the Management of Dyslipidemia and Prevention of Cardiovascular Disease.
+All adult persons with prediabetes or type 2 diabetes should be screened with a lipid panel at diagnosis and annually to assess atherosclerotic cardiovascular disease risk.
+The standard lipid panel for adult persons with prediabetes or type 2 diabetes includes total cholesterol, triglyceride levels, high-density lipoprotein cholesterol, and low-density lipoprotein cholesterol.
+Fasting lipid panels are not necessary for therapeutic decisions for adult persons with prediabetes or type 2 diabetes, and nonfasting lipid panels may aid patient compliance with timely blood draws.
+Secondary causes of dyslipidemia in adult persons with prediabetes or type 2 diabetes should be excluded.
+There may be a contributing underlying medical condition or medication in adult persons with prediabetes or type 2 diabetes that can cause dyslipidemia, and intervention—if medically appropriate—may improve or resolve the abnormalities.
+Evaluation of dyslipidemia in adult persons with prediabetes or type 2 diabetes should begin with a medical, family, and nutrition history.
+All medications, over-the-counter medications, and supplements of adult persons with prediabetes or type 2 diabetes should be reviewed to assess their potential impact on dyslipidemia.
+Laboratory testing for thyroid, renal, and liver function may expose secondary causes of dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Adult persons with prediabetes or type 2 diabetes and baseline low-density lipoprotein cholesterol >190 mg/dL should be investigated for familial hypercholesterolemia.
+Adult persons with prediabetes or type 2 diabetes and extremely high triglyceride levels should be considered for a diagnosis of familial chylomicronemia syndrome.
+Adult persons with prediabetes or type 2 diabetes and suspected familial hypercholesterolemia or familial chylomicronemia syndrome should be referred to a lipid specialist for assessment and management.
+Overweight or obesity is a medical condition that can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Hyperglycemia is a medical condition that can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Hypothyroidism is a medical condition that can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Pregnancy is a medical condition that can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Stage ≥3 chronic kidney disease, particularly with albuminuria, is a medical condition that can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Nephrotic syndrome is a medical condition that can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Cholestatic disease is a medical condition that can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Lipodystrophy is a medical condition that can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Paraproteinemia, such as dysgammaglobulinemia or multiple myeloma, is a medical condition that can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Chronic inflammatory conditions, such as rheumatoid arthritis or systemic lupus erythematosus, can cause dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Oral estrogens and progestins can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Anabolic steroids can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Selective estrogen receptor modulators can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Highly active antiretroviral therapy, such as protease inhibitors for the treatment of HIV, can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Immunosuppressive medications, such as cyclosporine or mammalian target of rapamycin kinase inhibitor, can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Glucocorticoids can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Retinoids can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Interferon can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Taxol derivatives can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+L-asparaginase can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Cyclophosphamide can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Atypical antipsychotic agents can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Beta-blockers can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Thiazide diuretics can cause or exacerbate dyslipidemia in adult persons with prediabetes or type 2 diabetes.
+Bile acid sequestrants can reduce cholesterol levels in adult persons with prediabetes or type 2 diabetes, but may also increase triglyceride levels.
+The impact of initiation of antihyperglycemic therapy on triglyceride levels and low-density lipoprotein cholesterol levels should be taken into account when considering adding or titrating antilipid therapies in adult persons with prediabetes or type 2 diabetes.
+Ancillary apolipoprotein B measurement is recommended to assess for residual atherosclerotic cardiovascular disease risk from remnant and small dense lipoproteins not revealed with a standard lipid panel in adult persons with prediabetes or type 2 diabetes.
+Apolipoprotein B is superior for prediction of atherosclerotic cardiovascular disease risk over low-density lipoprotein cholesterol in adult persons with prediabetes or type 2 diabetes.
+Apolipoprotein B is more accurate than non-high-density lipoprotein cholesterol for prediction of atherosclerotic cardiovascular disease risk in adult persons with prediabetes or type 2 diabetes.
+High sensitivity C-reactive protein is a biomarker that is independently associated with increased risk of atherosclerotic cardiovascular disease events in adult persons with prediabetes or type 2 diabetes.
+Lipoprotein(a) is a biomarker that is independently associated with increased risk of atherosclerotic cardiovascular disease events in adult persons with prediabetes or type 2 diabetes.
+Coronary artery calcium score is a biomarker that is independently associated with increased risk of atherosclerotic cardiovascular disease events in adult persons with prediabetes or type 2 diabetes.
+Ankle-brachial index is a biomarker that is independently associated with increased risk of atherosclerotic cardiovascular disease events in adult persons with prediabetes or type 2 diabetes.
+A risk calculator can be helpful to estimate 10-year risk for atherosclerotic cardiovascular disease in adult persons with prediabetes or type 2 diabetes when the decision to initiate or intensify treatment is uncertain.
+A diet high in carbohydrates and/or simple sugars combined with a sedentary lifestyle is the most common secondary cause of dyslipidemia.
+Excessive alcohol consumption contributes to dyslipidemia, particularly hypertriglyceridemia in patients with dyslipidemia.
+Minimization of alcohol consumption should be encouraged in patients with dyslipidemia.
+Patients with dyslipidemia should be provided with tools to promote weight loss with caloric deprivation if the patients with dyslipidemia are overweight or obese.
+Loss of body weight of 5% or more improves triglyceride levels in patients with dyslipidemia.
+Continued further decline in triglyceride levels is noted even at more than 15% weight loss in patients with dyslipidemia.
+Counseling on lifestyle interventions is essential for patients with dyslipidemia.
+Lifestyle interventions for patients with dyslipidemia should include advice on a healthful diet, such as whole-foods, plant-based, Mediterranean, and DASH diets.
+Patients with dyslipidemia should avoid processed foods, saturated fat, simple carbohydrates, white starches, and added sugars as part of their lifestyle intervention.
+Patients with dyslipidemia should increase their intake of dietary fiber to 30-40 grams per day as part of their lifestyle intervention.
+Patients with dyslipidemia should increase their intake of lean proteins, such as fish, lean meat, and skinless poultry, as part of their lifestyle intervention.
+Exercise regimens for patients with dyslipidemia should include a minimum of 150 minutes per week of moderate-intensity activity.
+Moderate-intensity activity for patients with dyslipidemia should be divided into 3 to 5 sessions per week.
+Patients with dyslipidemia should participate in at least 2 resistance training sessions per week as part of their exercise regimen.
+Type 2 Diabetes treatment targets are based on the duration of Type 2 Diabetes and the presence of traditional Atherosclerotic Cardiovascular Disease risk factors, including advancing age, Hypertension, Chronic Kidney Disease stage ≥3, smoking, family history of premature Atherosclerotic Cardiovascular Disease in males <55 years of age and females <65 years of age, low High-Density Lipoprotein Cholesterol, or high non–High-Density Lipoprotein Cholesterol.
+Assessment of the patient's risk category helps to determine lipid treatment targets and direct appropriate lipid-lowering therapy for patients with Type 2 Diabetes.
+Patients with prediabetes or Type 2 Diabetes can be classified to set goals of therapy based on their risk category.
+Patients with Type 2 Diabetes duration <10 years and <2 additional traditional Atherosclerotic Cardiovascular Disease risk factors and no target organ damage have a high risk of <10% 10-year risk.
+The goal for patients with high risk is to achieve Low-Density Lipoprotein Cholesterol <100 mg/dL, apolipoprotein B <90 mg/dL, and non–High-Density Lipoprotein Cholesterol <130 mg/dL.
+Patients with Type 2 Diabetes duration >10 years with ≥2 traditional Atherosclerotic Cardiovascular Disease risk factors and no target organ damage have a very high risk of 10%-20% 10-year risk.
+The goal for patients with very high risk is to achieve Low-Density Lipoprotein Cholesterol <70 mg/dL, apolipoprotein B <80 mg/dL, and non–High-Density Lipoprotein Cholesterol <100 mg/dL.
+Patients with Type 2 Diabetes or prediabetes plus established Atherosclerotic Cardiovascular Disease or target organ damage have an extreme risk of >20% 10-year risk.
+Target organ damage includes left ventricular systolic or diastolic dysfunction, estimated glomerular filtration rate <45 mL/min/1.73 m², or Ankle-Brachial Index <0.9.
+The goal for patients with extreme risk is to achieve Low-Density Lipoprotein Cholesterol <55 mg/dL, apolipoprotein B <70 mg/dL, and non–High-Density Lipoprotein Cholesterol <90 mg/dL.
+Unless contraindicated, a statin should be used as the first-line therapy for dyslipidemia in persons with Type 2 Diabetes.
+High-risk patients with Type 2 Diabetes and a 10-year risk of less than 10% should be started on moderate-intensity statin therapy, which results in a Low-Density Lipoprotein Cholesterol reduction in the range of 30% to 40%.
+For patients with prediabetes, the benefits of statin therapy should be weighed in the context of their Atherosclerotic Cardiovascular Disease risk score and the minor risk of progression to Type 2 Diabetes with statin use.
+For persons at very high risk, with a 10%-20% 10-year risk, and extreme risk, with a greater than 20% 10-year risk, high-intensity statin therapy, which lowers Low-Density Lipoprotein Cholesterol by 50% to 60%, should be started regardless of baseline Low-Density Lipoprotein Cholesterol level.
+Residual risk can persist even with maximally tolerated statin therapy in persons with multiple risk factors and persons with stable clinical Atherosclerotic Cardiovascular Disease.
+Lipids should initially be monitored at 6- to 12-week intervals to determine if intensification of statin therapy is needed and then at less frequent intervals, such as 6 months, once lipid goals are attained.
+Some patients may manifest statin intolerance, characterized by bilateral muscle symptoms, including pain, weakness, cramping, and stiffness, associated with the onset of statin use.
+Statin-associated muscle symptoms are characterized by bilateral muscle symptoms, including pain, weakness, cramping, and stiffness, associated with the onset of statin use, but the causality is not always clear.
+The incidence of statin intolerance is in the range of 5% to 20%, with lower rates in placebo-controlled trials, and clinical trials with direct queries about muscle symptoms did not show a significant difference in the rates of muscle symptoms among statin and placebo groups.
+Statin-associated muscle symptoms may resolve with discontinuation of statin therapy and recur when rechallenged with the same or alternative statin.
+Management of statin-associated muscle symptoms includes acknowledging the patient's symptoms and considering the addition of creatine kinase tests.
+The FDA-accepted definition of statin-induced myopathy is pain or weakness accompanied by a creatine kinase level greater than 10-fold higher than the upper limit of normal laboratory range, but this is rare, occurring in less than 0.1% of patients over placebo.
+The risk of severe rhabdomyolysis with creatine kinase levels greater than 40-fold the upper limit of normal is approximately 1 to 4 in 10,000 per year.
+Risk factors for myopathy include age greater than 65 years, female sex, low Body Mass Index, East Asian heritage, history of muscle symptoms, impaired renal and/or hepatic function, Diabetes Mellitus, HIV infection, concomitant medications, such as fibrates, erythromycin, and fluconazole, vitamin D deficiency, hypothyroidism, and acute infection.
+Drug interactions should be considered, particularly for concomitant medications and statins that have high first-pass metabolism and are metabolized through CYP3A4, such as simvastatin and lovastatin.
+When symptoms of statin-associated muscle symptoms resolve, and if myopathy was not severe, a rechallenge with a lower dose or less frequent dosing of statin therapy, or use of a hydrophilic statin with less association with myopathy, such as pitavastatin or fluvastatin, may allow continuation of statin therapy.
+Even though observational studies showed that normalization of 25-hydroxy-vitamin D3 levels may help with statin-induced myopathy, a secondary analysis of the VITamin D and OmegA-3 Trial showed that the frequency of statin-induced myopathy did not differ with vitamin D supplementation compared with placebo.
+Adding coenzyme Q10 supplementation can be considered for patients with statin-induced myopathy.
+Persons with Type 2 Diabetes should undergo additional laboratory testing of lipid levels at frequent intervals, every 6-12 weeks, to direct titration of the statin or addition of an adjunct therapy in order to achieve lipid targets.
+Less frequent testing intervals can be considered for persons with Type 2 Diabetes once lipid goals are consistently achieved.
+If lipid targets cannot be achieved with maximally tolerated statin therapy in persons with Type 2 Diabetes, then the addition of the cholesterol absorption inhibitor ezetimibe at a dose of 10 mg/day should be considered.
+If treatment goals are not met on a maximally tolerated statin combined with ezetimibe in persons with Type 2 Diabetes, additional therapy with a bile acid sequestrant, such as colesevelam, colestipol, or cholestyramine, is an option.
+If treatment goals are not met on a maximally tolerated statin combined with ezetimibe in persons with Type 2 Diabetes, additional therapy with bempedoic acid, an adenosine triphosphate-citrate lyase inhibitor, is an option.
+In extreme risk patients with Type 2 Diabetes and lipid values above targets on maximal high-intensity statin in combination with add-on therapies, such as ezetimibe, bile acid sequestrants, or bempedoic acid, there may be a need for more aggressive therapy with a proprotein convertase subtilisin/kexin type 9 inhibitor.
+In extreme risk patients with Type 2 Diabetes and lipid values above targets on maximal high-intensity statin in combination with add-on therapies, such as ezetimibe, bile acid sequestrants, or bempedoic acid, there may be a need for more aggressive therapy with inclisiran, a proprotein convertase subtilisin/kexin type 9 siRNA.
+The use of a proprotein convertase subtilisin/kexin type 9 inhibitor in extreme risk patients with Type 2 Diabetes should be considered with regard to approved indications and access.
+The use of inclisiran in extreme risk patients with Type 2 Diabetes should be considered with regard to approved indications and access.
+Management of hypertriglyceridemia is important for optimal lipid levels in persons with Type 2 Diabetes, with a goal of less than 150 mg/dL.
+Pioglitazone and/or insulin may improve both glycemic control and triglyceride levels in persons with Type 2 Diabetes.
+In persons with Type 2 Diabetes and a fasting triglyceride level of more than 200 mg/dL, despite a maximally tolerated statin, optimal glucose control, tight adherence to a healthy diet, fenofibrate, and/or high-dose prescription grade omega-3 fatty acid may help to achieve goals for triglyceride levels and non-HDL-C.
+Fenofibrate and/or high-dose prescription grade omega-3 fatty acid may help to achieve goals for triglyceride levels and non-HDL-C in persons with Type 2 Diabetes and a fasting triglyceride level of more than 200 mg/dL.
+Over-the-counter fish oil supplements are not approved by the FDA for hypertriglyceridemia management in persons with Type 2 Diabetes.
+The addition of fibrates to an optimally dosed statin for triglyceride levels more than 200 to 500 mg/dL has not been definitively established to reduce cardiovascular risk in persons with Type 2 Diabetes.
+The Pemafibrate to Reduce Cardiovascular Outcomes by Reducing Triglycerides in Patients with Diabetes trial did not reduce the incidence of cardiovascular events in persons with Type 2 Diabetes and triglyceride levels more than 200 mg/dL, despite lowering triglyceride, VLDL, remnant cholesterol, and Apo C-III levels.
+Subgroup analysis and meta-analyses of trials with fibrates have shown improved atherosclerotic cardiovascular disease outcomes in persons with elevated triglyceride levels and/or low HDL-C levels.
+The Reduction of Cardiovascular Events with Icosapent Ethyl - Intervention Trial demonstrated that the addition of icosapent ethyl to statin therapy positively reduced cardiovascular disease events by 25% in persons with Type 2 Diabetes and triglyceride levels more than 135 mg/dL and atherosclerotic cardiovascular disease or age more than 50 years and a second cardiovascular risk factor.
+Icosapent ethyl should be considered for persons with Type 2 Diabetes and triglyceride levels more than 135 mg/dL and established atherosclerotic cardiovascular disease or two or more additional traditional cardiovascular disease risk factors.
+A very low-fat diet may be required in addition to a fibrate and/or prescription omega-3 fatty acid for persons with severe hypertriglyceridemia, defined as triglyceride levels of 1000 mg/dL or more.
+Niacin may be needed to lower triglyceride levels and reduce the risk of pancreatitis in persons with refractory hypertriglyceridemia and a fasting triglyceride level of more than 1000 mg/dL.
+Niacin may lower triglyceride levels and Lp(a) but does not reduce atherosclerotic cardiovascular disease and can worsen glycemia in persons with Type 2 Diabetes.
+Hypertension is prevalent among persons with Type 2 Diabetes and increases the risk of macrovascular and microvascular complications of Diabetes Mellitus.
+The coexistence of prediabetes and Hypertension also increases the risk of Cardiovascular events.
+Data from the UK Prospective Diabetes Study demonstrated that increased Blood Pressure control in persons with Type 2 Diabetes decreased the risk of death related to Diabetes Mellitus and micro- and macrovascular complications.
+The American Association of Clinical Endocrinologists has set a systolic Blood Pressure goal for the majority of patients with Type 2 Diabetes as less than 130 mm Hg with a diastolic Blood Pressure goal of less than 80 mm Hg.
+A lower target Blood Pressure can be considered for persons with micro- or macroalbuminuria, moderate or high risk for Atherosclerotic Cardiovascular Disease, peripheral vascular disease, or retinopathy.
+Some persons with Type 2 Diabetes may not tolerate a Blood Pressure goal of less than 130/80 mm Hg, including those with autonomic neuropathy with orthostatic hypotension, acute coronary syndrome, frailty, or medication intolerance.
+The accuracy of Blood Pressure measurement in the clinical setting should be ensured using appropriately maintained and calibrated equipment.
+Trained and proficient medical staff should be used to ensure the accuracy of Blood Pressure measurement in the clinical setting.
+The patient should be in the appropriate position, such as sitting in a chair with feet on floor, arm supported at heart level, with a correctly sized cuff, to ensure the accuracy of Blood Pressure measurement.
+Ideally, serial Blood Pressure measurements should be taken and averaged to ensure accurate assessment of Blood Pressure in patients with Type 2 Diabetes.
+Weight loss of ≥5% in patients with hypertension lowers blood pressure with the largest impact in patients with hypertension who lose 10% to >15% of their body weight.
+Exercise several times per week is an important component in the treatment of hypertension in patients with hypertension.
+Patients with hypertension should be counseled on limiting dietary sodium, such as with the DASH diet, to help manage their hypertension.
+The DASH diet has been demonstrated to lower blood pressure in patients with hypertension.
+Mediterranean diets have been demonstrated to lower blood pressure in patients with hypertension.
+Endurance, or aerobic, training reduces both systolic and diastolic blood pressure in patients with hypertension.
+Dynamic resistance training reduces both systolic and diastolic blood pressure in patients with hypertension.
+Angiotensin-converting enzyme inhibitors or angiotensin II receptor blockers are considered first-line therapies for Hypertension in persons with Type 2 Diabetes, particularly in those with Diabetic Kidney Disease.
+Angiotensin-converting enzyme inhibitors and angiotensin II receptor blockers are efficacious therapies for Hypertension in persons with Type 2 Diabetes and Diabetic Kidney Disease.
+There is no additional benefit for coadministration of an angiotensin-converting enzyme inhibitor and an angiotensin II receptor blocker together for Hypertension in persons with Type 2 Diabetes and Diabetic Kidney Disease.
+Coadministration of an angiotensin-converting enzyme inhibitor and an angiotensin II receptor blocker together for Hypertension in persons with Type 2 Diabetes and Diabetic Kidney Disease may cause harm.
+The dose of angiotensin-converting enzyme inhibitors or angiotensin II receptor blockers should be titrated up on a regular basis, at a minimum every 2-3 months, to reach the Blood Pressure goal for Hypertension in persons with Type 2 Diabetes and Diabetic Kidney Disease.
+For persons with Type 2 Diabetes and Diabetic Kidney Disease who manifest intolerance to an angiotensin-converting enzyme inhibitor, an angiotensin II receptor blocker can be substituted as a therapy for Hypertension.
+If the initial Blood Pressure is greater than 150/100 mm Hg in persons with Type 2 Diabetes and Diabetic Kidney Disease, dual therapy with angiotensin-converting enzyme inhibitors or angiotensin II receptor blockers may need to be used at the outset for Hypertension.
+If the Blood Pressure goal is not achieved with optimally titrated Angiotensin-Converting Enzyme Inhibitor or Angiotensin Receptor Blocker therapy alone, additional add-on therapy is needed for patients with Hypertension.
+Other antihypertensive agents also have shown efficacy in slowing Glomerular Filtration Rate decline in patients with Hypertension.
+The goal Blood Pressure is less than 130 mmHg systolic and less than 80 mmHg diastolic for patients with Hypertension.
+A Blood Pressure of less than 120 mmHg systolic and less than 70 mmHg diastolic is considered for patients with Microalbuminuria or Macroalbuminuria or Moderate-to-High Risk or Established Atherosclerotic Cardiovascular Disease or Peripheral Vascular Disease or Retinopathy.
+The goal Blood Pressure may be higher for patients with Autonomic Neuropathy or Orthostatic Hypotension or Acute Coronary Syndrome or Frailty or Medication Intolerance.
+Lifestyle intervention includes decreasing Sodium Intake and following a specific Diet, such as DASH or Mediterranean, and increasing Physical Activity to achieve Optimal Weight for patients with Hypertension.
+Angiotensin Receptor Blocker or Angiotensin-Converting Enzyme Inhibitor is used as initial therapy for patients with Hypertension.
+For initial Blood Pressure greater than 150/100 mmHg, dual therapy combined with another agent is considered for patients with Hypertension.
+The medication dose or add-on therapy should be titrated every 2-3 months to reach the goal Blood Pressure for patients with Hypertension.
+Thiazide or Calcium Channel Blocker is used as add-on therapy for patients with Hypertension.
+Combined α-β Blocker or β1 Selective Blocker or Mineralocorticoid Receptor Antagonist is used as add-on therapy for patients with Hypertension.
+Additional antihypertensive agents, such as Central α2 Agonist or Peripheral α1-Blocker or Hydralazine, are used as add-on therapy for patients with Hypertension.
+Patient-specific characteristics, such as Diabetic Kidney Disease, Retinopathy, Atherosclerotic Cardiovascular Disease, post-Myocardial Infarction, Congestive Heart Failure, age, and race, should be considered when determining the goal Blood Pressure.
+Angiotensin-Converting Enzyme Inhibitor and Angiotensin Receptor Blocker reduce the progression of Diabetic Kidney Disease and are used as first-line therapy for patients with Urine Albumin-to-Creatinine Ratio greater than 30 mg/g.
+Thiazide or Calcium Channel Blocker may also be appropriate as first-line therapy in the absence of albuminuria for patients with Hypertension.
+Angiotensin-Converting Enzyme Inhibitor and Angiotensin Receptor Blocker should not be used concomitantly for patients with Hypertension.
+Pregnancy should be ruled out before initiating Angiotensin-Converting Enzyme Inhibitor or Angiotensin Receptor Blocker therapy for patients with Hypertension.
+Chlorthalidone, indapamide, or hydrochlorothiazide is used as a Thiazide diuretic for patients with Hypertension.
+Dihydropyridine, such as amlodipine or nifedipine, is used as a Calcium Channel Blocker unless there is an indication for non-dihydropyridine for patients with Hypertension.
+Carvedilol, labetalol, or dilevalol is used as a Combined α-β Blocker for patients with Hypertension.
+Nebivolol or betaxolol is used as a β1 Selective Blocker for patients with Hypertension.
+Mineralocorticoid Receptor Antagonist is used for patients with Resistant Hypertension and greater than 140/90 mmHg on at least three agents, including a maximum-dose diuretic.
+Laboratory evaluation for hyperaldosteronism is indicated for patients with Resistant Hypertension.
+Finerenone is recommended for patients with Chronic Kidney Disease associated with Diabetes and estimated Glomerular Filtration Rate greater than or equal to 25 mL/min/1.73m² and Urine Albumin-to-Creatinine Ratio greater than or equal to 30 mg/g.
+The initiation of Sodium-Glucose Cotransporter 2 Inhibitor or Glucagon-Like Peptide-1 Receptor Agonist may mildly lower Blood Pressure for patients with Hypertension.
+In patients with Type 2 Diabetes and Hypertension, including diuretics and calcium channel blockers, a Thiazide diuretic is an effective second-line antihypertensive agent.
+A dihydropyridine Calcium Channel Blocker, such as amlodipine or nifedipine, can be considered as add-on therapy for patients with Hypertension.
+Many patients with Hypertension can require multiple antihypertensive medications to achieve their goal Blood Pressure.
+Additional therapies, including β-blockade, can be used to achieve the goal Blood Pressure for patients with Hypertension.
+β-blockers can be associated with weight gain, which may be more pronounced with older agents, such as atenolol or metoprolol, for patients with Hypertension.
+Newer α-β blockade, such as carvedilol, labetalol, or dilevalol, or β1-selective agents, such as nebivolol or betaxolol, may be more weight-sparing for patients with Hypertension.
+Central α2 agonist, such as clonidine, or a peripheral α1-blocker, such as doxazosin, prazosin, or terazosin, may be needed for patients who are still hypertensive despite multiple therapies.
+Hydralazine may be an effective adjunct therapy but requires multiple doses throughout the day for patients with Hypertension.
+Primary hyperaldosteronism is an underdiagnosed cause of endocrine Hypertension and should be screened for in patients with Resistant Hypertension.
+Patients with Resistant Hypertension should be screened for primary hyperaldosteronism if they have a Blood Pressure greater than 140/90 mmHg on at least three medications, including a maximum-dose diuretic.
+Mineralocorticoid Receptor Antagonist is the rational choice for the medical management of primary hyperaldosteronism and can also be considered for Resistant Hypertension in patients with Type 2 Diabetes.
+More frequent laboratory monitoring of potassium levels and kidney function should be performed in patients on a combination of Angiotensin-Converting Enzyme Inhibitor or Angiotensin Receptor Blocker with Mineralocorticoid Receptor Antagonist.
+Finerenone has benefits for the progression of Chronic Kidney Disease and risk of Heart Failure, Atherosclerotic Cardiovascular Disease events, and related mortality in patients with Type 2 Diabetes and microalbuminuria or macroalbuminuria or more advanced Chronic Kidney Disease but with an estimated Glomerular Filtration Rate greater than 25 mL/min/1.73m².
+Finerenone can modestly reduce systolic Blood Pressure, and its effects are independent of pretreatment Blood Pressure levels for patients with Hypertension.
+The regulatory approval of finerenone is for risk reduction for estimated Glomerular Filtration Rate decline, end-stage kidney disease, Cardiovascular death, nonfatal Myocardial Infarction, and hospitalization for Heart Failure in patients with Chronic Kidney Disease and Type 2 Diabetes.
+Persons with Type 2 Diabetes (T2D) experience significant morbidity caused by Atherosclerotic Cardiovascular Disease (ASCVD), which is the leading cause of mortality in T2D despite contemporary therapy with lipid-modifying, antiplatelet, and antihypertensive agents.
+Therapeutic lifestyle changes, including a healthy meal plan, regular physical activity, healthful behavior practices, and weight management, remain a fundamental component of glycemic control in persons with T2D.
+Some antihyperglycemic agents, such as Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RA) and Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i), have been demonstrated to reduce ASCVD risk in persons with T2D and established ASCVD or at high risk for ASCVD.
+The Cardiovascular Outcomes Trials (CVOTs) demonstrate that each antihyperglycemic agent has distinct effects on various components of Cardiovascular (CV) risk in persons with T2D.
+There is a need for a paradigm shift from an exclusively glucose-centric approach to add a complications-centric approach in the algorithm for glycemic control of persons with T2D.
+Three of the GLP-1 RAs, specifically liraglutide, semaglutide, and dulaglutide, have been demonstrated to significantly lower the risk of major adverse cardiovascular events (MACEs) in persons with T2D.
+SGLT2is lower the risk of hospitalization for Heart Failure (HF), improve renal outcomes, and some reduce the risk of CV death and/or MACE in persons with T2D.
+The definition of high risk for ASCVD in persons with T2D generally includes albuminuria or proteinuria, Hypertension (HTN), and Left Ventricular (LV) hypertrophy, LV systolic or diastolic dysfunction, and/or Ankle-Brachial Index (ABI) <0.9.
+A 2021 meta-analysis of GLP-1 RA CVOTs found a 14% reduction in risk of MACEs in persons with T2D with or without established ASCVD.
+When persons with T2D have established ASCVD or are at high risk, a GLP-1 RA with proven CV benefit should be initiated as a first-line therapy independent of A1C goal or other antihyperglycemic treatments, including metformin.
+As an alternative to GLP-1 RA, clinicians may recommend initiating an SGLT2i with proven CV benefit to reduce the risk of MACE or CV death in persons with T2D and established ASCVD.
+For persons with T2D and established ASCVD or at high risk for ASCVD, the use of an SGLT2i reduces the risk of hospitalization for HF regardless of background antihyperglycemic therapy, CV therapy, or A1C.
+SGLT2is have been shown to significantly and robustly reduce the risk of hospitalization for HF or CV death in persons with T2D with or without ASCVD.
+A recent meta-analysis showed that use of an SGLT2i resulted in a 32% reduction in risk of hospitalization for HF and a 15% reduction in CV death compared with placebo in persons with T2D.
+SGLT2is should be recommended in persons with T2D and HF regardless of A1C goal or other antihyperglycemic treatments, including metformin.
+Studies with Dipeptidyl Peptidase-4 Inhibitors (DPP-4i) have shown neutrality compared with placebo regarding MACEs, but saxagliptin has been shown to increase the rate of HF hospitalizations in persons with T2D.
+Thiazolidinediones (TZDs) can worsen fluid retention and should not be used in persons with T2D who have symptomatic HF.
+Pioglitazone, a TZD, appears to reduce the risk of recurrent stroke and should also be considered to reduce the risk of recurrent stroke in persons with insulin resistance, prediabetes, or T2D and a prior transient ischemic attack (TIA) or stroke.
+The risk of stroke is markedly increased in persons with Diabetes Mellitus (DM), with a National Health and Nutrition Examination Survey study demonstrating an increased risk.
+Across meta-analyses, GLP-1 RAs appear to reduce risk of stroke by 15% to 17% in persons with T2D and prior ASCVD or at high risk for ASCVD.
+The 3 GLP-1 RA agents approved by the FDA to reduce the risk of MACEs, including stroke, are dulaglutide, liraglutide, and subcutaneous semaglutide, in persons with established Cardiovascular Disease (CVD).
+In persons with T2D and ASCVD or those at high risk for ASCVD, use of GLP-1 RA with proven benefit is recommended to reduce stroke risk.
+With regard to stroke and SGLT2i, 2 meta-analyses have shown that there was a reduced Hazard Ratio (HR) of 0.5 for hemorrhagic stroke when pooling data from completed SGLT2i trials.
+Nearly 50% of U.S. adults with kidney failure have DM, and the evidence for benefit of SGLT2is to reduce adverse renal outcomes is robust.
+Use of an SGLT2i with proven benefit is recommended as foundational therapy to reduce progression of Diabetic Kidney Disease (DKD) and CVD risk for persons with T2D and DKD with estimated Glomerular Filtration Rate (eGFR) 25 mL/min/1.73 m^2 or 20 mL/min/1.73 m^2 if HF is also present.
+GLP-1 RAs are also an option to reduce progression of albuminuria, eGFR decline, and ASCVD risk in persons with T2D and DKD with eGFR ≥15 mL/min/1.73 m^2.
+The A1C target should be individualized in persons with T2D and ASCVD or at high risk for ASCVD, with a target A1C of ≤6.5% in most nonpregnant adults if it can be achieved safely.
+Newer antihyperglycemic agents, such as GLP-1 RA and SGLT2i, are associated with a lower risk of hypoglycemia unless used with Sulfonylureas (SUs), glinides, and/or insulin in persons with T2D.
+Less stringent A1C goals (7%-8%) should be adopted in persons with a history of severe hypoglycemia, hypoglycemia unawareness, limited life expectancy, advanced renal disease, extensive comorbid conditions, or longstanding DM in whom the A1C goal has been difficult to attain despite intensive efforts.
+If further lowering of the A1C is needed to achieve the individualized glycemic target(s) and renal function is eGFR >30 mL/min/1.73 m^2, metformin should be considered if the patient is not already taking this agent.
+Each medication should be up-titrated to the maximally tolerated approved dose and additional antihyperglycemic agents should be added on to achieve glycemic targets in persons with T2D.
+If the initial A1C is >7.5%, early combination therapy with 2 agents may be needed, and for those with an initial A1C of >9% or 1.5% above goal, then 2 or 3 antihyperglycemic agents should be initiated concomitantly in persons with T2D.
+If there is symptomatic hyperglycemia, an A1C >10% and/or Blood Glucose (BG) >300 mg/dL, suggestive of marked insulin deficiency, basal insulin should be initiated to reduce glucose as safely and promptly as possible in persons with T2D.
+In this scenario, use of a combination basal insulin with a GLP-1 RA can also be considered, but with the understanding that GLP-1 RA will require a titration phase that could potentially delay glycemic control in persons with T2D.
+If a person with T2D does not have established or high risk for ASCVD, HF, stroke/TIA, or CKD, then the clinician should refer to the Glucose-Centric Algorithm for Glycemic Control section.
+The Glucose-Centric Algorithm for Glycemic Control is for determining initial and add-on therapies for persons with Diabetes Mellitus (DM) but without established or high risk for Atherosclerotic Cardiovascular Disease (ASCVD), Heart Failure (HF), stroke/Transient Ischemic Attack (TIA), or Chronic Kidney Disease (CKD).
+Metformin should be initiated for persons with Diabetes Mellitus (DM) if there is no contraindication, such as an estimated Glomerular Filtration Rate (eGFR) <30 mL/min/1.73 m^2.
+Metformin should be started at a low dose for persons with Diabetes Mellitus (DM) and titrated over the course of a few weeks to the maximally tolerated dose.
+The newer antihyperglycemic agents, such as Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RA) and Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i), are associated with low risk of hypoglycemia for persons with Diabetes Mellitus (DM) unless combined with Sulfonylureas (SUs), glinides, and/or insulin.
+Many individuals with Type 2 Diabetes (T2D) will require more than one antihyperglycemic medication to achieve their individualized Hemoglobin A1C (A1C) target over the course of the disease.
+Clinicians should consider multiple factors, including presence of overweight or obesity, hypoglycemia risk, access/cost, and presence of severe hyperglycemia, when selecting the second antihyperglycemic agent for persons with Type 2 Diabetes (T2D).
+Patients with Type 2 Diabetes (T2D) often present with more than one of these factors, so using a patient-centered, shared decision-making approach is important.
+The order that medications are listed in the Glucose-Centric Algorithm for Glycemic Control denotes the suggested preference hierarchy for selection of antihyperglycemic agents for persons with Type 2 Diabetes (T2D).
+For persons with Type 2 Diabetes (T2D) and overweight or obesity, and the additional goal of weight loss, dual Glucose-Dependent Insulinotropic Polypeptide/Glucagon-Like Peptide-1 Receptor Agonists (GIP/GLP-1 RA), Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RA), or Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i) class are preferred options.
+Persons with Type 2 Diabetes (T2D) and a history of hypoglycemia, at high risk of hypoglycemia, and/or at risk for severe complications from hypoglycemia should preferentially be initiated with an agent associated with low risk for hypoglycemia, including Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RA), Sodium-Glucose Cotransporter 2 Inhibitors (SGLT2i), dual Glucose-Dependent Insulinotropic Polypeptide/Glucagon-Like Peptide-1 Receptor Agonists (GIP/GLP-1 RA), Thiazolidinediones (TZD), or Dipeptidyl Peptidase-4 Inhibitors (DPP-4i).
+For many persons with Type 2 Diabetes (T2D), access and cost are barriers to receiving newer antihyperglycemic agents.
+In situations where access and cost are barriers, a Thiazolidinedione (TZD), Sulfonylurea (SU), or glinide would be more economical choices for persons with Type 2 Diabetes (T2D).
+Thiazolidinediones (TZDs) are associated with low risk for hypoglycemia and have shown benefit for Non-Alcoholic Fatty Liver Disease (NAFLD) in persons with Type 2 Diabetes (T2D), but can also increase weight.
+Patients with Type 2 Diabetes (T2D) must be counseled accordingly about the potential weight gain associated with Thiazolidinediones (TZDs).
+Patients with Type 2 Diabetes (T2D) and symptomatic hyperglycemia and/or an Hemoglobin A1C (A1C) >10% suggestive of marked insulin deficiency should start basal insulin to improve glycemia as quickly as possible.
+Basal insulin can be initiated with or without initiation and titration of a Glucagon-Like Peptide-1 Receptor Agonist (GLP-1 RA) for patients with Type 2 Diabetes (T2D) who are not already on this class of agents.
+Some patients with Type 2 Diabetes (T2D) and severe hyperglycemia may need simultaneous initiation of bolus insulin.
+Clinicians should refer to the Algorithm for Adding/Intensifying Insulin section for more guidance about initiating or advancing insulin therapy for patients with Type 2 Diabetes (T2D).
+Prospective studies support the initiation of combination therapy to achieve glycemic targets more quickly as compared with a stepwise approach for persons with newly diagnosed Type 2 Diabetes (T2D) who are drug naive.
+For recently diagnosed individuals with Type 2 Diabetes (T2D) and an Hemoglobin A1C (A1C) ≥7.5%, early combination therapy may also be considered, usually with metformin combined with another agent that does not cause hypoglycemia, particularly a Glucagon-Like Peptide-1 Receptor Agonist (GLP-1 RA), Sodium-Glucose Cotransporter 2 Inhibitor (SGLT2i), or Dipeptidyl Peptidase-4 Inhibitor (DPP-4i).
+Clinicians should be cognizant that combination of incretin-based therapies, such as Dipeptidyl Peptidase-4 Inhibitors (DPP-4i) with Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RA) or dual Glucose-Dependent Insulinotropic Polypeptide/Glucagon-Like Peptide-1 Receptor Agonists (GIP/GLP-1 RA), is not recommended for persons with Type 2 Diabetes (T2D).
+Antihyperglycemic medications should be titrated to the maximally tolerated dose to achieve the individualized Hemoglobin A1C (A1C) goal for persons with Type 2 Diabetes (T2D).
+Additional antihyperglycemic agents should be considered in a timely fashion to avoid therapeutic inertia for persons with Type 2 Diabetes (T2D).
+If the Hemoglobin A1C (A1C) is >9.0% or >1.5% above goal, two or more antihyperglycemic agents may need to be initiated at once for persons with Type 2 Diabetes (T2D).
+Alternative agents and those associated with concerns regarding adverse effects or ineffectiveness are listed in the Glucose-Centric Algorithm for Glycemic Control and the clinician is referred to the Profiles of Antihyperglycemic Medications table for more details regarding the risks and benefits of each antihyperglycemic class for persons with Type 2 Diabetes (T2D).
+Targets for fasting and premeal glucose are <110 mg/dL without hypoglycemia and can be individualized based on a person’s comorbidities and clinical status for persons with Type 2 Diabetes (T2D).
+The use of Continuous Glucose Monitoring (CGM) is recommended for persons with Type 2 Diabetes (T2D) treated with insulin to optimize glycemic control while minimizing hypoglycemia.
+The overall goal of insulin therapy is to achieve glycemic control after failure of noninsulin antihyperglycemic agents.
+Glycemic targets for patients on insulin should be individualized.
+An A1C of 6.5% to 7% is recommended for most patients on insulin.
+Insulin titration for patients on insulin requires use of multiple glycemic parameters.
+The multiple glycemic parameters used for insulin titration include Fasting Blood Glucose (FBG) for patients on insulin.
+The multiple glycemic parameters used for insulin titration include premeal Blood Glucose (BG) for patients on insulin.
+The multiple glycemic parameters used for insulin titration include 2-hour postprandial Blood Glucose (BG) for patients on insulin.
+The multiple glycemic parameters used for insulin titration include data from Continuous Glucose Monitoring (CGM) for patients on insulin, when available.
+Time In Range (TIR) data from Continuous Glucose Monitoring (CGM) is used for insulin titration for patients on insulin, when available.
+Basal insulin with or without prandial insulin treatment may be needed as initial therapy for patients with Diabetes Mellitus if the Hemoglobin A1C is greater than 10% and/or glucose values are greater than 300 mg/dL, combined with catabolic symptoms, such as weight loss.
+If symptomatic hyperglycemia is present in patients with Diabetes Mellitus, a Glucagon-Like Peptide-1 Receptor Agonist alone is not recommended as it requires titration and may delay glucose control for patients with symptomatic hyperglycemia.
+The goal of initial intensive insulin therapy for symptomatic hyperglycemia in patients with Diabetes Mellitus is to reduce glucose levels safely and promptly for patients with symptomatic hyperglycemia.
+After improved glycemic control is achieved with short-term insulin therapy, especially with a new diagnosis of Diabetes Mellitus, a role for non-insulin antihyperglycemic agents could be considered for patients with Diabetes Mellitus.
+Patients who need intensification of glycemic control and are already undergoing 3 to 4 oral therapies should have a GLP-1 RA or GIP/GLP-1 RA as the initial choice for treatment, if not already in use.
+Glycemic targets are not achieved with GLP-1 RA or GIP/GLP-1 RA therapies in some patients.
+Basal insulin should be added alone or as a basal insulin/GLP-1 RA combination injection to patients who do not achieve glycemic targets with GLP-1 RA or GIP/GLP-1 RA therapies.
+The stepwise addition of prandial insulin at 1 to 3 meals is recommended for patients who require additional glycemic control.
+Prandial insulin should be considered for patients with a basal insulin dose greater than 0.5 units/kg/day.
+Prandial insulin should be considered for patients with a bedtime minus morning prebreakfast glucose score greater than 50 mg/dL.
+The Algorithm for Adding/Intensifying Insulin, as shown in Algorithm Fig. 8, provides guidance for healthcare providers on when to add or intensify insulin therapy for patients with uncontrolled glycemic levels.
+The dose of basal insulin can be based on A1C levels at the time of basal insulin initiation.
+For an A1C level less than 8%, basal insulin can be started at 0.1 to 0.2 U/kg/day.
+For an A1C level greater than 8%, 0.2 to 0.3 U/kg/day of basal insulin can be considered.
+Analog insulins, including detemir, glargine, or degludec, are preferred over human insulins, such as neutral protamine Hagedorn (NPH), to reduce hypoglycemia in patients with diabetes.
+After basal insulin is initiated, discontinuation of Sulfonylureas (SUs) is recommended for patients with diabetes.
+Fixed-dose Glucagon-Like Peptide-1 Receptor Agonist (GLP-1 RA) and basal insulin combinations can provide improved glycemic control when basal insulin alone has not achieved targets for patients with diabetes.
+Rapid-acting insulin analogs are preferred over human insulin preparations, such as regular insulin, because of their comparatively earlier onset of action.
+Prandial insulin can be initiated at the largest meal at 10% of the basal insulin dose or 5 units, with stepwise addition to other meals as additional glycemic control is needed for patients with diabetes.
+Prandial insulin can be started at all meals simultaneously at 50% of the total daily dose divided by the number of meals for patients with diabetes.
+Fixed-dose premixed insulins that combine a long-acting and short-acting insulin can also be considered for persons with diabetes who may have concerns about multiple insulins and injections.
+Premixed insulin requires fewer injections than other insulin regimens for patients with diabetes, but it also has less flexibility for dosing adjustments and may increase hypoglycemia in patients with diabetes.
+Premixed insulin may offer an alternative to achieve adequate glycemic control due to the simplicity of the premixed insulin regimen and increased adherence for patients with diabetes.
+Basal insulin should be titrated every 2 to 3 days to reach glycemic targets with a goal fasting blood glucose of <110 mg/dL without hypoglycemia.
+The basal insulin titration should be done every 3 to 5 days for patients taking insulin degludec because of the longer half-life of insulin degludec.
+Patients taking basal insulin can be counseled on how to titrate basal insulin doses independently based on self-monitoring of blood glucose.
+The basal insulin dose can be increased by 20% if the fasting blood glucose is >180 mg/dL.
+The basal insulin dose can be increased by 10% if the fasting blood glucose is between 140 to 180 mg/dL.
+The basal insulin dose can be increased by 1 unit if the fasting blood glucose is between 110 to 139 mg/dL.
+The basal insulin dose should be decreased by 10% to 20% if the patient experiences fasting hypoglycemia with a fasting blood glucose <70 mg/dL.
+The basal insulin dose should be decreased by 20% to 40% if the patient experiences fasting hypoglycemia with a fasting blood glucose <40 mg/dL.
+The goal premeal glucose targets for patients with diabetes are 110 to 140 mg/dL.
+Prandial insulin should be titrated every 2 to 3 days for patients with diabetes, based on the premeal glucose of the meal until glycemic targets are met for patients with diabetes.
+One approach to titrating prandial insulin for patients with diabetes is to adjust the dose based on premeal glucose levels for patients with diabetes.
+For patients with diabetes, if the pre-midday meal glucose is greater than 110 mg/dL, the morning meal dose of prandial insulin should be increased by 10% to 20%.
+For patients with diabetes, if the pre-evening glucose is greater than 140 mg/dL, the midday meal dose of prandial insulin should be increased by 10% to 20%.
+For patients with diabetes, if the bedtime glucose is greater than 140 mg/dL, the pre-evening meal dose of prandial insulin should be increased by 10%.
+Fixed-dose insulin for patients with diabetes can be titrated by 2 units every 2 to 3 days, relying on the morning fasting blood glucose because of the presence of basal insulin in the treatment regimen for patients with diabetes.
+For premeal hypoglycemia, which is characterized by a glucose level of less than 70 mg/dL, the prandial insulin dose should be adjusted using the following approach for patients with diabetes mellitus.
+For patients with diabetes mellitus who experience pre-midday meal glucose levels of less than 70 mg/dL, the AM meal dose of prandial insulin should be decreased by 10% to 20%.
+For patients with diabetes mellitus who experience pre-evening meal glucose levels of less than 70 mg/dL, the pre-midday meal dose of prandial insulin should be decreased by 10% to 20%.
+For patients with diabetes mellitus who experience bedtime glucose levels of less than 70 mg/dL, the pre-evening meal dose of prandial insulin should be decreased by 10% to 20%.
+Patients with diabetes mellitus who are on insulin, as well as their families and companions, should be educated on the symptoms and treatment of hypoglycemia, which is characterized by a glucose level of less than 70 mg/dL.
+Patients with diabetes mellitus who are on insulin, as well as their families and companions, should be educated on the symptoms and treatment of severe hypoglycemia, which is characterized by a glucose level of less than 54 mg/dL.
+If a patient with diabetes mellitus can safely swallow, an oral source of glucose, such as tablets or fruit juice, should be given to treat hypoglycemia.
+For a patient with diabetes mellitus who is unresponsive or unable to take oral glucose, glucagon should be administered to treat hypoglycemia.
+There are multiple formulations of glucagon available to treat hypoglycemia in patients with diabetes mellitus.
+Older glucagon formulations require reconstitution before subcutaneous or intramuscular injection to treat hypoglycemia in patients with diabetes mellitus.
+Soluble glucagon and a glucagon analog, dasiglucagon, are available and do not require reconstitution, making them ready for immediate injection to treat hypoglycemia in patients with diabetes mellitus.
+Intranasal glucagon has been shown to be efficacious in treating hypoglycemia in patients with diabetes mellitus.
+The table of Profiles of Antihyperglycemic Medications provides a summary of clinically relevant information for approved medical therapies for the treatment of persons with Type 2 Diabetes.
+The mechanisms of action and evidence of benefits or harms of Antihyperglycemic Medications are outside the scope of the algorithm for the treatment of persons with Type 2 Diabetes.
+Clinicians are encouraged to consult the 2022 AACE Clinical Practice Guideline: Developing a Diabetes Mellitus Comprehensive Care Plan for more details on Antihyperglycemic Medications.
+The organization of the pharmacologic agents in the table of Profiles of Antihyperglycemic Medications provides a framework for clinicians to select from the multiple available Antihyperglycemic Medications.
+The information selected for each Antihyperglycemic Medication in the table provides a framework for clinicians to incorporate the highlighted benefits or cautions in discussions with patients with Type 2 Diabetes.
+Medications on the left side of the table of Profiles of Antihyperglycemic Medications potentially have more positive indications to be considered first-line compared with Antihyperglycemic Medications on the right side of the table.
+The Antihyperglycemic Medications on the right side of the table may have fewer positive indications compared to the Antihyperglycemic Medications on the left side of the table for the treatment of persons with Type 2 Diabetes.
+The table of Profiles of Weight-Loss Medications summarizes weight-loss therapies currently approved by the FDA regarding approximate efficacy for weight loss, dosing, and delivery.
+The FDA has approved several weight-loss medications, including Semaglutide, Liraglutide, Phentermine/Topiramate-ER, Naltrexone-ER/Bupropion-ER, Orlistat, and Phentermine.
+Semaglutide is a GLP-1 RA that can cause weight loss of 15%-18% and is administered via weekly subcutaneous injection.
+Liraglutide is a GLP-1 RA that can cause weight loss of 5%-6% and is administered via daily subcutaneous injection.
+Phentermine/Topiramate-ER is a sympathomimetic amine/Gabaaminergic medication that can cause weight loss of 9%-10% and is administered orally.
+Naltrexone-ER/Bupropion-ER is an opioid-receptor antagonist/DA-norepi reuptake inhibitor that can cause weight loss of 4%-6% and is administered orally.
+Orlistat is a GI lipase inhibitor that can cause weight loss of 4% and is administered orally.
+Phentermine is a sympathomimetic medication that can cause weight loss of 3% and is administered orally.
+The mechanism of action of Semaglutide is decreased appetite and delayed gastric emptying.
+The mechanism of action of Liraglutide is decreased appetite and delayed gastric emptying.
+The mechanism of action of Phentermine/Topiramate-ER is decreased appetite and increased satiety.
+The mechanism of action of Naltrexone-ER/Bupropion-ER is decreased cravings and decreased appetite.
+The mechanism of action of Orlistat is decreased fat absorption.
+The mechanism of action of Phentermine is decreased appetite.
+The starting dose of Semaglutide is 0.25 mg/week.
+The starting dose of Liraglutide is 0.6 mg/day.
+The starting dose of Phentermine/Topiramate-ER is 3.75 mg/23 mg daily.
+The starting dose of Naltrexone-ER/Bupropion-ER is 8 mg/90 mg daily.
+The starting dose of Orlistat is 120 mg three times daily.
+The starting dose of Phentermine is 15 mg daily.
+The treatment dose of Semaglutide is 2.4 mg/week.
+The treatment dose of Liraglutide is 3 mg/day.
+The treatment dose of Phentermine/Topiramate-ER is 7.5 mg/46 mg daily, with a maximum dose of 15 mg/92 mg daily.
+The treatment dose of Naltrexone-ER/Bupropion-ER is 16 mg/180 mg twice per day.
+The treatment dose of Orlistat is 120 mg three times daily.
+The treatment dose of Phentermine is 37.5 mg daily.
+Semaglutide can cause potential side effects such as nausea, vomiting, diarrhea, constipation, headache, and fatigue.
+Liraglutide can cause potential side effects such as nausea, vomiting, diarrhea, constipation, headache, and fatigue.
+Phentermine/Topiramate-ER can cause potential side effects such as restlessness, insomnia, headache, dry mouth, blurred vision, tachycardia/BP elevation, paresthesia, dysgeusia, mental clouding/mood changes.
+Naltrexone-ER/Bupropion-ER can cause potential side effects such as nausea, vomiting, diarrhea, constipation, headache, fatigue, insomnia, dry mouth, blurred vision, agitation/mood changes.
+Orlistat can cause potential side effects such as flatulence, fecal urgency, oily stools, fat-soluble vitamin drug malabsorption.
+Phentermine can cause potential side effects such as restlessness, insomnia, headache, dry mouth, tachycardia/BP elevation.
+Semaglutide has cautions and contraindications such as MTC/MEN2, tachycardia, pancreatitis/gallbladder disease, diabetic retinopathy.
+Liraglutide has cautions and contraindications such as MTC/MEN2, tachycardia, pancreatitis/gallbladder disease.
+Phentermine/Topiramate-ER has cautions and contraindications such as glaucoma, hyperthyroidism, urolithiasis, metabolic acidosis.
+Naltrexone-ER/Bupropion-ER has cautions and contraindications such as seizure risk, uncontrolled hypertension, chronic opioid use.
+Orlistat has cautions and contraindications such as organ transplant, urolithiasis, cholestasis.
+Phentermine has cautions and contraindications such as active CAD, uncontrolled hypertension, hyperthyroidism, agitated states.
+The cost of Semaglutide is $$$.
+The cost of Liraglutide is $$$.
+The cost of Phentermine/Topiramate-ER is $$.
+The cost of Naltrexone-ER/Bupropion-ER is $$.
+The cost of Orlistat is $$.
+The cost of Phentermine is $.
+The 2022 AACE Clinical Practice Guideline provides evidence for the use of weight-loss medications for persons with obesity, prediabetes, or T2D.
+The FDA has approved several antihyperglycemic medications, including MET, GLP-1 RA, DUAL GIP/GLP-1 RA, SGLT2i, TZD, INSULIN, DPP-4i, SU, GLN, AGi, COLSVL, BRC, and PRAML.
+MET has an efficacy for glucose lowering of ++.
+GLP-1 RA has an efficacy for glucose lowering of +++.
+DUAL GIP/GLP-1 RA has an efficacy for glucose lowering of +++.
+SGLT2i has an efficacy for glucose lowering of ++.
+TZD has an efficacy for glucose lowering of ++.
+INSULIN has an efficacy for glucose lowering of +++/++++.
+DPP-4i has an efficacy for glucose lowering of +.
+SU has an efficacy for glucose lowering of ++.
+GLN has an efficacy for glucose lowering of +.
+AGi has an efficacy for glucose lowering of +.
+COLSVL has an efficacy for glucose lowering of +.
+BRC has an efficacy for glucose lowering of +.
+PRAML has an efficacy for glucose lowering of +.
+MET has a benefit for MACE.
+GLP-1 RA has a benefit for MACE.
+DUAL GIP/GLP-1 RA has a benefit for MACE.
+SGLT2i has a benefit for MACE.
+TZD has a neutral effect on MACE.
+INSULIN has a neutral effect on MACE.
+DPP-4i has a neutral effect on MACE.
+SU has a neutral effect on MACE.
+GLN has a neutral effect on MACE.
+AGi has a neutral effect on MACE.
+COLSVL has a neutral effect on MACE.
+BRC has a neutral effect on MACE.
+PRAML has a neutral effect on MACE.
+MET has a neutral effect on CHF.
+GLP-1 RA has a safe effect on CHF.
+DUAL GIP/GLP-1 RA has a reduced risk effect on CHF.
+SGLT2i has a moderate to severe effect on CHF.
+TZD has a moderate effect on CHF.
+INSULIN has a moderate effect on CHF.
+DPP-4i has a possible increased risk effect on CHF.
+SU has a neutral effect on CHF.
+GLN has an insufficient evidence effect on CHF.
+AGi has a neutral effect on CHF.
+COLSVL has a safe effect on CHF.
+BRC has an insufficient evidence effect on CHF.
+PRAML has a neutral effect on CHF.
+MET has a benefit effect on stroke.
+GLP-1 RA has a benefit effect on stroke.
+DUAL GIP/GLP-1 RA has a possible benefit effect on stroke.
+SGLT2i has a benefit effect on stroke.
+TZD has a neutral effect on stroke.
+INSULIN has a neutral effect on stroke.
+DPP-4i has a neutral effect on stroke.
+SU has a neutral effect on stroke.
+GLN has a neutral effect on stroke.
+AGi has a neutral effect on stroke.
+COLSVL has a neutral effect on stroke.
+BRC has a neutral effect on stroke.
+PRAML has a neutral effect on stroke.
+MET has a neutral effect on CKD.
+GLP-1 RA has a benefit effect on CKD.
+DUAL GIP/GLP-1 RA has a benefit effect on CKD.
+SGLT2i has a benefit effect on CKD.
+TZD has a neutral effect on CKD.
+INSULIN has a neutral effect on CKD.
+DPP-4i has a neutral effect on CKD.
+SU has a neutral effect on CKD.
+GLN has a neutral effect on CKD.
+AGi has a neutral effect on CKD.
+COLSVL has a neutral effect on CKD.
+BRC has a neutral effect on CKD.
+PRAML has a neutral effect on CKD.
+MET is not recommended for use with CKD4 or eGFR <30.
+GLP-1 RA has an insufficient evidence effect on renal adjustment.
+DUAL GIP/GLP-1 RA has a check medication-specific eGFR thresholds effect on renal adjustment.
+SGLT2i has a check medication-specific eGFR thresholds effect on renal adjustment.
+TZD has a neutral effect on renal adjustment.
+INSULIN has an increased hypoglycemia risk with impaired renal function effect on renal adjustment.
+DPP-4i has an adjust dose effect on renal adjustment.
+SU has an increased hypoglycemia risk with impaired renal function effect on renal adjustment.
+GLN is not recommended for use with SCR >2 mg/dL or CrCl <25.
+AGi has a neutral effect on renal adjustment.
+COLSVL has a neutral effect on renal adjustment.
+BRC has a neutral effect on renal adjustment.
+PRAML has a neutral effect on renal adjustment.
+MET has a neutral effect on hypoglycemia risk.
+GLP-1 RA has a neutral effect on hypoglycemia risk.
+DUAL GIP/GLP-1 RA has a neutral effect on hypoglycemia risk.
+SGLT2i has a neutral effect on hypoglycemia risk.
+TZD has a neutral effect on hypoglycemia risk.
+INSULIN has a moderate to severe effect on hypoglycemia risk.
+DPP-4i has a neutral effect on hypoglycemia risk.
+SU has a moderate to severe effect on hypoglycemia risk.
+GLN has a mild effect on hypoglycemia risk.
+AGi has a neutral effect on hypoglycemia risk.
+COLSVL has a neutral effect on hypoglycemia risk.
+BRC has a neutral effect on hypoglycemia risk.
+PRAML has a neutral effect on hypoglycemia risk.
+MET can cause slight weight loss.
+GLP-1 RA can cause weight loss.
+DUAL GIP/GLP-1 RA can cause weight loss.
+SGLT2i can cause weight loss.
+TZD can cause weight gain.
+INSULIN can cause weight gain.
+DPP-4i has a neutral effect on weight.
+SU can cause weight gain.
+GLN has a neutral effect on weight.
+AGi has a neutral effect on weight.
+COLSVL has a neutral effect on weight.
+BRC has a neutral effect on weight.
+PRAML can cause weight loss.
+MET has a neutral effect on NAFLD.
+GLP-1 RA has a benefit effect on NAFLD.
+DUAL GIP/GLP-1 RA has a benefit effect on NAFLD.
+SGLT2i has a potential benefit effect on NAFLD.
+TZD has a benefit effect on NAFLD.
+INSULIN has a neutral effect on NAFLD.
+DPP-4i has a neutral effect on NAFLD.
+SU has a neutral effect on NAFLD.
+GLN has a neutral effect on NAFLD.
+AGi has a neutral effect on NAFLD.
+COLSVL has a neutral effect on NAFLD.
+BRC has a neutral effect on NAFLD.
+PRAML has a benefit effect on NAFLD.
+MET can cause mild to moderate GI adverse symptoms.
+GLP-1 RA can cause moderate GI adverse symptoms.
+DUAL GIP/GLP-1 RA can cause moderate GI adverse symptoms.
+SGLT2i has a neutral effect on GI adverse symptoms.
+TZD has a neutral effect on GI adverse symptoms.
+INSULIN has a neutral effect on GI adverse symptoms.
+DPP-4i has a neutral effect on GI adverse symptoms.
+SU has a neutral effect on GI adverse symptoms.
+GLN can cause moderate GI adverse symptoms.
+AGi has a mild effect on GI adverse symptoms.
+COLSVL has a moderate effect on GI adverse symptoms.
+BRC has a moderate effect on GI adverse symptoms.
+PRAML has a moderate effect on GI adverse symptoms.
+MET has other considerations such as medullary thyroid carcinoma/MEN2.
+GLP-1 RA has other considerations such as medullary thyroid carcinoma/MEN2.
+DUAL GIP/GLP-1 RA has other considerations such as medullary thyroid carcinoma/MEN2.
+SGLT2i has other considerations such as GU infections, DKA, fracture risk.
+TZD has other considerations such as fracture risk.
+INSULIN has other considerations such as rare arthralgias/myalgias.
+DPP-4i has other considerations such as rare arthralgias/myalgias.
+SU has other considerations such as rare arthralgias/myalgias.
+GLN has other considerations such as rare arthralgias/myalgias.
+AGi has other considerations such as rare arthralgias/myalgias.
+COLSVL has other considerations such as rare arthralgias/myalgias.
+BRC has other considerations such as rare arthralgias/myalgias.
+PRAML has other considerations such as rare arthralgias/myalgias.
+MET has an access/cost of $.
+GLP-1 RA has an access/cost of $$$.
+DUAL GIP/GLP-1 RA has an access/cost of $$$.
+SGLT2i has an access/cost of $$$.
+TZD has an access/cost of $.
+INSULIN has an access/cost of $-$$$.
+DPP-4i has an access/cost of $-$$.
+Vaccine-preventable illnesses caused by bacteria and viruses result in significant morbidity and mortality, with worse outcomes among high-risk populations like persons with Diabetes Mellitus.
+Vaccinations are effective in reducing the severity and associated morbidity and mortality related to vaccine-preventable illnesses among persons with Diabetes Mellitus.
+The rates of vaccination are suboptimal among patients with Diabetes Mellitus.
+The CDC Advisory Committee on Immunization Practices maintains a comprehensive and updated reference for appropriate vaccine recommendations for persons with Diabetes Mellitus at https://www.cdc.gov/vaccines/schedules/.
+The American Association of Clinical Endocrinologists supports the vaccine recommendations from the CDC Advisory Committee on Immunization Practices for persons with Diabetes Mellitus.
+The key vaccines recommended for patients with Diabetes Mellitus are detailed in the 2022 American Association of Clinical Endocrinologists Diabetes Mellitus Clinical Practice Guidelines.
+Most health care professionals do not routinely evaluate the vaccination status of their patients with Diabetes Mellitus who rely on the health care professionals' recommendations to get vaccinated.
+The CDC developed a set of steps called the Standards for Adult Immunization Practice to address the gap in care for vaccinations among patients with Diabetes Mellitus.
+The Standards for Adult Immunization Practice recognize that many health care professionals may not be vaccine providers but can still play a significant role in getting their patients with Diabetes Mellitus vaccinated.
+Health care professionals should assess the immunization status of all persons with Diabetes Mellitus at every encounter with the health care professionals.
+Health care professionals should stay up to date with the latest vaccine recommendations for persons with Diabetes Mellitus.
+Health care professionals should implement protocols that facilitate review of patient immunization status by the care team for persons with Diabetes Mellitus.
+Health care professionals should send reminders for vaccinations to patients with Diabetes Mellitus.
+Health care professionals should strongly recommend vaccines to patients with Diabetes Mellitus who are not fully vaccinated.
+Recommendation from health care professionals is a strong predictor of vaccine acceptance by patients with Diabetes Mellitus.
+Health care professionals should address patient questions and concerns about vaccinations for persons with Diabetes Mellitus.
+Health care professionals should explain the benefits of vaccination to patients with Diabetes Mellitus.
+Health care professionals should highlight positive experiences with vaccinations to patients with Diabetes Mellitus.
+Health care professionals should administer the vaccines they stock to patients with Diabetes Mellitus.
+Health care professionals should refer their patients with Diabetes Mellitus to facilities that can provide vaccines that the health care professionals do not stock.
+Health care professionals should know the local resources where they can refer their patients with Diabetes Mellitus for vaccination.
+Health care professionals should document vaccines administered in their office or by other vaccine providers in the electronic health record for patients with Diabetes Mellitus.
+The electronic health record should communicate with the state's immunization information system in a bidirectional manner to consolidate vaccination records for patients with Diabetes Mellitus.
+Documenting vaccinations will ensure patients with Diabetes Mellitus get the vaccinations they need and will prevent unnecessary vaccinations.
+Incorporating the Standards for Adult Immunization Practice into routine clinic visits will be effective in increasing vaccinations and providing protection for patients with Diabetes Mellitus.
+Having a properly trained staff and a culture of vaccine confidence in the entire clinical practice are important in ensuring that all health care team members are engaged in efforts to improve patient vaccinations for persons with Diabetes Mellitus.
+Making vaccinations more convenient, coadministration of compatible vaccines, and making use of vaccination champions in the clinical setting can improve vaccination rates among patients with Diabetes Mellitus.
+Drafts of the consensus statement on Assess Lipid Panel at First Visit or at Diagnosis were reviewed by all task force members.
+The AACE CPG Oversight Committee reviewed drafts of the consensus statement on Assess Lipid Panel at First Visit or at Diagnosis.
+The AACE Board of Directors reviewed drafts of the consensus statement on Assess Lipid Panel at First Visit or at Diagnosis.
+Peer reviewers for Endocrine Practice reviewed drafts of the consensus statement on Assess Lipid Panel at First Visit or at Diagnosis.
+All task force members approved drafts of the consensus statement on Assess Lipid Panel at First Visit or at Diagnosis.
+The AACE CPG Oversight Committee approved drafts of the consensus statement on Assess Lipid Panel at First Visit or at Diagnosis.
+The AACE Board of Directors approved drafts of the consensus statement on Assess Lipid Panel at First Visit or at Diagnosis.
+Peer reviewers for Endocrine Practice approved drafts of the consensus statement on Assess Lipid Panel at First Visit or at Diagnosis.
+The American Association of Clinical Endocrinologists Task Force was empaneled in accordance with the American Association of Clinical Endocrinologists Conflict of Interest Policy and approved by the American Association of Clinical Endocrinologists Conflict of Interest Subcommittee, Clinical Practice Guidelines Oversight Committee, and American Association of Clinical Endocrinologists executive leadership.
+All members of the American Association of Clinical Endocrinologists expert Task Force completed disclosures related to commercial and direct financial relationships within the preceding 12 months with companies that develop products connected with endocrine disorders.
+The categories for disclosure included employment, stock or other ownership, direct financial relationships, research funding, authorship or panel involvement on a guideline or white paper related to an overlapping topic, or other situations related to a perceived Conflict of Interest.
+The American Association of Clinical Endocrinologists Conflict of Interest Subcommittee reviewed disclosures of potential authors against an American Association of Clinical Endocrinologists-approved list of affected companies related to the topic of the consensus statement and made recommendations regarding who could serve on the Task Force in the nonconflicted majority.
+The American Association of Clinical Endocrinologists Conflict of Interest Subcommittee made recommendations regarding who could serve on the Task Force in the conflicted minority with management strategy.
+The American Association of Clinical Endocrinologists Conflict of Interest Subcommittee made recommendations regarding who were disqualified from serving on the Task Force.
+Members of the American Association of Clinical Endocrinologists Task Force were reminded throughout development to update potential disclosures if any new relationships or potential Conflict of Interest arose during their appointments.
+Members of the American Association of Clinical Endocrinologists Task Force were reminded to verify currency of disclosures throughout development.
+The American Association of Clinical Endocrinologists made every effort to minimize the potential for Conflict of Interest that could influence guidance provided in the consensus statement.
+S.L.S. is a member of the American Association of Clinical Endocrinologists Board of Directors and Executive Committee and has received research support to Mayo Clinic from Corcept.
+S.L.S. served on a steering committee for Chiasma.
+S.L.S. has been a national or overall principal investigator for Chiasma and Novartis.
+S.L.S. is the American Board of Internal Medicine Chair, Longitudinal Knowledge Assessment Approval Committee for Endocrinology, Diabetes, and Metabolism.
+P.V. is a consultant for Takeda Pharmaceutical Company.
+P.V. has been a national or overall principal investigator for National Institutes of Health grant K23 DK 11324-01A1.
+L.B. is a consultant, with payment to Ochsner Health, for Corcept Therapeutics, Merck, Novo Nordisk, Salix Pharmaceuticals, and Sanofi.
+E.A.C. received research support to company from Abbott and AbbVie.
+E.A.C. is a consultant for Ascendis, Boehringer Ingelheim, and Novo Nordisk.
+E.A.C. is a speaker for Amryt, AstraZeneca, Bayer, Corcept, Eli Lilly, Boehringer Ingelheim, and Novo Nordisk.
+E.A.C. designed the study protocol and is a national principal investigator for the GLITTER1 diabetes mellitus trial funded by Gan & Lee pharmaceuticals.
+E.A.C. is the owner of Endocrinology Associates, Inc.
+E.A.C. is part-owner of MediZen.
+R.J.G. is or has been a consultant for companies that develop products connected with endocrine disorders.
+The American Association of Endocrinology Comprehensive Type 2 Diabetes Management Algorithm is a guide for managing type 2 diabetes.
+The Comprehensive Type 2 Diabetes Management Algorithm includes a Complications-Centric Model for the care of persons with overweight or obesity.
+The Prediabetes Algorithm is part of the Comprehensive Type 2 Diabetes Management Algorithm.
+The ASCVD Risk Reduction Algorithm for Dyslipidemia is a component of the Comprehensive Type 2 Diabetes Management Algorithm.
+The ASCVD Risk Reduction Algorithm for Hypertension is a component of the Comprehensive Type 2 Diabetes Management Algorithm.
+The Complications-Centric Algorithm for Glycemic Control is a component of the Comprehensive Type 2 Diabetes Management Algorithm.
+The Glucose-Centric Algorithm for Glycemic Control is a component of the Comprehensive Type 2 Diabetes Management Algorithm.
+The Algorithm for Adding or Intensifying Insulin is part of the Comprehensive Type 2 Diabetes Management Algorithm.
+The Comprehensive Type 2 Diabetes Management Algorithm includes profiles of antihyperglycemic medications.
+The Comprehensive Type 2 Diabetes Management Algorithm includes profiles of weight-loss medications.
+The Comprehensive Type 2 Diabetes Management Algorithm provides vaccine recommendations for persons with diabetes mellitus.
+The American Association of Endocrinology has developed the Comprehensive Type 2 Diabetes Management Algorithm to guide the management of type 2 diabetes.
+The Comprehensive Type 2 Diabetes Management Algorithm is based on the latest research and guidelines in the field of endocrinology.
+The 2023 AACE Type 2 Diabetes Algorithm Table of Contents is available online at https://doi.org/10.1016/j.eprac.2023.02.001.
+The American Association of Endocrinology has published the Comprehensive Type 2 Diabetes Management Algorithm in Endocrine Practice, volume 29, pages 305-340.
+The Comprehensive Type 2 Diabetes Management Algorithm was developed by S.L. Samson, P. Vellanki, L. Blonde, and other experts in the field of endocrinology.
+Lifestyle modification underlies all Type 2 Diabetes therapy.
+The AACE Comprehensive Type 2 Diabetes Management Algorithm recommends maintaining or achieving optimal weight for patients with Type 2 Diabetes.
+The choice of antihyperglycemic therapy for patients with Type 2 Diabetes reflects their glycemic targets, Atherosclerotic Cardiovascular Disease (ASCVD) status, Congestive Heart Failure (CHF) status, Chronic Kidney Disease (CKD) status, overweight or obesity status, and Non-Alcoholic Fatty Liver Disease (NAFLD) status.
+The choice of therapy for patients with Type 2 Diabetes includes considerations of ease of use and access to the therapy.
+The optimal A1C level for most patients with Type 2 Diabetes is ≤6.5% or as close to normal as is safe and achievable.
+All glycemic targets, including A1C, Glucose Management Indicator (GMI), Time In Range (TIR), Fasting Blood Glucose (FBG), and Postprandial Glucose (PPG), should be individualized for patients with Type 2 Diabetes.
+The goal for patients with Type 2 Diabetes is to get to their glycemic targets as soon as possible, with adjustments made every ≤3 months.
+Hypoglycemia should be avoided in patients with Type 2 Diabetes.
+Continuous Glucose Monitoring (CGM) is highly recommended to assist patients with Type 2 Diabetes in reaching their glycemic targets safely.
+Comorbidities must be managed for comprehensive care of patients with Type 2 Diabetes.
+The Body Mass Index (BMI) of patients with Type 2 Diabetes should be assessed as part of their care.
+Patients with Type 2 Diabetes and a BMI ≤25 should maintain or achieve optimal weight through lifestyle modifications.
+Patients with Type 2 Diabetes and a BMI >25-27 should undergo intentional caloric deprivation to optimize their weight.
+Patients with Type 2 Diabetes and a BMI >27-35 should follow a structured diet with meal replacements to optimize their weight.
+Patients with Type 2 Diabetes and a BMI >35 should also follow a structured diet with meal replacements to optimize their weight.
+Aerobic exercise of ≥150 minutes/week and resistance training 2-3 sessions/week are recommended for patients with Type 2 Diabetes and a BMI ≤25.
+Patients with Type 2 Diabetes and a BMI >25 should participate in a structured exercise program with oversight and accountability.
+Good sleep hygiene of 6-8 hours/night is recommended for patients with Type 2 Diabetes and a BMI ≤25.
+Patients with Type 2 Diabetes and a BMI >25-27 should be screened for sleep disturbances.
+Patients with Type 2 Diabetes and a BMI >27 should be referred for a formal sleep study.
+Patients with Type 2 Diabetes and a BMI ≤25 should limit their alcohol intake and undergo smoking cessation.
+Patients with Type 2 Diabetes and a BMI >25-27 should be screened for mood disturbances.
+Patients with Type 2 Diabetes and a BMI >27 should undergo a formal psychological evaluation and treatment.
+Medications are not recommended for patients with Type 2 Diabetes and a BMI ≤25.
+Weight-loss medications should be considered for patients with Type 2 Diabetes and a BMI >25-27.
+Weight-loss medications should be added to the treatment plan for patients with Type 2 Diabetes and a BMI >27.
+High-risk groups for Atherosclerotic Cardiovascular Disease (ASCVD) complications should be screened for patients with Type 2 Diabetes and a BMI ≤25.
+Patients with Type 2 Diabetes and a BMI >25 should be screened for and managed for Atherosclerotic Cardiovascular Disease (ASCVD) complications.
+Bariatric surgical options should be considered for patients with Type 2 Diabetes and a BMI >27.
+Patients with Type 2 Diabetes and a BMI >35 should be referred for bariatric surgical options.
+ABCD complications, including prediabetes, dyslipidemia, hypertension, Non-Alcoholic Fatty Liver Disease (NAFLD), Atherosclerotic Cardiovascular Disease (ASCVD), Congestive Heart Failure (CHF), and Chronic Kidney Disease (CKD), can occur in patients with Type 2 Diabetes.
+The AACE Comprehensive Type 2 Diabetes Management Algorithm is based on a complications-centric model for the care of persons with overweight or obesity.
+The goals of the prediabetes algorithm include preventing progression to diabetes, preventing progression of non-alcoholic fatty liver disease, improving cardiovascular disease risk factors, preventing excess weight gain and promoting weight loss, and improving functionality and quality of life for patients with prediabetes.
+Lifestyle intervention is a crucial component of the prediabetes algorithm, focusing on nutrition, physical activity, sleep hygiene, and healthy habits for patients with prediabetes.
+The prediabetes algorithm aims to reduce cardiovascular risk, similar to targets for type 2 diabetes, through excess weight reduction, blood pressure control, and lipid management for patients with prediabetes.
+Patients with prediabetes who are overweight or obese should be evaluated for weight loss goals, aiming for a weight loss of 7-10% for patients with prediabetes.
+For patients with prediabetes who are overweight or obese, the goal is to achieve weight loss through lifestyle changes and/or medication, such as GLP-1 RA or phentermine/topiramate ER, for patients with prediabetes.
+Bariatric surgery should be considered for patients with prediabetes who are overweight or obese and have not achieved significant weight loss through other means.
+For patients with prediabetes who are not overweight or obese, the goal is to treat dysglycemia, which includes managing blood glucose levels and preventing progression to overt diabetes for patients with prediabetes.
+Patients with prediabetes who have persistent hyperglycemia, defined as a fasting plasma glucose greater than 100 mg/dL or a 2-hour postprandial glucose greater than 140 mg/dL, require closer monitoring and treatment for patients with prediabetes.
+Oral medications, such as metformin, pioglitazone, and acarbose, may be prescribed to manage dysglycemia and prevent progression to overt diabetes for patients with prediabetes.
+If patients with prediabetes develop overt diabetes, they should be referred to the glycemic control algorithms for further management.
+The NCEP ATP III Criteria are used to diagnose metabolic syndrome in patients with prediabetes.
+Weight-loss medications, such as GLP-1 RA, phentermine, orlistat, naltrexone-ER/bupropion-ER, may be indicated for patients with prediabetes who have a body mass index greater than 27 kg/m² and have complications, including prediabetes.
+For patients with prediabetes who do not have overweight or obesity, T1D antibody testing for latent autoimmune diabetes in adults should be considered.
+Patients with dyslipidemia should increase their dietary fiber intake.
+Patients with dyslipidemia should increase their healthy fat intake.
+Patients with dyslipidemia should decrease their saturated fat intake.
+Patients with dyslipidemia should decrease their simple carbs intake.
+Patients with dyslipidemia should decrease their added sugars intake.
+Patients with dyslipidemia should increase their physical activity.
+Patients with dyslipidemia should manage their weight.
+The ASCVD 10-year risk calculator should be used for patients with prediabetes or type 2 diabetes and risk factors.
+Major ASCVD risk factors include age greater than 40 years.
+Major ASCVD risk factors include hypertension.
+Major ASCVD risk factors include chronic kidney disease stage 3a or higher.
+Major ASCVD risk factors include smoking.
+Major ASCVD risk factors include a family history of premature ASCVD.
+Major ASCVD risk factors include low HDL-C levels.
+Major ASCVD risk factors include high non-HDL-C levels.
+Statin therapy should be initiated for patients with dyslipidemia.
+The goal of hypertriglyceridemia management is to achieve specific lipid targets.
+For patients with high risk of ASCVD, less than 10% risk, and type 2 diabetes for less than 10 years, and less than 2 other risk factors, and no target organ damage, moderate-intensity statin therapy is recommended.
+For patients with very high risk of ASCVD, 10-20% risk, and type 2 diabetes for more than 10 years, and age greater than 40 years, and no ASCVD, and no target organ damage, and 2 or more additional risk factors, high-intensity statin therapy is recommended.
+For patients with extreme risk of ASCVD, greater than 20% risk, and type 2 diabetes and ASCVD, and severe target organ damage, high-intensity statin therapy is recommended.
+The goal for LDL-C levels is less than 100 mg/dL for patients with high risk of ASCVD.
+The goal for LDL-C levels is less than 70 mg/dL for patients with very high risk of ASCVD.
+The goal for LDL-C levels is less than 55 mg/dL for patients with extreme risk of ASCVD.
+The goal for non-HDL-C levels is less than 130 mg/dL for patients with high risk of ASCVD.
+The goal for non-HDL-C levels is less than 100 mg/dL for patients with very high risk of ASCVD.
+The goal for non-HDL-C levels is less than 80 mg/dL for patients with extreme risk of ASCVD.
+The goal for triglyceride levels is less than 150 mg/dL for all patients with dyslipidemia.
+The goal for Apo B levels is less than 90 mg/dL for patients with high risk of ASCVD.
+The goal for Apo B levels is less than 80 mg/dL for patients with very high risk of ASCVD.
+The goal for Apo B levels is less than 70 mg/dL for patients with extreme risk of ASCVD.
+Therapy should be monitored and titrated every 3-6 months to achieve lipid targets according to risk.
+Statin therapy and lifestyle should be intensified and glycemic control optimized for patients with dyslipidemia.
+Ezetimibe should be added to statin therapy for patients with dyslipidemia.
+Additional therapy, such as bile acid sequestrant, bempedoic acid, PCSK9 inhibitor, or inclisiran, should be considered for patients with dyslipidemia.
+If triglyceride levels are greater than 135 mg/dL, icosapent ethyl should be considered in addition to statin therapy for patients with diabetes and cardiovascular disease or 2 or more risk factors.
+For patients with triglyceride levels between 135-199 mg/dL, lifestyle should be intensified and glycemic targets achieved.
+For patients with triglyceride levels between 200-499 mg/dL, fibrate or omega-3 therapy should be considered in addition to lifestyle and statin therapy.
+For patients with triglyceride levels greater than or equal to 500 mg/dL, urgent intervention with dietary management and fibrate or omega-3 therapy is needed.
+For patients with triglyceride levels greater than 1000 mg/dL, niacin therapy should be considered to reduce the risk of pancreatitis.
+Baseline LDL-C levels greater than 190 mg/dL should be considered for familial hypercholesterolemia.
+Statin intolerance should be managed by using alternative statin with lower incidence of myopathy or decreasing dose or frequency.
+Non-statin therapy should be considered for patients with statin intolerance.
+CoQ10 should be considered for patients with statin intolerance.
+Rx interactions should be checked for patients with statin intolerance.
+If triglyceride levels are greater than 200 mg/dL and HDL levels are less than 40 mg/dL, fibrate or omega-3 therapy should be added to achieve apo B and non-HDL goals.
+Elevated triglyceride levels greater than 500 mg/dL can cause acute pancreatitis and require urgent intervention.
+Familial chylomicronemia syndrome or lipodystrophy should be suspected in patients with elevated triglyceride levels greater than 500 mg/dL and referral to a lipid specialist is recommended.
+Niacin therapy may lower triglyceride and Lp(a) levels but does not reduce ASCVD risk and can promote hyperglycemia.
+The goal blood pressure for patients with ASCVD risk is less than 130 systolic and less than 80 diastolic mmHg.
+For patients with Microalbuminuria or Macroalbuminuria, or those at Moderate-to-High Risk or with Established ASCVD, PVD, or Retinopathy, a blood pressure of less than 120 systolic and less than 70 diastolic mmHg is considered.
+The goal blood pressure may be higher for patients with Autonomic Neuropathy, Orthostatic Hypotension, Acute Coronary Syndrome, Frailty, or Medication Intolerance.
+Lifestyle intervention for ASCVD risk reduction includes decreasing sodium intake, following a DASH or Mediterranean diet, engaging in physical activity, and achieving optimal weight.
+For initial blood pressure greater than 150/100 mmHg, consider starting dual therapy with an Angiotensin-Receptor Blocker or Angiotensin-Converting Enzyme Inhibitor combined with another agent.
+The medication dose or therapy for ASCVD risk reduction should be titrated or added every 2-3 months to reach the goal blood pressure.
+Thiazide or Calcium Channel Blocker may be used as additional therapy for ASCVD risk reduction.
+Combined α-β Blocker, β1 Selective Blocker, or Mineralocorticoid Receptor Antagonist may be used as additional therapy for ASCVD risk reduction.
+Additional antihypertensive agents, such as Central α2 Agonist, Peripheral α1-Blocker, or Hydralazine, may be used for ASCVD risk reduction.
+Patient-specific characteristics, including Diabetic Kidney Disease, retinopathy, ASCVD, post-myocardial infarction, Congestive Heart Failure, age, and race, should be considered when determining the goal blood pressure.
+Angiotensin-Converting Enzyme Inhibitors and Angiotensin-Receptor Blockers reduce the progression of Diabetic Kidney Disease and should be used as first-line therapy for patients with a Urine Albumin-to-Creatinine Ratio of 30 mg/g or higher.
+Thiazide or Calcium Channel Blocker may also be appropriate as first-line therapy in the absence of albuminuria.
+Angiotensin-Converting Enzyme Inhibitors and Angiotensin-Receptor Blockers should not be used concomitantly.
+Pregnancy should be ruled out before initiating Angiotensin-Converting Enzyme Inhibitors or Angiotensin-Receptor Blockers.
+Chlorthalidone, indapamide, or hydrochlorothiazide may be used as Thiazide therapy for ASCVD risk reduction.
+Dihydropyridine amlodipine or nifedipine may be used as Calcium Channel Blocker therapy for ASCVD risk reduction, unless a non-dihydropyridine is indicated.
+Carvedilol, labetalol, or dilevalol may be used as Combined α-β Blocker therapy for ASCVD risk reduction.
+Nebivolol or betaxolol may be used as β1 Selective Blocker therapy for ASCVD risk reduction.
+Mineralocorticoid Receptor Antagonist may be used for Resistant Hypertension with a blood pressure greater than 140/90 mmHg, despite treatment with three or more agents, including a maximum dose diuretic.
+Laboratory evaluation for hyperaldosteronism is indicated for patients with Resistant Hypertension.
+The combination of Angiotensin-Converting Enzyme Inhibitors or Angiotensin-Receptor Blockers with Mineralocorticoid Receptor Antagonist requires increased laboratory monitoring due to the risk of hyperkalemia or Acute Kidney Injury.
+Finerenone is recommended for patients with Chronic Kidney Disease associated with diabetes and an estimated Glomerular Filtration Rate of 25 mL/min/1.73 m² or higher, and a Urine Albumin-to-Creatinine Ratio of 30 mg/g or higher.
+Sodium-Glucose Cotransporter 2 Inhibitors or Glucagon-Like Peptide-1 Receptor Agonists may also mildly lower blood pressure.
+The initiation of Sodium-Glucose Cotransporter 2 Inhibitors or Glucagon-Like Peptide-1 Receptor Agonists may also mildly lower blood pressure.
+The healthcare provider should start or continue metformin for patients with glucose-centric algorithm for glycemic control if metformin is appropriate for the patients.
+The glycemic target for most persons with diabetes is an A1C level of ≤6.5%.
+The glycemic target for persons with diabetes who are at high risk for adverse consequences from hypoglycemia and/or have limited life expectancy is an A1C level of 7%-8%.
+Patients with diabetes who are overweight or have obesity may be prescribed GLP-1 RA or GIP/GLP-1 RA or SGLT2i as a preferred medication.
+Patients with diabetes who are at risk for hypoglycemia may be prescribed GLP-1 RA or GIP/GLP-1 RA or SGLT2i as a preferred medication.
+Patients with diabetes who have limited access to or cannot afford certain medications may be prescribed TZD or SU/GLN as a preferred medication.
+Patients with diabetes who have severe hyperglycemia may be prescribed Basal Insulin + Prandial Insulin or + GLP-1 RA | GIP/GLP-1 RA as a preferred medication.
+The order of medications listed suggests a hierarchy for selection for patients with diabetes.
+For patients with diabetes who are overweight or have obesity, DPP-4i or TZD may be prescribed as alternative medications.
+For patients with diabetes who are at risk for hypoglycemia, DPP-4i or TZD may be prescribed as alternative medications.
+For patients with diabetes who have limited access to or cannot afford certain medications, Insulin or DPP-4i may be prescribed as alternative medications.
+For patients with diabetes who have severe hyperglycemia, Basal Insulin + other agent(s) may be prescribed as alternative medications.
+If a patient with diabetes has an A1C level >7.5%, treatment should be started with 2 agents, and if the A1C level is >9.0% or >1.5% above goal, treatment should be started with 2-3 agents.
+For patients with diabetes who are overweight or have obesity, SU/GLN should be avoided due to concerns or preferences.
+For patients with diabetes who are at risk for hypoglycemia, SU/GLN should be avoided due to concerns or preferences.
+For patients with diabetes who have limited access to or cannot afford certain medications, GLP-1 RA | GIP/GLP-1 RA | SGLT2i | COLSVL | BRC-QR should be avoided due to concerns or preferences.
+In the setting of glucotoxicity, other agents are likely to be ineffective for patients with diabetes who have severe hyperglycemia.
+The dose of medication for patients with diabetes should be titrated to the maximum tolerated dose.
+If a patient with diabetes is not at their glycemic target at ≤3 months, the best available agent not in use should be added to their treatment regimen.
+The best available agents that may be added to the treatment regimen for patients with diabetes include GLP-1 RA | GIP/GLP-1 RA | SGLT2i | TZD | DPP-4i | SU/GLN | COLSVL | BRC-QR | PRAML.
+If a patient with diabetes is not at their glycemic target, the algorithm for adding/intensifying insulin should be continued.
+Patients with overweight or obesity should take medication with food and with dose titration for enhanced tolerance.
+The COMPLICATIONS-CENTRIC MODEL FOR THE CARE OF PERSONS WITH OVERWEIGHT/OBESITY and the PROFILES OF WEIGHT-LOSS MEDICATIONS table provide additional guidance for the care of patients with overweight or obesity.
+Healthcare providers should evaluate patients for issues leading to hypoglycemia or hypoglycemia unawareness and manage these issues with patient-centered strategies.
+If a patient's A1C is greater than 10% and/or their blood glucose is greater than or equal to 300 with symptomatic hyperglycemia, the patient's glucose/A1C should be reduced as promptly and safely as possible.
+The ALGORITHM FOR ADDING/INTENSIFYING INSULIN provides guidance for adjusting insulin therapy for patients with hyperglycemia.
+GLP-1 RA therapy requires a titration phase, which can delay glycemic control for patients with hyperglycemia.
+After glucose toxicity is resolved in patients with hyperglycemia, other agents may be considered for addition to their treatment regimen.
+The PROFILES OF ANTIHYPERGLYCEMIC MEDICATIONS table provides information on available antihyperglycemic medications for patients with hyperglycemia.
+GLP-1 RA and DPP-4i shouldnormally not be combined in the treatment of patients with hyperglycemia.
+TZD therapy can cause fluid retention in patients with hyperglycemia, but it has benefits for non-alcoholic fatty liver disease, cardiovascular disease prevention, and dyslipidemia.
+The cost and accessibility of antihyperglycemic medications, including insulin, vary widely depending on the location and market.
+The cost of insulin varies widely depending on the device used, such as pens versus vials, and the formulation, such as analogues versus combinations like 70/30.
+PRAML is used as an adjunct to prandial insulin in the treatment of patients with hyperglycemia.
+The healthcare provider should consider using a GLP-1 receptor agonist if the patient is not already using one.
+If the patient's blood glucose level is not at goal, the healthcare provider should start basal insulin.
+The patient's basal insulin dose should be started at a total daily dose of 0.1-0.2 units per kilogram if the patient's A1C level is less than 8%.
+The patient's basal insulin dose should be started at a total daily dose of 0.2-0.3 units per kilogram if the patient's A1C level is greater than 8%.
+The patient's insulin dose should be titrated every 2-5 days to reach the glycemic goal.
+The patient's fixed insulin regimen should include an increase in the total daily dose by 2 units.
+The patient's adjustable insulin regimen should include an increase in the total daily dose by 20% if the patient's fasting blood glucose level is greater than 180 mg/dL.
+The patient's adjustable insulin regimen should include an increase in the total daily dose by 10% if the patient's fasting blood glucose level is between 140-180 mg/dL.
+The patient's adjustable insulin regimen should include an increase in the total daily dose by 1 unit if the patient's fasting blood glucose level is between 110-139 mg/dL.
+If the patient experiences hypoglycemia, the healthcare provider should reduce the total daily dose by 10-20% if the patient's blood glucose level is less than 70 mg/dL.
+If the patient experiences hypoglycemia, the healthcare provider should reduce the total daily dose by 20-40% if the patient's blood glucose level is less than 40 mg/dL.
+The healthcare provider should add prandial insulin to the patient's treatment regimen if the patient's glycemic goals are unmet, the basal dose is greater than 0.5 units per kilogram per day, or the BeAM score is greater than 50.
+The patient with severe hyperglycemia and symptoms should start basal insulin with or without prandial insulin.
+The healthcare provider should consider using fixed-dose basal insulin or a GLP-1 receptor agonist for the patient with severe hyperglycemia and symptoms.
+If the patient with severe hyperglycemia and symptoms is not at goal, the healthcare provider should start prandial insulin.
+Prandial insulin should be added to the patient's basal insulin regimen in a stepwise manner, starting with the largest meal and using 10% of the basal dose or 5 units.
+The patient's prandial insulin dose should be titrated every 2-3 days to reach the glycemic goal.
+If the patient's premeal blood glucose level is greater than 110-140 mg/dL, the healthcare provider should increase the premeal dose by 10-20% for the previous meal.
+If the patient's premeal blood glucose level is less than 70 mg/dL, the healthcare provider should decrease the premeal dose by 10-20% for the previous meal.
+The healthcare provider should discontinue or reduce the use of sulfonylureas in the patient's treatment regimen.
+The healthcare provider should prefer basal analogs over NPH insulin for the patient's treatment regimen.
+The healthcare provider should prefer rapid-acting analogs over regular insulin for the patient's treatment regimen.
+The use of continuous glucose monitoring is recommended to help the patient reach glycemic goals safely.
+Glycemic goals for the patient should include an A1C level of 6.5-7% or less without hypoglycemia, and fasting and premeal glucose levels of less than 110 mg/dL.
+The patient's A1C goal should be individualized based on the presence of comorbidities and the risk of adverse consequences of hypoglycemia and/or limited life expectancy.
+Longer-acting basal insulins, such as glargine U300 or degludec U100 or U200, require slower titration of at least 3 days due to a longer time to steady state.
+For patients with symptomatic hyperglycemia and an A1C level greater than 10% and/or a blood glucose level of 300 mg/dL or greater, the healthcare provider should reduce glucose and A1C levels as promptly and safely as possible.
+The healthcare provider should consider testing for autoimmune diabetes in patients with symptomatic hyperglycemia.
+GLP-1 receptor agonists require a titration phase, which can delay glycemic control.
+If a patient with hypoglycemia is able to swallow safely, the healthcare provider should administer a rapidly absorbed source of glucose, such as a tablet or fruit juice.
+If a patient with hypoglycemia is unresponsive or unable to swallow, the healthcare provider should administer subcutaneous, intramuscular, or intranasal glucagon or a glucagon analogue.
+MET has a moderate efficacy for glucose lowering.
+GLP-1 RA has a high efficacy for glucose lowering.
+DUAL GIP/GLP-1 RA has a high efficacy for glucose lowering.
+SGLT2i has a moderate efficacy for glucose lowering.
+TZD has a moderate efficacy for glucose lowering.
+INSULIN has a high to very high efficacy for glucose lowering.
+DPP-4i has a low efficacy for glucose lowering.
+SU has a moderate efficacy for glucose lowering.
+GLN has a low efficacy for glucose lowering.
+AGI has a low efficacy for glucose lowering.
+COLSVL has a low efficacy for glucose lowering.
+BRC has a low efficacy for glucose lowering.
+PRAML has a low efficacy for glucose lowering.
+MET has a neutral effect on ASCVD MACE.
+GLP-1 RA has a benefit for ASCVD MACE.
+DUAL GIP/GLP-1 RA has a benefit for ASCVD MACE.
+SGLT2i is safe for ASCVD MACE.
+TZD has a neutral effect on ASCVD MACE.
+INSULIN has a neutral effect on ASCVD MACE.
+DPP-4i has a neutral effect on ASCVD MACE.
+SU has a possible increased risk for ASCVD MACE.
+GLN has a neutral effect on ASCVD MACE.
+AGI has a neutral effect on ASCVD MACE.
+COLSVL has a neutral effect on ASCVD MACE.
+BRC has a safe effect on ASCVD MACE.
+PRAML has an insufficient evidence for ASCVD MACE.
+MET has a neutral effect on CHF.
+GLP-1 RA has an unclear effect on CHF.
+DUAL GIP/GLP-1 RA has a safe effect on CHF.
+SGLT2i has a reduced risk for CHF.
+TZD has a moderate to severe effect on CHF.
+INSULIN has a moderate effect on CHF.
+DPP-4i has a moderate effect on CHF.
+SU has a possible increased risk for CHF.
+GLN has a neutral effect on CHF.
+AGI has a neutral effect on CHF.
+COLSVL has an insufficient evidence for CHF.
+BRC has a neutral effect on CHF.
+PRAML has a safe effect on CHF.
+MET has no specified effect on STROKE.
+GLP-1 RA has a benefit for STROKE.
+DUAL GIP/GLP-1 RA has no specified effect on STROKE.
+SGLT2i has a possible benefit for STROKE.
+TZD has a benefit for STROKE.
+INSULIN has a neutral effect on STROKE.
+DPP-4i has a neutral effect on STROKE.
+SU has a possible increased risk for STROKE.
+GLN has a neutral effect on STROKE.
+AGI has a neutral effect on STROKE.
+COLSVL has a neutral effect on STROKE.
+BRC has a safe effect on STROKE.
+PRAML has an insufficient evidence for STROKE.
+MET is not recommended for patients with CKD4 or eGFR < 30.
+GLP-1 RA is not recommended for patients with eGFR < 45.
+DUAL GIP/GLP-1 RA has insufficient evidence for CKD.
+SGLT2i requires checking medication-specific eGFR thresholds.
+TZD has a neutral effect on CKD.
+INSULIN has an increased hypoglycemia risk with impaired renal function.
+DPP-4i requires dose adjustment for CKD.
+SU has an increased hypoglycemia risk with impaired renal function.
+GLN has a mild effect on CKD.
+AGI is not recommended for patients with SCR > 2 mg/dL or CrCl < 25.
+COLSVL has a neutral effect on CKD.
+BRC has a neutral effect on CKD.
+PRAML has a neutral effect on CKD.
+MET has a neutral hypoglycemia risk.
+GLP-1 RA has a neutral hypoglycemia risk.
+DUAL GIP/GLP-1 RA has a neutral hypoglycemia risk.
+SGLT2i has a neutral hypoglycemia risk.
+TZD has a neutral hypoglycemia risk.
+INSULIN has a moderate to severe hypoglycemia risk.
+DPP-4i has a neutral hypoglycemia risk.
+SU has a moderate to severe hypoglycemia risk.
+GLN has a mild hypoglycemia risk.
+AGI has a neutral hypoglycemia risk.
+COLSVL has a neutral hypoglycemia risk.
+BRC has a neutral hypoglycemia risk.
+PRAML has a neutral hypoglycemia risk.
+MET causes slight weight loss.
+GLP-1 RA causes weight loss.
+DUAL GIP/GLP-1 RA causes weight loss.
+SGLT2i causes weight loss.
+TZD causes weight gain.
+INSULIN causes weight gain.
+DPP-4i has a neutral effect on weight.
+SU causes weight gain.
+GLN has a neutral effect on weight.
+AGI has a neutral effect on weight.
+COLSVL has a neutral effect on weight.
+BRC causes weight loss.
+PRAML has a neutral effect on weight.
+MET has a neutral effect on NAFLD.
+GLP-1 RA has a benefit for NAFLD.
+DUAL GIP/GLP-1 RA has a benefit for NAFLD.
+SGLT2i has a potential benefit for NAFLD.
+TZD has a benefit for NAFLD.
+INSULIN has a neutral effect on NAFLD.
+DPP-4i has a neutral effect on NAFLD.
+SU has a neutral effect on NAFLD.
+GLN has a neutral effect on NAFLD.
+AGI has a neutral effect on NAFLD.
+COLSVL has a neutral effect on NAFLD.
+BRC has a neutral effect on NAFLD.
+PRAML has a benefit for NAFLD.
+MET causes mild to moderate GI adverse symptoms.
+GLP-1 RA causes moderate GI adverse symptoms.
+DUAL GIP/GLP-1 RA causes moderate GI adverse symptoms.
+SGLT2i has a neutral effect on GI adverse symptoms.
+TZD has a neutral effect on GI adverse symptoms.
+INSULIN has a neutral effect on GI adverse symptoms.
+DPP-4i has a neutral effect on GI adverse symptoms.
+SU has a neutral effect on GI adverse symptoms.
+GLN has a neutral effect on GI adverse symptoms.
+AGI causes moderate GI adverse symptoms.
+COLSVL causes mild GI adverse symptoms.
+BRC causes moderate GI adverse symptoms.
+PRAML causes moderate GI adverse symptoms.
+MET has other considerations.
+GLP-1 RA has medullary thyroid carcinoma/MEN2 as other considerations.
+DUAL GIP/GLP-1 RA has medullary thyroid carcinoma/MEN2 as other considerations.
+SGLT2i has GU infections, DKA, and fracture risk as other considerations.
+TZD has fracture risk as other considerations.
+INSULIN has rare arthralgias/myalgias as other considerations.
+DPP-4i has no specified other considerations.
+SU has no specified other considerations.
+GLN has no specified other considerations.
+AGI has no specified other considerations.
+COLSVL has no specified other considerations.
+BRC has no specified other considerations.
+PRAML has no specified other considerations.
+MET costs $.
+GLP-1 RA costs $$.
+DUAL GIP/GLP-1 RA costs $$.
+SGLT2i costs $$.
+TZD costs $.
+INSULIN costs $-$$$.
+DPP-4i costs $.
+SU costs $-$$.
+GLN costs $-$$.
+AGI costs $$.
+COLSVL costs $$.
+BRC costs $$.
+PRAML costs $$.
+SEMAGLUTIDE is a GLP-1RA.
+LIRAGLUTIDE is a GLP-1RA.
+PHENTERMINE/TOPIRAMATE-ER is a sympathomimetic amine/Gabaaminergic.
+NALTREXONE-ER/BUPROPION-ER is an opioid-receptor antagonist/DA-norepi reuptake inhibitor.
+ORLISTAT is a GI lipase inhibitor.
+PHENTERMINE is a sympathomimetic.
+SEMAGLUTIDE causes 15%-18% weight loss.
+LIRAGLUTIDE causes 5%-6% weight loss.
+PHENTERMINE/TOPIRAMATE-ER causes 9%-10% weight loss.
+NALTREXONE-ER/BUPROPION-ER causes 4%-6% weight loss.
+ORLISTAT causes 4% weight loss.
+PHENTERMINE causes 3% weight loss.
+SEMAGLUTIDE works by decreasing appetite and delaying gastric emptying.
+LIRAGLUTIDE works by decreasing appetite and delaying gastric emptying.
+PHENTERMINE/TOPIRAMATE-ER works by decreasing appetite and increasing satiety.
+NALTREXONE-ER/BUPROPION-ER works by decreasing cravings and appetite.
+ORLISTAT works by decreasing fat absorption.
+PHENTERMINE works by decreasing appetite.
+SEMAGLUTIDE is administered via weekly subcutaneous injection.
+LIRAGLUTIDE is administered via daily subcutaneous injection.
+PHENTERMINE/TOPIRAMATE-ER is administered orally.
+NALTREXONE-ER/BUPROPION-ER is administered orally.
+ORLISTAT is administered orally.
+PHENTERMINE is administered orally.
+SEMAGLUTIDE has a starting dose of 0.25 mg/week.
+LIRAGLUTIDE has a starting dose of 0.6 mg/day.
+PHENTERMINE/TOPIRAMATE-ER has a starting dose of 3.75 mg/23 mg daily.
+NALTREXONE-ER/BUPROPION-ER has a starting dose of 8 mg/90 mg daily.
+ORLISTAT has a starting dose of 120 mg three times daily.
+PHENTERMINE has a starting dose of 15 mg daily.
+SEMAGLUTIDE has a treatment dose of 2.4 mg/week.
+LIRAGLUTIDE has a treatment dose of 3 mg/day.
+PHENTERMINE/TOPIRAMATE-ER has a treatment dose of 7.5 mg/46 mg daily.
+NALTREXONE-ER/BUPROPION-ER has a treatment dose of 16 mg/180 mg twice per day.
+ORLISTAT has a treatment dose of 120 mg three times daily.
+PHENTERMINE has a treatment dose of 37.5 mg daily.
+SEMAGLUTIDE has potential side effects including nausea, vomiting, diarrhea, constipation, headache, and fatigue.
+LIRAGLUTIDE has potential side effects including nausea, vomiting, diarrhea, constipation, headache, and fatigue.
+PHENTERMINE/TOPIRAMATE-ER has potential side effects including restlessness, insomnia, headache, dry mouth, blurred vision, tachycardia/BP elevation, paresthesia, dysgeusia, and mental clouding/mood changes.
+NALTREXONE-ER/BUPROPION-ER has potential side effects including nausea, vomiting, diarrhea, constipation, headache, fatigue, insomnia, dry mouth, blurred vision, agitation/mood changes.
+ORLISTAT has potential side effects including flatulence, fecal urgency, oily stools, and fat-soluble vitamin drug malabsorption.
+PHENTERMINE has potential side effects including restlessness, insomnia, headache, dry mouth, tachycardia/BP elevation.
+SEMAGLUTIDE has cautions and contraindications including MTC/MEN2, tachycardia, pancreatitis/gallbladder disease, and diabetic retinopathy.
+LIRAGLUTIDE has cautions and contraindications including MTC/MEN2, tachycardia, pancreatitis/gallbladder disease.
+PHENTERMINE/TOPIRAMATE-ER has cautions and contraindications including glaucoma, hyperthyroidism, urolithiasis, and metabolic acidosis.
+NALTREXONE-ER/BUPROPION-ER has cautions and contraindications including seizure risk, uncontrolled hypertension, and chronic opioid use.
+ORLISTAT has cautions and contraindications including organ transplant, urolithiasis, and cholestasis.
+PHENTERMINE has cautions and contraindications including active CAD, uncontrolled hypertension, hyperthyroidism, and agitated states.
+SEMAGLUTIDE costs $$.
+LIRAGLUTIDE costs $$.
+PHENTERMINE/TOPIRAMATE-ER costs $$.
+NALTREXONE-ER/BUPROPION-ER costs $$.
+ORLISTAT costs $$.
+PHENTERMINE costs $.
+The CDC recommends age-appropriate vaccines for all persons with diabetes mellitus.
+The CDC recommends COVID-19 primary series and booster per current CDC recommendations and FDA approvals for persons with diabetes mellitus.
+The CDC recommends flu vaccine annually for persons with diabetes mellitus.
+The CDC recommends HepB vaccine for all adults ≤59 years and based on risk and quality of immune response for adults ≥60 years.
+The CDC recommends PCV vaccine for adults with diabetes mellitus ages ≥19 years.
+The CDC recommends RZV vaccine for all adults ≥50 years.
+The CDC recommends Tdap vaccine every 10 years following completion of the primary series.
+The CDC has standards for adult immunization practice including assessing immunization status, recommending vaccines, administering or referring patients for immunization, and documenting receipt of vaccine.
+The CDC provides vaccine recommendations for persons with diabetes mellitus.
+The AACE has copyright for the provided information.
+The provided information is based on the Endocrine Practice 29 (2023) 305-340.
+The authors of the provided information have conflicts of interest to disclose.
+The authors of the provided information have received research support and been national or overall principal investigators for various companies.
+The authors of the provided information have participated in development of guidelines and consensus reports for various organizations.

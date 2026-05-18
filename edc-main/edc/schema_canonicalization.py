@@ -101,11 +101,20 @@ class SchemaCanonicalizer:
             )
         else:
             verification_result = llm_utils.api_chat_completion(
-                self.verifier_openai_model, None, messages, max_tokens=1
+                self.verifier_openai_model, None, messages, max_tokens=5
             )
 
-        if verification_result[0] in choice_letters_list:
-            canonicalized_triplet[1] = candidate_relations[choice_letters_list.index(verification_result[0])]
+        # Robustly extract the selected letter
+        selected_letter = None
+        if verification_result:
+            # Find the first uppercase letter that is a valid choice
+            for char in verification_result.strip(" `\"'*:-_"):
+                if char.upper() in choice_letters_list:
+                    selected_letter = char.upper()
+                    break
+
+        if selected_letter is not None:
+            canonicalized_triplet[1] = candidate_relations[choice_letters_list.index(selected_letter)]
         else:
             return None
 
@@ -120,7 +129,10 @@ class SchemaCanonicalizer:
         enrich=False,
     ):
 
-        open_relation = open_triplet[1]
+        open_relation = open_triplet[1].strip()
+
+        # Clean keys in the dictionary just in case
+        cleaned_def_dict = {k.strip(): v for k, v in open_relation_definition_dict.items()}
 
         if open_relation in self.schema_dict:
             # The relation is already canonical
@@ -133,16 +145,16 @@ class SchemaCanonicalizer:
         candidate_scores = []
 
         if len(self.schema_dict) != 0:
-            if open_relation not in open_relation_definition_dict:
+            if open_relation not in cleaned_def_dict:
                 canonicalized_triplet = None
             else:
                 candidate_relations, candidate_scores = self.retrieve_similar_relations(
-                    open_relation_definition_dict[open_relation]
+                    cleaned_def_dict[open_relation]
                 )
                 canonicalized_triplet = self.llm_verify(
                     input_text_str,
                     open_triplet,
-                    open_relation_definition_dict[open_relation],
+                    cleaned_def_dict[open_relation],
                     verify_prompt_template,
                     candidate_relations,
                     None,

@@ -18,10 +18,80 @@ from sentence_transformers import SentenceTransformer
 from importlib import reload
 import random
 import json
+import re
 
 reload(logging)
 logger = logging.getLogger(__name__)
 
+
+# ---------------------------------------------------------------------------
+# UMLS-ALIGNED DOMAIN/RANGE CONSTRAINT FILTER
+# This filter runs AFTER OIE and BEFORE Schema Definition.
+# It discards any triple whose subject or object clearly belongs to the
+# administrative/metadata category (authors, hospitals, publications, etc.)
+# rather than a clinical concept.
+# ---------------------------------------------------------------------------
+
+# Regex patterns for known non-clinical entity patterns
+_IGNORE_PATTERNS = [
+    # Credential suffixes common in author names (MD, PhD, FACP, FACE, etc.)
+    re.compile(r'\b(MD|PhD|FRCPC|FACE|FACP|MACE|MBA|CDCES|MACP|MSc)\b'),
+    # Abbreviation-only entities (2-5 uppercase letters, possibly followed by digits)
+    re.compile(r'^[A-Z]{2,5}\d?$'),
+    # Common administrative/org keywords
+    re.compile(r'\b(University|College|Institute|Hospital|Clinic|School|Center|Task Force|Department|Division|Committee)\b', re.IGNORECASE),
+    # Guideline/document references
+    re.compile(r'\b(Consensus Statement|Clinical Practice Guideline|Algorithm|Recommendation|Statement)\b', re.IGNORECASE),
+    # Year references
+    re.compile(r'\b(19|20)\d{2}\b'),
+]
+
+# Relations that are purely administrative (not biomedical)
+_ADMIN_RELATIONS = {
+    'has an update to', 'is located at', 'is referred to as', 'referred to as',
+    'same as', 'synonym of', 'known as', 'abbreviated as', 'stands for',
+}
+
+
+def _is_admin_entity(entity: str) -> bool:
+    """Returns True if the entity looks like administrative metadata rather than a clinical concept."""
+    for pattern in _IGNORE_PATTERNS:
+        if pattern.search(entity):
+            return True
+    return False
+
+
+def filter_clinical_triples(oie_triples_list: List[List[List[str]]]) -> List[List[List[str]]]:
+    """
+    Post-OIE filter: removes triples that:
+      1. Contain an administrative/metadata entity (author, hospital, acronym-only, etc.)
+      2. Use a purely administrative relation (e.g., 'referred to as')
+    Returns a filtered version of oie_triples_list with the same structure.
+    """
+    filtered_list = []
+    total_removed = 0
+    for triples in oie_triples_list:
+        kept = []
+        for triple in triples:
+            if len(triple) != 3:
+                continue
+            subj, rel, obj = triple
+            rel_lower = rel.strip().lower()
+            # Drop if the relation is purely administrative
+            if rel_lower in _ADMIN_RELATIONS:
+                logger.debug(f"[FILTER] Dropped admin-relation triple: {triple}")
+                total_removed += 1
+                continue
+            # Drop if subject OR object is clearly administrative metadata
+            if _is_admin_entity(subj) or _is_admin_entity(obj):
+                logger.debug(f"[FILTER] Dropped admin-entity triple: {triple}")
+                total_removed += 1
+                continue
+            kept.append(triple)
+        filtered_list.append(kept)
+    if total_removed > 0:
+        logger.info(f"[FILTER] Discarded {total_removed} non-clinical triples after OIE.")
+    return filtered_list
 
 class JinaEmbedder:
     """Wrapper that mimics SentenceTransformer.encode() but calls the Jina AI Embeddings API.
@@ -62,9 +132,50 @@ class JinaEmbedder:
         return embeddings[0] if single else embeddings
 
 
+class OpenRouterEmbedder:
+    """Wrapper that mimics SentenceTransformer.encode() but calls the OpenRouter Embeddings API.
+    Supports models like 'qwen/qwen3-embedding-8b'.
+    Requires OPENROUTER_KEY environment variable.
+    """
+
+    def __init__(self, model_name: str):
+        import requests
+        self.model_name = model_name
+        self.api_url = "https://openrouter.ai/api/v1/embeddings"
+        self.api_key = os.environ.get("OPENROUTER_KEY", os.environ.get("OPENROUTER_API_KEY", ""))
+        self.prompts = {}  
+        if not self.api_key:
+            raise ValueError("OPENROUTER_KEY environment variable is not set. Please set it before using OpenRouter embeddings.")
+
+    def encode(self, texts, prompt_name=None, prompt=None, **kwargs):
+        """Encode texts using OpenRouter Embeddings API."""
+        import requests
+        import numpy as np
+        single = isinstance(texts, str)
+        if single:
+            texts = [texts]
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+        payload = {
+            "model": self.model_name,
+            "input": texts,
+        }
+        response = requests.post(self.api_url, headers=headers, json=payload)
+        response.raise_for_status()
+        data = response.json()
+        embeddings = np.array([item["embedding"] for item in data["data"]])
+        return embeddings[0] if single else embeddings
+
 def is_jina_model(model_name: str) -> bool:
     """Returns True if the model name refers to a Jina embedding API model."""
     return "jina" in model_name.lower()
+
+def is_openrouter_embedder(model_name: str) -> bool:
+    """Returns True if the model should be routed to OpenRouter for embeddings (e.g. contains '/')."""
+    return "/" in model_name
 
 
 class EDC:
@@ -210,6 +321,10 @@ class EDC:
                     # Use Jina AI API instead of downloading locally
                     logger.info(f"Detected Jina model '{model_name}', using Jina Embeddings API (requires JINA_KEY).")
                     model = JinaEmbedder(model_name)
+                elif is_openrouter_embedder(model_name):
+                    # Use OpenRouter API for embeddings
+                    logger.info(f"Detected OpenRouter model '{model_name}', using OpenRouter Embeddings API (requires OPENROUTER_KEY).")
+                    model = OpenRouterEmbedder(model_name)
                 else:
                     model = SentenceTransformer(model_name, trust_remote_code=True)
                 self.loaded_model_dict[model_name] = model
@@ -319,7 +434,7 @@ class EDC:
             canon_candidate_dict_per_entry_list.append(canon_candidate_dict_list)
 
             logger.debug(f"{input_text}\n, {oie_triplets} ->\n {canonicalized_triplets}")
-            logger.debug(f"Retrieved candidate relations {canon_candidate_dict}")
+            logger.debug(f"Retrieved candidate relations {canon_candidate_dict_list}")
         logger.info("Schema Canonicalization finished.")
 
         if free_model:
@@ -509,6 +624,13 @@ class EDC:
                 and iteration == refinement_iterations,
                 previous_extracted_triplets_list=triplets_from_last_iteration,
             )
+
+            # ---------------------------------------------------------------
+            # POST-OIE UMLS FILTER: discard administrative / non-clinical triples
+            # This catches hallucinations like author names, hospitals, acronyms
+            # that slip through despite the prompt constraints.
+            # ---------------------------------------------------------------
+            oie_triplets_list = filter_clinical_triples(oie_triplets_list)
 
             del required_model_dict_current_iteration["sd"]
             sd_dict_list = self.schema_definition(

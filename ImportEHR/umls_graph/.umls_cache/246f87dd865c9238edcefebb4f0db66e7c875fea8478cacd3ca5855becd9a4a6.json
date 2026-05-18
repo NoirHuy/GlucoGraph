@@ -1,0 +1,73 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Typ diabetu, pro který je charakteristický deficit inzulinu. Projevuje se náhle těžkou hyperglykemií a rychle se vyvíjející diabetickou ketoacidózou. Pokud se neléčí inzulinem, končí fatálně. Onemocnění může vzniknout v jakémkoli věku, ale nejčastěji se objevuje v dětství a v adolescenci.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "CSP",
+      "value": "subtype of diabetes mellitus that is characterized by insulin deficiency; it is manifested by the sudden onset of severe hyperglycemia, rapid progression to diabetic ketoacidosis, and death unless treated with insulin; the disease may occur at any age, but is most common in childhood or adolescence.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "A subtype of DIABETES MELLITUS that is characterized by INSULIN deficiency. It is manifested by the sudden onset of severe HYPERGLYCEMIA, rapid progression to DIABETIC KETOACIDOSIS, and DEATH unless treated with insulin. The disease may occur at any age, but is most common in childhood or adolescence.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "A chronic condition characterized by minimal or absent production of insulin by the pancreas.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "HPO",
+      "value": "A chronic condition in which the pancreas produces little or no insulin. Type I diabetes mellitus is manifested by the sudden onset of severe hyperglycemia with rapid progression to diabetic ketoacidosis unless treated with insulin. [https://orcid.org/0000-0002-0736-9199]",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MEDLINEPLUS",
+      "value": "<p><a href=\"https://medlineplus.gov/diabetes.html\">Diabetes</a> means your blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, levels are too high. With type 1 diabetes, your pancreas does not make insulin. Insulin is a hormone that helps glucose get into your cells to give them energy. Without insulin, too much glucose stays in your blood. Over time, high blood glucose can lead to <a href=\"https://medlineplus.gov/diabetescomplications.html\">serious problems</a> with your <a href=\"https://medlineplus.gov/diabeticheartdisease.html\">heart</a>, <a href=\"https://medlineplus.gov/diabeticeyeproblems.html\">eyes</a>, <a href=\"https://medlineplus.gov/diabetickidneyproblems.html\">kidneys</a>, <a href=\"https://medlineplus.gov/diabeticnerveproblems.html\">nerves</a>, and gums and teeth. </p> <p>Type 1 diabetes happens most often in <a href=\"https://medlineplus.gov/diabetesinchildrenandteens.html\">children</a> and young adults but can appear at any age. Symptoms may include:</p><ul> <li> Being very thirsty </li> <li> Urinating often </li> <li> Feeling very hungry or tired </li> <li> Losing weight without trying </li> <li> Having sores that heal slowly </li> <li> Having dry, itchy skin </li> <li> Losing the feeling in your feet or having tingling in your feet </li> <li> Having blurry eyesight </li> </ul> <p>A blood test can show if you have diabetes. If you do, you will need to take <a href=\"https://medlineplus.gov/diabetesmedicines.html\">insulin</a> for the rest of your life. A blood test called the <a href=\"https://medlineplus.gov/a1c.html\">A1C</a> can check to see how well you are managing your diabetes.</p> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MEDLINEPLUS",
+      "value": "Type 1 diabetes is a disorder characterized by abnormally high levels of blood glucose, also called blood sugar. In this form of diabetes, specialized cells in the pancreas called beta cells stop producing insulin. Insulin controls how much glucose (a type of sugar) is passed from the blood into cells for conversion to energy. Lack of insulin results in the inability to use glucose for energy or to control the amount of glucose in the blood.~Type 1 diabetes can occur at any age, from early childhood to late adulthood. The first signs and symptoms of the disorder are caused by high blood glucose and may include frequent urination (polyuria), excessive thirst (polydipsia), fatigue, blurred vision, tingling or loss of feeling in the hands and feet, and weight loss. These symptoms may recur during the course of the disorder if blood glucose is not well controlled by insulin replacement therapy. Improper control can also cause blood glucose levels to become too low (hypoglycemia). This may occur when the body's needs change, such as during exercise or if eating is delayed. Hypoglycemia can cause headache, dizziness, hunger, shaking, sweating, weakness, and agitation.~Uncontrolled type 1 diabetes can lead to a life-threatening complication called diabetic ketoacidosis. Without insulin, cells cannot take in glucose. A lack of glucose in cells prompts the liver to try to compensate by releasing more glucose into the blood, and blood glucose can become extremely high. The cells, unable to use the glucose in the blood for energy, respond by using fats instead. Breaking down fats to obtain energy produces waste products called ketones, which can build up to toxic levels in people with type 1 diabetes, resulting in diabetic ketoacidosis. Affected individuals may begin breathing rapidly; develop a fruity odor in the breath; and experience nausea, vomiting, facial flushing, stomach pain, and dryness of the mouth (xerostomia). In severe cases, diabetic ketoacidosis can lead to coma and death.~Over many years, the chronic high blood glucose associated with diabetes may cause damage to blood vessels and nerves, leading to complications affecting many organs and tissues. The retina, which is the light-sensitive tissue at the back of the eye, can be damaged (diabetic retinopathy), leading to vision loss and eventual blindness. Kidney damage (diabetic nephropathy) may also occur and can lead to kidney failure and end-stage renal disease (ESRD). Pain, tingling, and loss of normal sensation (diabetic neuropathy) often occur, especially in the feet. Impaired circulation and absence of the normal sensations that prompt reaction to injury can result in permanent damage to the feet; in severe cases, the damage can lead to amputation. People with type 1 diabetes are also at increased risk of heart attacks, strokes, and problems with urinary and sexual function.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHNOR",
+      "value": "En undergruppe av diabetes mellitus kjennetegnet av insulinmangel, plutselig sykdomsdebut, alvorlig hyperglykemi, raskt tiltakende ketoacidose og død hvis ikke insulinbehandling settes i gang. Sykdommen kan oppstå i alle aldre, men er vanligst hos barn og unge.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Subtipo de DIABETES MELLITUS caracterizada por deficiência de INSULINA. Manifesta-se por um início repentino de intensa HIPERGLICEMIA, progressão rápida a CETOACIDOSE DIABÉTICA e MORTE, a menos que tratada com insulina. A doença pode ocorrer em qualquer idade, mas é mais comum durante a infância ou adolescência.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Subtipo de DIABETES MELLITUS caracterizado por deficiencia de INSULINA. Se manifiesta por el inicio repentino de HIPERGLUCEMIA severa, progresión rápida hacia CETOACIDOSIS DIABÉTICA y la MUERTE a menos que sea tratada con insulina. La enfermedad puede ocurrir en cualquier edad, pero es más común durante la infancia y la adolescencia.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Diabetes mellitus kännetecknad av brist på insulin, plötslig debut, svår hyperglykemi, snabbt tilltagande ketoacidos, och död, om inte insulinbehandling sätts in. Sjukdomen kan uppträda i alla åldrar, men är vanligast hos barn och ungdomar.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

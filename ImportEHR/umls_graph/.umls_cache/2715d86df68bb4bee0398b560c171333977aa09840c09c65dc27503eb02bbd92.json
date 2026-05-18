@@ -1,0 +1,27 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "classType": "Atom",
+      "ui": "A1171554",
+      "sourceDescriptor": "NONE",
+      "sourceConcept": "NONE",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0678247",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "SNM",
+      "termType": "PT",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNM/D-2395",
+      "language": "ENG",
+      "name": "Nonketotic diabetic acidosis",
+      "ancestors": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1171554/ancestors",
+      "descendants": "NONE",
+      "attributes": "NONE",
+      "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1171554/relations",
+      "children": "NONE",
+      "parents": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1171554/parents"
+    }
+  ]
+}

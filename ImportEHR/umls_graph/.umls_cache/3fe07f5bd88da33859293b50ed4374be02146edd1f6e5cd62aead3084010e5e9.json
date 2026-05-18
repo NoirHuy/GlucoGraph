@@ -1,0 +1,55 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Stav, kdy organismus není schopen přiměřeně reagovat na inzulin. Při diabetu 2. typu má obv. charakter poruchy na receptorové i postreceptorové úrovni. Primární i. r. je spojena s mutací genů zodpovědných za účinek inzulinu (inzulinový receptor, některé enzymy glykolýzy, GLUT aj.), sekundární i. r. je způsobena jinými příčinami zejm. metabolickými, endokrinními, zánětlivými a může se po jejich normalizaci upravit. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "Diminished effectiveness of INSULIN in lowering blood sugar levels: requiring the use of 200 units or more of insulin per day to prevent HYPERGLYCEMIA or KETOSIS.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "Decreased sensitivity to circulating insulin which may result in acanthosis nigicrans, elevated insulin level or hyperglycemia.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "HPO",
+      "value": "Increased resistance towards insulin, that is, diminished effectiveness of insulin in reducing blood glucose levels. [https://orcid.org/0000-0002-0736-9199]",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHNOR",
+      "value": "En tilstand der kroppens insulin har redusert effekt på senkning av blodsukkernivået. Det gir et behov for 200 enheter insulin per dag for å forhindre hyperglykemi eller ketose.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Redução da efetividade da INSULINA em diminuir a glicemia: há a necessidade do uso de 200 unidades ou mais de insulina por dia para impedir a HIPERGLICEMIA ou a CETOSE.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Disminución de la efectividad de la INSULINA para reducir los niveles de azúcar en la sangre: se requiere de 200 unidades o más de insulina por día para prevenir la HIPERGLUCEMIA o la CETOSIS.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Avtagande förmåga hos insulin att sänka blodsockerhalterna; behov av 200 enheter insulin per dag för att förhindra hyperglykemi eller ketos. Effektminskningen beror vanligtvis på antikroppsbindning av insulin (insulinantikroppar), men även avvikelser hos insulinreceptorer på cellytor kan föreligga. Tillståndet har samband med övervikt, ketoacidos, infektion och vissa sällsynta sjukdomar.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

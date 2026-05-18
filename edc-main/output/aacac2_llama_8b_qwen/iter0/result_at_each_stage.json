@@ -1,0 +1,1087 @@
+[
+    {
+        "index": 0,
+        "input_text": "The American Association of Clinical Endocrinology published the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control in 2009.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 1,
+        "input_text": "The American Association of Clinical Endocrinology algorithm for glycemic control was expanded on the visual guidance provided by the American College of Endocrinology/American Association of Clinical Endocrinology Diabetes Road Maps.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "": ""
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 2,
+        "input_text": "At the time of the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control, thiazolidinediones, alpha-glucosidase inhibitors, metformin, and sulfonylureas/glinides were in use.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "thiazolidinediones",
+                "may be treated by",
+                "glycemic control"
+            ],
+            [
+                "alpha-glucosidase inhibitors",
+                "may be treated by",
+                "glycemic control"
+            ],
+            [
+                "metformin",
+                "may be treated by",
+                "glycemic control"
+            ],
+            [
+                "sulfonylureas/glinides",
+                "may be treated by",
+                "glycemic control"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "thiazolidinediones",
+                "may be treated by",
+                "glycemic control"
+            ],
+            [
+                "alpha-glucosidase inhibitors",
+                "may be treated by",
+                "glycemic control"
+            ],
+            [
+                "metformin",
+                "may be treated by",
+                "glycemic control"
+            ],
+            [
+                "sulfonylureas/glinides",
+                "may be treated by",
+                "glycemic control"
+            ]
+        ]
+    },
+    {
+        "index": 3,
+        "input_text": "The first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control also included the addition of exenatide and dipeptidyl peptidase-4 inhibitors.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "glycemic control",
+                "has evaluation",
+                "Type 2 Diabetes"
+            ]
+        ],
+        "schema_definition": {
+            "has evaluation": "The disease or condition (subject) is assessed or monitored using the clinical test, biomarker, or measurement (object)."
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "glycemic control",
+                "has evaluation",
+                "Type 2 Diabetes"
+            ]
+        ]
+    },
+    {
+        "index": 4,
+        "input_text": "The American Association of Clinical Endocrinology published the Comprehensive Type 2 Diabetes Management Algorithm in 2013, which incorporated new sections on the management of overweight/obesity, dyslipidemia, and hypertension.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 5,
+        "input_text": "The Comprehensive Type 2 Diabetes Management Algorithm was revised on a yearly basis through 2020.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 6,
+        "input_text": "The American Association of Clinical Endocrinology task force is grateful for the contributions and framework provided by previous authors of the American Association of Clinical Endocrinology algorithm.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "has contribution": "The organization or entity (subject) acknowledges and appreciates the input or work (object) provided by another entity.",
+            "has framework": "The organization or entity (subject) utilizes or benefits from the structure or guidelines (object) established by another entity."
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 7,
+        "input_text": "The American Association of Clinical Endocrinology published the Clinical Practice Guideline: Developing a Diabetes Mellitus Comprehensive Care Plan — 2022 Update, which provided 170 revised or new graded recommendations accompanied by detailed, evidence-based rationales.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "": ""
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 8,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm update builds on previous versions of the American Association of Clinical Endocrinology algorithm but with the incorporation of new management approaches that align with the 2022 American Association of Clinical Endocrinology clinical practice guideline on diabetes mellitus.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "has incorporated": "The clinical guideline or algorithm (subject) has included or integrated new information or approaches (object) into its existing framework.",
+            "has aligned with": "The clinical guideline or algorithm (subject) is consistent with or follows the principles or recommendations of the clinical practice guideline (object)."
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 9,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm is intended as a more concise document than the 2022 American Association of Clinical Endocrinology clinical practice guideline, providing easily accessible, visual guidance for decision-making in the clinic setting.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "has clinical practice guideline": "The disease or condition (subject) has a formal set of recommendations or guidelines (object) that provide guidance for its management.",
+            "is intended as": "The clinical resource or document (subject) is designed or meant to serve as a substitute or alternative (object) for another resource.",
+            "provides guidance for": "The clinical resource or document (subject) offers recommendations or advice (object) for decision-making or management in a specific context.",
+            "is intended for": "The clinical resource or document (subject) is designed or meant to be used in a particular setting or context (object).",
+            "is more concise than": "The clinical resource or document (subject) is a shorter or more compact version (object) of another resource."
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 10,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm summary is not intended to iterate all of the evidence base behind the algorithmic pathways, as this is detailed in the 2022 American Association of Clinical Endocrinology Diabetes Mellitus Comprehensive Care Plan update.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "has update": "The clinical guideline or algorithm (subject) has a subsequent revision or update (object).",
+            "is not intended to iterate": "The clinical guideline or algorithm (subject) does not aim to cover or summarize all the details of the evidence base (object).",
+            "is detailed in": "The clinical guideline or algorithm (subject) provides a comprehensive overview of the details of the evidence base (object)."
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 11,
+        "input_text": "The objective of the 2023 American Association of Clinical Endocrinology algorithm summary is to provide a written guide or “roadmap” through the graphic depictions of the algorithm contents.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "has graphic depiction": "The clinical guideline or algorithm (subject) is presented or illustrated using the visual representation (object).",
+            "has written guide": "The clinical guideline or algorithm (subject) is provided or documented in written form (object).",
+            "has roadmap": "The clinical guideline or algorithm (subject) serves as a navigational tool or guide (object)."
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 12,
+        "input_text": "The process for updating the 2023 American Association of Clinical Endocrinology algorithm involved multiple meetings of American Association of Clinical Endocrinology task force members/authors between January 2022 and November 2022.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "": ""
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 13,
+        "input_text": "Smaller groups of American Association of Clinical Endocrinology task force members/authors focused on specific algorithm subsections, which were then brought to the complete American Association of Clinical Endocrinology task force for discussion and peer review.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "": "The smaller group or subset (subject) is brought to the larger group or organization (object) for discussion and review."
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 14,
+        "input_text": "A proportion of American Association of Clinical Endocrinology algorithm task force members overlapped with the American Association of Clinical Endocrinology diabetes clinical practice guideline task force to ensure continuity and alignment with the 2022 published guideline recommendations.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "overlapped with": "The group or organization (subject) shares common members with another group or organization (object)."
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 15,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm continues to emphasize lifestyle modification and treatment of overweight/obesity as key pillars of the management of prediabetes and diabetes mellitus.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "prediabetes",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "prediabetes",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ],
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "prediabetes",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "prediabetes",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ],
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ]
+        ]
+    },
+    {
+        "index": 16,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm highlights the importance of appropriate management of the atherosclerotic risk factors of dyslipidemia and hypertension.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ],
+            [
+                "hypertension",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "hypertension",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ],
+            [
+                "hypertension",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "hypertension",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ]
+        ]
+    },
+    {
+        "index": 17,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm includes a complication-centric approach, beyond glucose levels, to frame decisions regarding first-line pharmacologic choices for the treatment of persons with diabetes mellitus.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "first-line pharmacologic choices"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object)."
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "first-line pharmacologic choices"
+            ]
+        ]
+    },
+    {
+        "index": 18,
+        "input_text": "The American Association of Clinical Endocrinology task force members/authors acknowledge that health care disparities and lack of access to newer medications remain a significant barrier for some persons with diabetes mellitus.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "has barrier": "The disease or condition (subject) is a significant obstacle or hindrance to the effective management or treatment of the disease (object)."
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 19,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm is divided into discrete graphic sections that outline the principles for management of Type 2 Diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "has graphic section": "The algorithm or guideline (subject) is divided into distinct visual representations (object) that outline the management principles.",
+            "has principle for management": "The algorithm or guideline (subject) outlines the key concepts or approaches (object) for managing the disease.",
+            "has management principle": "The algorithm or guideline (subject"
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 20,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm guides management of adiposity-based chronic disease, prediabetes, and atherosclerotic risk factors of dyslipidemia and hypertension.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "adiposity-based chronic disease",
+                "may be treated by",
+                "management of adiposity-based chronic disease"
+            ],
+            [
+                "prediabetes",
+                "may be treated by",
+                "management of adiposity-based chronic disease"
+            ],
+            [
+                "dyslipidemia",
+                "may be associated condition of",
+                "adiposity-based chronic disease"
+            ],
+            [
+                "hypertension",
+                "may be associated condition of",
+                "adiposity-based chronic disease"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the management or intervention (object).",
+            "may be associated condition of": "The disease (subject) is a condition that commonly co-occurs with or is closely linked to another disease (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {'co-occurs with': np.float64(0.8186445041369734), 'associated condition of': np.float64(0.790447657529995), 'may be associated disease of disease': np.float64(0.6877624830598306), 'component of': np.float64(0.6807007315422586), 'disease has associated anatomic site': np.float64(0.629250598507435)}, {'co-occurs with': np.float64(0.8184130907676965), 'associated condition of': np.float64(0.7906745649701578), 'may be associated disease of disease': np.float64(0.6876242260979836), 'component of': np.float64(0.6817781185553349), 'disease has associated anatomic site': np.float64(0.6297324224110598)}]",
+        "schema_canonicalizaiton": [
+            [
+                "adiposity-based chronic disease",
+                "may be treated by",
+                "management of adiposity-based chronic disease"
+            ],
+            [
+                "prediabetes",
+                "may be treated by",
+                "management of adiposity-based chronic disease"
+            ],
+            [
+                "dyslipidemia",
+                "co-occurs with",
+                "adiposity-based chronic disease"
+            ],
+            [
+                "hypertension",
+                "co-occurs with",
+                "adiposity-based chronic disease"
+            ]
+        ]
+    },
+    {
+        "index": 21,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm includes direction for insulin initiation and titration.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "initiation of": "The treatment or intervention (subject) is started or initiated for the disease or condition (object).",
+            "titration of": "The treatment or intervention (subject) is adjusted or modified in dosage or intensity for the disease or condition (object)."
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 22,
+        "input_text": "The 2023 American Association of Clinical Endocrinology algorithm provides convenient tables summarizing the benefits and risks of antihyperglycemic medications and weight-loss pharmacotherapy.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic medications"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "weight-loss pharmacotherapy"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object)."
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic medications"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "weight-loss pharmacotherapy"
+            ]
+        ]
+    },
+    {
+        "index": 23,
+        "input_text": "A new table of immunization guidance is provided in the 2023 American Association of Clinical Endocrinology algorithm, summarizing recommendations from the Advisory Committee on Immunization Practices of the U.S. Centers for Disease Control and Prevention.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {},
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 24,
+        "input_text": "Excess weight results in insulin resistance and increases the risk for prediabetes and Type 2 Diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "excess weight",
+                "increases risk of",
+                "prediabetes"
+            ],
+            [
+                "excess weight",
+                "increases risk of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "insulin resistance",
+                "may be finding of disease",
+                "excess weight"
+            ]
+        ],
+        "schema_definition": {
+            "may be finding of disease": "The clinical or laboratory finding (subject) may be observed as a characteristic indicator in patients diagnosed with the disease (object).",
+            "increases risk of": "The disease or factor (subject) elevates the likelihood of developing another disease or adverse outcome (object)."
+        },
+        "canonicalization_candidates": "[{'co-occurs with': np.float64(0.6784423857370747), 'cause of': np.float64(0.6747077387945738), 'may be associated disease of disease': np.float64(0.6620973205431584), 'component of': np.float64(0.6062047743010769), 'associated condition of': np.float64(0.5908189170859197)}, {'co-occurs with': np.float64(0.678820265448629), 'cause of': np.float64(0.6748884079901307), 'may be associated disease of disease': np.float64(0.6620294687703658), 'component of': np.float64(0.6067543118628411), 'associated condition of': np.float64(0.5913007466645258)}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "excess weight",
+                "associated condition of",
+                "prediabetes"
+            ],
+            [
+                "excess weight",
+                "associated condition of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "insulin resistance",
+                "may be finding of disease",
+                "excess weight"
+            ]
+        ]
+    },
+    {
+        "index": 25,
+        "input_text": "Excess weight leads to multiple complications beyond dysglycemia that comprise adiposity-based chronic disease and lead to excess morbidity and mortality.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "excess weight",
+                "increases risk of",
+                "adiposity-based chronic disease"
+            ]
+        ],
+        "schema_definition": {
+            "increases risk of": "The factor or condition (subject) elevates the likelihood of developing another disease or adverse outcome (object)."
+        },
+        "canonicalization_candidates": "[{'cause of': np.float64(0.6714835143420006), 'co-occurs with': np.float64(0.6584177096661197), 'may be associated disease of disease': np.float64(0.6184609122493671), 'component of': np.float64(0.6107895449297585), 'associated condition of': np.float64(0.5933730074624135)}]",
+        "schema_canonicalizaiton": [
+            [
+                "excess weight",
+                "may be associated disease of disease",
+                "adiposity-based chronic disease"
+            ]
+        ]
+    },
+    {
+        "index": 26,
+        "input_text": "Lifestyle intervention to achieve weight loss is a key pillar of the comprehensive treatment of persons with prediabetes to decrease progression to Type 2 Diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "prediabetes",
+                "may be treated by",
+                "lifestyle intervention"
+            ],
+            [
+                "prediabetes",
+                "may be associated disease of disease",
+                "Type 2 Diabetes"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the intervention or approach (object).",
+            "may be associated disease of disease": "The disease (subject) is a precursor or intermediate state that can potentially progress to another disease (object)."
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "prediabetes",
+                "may be treated by",
+                "lifestyle intervention"
+            ],
+            [
+                "prediabetes",
+                "may be associated disease of disease",
+                "Type 2 Diabetes"
+            ]
+        ]
+    },
+    {
+        "index": 27,
+        "input_text": "Weight loss improves many of the cardiometabolic and biomechanical components of adiposity-based chronic disease, including increased glycemia, dyslipidemia, elevated blood pressure, cardiovascular disease, nonalcoholic fatty liver disease, sleep apnea, and osteoarthritis.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "increased glycemia",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "elevated blood pressure",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "cardiovascular disease",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "nonalcoholic fatty liver disease",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "sleep apnea",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "osteoarthritis",
+                "may be treated by",
+                "weight loss"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or improved using the intervention or treatment (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "increased glycemia",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "elevated blood pressure",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "cardiovascular disease",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "nonalcoholic fatty liver disease",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "sleep apnea",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "osteoarthritis",
+                "may be treated by",
+                "weight loss"
+            ]
+        ]
+    },
+    {
+        "index": 28,
+        "input_text": "The American Association of Endocrinology Comprehensive Type 2 Diabetes Management Algorithm is based on principles that underlie all therapy for Type 2 Diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [],
+        "schema_definition": {
+            "": ""
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 29,
+        "input_text": "Lifestyle modification for Type 2 Diabetes includes exercise, healthy dietary changes, smoking cessation, and reduced alcohol intake.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "exercise"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "healthy dietary changes"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "smoking cessation"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "reduced alcohol intake"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "exercise"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "healthy dietary changes"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "smoking cessation"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "reduced alcohol intake"
+            ]
+        ]
+    },
+    {
+        "index": 30,
+        "input_text": "Lifestyle modification for Type 2 Diabetes also includes assessment and management of sleep disorders and depression.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "sleep disorders"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "depression"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object).",
+            "co-occurs with": "The disease (subject) is a condition that commonly co-occurs with or is closely linked to another disease (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "sleep disorders"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "depression"
+            ]
+        ]
+    },
+    {
+        "index": 31,
+        "input_text": "The Complications-Centric Model for the Care of Persons with Overweight/Obesity provides guidance on proposed interventions to improve the overall health of persons with overweight/obesity in the context of Type 2 Diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "proposed interventions"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "overweight/obesity"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the proposed interventions (object).",
+            "co-occurs with": "The disease (subject) is a condition that commonly co-occurs with or is closely linked to another disease (object)."
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "proposed interventions"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "overweight/obesity"
+            ]
+        ]
+    },
+    {
+        "index": 32,
+        "input_text": "The choice of antihyperglycemic therapy for Type 2 Diabetes reflects glycemic targets, atherosclerotic cardiovascular disease, congestive heart failure, chronic kidney disease, overweight/obesity, and nonalcoholic fatty liver disease.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic therapy"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "atherosclerotic cardiovascular disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "congestive heart failure"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "chronic kidney disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "overweight/obesity"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "nonalcoholic fatty liver disease"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object).",
+            "co-occurs with": "The disease or condition (subject) is a condition that commonly co-occurs with or is closely linked to another disease (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic therapy"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "atherosclerotic cardiovascular disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "congestive heart failure"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "chronic kidney disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "overweight/obesity"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "nonalcoholic fatty liver disease"
+            ]
+        ]
+    },
+    {
+        "index": 33,
+        "input_text": "Glycemic control has an essential role in the prevention and decreased progression of Type 2 Diabetes complications.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ],
+        "schema_definition": {
+            "has evaluation": "The disease or condition (subject) is assessed or monitored using the clinical metric or indicator (object)."
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ]
+    },
+    {
+        "index": 34,
+        "input_text": "The 2022 American Association of Endocrinology Clinical Practice Guidelines update recommends that clinicians prescribe a glucagon-like peptide-1 receptor agonist or a sodium glucose cotransporter 2 inhibitor for Type 2 Diabetes patients with established or high risk for atherosclerotic cardiovascular disease, heart failure, and/or chronic kidney disease.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "glucagon-like peptide-1 receptor agonist"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "sodium glucose cotransporter 2 inhibitor"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "atherosclerotic cardiovascular disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "heart failure"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "chronic kidney disease"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object).",
+            "co-occurs with": "The disease (subject) is a condition that commonly co-occurs with or is closely linked to another disease (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "glucagon-like peptide-1 receptor agonist"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "sodium glucose cotransporter 2 inhibitor"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "atherosclerotic cardiovascular disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "heart failure"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "chronic kidney disease"
+            ]
+        ]
+    },
+    {
+        "index": 35,
+        "input_text": "The choice of antihyperglycemic therapy for Type 2 Diabetes includes consideration of the potential benefit for stroke or nonalcoholic fatty liver disease.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic therapy"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "stroke"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "nonalcoholic fatty liver disease"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object).",
+            "co-occurs with": "The disease (subject) is a condition that commonly co-occurs with or is closely linked to another disease (object)."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic therapy"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "stroke"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "nonalcoholic fatty liver disease"
+            ]
+        ]
+    },
+    {
+        "index": 36,
+        "input_text": "The choice of therapy for Type 2 Diabetes includes ease of use and access to antihyperglycemic agents.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic agents"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object)."
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic agents"
+            ]
+        ]
+    }
+]

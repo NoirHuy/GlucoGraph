@@ -1,0 +1,49 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Porucha vyprazdňování žaludku, jeho \"\"ochrnutí\"\". Vzniká při poruše nervového řízení, např. při diabetické neuropatii (gastroparesis diabeticorum). Potrava může v žaludku stagnovat až několik dnů, což narušuje i její vstřebání; při diabetu zhoršuje kompenzaci (srov. bezoár). (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "Chronic delayed gastric emptying. Gastroparesis may be caused by motor dysfunction or paralysis of STOMACH muscles or may be associated with other systemic diseases such as DIABETES MELLITUS.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "Paralysis of the muscles of the stomach wall resulting in delayed emptying of the gastric contents into the small intestine.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "HPO",
+      "value": "Decreased strength of the muscle layer of stomach, which leads to a decreased ability to empty the contents of the stomach despite the absence of obstruction. [https://orcid.org/0000-0002-0736-9199]",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Retardo crônico do esvaziamento gástrico. A gastroparesia pode ser causada por disfunção motora ou paralisia dos músculos do ESTÔMAGO ou pode estar associada com outras doenças sistêmicas como DIABETES MELLITUS.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Retraso crónico del vaciamiento gástrico. Puede estar causada por disfunción motora o parálisis de los músculos del ESTÓMAGO o puede estar asociada a otras enfermedades sistémicas como la DIABETES MELLITUS.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Förlamning av magsäckens muskelskikt. Tillståndet ses oftast som en komplikation av diabetes mellitus.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

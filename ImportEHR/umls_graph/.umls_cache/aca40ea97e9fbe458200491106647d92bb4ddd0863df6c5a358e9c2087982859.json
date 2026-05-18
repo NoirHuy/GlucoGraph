@@ -1,0 +1,31 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "SNOMEDCT_US",
+      "value": "Diabetes mellitus in which there are frequent, clinically significant fluctuations in blood glucose levels both above and below levels expected to be achieved by available therapies.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "SNOMEDCT_US",
+      "value": "Frequent, clinically significant fluctuations in blood glucose levels both above and below levels expected to be achieved by available therapies.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "SCTSPA",
+      "value": "Diabetes mellitus en la cual se producen fluctuaciones de la glucemia frecuentes y clínicamente relevantes, por encima y por debajo de los niveles esperables con los tratamientos disponibles",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "SCTSPA",
+      "value": "Diabetes mellitus en la cual se producen fluctuaciones de la glucemia frecuentes y clínicamente relevantes, por encima y por debajo de los niveles esperables con los tratamientos disponibles.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

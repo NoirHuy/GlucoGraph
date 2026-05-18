@@ -1,0 +1,47 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "classType": "Atom",
+      "ui": "A21144545",
+      "sourceDescriptor": "NONE",
+      "sourceConcept": "NONE",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C2362516",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "MEDLINEPLUS",
+      "termType": "ET",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MEDLINEPLUS/4",
+      "language": "ENG",
+      "name": "Sugar Diabetes",
+      "ancestors": "NONE",
+      "descendants": "NONE",
+      "attributes": "NONE",
+      "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A21144545/relations",
+      "children": "NONE",
+      "parents": "NONE"
+    },
+    {
+      "classType": "Atom",
+      "ui": "A21143778",
+      "sourceDescriptor": "NONE",
+      "sourceConcept": "NONE",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C2362516",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "MEDLINEPLUS",
+      "termType": "ET",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MEDLINEPLUS/5930",
+      "language": "ENG",
+      "name": "Sugar Diabetes",
+      "ancestors": "NONE",
+      "descendants": "NONE",
+      "attributes": "NONE",
+      "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A21143778/relations",
+      "children": "NONE",
+      "parents": "NONE"
+    }
+  ]
+}

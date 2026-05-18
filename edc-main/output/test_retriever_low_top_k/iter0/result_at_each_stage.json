@@ -1,0 +1,767 @@
+[
+    {
+        "index": 0,
+        "input_text": "Lyseren is a lake in the municipalities of Enebakk in Akershus county and Spydeberg in Østfold county , Norway .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Enebakk"
+            ],
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Spydeberg"
+            ],
+            [
+                "Lyseren",
+                "country",
+                "Norway"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "country": "The subject entity is located in the country specified by the object entity.",
+            "located in the administrative territorial entity": "The subject entity is located within the administrative territorial entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Enebakk"
+            ],
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Spydeberg"
+            ],
+            [
+                "Lyseren",
+                "country",
+                "Norway"
+            ]
+        ]
+    },
+    {
+        "index": 1,
+        "input_text": "Varavu Nalla Uravu is a 1990 Indian Tamil film , directed by Visu and produced by Rajam Balachandar .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Varavu Nalla Uravu",
+                "director",
+                "Visu"
+            ],
+            [
+                "Varavu Nalla Uravu",
+                "producer",
+                "Rajam Balachandar"
+            ],
+            [
+                "Varavu Nalla Uravu",
+                "country",
+                "India"
+            ]
+        ],
+        "schema_definition": {
+            "Here are the relation descriptions": "",
+            "country": "The subject entity is associated with or originated from the country specified by the object entity.",
+            "producer": "The subject entity was produced by the person or entity specified by the object entity.",
+            "director": "The subject entity was directed by the person specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Varavu Nalla Uravu",
+                "director",
+                "Visu"
+            ],
+            [
+                "Varavu Nalla Uravu",
+                "producer",
+                "Rajam Balachandar"
+            ],
+            [
+                "Varavu Nalla Uravu",
+                "country",
+                "India"
+            ]
+        ]
+    },
+    {
+        "index": 2,
+        "input_text": "Batura III , also known as Batura Muztagh III , is a peak in Batura Muztagh of Pakistan , which is the westernmost subrange of the Karakoram range .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Batura III",
+                "also known as",
+                "Batura Muztagh III"
+            ],
+            [
+                "Batura III",
+                "part of",
+                "Batura Muztagh"
+            ],
+            [
+                "Batura III",
+                "country",
+                "Pakistan"
+            ],
+            [
+                "Batura III",
+                "part of",
+                "Karakoram range"
+            ],
+            [
+                "Batura Muztagh",
+                "part of",
+                "Karakoram range"
+            ],
+            [
+                "Batura Muztagh",
+                "country",
+                "Pakistan"
+            ]
+        ],
+        "schema_definition": {
+            "also known as": "The subject entity is also referred to as or has the alternative name specified by the object entity.",
+            "part of": "The subject entity is a component, subset, or located within the entity specified by the object entity.",
+            "country": "The subject entity is located in or belongs to the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{'named after': np.float64(0.9467427399894179), 'language of work or name': np.float64(0.9045339830745658), 'part of': np.float64(0.9026520280936496), 'employer': np.float64(0.8923723269442412), 'operator': np.float64(0.8902193598082866)}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            null,
+            [
+                "Batura III",
+                "part of",
+                "Batura Muztagh"
+            ],
+            [
+                "Batura III",
+                "country",
+                "Pakistan"
+            ],
+            [
+                "Batura III",
+                "part of",
+                "Karakoram range"
+            ],
+            [
+                "Batura Muztagh",
+                "part of",
+                "Karakoram range"
+            ],
+            [
+                "Batura Muztagh",
+                "country",
+                "Pakistan"
+            ]
+        ]
+    },
+    {
+        "index": 3,
+        "input_text": "Ramakuppam is a village in Chittoor district of the Indian state of Andhra Pradesh .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Ramakuppam",
+                "located in the administrative territorial entity",
+                "Chittoor district"
+            ],
+            [
+                "Ramakuppam",
+                "country",
+                "India"
+            ],
+            [
+                "Ramakuppam",
+                "located in the administrative territorial entity",
+                "Andhra Pradesh"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "country": "The subject entity is located in the country specified by the object entity.",
+            "located in the administrative territorial entity": "The subject entity is located within or is a part of the administrative territorial entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Ramakuppam",
+                "located in the administrative territorial entity",
+                "Chittoor district"
+            ],
+            [
+                "Ramakuppam",
+                "country",
+                "India"
+            ],
+            [
+                "Ramakuppam",
+                "located in the administrative territorial entity",
+                "Andhra Pradesh"
+            ]
+        ]
+    },
+    {
+        "index": 4,
+        "input_text": "Kurniwadi is a village in Belgaum district in Karnataka , India .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Kurniwadi",
+                "country",
+                "India"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "country": "The subject entity is located in the country specified by the object entity.",
+            "located in the administrative territorial entity": "The subject entity is located within the administrative territorial entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Kurniwadi",
+                "country",
+                "India"
+            ]
+        ]
+    },
+    {
+        "index": 5,
+        "input_text": "Stadion Rankhof is a football stadium in Basel , Switzerland .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Stadion Rankhof",
+                "located in the administrative territorial entity",
+                "Basel"
+            ],
+            [
+                "Stadion Rankhof",
+                "country",
+                "Switzerland"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "located in the administrative territorial entity": "The subject entity is situated or found within the administrative territorial entity specified by the object entity.",
+            "country": "The subject entity is located or situated in the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Stadion Rankhof",
+                "located in the administrative territorial entity",
+                "Basel"
+            ],
+            [
+                "Stadion Rankhof",
+                "country",
+                "Switzerland"
+            ]
+        ]
+    },
+    {
+        "index": 6,
+        "input_text": "Gozar is a village in Firuzeh Rural District , in the Central District of Firuzeh County , Razavi Khorasan Province , Iran .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Firuzeh Rural District"
+            ],
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Central District"
+            ],
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Firuzeh County"
+            ],
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Razavi Khorasan Province"
+            ],
+            [
+                "Gozar",
+                "country",
+                "Iran"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "country": "The subject entity is located in the country specified by the object entity.",
+            "located in the administrative territorial entity": "The subject entity is located within or is a part of the administrative territorial entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Firuzeh Rural District"
+            ],
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Central District"
+            ],
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Firuzeh County"
+            ],
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Razavi Khorasan Province"
+            ],
+            [
+                "Gozar",
+                "country",
+                "Iran"
+            ]
+        ]
+    },
+    {
+        "index": 7,
+        "input_text": "Eslamabad, Dowreh is a village in Teshkan Rural District , Chegeni District , Dowreh County , Lorestan Province , Iran .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Teshkan Rural District"
+            ],
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Chegeni District"
+            ],
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Dowreh County"
+            ],
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Lorestan Province"
+            ],
+            [
+                "Eslamabad, Dowreh",
+                "country",
+                "Iran"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "country": "The subject entity is located in the country specified by the object entity.",
+            "located in the administrative territorial entity": "The subject entity is located within or is a part of the administrative territorial entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Teshkan Rural District"
+            ],
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Chegeni District"
+            ],
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Dowreh County"
+            ],
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Lorestan Province"
+            ],
+            [
+                "Eslamabad, Dowreh",
+                "country",
+                "Iran"
+            ]
+        ]
+    },
+    {
+        "index": 8,
+        "input_text": "Alvan-e Eshareh is a village in Azadeh Rural District , Moshrageh District , Ramshir County , Khuzestan Province , Iran .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Azadeh Rural District"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Moshrageh District"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Ramshir County"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Khuzestan Province"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "country",
+                "Iran"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "country": "The subject entity is located in the country specified by the object entity.",
+            "located in the administrative territorial entity": "The subject entity is located within or is a part of the administrative territorial entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Azadeh Rural District"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Moshrageh District"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Ramshir County"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Khuzestan Province"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "country",
+                "Iran"
+            ]
+        ]
+    },
+    {
+        "index": 9,
+        "input_text": "Vilakkum Velichavum is a 1978 Indian Malayalam film , directed by P. Bhaskaran and produced by Pavamani .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Vilakkum Velichavum",
+                "director",
+                "P. Bhaskaran"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "producer",
+                "Pavamani"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "country",
+                "India"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "language",
+                "Malayalam"
+            ]
+        ],
+        "schema_definition": {
+            "Here are the relation descriptions": "",
+            "country": "The subject entity is associated with or originated from the country specified by the object entity.",
+            "producer": "The subject entity was produced by the person or entity specified by the object entity.",
+            "director": "The subject entity was directed by the person specified by the object entity.",
+            "language": "The subject entity is associated with or communicated in the language specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {'language of work or name': np.float64(0.9526060135747705), 'original language of film or TV show': np.float64(0.9184910272691872), 'operator': np.float64(0.8990642655502168), 'employer': np.float64(0.8982508235289532), 'part of': np.float64(0.8920441114605561)}]",
+        "schema_canonicalizaiton": [
+            [
+                "Vilakkum Velichavum",
+                "director",
+                "P. Bhaskaran"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "producer",
+                "Pavamani"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "country",
+                "India"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "original language of film or TV show",
+                "Malayalam"
+            ]
+        ]
+    },
+    {
+        "index": 10,
+        "input_text": "Gorabal is a village in Belgaum district in the southern state of Karnataka , India .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Gorabal",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Gorabal",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Gorabal",
+                "country",
+                "India"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "country": "The subject entity is located in the country specified by the object entity.",
+            "located in the administrative territorial entity": "The subject entity is located within the administrative territorial entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Gorabal",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Gorabal",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Gorabal",
+                "country",
+                "India"
+            ]
+        ]
+    },
+    {
+        "index": 11,
+        "input_text": "Vayasu Pilichindi is a 1978 Telugu - language film directed by C. V. Sridhar .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Vayasu Pilichindi",
+                "director",
+                "C. V. Sridhar"
+            ],
+            [
+                "Vayasu Pilichindi",
+                "language",
+                "Telugu"
+            ],
+            [
+                "Vayasu Pilichindi",
+                "release year",
+                "1978"
+            ]
+        ],
+        "schema_definition": {
+            "release year": "The subject entity was released in the year specified by the object entity.",
+            "director": "The subject entity was directed by the person specified by the object entity.",
+            "language": "The subject entity is associated with or presented in the language specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {'language of work or name': np.float64(0.9595780629203211), 'original language of film or TV show': np.float64(0.927844233970391), 'employer': np.float64(0.9028198854470975), 'part of': np.float64(0.9019070766537267), 'operator': np.float64(0.9005435729549962)}, {'creator': np.float64(0.8072454648849845), 'distributed by': np.float64(0.8068114811976135), 'producer': np.float64(0.8049509360563606), 'production company': np.float64(0.8012091830906559), 'place of birth': np.float64(0.7908593203127505)}]",
+        "schema_canonicalizaiton": [
+            [
+                "Vayasu Pilichindi",
+                "director",
+                "C. V. Sridhar"
+            ],
+            [
+                "Vayasu Pilichindi",
+                "original language of film or TV show",
+                "Telugu"
+            ],
+            null
+        ]
+    },
+    {
+        "index": 12,
+        "input_text": "Kaharlyk is a town in Kiev Oblast ( province ) of Ukraine .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Kaharlyk",
+                "located in the administrative territorial entity",
+                "Kiev Oblast"
+            ],
+            [
+                "Kaharlyk",
+                "country",
+                "Ukraine"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "country": "The subject entity is located in the country specified by the object entity.",
+            "located in the administrative territorial entity": "The subject entity is located within the administrative territorial entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Kaharlyk",
+                "located in the administrative territorial entity",
+                "Kiev Oblast"
+            ],
+            [
+                "Kaharlyk",
+                "country",
+                "Ukraine"
+            ]
+        ]
+    },
+    {
+        "index": 13,
+        "input_text": "Paul E. Johnson taught at Princeton University , Yale University , University of Utah , and University of South Carolina .\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Paul E. Johnson",
+                "taught at",
+                "Princeton University"
+            ],
+            [
+                "Paul E. Johnson",
+                "taught at",
+                "Yale University"
+            ],
+            [
+                "Paul E. Johnson",
+                "taught at",
+                "University of Utah"
+            ],
+            [
+                "Paul E. Johnson",
+                "taught at",
+                "University of South Carolina"
+            ]
+        ],
+        "schema_definition": {
+            "taught at": "The subject entity provided educational instruction or was a teacher at the institution specified by the object entity."
+        },
+        "canonicalization_candidates": "[{'educated at': np.float64(0.9221170538484972), 'employer': np.float64(0.8422976957457523), 'director': np.float64(0.8318576119663508), 'producer': np.float64(0.8312864683879811), 'student of': np.float64(0.8286798632094794)}, {'educated at': np.float64(0.9221170538484972), 'employer': np.float64(0.8422976957457523), 'director': np.float64(0.8318576119663508), 'producer': np.float64(0.8312864683879811), 'student of': np.float64(0.8286798632094794)}, {'educated at': np.float64(0.9221170538484972), 'employer': np.float64(0.8422976957457523), 'director': np.float64(0.8318576119663508), 'producer': np.float64(0.8312864683879811), 'student of': np.float64(0.8286798632094794)}, {'educated at': np.float64(0.9221170538484972), 'employer': np.float64(0.8422976957457523), 'director': np.float64(0.8318576119663508), 'producer': np.float64(0.8312864683879811), 'student of': np.float64(0.8286798632094794)}]",
+        "schema_canonicalizaiton": [
+            [
+                "Paul E. Johnson",
+                "employer",
+                "Princeton University"
+            ],
+            null,
+            null,
+            [
+                "Paul E. Johnson",
+                "employer",
+                "University of South Carolina"
+            ]
+        ]
+    },
+    {
+        "index": 14,
+        "input_text": "Vilamana is a village in Kannur district in the Indian state of Kerala .",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Vilamana",
+                "located in the administrative territorial entity",
+                "Kannur district"
+            ],
+            [
+                "Vilamana",
+                "located in the administrative territorial entity",
+                "Kerala"
+            ],
+            [
+                "Vilamana",
+                "country",
+                "India"
+            ]
+        ],
+        "schema_definition": {
+            "Based on the provided text and triples, the relation descriptions are": "",
+            "country": "The subject entity is located in the country specified by the object entity.",
+            "located in the administrative territorial entity": "The subject entity is located within the administrative territorial entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Vilamana",
+                "located in the administrative territorial entity",
+                "Kannur district"
+            ],
+            [
+                "Vilamana",
+                "located in the administrative territorial entity",
+                "Kerala"
+            ],
+            [
+                "Vilamana",
+                "country",
+                "India"
+            ]
+        ]
+    }
+]

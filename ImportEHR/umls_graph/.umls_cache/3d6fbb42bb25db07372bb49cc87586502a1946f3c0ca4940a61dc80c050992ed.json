@@ -1,0 +1,27 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "classType": "Atom",
+      "ui": "A1187536",
+      "sourceDescriptor": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/CSP/0862-7550",
+      "sourceConcept": "NONE",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0597655",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "CSP",
+      "termType": "PT",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/CSP/0862-7550",
+      "language": "ENG",
+      "name": "virus related diabetes mellitus",
+      "ancestors": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1187536/ancestors",
+      "descendants": "NONE",
+      "attributes": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1187536/attributes",
+      "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1187536/relations",
+      "children": "NONE",
+      "parents": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1187536/parents"
+    }
+  ]
+}

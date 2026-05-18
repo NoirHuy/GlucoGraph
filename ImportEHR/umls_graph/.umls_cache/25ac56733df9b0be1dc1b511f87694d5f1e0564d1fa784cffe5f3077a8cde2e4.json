@@ -1,0 +1,19 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "NCI",
+      "value": "A non-neoplastic or neoplastic disorder that affects the endocrine pancreas (islets of Langerhans).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "CSP",
+      "value": "deviation from or interruption of the normal structure or function of the pancreatic islet.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

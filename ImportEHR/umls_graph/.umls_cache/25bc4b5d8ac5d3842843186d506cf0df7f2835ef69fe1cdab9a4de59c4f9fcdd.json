@@ -1,0 +1,27 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "classType": "Atom",
+      "ui": "A1883361",
+      "sourceDescriptor": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/CSP/0862-6950",
+      "sourceConcept": "NONE",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0678154",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "CSP",
+      "termType": "PT",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/CSP/0862-6950",
+      "language": "ENG",
+      "name": "insulin sensitivity/resistance",
+      "ancestors": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1883361/ancestors",
+      "descendants": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1883361/descendants",
+      "attributes": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1883361/attributes",
+      "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1883361/relations",
+      "children": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1883361/children",
+      "parents": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A1883361/parents"
+    }
+  ]
+}

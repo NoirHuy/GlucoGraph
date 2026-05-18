@@ -1,0 +1,47 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "classType": "Atom",
+      "ui": "A20978763",
+      "sourceDescriptor": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MSH/C565730",
+      "sourceConcept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MSH/M0566030",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C1857958",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "MSH",
+      "termType": "NM",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MSH/C565730",
+      "language": "ENG",
+      "name": "Diabetes Mellitus, Congenital Autoimmune",
+      "ancestors": "NONE",
+      "descendants": "NONE",
+      "attributes": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A20978763/attributes",
+      "relations": "NONE",
+      "children": "NONE",
+      "parents": "NONE"
+    },
+    {
+      "classType": "Atom",
+      "ui": "A11969238",
+      "sourceDescriptor": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/OMIM/605026",
+      "sourceConcept": "NONE",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C1857958",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "OMIM",
+      "termType": "PT",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/OMIM/605026",
+      "language": "ENG",
+      "name": "DIABETES MELLITUS, CONGENITAL AUTOIMMUNE",
+      "ancestors": "NONE",
+      "descendants": "NONE",
+      "attributes": "NONE",
+      "relations": "NONE",
+      "children": "NONE",
+      "parents": "NONE"
+    }
+  ]
+}

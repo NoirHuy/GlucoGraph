@@ -1,0 +1,28 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C0011878",
+    "name": "Diabetic Diet",
+    "dateAdded": "09-30-1990",
+    "majorRevisionDate": "01-15-2026",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Therapeutic or Preventive Procedure",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T061"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011878/atoms",
+    "definitions": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011878/definitions",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011878/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011878/atoms/preferred",
+    "atomCount": 108,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 3
+  }
+}

@@ -1,0 +1,122 @@
+<benchmark>
+	<entries>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Lyseren | located in the administrative territorial entity | Enebakk</gtriple>
+				<gtriple>Lyseren | located in the administrative territorial entity | Spydeberg</gtriple>
+				<gtriple>Lyseren | country | Norway</gtriple>
+				<gtriple>Enebakk | located in the administrative territorial entity | Akershus county</gtriple>
+				<gtriple>Spydeberg | located in the administrative territorial entity | &#258;&#732;stfold county</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Varavu Nalla Uravu | director | Visu</gtriple>
+				<gtriple>Varavu Nalla Uravu | producer | Rajam Balachandar</gtriple>
+				<gtriple>Varavu Nalla Uravu | country of origin | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Batura III | part of | Batura Muztagh</gtriple>
+				<gtriple>Batura III | located on terrain feature | Karakoram</gtriple>
+				<gtriple>Batura III | country | Pakistan</gtriple>
+				<gtriple>Batura Muztagh | part of | Karakoram</gtriple>
+				<gtriple>Batura Muztagh III | part of | Batura Muztagh</gtriple>
+				<gtriple>Batura Muztagh III | country | Pakistan</gtriple>
+				<gtriple>Karakoram | country | Pakistan</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Ramakuppam | located in the administrative territorial entity | Chittoor district</gtriple>
+				<gtriple>Ramakuppam | country | India</gtriple>
+				<gtriple>Andhra Pradesh | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kurniwadi | located in the administrative territorial entity | Belgaum district</gtriple>
+				<gtriple>Kurniwadi | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Kurniwadi | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Stadion Rankhof | located in the administrative territorial entity | Basel</gtriple>
+				<gtriple>Stadion Rankhof | country | Switzerland</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Gozar | located in the administrative territorial entity | Firuzeh Rural District</gtriple>
+				<gtriple>Firuzeh Rural District | located in the administrative territorial entity | Central District</gtriple>
+				<gtriple>Central District | located in the administrative territorial entity | Firuzeh County</gtriple>
+				<gtriple>Firuzeh County | located in the administrative territorial entity | Razavi Khorasan Province</gtriple>
+				<gtriple>Razavi Khorasan Province | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Eslamabad, Dowreh | located in the administrative territorial entity | Teshkan Rural District</gtriple>
+				<gtriple>Teshkan Rural District | located in the administrative territorial entity | Chegeni District</gtriple>
+				<gtriple>Chegeni District | located in the administrative territorial entity | Dowreh County</gtriple>
+				<gtriple>Dowreh County | located in the administrative territorial entity | Lorestan Province</gtriple>
+				<gtriple>Lorestan Province | located in the administrative territorial entity | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Alvan-e Eshareh | located in the administrative territorial entity | Azadeh Rural District</gtriple>
+				<gtriple>Alvan-e Eshareh | located in the administrative territorial entity | Moshrageh District</gtriple>
+				<gtriple>Alvan-e Eshareh | located in the administrative territorial entity | Ramshir County</gtriple>
+				<gtriple>Alvan-e Eshareh | located in the administrative territorial entity | Khuzestan Province</gtriple>
+				<gtriple>Alvan-e Eshareh | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Vilakkum Velichavum | director | P. Bhaskaran</gtriple>
+				<gtriple>Vilakkum Velichavum | producer | Pavamani</gtriple>
+				<gtriple>Vilakkum Velichavum | country of origin | India</gtriple>
+				<gtriple>Vilakkum Velichavum | original language of film or TV show | Malayalam</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Gorabal | located in the administrative territorial entity | Belgaum district</gtriple>
+				<gtriple>Gorabal | country | India</gtriple>
+				<gtriple>Belgaum district | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Belgaum district | country | India</gtriple>
+				<gtriple>Karnataka | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Vayasu Pilichindi | director | C. V. Sridhar</gtriple>
+				<gtriple>Vayasu Pilichindi | original language of film or TV show | Telugu</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kaharlyk | located in the administrative territorial entity | Kiev Oblast</gtriple>
+				<gtriple>Kaharlyk | country | Ukraine</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Paul E. Johnson | employer | Princeton University</gtriple>
+				<gtriple>Paul E. Johnson | employer | Yale University</gtriple>
+				<gtriple>Paul E. Johnson | employer | University of Utah</gtriple>
+				<gtriple>Paul E. Johnson | employer | University of South Carolina</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Vilamana | located in the administrative territorial entity | Kannur district</gtriple>
+				<gtriple>Vilamana | country | India</gtriple>
+				<gtriple>Vilamana | located in the administrative territorial entity | Kerala</gtriple>
+			</generatedtripleset>
+		</entry>
+	</entries>
+</benchmark>

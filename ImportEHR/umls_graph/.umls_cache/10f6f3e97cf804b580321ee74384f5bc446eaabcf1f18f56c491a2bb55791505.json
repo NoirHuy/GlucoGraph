@@ -1,0 +1,79 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Heterogenní skupina chronických metabolických chorob, jejichž základním projevem je hyperglykemie a porušená glukózová tolerance. Vzniká v důsledku nedostatku inzulinu, jeho nedostatečného účinku (někdy se mluví o relativním nedostatku) nebo kombinací obojího. (cit. Wikiskripta 2017 http://www.wikiskripta.eu/)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "A heterogeneous group of disorders characterized by HYPERGLYCEMIA and GLUCOSE INTOLERANCE.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "HPO",
+      "value": "A group of abnormalities characterized by hyperglycemia and glucose intolerance. [https://orcid.org/0000-0002-0736-9199]",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "CSP",
+      "value": "heterogeneous group of disorders that share glucose intolerance in common.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "CHV",
+      "value": "diabetes mellitus",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "PDQ",
+      "value": "A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C2985\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C2985\" NCI Thesaurus)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MEDLINEPLUS",
+      "value": "<h3>What is diabetes?</h3> <p>Diabetes, also known as diabetes mellitus, is a disease in which your <a href=\"https://medlineplus.gov/bloodglucose.html\">blood glucose</a>, or blood sugar, levels are too high. Glucose is your body's main source of energy. Your body can make glucose, but it also comes from the food you eat. Insulin is a <a href=\"https://medlineplus.gov/hormones.html\">hormone</a> made by your pancreas. Insulin helps move glucose from your bloodstream into your cells, where it can be used for energy.</p> <p>If you have diabetes, your body can't make insulin, can't use insulin as well as it should, or both. Too much glucose stays in your blood and doesn't reach your cells. This can cause glucose levels to get too high. Over time, high blood glucose levels can lead to <a href=\"https://medlineplus.gov/diabetescomplications.html\">serious health conditions</a>. But you can take steps to manage your diabetes and try to prevent these health problems.</p> <h3>What are the types of diabetes?</h3> <p>There are different types of diabetes:</p> <ul> <li><strong><a href=\"https://medlineplus.gov/diabetestype1.html\">Type 1 diabetes</a></strong>. If you have type 1 diabetes, your body makes little or no insulin. It happens when your <a href=\"https://medlineplus.gov/immunesystemanddisorders.html\">immune system</a> attacks and destroys the cells that produce insulin. </li> <li><strong><a href=\"https://medlineplus.gov/diabetestype2.html\">Type 2 diabetes</a>.</strong> This is the most common form of diabetes. If you have type 2 diabetes, your body may still be able to make insulin, but your cells don't respond well to insulin. They can't easily take up enough glucose from your blood.</li> <li><strong><a href=\"https://medlineplus.gov/diabetesandpregnancy.html\">Gestational diabetes</a>.</strong> This is a form of diabetes that develops during pregnancy. It happens when your body can't make the extra insulin it needs during pregnancy.</li> </ul> <h3>What causes diabetes?</h3> <p>The different types of diabetes have different causes:</p> <ul> <li>Researchers think <strong>type 1 diabetes</strong> is caused by <a href=\"https://medlineplus.gov/genetics/condition/type-1-diabetes/\">genes</a> and factors in the environment that might trigger the disease.</li> <li><strong>Type 2 diabetes</strong> is caused by several factors, including lifestyle factors and <a href=\"https://medlineplus.gov/genetics/condition/type-2-diabetes\">genes</a>. The lifestyle factors include <a href=\"https://medlineplus.gov/healthrisksofaninactivelifestyle.html\">not being physically active</a> and being overweight or having <a href=\"https://medlineplus.gov/obesity.html\">obesity</a>.</li> <li>Researchers think <strong>gestational diabetes</strong> is caused by the hormonal changes of pregnancy along with <a href=\"https://medlineplus.gov/genetics/condition/gestational-diabetes/\">genetic</a> and lifestyle factors.</li> </ul> <h3>Who is more likely to develop diabetes?</h3> <p>The different types of diabetes have different risk factors:</p> <ul> <li>You can develop <strong>type 1 diabetes</strong> at any age, but it most often starts in childhood. Having a parent or sibling with type 1 diabetes may increase your chance of developing it.</li> <li>You are at higher risk of developing <strong>type 2 diabetes</strong> if you:</li> <ul> <li>Are overweight or have obesity.</li> <li>Are over age 35. <a href=\"https://medlineplus.gov/diabetesinchildrenandteens.html\">Children, teenagers,</a> and younger adults can get diabetes, but it is more common in middle-aged and older adults.</li> <li>Have a family history of diabetes.</li> <li>Have <a href=\"https://medlineplus.gov/prediabetes.html\">prediabetes</a>. This means that your blood glucose is higher than normal, but it's not high enough to be called diabetes.</li> <li>Had gestational diabetes.</li> <li>Have given birth to a baby weighing 9 pounds or more.</li> <li>Are African American, American Indian, Asian American, Hispanic/Latino, or Pacific Islander.</li> <li>Are not physically active.</li> <li>Have certain other health conditions, such as <a href=\"https://medlineplus.gov/highbloodpressure.html\">high blood pressure</a> or <a href=\"https://medlineplus.gov/polycysticovarysyndrome.html\">polycystic ovary syndrome</a> (PCOS).</li> </ul> <li>You are at higher risk of developing <strong>gestational diabetes</strong> if you:</li> <ul> <li>Are overweight or have obesity.</li> <li>Have a family history of diabetes.</li> <li>Had gestational diabetes in a previous pregnancy.</li> <li>Have given birth to a baby weighing 9 pounds or more.</li> <li>Have polycystic ovary syndrome (PCOS).</li> <li>Are African American, Hispanic/Latino, American Indian, Alaska Native, Native Hawaiian, or Pacific Islander.</li> </ul> </ul> <h3>What are the symptoms of diabetes?</h3> <p>The symptoms of diabetes may include:</p> <ul> <li>Feeling very thirsty</li> <li>Feeling very hungry</li> <li>Urinating (peeing) more often, including at night</li> <li><a href=\"https://medlineplus.gov/fatigue.html\">Fatigue</a></li> <li>Blurry vision</li> <li>Numbness or tingling in the feet or hands</li> <li>Sores that do not heal</li> <li>Losing weight without trying</li> </ul> <p>But it's important to know that your symptoms may vary, depending on which type you have:</p> <ul> <li>The symptoms of <strong>type 1 diabetes</strong> usually come on quickly and can be severe.</li> <li>With <strong>type 2 diabetes,</strong> the symptoms often develop slowly, over several years. The symptoms can be so mild that you might not even notice them.</li> <li><strong>Gestational diabetes</strong> often has no symptoms. If you do have symptoms, they may be mild. If you are pregnant, you will usually be screened for this condition between 24 and 28 weeks of pregnancy. </li> </ul> <h3>How is diabetes diagnosed?</h3> <p>To find out if you have diabetes, your health care provider will use one or more <a href=\"https://medlineplus.gov/lab-tests/blood-glucose-test/\">glucose blood tests</a>. There are several types, including the <a href=\"https://medlineplus.gov/a1c.html\">A1C test</a>.</p> <h3>What are the treatments for diabetes?</h3> <p>Treatment for diabetes involves managing your blood glucose levels:</p> <ul> <li>If you have <strong>type 1 diabetes,</strong> you will need to take daily doses of insulin, either by injection or through a special pump. Some people also need to take another type of <a href=\"https://medlineplus.gov/diabetesmedicines.html\">diabetes medicine</a> that works with insulin.</li> <li>If you have <strong>type 2 diabetes,</strong> you may be able to manage or even reverse it by making <a href=\"https://medlineplus.gov/howtopreventdiabetes.html\">lifestyle changes</a>. These include eating a <a href=\"https://medlineplus.gov/diabeticdiet.html\">healthy diet</a>, <a href=\"https://medlineplus.gov/weightcontrol.html\">staying at healthy weight</a>, and <a href=\"https://medlineplus.gov/howmuchexercisedoineed.html\">getting regular physical activity</a>. Some people also need to take diabetes medicines to manage their diabetes.</li> <li>If you have <strong>gestational diabetes,</strong> you may be able to lower your glucose levels by eating a healthy diet and getting regular exercise. But be sure to talk to your provider about your treatment options. Gestational diabetes usually goes away after you give birth. But you will have a higher risk of developing type 2 diabetes later.</li> </ul> <p>Checking your blood glucose levels is also an important part of managing your diabetes. Ask your provider about the best way to check your blood glucose level and how often you should check it.</p> <h3>Can diabetes be prevented?</h3> <p><strong>Type 1 diabetes</strong> can't be prevented.</p> <p>You may be able to delay or prevent <strong>type 2 diabetes</strong> through the same lifestyle changes that are used to manage diabetes (eating a healthy diet, staying at a healthy weight, and getting regular physical activity). These lifestyle changes may also help prevent <strong>gestational diabetes</strong>.</p> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHNOR",
+      "value": "En heterogen gruppe sykdomstilstander kjennetegnet av hyperglykemi og glukoseintoleranse.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Grupo de transtornos heterogêneos caracterizados por HIPERGLICEMIA e INTOLERÂNCIA À GLUCOSE.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Grupo heterogéneo de trastornos caracterizados por HIPERGLUCEMIA e INTOLERANCIA A LA GLUCOSA.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "En heterogen grupp av sjukdomstillstånd med glukosintolerans som gemensam nämnare.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "NCI",
+      "value": "A quantitative measurement of the amount of glucose present in a sample of serum.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

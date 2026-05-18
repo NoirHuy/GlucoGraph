@@ -1,0 +1,27 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "classType": "Atom",
+      "ui": "A34652035",
+      "sourceDescriptor": "NONE",
+      "sourceConcept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/ORPHANET/101952",
+      "concept": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C5681799",
+      "suppressible": "false",
+      "obsolete": "false",
+      "rootSource": "ORPHANET",
+      "termType": "PT",
+      "code": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/ORPHANET/101952",
+      "language": "ENG",
+      "name": "Rare diabetes mellitus",
+      "ancestors": "NONE",
+      "descendants": "NONE",
+      "attributes": "NONE",
+      "relations": "NONE",
+      "children": "NONE",
+      "parents": "NONE"
+    }
+  ]
+}

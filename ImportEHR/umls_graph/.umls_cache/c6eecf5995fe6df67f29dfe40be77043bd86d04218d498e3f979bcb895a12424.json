@@ -1,0 +1,67 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Vrozená nebo získaná polyurie způsobená nedostatečnou sekrecí vazopresinů neurohypofýzou. Mezi klinické příznaky patří vylučování velkého objemu hypotonické moči, hypernatremie, žízeň a polydipsie. Etiologie zahrnuje poranění hlavy, operace a nemoci hypotalamu a hypofýzy. Tato porucha může být také způsobena mutací genů (jako např. ARVP) kódujících vazopresin a jemu odpovídající neurofyzin.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "HPO",
+      "value": "A form of diabetes insipidus related to a failure of vasopressin (AVP) release from the hypothalamus. [https://orcid.org/0000-0002-0736-9199]",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "CHV",
+      "value": "a lack of antidiuretic hormone that causes excessive production of very dilute urine",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "A genetic or acquired polyuric disorder caused by a deficiency of VASOPRESSINS secreted by the NEUROHYPOPHYSIS. Clinical signs include the excretion of large volumes of dilute URINE; HYPERNATREMIA; THIRST; and polydipsia. Etiologies include HEAD TRAUMA; surgeries and diseases involving the HYPOTHALAMUS and the PITUITARY GLAND. This disorder may also be caused by mutations of genes such as ARVP encoding vasopressin and its corresponding neurophysin (NEUROPHYSINS).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "NCI",
+      "value": "Diabetes insipidus caused by decreased secretion of antidiuretic hormone from the pituitary gland.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "ORPHANET",
+      "value": "Central diabetes insipidus (CDI) is a hypothalamus-pituitary disease characterized by polyuria and polydipsia due to a vasopressin (AVP) deficiency. It can be inherited or acquired (hereditary CDI and acquired CDI).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MEDLINEPLUS",
+      "value": "Arginine vasopressin deficiency (previously called neurohypophyseal diabetes insipidus) is a disorder of water balance. The body normally balances fluid intake by releasing fluid in urine. However, people with arginine vasopressin deficiency produce an excessive amount of urine (polyuria), which depletes the amount of water in the body. This water loss also leads to excessive thirst (polydipsia).~People with arginine vasopressin deficiency can quickly become dehydrated if they do not drink enough water. Dehydration can cause dizziness and fatigue. Prolonged dehydration can lead to confusion, low blood pressure, seizures, and coma. People with this condition often develop high levels of sodium in the blood (hypernatremia) due to dehydration. Repeated cycles of dehydration can cause long-term health problems, particularly in children.~Arginine vasopressin deficiency can be either acquired or familial. The acquired form occurs when the brain is damaged due to head injuries, brain tumors, or other events, and this form can occur at any time during life. The familial form is caused by genetic changes; its signs and symptoms usually become apparent in childhood and worsen over time.~Researchers have recommended using the condition name arginine vasopressin deficiency because the previous name, neurohypophyseal diabetes insipidus, was often confused with a much more common disorder called diabetes mellitus. Arginine vasopressin deficiency and diabetes mellitus are separate disorders with different features, causes, and treatment.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Transtorno poliúrico genético ou adquirido causado por uma deficiência de VASOPRESSINAS secretadas pela NEURO-HIPÓFISE. Entre os sinais clínicos estão excreção de grandes volumes de URINA diluída, HIPERNATREMIA, SEDE e polidipsia. As etiologias incluem TRAUMA CRANIOCEREBRAL, cirurgias e doenças envolvendo o HIPOTÁLAMO e a HIPÓFISE. Este transtorno pode ser causado por mutações nos genes ARVP codificadores de vasopressina e sua correspondente neurofisina (NEUROFISINAS).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Trastorno poliúrico adquirido o genético causado por una deficiencia de VASOPRESINAS segregadas por la NEUROHIPÓFISIS. Entre los signos clínicos incluyen están la excreción de grandes volúmenes de ORINA diluida, HIPERNATREMIA, SED y polidípsia. las etiologías incluyen TRAUMA CRANEOCEREBRAL, cirugias y enfermedades implicando al HIPOTÁLAMO y la HIPÓFISIS. Esta alteración también puede estar causada por mutaciones de genes como el ARVP, codificadores de la vasopresina y su correspondiente neurofisina (NEUROFISINAS).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Bristfällig utsöndring av vasopressin från neurohypofysen. Kliniska symtom är extrem törst (polydipsi) och nedsatt serumosmolalitet. Tänkbara orsaker kan vara skallskada, sviter av nervkirurgi, hypotalamustumörer, hypofystumörer, infektioner i det centrala nervsystemet, hypofysapoplexi, cerebrovaskulära störningar, granulomatösa sjukdomar (t ex sarkoidos) och andra tillstånd. Sjukdomen kan också vara ärftlig, som ett autosomalt eller recessivt drag.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}

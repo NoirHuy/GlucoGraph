@@ -1,0 +1,28 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C0021655",
+    "name": "Insulin Resistance",
+    "dateAdded": "09-30-1990",
+    "majorRevisionDate": "04-29-2021",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Pathologic Function",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T046"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0021655/atoms",
+    "definitions": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0021655/definitions",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0021655/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0021655/atoms/preferred",
+    "atomCount": 120,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 8
+  }
+}

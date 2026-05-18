@@ -1,0 +1,78 @@
+Example 1:
+Text: Metformin is the first-line pharmacological treatment recommended for type 2 diabetes mellitus and helps lower HbA1c levels.
+Triplets: [['type 2 diabetes mellitus', 'may be treated by', 'Metformin'], ['type 2 diabetes mellitus', 'has evaluation', 'HbA1c']]
+Answer:
+{
+  "entity_types": {
+    "type 2 diabetes mellitus": "Disease/Condition",
+    "Metformin": "Treatment/Medication",
+    "HbA1c": "Clinical Metric/Lab Test"
+  },
+  "relation_definitions": {
+    "may be treated by": "The disease or condition (subject) can be managed or alleviated using the drug, procedure, or intervention (object).",
+    "has evaluation": "The disease or condition (subject) is assessed or monitored using the clinical test, biomarker, or measurement (object)."
+  }
+}
+
+Example 2:
+Text: SGLT2 inhibitors are contraindicated in patients with severe chronic kidney disease due to reduced renal function.
+Triplets: [['chronic kidney disease', 'has contraindicated drug', 'SGLT2 inhibitors']]
+Answer:
+{
+  "entity_types": {
+    "chronic kidney disease": "Disease/Condition",
+    "SGLT2 inhibitors": "Treatment/Medication"
+  },
+  "relation_definitions": {
+    "has contraindicated drug": "The disease or condition (subject) is a clinical state in which the specified drug (object) is unsafe and must not be prescribed."
+  }
+}
+
+Example 3:
+Text: Diabetic neuropathy is a microvascular complication of diabetes mellitus and is primarily located in the peripheral nerves.
+Triplets: [['diabetic neuropathy', 'manifestation of', 'diabetes mellitus'], ['diabetic neuropathy', 'has finding site', 'peripheral nerve']]
+Answer:
+{
+  "entity_types": {
+    "diabetic neuropathy": "Disease/Condition",
+    "diabetes mellitus": "Disease/Condition",
+    "peripheral nerve": "Anatomical Site"
+  },
+  "relation_definitions": {
+    "manifestation of": "The clinical complication or secondary condition (subject) is a direct consequence or presentation of the primary disease (object).",
+    "has finding site": "The disease or condition (subject) has its primary pathological lesion or finding located at the anatomical structure (object)."
+  }
+}
+
+Example 4:
+Text: Hyperglycemia is a hallmark finding of diabetes mellitus and is associated with hypertension as a comorbidity.
+Triplets: [['hyperglycemia', 'may be finding of disease', 'diabetes mellitus'], ['diabetes mellitus', 'associated condition of', 'hypertension']]
+Answer:
+{
+  "entity_types": {
+    "hyperglycemia": "Symptom/Clinical Finding",
+    "diabetes mellitus": "Disease/Condition",
+    "hypertension": "Disease/Condition"
+  },
+  "relation_definitions": {
+    "may be finding of disease": "The clinical or laboratory finding (subject) may be observed as a characteristic indicator in patients diagnosed with the disease (object).",
+    "associated condition of": "The disease or condition (subject) commonly co-occurs with or is pathophysiologically linked to another disease (object)."
+  }
+}
+
+Example 5:
+Text: Excess weight increases the risk for prediabetes and Type 2 Diabetes, and is also a finding of insulin resistance.
+Triplets: [['excess weight', 'increases risk of', 'prediabetes'], ['excess weight', 'increases risk of', 'Type 2 Diabetes'], ['insulin resistance', 'may be finding of disease', 'excess weight']]
+Answer:
+{
+  "entity_types": {
+    "excess weight": "Disease/Condition",
+    "prediabetes": "Disease/Condition",
+    "Type 2 Diabetes": "Disease/Condition",
+    "insulin resistance": "Symptom/Clinical Finding"
+  },
+  "relation_definitions": {
+    "increases risk of": "The disease, condition, or factor (subject) elevates the statistical likelihood of developing another disease or adverse clinical outcome (object).",
+    "may be finding of disease": "The clinical or laboratory finding (subject) may be observed as a characteristic indicator in patients diagnosed with the disease (object)."
+  }
+}

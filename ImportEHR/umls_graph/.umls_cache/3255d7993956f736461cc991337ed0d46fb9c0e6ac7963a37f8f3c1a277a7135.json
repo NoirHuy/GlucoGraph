@@ -1,0 +1,56 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "ui": "R136026592",
+      "suppressible": false,
+      "sourceUi": "NONE",
+      "obsolete": false,
+      "sourceOriginated": false,
+      "rootSource": "MEDLINEPLUS",
+      "groupId": "NONE",
+      "attributeCount": 0,
+      "classType": "AtomRelation",
+      "relatedFromId": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A21144545",
+      "relatedFromIdName": "Sugar Diabetes",
+      "relationLabel": "RQ",
+      "additionalRelationLabel": "",
+      "relatedId": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A21144151",
+      "relatedIdName": "Diabetes"
+    },
+    {
+      "ui": "R101329912",
+      "suppressible": false,
+      "sourceUi": "NONE",
+      "obsolete": false,
+      "sourceOriginated": false,
+      "rootSource": "MTH",
+      "groupId": "NONE",
+      "attributeCount": 0,
+      "classType": "ConceptRelation",
+      "relationLabel": "RO",
+      "additionalRelationLabel": "",
+      "relatedId": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011849",
+      "relatedIdName": "Diabetes Mellitus"
+    },
+    {
+      "ui": "R136025558",
+      "suppressible": false,
+      "sourceUi": "NONE",
+      "obsolete": false,
+      "sourceOriginated": false,
+      "rootSource": "MEDLINEPLUS",
+      "groupId": "NONE",
+      "attributeCount": 0,
+      "classType": "AtomRelation",
+      "relatedFromId": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A21143778",
+      "relatedFromIdName": "Sugar Diabetes",
+      "relationLabel": "RQ",
+      "additionalRelationLabel": "",
+      "relatedId": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/AUI/A21142977",
+      "relatedIdName": "Diabetes Type 2"
+    }
+  ]
+}

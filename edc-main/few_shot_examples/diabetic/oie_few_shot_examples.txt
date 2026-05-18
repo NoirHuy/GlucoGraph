@@ -1,0 +1,63 @@
+Example 1:
+Text: Metformin is the first-line pharmacological treatment recommended for type 2 diabetes mellitus and helps lower HbA1c levels.
+Triplets: [['type 2 diabetes mellitus', 'may be treated by', 'Metformin'], ['type 2 diabetes mellitus', 'has evaluation', 'HbA1c']]
+
+Example 2:
+Text: SGLT2 inhibitors are contraindicated in patients with severe chronic kidney disease due to reduced renal function.
+Triplets: [['chronic kidney disease', 'has contraindicated drug', 'SGLT2 inhibitors']]
+
+Example 3 (demonstrates RULE 1a — DIRECTIONALITY 'may be treated by': DISEASE is SUBJECT, TREATMENT is OBJECT):
+Text: Lifestyle modification including dietary changes and physical activity is recommended for the management of prediabetes and type 2 diabetes mellitus.
+Triplets: [['prediabetes', 'may be treated by', 'lifestyle modification'], ['type 2 diabetes mellitus', 'may be treated by', 'lifestyle modification']]
+
+Example 4 (demonstrates RULE 1b — DIRECTIONALITY 'manifestation of': COMPLICATION is SUBJECT, DISEASE is OBJECT):
+Text: Diabetic neuropathy and diabetic retinopathy are serious microvascular complications of diabetes mellitus. Prediabetes often precedes type 2 diabetes.
+Triplets: [['diabetic neuropathy', 'manifestation of', 'diabetes mellitus'], ['diabetic retinopathy', 'manifestation of', 'diabetes mellitus'], ['prediabetes', 'may be associated disease of disease', 'type 2 diabetes mellitus']]
+
+Example 5 (demonstrates RULE 1c — DIRECTIONALITY CRITICAL: a treatment/intervention improving a condition means the DISEASE is treated BY that intervention; NEVER say the intervention 'may be treated by' the disease):
+Text: Weight loss improves many of the cardiometabolic components of adiposity-based chronic disease, including increased glycemia, dyslipidemia, elevated blood pressure, cardiovascular disease, and sleep apnea.
+Triplets: [['increased glycemia', 'may be treated by', 'weight loss'], ['dyslipidemia', 'may be treated by', 'weight loss'], ['elevated blood pressure', 'may be treated by', 'weight loss'], ['cardiovascular disease', 'may be treated by', 'weight loss'], ['sleep apnea', 'may be treated by', 'weight loss']]
+
+Example 6 (demonstrates RULE 1d — DIRECTIONALITY for drugs/medications: the DISEASE takes 'may be treated by' DRUG; NEVER reverse this; WRONG: ['metformin', 'may be treated by', 'Type 2 Diabetes']):
+Text: Thiazolidinediones, alpha-glucosidase inhibitors, metformin, and sulfonylureas are antihyperglycemic agents used in the management of Type 2 Diabetes.
+Triplets: [['Type 2 Diabetes', 'may be treated by', 'thiazolidinediones'], ['Type 2 Diabetes', 'may be treated by', 'alpha-glucosidase inhibitors'], ['Type 2 Diabetes', 'may be treated by', 'metformin'], ['Type 2 Diabetes', 'may be treated by', 'sulfonylureas']]
+
+Example 7 (demonstrates RULE 2 — ATOMICITY):
+Text: The choice of antihyperglycemic therapy for Type 2 Diabetes reflects atherosclerotic cardiovascular disease, congestive heart failure, and chronic kidney disease.
+Triplets: [['Type 2 Diabetes', 'may be treated by', 'antihyperglycemic therapy'], ['Type 2 Diabetes', 'co-occurs with', 'atherosclerotic cardiovascular disease'], ['Type 2 Diabetes', 'co-occurs with', 'congestive heart failure'], ['Type 2 Diabetes', 'co-occurs with', 'chronic kidney disease']]
+
+Example 8 (demonstrates RULE 4 KEY PATTERN — when 'algorithm/guideline' is the SUBJECT/narrator, you MUST still extract the clinical triplets it describes):
+Text: The 2023 diabetes algorithm update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and diabetes mellitus.
+Triplets: [['prediabetes', 'may be treated by', 'lifestyle modification'], ['prediabetes', 'may be treated by', 'treatment of overweight/obesity'], ['diabetes mellitus', 'may be treated by', 'lifestyle modification'], ['diabetes mellitus', 'may be treated by', 'treatment of overweight/obesity']]
+
+Example 9 (demonstrates RULE 4 KEY PATTERN — 'algorithm highlights' is just context, extract the clinical facts):
+Text: The 2023 diabetes algorithm update highlights the importance of appropriate management of the atherosclerotic risk factors of dyslipidemia and hypertension for patients with diabetes mellitus.
+Triplets: [['diabetes mellitus', 'associated condition of', 'dyslipidemia'], ['diabetes mellitus', 'associated condition of', 'hypertension']]
+
+Example 10 (demonstrates RULE 4 — Algorithm as NARRATOR with explicit drug recommendation):
+Text: The 2022 AACE Clinical Practice Guidelines recommend that clinicians prescribe a glucagon-like peptide-1 receptor agonist or a sodium glucose cotransporter 2 inhibitor for Type 2 Diabetes patients with established or high risk for atherosclerotic cardiovascular disease, heart failure, and/or chronic kidney disease.
+Triplets: [['Type 2 Diabetes', 'may be treated by', 'glucagon-like peptide-1 receptor agonist'], ['Type 2 Diabetes', 'may be treated by', 'sodium glucose cotransporter 2 inhibitor'], ['Type 2 Diabetes', 'co-occurs with', 'atherosclerotic cardiovascular disease'], ['Type 2 Diabetes', 'co-occurs with', 'heart failure'], ['Type 2 Diabetes', 'co-occurs with', 'chronic kidney disease']]
+
+Example 11 (demonstrates 'increases risk of' relation):
+Text: Excess weight results in insulin resistance and increases the risk for prediabetes and Type 2 Diabetes.
+Triplets: [['excess weight', 'increases risk of', 'prediabetes'], ['excess weight', 'increases risk of', 'Type 2 Diabetes'], ['insulin resistance', 'may be finding of disease', 'excess weight']]
+
+Example 12 (demonstrates RULE 5 — ABSTRACT LOGIC CHECK):
+Text: Glycemic control has an essential role in the prevention and decreased progression of Type 2 Diabetes complications.
+Triplets: [['Type 2 Diabetes', 'has evaluation', 'glycemic control']]
+
+Example 13 (demonstrates IGNORE — historical/contextual narrative with NO explicit disease relation):
+Text: At the time of the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control, thiazolidinediones, alpha-glucosidase inhibitors, metformin, and sulfonylureas/glinides were in use.
+Triplets: []
+
+Example 14 (demonstrates IGNORE — administrative sentence with no clinical content):
+Text: Susan L. Samson, MD, PhD, FACE is the Chair of the Task Force for the American Association of Clinical Endocrinology.
+Triplets: []
+
+Example 15 (demonstrates RULE 4 WRONG EXTRACTION — algorithmic process description providing only visual/navigational guidance is NOT a clinical treatment; output EMPTY):
+Text: The 2023 Algorithm provides visual guidance and an easy-to-use roadmap for management of Type 2 Diabetes in clinic settings.
+Triplets: []
+
+Example 16 (demonstrates RULE for 'has contraindicated drug' — ONLY real DRUGS are contraindicated objects; lifestyle/non-pharmacological interventions like 'weight loss' are NEVER contraindicated drugs):
+Text: Lifestyle intervention to achieve weight loss is a key pillar of the comprehensive treatment of persons with prediabetes to decrease progression to Type 2 Diabetes.
+Triplets: [['prediabetes', 'may be treated by', 'lifestyle intervention'], ['prediabetes', 'may be associated disease of disease', 'Type 2 Diabetes']]

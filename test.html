@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Comparison: Retriever Low Top-K vs EDC Normal</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --model1-color: #c026d3;
+            /* Fuchsia for Retriever Low Top-K */
+            --model2-color: #0369a1;
+            /* Blue for EDC Normal */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .summary-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            color: #334155;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background-color: var(--card-bg);
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+        }
+
+        th,
+        td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f1f5f9;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .model-1 {
+            color: var(--model1-color);
+            font-weight: bold;
+        }
+
+        .model-2 {
+            color: var(--model2-color);
+            font-weight: bold;
+        }
+
+        .metric-group {
+            background-color: #fbfbfb;
+        }
+
+        .highlight {
+            background-color: #e2e8f0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Báo Cáo So Sánh Benchmark</h1>
+        <p class="subtitle">So sánh đánh giá giữa <strong>Retriever Low Top-K (Iter 1)</strong> và <strong>EDC Normal
+                (Iter 0)</strong></p>
+
+        <div class="summary-card">
+            <h3>💡 Nhận xét tổng quan</h3>
+            <p>Kết quả lần này cho thấy một sự tương phản thú vị: Mô hình <strong>Retriever Low Top-K</strong> hoạt động
+                tốt hơn hẳn trong việc nhận diện đúng các thành phần rời rạc (F1 tổng thể là <strong>0.6771</strong> so
+                với 0.6538 của Normal, vượt trội ở cả Subject, Predicate và Object). Tuy nhiên, khi ráp nối lại thành bộ
+                ba hoàn chỉnh (Full Triple), mô hình <strong>EDC Normal</strong> lại nhỉnh hơn một chút (F1:
+                <strong>0.5614</strong> so với 0.5500). Điều này cho thấy mô hình Retriever tìm được nhiều chi tiết đúng
+                hơn, nhưng Normal lại lắp ráp các liên kết chính xác hơn.</p>
+        </div>
+
+        <h2>1. Full Triple Scores (Toàn bộ bộ ba)</h2>
+        <table>
+            <tr>
+                <th>Mô hình</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1-Score</th>
+            </tr>
+            <tr>
+                <td class="model-1">Retriever Low Top-K (Iter 1)</td>
+                <td>0.5500</td>
+                <td>0.5500</td>
+                <td>0.5500</td>
+            </tr>
+            <tr>
+                <td class="model-2">EDC Normal (Iter 0)</td>
+                <td>0.5614</td>
+                <td>0.5614</td>
+                <td><strong>0.5614</strong></td>
+            </tr>
+        </table>
+
+        <h2>2. Total Scores (Tổng điểm các thực thể)</h2>
+        <table>
+            <tr>
+                <th>Loại đánh giá</th>
+                <th>Chỉ số</th>
+                <th class="model-1">Retriever Low Top-K</th>
+                <th class="model-2">EDC Normal</th>
+            </tr>
+            <tr class="metric-group">
+                <td rowspan="3"><strong>Exact / Strict</strong><br><small>(Correct: R=108 | N=102)</small></td>
+                <td>Precision</td>
+                <td>0.6767</td>
+                <td>0.6538</td>
+            </tr>
+            <tr class="metric-group">
+                <td>Recall</td>
+                <td>0.6776</td>
+                <td>0.6538</td>
+            </tr>
+            <tr class="metric-group highlight">
+                <td>F1-Score</td>
+                <td><strong>0.6771</strong></td>
+                <td>0.6538</td>
+            </tr>
+            <tr>
+                <td rowspan="3"><strong>Partial</strong><br><small>(Correct: R=108 | N=102)</small></td>
+                <td>Precision</td>
+                <td>0.6836</td>
+                <td>0.6570</td>
+            </tr>
+            <tr>
+                <td>Recall</td>
+                <td>0.6855</td>
+                <td>0.6570</td>
+            </tr>
+            <tr class="highlight">
+                <td>F1-Score</td>
+                <td><strong>0.6844</strong></td>
+                <td>0.6570</td>
+            </tr>
+        </table>
+
+        <h2>3. Scores per Tag (Điểm theo từng thành phần)</h2>
+
+        <h3>3.1. Subjects (Chủ thể)</h3>
+        <table>
+            <tr>
+                <th>Loại đánh giá</th>
+                <th>Chỉ số</th>
+                <th class="model-1">Retriever Low Top-K</th>
+                <th class="model-2">EDC Normal</th>
+            </tr>
+            <tr class="metric-group">
+                <td rowspan="3"><strong>Exact / Strict</strong></td>
+                <td>Precision</td>
+                <td>0.7232</td>
+                <td>0.7115</td>
+            </tr>
+            <tr class="metric-group">
+                <td>Recall</td>
+                <td>0.7264</td>
+                <td>0.7115</td>
+            </tr>
+            <tr class="metric-group highlight">
+                <td>F1-Score</td>
+                <td><strong>0.7245</strong></td>
+                <td>0.7115</td>
+            </tr>
+        </table>
+
+        <h3>3.2. Predicates (Vị ngữ / Mối quan hệ)</h3>
+        <table>
+            <tr>
+                <th>Loại đánh giá</th>
+                <th>Chỉ số</th>
+                <th class="model-1">Retriever Low Top-K</th>
+                <th class="model-2">EDC Normal</th>
+            </tr>
+            <tr class="metric-group">
+                <td rowspan="3"><strong>Exact / Strict</strong></td>
+                <td>Precision</td>
+                <td>0.6603</td>
+                <td>0.6346</td>
+            </tr>
+            <tr class="metric-group">
+                <td>Recall</td>
+                <td>0.6603</td>
+                <td>0.6346</td>
+            </tr>
+            <tr class="metric-group highlight">
+                <td>F1-Score</td>
+                <td><strong>0.6603</strong></td>
+                <td>0.6346</td>
+            </tr>
+        </table>
+
+        <h3>3.3. Objects (Đối tượng)</h3>
+        <table>
+            <tr>
+                <th>Loại đánh giá</th>
+                <th>Chỉ số</th>
+                <th class="model-1">Retriever Low Top-K</th>
+                <th class="model-2">EDC Normal</th>
+            </tr>
+            <tr class="metric-group">
+                <td rowspan="3"><strong>Exact / Strict</strong></td>
+                <td>Precision</td>
+                <td>0.6415</td>
+                <td>0.6153</td>
+            </tr>
+            <tr class="metric-group">
+                <td>Recall</td>
+                <td>0.6415</td>
+                <td>0.6153</td>
+            </tr>
+            <tr class="metric-group highlight">
+                <td>F1-Score</td>
+                <td><strong>0.6415</strong></td>
+                <td>0.6153</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

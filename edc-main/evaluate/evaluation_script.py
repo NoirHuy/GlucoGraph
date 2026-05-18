@@ -24,7 +24,7 @@ import xml.etree.ElementTree as ET
 
 
 def convert_to_xml(result_path: str, gold_path: str, max_length_diff=None):
-    output_dir = result_path.split(os.sep)[-2]
+    output_dir = os.path.normpath(result_path).split(os.sep)[-2]
     os.makedirs(f"./result_xmls/{output_dir}", exist_ok=True)
     pred_xml_path = os.path.join(f"./result_xmls/{output_dir}", f"pred.xml")
     ref_xml_path = os.path.join(f"./result_xmls/{output_dir}", f"ref.xml")

@@ -1,0 +1,28 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": {
+    "ui": "C0011860",
+    "name": "Diabetes Mellitus, Non-Insulin-Dependent",
+    "dateAdded": "09-30-1990",
+    "majorRevisionDate": "09-08-2025",
+    "classType": "Concept",
+    "suppressible": false,
+    "status": "R",
+    "semanticTypes": [
+      {
+        "name": "Disease or Syndrome",
+        "uri": "https://uts-ws.nlm.nih.gov/rest/semantic-network/2026AA/TUI/T047"
+      }
+    ],
+    "atoms": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011860/atoms",
+    "definitions": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011860/definitions",
+    "relations": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011860/relations",
+    "defaultPreferredAtom": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/CUI/C0011860/atoms/preferred",
+    "atomCount": 626,
+    "cvMemberCount": 0,
+    "attributeCount": 0,
+    "relationCount": 26
+  }
+}

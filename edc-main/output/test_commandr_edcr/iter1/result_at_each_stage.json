@@ -1,0 +1,813 @@
+[
+    {
+        "index": 0,
+        "input_text": "Lyseren is a lake in the municipalities of Enebakk in Akershus county and Spydeberg in Østfold county , Norway .\n",
+        "entity_hint": "['Norway', 'Spydeberg', 'Lyseren', 'Enebakk', 'Akershus county', 'Østfold county']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Eslamabad, Dowreh', 'located in the administrative territorial entity', 'Chegeni District'] can be extracted from \"Eslamabad, Dowreh is a village in Teshkan Rural District , Chegeni District , Dowreh County , Lorestan Province , Iran .\n\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Eslamabad, Dowreh', 'country', 'Iran'] can be extracted from \"Eslamabad, Dowreh is a village in Teshkan Rural District , Chegeni District , Dowreh County , Lorestan Province , Iran .\n\"\n3. basin country: The subject entity is part of the basin country specified by the object entity.\n4. place of birth: The subject entity was born in the location specified by the object entity.\n5. located in or next to body of water: The subject entity is situated in close proximity to or directly within the body of water specified by the object entity.\n",
+        "oie": [
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Enebakk"
+            ],
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Spydeberg"
+            ],
+            [
+                "Lyseren",
+                "country",
+                "Norway"
+            ],
+            [
+                "Enebakk",
+                "located in the administrative territorial entity",
+                "Akershus county"
+            ],
+            [
+                "Spydeberg",
+                "located in the administrative territorial entity",
+                "Østfold county"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the boundaries of the specified administrative territorial entity.",
+            "country": "The subject entity is located in or associated with the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Enebakk"
+            ],
+            [
+                "Lyseren",
+                "located in the administrative territorial entity",
+                "Spydeberg"
+            ],
+            [
+                "Lyseren",
+                "country",
+                "Norway"
+            ],
+            [
+                "Enebakk",
+                "located in the administrative territorial entity",
+                "Akershus county"
+            ],
+            [
+                "Spydeberg",
+                "located in the administrative territorial entity",
+                "Østfold county"
+            ]
+        ]
+    },
+    {
+        "index": 1,
+        "input_text": "Varavu Nalla Uravu is a 1990 Indian Tamil film , directed by Visu and produced by Rajam Balachandar .\n",
+        "entity_hint": "['Rajam Balachandar', 'Varavu Nalla Uravu', 'India', 'Visu', 'Tamil']",
+        "relation_hint": "1. country of origin: The subject entity originates from the country specified by the object entity.\nFor example, ['Varavu Nalla Uravu', 'country of origin', 'India'] can be extracted from \"Varavu Nalla Uravu is a 1990 Indian Tamil film , directed by Visu and produced by Rajam Balachandar .\n\"\n2. director: The subject entity was directed by the person specified by the object entity.\nFor example, ['Vayasu Pilichindi', 'director', 'C. V. Sridhar'] can be extracted from \"Vayasu Pilichindi is a 1978 Telugu - language film directed by C. V. Sridhar .\n\"\n3. producer: The subject entity was produced by the person or entity specified by the object entity.\nFor example, ['Vilakkum Velichavum', 'producer', 'Pavamani'] can be extracted from \"Vilakkum Velichavum is a 1978 Indian Malayalam film , directed by P. Bhaskaran and produced by Pavamani .\n\"\n4. after a work by: The subject entity was created or inspired by the work of the person specified by the object entity.\n5. filming location: The subject entity was filmed at the location specified by the object entity.\n6. military branch: The subject entity is associated with or belongs to the military branch specified by the object entity.\n",
+        "oie": [
+            [
+                "Varavu Nalla Uravu",
+                "director",
+                "Visu"
+            ],
+            [
+                "Varavu Nalla Uravu",
+                "producer",
+                "Rajam Balachandar"
+            ],
+            [
+                "Varavu Nalla Uravu",
+                "country of origin",
+                "India"
+            ]
+        ],
+        "schema_definition": {
+            "Here are the relation descriptions for the given text and triples": "",
+            "country of origin": "The subject entity originates from or is associated with the country specified by the object entity.",
+            "director": "The subject entity was directed or overseen by the person or entity specified by the object entity.",
+            "producer": "The subject entity was produced or created by the person or entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Varavu Nalla Uravu",
+                "director",
+                "Visu"
+            ],
+            [
+                "Varavu Nalla Uravu",
+                "producer",
+                "Rajam Balachandar"
+            ],
+            [
+                "Varavu Nalla Uravu",
+                "country of origin",
+                "India"
+            ]
+        ]
+    },
+    {
+        "index": 2,
+        "input_text": "Batura III , also known as Batura Muztagh III , is a peak in Batura Muztagh of Pakistan , which is the westernmost subrange of the Karakoram range .\n",
+        "entity_hint": "['Batura III', 'Batura Muztagh', 'Batura Muztagh III', 'Karakoram', 'Pakistan']",
+        "relation_hint": "1. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Vilamana', 'country', 'India'] can be extracted from \"Vilamana is a village in Kannur district in the Indian state of Kerala .\"\n2. located on terrain feature: The subject entity is situated on the terrain feature specified by the object entity.\nFor example, ['Batura III', 'located on terrain feature', 'Karakoram'] can be extracted from \"Batura III , also known as Batura Muztagh III , is a peak in Batura Muztagh of Pakistan , which is the westernmost subrange of the Karakoram range .\n\"\n3. part of: The subject entity is a part of the entity specified by the object entity.\nFor example, ['Batura III', 'part of', 'Batura Muztagh'] can be extracted from \"Batura III , also known as Batura Muztagh III , is a peak in Batura Muztagh of Pakistan , which is the westernmost subrange of the Karakoram range .\n\"\n4. basin country: The subject entity is part of the basin country specified by the object entity.\n5. military branch: The subject entity is associated with or belongs to the military branch specified by the object entity.\n6. continent: The subject entity is located on the continent specified by the object entity.\n",
+        "oie": [
+            [
+                "Batura III",
+                "part of",
+                "Batura Muztagh"
+            ],
+            [
+                "Batura III",
+                "located on terrain feature",
+                "Karakoram"
+            ],
+            [
+                "Batura III",
+                "country",
+                "Pakistan"
+            ],
+            [
+                "Batura Muztagh",
+                "part of",
+                "Karakoram"
+            ],
+            [
+                "Batura Muztagh III",
+                "part of",
+                "Batura Muztagh"
+            ],
+            [
+                "Batura Muztagh III",
+                "country",
+                "Pakistan"
+            ],
+            [
+                "Karakoram",
+                "country",
+                "Pakistan"
+            ]
+        ],
+        "schema_definition": {
+            "Here are the relation descriptions for the given text and triples": "",
+            "country": "The subject entity is located within or associated with the country specified by the object entity.",
+            "located on terrain feature": "The subject entity is situated on or within the terrain feature mentioned by the object entity.",
+            "part of": "The subject entity is a component or subdivision of the larger entity denoted by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Batura III",
+                "part of",
+                "Batura Muztagh"
+            ],
+            [
+                "Batura III",
+                "located on terrain feature",
+                "Karakoram"
+            ],
+            [
+                "Batura III",
+                "country",
+                "Pakistan"
+            ],
+            [
+                "Batura Muztagh",
+                "part of",
+                "Karakoram"
+            ],
+            [
+                "Batura Muztagh III",
+                "part of",
+                "Batura Muztagh"
+            ],
+            [
+                "Batura Muztagh III",
+                "country",
+                "Pakistan"
+            ],
+            [
+                "Karakoram",
+                "country",
+                "Pakistan"
+            ]
+        ]
+    },
+    {
+        "index": 3,
+        "input_text": "Ramakuppam is a village in Chittoor district of the Indian state of Andhra Pradesh .\n",
+        "entity_hint": "['Chittoor district', 'India', 'Ramakuppam', 'Andhra Pradesh']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Kaharlyk', 'located in the administrative territorial entity', 'Kiev Oblast'] can be extracted from \"Kaharlyk is a town in Kiev Oblast ( province ) of Ukraine .\n\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Kurniwadi', 'country', 'India'] can be extracted from \"Kurniwadi is a village in Belgaum district in Karnataka , India .\n\"\n3. place of burial: The subject entity was buried at the location specified by the object entity.\n4. filming location: The subject entity was filmed at the location specified by the object entity.\n",
+        "oie": [
+            [
+                "Ramakuppam",
+                "located in the administrative territorial entity",
+                "Chittoor district"
+            ],
+            [
+                "Ramakuppam",
+                "country",
+                "India"
+            ],
+            [
+                "Andhra Pradesh",
+                "country",
+                "India"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the boundaries of the specified administrative territorial entity.",
+            "country": "The subject entity is located in or associated with the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Ramakuppam",
+                "located in the administrative territorial entity",
+                "Chittoor district"
+            ],
+            [
+                "Ramakuppam",
+                "country",
+                "India"
+            ],
+            [
+                "Andhra Pradesh",
+                "country",
+                "India"
+            ]
+        ]
+    },
+    {
+        "index": 4,
+        "input_text": "Kurniwadi is a village in Belgaum district in Karnataka , India .\n",
+        "entity_hint": "['Kurniwadi', 'Belgaum district', 'Karnataka', 'India']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Eslamabad, Dowreh', 'located in the administrative territorial entity', 'Dowreh County'] can be extracted from \"Eslamabad, Dowreh is a village in Teshkan Rural District , Chegeni District , Dowreh County , Lorestan Province , Iran .\n\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Gozar', 'country', 'Iran'] can be extracted from \"Gozar is a village in Firuzeh Rural District , in the Central District of Firuzeh County , Razavi Khorasan Province , Iran .\n\"\n3. place of burial: The subject entity was buried at the location specified by the object entity.\n4. work location: The subject entity worked at the location specified by the object entity.\n5. basin country: The subject entity is part of the basin country specified by the object entity.\n",
+        "oie": [
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Kurniwadi",
+                "country",
+                "India"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the boundaries of the specified administrative territorial entity.",
+            "country": "The subject entity is located in or associated with the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Kurniwadi",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Kurniwadi",
+                "country",
+                "India"
+            ]
+        ]
+    },
+    {
+        "index": 5,
+        "input_text": "Stadion Rankhof is a football stadium in Basel , Switzerland .\n",
+        "entity_hint": "['Basel', 'Switzerland', 'Stadion Rankhof']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Vilamana', 'located in the administrative territorial entity', 'Kerala'] can be extracted from \"Vilamana is a village in Kannur district in the Indian state of Kerala .\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Gorabal', 'country', 'India'] can be extracted from \"Gorabal is a village in Belgaum district in the southern state of Karnataka , India .\n\"\n3. member of sports team: The subject entity is a member of the sports team specified by the object entity.\n4. headquarters location: The subject entity has its headquarters located in the place specified by the object entity.\n5. place served by transport hub: The subject entity is a location that is served by the transport hub specified by the object entity.\n",
+        "oie": [
+            [
+                "Stadion Rankhof",
+                "located in the administrative territorial entity",
+                "Basel"
+            ],
+            [
+                "Stadion Rankhof",
+                "country",
+                "Switzerland"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the boundaries of the specified administrative territorial entity.",
+            "country": "The subject entity is located in or associated with the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Stadion Rankhof",
+                "located in the administrative territorial entity",
+                "Basel"
+            ],
+            [
+                "Stadion Rankhof",
+                "country",
+                "Switzerland"
+            ]
+        ]
+    },
+    {
+        "index": 6,
+        "input_text": "Gozar is a village in Firuzeh Rural District , in the Central District of Firuzeh County , Razavi Khorasan Province , Iran .\n",
+        "entity_hint": "['Iran', 'Firuzeh Rural District', 'Razavi Khorasan Province', 'Central District', 'Firuzeh County', 'Gozar']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Ramakuppam', 'located in the administrative territorial entity', 'Andhra Pradesh'] can be extracted from \"Ramakuppam is a village in Chittoor district of the Indian state of Andhra Pradesh .\n\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Batura III', 'country', 'Pakistan'] can be extracted from \"Batura III , also known as Batura Muztagh III , is a peak in Batura Muztagh of Pakistan , which is the westernmost subrange of the Karakoram range .\n\"\n3. basin country: The subject entity is part of the basin country specified by the object entity.\n4. country of origin: The subject entity originates from the country specified by the object entity.\nFor example, ['Vilakkum Velichavum', 'country of origin', 'India'] can be extracted from \"Vilakkum Velichavum is a 1978 Indian Malayalam film , directed by P. Bhaskaran and produced by Pavamani .\n\"\n",
+        "oie": [
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Firuzeh Rural District"
+            ],
+            [
+                "Firuzeh Rural District",
+                "located in the administrative territorial entity",
+                "Central District"
+            ],
+            [
+                "Central District",
+                "located in the administrative territorial entity",
+                "Firuzeh County"
+            ],
+            [
+                "Firuzeh County",
+                "located in the administrative territorial entity",
+                "Razavi Khorasan Province"
+            ],
+            [
+                "Razavi Khorasan Province",
+                "country",
+                "Iran"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within or forms a part of the administrative region specified by the object entity.",
+            "country": "The subject entity is located within or associated with the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Gozar",
+                "located in the administrative territorial entity",
+                "Firuzeh Rural District"
+            ],
+            [
+                "Firuzeh Rural District",
+                "located in the administrative territorial entity",
+                "Central District"
+            ],
+            [
+                "Central District",
+                "located in the administrative territorial entity",
+                "Firuzeh County"
+            ],
+            [
+                "Firuzeh County",
+                "located in the administrative territorial entity",
+                "Razavi Khorasan Province"
+            ],
+            [
+                "Razavi Khorasan Province",
+                "country",
+                "Iran"
+            ]
+        ]
+    },
+    {
+        "index": 7,
+        "input_text": "Eslamabad, Dowreh is a village in Teshkan Rural District , Chegeni District , Dowreh County , Lorestan Province , Iran .\n",
+        "entity_hint": "['Eslamabad, Dowreh', 'Teshkan Rural District', 'Chegeni District', 'Dowreh County', 'Lorestan Province', 'Iran']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Gorabal', 'located in the administrative territorial entity', 'Karnataka'] can be extracted from \"Gorabal is a village in Belgaum district in the southern state of Karnataka , India .\n\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Vilamana', 'country', 'India'] can be extracted from \"Vilamana is a village in Kannur district in the Indian state of Kerala .\"\n3. educated at: The subject entity received education or training at the institution specified by the object entity.\n4. place of birth: The subject entity was born in the location specified by the object entity.\n5. member of sports team: The subject entity is a member of the sports team specified by the object entity.\n",
+        "oie": [
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Teshkan Rural District"
+            ],
+            [
+                "Teshkan Rural District",
+                "located in the administrative territorial entity",
+                "Chegeni District"
+            ],
+            [
+                "Chegeni District",
+                "located in the administrative territorial entity",
+                "Dowreh County"
+            ],
+            [
+                "Dowreh County",
+                "located in the administrative territorial entity",
+                "Lorestan Province"
+            ],
+            [
+                "Lorestan Province",
+                "located in the administrative territorial entity",
+                "Iran"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the boundaries of the specified administrative territorial entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Eslamabad, Dowreh",
+                "located in the administrative territorial entity",
+                "Teshkan Rural District"
+            ],
+            [
+                "Teshkan Rural District",
+                "located in the administrative territorial entity",
+                "Chegeni District"
+            ],
+            [
+                "Chegeni District",
+                "located in the administrative territorial entity",
+                "Dowreh County"
+            ],
+            [
+                "Dowreh County",
+                "located in the administrative territorial entity",
+                "Lorestan Province"
+            ],
+            [
+                "Lorestan Province",
+                "located in the administrative territorial entity",
+                "Iran"
+            ]
+        ]
+    },
+    {
+        "index": 8,
+        "input_text": "Alvan-e Eshareh is a village in Azadeh Rural District , Moshrageh District , Ramshir County , Khuzestan Province , Iran .\n",
+        "entity_hint": "['Alvan-e Eshareh', 'Azadeh Rural District', 'Moshrageh District', 'Ramshir County', 'Khuzestan Province', 'Iran']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Alvan-e Eshareh', 'located in the administrative territorial entity', 'Khuzestan Province'] can be extracted from \"Alvan-e Eshareh is a village in Azadeh Rural District , Moshrageh District , Ramshir County , Khuzestan Province , Iran .\n\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Stadion Rankhof', 'country', 'Switzerland'] can be extracted from \"Stadion Rankhof is a football stadium in Basel , Switzerland .\n\"\n3. educated at: The subject entity received education or training at the institution specified by the object entity.\n4. military branch: The subject entity is associated with or belongs to the military branch specified by the object entity.\n5. residence: The subject entity resides or lives in the location specified by the object entity.\n",
+        "oie": [
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Azadeh Rural District"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Moshrageh District"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Ramshir County"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Khuzestan Province"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "country",
+                "Iran"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the boundaries of the specified administrative territorial entity.",
+            "country": "The subject entity is located in or associated with the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Azadeh Rural District"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Moshrageh District"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Ramshir County"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "located in the administrative territorial entity",
+                "Khuzestan Province"
+            ],
+            [
+                "Alvan-e Eshareh",
+                "country",
+                "Iran"
+            ]
+        ]
+    },
+    {
+        "index": 9,
+        "input_text": "Vilakkum Velichavum is a 1978 Indian Malayalam film , directed by P. Bhaskaran and produced by Pavamani .\n",
+        "entity_hint": "['Vilakkum Velichavum', 'P. Bhaskaran', 'India', 'Pavamani', 'Indian', 'Malayalam']",
+        "relation_hint": "1. country of origin: The subject entity originates from the country specified by the object entity.\nFor example, ['Varavu Nalla Uravu', 'country of origin', 'India'] can be extracted from \"Varavu Nalla Uravu is a 1990 Indian Tamil film , directed by Visu and produced by Rajam Balachandar .\n\"\n2. director: The subject entity was directed by the person specified by the object entity.\nFor example, ['Vilakkum Velichavum', 'director', 'P. Bhaskaran'] can be extracted from \"Vilakkum Velichavum is a 1978 Indian Malayalam film , directed by P. Bhaskaran and produced by Pavamani .\n\"\n3. producer: The subject entity was produced by the person or entity specified by the object entity.\nFor example, ['Varavu Nalla Uravu', 'producer', 'Rajam Balachandar'] can be extracted from \"Varavu Nalla Uravu is a 1990 Indian Tamil film , directed by Visu and produced by Rajam Balachandar .\n\"\n4. filming location: The subject entity was filmed at the location specified by the object entity.\n5. executive producer: The subject entity had the person specified by the object entity as one of the executive producers involved in the production process.\n6. member of sports team: The subject entity is a member of the sports team specified by the object entity.\n",
+        "oie": [
+            [
+                "Vilakkum Velichavum",
+                "director",
+                "P. Bhaskaran"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "producer",
+                "Pavamani"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "country of origin",
+                "India"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "language",
+                "Malayalam"
+            ]
+        ],
+        "schema_definition": {
+            "Here are the relation descriptions for the given text and triples": "",
+            "country of origin": "The subject entity originates from or is associated with the country specified by the object entity.",
+            "director": "The subject entity was directed or overseen by the person or entity specified by the object entity.",
+            "language": "The subject entity is expressed or presented in the language specified by the object entity.",
+            "producer": "The subject entity was produced or created by the person or entity specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {'language of work or name': np.float64(0.9523327508451396), 'original language of film or TV show': np.float64(0.917443363429769), 'operator': np.float64(0.8906037639833073), 'employer': np.float64(0.884552207471847), 'part of': np.float64(0.8817736552012168)}]",
+        "schema_canonicalizaiton": [
+            [
+                "Vilakkum Velichavum",
+                "director",
+                "P. Bhaskaran"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "producer",
+                "Pavamani"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "country of origin",
+                "India"
+            ],
+            [
+                "Vilakkum Velichavum",
+                "original language of film or TV show",
+                "Malayalam"
+            ]
+        ]
+    },
+    {
+        "index": 10,
+        "input_text": "Gorabal is a village in Belgaum district in the southern state of Karnataka , India .\n",
+        "entity_hint": "['India', 'Gorabal', 'Karnataka', 'Belgaum district']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Ramakuppam', 'located in the administrative territorial entity', 'Chittoor district'] can be extracted from \"Ramakuppam is a village in Chittoor district of the Indian state of Andhra Pradesh .\n\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Alvan-e Eshareh', 'country', 'Iran'] can be extracted from \"Alvan-e Eshareh is a village in Azadeh Rural District , Moshrageh District , Ramshir County , Khuzestan Province , Iran .\n\"\n3. basin country: The subject entity is part of the basin country specified by the object entity.\n4. member of sports team: The subject entity is a member of the sports team specified by the object entity.\n",
+        "oie": [
+            [
+                "Gorabal",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Gorabal",
+                "country",
+                "India"
+            ],
+            [
+                "Belgaum district",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Belgaum district",
+                "country",
+                "India"
+            ],
+            [
+                "Karnataka",
+                "country",
+                "India"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the boundaries of the specified administrative territorial entity.",
+            "country": "The subject entity is located in or associated with the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Gorabal",
+                "located in the administrative territorial entity",
+                "Belgaum district"
+            ],
+            [
+                "Gorabal",
+                "country",
+                "India"
+            ],
+            [
+                "Belgaum district",
+                "located in the administrative territorial entity",
+                "Karnataka"
+            ],
+            [
+                "Belgaum district",
+                "country",
+                "India"
+            ],
+            [
+                "Karnataka",
+                "country",
+                "India"
+            ]
+        ]
+    },
+    {
+        "index": 11,
+        "input_text": "Vayasu Pilichindi is a 1978 Telugu - language film directed by C. V. Sridhar .\n",
+        "entity_hint": "['Vayasu Pilichindi', 'C. V. Sridhar', 'Telugu']",
+        "relation_hint": "1. director: The subject entity was directed by the person specified by the object entity.\nFor example, ['Varavu Nalla Uravu', 'director', 'Visu'] can be extracted from \"Varavu Nalla Uravu is a 1990 Indian Tamil film , directed by Visu and produced by Rajam Balachandar .\n\"\n2. filming location: The subject entity was filmed at the location specified by the object entity.\n3. executive producer: The subject entity had the person specified by the object entity as one of the executive producers involved in the production process.\n4. distributed by: The subject entity was distributed by the company specified by the object entity.\n",
+        "oie": [
+            [
+                "Vayasu Pilichindi",
+                "director",
+                "C. V. Sridhar"
+            ],
+            [
+                "Vayasu Pilichindi",
+                "language",
+                "Telugu"
+            ]
+        ],
+        "schema_definition": {
+            "Here are the relation descriptions for the given text and triples": "",
+            "director": "The subject entity, in this case, the film, was directed by the person specified as the object entity.",
+            "language": "The subject entity, the film, is presented or spoken in the language specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {'language of work or name': np.float64(0.8373077781929404), 'original language of film or TV show': np.float64(0.8116091193315231), 'filming location': np.float64(0.8060468815058871), 'employer': np.float64(0.7616251508725689), 'operator': np.float64(0.756811362708814)}]",
+        "schema_canonicalizaiton": [
+            [
+                "Vayasu Pilichindi",
+                "director",
+                "C. V. Sridhar"
+            ],
+            [
+                "Vayasu Pilichindi",
+                "original language of film or TV show",
+                "Telugu"
+            ]
+        ]
+    },
+    {
+        "index": 12,
+        "input_text": "Kaharlyk is a town in Kiev Oblast ( province ) of Ukraine .\n",
+        "entity_hint": "['Kaharlyk', 'Kiev Oblast', 'Ukraine']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Kurniwadi', 'located in the administrative territorial entity', 'Belgaum district'] can be extracted from \"Kurniwadi is a village in Belgaum district in Karnataka , India .\n\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Eslamabad, Dowreh', 'country', 'Iran'] can be extracted from \"Eslamabad, Dowreh is a village in Teshkan Rural District , Chegeni District , Dowreh County , Lorestan Province , Iran .\n\"\n3. headquarters location: The subject entity has its headquarters located in the place specified by the object entity.\n4. basin country: The subject entity is part of the basin country specified by the object entity.\n5. place of death: The subject entity died in the location specified by the object entity.\n",
+        "oie": [
+            [
+                "Kaharlyk",
+                "located in the administrative territorial entity",
+                "Kiev Oblast"
+            ],
+            [
+                "Kaharlyk",
+                "country",
+                "Ukraine"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the boundaries of the specified administrative division or region.",
+            "country": "The subject entity is associated with or belongs to the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Kaharlyk",
+                "located in the administrative territorial entity",
+                "Kiev Oblast"
+            ],
+            [
+                "Kaharlyk",
+                "country",
+                "Ukraine"
+            ]
+        ]
+    },
+    {
+        "index": 13,
+        "input_text": "Paul E. Johnson taught at Princeton University , Yale University , University of Utah , and University of South Carolina .\n",
+        "entity_hint": "['Paul E. Johnson', 'Princeton University', 'Yale University', 'University of Utah', 'University of South Carolina']",
+        "relation_hint": "1. employer: The subject entity is employed by the entity specified by the object entity.\nFor example, ['Paul E. Johnson', 'employer', 'University of Utah'] can be extracted from \"Paul E. Johnson taught at Princeton University , Yale University , University of Utah , and University of South Carolina .\n\"\n2. educated at: The subject entity received education or training at the institution specified by the object entity.\n3. screenwriter: The subject entity was written by the person specified by the object entity.\n4. student of: The subject entity studied under the person specified by the object entity.\n",
+        "oie": [
+            [
+                "Paul E. Johnson",
+                "employer",
+                "Princeton University"
+            ],
+            [
+                "Paul E. Johnson",
+                "employer",
+                "Yale University"
+            ],
+            [
+                "Paul E. Johnson",
+                "employer",
+                "University of Utah"
+            ],
+            [
+                "Paul E. Johnson",
+                "employer",
+                "University of South Carolina"
+            ]
+        ],
+        "schema_definition": {
+            "employer": "The subject entity, in this case, Paul E. Johnson, was employed by or worked for the object entity, which are the various universities. This relation can be used to describe the professional affiliation or workplace of an individual with an organization or institution."
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Paul E. Johnson",
+                "employer",
+                "Princeton University"
+            ],
+            [
+                "Paul E. Johnson",
+                "employer",
+                "Yale University"
+            ],
+            [
+                "Paul E. Johnson",
+                "employer",
+                "University of Utah"
+            ],
+            [
+                "Paul E. Johnson",
+                "employer",
+                "University of South Carolina"
+            ]
+        ]
+    },
+    {
+        "index": 14,
+        "input_text": "Vilamana is a village in Kannur district in the Indian state of Kerala .",
+        "entity_hint": "['India', 'Kannur district', 'Kerala', 'Vilamana']",
+        "relation_hint": "1. located in the administrative territorial entity: The subject entity is situated within the administrative territorial entity specified by the object entity.\nFor example, ['Kurniwadi', 'located in the administrative territorial entity', 'Belgaum district'] can be extracted from \"Kurniwadi is a village in Belgaum district in Karnataka , India .\n\"\n2. country: The subject entity is located in the country specified by the object entity.\nFor example, ['Batura III', 'country', 'Pakistan'] can be extracted from \"Batura III , also known as Batura Muztagh III , is a peak in Batura Muztagh of Pakistan , which is the westernmost subrange of the Karakoram range .\n\"\n3. place of death: The subject entity died in the location specified by the object entity.\n4. filming location: The subject entity was filmed at the location specified by the object entity.\n5. member of sports team: The subject entity is a member of the sports team specified by the object entity.\n",
+        "oie": [
+            [
+                "Vilamana",
+                "located in the administrative territorial entity",
+                "Kannur district"
+            ],
+            [
+                "Vilamana",
+                "country",
+                "India"
+            ],
+            [
+                "Vilamana",
+                "located in the administrative territorial entity",
+                "Kerala"
+            ]
+        ],
+        "schema_definition": {
+            "located in the administrative territorial entity": "The subject entity is situated within the boundaries of the specified administrative territorial entity.",
+            "country": "The subject entity is associated with or belongs to the country specified by the object entity."
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Vilamana",
+                "located in the administrative territorial entity",
+                "Kannur district"
+            ],
+            [
+                "Vilamana",
+                "country",
+                "India"
+            ],
+            [
+                "Vilamana",
+                "located in the administrative territorial entity",
+                "Kerala"
+            ]
+        ]
+    }
+]

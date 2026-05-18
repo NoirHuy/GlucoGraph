@@ -1,14 +1,126 @@
-Your task is to transform the given text into a semantic graph in the form of a list of triples. The triples must be in the form of [Entity1, Relationship, Entity2]. In your answer, please strictly only include the triples and do not include any explanation or apologies.
+Your task is to extract clinical knowledge as a semantic graph from biomedical text about diabetes management. Output a list of triples in the format: [Entity1, Relationship, Entity2].
 
-MANDATORY RULES:
-1. Entity names must be clean concept names ONLY. Never embed quantities, numbers, or measurement units (e.g., "100g", "2.5mg", "346 kcal") into entity names.
-2. Relation direction must always be: [Food/Nutrient/Substance] → [relation] → [Disease/Condition/Nutrient]. Never invert so that a nutrient or condition points to a food with 'chứa', 'giàu', 'contains', or 'rich_in'.
-3. The Object of 'chứa'/'giàu'/'contains'/'rich_in' must be a nutrient NAME (e.g., "protein"), never a numeric value (e.g., "8.6g protein").
-4. Do NOT produce near-duplicate relations for the same entity pair (e.g., do not use both 'cần hạn chế ở' and 'chống chỉ định với' for the same food-disease pair).
-5. Focus ONLY on medical, nutritional, and dietary relationships. Ignore any temporal, geographical, personal, or historical context.
+════════════════════════════════════════════════
+PART 1: ALLOWED ENTITY TYPES
+════════════════════════════════════════════════
+Entities MUST ONLY belong to one of these UMLS-aligned types:
+  - [Disease/Condition]        e.g., Type 2 Diabetes Mellitus, Hypertension, Prediabetes, excess weight, overweight/obesity
+  - [Treatment/Medication]     e.g., Metformin, GLP-1 receptor agonist, lifestyle modification, lifestyle intervention, insulin, weight loss
+  - [Symptom/Clinical Finding] e.g., Hyperglycemia, Polyuria, insulin resistance, dyslipidemia, elevated blood pressure
+  - [Clinical Metric/Lab Test] e.g., HbA1c, eGFR, fasting blood glucose, blood pressure, glycemic control
+  - [Anatomical Site]          e.g., Pancreas, Kidney, Retina, Beta cell
 
-Here are some examples:
+════════════════════════════════════════════════
+PART 2: STRICT IGNORE LIST — DO NOT EXTRACT
+════════════════════════════════════════════════
+NEVER create a triple involving any of the following:
+  - Author names, physician credentials (MD, PhD, FACE, FACP, FRCPC, MACE)
+  - Hospitals, universities, research institutions, task forces, committees
+  - Publication dates, guideline version numbers, update years
+  - Standalone abbreviations or acronyms (AACE, CDC, ADA, ATP)
+  - Administrative roles (Chair, Director, Task Force member, author)
+  - Document or article references (Consensus Statement, Clinical Practice Guideline, Algorithm Summary)
+  - Organizational names (American Association of..., Advisory Committee on...)
+  - The GENERIC WORD 'relation' — NEVER use 'relation' as a relation label in a triple. If you cannot name the specific semantic link, DISCARD the triple.
+
+════════════════════════════════════════════════
+PART 3: FIVE UNBREAKABLE EXTRACTION RULES
+════════════════════════════════════════════════
+
+RULE 1 — DIRECTIONALITY IS MANDATORY (Fix Logic Inversion):
+  The direction of every relation is fixed. Verify subject and object before writing ANY triple.
+
+  1a. 'may be treated by' is ALWAYS: [Disease/Condition] → may be treated by → [Treatment/Medication].
+      A [Treatment] can NEVER be the SUBJECT of 'may be treated by'.
+      ✗ WRONG: ['lifestyle modification', 'may be treated by', 'prediabetes']
+      ✓ CORRECT: ['prediabetes', 'may be treated by', 'lifestyle modification']
+
+  1b. 'manifestation of' is ALWAYS: [Symptom/Complication] → manifestation of → [Primary Disease].
+      A Disease can NEVER be the Object of 'manifestation of' if the Subject is ALSO a Disease category.
+      The relationship 'prediabetes is a manifestation of Type 2 Diabetes' is clinically WRONG.
+      Prediabetes PRECEDES Type 2 Diabetes — use 'may be associated disease of disease' instead.
+      ✗ WRONG: ['prediabetes', 'manifestation of', 'Type 2 Diabetes']
+      ✗ WRONG: ['Type 2 Diabetes', 'manifestation of', 'glycemic targets']
+      ✓ CORRECT: ['diabetic neuropathy', 'manifestation of', 'diabetes mellitus']
+
+  1c. 'associated finding of' is ALWAYS: [Symptom/Clinical Finding] → associated finding of → [Disease].
+      A [Treatment/Intervention] like 'weight loss' or 'lifestyle modification' can NEVER be the SUBJECT of 'associated finding of'.
+      ✗ WRONG: ['weight loss', 'associated finding of', 'dyslipidemia']
+      ✓ CORRECT: ['dyslipidemia', 'may be treated by', 'weight loss']
+
+  1d. DRUG/TREATMENT DIRECTION IS ALWAYS: [Disease] → may be treated by → [Drug/Treatment]. NEVER REVERSE.
+      NEVER place a drug, medication, or intervention as the SUBJECT of 'may be treated by'.
+      A drug treats a disease — the disease does NOT treat the drug.
+      ✗ WRONG: ['metformin', 'may be treated by', 'Type 2 Diabetes']
+      ✗ WRONG: ['antihyperglycemic medications', 'may be treated by', 'Type 2 Diabetes']
+      ✗ WRONG: ['weight loss', 'may be treated by', 'elevated blood pressure']
+      ✓ CORRECT: ['Type 2 Diabetes', 'may be treated by', 'metformin']
+      ✓ CORRECT: ['elevated blood pressure', 'may be treated by', 'weight loss']
+
+RULE 2 — ONE ENTITY PER SLOT, NO COMPOUND STRINGS (Fix Atomicity Bug):
+  NEVER group multiple diseases, symptoms, or treatments into a single string using commas or 'and'.
+  If the text mentions multiple items linked to one disease, CREATE A SEPARATE TRIPLE FOR EACH ITEM.
+  ✗ WRONG: ['Type 2 Diabetes', 'associated condition of', 'heart failure, chronic kidney disease, obesity']
+  ✓ CORRECT: ['Type 2 Diabetes', 'associated condition of', 'heart failure']
+             ['Type 2 Diabetes', 'associated condition of', 'chronic kidney disease']
+             ['Type 2 Diabetes', 'associated condition of', 'overweight/obesity']
+
+RULE 3 — STRICT ENTITY CLASS ENFORCEMENT (Fix Domain/Range Violations):
+  Words containing 'therapy', 'modification', 'intervention', 'medication', 'treatment', or 'pharmacotherapy'
+  ALWAYS classify as [Treatment], NEVER as [Disease].
+  Treatments CANNOT be the subject of 'associated condition of', 'co-occurs with', or 'may be associated disease of disease'.
+  ✗ WRONG: ['antihyperglycemic therapy', 'may be associated disease of disease', 'stroke']
+  ✓ CORRECT: ['Type 2 Diabetes', 'may be treated by', 'antihyperglycemic therapy']
+
+RULE 4 — NO CONCEPTUAL DOCUMENTS AS TREATMENTS (Fix Guidelines-as-Therapy Bug):
+  Words like 'Model', 'Guideline', 'Recommendations', 'Algorithm', 'Standards', 'Framework', 'Plan', or 'Roadmap'
+  refer to THEORETICAL DOCUMENTS, NOT physical interventions.
+  IMPORTANT: This rule only applies to the OBJECT slot of a triple, NOT to the whole sentence.
+  A sentence can MENTION an Algorithm or Guideline as context (Subject/narrator) — that is fine.
+  You must still extract the ACTUAL clinical relations from that sentence.
+  FORBIDDEN: These document names as the OBJECT of 'may be treated by':
+  ✗ WRONG: ['Type 2 Diabetes', 'may be treated by', 'The Complications-Centric Model...']
+  ✗ WRONG: ['prediabetes', 'may be treated by', 'Comprehensive Type 2 Diabetes Management Algorithm']
+  → INSTEAD: Extract the ACTUAL intervention the sentence recommends. The Algorithm is just the narrator.
+  EXAMPLE: 'The 2023 Algorithm recommends GLP-1 receptor agonists for Type 2 Diabetes with ASCVD.'
+  ✓ CORRECT: ['Type 2 Diabetes', 'may be treated by', 'GLP-1 receptor agonists']
+             ['Type 2 Diabetes', 'co-occurs with', 'atherosclerotic cardiovascular disease']
+
+RULE 5 — ABSTRACT LOGIC INTEGRITY CHECK (Fix Abstract Inversion):
+  Medical goals, outcomes, and metrics such as 'glycemic control', 'glycemic targets', 'metabolic control',
+  'blood pressure control', or 'weight management' are OUTCOMES/GOALS, NOT diseases being treated.
+  They CANNOT be the Subject of 'may be treated by'. Complications treat NOTHING — they are treated.
+  ✗ WRONG: ['glycemic control', 'may be treated by', 'Type 2 Diabetes complications']
+  ✗ WRONG: ['Type 2 Diabetes', 'manifestation of', 'glycemic control']
+  ✓ CORRECT: ['Type 2 Diabetes', 'has evaluation', 'glycemic control']
+  Before writing any triple, ask: does this make real-world clinical sense?
+
+════════════════════════════════════════════════
+PART 4: ALLOWED RELATIONAL SCHEMA (Domain → Range)
+════════════════════════════════════════════════
+  - [Disease/Condition] → may be treated by        → [Treatment/Medication]
+  - [Disease/Condition] → has contraindicated drug  → [Treatment/Medication]
+  - [Disease/Condition] → manifestation of          → [Disease/Condition]
+  - [Disease/Condition] → associated condition of   → [Disease/Condition]
+  - [Disease/Condition] → co-occurs with            → [Disease/Condition]
+  - [Disease/Condition] → has finding site          → [Anatomical Site]
+  - [Disease/Condition] → has evaluation            → [Clinical Metric/Lab Test]
+  - [Disease/Condition] → increases risk of         → [Disease/Condition]
+  - [Symptom/Finding]   → may be finding of disease → [Disease/Condition]
+  - [Symptom/Finding]   → may be treated by          → [Treatment/Medication]    (when treatment alleviates a symptom)
+  - [Disease/Condition] → may be associated disease of disease → [Disease/Condition]
+
+If a triple cannot fit any of these patterns without violating RULES 1-5, DISCARD IT.
+If the sentence contains no valid clinical relationship, output an empty list: []
+
+════════════════════════════════════════════════
+EXAMPLES:
 {few_shot_examples}
 
-Now please extract triplets from the following text.
+════════════════════════════════════════════════
+OUTPUT INSTRUCTIONS:
+- Extract triplets from the text below.
+- Output ONLY a valid Python list of lists. Do NOT include any mào đầu, explanations, or markdown formatting (like ```python).
+- If no triplets are found, output exactly: []
+
 Text: {input_text}

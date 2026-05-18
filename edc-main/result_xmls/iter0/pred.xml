@@ -10,17 +10,15 @@
 		<entry>
 			<generatedtripleset>
 				<gtriple>Varavu Nalla Uravu | director | Visu</gtriple>
+				<gtriple>Varavu Nalla Uravu | screenwriter | Visu</gtriple>
 				<gtriple>Varavu Nalla Uravu | producer | Rajam Balachandar</gtriple>
-				<gtriple>Varavu Nalla Uravu | country | India</gtriple>
 			</generatedtripleset>
 		</entry>
 		<entry>
 			<generatedtripleset>
 				<gtriple>Batura III | country | Pakistan</gtriple>
 				<gtriple>Batura III | part of | Karakoram</gtriple>
-				<gtriple>Batura III | located on terrain feature | Karakoram</gtriple>
-				<gtriple>Batura Muztagh | part of | Karakoram</gtriple>
-				<gtriple>Batura Muztagh | located in the administrative territorial entity | Pakistan</gtriple>
+				<gtriple>Batura III | located on terrain feature | Batura Muztagh</gtriple>
 			</generatedtripleset>
 		</entry>
 		<entry>
@@ -46,8 +44,7 @@
 		<entry>
 			<generatedtripleset>
 				<gtriple>Gozar | located in the administrative territorial entity | Firuzeh Rural District</gtriple>
-				<gtriple>Gozar | located in the administrative territorial entity | Central District</gtriple>
-				<gtriple>Gozar | located in the administrative territorial entity | Firuzeh County</gtriple>
+				<gtriple>Gozar | located in the administrative territorial entity | Central District of Firuzeh County</gtriple>
 				<gtriple>Gozar | located in the administrative territorial entity | Razavi Khorasan Province</gtriple>
 				<gtriple>Gozar | country | Iran</gtriple>
 			</generatedtripleset>
@@ -87,7 +84,6 @@
 		<entry>
 			<generatedtripleset>
 				<gtriple>Vayasu Pilichindi | director | C. V. Sridhar</gtriple>
-				<gtriple>Vayasu Pilichindi | original language of film or TV show | Telugu</gtriple>
 			</generatedtripleset>
 		</entry>
 		<entry>
@@ -112,11 +108,11 @@
 				<gtriple>The Man with a Cross | cast member | Alberto Tavazzi</gtriple>
 				<gtriple>The Man with a Cross | cast member | Roswita Schmidt</gtriple>
 				<gtriple>The Man with a Cross | cast member | Attilio Dottesio</gtriple>
+				<gtriple>The Man with a Cross | country | Italy</gtriple>
 			</generatedtripleset>
 		</entry>
 		<entry>
 			<generatedtripleset>
-				<gtriple>Schwaz Heliport | located in the administrative territorial entity | Schwaz</gtriple>
 				<gtriple>Schwaz Heliport | located in the administrative territorial entity | Tirol</gtriple>
 				<gtriple>Schwaz Heliport | country | Austria</gtriple>
 			</generatedtripleset>
@@ -144,11 +140,11 @@
 		</entry>
 		<entry>
 			<generatedtripleset>
-				<gtriple>Bidun Dar, Bardsir | located in the administrative territorial entity | Lalehzar Rural District</gtriple>
-				<gtriple>Bidun Dar, Bardsir | located in the administrative territorial entity | Lalehzar District</gtriple>
-				<gtriple>Bidun Dar, Bardsir | located in the administrative territorial entity | Bardsir County</gtriple>
-				<gtriple>Bidun Dar, Bardsir | located in the administrative territorial entity | Kerman Province</gtriple>
-				<gtriple>Bidun Dar, Bardsir | country | Iran</gtriple>
+				<gtriple>Bidun Dar | located in the administrative territorial entity | Lalehzar Rural District</gtriple>
+				<gtriple>Bidun Dar | located in the administrative territorial entity | Lalehzar District</gtriple>
+				<gtriple>Bidun Dar | located in the administrative territorial entity | Bardsir County</gtriple>
+				<gtriple>Bidun Dar | located in the administrative territorial entity | Kerman Province</gtriple>
+				<gtriple>Bidun Dar | country | Iran</gtriple>
 			</generatedtripleset>
 		</entry>
 		<entry>
@@ -161,11 +157,7 @@
 			</generatedtripleset>
 		</entry>
 		<entry>
-			<generatedtripleset>
-				<gtriple>Making Sandwiches | screenwriter | Sandra Bullock</gtriple>
-				<gtriple>Making Sandwiches | director | Sandra Bullock</gtriple>
-				<gtriple>Sandra Bullock | country of citizenship | American</gtriple>
-			</generatedtripleset>
+			<generatedtripleset />
 		</entry>
 		<entry>
 			<generatedtripleset>
@@ -183,6 +175,1193 @@
 				<gtriple>Javadiyeh, Markazi | located in the administrative territorial entity | Khomeyn County</gtriple>
 				<gtriple>Javadiyeh, Markazi | located in the administrative territorial entity | Markazi Province</gtriple>
 				<gtriple>Javadiyeh, Markazi | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Idalhond | located in the administrative territorial entity | Belagavi district</gtriple>
+				<gtriple>Idalhond | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Idalhond | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Anjirak | located in the administrative territorial entity | Jalalvand Rural District</gtriple>
+				<gtriple>Anjirak | located in the administrative territorial entity | Firuzabad District</gtriple>
+				<gtriple>Anjirak | located in the administrative territorial entity | Kermanshah County</gtriple>
+				<gtriple>Anjirak | located in the administrative territorial entity | Kermanshah Province</gtriple>
+				<gtriple>Anjirak | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Track of the Cat | director | William A. Wellman</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>1988 Summer Olympics | country | South Korea</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Ranadheera | cast member | V. Ravichandran</gtriple>
+				<gtriple>Ranadheera | cast member | Kushboo</gtriple>
+				<gtriple>Ranadheera | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Main Zinda Hoon | director | Sudhir Mishra</gtriple>
+				<gtriple>Main Zinda Hoon | screenwriter | Sudhir Mishra</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Keezhamaligai | located in the administrative territorial entity | Sendurai taluk</gtriple>
+				<gtriple>Keezhamaligai | located in the administrative territorial entity | Ariyalur district</gtriple>
+				<gtriple>Keezhamaligai | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>University of Chicago | country | United States</gtriple>
+				<gtriple>Oxford University | country | United Kingdom</gtriple>
+				<gtriple>University of Oslo | country | Norway</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Tila Kenar | located in the administrative territorial entity | Kelarabad Rural District</gtriple>
+				<gtriple>Tila Kenar | located in the administrative territorial entity | Kelarabad District</gtriple>
+				<gtriple>Tila Kenar | located in the administrative territorial entity | Abbasabad County</gtriple>
+				<gtriple>Tila Kenar | located in the administrative territorial entity | Mazandaran Province</gtriple>
+				<gtriple>Tila Kenar | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>University of Amsterdam | educated at | Jacques Presser</gtriple>
+				<gtriple>commercial vocational college | educated at | Jacques Presser</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Monster Hunt | country | China</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Oryad Rural District | located in the administrative territorial entity | Central District</gtriple>
+				<gtriple>Oryad Rural District | located in the administrative territorial entity | Mahneshan County</gtriple>
+				<gtriple>Oryad Rural District | located in the administrative territorial entity | Zanjan Province</gtriple>
+				<gtriple>Oryad Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Tork-e Gharbi Rural District | located in the administrative territorial entity | Jowkar District</gtriple>
+				<gtriple>Tork-e Gharbi Rural District | located in the administrative territorial entity | Malayer County</gtriple>
+				<gtriple>Tork-e Gharbi Rural District | located in the administrative territorial entity | Hamadan Province</gtriple>
+				<gtriple>Tork-e Gharbi Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Soltaniyeh | located in the administrative territorial entity | Pas Kalut Rural District</gtriple>
+				<gtriple>Soltaniyeh | located in the administrative territorial entity | Central District of Gonabad County</gtriple>
+				<gtriple>Soltaniyeh | located in the administrative territorial entity | Razavi Khorasan Province</gtriple>
+				<gtriple>Soltaniyeh | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>A Lonely Place to Die | director | Julian Gilbey</gtriple>
+				<gtriple>A Lonely Place to Die | screenwriter | Julian Gilbey</gtriple>
+				<gtriple>A Lonely Place to Die | screenwriter | Will Gilbey</gtriple>
+				<gtriple>A Lonely Place to Die | country | United Kingdom</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Orgasmo | cast member | Carroll Baker</gtriple>
+				<gtriple>Orgasmo | cast member | Lou Castel</gtriple>
+				<gtriple>Orgasmo | director | Umberto Lenzi</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Richard R. Nelson | country of citizenship | United States</gtriple>
+				<gtriple>Richard R. Nelson | employer | Columbia University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Shobaraj | cast member | Madhavi</gtriple>
+				<gtriple>Shobaraj | director | J. Sasikumar</gtriple>
+				<gtriple>Shobaraj | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Adguri | located in the administrative territorial entity | Arghakhanchi District</gtriple>
+				<gtriple>Adguri | located in the administrative territorial entity | Lumbini Zone</gtriple>
+				<gtriple>Adguri | country | Nepal</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Aq Ziarat | located in the administrative territorial entity | Kenarporuzh Rural District</gtriple>
+				<gtriple>Aq Ziarat | located in the administrative territorial entity | Central District</gtriple>
+				<gtriple>Aq Ziarat | located in the administrative territorial entity | Salmas County</gtriple>
+				<gtriple>Aq Ziarat | located in the administrative territorial entity | West Azerbaijan Province</gtriple>
+				<gtriple>Aq Ziarat | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Varzaneh | located in the administrative territorial entity | Bon Rud District</gtriple>
+				<gtriple>Varzaneh | located in the administrative territorial entity | Isfahan County</gtriple>
+				<gtriple>Varzaneh | located in the administrative territorial entity | Isfahan Province</gtriple>
+				<gtriple>Varzaneh | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Bayendar | located in the administrative territorial entity | Mojezat Rural District</gtriple>
+				<gtriple>Bayendar | located in the administrative territorial entity | Central District</gtriple>
+				<gtriple>Bayendar | located in the administrative territorial entity | Zanjan County</gtriple>
+				<gtriple>Bayendar | located in the administrative territorial entity | Zanjan Province</gtriple>
+				<gtriple>Bayendar | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Luis Aloy Vidal | place of birth | Santa Coloma de Gramenet</gtriple>
+				<gtriple>Luis Aloy Vidal | place of birth | Barcelona</gtriple>
+				<gtriple>Luis Aloy Vidal | place of birth | Catalonia</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Buddy Buddy | cast member | Jack Lemmon</gtriple>
+				<gtriple>Buddy Buddy | cast member | Walter Matthau</gtriple>
+				<gtriple>Buddy Buddy | country of origin | United States</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Gajurmukhi | located in the administrative territorial entity | Ilam District</gtriple>
+				<gtriple>Gajurmukhi | located in the administrative territorial entity | Mechi Zone</gtriple>
+				<gtriple>Gajurmukhi | country | Nepal</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Qayed Ali | located in the administrative territorial entity | Padena-ye Sofla Rural District</gtriple>
+				<gtriple>Qayed Ali | located in the administrative territorial entity | Padena District</gtriple>
+				<gtriple>Qayed Ali | located in the administrative territorial entity | Semirom County</gtriple>
+				<gtriple>Qayed Ali | located in the administrative territorial entity | Isfahan Province</gtriple>
+				<gtriple>Qayed Ali | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Osku | country | Iran</gtriple>
+				<gtriple>Osku | located in the administrative territorial entity | East Azerbaijan Province</gtriple>
+				<gtriple>Osku | located in the administrative territorial entity | Osku County</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Prince of Arcadia | director | Karl Hartl</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kulamanatti | located in the administrative territorial entity | Belgaum district</gtriple>
+				<gtriple>Kulamanatti | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Kulamanatti | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Yayamari | located on terrain feature | Vilcanota mountain range</gtriple>
+				<gtriple>Yayamari | country | Peru</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Qaleh-ye Soltan | located in the administrative territorial entity |  Shahid Modarres Rural District</gtriple>
+				<gtriple>Qaleh-ye Soltan | located in the administrative territorial entity | Central District</gtriple>
+				<gtriple>Qaleh-ye Soltan | located in the administrative territorial entity | Shushtar County</gtriple>
+				<gtriple>Qaleh-ye Soltan | located in the administrative territorial entity | Khuzestan Province</gtriple>
+				<gtriple>Qaleh-ye Soltan | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>My New Partner II | director | Claude Zidi</gtriple>
+				<gtriple>My New Partner II | country | France</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Shalamzar, Alborz | located in the administrative territorial entity | Hiv Rural District</gtriple>
+				<gtriple>Shalamzar, Alborz | located in the administrative territorial entity | Central District of Savojbolagh County</gtriple>
+				<gtriple>Shalamzar, Alborz | located in the administrative territorial entity | Alborz Province</gtriple>
+				<gtriple>Shalamzar, Alborz | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kokradi | located in the administrative territorial entity | Dakshina Kannada</gtriple>
+				<gtriple>Kokradi | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Kokradi | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Chahriq Rural District | located in the administrative territorial entity | Kuhsar District</gtriple>
+				<gtriple>Chahriq Rural District | located in the administrative territorial entity | Salmas County</gtriple>
+				<gtriple>Chahriq Rural District | located in the administrative territorial entity | West Azerbaijan Province</gtriple>
+				<gtriple>Chahriq Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Dalbar Malek Baqar | located in the administrative territorial entity | Khavashod Rural District</gtriple>
+				<gtriple>Dalbar Malek Baqar | located in the administrative territorial entity | Rud Ab District</gtriple>
+				<gtriple>Dalbar Malek Baqar | located in the administrative territorial entity | Sabzevar County</gtriple>
+				<gtriple>Dalbar Malek Baqar | located in the administrative territorial entity | Razavi Khorasan Province</gtriple>
+				<gtriple>Dalbar Malek Baqar | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Veerapur | located in the administrative territorial entity | Belgaum district</gtriple>
+				<gtriple>Veerapur | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Veerapur | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Give Us the Moon | cast member | Vic Oliver</gtriple>
+				<gtriple>Give Us the Moon | cast member | Margaret Lockwood</gtriple>
+				<gtriple>Give Us the Moon | cast member | Peter Graves</gtriple>
+				<gtriple>Give Us the Moon | country | United Kingdom</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Banuband | located in the administrative territorial entity | Tazian Rural District</gtriple>
+				<gtriple>Banuband | located in the administrative territorial entity | Central District</gtriple>
+				<gtriple>Banuband | located in the administrative territorial entity | Bandar Abbas County</gtriple>
+				<gtriple>Banuband | located in the administrative territorial entity | Hormozgan Province</gtriple>
+				<gtriple>Banuband | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Anjireh | located in the administrative territorial entity | Mehran Rural District</gtriple>
+				<gtriple>Anjireh | located in the administrative territorial entity | Central District of Bandar Lengeh County</gtriple>
+				<gtriple>Anjireh | located in the administrative territorial entity | Hormozgan Province</gtriple>
+				<gtriple>Anjireh | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Qatar Chah | located in the administrative territorial entity | Khangiran Rural District</gtriple>
+				<gtriple>Qatar Chah | located in the administrative territorial entity | Central District of Sarakhs County</gtriple>
+				<gtriple>Qatar Chah | located in the administrative territorial entity | Razavi Khorasan Province</gtriple>
+				<gtriple>Qatar Chah | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Pavilion Lake | located in the administrative territorial entity | Marble Canyon</gtriple>
+				<gtriple>Pavilion Lake | country | Canada</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Mangushi | located in the administrative territorial entity | Buzi Rural District</gtriple>
+				<gtriple>Mangushi | located in the administrative territorial entity | Central District of Shadegan County</gtriple>
+				<gtriple>Mangushi | located in the administrative territorial entity | Khuzestan Province</gtriple>
+				<gtriple>Mangushi | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Wonderful Years | director | Reiner Kunze</gtriple>
+				<gtriple>The Wonderful Years | cast member | Gabi Marr</gtriple>
+				<gtriple>The Wonderful Years | cast member | Martin May</gtriple>
+				<gtriple>The Wonderful Years | cast member | Dietrich Mattausch</gtriple>
+				<gtriple>The Wonderful Years | cast member | Christine Wodetzky</gtriple>
+				<gtriple>The Wonderful Years | country of origin | West Germany</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Story of My Death | director | Albert Serra</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Javaliqan | located in the administrative territorial entity | Jereh Rural District</gtriple>
+				<gtriple>Javaliqan | located in the administrative territorial entity | Jereh and Baladeh District</gtriple>
+				<gtriple>Javaliqan | located in the administrative territorial entity | Kazerun County</gtriple>
+				<gtriple>Javaliqan | located in the administrative territorial entity | Fars Province</gtriple>
+				<gtriple>Javaliqan | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Paris Calling | cast member | Randolph Scott</gtriple>
+				<gtriple>Paris Calling | cast member | Elisabeth Bergner</gtriple>
+				<gtriple>Paris Calling | cast member | Basil Rathbone</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Zavala District | located in the administrative territorial entity | Inhambane Province</gtriple>
+				<gtriple>Zavala District | country | Mozambique</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Dom Shahr | located in the administrative territorial entity | Gurband Rural District</gtriple>
+				<gtriple>Dom Shahr | located in the administrative territorial entity | Central District</gtriple>
+				<gtriple>Dom Shahr | located in the administrative territorial entity | Minab County</gtriple>
+				<gtriple>Dom Shahr | located in the administrative territorial entity | Hormozgan Province</gtriple>
+				<gtriple>Dom Shahr | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Cheppu | country | India</gtriple>
+				<gtriple>Cheppu | director | Priyadarshan</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Bagh-e Dehneh | located in the administrative territorial entity | Baqeran Rural District</gtriple>
+				<gtriple>Bagh-e Dehneh | located in the administrative territorial entity | Central District of Birjand County</gtriple>
+				<gtriple>Bagh-e Dehneh | located in the administrative territorial entity | South Khorasan Province</gtriple>
+				<gtriple>Bagh-e Dehneh | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Chaypareh-ye Pain Rural District | located in the administrative territorial entity | Zanjanrud District</gtriple>
+				<gtriple>Chaypareh-ye Pain Rural District | located in the administrative territorial entity | Zanjan County</gtriple>
+				<gtriple>Chaypareh-ye Pain Rural District | located in the administrative territorial entity | Zanjan Province</gtriple>
+				<gtriple>Chaypareh-ye Pain Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Chirag Kahan Roshni Kahan | director | Devendra Goel</gtriple>
+				<gtriple>Chirag Kahan Roshni Kahan | producer | Devendra Goel</gtriple>
+				<gtriple>Chirag Kahan Roshni Kahan | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kattusseri | located in the administrative territorial entity | Alathur Taluk</gtriple>
+				<gtriple>Kattusseri | located in the administrative territorial entity | Palakkad district</gtriple>
+				<gtriple>Kattusseri | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Tenom | located in the administrative territorial entity | Tenom District</gtriple>
+				<gtriple>Tenom | located in the administrative territorial entity | Interior Division</gtriple>
+				<gtriple>Tenom | country | Malaysia</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Safayyeh | located in the administrative territorial entity | Ferdows District</gtriple>
+				<gtriple>Safayyeh | located in the administrative territorial entity | Rafsanjan County</gtriple>
+				<gtriple>Safayyeh | located in the administrative territorial entity | Kerman Province</gtriple>
+				<gtriple>Safayyeh | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>El Paso County Coliseum | located in the administrative territorial entity | El Paso</gtriple>
+				<gtriple>El Paso County Coliseum | located in the administrative territorial entity | Texas</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kiakola Rural District | located in the administrative territorial entity | Central District of Simorgh County</gtriple>
+				<gtriple>Kiakola Rural District | located in the administrative territorial entity | Mazandaran Province</gtriple>
+				<gtriple>Kiakola Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Gonnagar | located in the administrative territorial entity | Belgaum district</gtriple>
+				<gtriple>Gonnagar | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Gonnagar | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kabgan Rural District | located in the administrative territorial entity | Kaki District</gtriple>
+				<gtriple>Kabgan Rural District | located in the administrative territorial entity | Dashti County</gtriple>
+				<gtriple>Kabgan Rural District | located in the administrative territorial entity | Bushehr Province</gtriple>
+				<gtriple>Bushehr Province | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Qaleh-ye Tasian | located in the administrative territorial entity | Gavork-e Nalin Rural District</gtriple>
+				<gtriple>Qaleh-ye Tasian | located in the administrative territorial entity | Vazineh District</gtriple>
+				<gtriple>Qaleh-ye Tasian | located in the administrative territorial entity | Sardasht County</gtriple>
+				<gtriple>Qaleh-ye Tasian | located in the administrative territorial entity | West Azerbaijan Province</gtriple>
+				<gtriple>Qaleh-ye Tasian | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Too Late for Tears | director | Byron Haskin</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Suteh, Ramsar | located in the administrative territorial entity | Sakht Sar Rural District</gtriple>
+				<gtriple>Suteh, Ramsar | located in the administrative territorial entity | Central District of Ramsar County</gtriple>
+				<gtriple>Suteh, Ramsar | located in the administrative territorial entity | Mazandaran Province</gtriple>
+				<gtriple>Suteh, Ramsar | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Abuse of Weakness | director | Catherine Breillat</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Flowers from Nice | director | Augusto Genina</gtriple>
+				<gtriple>Flowers from Nice | cast member | Erna Sack</gtriple>
+				<gtriple>Flowers from Nice | cast member | Friedl Czepa</gtriple>
+				<gtriple>Flowers from Nice | cast member | Karl Sch&#258;&#182;nb&#258;&#182;ck</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kakane Wadi | located in the administrative territorial entity | Parner taluka</gtriple>
+				<gtriple>Kakane Wadi | located in the administrative territorial entity | Ahmednagar district</gtriple>
+				<gtriple>Kakane Wadi | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The New York Ripper | director | Lucio Fulci</gtriple>
+				<gtriple>The New York Ripper | country | Italy</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Unguarded Hour | cast member |  Loretta Young</gtriple>
+				<gtriple>The Unguarded Hour | cast member | Franchot Tone</gtriple>
+				<gtriple>The Unguarded Hour | director | Sam Wood</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Range Feud | cast member | Buck Jones</gtriple>
+				<gtriple>The Range Feud | cast member | John Wayne</gtriple>
+				<gtriple>The Range Feud | country | United States</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Victoria the Great | cast member | Anna Neagle</gtriple>
+				<gtriple>Victoria the Great | cast member | Anton Walbrook</gtriple>
+				<gtriple>Victoria the Great | cast member | Walter Rilla</gtriple>
+				<gtriple>Victoria the Great | country | United Kingdom</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Shonbeh | located in the administrative territorial entity | Shonbeh and Tasuj District</gtriple>
+				<gtriple>Shonbeh | located in the administrative territorial entity | Dashti County</gtriple>
+				<gtriple>Shonbeh | located in the administrative territorial entity | Bushehr Province</gtriple>
+				<gtriple>Shonbeh | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Rough and the Smooth | director | Robert Siodmak</gtriple>
+				<gtriple>The Rough and the Smooth | cast member | Nadja Tiller</gtriple>
+				<gtriple>The Rough and the Smooth | cast member | Tony Britton</gtriple>
+				<gtriple>The Rough and the Smooth | cast member | William Bendix</gtriple>
+				<gtriple>The Rough and the Smooth | cast member | Edward Chapman</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Vattinagulapally | located in the administrative territorial entity | Ranga Reddy district</gtriple>
+				<gtriple>Vattinagulapally | located in the administrative territorial entity | Telangana</gtriple>
+				<gtriple>Vattinagulapally | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Jegenstorf Castle | located in the administrative territorial entity | Jegenstorf</gtriple>
+				<gtriple>Jegenstorf Castle | located in the administrative territorial entity | Canton of Bern</gtriple>
+				<gtriple>Jegenstorf Castle | country | Switzerland</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Sulqan Rural District | located in the administrative territorial entity | Kan District</gtriple>
+				<gtriple>Sulqan Rural District | located in the administrative territorial entity | Tehran County</gtriple>
+				<gtriple>Sulqan Rural District | located in the administrative territorial entity | Tehran Province</gtriple>
+				<gtriple>Sulqan Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Aq Bolagh Rural District | located in the administrative territorial entity | Sojas Rud District</gtriple>
+				<gtriple>Aq Bolagh Rural District | located in the administrative territorial entity | Khodabandeh County</gtriple>
+				<gtriple>Aq Bolagh Rural District | located in the administrative territorial entity | Zanjan Province</gtriple>
+				<gtriple>Aq Bolagh Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Dehaj | located in the administrative territorial entity | Shahr-e Babak County</gtriple>
+				<gtriple>Dehaj | located in the administrative territorial entity | Kerman Province</gtriple>
+				<gtriple>Dehaj | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Chuqipata | located on terrain feature | Andes</gtriple>
+				<gtriple>Chuqipata | country | Peru</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>McMillan Island | located in the administrative territorial entity | British Columbia</gtriple>
+				<gtriple>McMillan Island | country | Canada</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Hanjanatti | located in the administrative territorial entity | Belgaum district</gtriple>
+				<gtriple>Hanjanatti | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Hanjanatti | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Devrukh | located in the administrative territorial entity | Sangameshwar</gtriple>
+				<gtriple>Devrukh | located in the administrative territorial entity | Ratnagiri district</gtriple>
+				<gtriple>Devrukh | country | India</gtriple>
+				<gtriple>Devrukh | located in the administrative territorial entity | Maharashtra</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Ali Nazar | located in the administrative territorial entity | Zangebar Rural District</gtriple>
+				<gtriple>Ali Nazar | located in the administrative territorial entity | Central District of Poldasht County</gtriple>
+				<gtriple>Ali Nazar | located in the administrative territorial entity | West Azerbaijan Province</gtriple>
+				<gtriple>Ali Nazar | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Sleeping with the Enemy | cast member | Julia Roberts</gtriple>
+				<gtriple>Sleeping with the Enemy | cast member | Patrick Bergin</gtriple>
+				<gtriple>Sleeping with the Enemy | cast member | Kevin Anderson</gtriple>
+				<gtriple>Sleeping with the Enemy | country | United States</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Ali Sadr Rural District | located in the administrative territorial entity | Gol Tappeh District</gtriple>
+				<gtriple>Ali Sadr Rural District | located in the administrative territorial entity | Kabudarahang County</gtriple>
+				<gtriple>Ali Sadr Rural District | located in the administrative territorial entity | Hamadan Province</gtriple>
+				<gtriple>Ali Sadr Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>M. N. Kaul | educated at | University of Cambridge</gtriple>
+				<gtriple>M. N. Kaul | educated at | London School of Economics</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Caxambu | country | Brazil</gtriple>
+				<gtriple>Caxambu | located in the administrative territorial entity | Minas Gerais</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Frans De Mulder | country of origin | Belgium</gtriple>
+				<gtriple>Frans De Mulder | place of birth | Kruishoutem</gtriple>
+				<gtriple>Frans De Mulder | place of death | Deinze</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Felix Braun | place of birth | Vienna</gtriple>
+				<gtriple>Felix Braun | place of death | Klosterneuburg</gtriple>
+				<gtriple>Felix Braun | country of citizenship | Austria</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Game on Board | cast member | Viktor de Kowa</gtriple>
+				<gtriple>Game on Board | cast member | Susi Lanner</gtriple>
+				<gtriple>Game on Board | cast member | Alfred Abel</gtriple>
+				<gtriple>Game on Board | country | Germany</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Zvenigora | director | Alexander Dovzhenko</gtriple>
+				<gtriple>Zvenigora | country | Soviet Union</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Colonial Peak | located in the administrative territorial entity | North Cascades</gtriple>
+				<gtriple>Colonial Peak | country | United States</gtriple>
+				<gtriple>Colonial Peak | located in the administrative territorial entity | Washington</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kordian District | located in the administrative territorial entity | Jahrom County</gtriple>
+				<gtriple>Kordian District | located in the administrative territorial entity | Fars Province</gtriple>
+				<gtriple>Kordian District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Tepemaxalco | located in the administrative territorial entity | Puebla</gtriple>
+				<gtriple>Tepemaxalco | country | Mexico</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Hiware Korda | located in the administrative territorial entity | Parner taluka</gtriple>
+				<gtriple>Hiware Korda | located in the administrative territorial entity | Ahmednagar district</gtriple>
+				<gtriple>Hiware Korda | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Muppets Take Manhattan | director | Frank Oz</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Polideportivo Municipal de Manises | located in the administrative territorial entity | Manises</gtriple>
+				<gtriple>Polideportivo Municipal de Manises | country | Spain</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Krnjin | located in the administrative territorial entity | Tomislavgrad</gtriple>
+				<gtriple>Krnjin | country | Bosnia and Herzegovina</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Love Is Eternal While It Lasts | country | Italy</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Eram Rural District | located in the administrative territorial entity | Eram District</gtriple>
+				<gtriple>Eram Rural District | located in the administrative territorial entity | Dashtestan County</gtriple>
+				<gtriple>Eram Rural District | located in the administrative territorial entity | Bushehr Province</gtriple>
+				<gtriple>Eram Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Little Buddha | director | Bernardo Bertolucci</gtriple>
+				<gtriple>Little Buddha | cast member | Chris Isaak</gtriple>
+				<gtriple>Little Buddha | cast member | Bridget Fonda</gtriple>
+				<gtriple>Little Buddha | cast member | Keanu Reeves</gtriple>
+				<gtriple>Little Buddha | country | Italy</gtriple>
+				<gtriple>Little Buddha | country | France</gtriple>
+				<gtriple>Little Buddha | country | United Kingdom</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Rocky IV | director | Sylvester Stallone</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Azadeh Rural District | located in the administrative territorial entity | Moshrageh District</gtriple>
+				<gtriple>Azadeh Rural District | located in the administrative territorial entity | Ramshir County</gtriple>
+				<gtriple>Azadeh Rural District | located in the administrative territorial entity | Khuzestan Province</gtriple>
+				<gtriple>Azadeh Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Marqad | located in the administrative territorial entity | Buin Rural District</gtriple>
+				<gtriple>Marqad | located in the administrative territorial entity | Nanur District</gtriple>
+				<gtriple>Marqad | located in the administrative territorial entity | Baneh County</gtriple>
+				<gtriple>Marqad | located in the administrative territorial entity | Kurdistan Province</gtriple>
+				<gtriple>Marqad | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Jade Goddess of Mercy | cast member | Zhao Wei</gtriple>
+				<gtriple>Jade Goddess of Mercy | cast member | Nicholas Tse</gtriple>
+				<gtriple>Jade Goddess of Mercy | director | Ann Hui</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Dashti-ye Hoseyn Aqa | located in the administrative territorial entity | Lalar and Katak Rural District</gtriple>
+				<gtriple>Dashti-ye Hoseyn Aqa | located in the administrative territorial entity | Chelo District</gtriple>
+				<gtriple>Dashti-ye Hoseyn Aqa | located in the administrative territorial entity | Andika County</gtriple>
+				<gtriple>Dashti-ye Hoseyn Aqa | located in the administrative territorial entity | Khuzestan Province</gtriple>
+				<gtriple>Dashti-ye Hoseyn Aqa | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Cham Konar, Shushtar | located in the administrative territorial entity | Central District of Shushtar County</gtriple>
+				<gtriple>Cham Konar, Shushtar | located in the administrative territorial entity | Shahid Modarres Rural District</gtriple>
+				<gtriple>Cham Konar, Shushtar | located in the administrative territorial entity | Khuzestan Province</gtriple>
+				<gtriple>Cham Konar, Shushtar | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Third Man on the Mountain | director | Ken Annakin</gtriple>
+				<gtriple>Third Man on the Mountain | cast member | Michael Rennie</gtriple>
+				<gtriple>Third Man on the Mountain | cast member | James MacArthur</gtriple>
+				<gtriple>Third Man on the Mountain | country | United States</gtriple>
+				<gtriple>Third Man on the Mountain | production company | Walt Disney Productions</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Pannaikadu | located in the administrative territorial entity | Dindigul district</gtriple>
+				<gtriple>Pannaikadu | located in the administrative territorial entity | Tamil Nadu</gtriple>
+				<gtriple>Pannaikadu | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Dasht-e Sar Rural District | located in the administrative territorial entity | Dabudasht District</gtriple>
+				<gtriple>Dasht-e Sar Rural District | located in the administrative territorial entity | Amol County</gtriple>
+				<gtriple>Dasht-e Sar Rural District | located in the administrative territorial entity | Mazandaran Province</gtriple>
+				<gtriple>Dasht-e Sar Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Freeze Die Come to Life | director | Vitali Kanevsky</gtriple>
+				<gtriple>Freeze Die Come to Life | country | Soviet Union</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Macclesfield railway station | located in the administrative territorial entity | Macclesfield</gtriple>
+				<gtriple>Macclesfield railway station | country | United Kingdom</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>A Walk with Love and Death | director | John Huston</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kundargi | located in the administrative territorial entity | Belgaum district</gtriple>
+				<gtriple>Kundargi | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Kundargi | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Little Salt Spring | located in the administrative territorial entity | North Port</gtriple>
+				<gtriple>Little Salt Spring | located in the administrative territorial entity | Florida</gtriple>
+				<gtriple>Little Salt Spring | country | United States</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Alaginayagipuram | located in the administrative territorial entity | Pattukkottai taluk</gtriple>
+				<gtriple>Alaginayagipuram | located in the administrative territorial entity | Thanjavur district</gtriple>
+				<gtriple>Alaginayagipuram | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Rah Daneh | located in the administrative territorial entity | Beygom Qaleh Rural District</gtriple>
+				<gtriple>Rah Daneh | located in the administrative territorial entity | Central District of Naqadeh County</gtriple>
+				<gtriple>Rah Daneh | located in the administrative territorial entity | West Azerbaijan Province</gtriple>
+				<gtriple>Rah Daneh | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Drishyam | director | Jeethu Joseph</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Mount Drum | located in the administrative territorial entity | Wrangell Mountains</gtriple>
+				<gtriple>Mount Drum | located in the administrative territorial entity | east - central Alaska</gtriple>
+				<gtriple>Mount Drum | country | United States</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Anivsky District | located in the administrative territorial entity | Sakhalin Oblast</gtriple>
+				<gtriple>Anivsky District | country | Russia</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Texada Island | located in the administrative territorial entity | Strait of Georgia</gtriple>
+				<gtriple>Texada Island | located in the administrative territorial entity | British Columbia</gtriple>
+				<gtriple>Texada Island | country | Canada</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kuvagam | located in the administrative territorial entity | Udayarpalayam taluk</gtriple>
+				<gtriple>Kuvagam | located in the administrative territorial entity | Ariyalur district</gtriple>
+				<gtriple>Kuvagam | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>El Hierro Airport | located on terrain feature | El Hierro</gtriple>
+				<gtriple>El Hierro Airport | country | Spain</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Leskovec, Novo Mesto | located in the administrative territorial entity | Novo Mesto</gtriple>
+				<gtriple>Leskovec, Novo Mesto | located in the administrative territorial entity | Slovenia</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Dharmatti | located in the administrative territorial entity | Belgaum district</gtriple>
+				<gtriple>Dharmatti | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Dharmatti | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>New Fist of Fury | director | Lo Wei</gtriple>
+				<gtriple>New Fist of Fury | cast member | Jackie Chan</gtriple>
+				<gtriple>New Fist of Fury | country of origin | Hong Kong</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>If Paris Were Told to Us | director | Sacha Guitry</gtriple>
+				<gtriple>If Paris Were Told to Us | country | France</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Vishnu-Devaa | cast member | Sunny Deol</gtriple>
+				<gtriple>Vishnu-Devaa | cast member | Aditya Pancholi</gtriple>
+				<gtriple>Vishnu-Devaa | cast member | Neelam Kothari</gtriple>
+				<gtriple>Vishnu-Devaa | cast member | Sangeeta Bijlani</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Golabar Rural District | located in the administrative territorial entity | Central District of Ijrud County</gtriple>
+				<gtriple>Golabar Rural District | located in the administrative territorial entity | Zanjan Province</gtriple>
+				<gtriple>Golabar Rural District | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Mashhadi, Khuzestan | located in the administrative territorial entity | Shahid Modarres Rural District</gtriple>
+				<gtriple>Mashhadi, Khuzestan | located in the administrative territorial entity | Central District</gtriple>
+				<gtriple>Mashhadi, Khuzestan | located in the administrative territorial entity | Shushtar County</gtriple>
+				<gtriple>Mashhadi, Khuzestan | located in the administrative territorial entity | Khuzestan Province</gtriple>
+				<gtriple>Mashhadi, Khuzestan | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Bertin Tomou Bayard | country of citizenship | Cameroon</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Stadion Florian Krygier | located in the administrative territorial entity | Szczecin</gtriple>
+				<gtriple>Stadion Florian Krygier | country | Poland</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Gonbad Zia | located in the administrative territorial entity | Chenaran Rural District</gtriple>
+				<gtriple>Gonbad Zia | located in the administrative territorial entity | Central District of Chenaran County</gtriple>
+				<gtriple>Gonbad Zia | located in the administrative territorial entity | Razavi Khorasan Province</gtriple>
+				<gtriple>Gonbad Zia | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Plainsman | director | Cecil B. DeMille</gtriple>
+				<gtriple>The Plainsman | cast member | Gary Cooper</gtriple>
+				<gtriple>The Plainsman | cast member | Jean Arthur</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Somehow Good | director | Jack Raymond</gtriple>
+				<gtriple>Somehow Good | cast member | Fay Compton</gtriple>
+				<gtriple>Somehow Good | cast member | Stewart Rome</gtriple>
+				<gtriple>Somehow Good | cast member | Dorothy Boyd</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Jaffal | located in the administrative territorial entity | Jaffal Rural District</gtriple>
+				<gtriple>Jaffal | located in the administrative territorial entity | Central District of Shadegan County</gtriple>
+				<gtriple>Jaffal | located in the administrative territorial entity | Khuzestan Province</gtriple>
+				<gtriple>Jaffal | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Pitusiray | located on terrain feature | Urubamba mountain range</gtriple>
+				<gtriple>Pitusiray | country | Peru</gtriple>
+				<gtriple>Urubamba mountain range | part of | Andes</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Sons of Katie Elder | cast member | John Wayne</gtriple>
+				<gtriple>The Sons of Katie Elder | cast member | Dean Martin</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Danger Route | director | Seth Holt</gtriple>
+				<gtriple>Danger Route | cast member | Richard Johnson</gtriple>
+				<gtriple>Danger Route | cast member | Carol Lynley</gtriple>
+				<gtriple>Danger Route | cast member | Barbara Bouchet</gtriple>
+				<gtriple>Danger Route | country | United Kingdom</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Klaus Berggreen | place of birth | Virum</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Strange Illusion | cast member | Jimmy Lydon</gtriple>
+				<gtriple>Strange Illusion | cast member | Warren William</gtriple>
+				<gtriple>Strange Illusion | cast member | Sally Eilers</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Belegali | located in the administrative territorial entity | Dharwad district</gtriple>
+				<gtriple>Belegali | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Belegali | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Gatewadi | located in the administrative territorial entity | Parner taluka</gtriple>
+				<gtriple>Gatewadi | located in the administrative territorial entity | Ahmednagar district</gtriple>
+				<gtriple>Gatewadi | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Mehdiabad, Khomeyn | located in the administrative territorial entity | Chahar Cheshmeh Rural District</gtriple>
+				<gtriple>Mehdiabad, Khomeyn | located in the administrative territorial entity | Kamareh District</gtriple>
+				<gtriple>Mehdiabad, Khomeyn | located in the administrative territorial entity | Khomeyn County</gtriple>
+				<gtriple>Mehdiabad, Khomeyn | located in the administrative territorial entity | Markazi Province</gtriple>
+				<gtriple>Mehdiabad, Khomeyn | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Black Holiday | cast member | Adolfo Celi</gtriple>
+				<gtriple>Black Holiday | country | Italy</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Flying Doctor | cast member | Charles Farrell</gtriple>
+				<gtriple>The Flying Doctor | cast member | Mary Maguire</gtriple>
+				<gtriple>The Flying Doctor | cast member | James Raglan</gtriple>
+				<gtriple>The Flying Doctor | country of origin | Australia</gtriple>
+				<gtriple>The Flying Doctor | country of origin | United Kingdom</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Fulagaddi | located in the administrative territorial entity | Belgaum district</gtriple>
+				<gtriple>Fulagaddi | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Fulagaddi | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Kabut Sutra Ungu | director | Sjumandjaja</gtriple>
+				<gtriple>Kabut Sutra Ungu | cast member | Jenny Rachman</gtriple>
+				<gtriple>Kabut Sutra Ungu | cast member | Roy Marten</gtriple>
+				<gtriple>Kabut Sutra Ungu | cast member | El Manik</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Watch Your Stern | cast member | Kenneth Connor</gtriple>
+				<gtriple>Watch Your Stern | cast member | Eric Barker</gtriple>
+				<gtriple>Watch Your Stern | cast member | Leslie Phillips</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Finding Mercy | cast member | Rita Dominic</gtriple>
+				<gtriple>Finding Mercy | cast member | Blossom Chukwujekwu</gtriple>
+				<gtriple>Finding Mercy | cast member | Uti Nwachukwu</gtriple>
+				<gtriple>Finding Mercy | cast member | Chioma Chukwuka</gtriple>
+				<gtriple>Finding Mercy | director | Desmond Elliot</gtriple>
+				<gtriple>Finding Mercy | country of origin | Nigeria</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Ab Barik | located in the administrative territorial entity | Tolbozan Rural District</gtriple>
+				<gtriple>Ab Barik | located in the administrative territorial entity | Golgir District</gtriple>
+				<gtriple>Ab Barik | located in the administrative territorial entity | Masjed Soleyman County</gtriple>
+				<gtriple>Ab Barik | located in the administrative territorial entity | Khuzestan Province</gtriple>
+				<gtriple>Ab Barik | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Hasan Abdali | located in the administrative territorial entity | Mojezat Rural District</gtriple>
+				<gtriple>Hasan Abdali | located in the administrative territorial entity | Central District of Zanjan County</gtriple>
+				<gtriple>Hasan Abdali | located in the administrative territorial entity | Zanjan Province</gtriple>
+				<gtriple>Hasan Abdali | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Sharabian | located in the administrative territorial entity | Mehraban District</gtriple>
+				<gtriple>Sharabian | located in the administrative territorial entity | Sarab County</gtriple>
+				<gtriple>Sharabian | located in the administrative territorial entity | East Azerbaijan Province</gtriple>
+				<gtriple>Sharabian | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Nutty, Naughty Chateau | cast member | Monica Vitti</gtriple>
+				<gtriple>Nutty, Naughty Chateau | country of origin | France</gtriple>
+				<gtriple>Nutty, Naughty Chateau | country of origin | Italy</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Notes of Love | director | Mimmo Calopresti</gtriple>
+				<gtriple>Notes of Love | country | Italy</gtriple>
+				<gtriple>Notes of Love | country | France</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Giriyal | located in the administrative territorial entity | Dharwad district</gtriple>
+				<gtriple>Giriyal | located in the administrative territorial entity | Karnataka</gtriple>
+				<gtriple>Giriyal | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Chal Gonbad | located in the administrative territorial entity | Neyzar Rural District</gtriple>
+				<gtriple>Chal Gonbad | located in the administrative territorial entity | Salafchegan District</gtriple>
+				<gtriple>Chal Gonbad | located in the administrative territorial entity | Qom County</gtriple>
+				<gtriple>Chal Gonbad | located in the administrative territorial entity | Qom Province</gtriple>
+				<gtriple>Chal Gonbad | country | Iran</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Datanal | located in the administrative territorial entity | Dharwad district</gtriple>
+				<gtriple>Datanal | country | India</gtriple>
 			</generatedtripleset>
 		</entry>
 	</entries>

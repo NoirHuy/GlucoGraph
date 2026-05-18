@@ -1,0 +1,43 @@
+{
+  "pageSize": 25,
+  "pageNumber": 1,
+  "pageCount": 1,
+  "result": [
+    {
+      "rootSource": "MSHCZE",
+      "value": "Hormon slinivky břišní tvořený v beta-buňkách Langerhansových ostrůvků. Peptid tvořený dvěma řetězci (A, B) spojenými C-peptidem. Je důležitý pro regulaci glykemie a pro metabolismus sacharidů, ovlivňuje však i metabolismus bílkovin a lipidů. Působí anabolicky, tlumí lipolýzu. Jeho vylučování stoupá po jídle jako odpověď na vzestup glukosy v krvi (jeho vylučování ovlivňují i některé další hormony a nervové vlivy, regulace souvisí s funkcí membránových přenašečů a iontových kanálů na beta-buňce, ovlivňuje jej např. kalemie), umožňuje její vstup do buněk a její další využití (zisk energie, uložení do zásoby). Na i. je závislý glukosový transportér GLUT4. V cílových tkáních (zejm. svalová a tuková tkáň, játra) působí přes specifický receptor, který má charakter tyrosinkinázy (v tom i v některých dalších vlastnostech se podobá růstovým faktorům, což mj. souvisí s vlivem hyperinzulinemie na proces aterogeneze). Při jeho absolutním nedostatku nebo nedostatečném účinku (inzulinové rezistenci) vzniká diabetes mellitus (typu 1, resp. 2). I. existuje i jako lék. V minulosti se používaly purifikované i. vepřové a hovězí, nověji se používá humánní i., vyrobený metodami genového inženýrství. I. k léčebnému použití se dělí podle rychlosti nástupu účinku a doby působení a liší se způsobem podání. Rizikem léčby i. je předávkování s hypoglykemií, zejm. u starších inzulinů existovalo riziko alergizace a vzniku protilátek. I. také zvyšuje vstup kalia do buněk a lze jej spolu s glukosou použít k léčbě hyperkalemie. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSH",
+      "value": "A 51-amino acid pancreatic hormone that plays a major role in the regulation of glucose metabolism, directly by suppressing endogenous glucose production (GLYCOGENOLYSIS; GLUCONEOGENESIS) and indirectly by suppressing GLUCAGON secretion and LIPOLYSIS. Native insulin is a globular protein comprised of a zinc-coordinated hexamer. Each insulin monomer containing two chains, A (21 residues) and B (30 residues), linked by two disulfide bonds. Insulin is used as a drug to control insulin-dependent diabetes mellitus (DIABETES MELLITUS, TYPE 1).",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "CSP",
+      "value": "protein hormone secreted by beta cells of the pancreas; insulin plays a major role in the regulation of glucose metabolism, generally promoting the cellular utilization of glucose and is also an important regulator of protein and lipid metabolism; insulin is used as a drug to control insulin-dependent diabetes mellitus.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHPOR",
+      "value": "Hormônio pancreático de 51 aminoácidos que desempenha um papel fundamental no metabolismo da glucose, suprimindo diretamente a produção endógena de glucose (GLICOGENÓLISE, GLUCONEOGÊNESE) e indiretamente a secreção de GLUCAGON e a LIPÓLISE. A insulina nativa é uma proteína globular composta por um hexâmero coordenado de zinco. Cada monômero de insulina contém duas cadeias, A (21 resíduos) e B (30 resíduos), ligadas entre si por duas pontes dissulfeto. A insulina é usada para controlar o DIABETES MELLITUS TIPO 1.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSPA",
+      "value": "Hormona protéica segregada por las células beta del páncreas. La insulina desempeña un papel fundamental en la regulación del metabolismo de la glucosa, generalmente promoviendo la utilización celular de la glucosa. También es un regulador importante del metabolismo protéico y lipídico. La insulina se emplea para controlar la diabetes mellitus dependiente de insulina.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    },
+    {
+      "rootSource": "MSHSWE",
+      "value": "Ett proteinhormon som utsöndras av bukspottkörtelns betaceller. Insulin har en avgörande roll i regleringen av sockeromsättningen, där det främjar cellernas förbrukning av glukos. Det spelar även en viktig roll för omsättningen av proteiner och lipider. Insulin används som läkemedel för hålla insulinberoende diabetes mellitus under kontroll.",
+      "classType": "Definition",
+      "sourceOriginated": true
+    }
+  ]
+}
