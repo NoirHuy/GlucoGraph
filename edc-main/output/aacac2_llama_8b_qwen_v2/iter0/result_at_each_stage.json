@@ -4,41 +4,31 @@
         "input_text": "The American Association of Clinical Endocrinology published the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control in 2009.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "published": "The subject entity is the creator or originator of the object entity, such as a document, guideline, or publication.",
-            "for": "The subject entity is the purpose, target, or application of the object entity, such as a treatment, intervention, or guideline.",
-            "in": "The subject entity is the context, scope, or application of the object entity, such as a location, time period, or population.",
+            "published": "The subject entity created, issued, or disseminated the object entity, such as a document, algorithm, or guideline.",
+            "in": "The subject entity is contained within or associated with the object entity, such as a document, algorithm, or guideline.",
             "_entries": [
                 {
                     "subject": "The American Association of Clinical Endocrinology",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or standards for clinical practice, often developed by professional organizations or expert panels.",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other categories.",
                     "relation": "published",
-                    "relation_definition": "The subject entity is the creator or originator of the object entity, such as a document, guideline, or publication.",
-                    "object": "the American Association of Clinical Endocrinology algorithm for glycemic control",
-                    "object_type": "Clinical Guideline",
-                    "object_type_definition": "A set of evidence-based recommendations or standards for clinical practice, often developed by professional organizations or expert panels."
+                    "relation_definition": "The subject entity created, issued, or disseminated the object entity, such as a document, algorithm, or guideline.",
+                    "object": "the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the other categories."
                 },
                 {
-                    "subject": "the American Association of Clinical Endocrinology algorithm for glycemic control",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or standards for clinical practice, often developed by professional organizations or expert panels.",
-                    "relation": "for",
-                    "relation_definition": "The subject entity is the purpose, target, or application of the object entity, such as a treatment, intervention, or guideline.",
-                    "object": "glycemic control",
-                    "object_type": "Clinical Metric",
-                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
-                },
-                {
-                    "subject": "the American Association of Clinical Endocrinology algorithm for glycemic control",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or standards for clinical practice, often developed by professional organizations or expert panels.",
+                    "subject": "the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other categories.",
                     "relation": "in",
-                    "relation_definition": "The subject entity is the context, scope, or application of the object entity, such as a location, time period, or population.",
+                    "relation_definition": "The subject entity is contained within or associated with the object entity, such as a document, algorithm, or guideline.",
                     "object": "2009",
-                    "object_type": "Clinical Metric",
-                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the other categories."
                 }
             ]
         },
@@ -50,19 +40,20 @@
         "input_text": "The American Association of Clinical Endocrinology algorithm for glycemic control was expanded on the visual guidance provided by the American College of Endocrinology/American Association of Clinical Endocrinology Diabetes Road Maps.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "was expanded on": "The subject guideline or standard is built upon or further developed based on the principles or recommendations of the object guideline or standard.",
+            "was expanded on": "The subject guideline or protocol was modified or updated based on the information provided by the object.",
             "_entries": [
                 {
-                    "subject": "The American Association of Clinical Endocrinology algorithm",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or standards for clinical practice, often developed by professional organizations or regulatory agencies.",
+                    "subject": "The American Association of Clinical Endocrinology algorithm for glycemic control",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A standardized protocol or guideline for managing a disease or clinical condition.",
                     "relation": "was expanded on",
-                    "relation_definition": "The subject guideline or standard is built upon or further developed based on the principles or recommendations of the object guideline or standard.",
+                    "relation_definition": "The subject guideline or protocol was modified or updated based on the information provided by the object.",
                     "object": "the visual guidance provided by the American College of Endocrinology/American Association of Clinical Endocrinology Diabetes Road Maps",
-                    "object_type": "Clinical Guideline",
-                    "object_type_definition": "A set of evidence-based recommendations or standards for clinical practice, often developed by professional organizations or regulatory agencies."
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
                 }
             ]
         },
@@ -74,9 +65,51 @@
         "input_text": "At the time of the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control, thiazolidinediones, alpha-glucosidase inhibitors, metformin, and sulfonylureas/glinides were in use.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "_entries": []
+            "_entries": [
+                {
+                    "subject": "thiazolidinediones",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": null,
+                    "relation_definition": null,
+                    "object": null,
+                    "object_type": null,
+                    "object_type_definition": null
+                },
+                {
+                    "subject": "alpha-glucosidase inhibitors",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": null,
+                    "relation_definition": null,
+                    "object": null,
+                    "object_type": null,
+                    "object_type_definition": null
+                },
+                {
+                    "subject": "metformin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": null,
+                    "relation_definition": null,
+                    "object": null,
+                    "object_type": null,
+                    "object_type_definition": null
+                },
+                {
+                    "subject": "sulfonylureas/glinides",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": null,
+                    "relation_definition": null,
+                    "object": null,
+                    "object_type": null,
+                    "object_type_definition": null
+                }
+            ]
         },
         "canonicalization_candidates": "[]",
         "schema_canonicalizaiton": []
@@ -86,65 +119,68 @@
         "input_text": "The first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control also included the addition of exenatide and dipeptidyl peptidase-4 inhibitors.\n",
         "entity_hint": "",
         "relation_hint": "",
-        "oie": [
-            [
-                "Type 2 Diabetes",
-                "may be treated by",
-                "exenatide"
-            ],
-            [
-                "Type 2 Diabetes",
-                "may be treated by",
-                "dipeptidyl peptidase-4 inhibitors"
-            ]
-        ],
+        "oie_raw": [],
+        "oie": [],
         "schema_definition": {
-            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "also included the addition of": "The subject clinical metric or guideline also incorporates or includes the object entity or treatment.",
             "_entries": [
                 {
-                    "subject": "Type 2 Diabetes",
-                    "subject_type": "Disease",
-                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
-                    "relation": "may be treated by",
-                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "subject": "The first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "also included the addition of",
+                    "relation_definition": "The subject clinical metric or guideline also incorporates or includes the object entity or treatment.",
                     "object": "exenatide",
                     "object_type": "Drug",
                     "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
                 },
                 {
-                    "subject": "Type 2 Diabetes",
-                    "subject_type": "Disease",
-                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
-                    "relation": "may be treated by",
-                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "subject": "The first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "also included the addition of",
+                    "relation_definition": "The subject clinical metric or guideline also incorporates or includes the object entity or treatment.",
                     "object": "dipeptidyl peptidase-4 inhibitors",
                     "object_type": "Drug",
                     "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
                 }
             ]
         },
-        "canonicalization_candidates": "[{}, {}]",
-        "schema_canonicalizaiton": [
-            [
-                "Type 2 Diabetes",
-                "may be treated by",
-                "exenatide"
-            ],
-            [
-                "Type 2 Diabetes",
-                "may be treated by",
-                "dipeptidyl peptidase-4 inhibitors"
-            ]
-        ]
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
     },
     {
         "index": 4,
         "input_text": "The American Association of Clinical Endocrinology published the Comprehensive Type 2 Diabetes Management Algorithm in 2013, which incorporated new sections on the management of overweight/obesity, dyslipidemia, and hypertension.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "_entries": []
+            "published": "The subject entity created, issued, or disseminated the object entity, such as a document, guideline, or publication.",
+            "incorporated new sections on": "The subject entity includes or contains new information, sections, or content related to the object entity.",
+            "_entries": [
+                {
+                    "subject": "The American Association of Clinical Endocrinology",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other predefined categories.",
+                    "relation": "published",
+                    "relation_definition": "The subject entity created, issued, or disseminated the object entity, such as a document, guideline, or publication.",
+                    "object": "Comprehensive Type 2 Diabetes Management Algorithm",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the other predefined categories."
+                },
+                {
+                    "subject": "Comprehensive Type 2 Diabetes Management Algorithm",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other predefined categories.",
+                    "relation": "incorporated new sections on",
+                    "relation_definition": "The subject entity includes or contains new information, sections, or content related to the object entity.",
+                    "object": "the management of overweight/obesity, dyslipidemia, and hypertension",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the other predefined categories."
+                }
+            ]
         },
         "canonicalization_candidates": "[]",
         "schema_canonicalizaiton": []
@@ -154,30 +190,20 @@
         "input_text": "The Comprehensive Type 2 Diabetes Management Algorithm was revised on a yearly basis through 2020.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "was revised": "The subject guideline or protocol has been updated or modified to reflect new evidence, best practices, or changing clinical standards.",
-            "through": "The subject guideline or protocol is applicable or relevant to the specified time period or duration.",
+            "was revised on a yearly basis": "The subject treatment or protocol has undergone periodic updates or modifications, typically at regular intervals.",
             "_entries": [
                 {
-                    "subject": "Comprehensive Type 2 Diabetes Management Algorithm",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or protocols for the diagnosis, treatment, or management of a disease or clinical condition.",
-                    "relation": "was revised",
-                    "relation_definition": "The subject guideline or protocol has been updated or modified to reflect new evidence, best practices, or changing clinical standards.",
-                    "object": "yearly basis",
-                    "object_type": "Unknown",
-                    "object_type_definition": "A type of entity that does not fit into any of the other categories, such as a time interval, a location, or a general concept."
-                },
-                {
-                    "subject": "Comprehensive Type 2 Diabetes Management Algorithm",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or protocols for the diagnosis, treatment, or management of a disease or clinical condition.",
-                    "relation": "through",
-                    "relation_definition": "The subject guideline or protocol is applicable or relevant to the specified time period or duration.",
-                    "object": "2020",
-                    "object_type": "Unknown",
-                    "object_type_definition": "A type of entity that does not fit into any of the other categories, such as a time interval, a location, or a general concept."
+                    "subject": "The Comprehensive Type 2 Diabetes Management Algorithm",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A systematic approach or protocol used to diagnose, manage, or treat a disease or clinical condition.",
+                    "relation": "was revised on a yearly basis",
+                    "relation_definition": "The subject treatment or protocol has undergone periodic updates or modifications, typically at regular intervals.",
+                    "object": "through 2020",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units."
                 }
             ]
         },
@@ -189,19 +215,19 @@
         "input_text": "The American Association of Clinical Endocrinology task force is grateful for the contributions and framework provided by previous authors of the American Association of Clinical Endocrinology algorithm.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "is grateful for": "The subject entity expresses appreciation or thanks for the contributions or assistance provided by the object entity.",
             "_entries": [
                 {
                     "subject": "The American Association of Clinical Endocrinology task force",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of principles or recommendations developed by a professional organization or expert panel to guide clinical practice or decision-making.",
-                    "relation": "is grateful for",
-                    "relation_definition": "The subject entity expresses appreciation or thanks for the contributions or assistance provided by the object entity.",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other categories.",
+                    "relation": "",
+                    "relation_definition": "",
                     "object": "previous authors of the American Association of Clinical Endocrinology algorithm",
-                    "object_type": "Clinical Guideline",
-                    "object_type_definition": "A set of principles or recommendations developed by a professional organization or expert panel to guide clinical practice or decision-making."
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the other categories."
                 }
             ]
         },
@@ -213,40 +239,42 @@
         "input_text": "The American Association of Clinical Endocrinology published the Clinical Practice Guideline: Developing a Diabetes Mellitus Comprehensive Care Plan — 2022 Update, which provided 170 revised or new graded recommendations accompanied by detailed, evidence-based rationales.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "published": "The subject entity is the source or origin of the object entity, such as a publication, guideline, or document.",
-            "accompanied by": "The subject entity is associated with or accompanied by the object entity, often providing additional information or context.",
+            "published": "The subject entity created, issued, or disseminated the object entity, such as a document, guideline, or publication.",
+            "provided": "The subject entity offered, supplied, or furnished the object entity, such as information, recommendations, or resources.",
+            "accompanied by": "The subject entity is associated with or coexists with the object entity, such as a document, guideline, or publication.",
             "_entries": [
                 {
-                    "subject": "American Association of Clinical Endocrinology",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations for clinical practice, often developed by professional organizations or expert panels.",
+                    "subject": "The American Association of Clinical Endocrinology",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other categories.",
                     "relation": "published",
-                    "relation_definition": "The subject entity is the source or origin of the object entity, such as a publication, guideline, or document.",
+                    "relation_definition": "The subject entity created, issued, or disseminated the object entity, such as a document, guideline, or publication.",
                     "object": "Clinical Practice Guideline: Developing a Diabetes Mellitus Comprehensive Care Plan — 2022 Update",
-                    "object_type": "Clinical Guideline",
-                    "object_type_definition": "A set of evidence-based recommendations for clinical practice, often developed by professional organizations or expert panels."
-                },
-                {
-                    "subject": "Clinical Practice Guideline: Developing a Diabetes Mellitus Comprehensive Care Plan — 2022 Update",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations for clinical practice, often developed by professional organizations or expert panels.",
-                    "relation": "accompanied by",
-                    "relation_definition": "The subject entity is associated with or accompanied by the object entity, often providing additional information or context.",
-                    "object": "detailed, evidence-based rationales",
                     "object_type": "Unknown",
-                    "object_type_definition": "A statement or explanation that provides supporting evidence or justification for a clinical decision or recommendation."
+                    "object_type_definition": "An entity that does not fit into any of the other categories."
                 },
                 {
                     "subject": "Clinical Practice Guideline: Developing a Diabetes Mellitus Comprehensive Care Plan — 2022 Update",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations for clinical practice, often developed by professional organizations or expert panels.",
-                    "relation": "accompanied by",
-                    "relation_definition": "The subject entity is associated with or accompanied by the object entity, often providing additional information or context.",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other categories.",
+                    "relation": "provided",
+                    "relation_definition": "The subject entity offered, supplied, or furnished the object entity, such as information, recommendations, or resources.",
                     "object": "170 revised or new graded recommendations",
                     "object_type": "Unknown",
-                    "object_type_definition": "A statement or explanation that provides supporting evidence or justification for a clinical decision or recommendation."
+                    "object_type_definition": "An entity that does not fit into any of the other categories."
+                },
+                {
+                    "subject": "Clinical Practice Guideline: Developing a Diabetes Mellitus Comprehensive Care Plan — 2022 Update",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other categories.",
+                    "relation": "accompanied by",
+                    "relation_definition": "The subject entity is associated with or coexists with the object entity, such as a document, guideline, or publication.",
+                    "object": "detailed, evidence-based rationales",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the other categories."
                 }
             ]
         },
@@ -258,41 +286,42 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm update builds on previous versions of the American Association of Clinical Endocrinology algorithm but with the incorporation of new management approaches that align with the 2022 American Association of Clinical Endocrinology clinical practice guideline on diabetes mellitus.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "builds on": "The subject guideline or recommendation is based on or expands upon the principles or recommendations of the object guideline or document.",
-            "incorporates": "The subject guideline or recommendation includes or integrates the principles or recommendations of the object guideline or document.",
-            "aligns with": "The subject guideline or recommendation is consistent with or adheres to the principles or recommendations of the object guideline or document.",
+            "builds on": "The subject treatment or guideline is based on or expands upon the object treatment or guideline.",
+            "incorporates": "The subject treatment or guideline includes or integrates the object approach, strategy, or component.",
+            "aligns with": "The subject treatment or guideline is consistent with or adheres to the object guideline or standard.",
             "_entries": [
                 {
                     "subject": "2023 American Association of Clinical Endocrinology algorithm update",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations for the diagnosis, treatment, or management of a disease or clinical condition.",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A standardized protocol or set of guidelines for managing a disease or condition.",
                     "relation": "builds on",
-                    "relation_definition": "The subject guideline or recommendation is based on or expands upon the principles or recommendations of the object guideline or document.",
+                    "relation_definition": "The subject treatment or guideline is based on or expands upon the object treatment or guideline.",
                     "object": "previous versions of the American Association of Clinical Endocrinology algorithm",
-                    "object_type": "Clinical Guideline",
-                    "object_type_definition": "A set of evidence-based recommendations for the diagnosis, treatment, or management of a disease or clinical condition."
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A standardized protocol or set of guidelines for managing a disease or condition."
                 },
                 {
                     "subject": "2023 American Association of Clinical Endocrinology algorithm update",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations for the diagnosis, treatment, or management of a disease or clinical condition.",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A standardized protocol or set of guidelines for managing a disease or condition.",
                     "relation": "incorporates",
-                    "relation_definition": "The subject guideline or recommendation includes or integrates the principles or recommendations of the object guideline or document.",
+                    "relation_definition": "The subject treatment or guideline includes or integrates the object approach, strategy, or component.",
                     "object": "new management approaches",
                     "object_type": "Treatment Procedure",
-                    "object_type_definition": "A medical intervention or therapeutic approach used to prevent, treat, or manage a disease or clinical condition."
+                    "object_type_definition": "A standardized protocol or set of guidelines for managing a disease or condition."
                 },
                 {
                     "subject": "2023 American Association of Clinical Endocrinology algorithm update",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations for the diagnosis, treatment, or management of a disease or clinical condition.",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A standardized protocol or set of guidelines for managing a disease or condition.",
                     "relation": "aligns with",
-                    "relation_definition": "The subject guideline or recommendation is consistent with or adheres to the principles or recommendations of the object guideline or document.",
+                    "relation_definition": "The subject treatment or guideline is consistent with or adheres to the object guideline or standard.",
                     "object": "2022 American Association of Clinical Endocrinology clinical practice guideline on diabetes mellitus",
-                    "object_type": "Clinical Guideline",
-                    "object_type_definition": "A set of evidence-based recommendations for the diagnosis, treatment, or management of a disease or clinical condition."
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
                 }
             ]
         },
@@ -304,6 +333,7 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm is intended as a more concise document than the 2022 American Association of Clinical Endocrinology clinical practice guideline, providing easily accessible, visual guidance for decision-making in the clinic setting.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
             "_entries": []
@@ -316,19 +346,31 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm summary is not intended to iterate all of the evidence base behind the algorithmic pathways, as this is detailed in the 2022 American Association of Clinical Endocrinology Diabetes Mellitus Comprehensive Care Plan update.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "is not intended to iterate all of the evidence base behind": "The subject guideline or protocol does not aim to exhaustively cover or summarize the underlying evidence or rationale supporting the object guideline or protocol.",
+            "is not intended to": "The subject entity is not designed or meant to perform or achieve the specified action or outcome.",
+            "is detailed in": "The subject entity provides a detailed explanation or description of the object entity.",
             "_entries": [
                 {
                     "subject": "2023 American Association of Clinical Endocrinology algorithm summary",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or protocols for the diagnosis, treatment, or management of a disease or clinical condition.",
-                    "relation": "is not intended to iterate all of the evidence base behind",
-                    "relation_definition": "The subject guideline or protocol does not aim to exhaustively cover or summarize the underlying evidence or rationale supporting the object guideline or protocol.",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other categories.",
+                    "relation": "is not intended to",
+                    "relation_definition": "The subject entity is not designed or meant to perform or achieve the specified action or outcome.",
+                    "object": "iterate all of the evidence base behind the algorithmic pathways",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the other categories."
+                },
+                {
+                    "subject": "2023 American Association of Clinical Endocrinology algorithm summary",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other categories.",
+                    "relation": "is detailed in",
+                    "relation_definition": "The subject entity provides a detailed explanation or description of the object entity.",
                     "object": "2022 American Association of Clinical Endocrinology Diabetes Mellitus Comprehensive Care Plan update",
-                    "object_type": "Clinical Guideline",
-                    "object_type_definition": "A set of evidence-based recommendations or protocols for the diagnosis, treatment, or management of a disease or clinical condition."
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the other categories."
                 }
             ]
         },
@@ -340,18 +382,18 @@
         "input_text": "The objective of the 2023 American Association of Clinical Endocrinology algorithm summary is to provide a written guide or “roadmap” through the graphic depictions of the algorithm contents.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "is": "The subject entity is a description or characterization of the object entity.",
             "_entries": [
                 {
-                    "subject": "2023 American Association of Clinical Endocrinology algorithm summary",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or guidelines for the diagnosis, treatment, or management of a disease or clinical condition.",
-                    "relation": "is",
-                    "relation_definition": "The subject entity is a description or characterization of the object entity.",
-                    "object": "written guide or “roadmap” through the graphic depictions of the algorithm contents",
-                    "object_type": "Unknown",
+                    "subject": "The objective of the 2023 American Association of Clinical Endocrinology algorithm summary",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the other predefined categories.",
+                    "relation": "",
+                    "relation_definition": "",
+                    "object": "",
+                    "object_type": "",
                     "object_type_definition": ""
                 }
             ]
@@ -364,40 +406,39 @@
         "input_text": "The process for updating the 2023 American Association of Clinical Endocrinology algorithm involved multiple meetings of American Association of Clinical Endocrinology task force members/authors between January 2022 and November 2022.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "involved": "The subject entity is associated with or participated in the development or implementation of the object entity.",
-            "between": "The subject entity occurs or takes place during the specified time period or interval.",
             "_entries": [
                 {
                     "subject": "The process for updating the 2023 American Association of Clinical Endocrinology algorithm",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of rules or recommendations for clinical practice, often developed by a professional organization or government agency.",
-                    "relation": "involved",
-                    "relation_definition": "The subject entity is associated with or participated in the development or implementation of the object entity.",
-                    "object": "multiple meetings of American Association of Clinical Endocrinology task force members/authors",
-                    "object_type": "Treatment Procedure",
-                    "object_type_definition": "A specific action or intervention performed by a healthcare professional to prevent, diagnose, or treat a disease or condition."
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A specific protocol or protocol set for managing or treating a disease or condition.",
+                    "relation": "",
+                    "relation_definition": "",
+                    "object": "",
+                    "object_type": "",
+                    "object_type_definition": ""
                 },
                 {
                     "subject": "multiple meetings of American Association of Clinical Endocrinology task force members/authors",
                     "subject_type": "Treatment Procedure",
-                    "subject_type_definition": "A specific action or intervention performed by a healthcare professional to prevent, diagnose, or treat a disease or condition.",
-                    "relation": "involved",
-                    "relation_definition": "The subject entity is associated with or participated in the development or implementation of the object entity.",
-                    "object": "The process for updating the 2023 American Association of Clinical Endocrinology algorithm",
-                    "object_type": "Clinical Guideline",
-                    "object_type_definition": "A set of rules or recommendations for clinical practice, often developed by a professional organization or government agency."
+                    "subject_type_definition": "A specific protocol or protocol set for managing or treating a disease or condition.",
+                    "relation": "",
+                    "relation_definition": "",
+                    "object": "",
+                    "object_type": "",
+                    "object_type_definition": ""
                 },
                 {
-                    "subject": "multiple meetings of American Association of Clinical Endocrinology task force members/authors",
-                    "subject_type": "Treatment Procedure",
-                    "subject_type_definition": "A specific action or intervention performed by a healthcare professional to prevent, diagnose, or treat a disease or condition.",
-                    "relation": "between",
-                    "relation_definition": "The subject entity occurs or takes place during the specified time period or interval.",
-                    "object": "January 2022 and November 2022",
-                    "object_type": "Clinical Metric",
-                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                    "subject": "January 2022 and November 2022",
+                    "subject_type": "Dosage Value",
+                    "subject_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units.",
+                    "relation": "",
+                    "relation_definition": "",
+                    "object": "",
+                    "object_type": "",
+                    "object_type_definition": ""
                 }
             ]
         },
@@ -409,41 +450,19 @@
         "input_text": "Smaller groups of American Association of Clinical Endocrinology task force members/authors focused on specific algorithm subsections, which were then brought to the complete American Association of Clinical Endocrinology task force for discussion and peer review.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "focused on": "The subject guideline or recommendation is specifically concerned with or addresses the object topic or area.",
-            "were brought to": "The subject entity or group is presented or submitted to the object entity or group for consideration or review.",
-            "for discussion and peer review": "The subject guideline or recommendation is subject to discussion and evaluation by peers or experts to ensure its validity and relevance.",
             "_entries": [
                 {
                     "subject": "Smaller groups of American Association of Clinical Endocrinology task force members/authors",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of recommendations or guidelines developed by a professional organization or expert panel to guide clinical practice or decision-making.",
-                    "relation": "focused on",
-                    "relation_definition": "The subject guideline or recommendation is specifically concerned with or addresses the object topic or area.",
-                    "object": "specific algorithm subsections",
-                    "object_type": "Clinical Metric",
-                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
-                },
-                {
-                    "subject": "specific algorithm subsections",
-                    "subject_type": "Clinical Metric",
-                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
-                    "relation": "were brought to",
-                    "relation_definition": "The subject entity or group is presented or submitted to the object entity or group for consideration or review.",
-                    "object": "the complete American Association of Clinical Endocrinology task force",
-                    "object_type": "Clinical Guideline",
-                    "object_type_definition": "A set of recommendations or guidelines developed by a professional organization or expert panel to guide clinical practice or decision-making."
-                },
-                {
-                    "subject": "the complete American Association of Clinical Endocrinology task force",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of recommendations or guidelines developed by a professional organization or expert panel to guide clinical practice or decision-making.",
-                    "relation": "for discussion and peer review",
-                    "relation_definition": "The subject guideline or recommendation is subject to discussion and evaluation by peers or experts to ensure its validity and relevance.",
-                    "object": "discussion and peer review",
-                    "object_type": "Treatment Procedure",
-                    "object_type_definition": "A medical intervention or process used to evaluate, diagnose, or manage a disease or clinical condition."
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": null,
+                    "relation_definition": null,
+                    "object": null,
+                    "object_type": null,
+                    "object_type_definition": null
                 }
             ]
         },
@@ -455,9 +474,43 @@
         "input_text": "A proportion of American Association of Clinical Endocrinology algorithm task force members overlapped with the American Association of Clinical Endocrinology diabetes clinical practice guideline task force to ensure continuity and alignment with the 2022 published guideline recommendations.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "_entries": []
+            "overlapped with": "The subject entity shares common membership or affiliation with the object entity.",
+            "to ensure continuity and alignment with": "The subject entity aims to maintain consistency and coherence with the object entity or its recommendations.",
+            "_entries": [
+                {
+                    "subject": "American Association of Clinical Endocrinology algorithm task force members",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": "overlapped with",
+                    "relation_definition": "The subject entity shares common membership or affiliation with the object entity.",
+                    "object": "American Association of Clinical Endocrinology diabetes clinical practice guideline task force",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the predefined categories."
+                },
+                {
+                    "subject": "American Association of Clinical Endocrinology algorithm task force members",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": "to ensure continuity and alignment with",
+                    "relation_definition": "The subject entity aims to maintain consistency and coherence with the object entity or its recommendations.",
+                    "object": "2022 published guideline recommendations",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the predefined categories."
+                },
+                {
+                    "subject": "American Association of Clinical Endocrinology diabetes clinical practice guideline task force",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": "to ensure continuity and alignment with",
+                    "relation_definition": "The subject entity aims to maintain consistency and coherence with the object entity or its recommendations.",
+                    "object": "2022 published guideline recommendations",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the predefined categories."
+                }
+            ]
         },
         "canonicalization_candidates": "[]",
         "schema_canonicalizaiton": []
@@ -467,6 +520,28 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm continues to emphasize lifestyle modification and treatment of overweight/obesity as key pillars of the management of prediabetes and diabetes mellitus.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "prediabetes",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "prediabetes",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ],
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "lifestyle modification"
+            ],
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "treatment of overweight/obesity"
+            ]
+        ],
         "oie": [
             [
                 "prediabetes",
@@ -521,52 +596,51 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm highlights the importance of appropriate management of the atherosclerotic risk factors of dyslipidemia and hypertension.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "management of atherosclerotic risk factors"
+            ]
+        ],
         "oie": [
             [
                 "dyslipidemia",
                 "may be treated by",
-                "lifestyle modification"
-            ],
-            [
-                "dyslipidemia",
-                "may be treated by",
-                "treatment of overweight/obesity"
-            ],
-            [
-                "hypertension",
-                "may be treated by",
-                "lifestyle modification"
-            ],
-            [
-                "hypertension",
-                "may be treated by",
-                "treatment of overweight/obesity"
+                "management of atherosclerotic risk factors"
             ]
         ],
         "schema_definition": {
-            "_entries": []
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "dyslipidemia",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by abnormal levels of lipids in the blood, including cholesterol and triglycerides.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "management of atherosclerotic risk factors",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A clinical intervention or therapeutic approach aimed at reducing the risk of atherosclerosis, a condition characterized by the buildup of plaque in the arteries."
+                },
+                {
+                    "subject": "hypertension",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic medical condition characterized by persistently high blood pressure, which can lead to cardiovascular disease and other complications.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "management of atherosclerotic risk factors",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A clinical intervention or therapeutic approach aimed at reducing the risk of atherosclerosis, a condition characterized by the buildup of plaque in the arteries."
+                }
+            ]
         },
-        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "canonicalization_candidates": "[{}]",
         "schema_canonicalizaiton": [
             [
                 "dyslipidemia",
                 "may be treated by",
-                "lifestyle modification"
-            ],
-            [
-                "dyslipidemia",
-                "may be treated by",
-                "treatment of overweight/obesity"
-            ],
-            [
-                "hypertension",
-                "may be treated by",
-                "lifestyle modification"
-            ],
-            [
-                "hypertension",
-                "may be treated by",
-                "treatment of overweight/obesity"
+                "management of atherosclerotic risk factors"
             ]
         ]
     },
@@ -575,21 +649,22 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm includes a complication-centric approach, beyond glucose levels, to frame decisions regarding first-line pharmacologic choices for the treatment of persons with diabetes mellitus.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "pharmacologic choices"
+            ]
+        ],
         "oie": [
             [
                 "diabetes mellitus",
                 "may be treated by",
-                "first-line pharmacologic choices"
-            ],
-            [
-                "diabetes mellitus",
-                "has evaluation",
-                "glucose levels"
+                "pharmacologic choices"
             ]
         ],
         "schema_definition": {
             "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
-            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
             "_entries": [
                 {
                     "subject": "diabetes mellitus",
@@ -597,33 +672,18 @@
                     "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
                     "relation": "may be treated by",
                     "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
-                    "object": "first-line pharmacologic choices",
+                    "object": "pharmacologic choices",
                     "object_type": "Treatment Procedure",
-                    "object_type_definition": "A medical intervention or regimen prescribed to prevent, treat, or manage a disease or clinical condition."
-                },
-                {
-                    "subject": "diabetes mellitus",
-                    "subject_type": "Disease",
-                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
-                    "relation": "has evaluation",
-                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
-                    "object": "glucose levels",
-                    "object_type": "Clinical Metric",
-                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                    "object_type_definition": "A medical intervention or approach used to prevent, treat, or manage a disease or clinical condition."
                 }
             ]
         },
-        "canonicalization_candidates": "[{}, {}]",
+        "canonicalization_candidates": "[{}]",
         "schema_canonicalizaiton": [
             [
                 "diabetes mellitus",
                 "may be treated by",
-                "first-line pharmacologic choices"
-            ],
-            [
-                "diabetes mellitus",
-                "has evaluation",
-                "glucose levels"
+                "pharmacologic choices"
             ]
         ]
     },
@@ -632,6 +692,7 @@
         "input_text": "The American Association of Clinical Endocrinology task force members/authors acknowledge that health care disparities and lack of access to newer medications remain a significant barrier for some persons with diabetes mellitus.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
             "_entries": []
@@ -644,19 +705,19 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm is divided into discrete graphic sections that outline the principles for management of Type 2 Diabetes.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "outline the principles for": "The subject entity provides or describes the underlying principles or concepts that govern the object entity or process.",
             "_entries": [
                 {
                     "subject": "The 2023 American Association of Clinical Endocrinology algorithm",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or standards for the diagnosis, treatment, or management of a disease or clinical condition.",
-                    "relation": "outline the principles for",
-                    "relation_definition": "The subject entity provides or describes the underlying principles or concepts that govern the object entity or process.",
-                    "object": "management of Type 2 Diabetes",
-                    "object_type": "Treatment Procedure",
-                    "object_type_definition": "A specific course of action or intervention taken to prevent, treat, or manage a disease or clinical condition."
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": "",
+                    "relation_definition": "",
+                    "object": "Type 2 Diabetes",
+                    "object_type": "Disease",
+                    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
                 }
             ]
         },
@@ -668,26 +729,48 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm guides management of adiposity-based chronic disease, prediabetes, and atherosclerotic risk factors of dyslipidemia and hypertension.\n",
         "entity_hint": "",
         "relation_hint": "",
-        "oie": [
+        "oie_raw": [
             [
                 "adiposity-based chronic disease",
                 "may be treated by",
-                "management"
+                "algorithm"
             ],
             [
                 "prediabetes",
                 "may be treated by",
-                "management"
+                "algorithm"
             ],
             [
                 "dyslipidemia",
-                "may be associated condition of",
-                "adiposity-based chronic disease"
+                "may be treated by",
+                "algorithm"
             ],
             [
                 "hypertension",
-                "may be associated condition of",
-                "adiposity-based chronic disease"
+                "may be treated by",
+                "algorithm"
+            ]
+        ],
+        "oie": [
+            [
+                "adiposity-based chronic disease",
+                "may be treated by",
+                "algorithm"
+            ],
+            [
+                "prediabetes",
+                "may be treated by",
+                "algorithm"
+            ],
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "algorithm"
+            ],
+            [
+                "hypertension",
+                "may be treated by",
+                "algorithm"
             ]
         ],
         "schema_definition": {
@@ -698,15 +781,23 @@
             [
                 "adiposity-based chronic disease",
                 "may be treated by",
-                "management"
+                "algorithm"
             ],
             [
                 "prediabetes",
                 "may be treated by",
-                "management"
+                "algorithm"
             ],
-            null,
-            null
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "algorithm"
+            ],
+            [
+                "hypertension",
+                "may be treated by",
+                "algorithm"
+            ]
         ]
     },
     {
@@ -714,9 +805,16 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm includes direction for insulin initiation and titration.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "diabetes",
+                "may be treated by",
+                "insulin"
+            ]
+        ],
         "oie": [
             [
-                "Type 2 Diabetes",
+                "diabetes",
                 "may be treated by",
                 "insulin"
             ]
@@ -725,7 +823,7 @@
             "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
             "_entries": [
                 {
-                    "subject": "Type 2 Diabetes",
+                    "subject": "diabetes",
                     "subject_type": "Disease",
                     "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
                     "relation": "may be treated by",
@@ -739,7 +837,7 @@
         "canonicalization_candidates": "[{}]",
         "schema_canonicalizaiton": [
             [
-                "Type 2 Diabetes",
+                "diabetes",
                 "may be treated by",
                 "insulin"
             ]
@@ -750,65 +848,57 @@
         "input_text": "The 2023 American Association of Clinical Endocrinology algorithm provides convenient tables summarizing the benefits and risks of antihyperglycemic medications and weight-loss pharmacotherapy.\n",
         "entity_hint": "",
         "relation_hint": "",
-        "oie": [
-            [
-                "antihyperglycemic medications",
-                "may be treated by",
-                "Type 2 Diabetes"
-            ],
-            [
-                "weight-loss pharmacotherapy",
-                "may be treated by",
-                "Type 2 Diabetes"
-            ]
-        ],
+        "oie_raw": [],
+        "oie": [],
         "schema_definition": {
-            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
             "_entries": [
                 {
-                    "subject": "antihyperglycemic medications",
-                    "subject_type": "Drug",
-                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
-                    "relation": "may be treated by",
-                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
-                    "object": "Type 2 Diabetes",
-                    "object_type": "Disease",
-                    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
-                },
-                {
-                    "subject": "weight-loss pharmacotherapy",
-                    "subject_type": "Treatment Procedure",
-                    "subject_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition.",
-                    "relation": "may be treated by",
-                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
-                    "object": "Type 2 Diabetes",
-                    "object_type": "Disease",
-                    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
+                    "subject": "The 2023 American Association of Clinical Endocrinology algorithm",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": "",
+                    "relation_definition": "",
+                    "object": "",
+                    "object_type": "",
+                    "object_type_definition": ""
                 }
             ]
         },
-        "canonicalization_candidates": "[{}, {}]",
-        "schema_canonicalizaiton": [
-            [
-                "antihyperglycemic medications",
-                "may be treated by",
-                "Type 2 Diabetes"
-            ],
-            [
-                "weight-loss pharmacotherapy",
-                "may be treated by",
-                "Type 2 Diabetes"
-            ]
-        ]
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
     },
     {
         "index": 23,
         "input_text": "A new table of immunization guidance is provided in the 2023 American Association of Clinical Endocrinology algorithm, summarizing recommendations from the Advisory Committee on Immunization Practices of the U.S. Centers for Disease Control and Prevention.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "_entries": []
+            "is provided in": "The subject entity is included or presented within the object entity.",
+            "summarizing recommendations from": "The subject entity provides a concise overview or summary of the object entity's suggestions or guidelines.",
+            "_entries": [
+                {
+                    "subject": "A new table of immunization guidance",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": "is provided in",
+                    "relation_definition": "The subject entity is included or presented within the object entity.",
+                    "object": "the 2023 American Association of Clinical Endocrinology algorithm",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the predefined categories."
+                },
+                {
+                    "subject": "the 2023 American Association of Clinical Endocrinology algorithm",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": "summarizing recommendations from",
+                    "relation_definition": "The subject entity provides a concise overview or summary of the object entity's suggestions or guidelines.",
+                    "object": "the Advisory Committee on Immunization Practices of the U.S. Centers for Disease Control and Prevention",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the predefined categories."
+                }
+            ]
         },
         "canonicalization_candidates": "[]",
         "schema_canonicalizaiton": []
@@ -818,6 +908,23 @@
         "input_text": "Excess weight results in insulin resistance and increases the risk for prediabetes and Type 2 Diabetes.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "excess weight",
+                "increases risk of",
+                "prediabetes"
+            ],
+            [
+                "excess weight",
+                "increases risk of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "insulin resistance",
+                "may be finding of disease",
+                "excess weight"
+            ]
+        ],
         "oie": [
             [
                 "excess weight",
@@ -871,16 +978,16 @@
                 }
             ]
         },
-        "canonicalization_candidates": "[{'cause of': np.float64(0.6770541464574147), 'co-occurs with': np.float64(0.6393859694483943), 'component of': np.float64(0.628804545610687), 'associated condition of': np.float64(0.6042357052559153), 'may be associated disease of disease': np.float64(0.5996996465921041)}, {'cause of': np.float64(0.6764643178826047), 'co-occurs with': np.float64(0.6390384102290186), 'component of': np.float64(0.6284114994754015), 'associated condition of': np.float64(0.6041206494634165), 'may be associated disease of disease': np.float64(0.5994390763176173)}, {}]",
+        "canonicalization_candidates": "[{}, {}, {}]",
         "schema_canonicalizaiton": [
             [
                 "excess weight",
-                "may be associated disease of disease",
+                "increases risk of",
                 "prediabetes"
             ],
             [
                 "excess weight",
-                "may be associated disease of disease",
+                "increases risk of",
                 "Type 2 Diabetes"
             ],
             [
@@ -895,25 +1002,32 @@
         "input_text": "Excess weight leads to multiple complications beyond dysglycemia that comprise adiposity-based chronic disease and lead to excess morbidity and mortality.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "excess weight",
+                "increases risk of",
+                "adiposity-based chronic disease"
+            ]
+        ],
         "oie": [
             [
                 "excess weight",
-                "may be associated disease of disease",
+                "increases risk of",
                 "adiposity-based chronic disease"
             ]
         ],
         "schema_definition": {
-            "may be associated disease of disease": "The subject disease may be a contributing factor or underlying cause of the object disease.",
+            "increases risk of": "The subject entity is a known risk factor that elevates the probability of developing the object disease or condition.",
             "_entries": [
                 {
                     "subject": "excess weight",
                     "subject_type": "Disease",
                     "subject_type_definition": "An abnormal or excessive accumulation of body fat that presents a risk to health, classified as a chronic disease.",
-                    "relation": "may be associated disease of disease",
-                    "relation_definition": "The subject disease may be a contributing factor or underlying cause of the object disease.",
+                    "relation": "increases risk of",
+                    "relation_definition": "The subject entity is a known risk factor that elevates the probability of developing the object disease or condition.",
                     "object": "adiposity-based chronic disease",
                     "object_type": "Disease",
-                    "object_type_definition": "A chronic disease characterized by an abnormal accumulation of body fat, leading to various health complications."
+                    "object_type_definition": "A chronic disease characterized by an abnormal or excessive accumulation of body fat, leading to various health complications."
                 }
             ]
         },
@@ -921,7 +1035,7 @@
         "schema_canonicalizaiton": [
             [
                 "excess weight",
-                "may be associated disease of disease",
+                "increases risk of",
                 "adiposity-based chronic disease"
             ]
         ]
@@ -931,11 +1045,23 @@
         "input_text": "Lifestyle intervention to achieve weight loss is a key pillar of the comprehensive treatment of persons with prediabetes to decrease progression to Type 2 Diabetes.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "prediabetes",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "prediabetes",
+                "may be associated disease of disease",
+                "Type 2 Diabetes"
+            ]
+        ],
         "oie": [
             [
                 "prediabetes",
                 "may be treated by",
-                "lifestyle intervention"
+                "weight loss"
             ],
             [
                 "prediabetes",
@@ -945,7 +1071,7 @@
         ],
         "schema_definition": {
             "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
-            "may be associated disease of disease": "The subject disease or condition is often found in conjunction with or is commonly associated with the object disease.",
+            "may be associated disease of disease": "The subject disease or condition is closely related to or shares a common underlying cause with the object disease.",
             "_entries": [
                 {
                     "subject": "prediabetes",
@@ -953,16 +1079,16 @@
                     "subject_type_definition": "A condition in which blood sugar levels are higher than normal but not yet high enough to be classified as type 2 diabetes.",
                     "relation": "may be treated by",
                     "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
-                    "object": "lifestyle intervention",
+                    "object": "weight loss",
                     "object_type": "Treatment Procedure",
-                    "object_type_definition": "A medical or therapeutic approach that aims to prevent, manage, or alleviate a disease or clinical condition through non-pharmacological means."
+                    "object_type_definition": "A therapeutic intervention or regimen aimed at improving health outcomes, often involving lifestyle modifications or medical treatments."
                 },
                 {
                     "subject": "prediabetes",
                     "subject_type": "Disease",
                     "subject_type_definition": "A condition in which blood sugar levels are higher than normal but not yet high enough to be classified as type 2 diabetes.",
                     "relation": "may be associated disease of disease",
-                    "relation_definition": "The subject disease or condition is often found in conjunction with or is commonly associated with the object disease.",
+                    "relation_definition": "The subject disease or condition is closely related to or shares a common underlying cause with the object disease.",
                     "object": "Type 2 Diabetes",
                     "object_type": "Disease",
                     "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
@@ -974,7 +1100,7 @@
             [
                 "prediabetes",
                 "may be treated by",
-                "lifestyle intervention"
+                "weight loss"
             ],
             [
                 "prediabetes",
@@ -988,7 +1114,54 @@
         "input_text": "Weight loss improves many of the cardiometabolic and biomechanical components of adiposity-based chronic disease, including increased glycemia, dyslipidemia, elevated blood pressure, cardiovascular disease, nonalcoholic fatty liver disease, sleep apnea, and osteoarthritis.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "adiposity-based chronic disease",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "increased glycemia",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "dyslipidemia",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "elevated blood pressure",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "cardiovascular disease",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "nonalcoholic fatty liver disease",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "sleep apnea",
+                "may be treated by",
+                "weight loss"
+            ],
+            [
+                "osteoarthritis",
+                "may be treated by",
+                "weight loss"
+            ]
+        ],
         "oie": [
+            [
+                "adiposity-based chronic disease",
+                "may be treated by",
+                "weight loss"
+            ],
             [
                 "increased glycemia",
                 "may be treated by",
@@ -1028,8 +1201,13 @@
         "schema_definition": {
             "_entries": []
         },
-        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}]",
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}, {}]",
         "schema_canonicalizaiton": [
+            [
+                "adiposity-based chronic disease",
+                "may be treated by",
+                "weight loss"
+            ],
             [
                 "increased glycemia",
                 "may be treated by",
@@ -1072,19 +1250,42 @@
         "input_text": "The American Association of Endocrinology Comprehensive Type 2 Diabetes Management Algorithm is based on principles that underlie all therapy for Type 2 Diabetes.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [],
         "oie": [],
         "schema_definition": {
-            "is based on": "The subject guideline or protocol is founded on or derived from the principles, theories, or evidence specified by the object.",
+            "is based on": "The subject treatment or protocol is founded on or derived from the principles or concepts described by the object.",
+            "underlie": "The subject concept or principle is the underlying foundation or basis for the object.",
+            "for": "The subject entity is targeted or directed towards the object entity.",
             "_entries": [
                 {
                     "subject": "The American Association of Endocrinology Comprehensive Type 2 Diabetes Management Algorithm",
-                    "subject_type": "Clinical Guideline",
-                    "subject_type_definition": "A set of evidence-based recommendations or protocols for the diagnosis, treatment, or management of a disease or condition.",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A standardized protocol or set of guidelines for managing a disease or condition.",
                     "relation": "is based on",
-                    "relation_definition": "The subject guideline or protocol is founded on or derived from the principles, theories, or evidence specified by the object.",
+                    "relation_definition": "The subject treatment or protocol is founded on or derived from the principles or concepts described by the object.",
                     "object": "principles that underlie all therapy for Type 2 Diabetes",
                     "object_type": "Unknown",
-                    "object_type_definition": "A concept or idea that is not explicitly classified as a disease, drug, symptom, clinical metric, anatomical site, treatment procedure, or clinical guideline."
+                    "object_type_definition": "An entity that does not fit into any of the predefined categories."
+                },
+                {
+                    "subject": "principles that underlie all therapy for Type 2 Diabetes",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": "underlie",
+                    "relation_definition": "The subject concept or principle is the underlying foundation or basis for the object.",
+                    "object": "all therapy for Type 2 Diabetes",
+                    "object_type": "Unknown",
+                    "object_type_definition": "An entity that does not fit into any of the predefined categories."
+                },
+                {
+                    "subject": "all therapy for Type 2 Diabetes",
+                    "subject_type": "Unknown",
+                    "subject_type_definition": "An entity that does not fit into any of the predefined categories.",
+                    "relation": "for",
+                    "relation_definition": "The subject entity is targeted or directed towards the object entity.",
+                    "object": "Type 2 Diabetes",
+                    "object_type": "Disease",
+                    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
                 }
             ]
         },
@@ -1096,6 +1297,28 @@
         "input_text": "Lifestyle modification for Type 2 Diabetes includes exercise, healthy dietary changes, smoking cessation, and reduced alcohol intake.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "exercise"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "healthy dietary changes"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "smoking cessation"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "reduced alcohol intake"
+            ]
+        ],
         "oie": [
             [
                 "Type 2 Diabetes",
@@ -1150,26 +1373,22 @@
         "input_text": "Lifestyle modification for Type 2 Diabetes also includes assessment and management of sleep disorders and depression.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "lifestyle modification"
+            ]
+        ],
         "oie": [
             [
                 "Type 2 Diabetes",
                 "may be treated by",
                 "lifestyle modification"
-            ],
-            [
-                "Type 2 Diabetes",
-                "associated condition of",
-                "sleep disorders"
-            ],
-            [
-                "Type 2 Diabetes",
-                "associated condition of",
-                "depression"
             ]
         ],
         "schema_definition": {
             "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
-            "associated condition of": "The subject disease or condition is directly related to or co-occurs with the object disease or condition.",
             "_entries": [
                 {
                     "subject": "Type 2 Diabetes",
@@ -1179,46 +1398,36 @@
                     "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
                     "object": "lifestyle modification",
                     "object_type": "Treatment Procedure",
-                    "object_type_definition": "A therapeutic approach or intervention aimed at preventing, managing, or alleviating a disease or clinical condition."
+                    "object_type_definition": "A non-pharmacological intervention or behavioral change aimed at preventing, managing, or alleviating a disease or condition."
                 },
                 {
                     "subject": "Type 2 Diabetes",
                     "subject_type": "Disease",
                     "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
-                    "relation": "associated condition of",
-                    "relation_definition": "The subject disease or condition is directly related to or co-occurs with the object disease or condition.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
                     "object": "sleep disorders",
-                    "object_type": "Disease",
-                    "object_type_definition": "A condition characterized by disturbances in sleep patterns, duration, or quality, often associated with various underlying causes."
+                    "object_type": "Symptom",
+                    "object_type_definition": "A clinical sign or physiological finding that indicates the presence or severity of a disease or condition."
                 },
                 {
                     "subject": "Type 2 Diabetes",
                     "subject_type": "Disease",
                     "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
-                    "relation": "associated condition of",
-                    "relation_definition": "The subject disease or condition is directly related to or co-occurs with the object disease or condition.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
                     "object": "depression",
-                    "object_type": "Disease",
-                    "object_type_definition": "A mood disorder characterized by persistent feelings of sadness, hopelessness, and loss of interest in activities."
+                    "object_type": "Symptom",
+                    "object_type_definition": "A clinical sign or physiological finding that indicates the presence or severity of a disease or condition."
                 }
             ]
         },
-        "canonicalization_candidates": "[{}, {}, {}]",
+        "canonicalization_candidates": "[{}]",
         "schema_canonicalizaiton": [
             [
                 "Type 2 Diabetes",
                 "may be treated by",
                 "lifestyle modification"
-            ],
-            [
-                "Type 2 Diabetes",
-                "associated condition of",
-                "sleep disorders"
-            ],
-            [
-                "Type 2 Diabetes",
-                "associated condition of",
-                "depression"
             ]
         ]
     },
@@ -1227,6 +1436,18 @@
         "input_text": "The Complications-Centric Model for the Care of Persons with Overweight/Obesity provides guidance on proposed interventions to improve the overall health of persons with overweight/obesity in the context of Type 2 Diabetes.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "proposed interventions"
+            ],
+            [
+                "Type 2 Diabetes",
+                "has evaluation",
+                "overall health"
+            ]
+        ],
         "oie": [
             [
                 "Type 2 Diabetes",
@@ -1235,13 +1456,13 @@
             ],
             [
                 "Type 2 Diabetes",
-                "has associated condition of",
-                "overweight/obesity"
+                "has evaluation",
+                "overall health"
             ]
         ],
         "schema_definition": {
             "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
-            "has associated condition of": "The subject disease or condition is associated with or co-occurs with the specified disease or condition.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
             "_entries": [
                 {
                     "subject": "Type 2 Diabetes",
@@ -1251,21 +1472,21 @@
                     "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
                     "object": "proposed interventions",
                     "object_type": "Treatment Procedure",
-                    "object_type_definition": "A medical intervention or therapy aimed at preventing, treating, or managing a disease or clinical condition."
+                    "object_type_definition": "A medical or therapeutic intervention aimed at preventing, treating, or managing a disease or clinical condition."
                 },
                 {
                     "subject": "Type 2 Diabetes",
                     "subject_type": "Disease",
                     "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
-                    "relation": "has associated condition of",
-                    "relation_definition": "The subject disease or condition is associated with or co-occurs with the specified disease or condition.",
-                    "object": "overweight/obesity",
-                    "object_type": "Disease",
-                    "object_type_definition": "An abnormal or excessive accumulation of body fat that presents a risk to health, classified as a chronic disease."
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "overall health",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
                 }
             ]
         },
-        "canonicalization_candidates": "[{}, {'co-occurs with': np.float64(0.7345557643297731), 'associated condition of': np.float64(0.7315894485157729), 'may be associated disease of disease': np.float64(0.6180734451369407), 'component of': np.float64(0.5887273248275579), 'disease has associated anatomic site': np.float64(0.5794756259854201)}]",
+        "canonicalization_candidates": "[{}, {}]",
         "schema_canonicalizaiton": [
             [
                 "Type 2 Diabetes",
@@ -1274,8 +1495,8 @@
             ],
             [
                 "Type 2 Diabetes",
-                "co-occurs with",
-                "overweight/obesity"
+                "has evaluation",
+                "overall health"
             ]
         ]
     },
@@ -1284,6 +1505,43 @@
         "input_text": "The choice of antihyperglycemic therapy for Type 2 Diabetes reflects glycemic targets, atherosclerotic cardiovascular disease, congestive heart failure, chronic kidney disease, overweight/obesity, and nonalcoholic fatty liver disease.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic therapy"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "atherosclerotic cardiovascular disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "congestive heart failure"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "chronic kidney disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "overweight/obesity"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "nonalcoholic fatty liver disease"
+            ],
+            [
+                "glycemic targets",
+                "has evaluation",
+                "Type 2 Diabetes"
+            ]
+        ],
         "oie": [
             [
                 "Type 2 Diabetes",
@@ -1314,12 +1572,17 @@
                 "Type 2 Diabetes",
                 "co-occurs with",
                 "nonalcoholic fatty liver disease"
+            ],
+            [
+                "glycemic targets",
+                "has evaluation",
+                "Type 2 Diabetes"
             ]
         ],
         "schema_definition": {
             "_entries": []
         },
-        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}]",
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}]",
         "schema_canonicalizaiton": [
             [
                 "Type 2 Diabetes",
@@ -1350,6 +1613,11 @@
                 "Type 2 Diabetes",
                 "co-occurs with",
                 "nonalcoholic fatty liver disease"
+            ],
+            [
+                "glycemic targets",
+                "has evaluation",
+                "Type 2 Diabetes"
             ]
         ]
     },
@@ -1358,6 +1626,13 @@
         "input_text": "Glycemic control has an essential role in the prevention and decreased progression of Type 2 Diabetes complications.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ],
         "oie": [
             [
                 "Type 2 Diabetes",
@@ -1394,6 +1669,33 @@
         "input_text": "The 2022 American Association of Endocrinology Clinical Practice Guidelines update recommends that clinicians prescribe a glucagon-like peptide-1 receptor agonist or a sodium glucose cotransporter 2 inhibitor for Type 2 Diabetes patients with established or high risk for atherosclerotic cardiovascular disease, heart failure, and/or chronic kidney disease.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "glucagon-like peptide-1 receptor agonist"
+            ],
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "sodium glucose cotransporter 2 inhibitor"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "atherosclerotic cardiovascular disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "heart failure"
+            ],
+            [
+                "Type 2 Diabetes",
+                "co-occurs with",
+                "chronic kidney disease"
+            ]
+        ],
         "oie": [
             [
                 "Type 2 Diabetes",
@@ -1458,26 +1760,22 @@
         "input_text": "The choice of antihyperglycemic therapy for Type 2 Diabetes includes consideration of the potential benefit for stroke or nonalcoholic fatty liver disease.\n",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic therapy"
+            ]
+        ],
         "oie": [
             [
                 "Type 2 Diabetes",
                 "may be treated by",
                 "antihyperglycemic therapy"
-            ],
-            [
-                "Type 2 Diabetes",
-                "increases risk of",
-                "stroke"
-            ],
-            [
-                "Type 2 Diabetes",
-                "increases risk of",
-                "nonalcoholic fatty liver disease"
             ]
         ],
         "schema_definition": {
             "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
-            "increases risk of": "The subject entity is a known risk factor that elevates the probability of developing the object disease or condition.",
             "_entries": [
                 {
                     "subject": "Type 2 Diabetes",
@@ -1486,47 +1784,37 @@
                     "relation": "may be treated by",
                     "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
                     "object": "antihyperglycemic therapy",
-                    "object_type": "Drug",
-                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or therapeutic approach used to prevent, treat, or manage a disease or clinical condition."
                 },
                 {
                     "subject": "Type 2 Diabetes",
                     "subject_type": "Disease",
                     "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
-                    "relation": "increases risk of",
-                    "relation_definition": "The subject entity is a known risk factor that elevates the probability of developing the object disease or condition.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
                     "object": "stroke",
-                    "object_type": "Disease",
-                    "object_type_definition": "A medical condition in which the blood supply to the brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients."
+                    "object_type": "Symptom",
+                    "object_type_definition": "A clinical sign or physiological finding that indicates the presence or severity of a disease or condition."
                 },
                 {
                     "subject": "Type 2 Diabetes",
                     "subject_type": "Disease",
                     "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
-                    "relation": "increases risk of",
-                    "relation_definition": "The subject entity is a known risk factor that elevates the probability of developing the object disease or condition.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
                     "object": "nonalcoholic fatty liver disease",
                     "object_type": "Disease",
-                    "object_type_definition": "A condition in which excess fat builds up in the liver of people who drink little or no alcohol."
+                    "object_type_definition": "A condition in which excess fat accumulates in the liver of people who drink little or no alcohol."
                 }
             ]
         },
-        "canonicalization_candidates": "[{}, {'cause of': np.float64(0.6764643178826047), 'co-occurs with': np.float64(0.6390384102290186), 'component of': np.float64(0.6284114994754015), 'associated condition of': np.float64(0.6041206494634165), 'may be associated disease of disease': np.float64(0.5994390763176173)}, {'cause of': np.float64(0.6764643178826047), 'co-occurs with': np.float64(0.6390384102290186), 'component of': np.float64(0.6284114994754015), 'associated condition of': np.float64(0.6041206494634165), 'may be associated disease of disease': np.float64(0.5994390763176173)}]",
+        "canonicalization_candidates": "[{}]",
         "schema_canonicalizaiton": [
             [
                 "Type 2 Diabetes",
                 "may be treated by",
                 "antihyperglycemic therapy"
-            ],
-            [
-                "Type 2 Diabetes",
-                "may be associated disease of disease",
-                "stroke"
-            ],
-            [
-                "Type 2 Diabetes",
-                "may be associated disease of disease",
-                "nonalcoholic fatty liver disease"
             ]
         ]
     },
@@ -1535,6 +1823,13 @@
         "input_text": "The choice of therapy for Type 2 Diabetes includes ease of use and access to antihyperglycemic agents.",
         "entity_hint": "",
         "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "antihyperglycemic agents"
+            ]
+        ],
         "oie": [
             [
                 "Type 2 Diabetes",

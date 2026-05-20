@@ -4,11 +4,12 @@ Your task is to extract clinical knowledge as a semantic graph from biomedical t
 PART 1: ALLOWED ENTITY TYPES
 ════════════════════════════════════════════════
 Entities MUST ONLY belong to one of these UMLS-aligned types:
-  - [Disease/Condition]        e.g., Type 2 Diabetes Mellitus, Hypertension, Prediabetes, excess weight, overweight/obesity
-  - [Treatment/Medication]     e.g., Metformin, GLP-1 receptor agonist, lifestyle modification, lifestyle intervention, insulin, weight loss
+  - [Disease/Condition]        e.g., Type 2 Diabetes Mellitus, Hypertension, Prediabetes, excess weight, overweight/obesity, hypoglycemia
+  - [Treatment/Medication]     e.g., Metformin, GLP-1 receptor agonist, lifestyle modification, basal insulin, prandial insulin, premixed insulin
   - [Symptom/Clinical Finding] e.g., Hyperglycemia, Polyuria, insulin resistance, dyslipidemia, elevated blood pressure
-  - [Clinical Metric/Lab Test] e.g., HbA1c, eGFR, fasting blood glucose, blood pressure, glycemic control
+  - [Clinical Metric/Lab Test] e.g., HbA1c, eGFR, fasting blood glucose, blood pressure, glycemic control, premeal glucose
   - [Anatomical Site]          e.g., Pancreas, Kidney, Retina, Beta cell
+  - [Dosage Value]             e.g., 20%, <110 mg/dL, 5 units, 50% of total daily dose, 10% to 20%
 
 ════════════════════════════════════════════════
 PART 2: STRICT IGNORE LIST — DO NOT EXTRACT
@@ -21,10 +22,12 @@ NEVER create a triple involving any of the following:
   - Administrative roles (Chair, Director, Task Force member, author)
   - Document or article references (Consensus Statement, Clinical Practice Guideline, Algorithm Summary)
   - Organizational names (American Association of..., Advisory Committee on...)
-  - The GENERIC WORD 'relation' — NEVER use 'relation' as a relation label in a triple. If you cannot name the specific semantic link, DISCARD the triple.
+  - The GENERIC WORD 'relation' — NEVER use 'relation' as a relation label in a triple
+  - BARE ADJECTIVES or COMPARATIVES without clinical meaning (e.g., 'longer', 'fewer', 'more', 'less') — these are NOT entities
+  - ABSTRACT NON-ENTITIES like 'number of meals', 'simplicity', 'adherence', 'flexibility' — these are NOT clinical entities
 
 ════════════════════════════════════════════════
-PART 3: FIVE UNBREAKABLE EXTRACTION RULES
+PART 3: SEVEN UNBREAKABLE EXTRACTION RULES
 ════════════════════════════════════════════════
 
 RULE 1 — DIRECTIONALITY IS MANDATORY (Fix Logic Inversion):
@@ -32,85 +35,105 @@ RULE 1 — DIRECTIONALITY IS MANDATORY (Fix Logic Inversion):
 
   1a. 'may be treated by' is ALWAYS: [Disease/Condition] → may be treated by → [Treatment/Medication].
       A [Treatment] can NEVER be the SUBJECT of 'may be treated by'.
-      ✗ WRONG: ['lifestyle modification', 'may be treated by', 'prediabetes']
-      ✓ CORRECT: ['prediabetes', 'may be treated by', 'lifestyle modification']
+      ✗ WRONG: ['basal insulin', 'may be treated by', 'diabetes']
+      ✗ WRONG: ['prandial insulin', 'may be treated by', 'diabetes']
+      ✓ CORRECT: ['diabetes', 'may be treated by', 'basal insulin']
 
   1b. 'manifestation of' is ALWAYS: [Symptom/Complication] → manifestation of → [Primary Disease].
-      A Disease can NEVER be the Object of 'manifestation of' if the Subject is ALSO a Disease category.
-      The relationship 'prediabetes is a manifestation of Type 2 Diabetes' is clinically WRONG.
       Prediabetes PRECEDES Type 2 Diabetes — use 'may be associated disease of disease' instead.
       ✗ WRONG: ['prediabetes', 'manifestation of', 'Type 2 Diabetes']
-      ✗ WRONG: ['Type 2 Diabetes', 'manifestation of', 'glycemic targets']
       ✓ CORRECT: ['diabetic neuropathy', 'manifestation of', 'diabetes mellitus']
 
   1c. 'associated finding of' is ALWAYS: [Symptom/Clinical Finding] → associated finding of → [Disease].
-      A [Treatment/Intervention] like 'weight loss' or 'lifestyle modification' can NEVER be the SUBJECT of 'associated finding of'.
       ✗ WRONG: ['weight loss', 'associated finding of', 'dyslipidemia']
       ✓ CORRECT: ['dyslipidemia', 'may be treated by', 'weight loss']
 
   1d. DRUG/TREATMENT DIRECTION IS ALWAYS: [Disease] → may be treated by → [Drug/Treatment]. NEVER REVERSE.
-      NEVER place a drug, medication, or intervention as the SUBJECT of 'may be treated by'.
-      A drug treats a disease — the disease does NOT treat the drug.
       ✗ WRONG: ['metformin', 'may be treated by', 'Type 2 Diabetes']
-      ✗ WRONG: ['antihyperglycemic medications', 'may be treated by', 'Type 2 Diabetes']
-      ✗ WRONG: ['weight loss', 'may be treated by', 'elevated blood pressure']
       ✓ CORRECT: ['Type 2 Diabetes', 'may be treated by', 'metformin']
-      ✓ CORRECT: ['elevated blood pressure', 'may be treated by', 'weight loss']
+
+  1e. 'is preferred over' is ALWAYS: [Preferred Drug] → is preferred over → [Less-Preferred Drug].
+      ✗ WRONG: ['NPH', 'is preferred over', 'analog insulins']
+      ✓ CORRECT: ['analog insulins', 'is preferred over', 'NPH']
+
+  1f. 'has adverse effect' is ALWAYS: [Drug/Treatment] → has adverse effect → [Symptom/Condition].
+      ✗ WRONG: ['hypoglycemia', 'has adverse effect', 'premixed insulin']
+      ✓ CORRECT: ['premixed insulin', 'has adverse effect', 'hypoglycemia']
 
 RULE 2 — ONE ENTITY PER SLOT, NO COMPOUND STRINGS (Fix Atomicity Bug):
   NEVER group multiple diseases, symptoms, or treatments into a single string using commas or 'and'.
-  If the text mentions multiple items linked to one disease, CREATE A SEPARATE TRIPLE FOR EACH ITEM.
-  ✗ WRONG: ['Type 2 Diabetes', 'associated condition of', 'heart failure, chronic kidney disease, obesity']
+  If the text mentions multiple items, CREATE A SEPARATE TRIPLE FOR EACH ITEM.
+  ✗ WRONG: ['Type 2 Diabetes', 'associated condition of', 'heart failure, chronic kidney disease']
   ✓ CORRECT: ['Type 2 Diabetes', 'associated condition of', 'heart failure']
              ['Type 2 Diabetes', 'associated condition of', 'chronic kidney disease']
-             ['Type 2 Diabetes', 'associated condition of', 'overweight/obesity']
 
 RULE 3 — STRICT ENTITY CLASS ENFORCEMENT (Fix Domain/Range Violations):
   Words containing 'therapy', 'modification', 'intervention', 'medication', 'treatment', or 'pharmacotherapy'
   ALWAYS classify as [Treatment], NEVER as [Disease].
   Treatments CANNOT be the subject of 'associated condition of', 'co-occurs with', or 'may be associated disease of disease'.
-  ✗ WRONG: ['antihyperglycemic therapy', 'may be associated disease of disease', 'stroke']
-  ✓ CORRECT: ['Type 2 Diabetes', 'may be treated by', 'antihyperglycemic therapy']
 
 RULE 4 — NO CONCEPTUAL DOCUMENTS AS TREATMENTS (Fix Guidelines-as-Therapy Bug):
   Words like 'Model', 'Guideline', 'Recommendations', 'Algorithm', 'Standards', 'Framework', 'Plan', or 'Roadmap'
   refer to THEORETICAL DOCUMENTS, NOT physical interventions.
-  IMPORTANT: This rule only applies to the OBJECT slot of a triple, NOT to the whole sentence.
-  A sentence can MENTION an Algorithm or Guideline as context (Subject/narrator) — that is fine.
-  You must still extract the ACTUAL clinical relations from that sentence.
-  FORBIDDEN: These document names as the OBJECT of 'may be treated by':
-  ✗ WRONG: ['Type 2 Diabetes', 'may be treated by', 'The Complications-Centric Model...']
-  ✗ WRONG: ['prediabetes', 'may be treated by', 'Comprehensive Type 2 Diabetes Management Algorithm']
-  → INSTEAD: Extract the ACTUAL intervention the sentence recommends. The Algorithm is just the narrator.
-  EXAMPLE: 'The 2023 Algorithm recommends GLP-1 receptor agonists for Type 2 Diabetes with ASCVD.'
-  ✓ CORRECT: ['Type 2 Diabetes', 'may be treated by', 'GLP-1 receptor agonists']
-             ['Type 2 Diabetes', 'co-occurs with', 'atherosclerotic cardiovascular disease']
+  FORBIDDEN: These document names as the OBJECT of 'may be treated by'.
+  → INSTEAD: Extract the ACTUAL intervention the sentence recommends.
 
 RULE 5 — ABSTRACT LOGIC INTEGRITY CHECK (Fix Abstract Inversion):
   Medical goals, outcomes, and metrics such as 'glycemic control', 'glycemic targets', 'metabolic control',
   'blood pressure control', or 'weight management' are OUTCOMES/GOALS, NOT diseases being treated.
-  They CANNOT be the Subject of 'may be treated by'. Complications treat NOTHING — they are treated.
-  ✗ WRONG: ['glycemic control', 'may be treated by', 'Type 2 Diabetes complications']
-  ✗ WRONG: ['Type 2 Diabetes', 'manifestation of', 'glycemic control']
+  They CANNOT be the Subject of 'may be treated by'. They CANNOT be the Object of 'may be treated by'.
+  ✗ WRONG: ['glycemic control', 'may be treated by', 'insulin']
+  ✗ WRONG: ['basal insulin', 'may be treated by', 'glycemic targets']
   ✓ CORRECT: ['Type 2 Diabetes', 'has evaluation', 'glycemic control']
-  Before writing any triple, ask: does this make real-world clinical sense?
+
+RULE 6 — COMPARISON/PREFERENCE PATTERN (NEW):
+  When text says drug A "is preferred over" drug B, or A is "recommended over" B:
+  - Use the relation 'is preferred over': [Preferred Drug] → is preferred over → [Less-Preferred Drug]
+  - Also extract: [Disease] → may be treated by → [Preferred Drug]
+  - Do NOT mark the less-preferred drug as "contraindicated" — being less preferred is NOT the same as being contraindicated.
+  ✗ WRONG: ['diabetes', 'has contraindicated drug', 'NPH']  (NPH is valid, just less preferred)
+  ✓ CORRECT: ['analog insulins', 'is preferred over', 'NPH']
+             ['diabetes', 'may be treated by', 'analog insulins']
+
+RULE 7 — CONDITIONAL/TITRATION/DOSE PATTERN (NEW):
+  When text describes dose adjustments with conditions (if glucose > X, then adjust dose by Y%):
+  - Use 'has dose adjustment': [Drug] → has dose adjustment → [Dosage Value]
+  - Use 'has clinical threshold': [Clinical Metric] → has clinical threshold → [Dosage Value]
+  - The condition (e.g., "fasting blood glucose >180 mg/dL") and the action (e.g., "increase by 20%") are SEPARATE triples.
+  - When text says to DISCONTINUE drug A after starting drug B:
+    Use 'should be discontinued with': [Drug A] → should be discontinued with → [Drug B]
+
+  Example text: "The basal insulin dose can be increased by 20% if the fasting blood glucose is >180 mg/dL."
+  ✓ CORRECT: ['diabetes', 'may be treated by', 'basal insulin']
+             ['basal insulin', 'has dose adjustment', 'increase by 20%']
+             ['fasting blood glucose', 'has clinical threshold', '>180 mg/dL']
+
+  Example text: "After basal insulin is initiated, discontinuation of Sulfonylureas (SUs) is recommended."
+  ✓ CORRECT: ['diabetes', 'may be treated by', 'basal insulin']
+             ['sulfonylureas', 'should be discontinued with', 'basal insulin']
 
 ════════════════════════════════════════════════
 PART 4: ALLOWED RELATIONAL SCHEMA (Domain → Range)
 ════════════════════════════════════════════════
-  - [Disease/Condition] → may be treated by        → [Treatment/Medication]
-  - [Disease/Condition] → has contraindicated drug  → [Treatment/Medication]
-  - [Disease/Condition] → manifestation of          → [Disease/Condition]
-  - [Disease/Condition] → associated condition of   → [Disease/Condition]
-  - [Disease/Condition] → co-occurs with            → [Disease/Condition]
-  - [Disease/Condition] → has finding site          → [Anatomical Site]
-  - [Disease/Condition] → has evaluation            → [Clinical Metric/Lab Test]
-  - [Disease/Condition] → increases risk of         → [Disease/Condition]
-  - [Symptom/Finding]   → may be finding of disease → [Disease/Condition]
-  - [Symptom/Finding]   → may be treated by          → [Treatment/Medication]    (when treatment alleviates a symptom)
+  - [Disease/Condition] → may be treated by          → [Treatment/Medication]
+  - [Disease/Condition] → has contraindicated drug    → [Treatment/Medication]
+  - [Disease/Condition] → manifestation of            → [Disease/Condition]
+  - [Disease/Condition] → associated condition of     → [Disease/Condition]
+  - [Disease/Condition] → co-occurs with              → [Disease/Condition]
+  - [Disease/Condition] → has finding site            → [Anatomical Site]
+  - [Disease/Condition] → has evaluation              → [Clinical Metric/Lab Test]
+  - [Disease/Condition] → increases risk of           → [Disease/Condition]
   - [Disease/Condition] → may be associated disease of disease → [Disease/Condition]
+  - [Symptom/Finding]   → may be finding of disease   → [Disease/Condition]
+  - [Symptom/Finding]   → may be treated by           → [Treatment/Medication]
+  - [Drug/Treatment]    → is preferred over           → [Drug/Treatment]
+  - [Drug/Treatment]    → has adverse effect          → [Symptom/Condition]
+  - [Drug/Treatment]    → has dose adjustment         → [Dosage Value]
+  - [Drug/Treatment]    → may be substituted by       → [Drug/Treatment]
+  - [Drug/Treatment]    → should be discontinued with → [Drug/Treatment]
+  - [Clinical Metric]   → has clinical threshold      → [Dosage Value]
 
-If a triple cannot fit any of these patterns without violating RULES 1-5, DISCARD IT.
+If a triple cannot fit any of these patterns without violating RULES 1-7, DISCARD IT.
 If the sentence contains no valid clinical relationship, output an empty list: []
 
 ════════════════════════════════════════════════
@@ -120,7 +143,7 @@ EXAMPLES:
 ════════════════════════════════════════════════
 OUTPUT INSTRUCTIONS:
 - Extract triplets from the text below.
-- Output ONLY a valid Python list of lists. Do NOT include any mào đầu, explanations, or markdown formatting (like ```python).
+- Output ONLY a valid Python list of lists. Do NOT include any explanations, or markdown formatting (like ```python).
 - If no triplets are found, output exactly: []
 
 Text: {input_text}

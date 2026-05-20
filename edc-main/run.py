@@ -95,7 +95,12 @@ if __name__ == "__main__":
     parser.add_argument(
         "--target_schema_path",
         default="./schemas/example_schema.csv",
-        help="File containing the target schema to align to.",
+        help="File containing the target relation schema to align to.",
+    )
+    parser.add_argument(
+        "--target_entity_type_schema_path",
+        default="./schemas/disease/diabetes_entity_type_schema.csv",
+        help="File containing the target entity type schema to align to.",
     )
     parser.add_argument("--refinement_iterations", default=0, type=int, help="Number of iteration to run.")
     parser.add_argument(

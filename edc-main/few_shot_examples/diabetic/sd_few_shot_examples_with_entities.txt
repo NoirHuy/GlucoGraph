@@ -1,0 +1,199 @@
+Example 1:
+Text: Metformin is the first-line pharmacological treatment recommended for type 2 diabetes mellitus and helps lower HbA1c levels.
+Triples: [['type 2 diabetes mellitus', 'may be treated by', 'Metformin'], ['type 2 diabetes mellitus', 'has evaluation', 'HbA1c']]
+Answer:
+[
+  {
+    "subject": "type 2 diabetes mellitus",
+    "subject_type": "Disease",
+    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+    "relation": "may be treated by",
+    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+    "object": "Metformin",
+    "object_type": "Drug",
+    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+  },
+  {
+    "subject": "type 2 diabetes mellitus",
+    "subject_type": "Disease",
+    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+    "relation": "has evaluation",
+    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+    "object": "HbA1c",
+    "object_type": "Clinical Metric",
+    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+  }
+]
+
+Example 2:
+Text: Diabetic neuropathy and diabetic retinopathy are serious microvascular complications of diabetes mellitus.
+Triples: [['diabetic neuropathy', 'manifestation of', 'diabetes mellitus'], ['diabetic retinopathy', 'manifestation of', 'diabetes mellitus']]
+Answer:
+[
+  {
+    "subject": "diabetic neuropathy",
+    "subject_type": "Disease",
+    "subject_type_definition": "A pathological condition or complication that arises as a direct result of an underlying primary disease.",
+    "relation": "manifestation of",
+    "relation_definition": "The subject represents a direct clinical presentation, complication, or symptom that occurs as a consequence of the object disease.",
+    "object": "diabetes mellitus",
+    "object_type": "Disease",
+    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
+  },
+  {
+    "subject": "diabetic retinopathy",
+    "subject_type": "Disease",
+    "subject_type_definition": "A pathological condition or complication that arises as a direct result of an underlying primary disease.",
+    "relation": "manifestation of",
+    "relation_definition": "The subject represents a direct clinical presentation, complication, or symptom that occurs as a consequence of the object disease.",
+    "object": "diabetes mellitus",
+    "object_type": "Disease",
+    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
+  }
+]
+
+Example 3:
+Text: SGLT2 inhibitors are contraindicated in patients with severe chronic kidney disease due to reduced renal function.
+Triples: [['chronic kidney disease', 'has contraindicated drug', 'SGLT2 inhibitors']]
+Answer:
+[
+  {
+    "subject": "chronic kidney disease",
+    "subject_type": "Disease",
+    "subject_type_definition": "A long-term condition in which the kidneys gradually lose their ability to filter waste from the blood.",
+    "relation": "has contraindicated drug",
+    "relation_definition": "The subject disease or condition is associated with a drug that is medically forbidden due to the risk of serious adverse effects.",
+    "object": "SGLT2 inhibitors",
+    "object_type": "Drug",
+    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+  }
+]
+
+Example 4:
+Text: Analog insulins, including detemir, glargine, or degludec, are preferred over human insulins, such as NPH, to reduce hypoglycemia in patients with diabetes.
+Triples: [['diabetes', 'may be treated by', 'detemir'], ['detemir', 'is preferred over', 'NPH'], ['NPH', 'has adverse effect', 'hypoglycemia']]
+Answer:
+[
+  {
+    "subject": "diabetes",
+    "subject_type": "Disease",
+    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+    "relation": "may be treated by",
+    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+    "object": "detemir",
+    "object_type": "Drug",
+    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+  },
+  {
+    "subject": "detemir",
+    "subject_type": "Drug",
+    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+    "relation": "is preferred over",
+    "relation_definition": "The subject drug or treatment is clinically preferred or recommended over the object drug due to superior efficacy, safety, or reduced adverse effects.",
+    "object": "NPH",
+    "object_type": "Drug",
+    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+  },
+  {
+    "subject": "NPH",
+    "subject_type": "Drug",
+    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+    "relation": "has adverse effect",
+    "relation_definition": "The subject drug or treatment may cause or increase the risk of the object adverse event, side effect, or complication.",
+    "object": "hypoglycemia",
+    "object_type": "Symptom",
+    "object_type_definition": "A clinical sign or physiological finding that indicates the presence or severity of a disease or condition."
+  }
+]
+
+Example 5:
+Text: The basal insulin dose can be increased by 20% if the fasting blood glucose is >180 mg/dL.
+Triples: [['basal insulin', 'has dose adjustment', 'increase by 20%'], ['fasting blood glucose', 'has clinical threshold', '>180 mg/dL']]
+Answer:
+[
+  {
+    "subject": "basal insulin",
+    "subject_type": "Drug",
+    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+    "relation": "has dose adjustment",
+    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+    "object": "increase by 20%",
+    "object_type": "Dosage Value",
+    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units."
+  },
+  {
+    "subject": "fasting blood glucose",
+    "subject_type": "Clinical Metric",
+    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+    "relation": "has clinical threshold",
+    "relation_definition": "The subject clinical metric has a specific quantitative threshold that triggers a clinical action or defines a clinical state.",
+    "object": ">180 mg/dL",
+    "object_type": "Dosage Value",
+    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units."
+  }
+]
+
+Example 6:
+Text: After basal insulin is initiated, discontinuation of Sulfonylureas (SUs) is recommended for patients with diabetes.
+Triples: [['diabetes', 'may be treated by', 'basal insulin'], ['sulfonylureas', 'should be discontinued with', 'basal insulin']]
+Answer:
+[
+  {
+    "subject": "diabetes",
+    "subject_type": "Disease",
+    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+    "relation": "may be treated by",
+    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+    "object": "basal insulin",
+    "object_type": "Drug",
+    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+  },
+  {
+    "subject": "sulfonylureas",
+    "subject_type": "Drug",
+    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+    "relation": "should be discontinued with",
+    "relation_definition": "The subject drug should be stopped or discontinued when the object drug or treatment is initiated.",
+    "object": "basal insulin",
+    "object_type": "Drug",
+    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+  }
+]
+
+Example 7:
+Text: Excess weight results in insulin resistance and increases the risk for prediabetes and Type 2 Diabetes.
+Triples: [['excess weight', 'increases risk of', 'prediabetes'], ['excess weight', 'increases risk of', 'Type 2 Diabetes'], ['insulin resistance', 'may be finding of disease', 'excess weight']]
+Answer:
+[
+  {
+    "subject": "excess weight",
+    "subject_type": "Disease",
+    "subject_type_definition": "An abnormal or excessive accumulation of body fat that presents a risk to health, classified as a chronic disease.",
+    "relation": "increases risk of",
+    "relation_definition": "The subject entity is a known risk factor that elevates the probability of developing the object disease or condition.",
+    "object": "prediabetes",
+    "object_type": "Disease",
+    "object_type_definition": "A condition in which blood sugar levels are higher than normal but not yet high enough to be classified as type 2 diabetes."
+  },
+  {
+    "subject": "excess weight",
+    "subject_type": "Disease",
+    "subject_type_definition": "An abnormal or excessive accumulation of body fat that presents a risk to health, classified as a chronic disease.",
+    "relation": "increases risk of",
+    "relation_definition": "The subject entity is a known risk factor that elevates the probability of developing the object disease or condition.",
+    "object": "Type 2 Diabetes",
+    "object_type": "Disease",
+    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
+  },
+  {
+    "subject": "insulin resistance",
+    "subject_type": "Symptom",
+    "subject_type_definition": "A clinical sign or physiological state in which body cells do not respond effectively to insulin, often associated with metabolic disease.",
+    "relation": "may be finding of disease",
+    "relation_definition": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+    "object": "excess weight",
+    "object_type": "Disease",
+    "object_type_definition": "An abnormal or excessive accumulation of body fat that presents a risk to health, classified as a chronic disease."
+  }
+]
+

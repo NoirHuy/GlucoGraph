@@ -1,0 +1,1811 @@
+[
+    {
+        "index": 0,
+        "input_text": "Analog insulins, including detemir, glargine, or degludec, are preferred over human insulins, such as neutral protamine Hagedorn (NPH), to reduce hypoglycemia in patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "analog insulins"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "detemir"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "glargine"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "degludec"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "neutral protamine Hagedorn (NPH)"
+            ],
+            [
+                "diabetes",
+                "has contraindicated drug",
+                "human insulins"
+            ],
+            [
+                "diabetes",
+                "has contraindicated drug",
+                "NPH"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "analog insulins"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "detemir"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "glargine"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "degludec"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "neutral protamine Hagedorn (NPH)"
+            ],
+            [
+                "diabetes",
+                "has contraindicated drug",
+                "human insulins"
+            ],
+            [
+                "diabetes",
+                "has contraindicated drug",
+                "NPH"
+            ]
+        ]
+    },
+    {
+        "index": 1,
+        "input_text": "After basal insulin is initiated, discontinuation of Sulfonylureas (SUs) is recommended for patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "diabetes",
+                "has contraindicated drug",
+                "Sulfonylureas (SUs)"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has contraindicated drug": "The subject disease or condition is associated with a drug that is medically forbidden due to the risk of serious adverse effects.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "basal insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has contraindicated drug",
+                    "relation_definition": "The subject disease or condition is associated with a drug that is medically forbidden due to the risk of serious adverse effects.",
+                    "object": "Sulfonylureas (SUs)",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "diabetes",
+                "has contraindicated drug",
+                "Sulfonylureas (SUs)"
+            ]
+        ]
+    },
+    {
+        "index": 2,
+        "input_text": "Fixed-dose Glucagon-Like Peptide-1 Receptor Agonist (GLP-1 RA) and basal insulin combinations can provide improved glycemic control when basal insulin alone has not achieved targets for patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "GLP-1 RA"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic control"
+            ],
+            [
+                "basal insulin",
+                "may be treated by",
+                "diabetes"
+            ],
+            [
+                "basal insulin",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "GLP-1 RA"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic control"
+            ],
+            [
+                "basal insulin",
+                "may be treated by",
+                "diabetes"
+            ],
+            [
+                "basal insulin",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ]
+    },
+    {
+        "index": 3,
+        "input_text": "Rapid-acting insulin analogs are preferred over human insulin preparations, such as regular insulin, because of their comparatively earlier onset of action.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "rapid-acting insulin analogs",
+                "may be treated by",
+                "human insulin preparations"
+            ],
+            [
+                "rapid-acting insulin analogs",
+                "has evaluation",
+                "onset of action"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "rapid-acting insulin analogs",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "human insulin preparations",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "rapid-acting insulin analogs",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "onset of action",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "rapid-acting insulin analogs",
+                "may be treated by",
+                "human insulin preparations"
+            ],
+            [
+                "rapid-acting insulin analogs",
+                "has evaluation",
+                "onset of action"
+            ]
+        ]
+    },
+    {
+        "index": 4,
+        "input_text": "Prandial insulin can be initiated at the largest meal at 10% of the basal insulin dose or 5 units, with stepwise addition to other meals as additional glycemic control is needed for patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "prandial insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "glycemic control",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ]
+    },
+    {
+        "index": 5,
+        "input_text": "Prandial insulin can be started at all meals simultaneously at 50% of the total daily dose divided by the number of meals for patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "prandial insulin",
+                "has dosage",
+                "50% of the total daily dose"
+            ],
+            [
+                "prandial insulin",
+                "has dosage",
+                "number of meals"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has dosage": "The subject drug or treatment has a specified dosage or quantity that is recommended for administration.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "prandial insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "prandial insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dosage",
+                    "relation_definition": "The subject drug or treatment has a specified dosage or quantity that is recommended for administration.",
+                    "object": "50% of the total daily dose",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                },
+                {
+                    "subject": "prandial insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dosage",
+                    "relation_definition": "The subject drug or treatment has a specified dosage or quantity that is recommended for administration.",
+                    "object": "number of meals",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "glycemic control",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {'may be treated by': np.float64(0.5521798719362858), 'relation': np.float64(0.44868025732193473), 'has evaluation': np.float64(0.4225156408225901), 'has contraindicated drug': np.float64(0.4216341415204551), 'component of': np.float64(0.35904412256354035)}, {'may be treated by': np.float64(0.5519209252374034), 'relation': np.float64(0.4487653646571792), 'has evaluation': np.float64(0.42291060899652155), 'has contraindicated drug': np.float64(0.42073143802086044), 'component of': np.float64(0.35908780565678816)}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "prandial insulin",
+                "component of",
+                "50% of the total daily dose"
+            ],
+            [
+                "prandial insulin",
+                "component of",
+                "number of meals"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ]
+    },
+    {
+        "index": 6,
+        "input_text": "Fixed-dose premixed insulins that combine a long-acting and short-acting insulin can also be considered for persons with diabetes who may have concerns about multiple insulins and injections.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "fixed-dose premixed insulins"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "fixed-dose premixed insulins",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "fixed-dose premixed insulins"
+            ]
+        ]
+    },
+    {
+        "index": 7,
+        "input_text": "Premixed insulin requires fewer injections than other insulin regimens for patients with diabetes, but it also has less flexibility for dosing adjustments and may increase hypoglycemia in patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "premixed insulin"
+            ],
+            [
+                "diabetes",
+                "has contraindication",
+                "hypoglycemia"
+            ],
+            [
+                "diabetes",
+                "has contraindication",
+                "hypoglycemia in patients with diabetes"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has contraindication": "The subject disease or condition is associated with a condition, symptom, or situation that makes the use of a particular drug or treatment inadvisable.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "premixed insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has contraindication",
+                    "relation_definition": "The subject disease or condition is associated with a condition, symptom, or situation that makes the use of a particular drug or treatment inadvisable.",
+                    "object": "hypoglycemia",
+                    "object_type": "Symptom",
+                    "object_type_definition": "A clinical sign or physiological state in which blood glucose levels are abnormally low, often associated with metabolic disease."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has contraindication",
+                    "relation_definition": "The subject disease or condition is associated with a condition, symptom, or situation that makes the use of a particular drug or treatment inadvisable.",
+                    "object": "hypoglycemia in patients with diabetes",
+                    "object_type": "Symptom",
+                    "object_type_definition": "A clinical sign or physiological state in which blood glucose levels are abnormally low, often associated with metabolic disease."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {'has contraindicated drug': np.float64(0.7752026580724539), 'may be treated by': np.float64(0.5598266089471835), 'co-occurs with': np.float64(0.5178996292581259), 'associated condition of': np.float64(0.504501009381234), 'cause of': np.float64(0.4949017376039755)}, {'has contraindicated drug': np.float64(0.7752039980858172), 'may be treated by': np.float64(0.5588894613164437), 'co-occurs with': np.float64(0.5178476818228268), 'associated condition of': np.float64(0.5042154224934595), 'cause of': np.float64(0.49459595622441427)}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "premixed insulin"
+            ],
+            [
+                "diabetes",
+                "cause of",
+                "hypoglycemia"
+            ],
+            [
+                "diabetes",
+                "cause of",
+                "hypoglycemia in patients with diabetes"
+            ]
+        ]
+    },
+    {
+        "index": 8,
+        "input_text": "Premixed insulin may offer an alternative to achieve adequate glycemic control due to the simplicity of the premixed insulin regimen and increased adherence for patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "premixed insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "premixed insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "glycemic control",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "premixed insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic control"
+            ]
+        ]
+    },
+    {
+        "index": 9,
+        "input_text": "Basal insulin should be titrated every 2 to 3 days to reach glycemic targets with a goal fasting blood glucose of <110 mg/dL without hypoglycemia.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "basal insulin",
+                "may be treated by",
+                "glycemic targets"
+            ],
+            [
+                "glycemic targets",
+                "has evaluation",
+                "fasting blood glucose"
+            ],
+            [
+                "fasting blood glucose",
+                "has finding site",
+                "blood glucose"
+            ],
+            [
+                "fasting blood glucose",
+                "has evaluation",
+                "<110 mg/dL"
+            ],
+            [
+                "fasting blood glucose",
+                "may be treated by",
+                "hypoglycemia"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "basal insulin",
+                "may be treated by",
+                "glycemic targets"
+            ],
+            [
+                "glycemic targets",
+                "has evaluation",
+                "fasting blood glucose"
+            ],
+            [
+                "fasting blood glucose",
+                "has finding site",
+                "blood glucose"
+            ],
+            [
+                "fasting blood glucose",
+                "has evaluation",
+                "<110 mg/dL"
+            ],
+            [
+                "fasting blood glucose",
+                "may be treated by",
+                "hypoglycemia"
+            ]
+        ]
+    },
+    {
+        "index": 10,
+        "input_text": "The basal insulin titration should be done every 3 to 5 days for patients taking insulin degludec because of the longer half-life of insulin degludec.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "insulin degludec"
+            ],
+            [
+                "insulin degludec",
+                "has half-life",
+                "longer"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has half-life": "The subject drug or substance has a specific duration of action or persistence in the body.",
+            "_entries": [
+                {
+                    "subject": "Type 2 Diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "insulin degludec",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "insulin degludec",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has half-life",
+                    "relation_definition": "The subject drug or substance has a specific duration of action or persistence in the body.",
+                    "object": "longer",
+                    "object_type": "Unknown",
+                    "object_type_definition": ""
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {'relation': np.float64(0.4402618915745653), 'may be treated by': np.float64(0.42642389748019927), 'component of': np.float64(0.37986928030395223), 'has contraindicated drug': np.float64(0.37147514078758576), 'cause of': np.float64(0.3615521600502667)}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "insulin degludec"
+            ],
+            [
+                "insulin degludec",
+                "cause of",
+                "longer"
+            ]
+        ]
+    },
+    {
+        "index": 11,
+        "input_text": "Patients taking basal insulin can be counseled on how to titrate basal insulin doses independently based on self-monitoring of blood glucose.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "basal insulin"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "Type 2 Diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "basal insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "basal insulin"
+            ]
+        ]
+    },
+    {
+        "index": 12,
+        "input_text": "The basal insulin dose can be increased by 20% if the fasting blood glucose is >180 mg/dL.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "fasting blood glucose",
+                "has evaluation",
+                "180 mg/dL"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "Type 2 Diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "basal insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "fasting blood glucose",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "180 mg/dL",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "fasting blood glucose",
+                "has evaluation",
+                "180 mg/dL"
+            ]
+        ]
+    },
+    {
+        "index": 13,
+        "input_text": "The basal insulin dose can be increased by 10% if the fasting blood glucose is between 140 to 180 mg/dL.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "fasting blood glucose",
+                "has evaluation",
+                "basal insulin dose"
+            ]
+        ],
+        "schema_definition": {
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "fasting blood glucose",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "basal insulin dose",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "fasting blood glucose",
+                "has evaluation",
+                "basal insulin dose"
+            ]
+        ]
+    },
+    {
+        "index": 14,
+        "input_text": "The basal insulin dose can be increased by 1 unit if the fasting blood glucose is between 110 to 139 mg/dL.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "fasting blood glucose",
+                "has evaluation",
+                "basal insulin dose"
+            ]
+        ],
+        "schema_definition": {
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "fasting blood glucose",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "basal insulin dose",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "fasting blood glucose",
+                "has evaluation",
+                "basal insulin dose"
+            ]
+        ]
+    },
+    {
+        "index": 15,
+        "input_text": "The basal insulin dose should be decreased by 10% to 20% if the patient experiences fasting hypoglycemia with a fasting blood glucose <70 mg/dL.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "fasting hypoglycemia",
+                "may be treated by",
+                "decrease basal insulin dose"
+            ],
+            [
+                "fasting hypoglycemia",
+                "has evaluation",
+                "fasting blood glucose"
+            ],
+            [
+                "fasting blood glucose",
+                "has finding site",
+                "pancreas"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "has finding site": "The subject clinical measurement or test is associated with or originates from the specified anatomical location or site.",
+            "_entries": [
+                {
+                    "subject": "fasting hypoglycemia",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A pathological condition or complication that arises as a direct result of an underlying primary disease.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "decrease basal insulin dose",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or action taken to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "fasting hypoglycemia",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A pathological condition or complication that arises as a direct result of an underlying primary disease.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "fasting blood glucose",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                },
+                {
+                    "subject": "fasting blood glucose",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "has finding site",
+                    "relation_definition": "The subject clinical measurement or test is associated with or originates from the specified anatomical location or site.",
+                    "object": "pancreas",
+                    "object_type": "Anatomical Site",
+                    "object_type_definition": "A specific location or region within the human body where a disease or clinical condition manifests or is found."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "fasting hypoglycemia",
+                "may be treated by",
+                "decrease basal insulin dose"
+            ],
+            [
+                "fasting hypoglycemia",
+                "has evaluation",
+                "fasting blood glucose"
+            ],
+            [
+                "fasting blood glucose",
+                "has finding site",
+                "pancreas"
+            ]
+        ]
+    },
+    {
+        "index": 16,
+        "input_text": "The basal insulin dose should be decreased by 20% to 40% if the patient experiences fasting hypoglycemia with a fasting blood glucose <40 mg/dL.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "fasting hypoglycemia",
+                "may be treated by",
+                "decrease basal insulin dose"
+            ],
+            [
+                "fasting hypoglycemia",
+                "has evaluation",
+                "fasting blood glucose"
+            ],
+            [
+                "fasting blood glucose",
+                "has finding site",
+                "pancreas"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "has finding site": "The subject clinical measurement or test is associated with or originates from the specified anatomical location or site.",
+            "_entries": [
+                {
+                    "subject": "fasting hypoglycemia",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A pathological condition or complication that arises as a direct result of an underlying primary disease.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "decrease basal insulin dose",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or action taken to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "fasting hypoglycemia",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A pathological condition or complication that arises as a direct result of an underlying primary disease.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "fasting blood glucose",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                },
+                {
+                    "subject": "fasting blood glucose",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "has finding site",
+                    "relation_definition": "The subject clinical measurement or test is associated with or originates from the specified anatomical location or site.",
+                    "object": "pancreas",
+                    "object_type": "Anatomical Site",
+                    "object_type_definition": "A specific location or region within the human body where a disease or clinical condition manifests or originates."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "fasting hypoglycemia",
+                "may be treated by",
+                "decrease basal insulin dose"
+            ],
+            [
+                "fasting hypoglycemia",
+                "has evaluation",
+                "fasting blood glucose"
+            ],
+            [
+                "fasting blood glucose",
+                "has finding site",
+                "pancreas"
+            ]
+        ]
+    },
+    {
+        "index": 17,
+        "input_text": "The goal premeal glucose targets for patients with diabetes are 110 to 140 mg/dL.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "has evaluation",
+                "premeal glucose targets"
+            ]
+        ],
+        "schema_definition": {
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "premeal glucose targets",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "has evaluation",
+                "premeal glucose targets"
+            ]
+        ]
+    },
+    {
+        "index": 18,
+        "input_text": "Prandial insulin should be titrated every 2 to 3 days for patients with diabetes, based on the premeal glucose of the meal until glycemic targets are met for patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic targets"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "premeal glucose"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "prandial insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "glycemic targets",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "premeal glucose",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "glycemic targets"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "premeal glucose"
+            ]
+        ]
+    },
+    {
+        "index": 19,
+        "input_text": "One approach to titrating prandial insulin for patients with diabetes is to adjust the dose based on premeal glucose levels for patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "premeal glucose levels"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "prandial insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "premeal glucose levels",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "premeal glucose levels"
+            ]
+        ]
+    },
+    {
+        "index": 20,
+        "input_text": "For patients with diabetes, if the pre-midday meal glucose is greater than 110 mg/dL, the morning meal dose of prandial insulin should be increased by 10% to 20%.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "has evaluation",
+                "pre-midday meal glucose"
+            ],
+            [
+                "pre-midday meal glucose",
+                "may be finding of disease",
+                "diabetes"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "pre-midday meal glucose",
+                "may be finding of disease",
+                "diabetes"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "has evaluation",
+                "pre-midday meal glucose"
+            ],
+            [
+                "pre-midday meal glucose",
+                "may be finding of disease",
+                "diabetes"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "pre-midday meal glucose",
+                "may be finding of disease",
+                "diabetes"
+            ]
+        ]
+    },
+    {
+        "index": 21,
+        "input_text": "For patients with diabetes, if the pre-evening glucose is greater than 140 mg/dL, the midday meal dose of prandial insulin should be increased by 10% to 20%.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "has evaluation",
+                "pre-evening glucose"
+            ],
+            [
+                "pre-evening glucose",
+                "may be finding of disease",
+                "diabetes"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ]
+        ],
+        "schema_definition": {
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "may be finding of disease": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "pre-evening glucose",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                },
+                {
+                    "subject": "pre-evening glucose",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "may be finding of disease",
+                    "relation_definition": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+                    "object": "diabetes",
+                    "object_type": "Disease",
+                    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "prandial insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "has evaluation",
+                "pre-evening glucose"
+            ],
+            [
+                "pre-evening glucose",
+                "may be finding of disease",
+                "diabetes"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ]
+        ]
+    },
+    {
+        "index": 22,
+        "input_text": "For patients with diabetes, if the bedtime glucose is greater than 140 mg/dL, the pre-evening meal dose of prandial insulin should be increased by 10%.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "has evaluation",
+                "bedtime glucose"
+            ],
+            [
+                "bedtime glucose",
+                "may be finding of disease",
+                "diabetes"
+            ],
+            [
+                "bedtime glucose",
+                "increases risk of",
+                "hyperglycemia"
+            ],
+            [
+                "hyperglycemia",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "prandial insulin",
+                "may be treated by",
+                "diabetes"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "has evaluation",
+                "bedtime glucose"
+            ],
+            [
+                "bedtime glucose",
+                "may be finding of disease",
+                "diabetes"
+            ],
+            null,
+            [
+                "hyperglycemia",
+                "may be treated by",
+                "prandial insulin"
+            ],
+            [
+                "prandial insulin",
+                "may be treated by",
+                "diabetes"
+            ]
+        ]
+    },
+    {
+        "index": 23,
+        "input_text": "Fixed-dose insulin for patients with diabetes can be titrated by 2 units every 2 to 3 days, relying on the morning fasting blood glucose because of the presence of basal insulin in the treatment regimen for patients with diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes",
+                "may be treated by",
+                "fixed-dose insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "morning fasting blood glucose"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "fixed-dose insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "morning fasting blood glucose",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "may be treated by",
+                "fixed-dose insulin"
+            ],
+            [
+                "diabetes",
+                "has evaluation",
+                "morning fasting blood glucose"
+            ]
+        ]
+    },
+    {
+        "index": 24,
+        "input_text": "For premeal hypoglycemia, which is characterized by a glucose level of less than 70 mg/dL, the prandial insulin dose should be adjusted using the following approach for patients with diabetes mellitus.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "premeal hypoglycemia",
+                "has finding site",
+                "pancreas"
+            ],
+            [
+                "premeal hypoglycemia",
+                "may be finding of disease",
+                "diabetes mellitus"
+            ],
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "prandial insulin dose adjustment"
+            ]
+        ],
+        "schema_definition": {
+            "has finding site": "The subject symptom or clinical finding is typically associated with or originates from the specified anatomical location.",
+            "may be finding of disease": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "premeal hypoglycemia",
+                    "subject_type": "Symptom",
+                    "subject_type_definition": "A clinical sign or physiological state characterized by an abnormally low blood glucose level, often requiring immediate medical attention.",
+                    "relation": "has finding site",
+                    "relation_definition": "The subject symptom or clinical finding is typically associated with or originates from the specified anatomical location.",
+                    "object": "pancreas",
+                    "object_type": "Anatomical Site",
+                    "object_type_definition": "A specific location within the body where a disease or clinical condition manifests or originates."
+                },
+                {
+                    "subject": "premeal hypoglycemia",
+                    "subject_type": "Symptom",
+                    "subject_type_definition": "A clinical sign or physiological state characterized by an abnormally low blood glucose level, often requiring immediate medical attention.",
+                    "relation": "may be finding of disease",
+                    "relation_definition": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+                    "object": "diabetes mellitus",
+                    "object_type": "Disease",
+                    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production."
+                },
+                {
+                    "subject": "diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "prandial insulin dose adjustment",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A specific medical intervention or therapeutic approach used to manage or alleviate a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "premeal hypoglycemia",
+                "has finding site",
+                "pancreas"
+            ],
+            [
+                "premeal hypoglycemia",
+                "may be finding of disease",
+                "diabetes mellitus"
+            ],
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "prandial insulin dose adjustment"
+            ]
+        ]
+    },
+    {
+        "index": 25,
+        "input_text": "For patients with diabetes mellitus who experience pre-midday meal glucose levels of less than 70 mg/dL, the AM meal dose of prandial insulin should be decreased by 10% to 20%.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes mellitus",
+                "has finding site",
+                "pre-midday meal glucose levels"
+            ],
+            [
+                "pre-midday meal glucose levels",
+                "may be finding of disease",
+                "diabetes mellitus"
+            ],
+            [
+                "prandial insulin",
+                "may be treated by",
+                "decrease in dose"
+            ],
+            [
+                "prandial insulin",
+                "may be treated by",
+                "decrease in dose"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes mellitus",
+                "has finding site",
+                "pre-midday meal glucose levels"
+            ],
+            [
+                "pre-midday meal glucose levels",
+                "may be finding of disease",
+                "diabetes mellitus"
+            ],
+            [
+                "prandial insulin",
+                "may be treated by",
+                "decrease in dose"
+            ],
+            [
+                "prandial insulin",
+                "may be treated by",
+                "decrease in dose"
+            ]
+        ]
+    },
+    {
+        "index": 26,
+        "input_text": "For patients with diabetes mellitus who experience pre-evening meal glucose levels of less than 70 mg/dL, the pre-midday meal dose of prandial insulin should be decreased by 10% to 20%.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "prandial insulin"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "prandial insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "prandial insulin"
+            ]
+        ]
+    },
+    {
+        "index": 27,
+        "input_text": "For patients with diabetes mellitus who experience bedtime glucose levels of less than 70 mg/dL, the pre-evening meal dose of prandial insulin should be decreased by 10% to 20%.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "prandial insulin"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "prandial insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "prandial insulin"
+            ]
+        ]
+    },
+    {
+        "index": 28,
+        "input_text": "Patients with diabetes mellitus who are on insulin, as well as their families and companions, should be educated on the symptoms and treatment of hypoglycemia, which is characterized by a glucose level of less than 70 mg/dL.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "insulin"
+            ],
+            [
+                "hypoglycemia",
+                "may be finding of disease",
+                "diabetes mellitus"
+            ],
+            [
+                "hypoglycemia",
+                "may be treated by",
+                "education"
+            ],
+            [
+                "hypoglycemia",
+                "has evaluation",
+                "glucose level"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "insulin"
+            ],
+            [
+                "hypoglycemia",
+                "may be finding of disease",
+                "diabetes mellitus"
+            ],
+            [
+                "hypoglycemia",
+                "may be treated by",
+                "education"
+            ],
+            [
+                "hypoglycemia",
+                "has evaluation",
+                "glucose level"
+            ]
+        ]
+    },
+    {
+        "index": 29,
+        "input_text": "Patients with diabetes mellitus who are on insulin, as well as their families and companions, should be educated on the symptoms and treatment of severe hypoglycemia, which is characterized by a glucose level of less than 54 mg/dL.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "insulin"
+            ],
+            [
+                "diabetes mellitus",
+                "has evaluation",
+                "glucose level"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has evaluation": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+            "_entries": [
+                {
+                    "subject": "diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject disease or patient state is assessed or monitored using the specified clinical test, measurement, or metric.",
+                    "object": "glucose level",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "insulin"
+            ],
+            [
+                "diabetes mellitus",
+                "has evaluation",
+                "glucose level"
+            ]
+        ]
+    },
+    {
+        "index": 30,
+        "input_text": "If a patient with diabetes mellitus can safely swallow, an oral source of glucose, such as tablets or fruit juice, should be given to treat hypoglycemia.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "oral source of glucose"
+            ],
+            [
+                "hypoglycemia",
+                "may be treated by",
+                "oral source of glucose"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject clinical finding or symptom may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "oral source of glucose",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "hypoglycemia",
+                    "subject_type": "Symptom",
+                    "subject_type_definition": "A clinical sign or physiological state characterized by abnormally low blood glucose levels, often associated with metabolic disease.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject clinical finding or symptom may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "oral source of glucose",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes mellitus",
+                "may be treated by",
+                "oral source of glucose"
+            ],
+            [
+                "hypoglycemia",
+                "may be treated by",
+                "oral source of glucose"
+            ]
+        ]
+    }
+]

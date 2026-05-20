@@ -2,6 +2,8 @@ from edc.extract import Extractor
 from edc.schema_definition import SchemaDefiner
 from edc.schema_canonicalization import SchemaCanonicalizer
 from edc.entity_extraction import EntityExtractor
+from edc.entity_type_canonicalization import EntityTypeCanonicalizer
+from edc.semantic_validator import SemanticValidator
 import edc.utils.llm_utils as llm_utils
 from typing import List
 from edc.utils.e5_mistral_utils import MistralForSequenceEmbedding
@@ -18,80 +20,11 @@ from sentence_transformers import SentenceTransformer
 from importlib import reload
 import random
 import json
-import re
 
 reload(logging)
 logger = logging.getLogger(__name__)
 
 
-# ---------------------------------------------------------------------------
-# UMLS-ALIGNED DOMAIN/RANGE CONSTRAINT FILTER
-# This filter runs AFTER OIE and BEFORE Schema Definition.
-# It discards any triple whose subject or object clearly belongs to the
-# administrative/metadata category (authors, hospitals, publications, etc.)
-# rather than a clinical concept.
-# ---------------------------------------------------------------------------
-
-# Regex patterns for known non-clinical entity patterns
-_IGNORE_PATTERNS = [
-    # Credential suffixes common in author names (MD, PhD, FACP, FACE, etc.)
-    re.compile(r'\b(MD|PhD|FRCPC|FACE|FACP|MACE|MBA|CDCES|MACP|MSc)\b'),
-    # Abbreviation-only entities (2-5 uppercase letters, possibly followed by digits)
-    re.compile(r'^[A-Z]{2,5}\d?$'),
-    # Common administrative/org keywords
-    re.compile(r'\b(University|College|Institute|Hospital|Clinic|School|Center|Task Force|Department|Division|Committee)\b', re.IGNORECASE),
-    # Guideline/document references
-    re.compile(r'\b(Consensus Statement|Clinical Practice Guideline|Algorithm|Recommendation|Statement)\b', re.IGNORECASE),
-    # Year references
-    re.compile(r'\b(19|20)\d{2}\b'),
-]
-
-# Relations that are purely administrative (not biomedical)
-_ADMIN_RELATIONS = {
-    'has an update to', 'is located at', 'is referred to as', 'referred to as',
-    'same as', 'synonym of', 'known as', 'abbreviated as', 'stands for',
-}
-
-
-def _is_admin_entity(entity: str) -> bool:
-    """Returns True if the entity looks like administrative metadata rather than a clinical concept."""
-    for pattern in _IGNORE_PATTERNS:
-        if pattern.search(entity):
-            return True
-    return False
-
-
-def filter_clinical_triples(oie_triples_list: List[List[List[str]]]) -> List[List[List[str]]]:
-    """
-    Post-OIE filter: removes triples that:
-      1. Contain an administrative/metadata entity (author, hospital, acronym-only, etc.)
-      2. Use a purely administrative relation (e.g., 'referred to as')
-    Returns a filtered version of oie_triples_list with the same structure.
-    """
-    filtered_list = []
-    total_removed = 0
-    for triples in oie_triples_list:
-        kept = []
-        for triple in triples:
-            if len(triple) != 3:
-                continue
-            subj, rel, obj = triple
-            rel_lower = rel.strip().lower()
-            # Drop if the relation is purely administrative
-            if rel_lower in _ADMIN_RELATIONS:
-                logger.debug(f"[FILTER] Dropped admin-relation triple: {triple}")
-                total_removed += 1
-                continue
-            # Drop if subject OR object is clearly administrative metadata
-            if _is_admin_entity(subj) or _is_admin_entity(obj):
-                logger.debug(f"[FILTER] Dropped admin-entity triple: {triple}")
-                total_removed += 1
-                continue
-            kept.append(triple)
-        filtered_list.append(kept)
-    if total_removed > 0:
-        logger.info(f"[FILTER] Discarded {total_removed} non-clinical triples after OIE.")
-    return filtered_list
 
 class JinaEmbedder:
     """Wrapper that mimics SentenceTransformer.encode() but calls the Jina AI Embeddings API.
@@ -223,6 +156,36 @@ class EDC:
         else:
             self.schema = {}
 
+        # Target Entity Type Schema (standardized UMLS-aligned types for Phase 3b)
+        self.entity_type_schema_path = edc_configuration.get("target_entity_type_schema_path", None)
+        self.entity_type_schema = {}
+        
+        if self.entity_type_schema_path is not None and os.path.exists(self.entity_type_schema_path):
+            reader = csv.reader(open(self.entity_type_schema_path, "r", encoding="utf-8"))
+            for row in reader:
+                if len(row) < 2:
+                    continue
+                entity_type = row[0]
+                entity_type_def = ",".join(row[1:])
+                self.entity_type_schema[entity_type] = entity_type_def
+        else:
+            raise FileNotFoundError(f"Target entity type schema file not found at: {self.entity_type_schema_path}. Please provide a valid CSV file.")
+
+        # Path to the entity-type SC verify prompt (Phase 3b)
+        self.sc_entity_type_template_file_path = edc_configuration.get(
+            "sc_entity_type_prompt_template_file_path",
+            "./prompt_templates/sc_entity_type_template.txt"
+        )
+        # Paths to updated SD templates with entity types
+        self._sd_template_with_entities = edc_configuration.get(
+            "sd_entity_prompt_template_file_path",
+            "./prompt_templates/sd_template_with_entities.txt"
+        )
+        self._sd_few_shot_with_entities = edc_configuration.get(
+            "sd_entity_few_shot_file_path",
+            "./few_shot_examples/diabetic/sd_few_shot_examples_with_entities.txt"
+        )
+
         # Load the needed models and tokenizers
         self.needed_model_set = set(
             [self.oie_llm_name, self.sd_llm_name, self.sc_llm_name, self.sc_embedder_name, self.ee_llm_name]
@@ -240,16 +203,6 @@ class EDC:
         if not llm_utils.is_model_openai(self.oie_llm_name):
             # Load the HF model for OIE
             oie_model, oie_tokenizer = self.load_model(self.oie_llm_name, "hf")
-            # if self.oie_llm_name not in self.loaded_model_dict:
-            #     logger.info(f"Loading model {self.oie_llm_name}.")
-            #     oie_model, oie_tokenizer = (
-            #         AutoModelForCausalLM.from_pretrained(self.oie_llm_name, device_map="auto"),
-            #         AutoTokenizer.from_pretrained(self.oie_llm_name),
-            #     )
-            #     self.loaded_model_dict[self.oie_llm_name] = (oie_model, oie_tokenizer)
-            # else:
-            #     logger.info(f"Model {self.oie_llm_name} is already loaded, reusing it.")
-            #     oie_model, oie_tokenizer = self.loaded_model_dict[self.oie_llm_name]
             extractor = Extractor(oie_model, oie_tokenizer)
         else:
             extractor = Extractor(openai_model=self.oie_llm_name)
@@ -336,26 +289,24 @@ class EDC:
         if not llm_utils.is_model_openai(self.sd_llm_name):
             # Load the HF model for Schema Definition
             sd_model, sd_tokenizer = self.load_model(self.sd_llm_name, "hf")
-            # if self.sd_llm_name not in self.loaded_model_dict:
-            #     logger.info(f"Loading model {self.sd_llm_name}")
-            #     sd_model, sd_tokenizer = (
-            #         AutoModelForCausalLM.from_pretrained(self.sd_llm_name, device_map="auto"),
-            #         AutoTokenizer.from_pretrained(self.sd_llm_name),
-            #     )
-            #     self.loaded_model_dict[self.sd_llm_name] = (sd_model, sd_tokenizer)
-            #     logger.info(f"Loading model {self.sd_llm_name}.")
-            # else:
-            #     logger.info(f"Model {self.sd_llm_name} is already loaded, reusing it.")
-            #     sd_model, sd_tokenizer = self.loaded_model_dict[self.sd_llm_name]
-            schema_definer = SchemaDefiner(model=sd_model, tokenizer=sd_tokenizer)
+            schema_definer = SchemaDefiner(model=sd_model, tokenizer=sd_tokenizer, use_entity_types=True)
         else:
-            schema_definer = SchemaDefiner(openai_model=self.sd_llm_name)
+            schema_definer = SchemaDefiner(openai_model=self.sd_llm_name, use_entity_types=True)
 
-        schema_definition_few_shot_prompt_template_str = open(self.sd_template_file_path, encoding="utf-8").read()
-        schema_definition_few_shot_examples_str = open(self.sd_few_shot_example_file_path, encoding="utf-8").read()
+        # Use entity-aware template + few-shot examples
+        sd_template_path     = self._sd_template_with_entities
+        sd_few_shot_path     = self._sd_few_shot_with_entities
+        # Fall back to legacy files if new ones don't exist
+        import pathlib
+        if not pathlib.Path(sd_template_path).exists():
+            sd_template_path = self.sd_template_file_path
+            sd_few_shot_path = self.sd_few_shot_example_file_path
+
+        schema_definition_few_shot_prompt_template_str = open(sd_template_path, encoding="utf-8").read()
+        schema_definition_few_shot_examples_str        = open(sd_few_shot_path,  encoding="utf-8").read()
         schema_definition_dict_list = []
 
-        logger.info("Running Schema Definition...")
+        logger.info("Running Schema Definition (with Entity Types)...")
         for idx, oie_triplets in enumerate(tqdm(oie_triplets_list)):
             schema_definition_dict = schema_definer.define_schema(
                 input_text_list[idx],
@@ -386,31 +337,12 @@ class EDC:
         logger.info("Running Schema Canonicalization...")
 
         sc_verify_prompt_template_str = open(self.sc_template_file_path, encoding="utf-8").read()
-
-        # if self.sc_embedder_name not in self.loaded_model_dict:
-        #     logger.info(f"Loading model {self.sc_embedder_name}.")
-        #     sc_embedder = SentenceTransformer(self.sc_embedder_name, trust_remote_code=True)
-        #     self.loaded_model_dict[self.sc_embedder_name] = sc_embedder
-
-        # else:
-        #     logger.info(f"Model {self.sc_embedder_name} is already loaded, reusing it.")
-        #     sc_embedder = self.loaded_model_dict[self.sc_embedder_name]
         
         sc_embedder = self.load_model(self.sc_embedder_name, "sts")
         
 
         if not llm_utils.is_model_openai(self.sc_llm_name):
-            sc_verify_model, sc_verify_tokenizer = self.load_model(self.sc_llm_name, "sts")
-            # if self.sc_llm_name not in self.loaded_model_dict:
-            #     logger.info(f"Loading model {self.sc_llm_name}")
-            #     sc_verify_model, sc_verify_tokenizer = (
-            #         AutoModelForCausalLM.from_pretrained(self.sc_llm_name, device_map="auto"),
-            #         AutoTokenizer.from_pretrained(self.sc_llm_name),
-            #     )
-            #     self.loaded_model_dict[self.sc_llm_name] = (sc_verify_model, sc_verify_tokenizer)
-            # else:
-            #     logger.info(f"Model {self.sc_llm_name} is already loaded, reusing it.")
-            #     sc_verify_model, sc_verify_tokenizer = self.loaded_model_dict[self.sc_llm_name]
+            sc_verify_model, sc_verify_tokenizer = self.load_model(self.sc_llm_name, "hf")
             schema_canonicalizer = SchemaCanonicalizer(self.schema, sc_embedder, sc_verify_model, sc_verify_tokenizer)
         else:
             schema_canonicalizer = SchemaCanonicalizer(self.schema, sc_embedder, verify_openai_model=self.sc_llm_name)
@@ -436,6 +368,37 @@ class EDC:
             logger.debug(f"{input_text}\n, {oie_triplets} ->\n {canonicalized_triplets}")
             logger.debug(f"Retrieved candidate relations {canon_candidate_dict_list}")
         logger.info("Schema Canonicalization finished.")
+
+        # ── Phase 3b: Entity-Type Canonicalization (EDC methodology) ─────────────
+        # Use embedding search + LLM multiple-choice to align entity types
+        # extracted by Phase 2 to the standardized Target Entity Type Schema.
+        import pathlib
+        et_template_path = self.sc_entity_type_template_file_path
+        if pathlib.Path(et_template_path).exists():
+            logger.info("Running Entity-Type Canonicalization (Phase 3b)...")
+            et_canonicalizer = EntityTypeCanonicalizer(
+                target_entity_type_schema=self.entity_type_schema,
+                embedder=sc_embedder,
+                verify_openai_model=self.sc_llm_name if llm_utils.is_model_openai(self.sc_llm_name) else None,
+                verify_model=sc_verify_model if not llm_utils.is_model_openai(self.sc_llm_name) else None,
+                verify_tokenizer=sc_verify_tokenizer if not llm_utils.is_model_openai(self.sc_llm_name) else None,
+            )
+            et_verify_prompt_str = open(et_template_path, encoding="utf-8").read()
+            # Extract _entries lists from schema_definition_dict_list
+            sd_entries_per_sentence = [
+                d.get("_entries", []) if isinstance(d, dict) else []
+                for d in schema_definition_dict_list
+            ]
+            canonicalized_triplets_list, _ = et_canonicalizer.canonicalize_all(
+                input_text_list,
+                canonicalized_triplets_list,
+                sd_entries_per_sentence,
+                et_verify_prompt_str,
+                top_k=5,
+            )
+            logger.info("Entity-Type Canonicalization finished.")
+        else:
+            logger.warning(f"[Phase 3b] sc_entity_type_template not found at '{et_template_path}', skipping entity type canonicalization.")
 
         if free_model:
             logger.info(f"Freeing model {self.sc_embedder_name, self.sc_llm_name} as it is no longer needed")
@@ -625,12 +588,14 @@ class EDC:
                 previous_extracted_triplets_list=triplets_from_last_iteration,
             )
 
-            # ---------------------------------------------------------------
-            # POST-OIE UMLS FILTER: discard administrative / non-clinical triples
-            # This catches hallucinations like author names, hospitals, acronyms
-            # that slip through despite the prompt constraints.
-            # ---------------------------------------------------------------
-            oie_triplets_list = filter_clinical_triples(oie_triplets_list)
+            # ── Phase 1.5: Post-OIE Semantic Validation ──────────────────────
+            # Auto-correct directionality, discard non-entities, remove tautologies
+            validator = SemanticValidator(
+                relation_schema=self.schema,
+                entity_type_schema=self.entity_type_schema,
+            )
+            oie_raw_list = [list(triples) for triples in oie_triplets_list]  # preserve original for logging
+            oie_triplets_list = validator.validate_batch(oie_triplets_list)
 
             del required_model_dict_current_iteration["sd"]
             sd_dict_list = self.schema_definition(
@@ -639,6 +604,40 @@ class EDC:
                 free_model=self.sd_llm_name not in required_model_dict_current_iteration.values()
                 and iteration == refinement_iterations,
             )
+
+            # ── Phase 2.5: Type-based Direction Auto-Correction ──────────────────────
+            # Now that we have Entity Types from Phase 2, we can perform reliable 
+            # directionality auto-correction based on the Schema before Phase 3.
+            for idx in range(len(oie_triplets_list)):
+                oie_trips = oie_triplets_list[idx]
+                sd_dict = sd_dict_list[idx]
+                if not isinstance(sd_dict, dict) or "_entries" not in sd_dict:
+                    continue
+                sd_entries = sd_dict["_entries"]
+                
+                # Create a map for quick lookup by tuple to handle potential LLM reordering
+                entry_map = {}
+                for entry in sd_entries:
+                    key = (entry.get("subject", ""), entry.get("relation", ""), entry.get("object", ""))
+                    entry_map[key] = entry
+                
+                for i in range(len(oie_trips)):
+                    trip = oie_trips[i]
+                    if len(trip) != 3: continue
+                    key = (trip[0], trip[1], trip[2])
+                    if key in entry_map:
+                        entry = entry_map[key]
+                        subj_type = entry.get("subject_type", "")
+                        obj_type = entry.get("object_type", "")
+                        
+                        corrected_trip, c_subj, c_obj = validator.try_auto_correct_direction_by_type(
+                            trip, subj_type, obj_type
+                        )
+                        if corrected_trip != trip:
+                            oie_trips[i] = corrected_trip
+                            # Update the sd_entry so Phase 3b Canonicalization sees the swapped types
+                            entry["subject"], entry["object"] = entry["object"], entry["subject"]
+                            entry["subject_type"], entry["object_type"] = entry["object_type"], entry["subject_type"]
 
             del required_model_dict_current_iteration["sc_embed"]
             del required_model_dict_current_iteration["sc_verify"]
@@ -670,6 +669,7 @@ class EDC:
                     "input_text": input_text_list[idx],
                     "entity_hint": entity_hint_list[idx],
                     "relation_hint": relation_hint_list[idx],
+                    "oie_raw": oie_raw_list[idx],
                     "oie": oie_triplets_list[idx],
                     "schema_definition": sd_dict_list[idx],
                     "canonicalization_candidates": str(canon_candidate_dict_list[idx]),

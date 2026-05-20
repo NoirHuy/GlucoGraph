@@ -14,11 +14,11 @@ Example 4 (demonstrates RULE 1b — DIRECTIONALITY 'manifestation of': COMPLICAT
 Text: Diabetic neuropathy and diabetic retinopathy are serious microvascular complications of diabetes mellitus. Prediabetes often precedes type 2 diabetes.
 Triplets: [['diabetic neuropathy', 'manifestation of', 'diabetes mellitus'], ['diabetic retinopathy', 'manifestation of', 'diabetes mellitus'], ['prediabetes', 'may be associated disease of disease', 'type 2 diabetes mellitus']]
 
-Example 5 (demonstrates RULE 1c — DIRECTIONALITY CRITICAL: a treatment/intervention improving a condition means the DISEASE is treated BY that intervention; NEVER say the intervention 'may be treated by' the disease):
+Example 5 (demonstrates RULE 1c — a treatment improving a condition means the DISEASE is treated BY that intervention):
 Text: Weight loss improves many of the cardiometabolic components of adiposity-based chronic disease, including increased glycemia, dyslipidemia, elevated blood pressure, cardiovascular disease, and sleep apnea.
 Triplets: [['increased glycemia', 'may be treated by', 'weight loss'], ['dyslipidemia', 'may be treated by', 'weight loss'], ['elevated blood pressure', 'may be treated by', 'weight loss'], ['cardiovascular disease', 'may be treated by', 'weight loss'], ['sleep apnea', 'may be treated by', 'weight loss']]
 
-Example 6 (demonstrates RULE 1d — DIRECTIONALITY for drugs/medications: the DISEASE takes 'may be treated by' DRUG; NEVER reverse this; WRONG: ['metformin', 'may be treated by', 'Type 2 Diabetes']):
+Example 6 (demonstrates RULE 1d — DISEASE → may be treated by → DRUG, NEVER reverse):
 Text: Thiazolidinediones, alpha-glucosidase inhibitors, metformin, and sulfonylureas are antihyperglycemic agents used in the management of Type 2 Diabetes.
 Triplets: [['Type 2 Diabetes', 'may be treated by', 'thiazolidinediones'], ['Type 2 Diabetes', 'may be treated by', 'alpha-glucosidase inhibitors'], ['Type 2 Diabetes', 'may be treated by', 'metformin'], ['Type 2 Diabetes', 'may be treated by', 'sulfonylureas']]
 
@@ -26,38 +26,63 @@ Example 7 (demonstrates RULE 2 — ATOMICITY):
 Text: The choice of antihyperglycemic therapy for Type 2 Diabetes reflects atherosclerotic cardiovascular disease, congestive heart failure, and chronic kidney disease.
 Triplets: [['Type 2 Diabetes', 'may be treated by', 'antihyperglycemic therapy'], ['Type 2 Diabetes', 'co-occurs with', 'atherosclerotic cardiovascular disease'], ['Type 2 Diabetes', 'co-occurs with', 'congestive heart failure'], ['Type 2 Diabetes', 'co-occurs with', 'chronic kidney disease']]
 
-Example 8 (demonstrates RULE 4 KEY PATTERN — when 'algorithm/guideline' is the SUBJECT/narrator, you MUST still extract the clinical triplets it describes):
+Example 8 (demonstrates RULE 4 — algorithm as narrator, extract actual clinical facts):
 Text: The 2023 diabetes algorithm update emphasizes lifestyle modification and treatment of overweight/obesity as key pillars in the management of prediabetes and diabetes mellitus.
 Triplets: [['prediabetes', 'may be treated by', 'lifestyle modification'], ['prediabetes', 'may be treated by', 'treatment of overweight/obesity'], ['diabetes mellitus', 'may be treated by', 'lifestyle modification'], ['diabetes mellitus', 'may be treated by', 'treatment of overweight/obesity']]
 
-Example 9 (demonstrates RULE 4 KEY PATTERN — 'algorithm highlights' is just context, extract the clinical facts):
-Text: The 2023 diabetes algorithm update highlights the importance of appropriate management of the atherosclerotic risk factors of dyslipidemia and hypertension for patients with diabetes mellitus.
-Triplets: [['diabetes mellitus', 'associated condition of', 'dyslipidemia'], ['diabetes mellitus', 'associated condition of', 'hypertension']]
-
-Example 10 (demonstrates RULE 4 — Algorithm as NARRATOR with explicit drug recommendation):
-Text: The 2022 AACE Clinical Practice Guidelines recommend that clinicians prescribe a glucagon-like peptide-1 receptor agonist or a sodium glucose cotransporter 2 inhibitor for Type 2 Diabetes patients with established or high risk for atherosclerotic cardiovascular disease, heart failure, and/or chronic kidney disease.
-Triplets: [['Type 2 Diabetes', 'may be treated by', 'glucagon-like peptide-1 receptor agonist'], ['Type 2 Diabetes', 'may be treated by', 'sodium glucose cotransporter 2 inhibitor'], ['Type 2 Diabetes', 'co-occurs with', 'atherosclerotic cardiovascular disease'], ['Type 2 Diabetes', 'co-occurs with', 'heart failure'], ['Type 2 Diabetes', 'co-occurs with', 'chronic kidney disease']]
-
-Example 11 (demonstrates 'increases risk of' relation):
-Text: Excess weight results in insulin resistance and increases the risk for prediabetes and Type 2 Diabetes.
-Triplets: [['excess weight', 'increases risk of', 'prediabetes'], ['excess weight', 'increases risk of', 'Type 2 Diabetes'], ['insulin resistance', 'may be finding of disease', 'excess weight']]
-
-Example 12 (demonstrates RULE 5 — ABSTRACT LOGIC CHECK):
+Example 9 (demonstrates RULE 5 — glycemic control is a METRIC, not a disease):
 Text: Glycemic control has an essential role in the prevention and decreased progression of Type 2 Diabetes complications.
 Triplets: [['Type 2 Diabetes', 'has evaluation', 'glycemic control']]
 
-Example 13 (demonstrates IGNORE — historical/contextual narrative with NO explicit disease relation):
-Text: At the time of the first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control, thiazolidinediones, alpha-glucosidase inhibitors, metformin, and sulfonylureas/glinides were in use.
-Triplets: []
+Example 10 (demonstrates RULE 6 — COMPARISON/PREFERENCE — 'preferred over' is NOT 'contraindicated'):
+Text: Analog insulins, including detemir, glargine, or degludec, are preferred over human insulins, such as neutral protamine Hagedorn (NPH), to reduce hypoglycemia in patients with diabetes.
+Triplets: [['diabetes', 'may be treated by', 'detemir'], ['diabetes', 'may be treated by', 'glargine'], ['diabetes', 'may be treated by', 'degludec'], ['detemir', 'is preferred over', 'NPH'], ['glargine', 'is preferred over', 'NPH'], ['degludec', 'is preferred over', 'NPH'], ['NPH', 'has adverse effect', 'hypoglycemia']]
 
-Example 14 (demonstrates IGNORE — administrative sentence with no clinical content):
+Example 11 (demonstrates RULE 6 — another preference pattern):
+Text: Rapid-acting insulin analogs are preferred over human insulin preparations, such as regular insulin, because of their comparatively earlier onset of action.
+Triplets: [['rapid-acting insulin analogs', 'is preferred over', 'regular insulin']]
+
+Example 12 (demonstrates RULE 7 — DRUG DISCONTINUATION):
+Text: After basal insulin is initiated, discontinuation of Sulfonylureas (SUs) is recommended for patients with diabetes.
+Triplets: [['diabetes', 'may be treated by', 'basal insulin'], ['sulfonylureas', 'should be discontinued with', 'basal insulin']]
+
+Example 13 (demonstrates RULE 7 — DOSE TITRATION with conditions):
+Text: The basal insulin dose can be increased by 20% if the fasting blood glucose is >180 mg/dL.
+Triplets: [['basal insulin', 'has dose adjustment', 'increase by 20%'], ['fasting blood glucose', 'has clinical threshold', '>180 mg/dL']]
+
+Example 14 (demonstrates RULE 7 — DOSE DECREASE for hypoglycemia):
+Text: The basal insulin dose should be decreased by 10% to 20% if the patient experiences fasting hypoglycemia with a fasting blood glucose <70 mg/dL.
+Triplets: [['basal insulin', 'has dose adjustment', 'decrease by 10% to 20%'], ['fasting blood glucose', 'has clinical threshold', '<70 mg/dL'], ['basal insulin', 'has adverse effect', 'hypoglycemia']]
+
+Example 15 (demonstrates RULE 7 — CLINICAL THRESHOLD for glycemic target):
+Text: Basal insulin should be titrated every 2 to 3 days to reach glycemic targets with a goal fasting blood glucose of <110 mg/dL without hypoglycemia.
+Triplets: [['diabetes', 'may be treated by', 'basal insulin'], ['fasting blood glucose', 'has clinical threshold', '<110 mg/dL'], ['basal insulin', 'has adverse effect', 'hypoglycemia']]
+
+Example 16 (demonstrates ADVERSE EFFECT — 'may increase hypoglycemia' means has adverse effect):
+Text: Premixed insulin requires fewer injections than other insulin regimens for patients with diabetes, but it also has less flexibility for dosing adjustments and may increase hypoglycemia in patients with diabetes.
+Triplets: [['diabetes', 'may be treated by', 'premixed insulin'], ['premixed insulin', 'has adverse effect', 'hypoglycemia']]
+
+Example 17 (demonstrates COMBINATION therapy and SUBSTITUTION):
+Text: Fixed-dose Glucagon-Like Peptide-1 Receptor Agonist (GLP-1 RA) and basal insulin combinations can provide improved glycemic control when basal insulin alone has not achieved targets for patients with diabetes.
+Triplets: [['diabetes', 'may be treated by', 'GLP-1 RA'], ['diabetes', 'may be treated by', 'basal insulin'], ['diabetes', 'has evaluation', 'glycemic control']]
+
+Example 18 (demonstrates PRANDIAL INSULIN dosing):
+Text: Prandial insulin can be initiated at the largest meal at 10% of the basal insulin dose or 5 units, with stepwise addition to other meals as additional glycemic control is needed for patients with diabetes.
+Triplets: [['diabetes', 'may be treated by', 'prandial insulin'], ['prandial insulin', 'has dose adjustment', '10% of basal insulin dose or 5 units'], ['diabetes', 'has evaluation', 'glycemic control']]
+
+Example 19 (demonstrates IGNORE — administrative sentence):
 Text: Susan L. Samson, MD, PhD, FACE is the Chair of the Task Force for the American Association of Clinical Endocrinology.
 Triplets: []
 
-Example 15 (demonstrates RULE 4 WRONG EXTRACTION — algorithmic process description providing only visual/navigational guidance is NOT a clinical treatment; output EMPTY):
-Text: The 2023 Algorithm provides visual guidance and an easy-to-use roadmap for management of Type 2 Diabetes in clinic settings.
-Triplets: []
+Example 20 (demonstrates 'increases risk of' relation):
+Text: Excess weight results in insulin resistance and increases the risk for prediabetes and Type 2 Diabetes.
+Triplets: [['excess weight', 'increases risk of', 'prediabetes'], ['excess weight', 'increases risk of', 'Type 2 Diabetes'], ['insulin resistance', 'may be finding of disease', 'excess weight']]
 
-Example 16 (demonstrates RULE for 'has contraindicated drug' — ONLY real DRUGS are contraindicated objects; lifestyle/non-pharmacological interventions like 'weight loss' are NEVER contraindicated drugs):
-Text: Lifestyle intervention to achieve weight loss is a key pillar of the comprehensive treatment of persons with prediabetes to decrease progression to Type 2 Diabetes.
-Triplets: [['prediabetes', 'may be treated by', 'lifestyle intervention'], ['prediabetes', 'may be associated disease of disease', 'Type 2 Diabetes']]
+Example 21 (demonstrates PREMEAL GLUCOSE TITRATION — dose adjustment based on glucose level):
+Text: For patients with diabetes, if the pre-midday meal glucose is greater than 110 mg/dL, the morning meal dose of prandial insulin should be increased by 10% to 20%.
+Triplets: [['prandial insulin', 'has dose adjustment', 'increase by 10% to 20%'], ['premeal glucose', 'has clinical threshold', '>110 mg/dL']]
+
+Example 22 (demonstrates HYPOGLYCEMIA education — symptom relationship):
+Text: Patients with diabetes mellitus who are on insulin, as well as their families and companions, should be educated on the symptoms and treatment of hypoglycemia, which is characterized by a glucose level of less than 70 mg/dL.
+Triplets: [['diabetes mellitus', 'may be treated by', 'insulin'], ['hypoglycemia', 'may be finding of disease', 'diabetes mellitus'], ['glucose level', 'has clinical threshold', '<70 mg/dL']]
+
