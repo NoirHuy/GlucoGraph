@@ -593,9 +593,10 @@ class EDC:
             validator = SemanticValidator(
                 relation_schema=self.schema,
                 entity_type_schema=self.entity_type_schema,
+                embedder=self.load_model(self.sc_embedder_name, "sts"),
             )
             oie_raw_list = [list(triples) for triples in oie_triplets_list]  # preserve original for logging
-            oie_triplets_list = validator.validate_batch(oie_triplets_list)
+            oie_triplets_list = validator.validate_batch(oie_triplets_list, input_text_list)
 
             del required_model_dict_current_iteration["sd"]
             sd_dict_list = self.schema_definition(

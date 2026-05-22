@@ -86,3 +86,13 @@ Example 22 (demonstrates HYPOGLYCEMIA education — symptom relationship):
 Text: Patients with diabetes mellitus who are on insulin, as well as their families and companions, should be educated on the symptoms and treatment of hypoglycemia, which is characterized by a glucose level of less than 70 mg/dL.
 Triplets: [['diabetes mellitus', 'may be treated by', 'insulin'], ['hypoglycemia', 'may be finding of disease', 'diabetes mellitus'], ['glucose level', 'has clinical threshold', '<70 mg/dL']]
 
+Example 23 (demonstrates RULE 8 — STRICT TEXTUAL ANCHORING — DO NOT assume or hallucinate target diseases):
+Text: The 2023 American Association of Clinical Endocrinology algorithm provides convenient tables summarizing the benefits and risks of antihyperglycemic medications and weight-loss pharmacotherapy.
+Triplets: []
+Explanation: Although "antihyperglycemic medications" and "weight-loss pharmacotherapy" are mentioned, the sentence does not specify what disease they are treating. Do not invent or assume "Type 2 Diabetes" out of thin air. Since no target disease is explicitly mentioned in the text, do not extract any "may be treated by" triples.
+
+Example 24 (demonstrates RULE 8 — STRICT TEXTUAL ANCHORING — DO NOT hallucinate diseases):
+Text: The first iteration of the American Association of Clinical Endocrinology algorithm for glycemic control also included the addition of exenatide and dipeptidyl peptidase-4 inhibitors.
+Triplets: []
+Explanation: While exenatide and dipeptidyl peptidase-4 inhibitors are treatments, the sentence does not state what disease they treat. Do not assume "Type 2 Diabetes" as a subject or object. Extract nothing if no explicit disease is mentioned.
+

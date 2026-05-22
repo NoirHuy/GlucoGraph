@@ -112,6 +112,17 @@ RULE 7 — CONDITIONAL/TITRATION/DOSE PATTERN (NEW):
   ✓ CORRECT: ['diabetes', 'may be treated by', 'basal insulin']
              ['sulfonylureas', 'should be discontinued with', 'basal insulin']
 
+RULE 8 — STRICT TEXTUAL ANCHORING (No Hallucinated/Outside Entities):
+  Every Entity (Subject and Object) in your extracted triples MUST be explicitly 
+  mentioned or directly derived from the words in the provided text. 
+  NEVER introduce outside diseases, drugs, or clinical concepts (such as "Type 2 Diabetes" 
+  or "lifestyle modification") that are not mentioned in the sentence, even if you know 
+  they are the general topic of the guidelines. 
+  If a sentence only mentions general categories of drugs (like "antihyperglycemic medications") 
+  without a specific target disease, DO NOT hallucinate the target disease. If no specific 
+  disease is mentioned, do not extract "may be treated by" triples containing outside diseases.
+
+
 ════════════════════════════════════════════════
 PART 4: ALLOWED RELATIONAL SCHEMA (Domain → Range)
 ════════════════════════════════════════════════
