@@ -108,6 +108,16 @@ if __name__ == "__main__":
         action="store_true",
         help="Whether un-canonicalizable relations should be added to the schema.",
     )
+    parser.add_argument(
+        "--umls_api_key",
+        default=os.environ.get("UMLS_API_KEY", ""),
+        help="UMLS API Key to search and query UTS REST API for concept normalization.",
+    )
+    parser.add_argument(
+        "--run_umls_normalization",
+        action="store_true",
+        help="Enable UMLS post-processing and mapping after generating canon_kg.txt",
+    )
 
     # Output setting
     parser.add_argument("--output_dir", default="./output/tmp", help="Directory to output to.")

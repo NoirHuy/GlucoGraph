@@ -15,8 +15,8 @@ Text: Diabetic neuropathy and diabetic retinopathy are serious microvascular com
 Triplets: [['diabetic neuropathy', 'manifestation of', 'diabetes mellitus'], ['diabetic retinopathy', 'manifestation of', 'diabetes mellitus'], ['prediabetes', 'may be associated disease of disease', 'type 2 diabetes mellitus']]
 
 Example 5 (demonstrates RULE 1c — a treatment improving a condition means the DISEASE is treated BY that intervention):
-Text: Weight loss improves many of the cardiometabolic components of adiposity-based chronic disease, including increased glycemia, dyslipidemia, elevated blood pressure, cardiovascular disease, and sleep apnea.
-Triplets: [['increased glycemia', 'may be treated by', 'weight loss'], ['dyslipidemia', 'may be treated by', 'weight loss'], ['elevated blood pressure', 'may be treated by', 'weight loss'], ['cardiovascular disease', 'may be treated by', 'weight loss'], ['sleep apnea', 'may be treated by', 'weight loss']]
+Text: Weight loss improves many of the cardiometabolic and biomechanical components of adiposity-based chronic disease, including increased glycemia, dyslipidemia, elevated blood pressure, cardiovascular disease, nonalcoholic fatty liver disease, sleep apnea, and osteoarthritis.
+Triplets: [['increased glycemia', 'may be treated by', 'weight loss'], ['dyslipidemia', 'may be treated by', 'weight loss'], ['elevated blood pressure', 'may be treated by', 'weight loss'], ['cardiovascular disease', 'may be treated by', 'weight loss'], ['nonalcoholic fatty liver disease', 'may be treated by', 'weight loss'], ['sleep apnea', 'may be treated by', 'weight loss'], ['osteoarthritis', 'may be treated by', 'weight loss']]
 
 Example 6 (demonstrates RULE 1d — DISEASE → may be treated by → DRUG, NEVER reverse):
 Text: Thiazolidinediones, alpha-glucosidase inhibitors, metformin, and sulfonylureas are antihyperglycemic agents used in the management of Type 2 Diabetes.

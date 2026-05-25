@@ -4,6 +4,7 @@ from edc.schema_canonicalization import SchemaCanonicalizer
 from edc.entity_extraction import EntityExtractor
 from edc.entity_type_canonicalization import EntityTypeCanonicalizer
 from edc.semantic_validator import SemanticValidator
+from edc.umls_normalizer import UMLSNormalizer
 import edc.utils.llm_utils as llm_utils
 from typing import List
 from edc.utils.e5_mistral_utils import MistralForSequenceEmbedding
@@ -192,6 +193,9 @@ class EDC:
         )
 
         self.loaded_model_dict = {}
+
+        self.umls_api_key = edc_configuration.get("umls_api_key", "")
+        self.run_umls_normalization = edc_configuration.get("run_umls_normalization", False)
 
         logging.basicConfig(level=edc_configuration["loglevel"])
 
@@ -594,6 +598,8 @@ class EDC:
                 relation_schema=self.schema,
                 entity_type_schema=self.entity_type_schema,
                 embedder=self.load_model(self.sc_embedder_name, "sts"),
+                oie_few_shot_file_path=self.oie_few_shot_example_file_path,
+                sd_few_shot_file_path=self._sd_few_shot_with_entities,
             )
             oie_raw_list = [list(triples) for triples in oie_triplets_list]  # preserve original for logging
             oie_triplets_list = validator.validate_batch(oie_triplets_list, input_text_list)
@@ -686,5 +692,17 @@ class EDC:
                 if idx != len(canon_triplets_list) - 1:
                     final_result_file.write("\n")
                 final_result_file.flush()
+            final_result_file.close()
+
+            # --- Phase 4: UMLS Normalization Post-Processing ---
+            if self.run_umls_normalization:
+                logger.info(f"Iteration {iteration}: Running UMLS Entity Mapping and Normalization...")
+                cache_file_path = os.path.join(output_dir, "umls_cache.json") if output_dir else "./output/umls_cache.json"
+                normalizer = UMLSNormalizer(api_key=self.umls_api_key, cache_path=cache_file_path)
+                normalizer.normalize_file(
+                    input_file_path=f"{iteration_result_dir}/canon_kg.txt",
+                    output_json_path=f"{iteration_result_dir}/canon_kg_umls.json",
+                    output_txt_path=f"{iteration_result_dir}/canon_kg_umls.txt"
+                )
 
         return canon_triplets_list

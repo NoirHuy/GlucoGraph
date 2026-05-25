@@ -2,73 +2,26 @@
 Post-OIE Semantic Validator for EDC Pipeline.
 
 This module provides data-driven validation of extracted triples AFTER the OIE
-phase and BEFORE Schema Definition. It uses domain/range constraints derived
-from the relation schema CSV and entity type schema CSV to:
+phase and BEFORE Schema Definition. It uses domain/range constraints and literal
+roles dynamically parsed from configured few-shot examples at startup to:
 
-1. Auto-correct directionality errors for known relation patterns.
+1. Auto-correct directionality errors for known relation patterns dynamically.
 2. Discard triples with non-entity objects (bare adjectives, abstract words).
 3. Discard triples that violate domain/range type constraints.
 
-All rules are driven by CSV schemas — NO hardcoded entity lists.
+All rules are dynamically learned from files — NO hardcoded entity or relation maps.
 """
 
 import re
 import logging
 import csv
+import os
+import ast
+import json
 import numpy as np
 from typing import List, Dict, Optional, Tuple
 
 logger = logging.getLogger(__name__)
-
-
-# ──────────────────────────────────────────────────────────────────────────────
-# Domain/Range Constraint Definitions (data-driven)
-# ──────────────────────────────────────────────────────────────────────────────
-# Each entry maps a relation name to its allowed (subject_type, object_type).
-# These are inferred from the relation definitions in the schema CSV.
-# 'ANY' means any entity type is allowed in that slot.
-RELATION_DOMAIN_RANGE = {
-    "may be treated by":             ("Disease",         "Drug"),
-    "has contraindicated drug":      ("Disease",         "Drug"),
-    "manifestation of":              ("Disease",         "Disease"),
-    "associated condition of":       ("Disease",         "Disease"),
-    "co-occurs with":               ("Disease",         "Disease"),
-    "may be associated disease of disease": ("Disease",  "Disease"),
-    "has finding site":              ("Disease",         "Anatomical Site"),
-    "disease has associated anatomic site": ("Disease",  "Anatomical Site"),
-    "disease has primary anatomic site":    ("Disease",  "Anatomical Site"),
-    "has evaluation":                ("Disease",         "Clinical Metric"),
-    "increases risk of":             ("Disease",         "Disease"),
-    "may be finding of disease":     ("Symptom",         "Disease"),
-    "associated finding of":         ("Symptom",         "Disease"),
-    "is preferred over":             ("Drug",            "Drug"),
-    "has adverse effect":            ("Drug",            "Symptom"),
-    "has dose adjustment":           ("Drug",            "Dosage Value"),
-    "has clinical threshold":        ("Clinical Metric", "Dosage Value"),
-    "may be substituted by":         ("Drug",            "Drug"),
-    "should be discontinued with":   ("Drug",            "Drug"),
-    "cause of":                      ("ANY",             "Disease"),
-    "component of":                  ("ANY",             "ANY"),
-    "has subtype":                   ("ANY",             "ANY"),
-    "is subtype of":                 ("ANY",             "ANY"),
-    "member of":                     ("ANY",             "ANY"),
-    "clinically associated with":    ("ANY",             "ANY"),
-    "differential diagnosis of":     ("Disease",         "Disease"),
-    "is classified as":              ("ANY",             "ANY"),
-}
-
-# Relations where swapping subject/object is a known auto-correction based on entity types.
-# For example, if 'may be treated by' has 'Drug' as subject and 'Disease' as object, they should be swapped.
-SWAPPABLE_RELATIONS = {
-    "may be treated by": {
-        "wrong_subject": ["Drug", "Treatment Procedure"],
-        "wrong_object": ["Disease", "Symptom"]
-    },
-    "has evaluation": {
-        "wrong_subject": ["Clinical Metric"],
-        "wrong_object": ["Disease", "Symptom"]
-    }
-}
 
 
 class SemanticValidator:
@@ -77,8 +30,8 @@ class SemanticValidator:
 
     Validates and optionally auto-corrects extracted triples based on:
     - Non-entity detection (bare adjectives, abstract non-clinical words)
-    - Directionality auto-correction for known swappable patterns
-    - Domain/range constraint checking (optional, used when entity types are available)
+    - Directionality auto-correction dynamically learned from few-shot examples
+    - Domain/range constraint checking derived dynamically from entity-typed examples
     """
 
     # Patterns that indicate the "entity" is NOT a real clinical entity
@@ -86,7 +39,7 @@ class SemanticValidator:
         # Bare adjectives/comparatives without clinical meaning
         re.compile(r'^(longer|shorter|fewer|more|less|better|worse|higher|lower|larger|smaller|faster|slower|earlier|later|greater|adequate|increased|decreased)$', re.IGNORECASE),
         # Single generic words that are not entities
-        re.compile(r'^(simplicity|flexibility|adherence|compliance|convenience|complexity|tolerability|efficacy|safety|benefit|risk|cost|algorithm|guideline)$', re.IGNORECASE),
+        re.compile(r'^(simplicity|flexibility|adherence|compliance|convenience|complexity|tolerability|efficacy|safety|benefit|risk|cost|algorithm|guideline|management|therapy|treatment|intervention|interventions|proposed interventions|overall health|guidance|care|approach)$', re.IGNORECASE),
         # Empty or whitespace-only strings
         re.compile(r'^\s*$'),
     ]
@@ -96,12 +49,16 @@ class SemanticValidator:
         relation_schema: Optional[Dict[str, str]] = None,
         entity_type_schema: Optional[Dict[str, str]] = None,
         embedder = None,
+        oie_few_shot_file_path: Optional[str] = None,
+        sd_few_shot_file_path: Optional[str] = None,
     ):
         """
         Args:
-            relation_schema:    Dict from relation CSV {relation_name: definition}
-            entity_type_schema: Dict from entity type CSV {type_name: definition}
-            embedder:           Optional SentenceTransformer/Embedder for dynamic zero-shot classification
+            relation_schema:        Dict from relation CSV {relation_name: definition}
+            entity_type_schema:     Dict from entity type CSV {type_name: definition}
+            embedder:               Optional SentenceTransformer/Embedder for dynamic zero-shot classification
+            oie_few_shot_file_path: Path to oie_few_shot_examples.txt to dynamically learn literal roles
+            sd_few_shot_file_path:  Path to sd_few_shot_examples_with_entities.txt to dynamically learn type constraints
         """
         self.relation_schema = relation_schema or {}
         self.entity_type_schema = entity_type_schema or {}
@@ -109,6 +66,71 @@ class SemanticValidator:
 
         # Build the set of known relation names from the schema for quick lookup
         self.known_relations = set(self.relation_schema.keys())
+
+        # ────────────────────────────────────────────────────────────────────────
+        # Dynamic Few-Shot Role & Type Loader
+        # ────────────────────────────────────────────────────────────────────────
+        self.relation_subjects = {}  # rel -> set of lowercased literal subjects
+        self.relation_objects = {}   # rel -> set of lowercased literal objects
+        self.relation_subj_types = {}  # rel -> set of subject_types
+        self.relation_obj_types = {}   # rel -> set of object_types
+
+        # 1. Parse literal entity roles from OIE few-shot examples
+        if oie_few_shot_file_path and os.path.exists(oie_few_shot_file_path):
+            try:
+                with open(oie_few_shot_file_path, "r", encoding="utf-8") as f:
+                    for line in f:
+                        if "Triplets:" in line:
+                            triplets_part = line.split("Triplets:", 1)[1].strip()
+                            try:
+                                triplets = ast.literal_eval(triplets_part)
+                                for triple in triplets:
+                                    if len(triple) == 3:
+                                        subj, rel, obj = triple
+                                        rel_lower = rel.strip().lower()
+                                        if rel_lower not in self.relation_subjects:
+                                            self.relation_subjects[rel_lower] = set()
+                                            self.relation_objects[rel_lower] = set()
+                                        self.relation_subjects[rel_lower].add(subj.strip().lower())
+                                        self.relation_objects[rel_lower].add(obj.strip().lower())
+                            except Exception as e:
+                                logger.warning(f"[VALIDATOR] Failed to parse few-shot triplet line: {line.strip()}. Error: {e}")
+                logger.info(f"[VALIDATOR] Dynamically loaded literal rules for {len(self.relation_subjects)} relations from OIE few-shot.")
+            except Exception as e:
+                logger.error(f"[VALIDATOR] Error loading OIE few-shot roles: {e}")
+
+        # 2. Parse expected subject/object entity types from SD few-shot examples
+        if sd_few_shot_file_path and os.path.exists(sd_few_shot_file_path):
+            try:
+                with open(sd_few_shot_file_path, "r", encoding="utf-8") as f:
+                    content = f.read()
+                
+                decoder = json.JSONDecoder()
+                idx = 0
+                while True:
+                    idx = content.find('[', idx)
+                    if idx == -1:
+                        break
+                    try:
+                        obj_list, end = decoder.raw_decode(content[idx:])
+                        if isinstance(obj_list, list):
+                            for entry in obj_list:
+                                if isinstance(entry, dict):
+                                    rel = entry.get("relation", "").strip().lower()
+                                    s_type = entry.get("subject_type", "").strip()
+                                    o_type = entry.get("object_type", "").strip()
+                                    if rel and s_type and o_type:
+                                        if rel not in self.relation_subj_types:
+                                            self.relation_subj_types[rel] = set()
+                                            self.relation_obj_types[rel] = set()
+                                        self.relation_subj_types[rel].add(s_type)
+                                        self.relation_obj_types[rel].add(o_type)
+                        idx += end
+                    except json.JSONDecodeError:
+                        idx += 1
+                logger.info(f"[VALIDATOR] Dynamically loaded type constraints for {len(self.relation_subj_types)} relations from SD few-shot.")
+            except Exception as e:
+                logger.error(f"[VALIDATOR] Error loading SD few-shot types: {e}")
 
         # Detect if it's an instruction-based API embedder (e.g. Qwen3-Embedding or Jina)
         self.is_instruction_model = False
@@ -148,6 +170,23 @@ class SemanticValidator:
         for pattern in self._NON_ENTITY_PATTERNS:
             if pattern.match(entity_str.strip()):
                 return True
+        return False
+
+    def _matches_set(self, entity: str, entity_set: set) -> bool:
+        """Check if an entity matches any element in the set (with substring/overlap allowance)."""
+        entity_clean = entity.strip().lower()
+        if not entity_clean:
+            return False
+            
+        # Exact match
+        if entity_clean in entity_set:
+            return True
+            
+        # Substring matching to handle minor variations (e.g. 'insulin' matching 'basal insulin')
+        for item in entity_set:
+            if item in entity_clean or entity_clean in item:
+                if len(entity_clean) >= 3 and len(item) >= 3:
+                    return True
         return False
 
     def _is_lexically_anchored(self, entity_str: str, input_text: str = "") -> bool:
@@ -235,7 +274,7 @@ class SemanticValidator:
         self, triple: List[str], subj_type: str, obj_type: str
     ) -> Tuple[List[str], str, str]:
         """
-        Auto-correct directionality based on predefined Entity Types instead of keywords.
+        Auto-correct directionality based on dynamically learned Entity Types.
         Runs AFTER Schema Definition/Canonicalization when types are known.
         
         Args:
@@ -252,19 +291,21 @@ class SemanticValidator:
         subj, rel, obj = triple
         rel_lower = rel.strip().lower()
 
-        if rel_lower in SWAPPABLE_RELATIONS:
-            rule = SWAPPABLE_RELATIONS[rel_lower]
-            wrong_subjects = rule.get("wrong_subject", [])
-            wrong_objects = rule.get("wrong_object", [])
-            
-            # If the current types match the exact "wrong" pattern, we flip them
-            if subj_type in wrong_subjects and obj_type in wrong_objects:
-                logger.debug(
-                    f"[VALIDATOR] Type-based direction auto-corrected: "
-                    f"[{subj} ({subj_type}), {rel}, {obj} ({obj_type})] → "
-                    f"[{obj} ({obj_type}), {rel}, {subj} ({subj_type})]"
-                )
-                return [obj, rel, subj], obj_type, subj_type
+        if rel_lower in self.relation_subj_types:
+            allowed_subj_types = self.relation_subj_types[rel_lower]
+            allowed_obj_types = self.relation_obj_types[rel_lower]
+
+            # Verify the relation has asymmetric/distinct subject/object types (no overlap)
+            intersection = allowed_subj_types.intersection(allowed_obj_types)
+            if not intersection:
+                # If the current types match the inverted pattern (subj has obj type, obj has subj type)
+                if subj_type in allowed_obj_types and obj_type in allowed_subj_types:
+                    logger.debug(
+                        f"[VALIDATOR] Dynamic type-based direction auto-corrected: "
+                        f"[{subj} ({subj_type}), {rel}, {obj} ({obj_type})] → "
+                        f"[{obj} ({obj_type}), {rel}, {subj} ({subj_type})]"
+                    )
+                    return [obj, rel, subj], obj_type, subj_type
 
         return triple, subj_type, obj_type
 
@@ -309,26 +350,33 @@ class SemanticValidator:
             logger.debug(f"[VALIDATOR] Discarded hallucinated object (not in source text): '{obj}' in {triple}")
             return None
 
-        # Check 5: Dynamic schema-driven direction auto-correction fallback
-        # This acts as an early safety net (Phase 1.5) before Phase 2, or as a fallback
-        # if Phase 2 fails. It uses zero-shot semantic matching against schema definitions.
-        if self.embedder and rel.strip().lower() in SWAPPABLE_RELATIONS:
-            rel_lower = rel.strip().lower()
-            rule = SWAPPABLE_RELATIONS[rel_lower]
-            wrong_subjects = rule.get("wrong_subject", [])
-            wrong_objects = rule.get("wrong_object", [])
-
-            # Predict types semantically
-            subj_type = self._predict_entity_type(subj)
-            obj_type = self._predict_entity_type(obj)
-
-            if subj_type in wrong_subjects and obj_type in wrong_objects:
-                logger.debug(
-                    f"[VALIDATOR] Early dynamic semantic direction auto-corrected: "
-                    f"[{subj} ({subj_type}), {rel}, {obj} ({obj_type})] → "
-                    f"[{obj} ({obj_type}), {rel}, {subj} ({subj_type})]"
-                )
-                return [obj, rel, subj]
+        # Check 5: Dynamic literal string direction auto-correction based on OIE few-shot parsing
+        rel_lower = rel.strip().lower()
+        if rel_lower in self.relation_subjects:
+            subj_set = self.relation_subjects[rel_lower]
+            obj_set = self.relation_objects[rel_lower]
+            
+            # Compute asymmetric overlap of subjects and objects to verify this is an asymmetric relation
+            intersection = subj_set.intersection(obj_set)
+            union = subj_set.union(obj_set)
+            overlap_ratio = len(intersection) / len(union) if union else 0.0
+            
+            if overlap_ratio < 0.3:
+                subj_clean = subj.strip().lower()
+                obj_clean = obj.strip().lower()
+                
+                a_matches_obj = self._matches_set(subj_clean, obj_set)
+                b_matches_subj = self._matches_set(obj_clean, subj_set)
+                
+                a_matches_subj = self._matches_set(subj_clean, subj_set)
+                b_matches_obj = self._matches_set(obj_clean, obj_set)
+                
+                if a_matches_obj and b_matches_subj and not (a_matches_subj and b_matches_obj):
+                    logger.debug(
+                        f"[VALIDATOR] Dynamic literal direction auto-corrected: "
+                        f"[{subj}, {rel}, {obj}] → [{obj}, {rel}, {subj}]"
+                    )
+                    return [obj, rel, subj]
 
         return [subj, rel, obj]
 

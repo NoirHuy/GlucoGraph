@@ -95,6 +95,11 @@ class SchemaDefiner:
                   ...
                 }
         """
+        if not extracted_triplets_list:
+            if self.use_entity_types:
+                return {"_entries": []}
+            return {}
+
         relations_present = set()
         for t in extracted_triplets_list:
             if len(t) >= 2:

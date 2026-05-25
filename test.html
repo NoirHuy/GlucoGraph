@@ -1,273 +1,447 @@
 <!DOCTYPE html>
-<html lang="vi">
+
+<html class="light" lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benchmark Comparison: Retriever Low Top-K vs EDC Normal</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GlucoLogic AI - Patient Dashboard</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed": "#ffdad7",
+                        "surface-bright": "#f8f9fb",
+                        "inverse-on-surface": "#f0f1f3",
+                        "tertiary-container": "#b0111e",
+                        "on-secondary-container": "#00714d",
+                        "secondary": "#006c49",
+                        "on-tertiary-fixed": "#410004",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#1d59c1",
+                        "surface-container": "#edeef0",
+                        "primary": "#003c90",
+                        "secondary-fixed": "#6ffbbe",
+                        "on-primary-fixed-variant": "#00419c",
+                        "on-tertiary-container": "#ffbfba",
+                        "surface-dim": "#d9dadc",
+                        "tertiary-fixed-dim": "#ffb3ad",
+                        "secondary-fixed-dim": "#4edea3",
+                        "on-secondary-fixed": "#002113",
+                        "on-primary-container": "#bcceff",
+                        "on-error-container": "#93000a",
+                        "outline": "#737784",
+                        "surface-container-low": "#f3f4f6",
+                        "surface-container-high": "#e7e8ea",
+                        "surface-container-highest": "#e1e2e4",
+                        "on-surface-variant": "#434653",
+                        "inverse-primary": "#b0c6ff",
+                        "inverse-surface": "#2e3132",
+                        "on-primary-fixed": "#001945",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e1e2e4",
+                        "surface": "#f8f9fb",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#0f52ba",
+                        "tertiary": "#870011",
+                        "on-surface": "#191c1e",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#191c1e",
+                        "primary-fixed": "#d9e2ff",
+                        "primary-fixed-dim": "#b0c6ff",
+                        "background": "#f8f9fb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#930013",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#6cf8bb",
+                        "outline-variant": "#c3c6d5",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#005236"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "sidebar-width": "280px",
+                        "xs": "0.25rem",
+                        "base": "4px",
+                        "xl": "2rem",
+                        "sm": "0.5rem",
+                        "gutter": "1.5rem",
+                        "lg": "1.5rem",
+                        "md": "1rem",
+                        "margin-mobile": "1rem"
+                    },
+                    fontFamily: {
+                        "headline-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "title-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        :root {
-            --primary: #2563eb;
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --model1-color: #c026d3;
-            /* Fuchsia for Retriever Low Top-K */
-            --model2-color: #0369a1;
-            /* Blue for EDC Normal */
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 2rem;
-            line-height: 1.5;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .ambient-shadow {
+            box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            text-align: center;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
+        .high-elevation {
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
 
-        p.subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-        }
-
-        .summary-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-        }
-
-        h2 {
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 0.5rem;
-            margin-top: 2rem;
-            color: #334155;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-            background-color: var(--card-bg);
-            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-        }
-
-        th,
-        td {
-            padding: 0.75rem 1rem;
-            text-align: left;
-            border: 1px solid var(--border-color);
-        }
-
-        th {
-            background-color: #f1f5f9;
-            font-weight: 600;
-        }
-
-        tr:hover {
-            background-color: #f8fafc;
-        }
-
-        .model-1 {
-            color: var(--model1-color);
-            font-weight: bold;
-        }
-
-        .model-2 {
-            color: var(--model2-color);
-            font-weight: bold;
-        }
-
-        .metric-group {
-            background-color: #fbfbfb;
-        }
-
-        .highlight {
-            background-color: #e2e8f0;
-            font-weight: bold;
+        .glass-tooltip {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(4px);
         }
     </style>
 </head>
 
-<body>
-
-    <div class="container">
-        <h1>Báo Cáo So Sánh Benchmark</h1>
-        <p class="subtitle">So sánh đánh giá giữa <strong>Retriever Low Top-K (Iter 1)</strong> và <strong>EDC Normal
-                (Iter 0)</strong></p>
-
-        <div class="summary-card">
-            <h3>💡 Nhận xét tổng quan</h3>
-            <p>Kết quả lần này cho thấy một sự tương phản thú vị: Mô hình <strong>Retriever Low Top-K</strong> hoạt động
-                tốt hơn hẳn trong việc nhận diện đúng các thành phần rời rạc (F1 tổng thể là <strong>0.6771</strong> so
-                với 0.6538 của Normal, vượt trội ở cả Subject, Predicate và Object). Tuy nhiên, khi ráp nối lại thành bộ
-                ba hoàn chỉnh (Full Triple), mô hình <strong>EDC Normal</strong> lại nhỉnh hơn một chút (F1:
-                <strong>0.5614</strong> so với 0.5500). Điều này cho thấy mô hình Retriever tìm được nhiều chi tiết đúng
-                hơn, nhưng Normal lại lắp ráp các liên kết chính xác hơn.</p>
+<body class="bg-surface-container-low text-on-surface antialiased flex h-screen overflow-hidden">
+    <!-- SideNavBar -->
+    <aside
+        class="hidden md:flex flex-col h-full py-md bg-[#111827] text-primary dark:text-inverse-primary font-body-md text-body-md shadow-md docked fixed left-0 top-0 w-sidebar-width transition-all duration-200 ease-in-out z-50">
+        <div class="px-md pb-lg border-b border-gray-700/50 flex flex-col items-center">
+            <div
+                class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center mb-sm overflow-hidden">
+                <span class="material-symbols-outlined text-3xl text-on-surface-variant">person</span>
+                <!-- Could use an img here if a patient photo is available -->
+            </div>
+            <h2 class="font-headline-sm text-headline-sm text-white mb-xs text-center">Robert Chen</h2>
+            <div class="text-center font-label-md text-label-md text-gray-400">
+                <p>65 years old | Male</p>
+                <p>BMI: 28.5 | HbA1c: 8.4%</p>
+                <p class="text-tertiary-fixed-dim mt-xs font-semibold">Suy thận mạn độ 3</p>
+            </div>
         </div>
-
-        <h2>1. Full Triple Scores (Toàn bộ bộ ba)</h2>
-        <table>
-            <tr>
-                <th>Mô hình</th>
-                <th>Precision</th>
-                <th>Recall</th>
-                <th>F1-Score</th>
-            </tr>
-            <tr>
-                <td class="model-1">Retriever Low Top-K (Iter 1)</td>
-                <td>0.5500</td>
-                <td>0.5500</td>
-                <td>0.5500</td>
-            </tr>
-            <tr>
-                <td class="model-2">EDC Normal (Iter 0)</td>
-                <td>0.5614</td>
-                <td>0.5614</td>
-                <td><strong>0.5614</strong></td>
-            </tr>
-        </table>
-
-        <h2>2. Total Scores (Tổng điểm các thực thể)</h2>
-        <table>
-            <tr>
-                <th>Loại đánh giá</th>
-                <th>Chỉ số</th>
-                <th class="model-1">Retriever Low Top-K</th>
-                <th class="model-2">EDC Normal</th>
-            </tr>
-            <tr class="metric-group">
-                <td rowspan="3"><strong>Exact / Strict</strong><br><small>(Correct: R=108 | N=102)</small></td>
-                <td>Precision</td>
-                <td>0.6767</td>
-                <td>0.6538</td>
-            </tr>
-            <tr class="metric-group">
-                <td>Recall</td>
-                <td>0.6776</td>
-                <td>0.6538</td>
-            </tr>
-            <tr class="metric-group highlight">
-                <td>F1-Score</td>
-                <td><strong>0.6771</strong></td>
-                <td>0.6538</td>
-            </tr>
-            <tr>
-                <td rowspan="3"><strong>Partial</strong><br><small>(Correct: R=108 | N=102)</small></td>
-                <td>Precision</td>
-                <td>0.6836</td>
-                <td>0.6570</td>
-            </tr>
-            <tr>
-                <td>Recall</td>
-                <td>0.6855</td>
-                <td>0.6570</td>
-            </tr>
-            <tr class="highlight">
-                <td>F1-Score</td>
-                <td><strong>0.6844</strong></td>
-                <td>0.6570</td>
-            </tr>
-        </table>
-
-        <h2>3. Scores per Tag (Điểm theo từng thành phần)</h2>
-
-        <h3>3.1. Subjects (Chủ thể)</h3>
-        <table>
-            <tr>
-                <th>Loại đánh giá</th>
-                <th>Chỉ số</th>
-                <th class="model-1">Retriever Low Top-K</th>
-                <th class="model-2">EDC Normal</th>
-            </tr>
-            <tr class="metric-group">
-                <td rowspan="3"><strong>Exact / Strict</strong></td>
-                <td>Precision</td>
-                <td>0.7232</td>
-                <td>0.7115</td>
-            </tr>
-            <tr class="metric-group">
-                <td>Recall</td>
-                <td>0.7264</td>
-                <td>0.7115</td>
-            </tr>
-            <tr class="metric-group highlight">
-                <td>F1-Score</td>
-                <td><strong>0.7245</strong></td>
-                <td>0.7115</td>
-            </tr>
-        </table>
-
-        <h3>3.2. Predicates (Vị ngữ / Mối quan hệ)</h3>
-        <table>
-            <tr>
-                <th>Loại đánh giá</th>
-                <th>Chỉ số</th>
-                <th class="model-1">Retriever Low Top-K</th>
-                <th class="model-2">EDC Normal</th>
-            </tr>
-            <tr class="metric-group">
-                <td rowspan="3"><strong>Exact / Strict</strong></td>
-                <td>Precision</td>
-                <td>0.6603</td>
-                <td>0.6346</td>
-            </tr>
-            <tr class="metric-group">
-                <td>Recall</td>
-                <td>0.6603</td>
-                <td>0.6346</td>
-            </tr>
-            <tr class="metric-group highlight">
-                <td>F1-Score</td>
-                <td><strong>0.6603</strong></td>
-                <td>0.6346</td>
-            </tr>
-        </table>
-
-        <h3>3.3. Objects (Đối tượng)</h3>
-        <table>
-            <tr>
-                <th>Loại đánh giá</th>
-                <th>Chỉ số</th>
-                <th class="model-1">Retriever Low Top-K</th>
-                <th class="model-2">EDC Normal</th>
-            </tr>
-            <tr class="metric-group">
-                <td rowspan="3"><strong>Exact / Strict</strong></td>
-                <td>Precision</td>
-                <td>0.6415</td>
-                <td>0.6153</td>
-            </tr>
-            <tr class="metric-group">
-                <td>Recall</td>
-                <td>0.6415</td>
-                <td>0.6153</td>
-            </tr>
-            <tr class="metric-group highlight">
-                <td>F1-Score</td>
-                <td><strong>0.6415</strong></td>
-                <td>0.6153</td>
-            </tr>
-        </table>
+        <nav class="flex-1 overflow-y-auto py-md">
+            <ul class="space-y-sm">
+                <li>
+                    <a class="flex items-center px-lg py-sm border-l-4 border-primary bg-primary/10 text-white font-bold transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined mr-md">person</span>
+                        Patient Overview
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center px-lg py-sm text-on-surface-variant/70 font-medium hover:text-white transition-colors hover:bg-surface-variant/10"
+                        href="#">
+                        <span class="material-symbols-outlined mr-md">clinical_notes</span>
+                        Clinical Evidence
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center px-lg py-sm text-on-surface-variant/70 font-medium hover:text-white transition-colors hover:bg-surface-variant/10"
+                        href="#">
+                        <span class="material-symbols-outlined mr-md">medication</span>
+                        Medication History
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center px-lg py-sm text-on-surface-variant/70 font-medium hover:text-white transition-colors hover:bg-surface-variant/10"
+                        href="#">
+                        <span class="material-symbols-outlined mr-md">lab_research</span>
+                        Lab Results
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center px-lg py-sm text-on-surface-variant/70 font-medium hover:text-white transition-colors hover:bg-surface-variant/10"
+                        href="#">
+                        <span class="material-symbols-outlined mr-md">psychology</span>
+                        Decision Support
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="px-lg pt-md">
+            <div class="font-display-lg text-display-lg font-bold text-white text-center opacity-50">GL</div>
+        </div>
+    </aside>
+    <!-- Main Wrapper -->
+    <div class="flex-1 flex flex-col md:ml-sidebar-width h-full w-full">
+        <!-- TopAppBar -->
+        <header
+            class="flex justify-between items-center w-full px-lg h-16 bg-surface dark:bg-surface-container-highest text-primary dark:text-inverse-primary border-b border-outline-variant dark:border-outline flat no shadows docked full-width top-0 z-40 transition-colors">
+            <div class="flex items-center">
+                <h1 class="font-headline-md text-headline-md font-extrabold text-primary dark:text-inverse-primary">
+                    GlucoLogic AI</h1>
+            </div>
+            <div class="flex items-center space-x-sm">
+                <!-- Search could go here -->
+                <button aria-label="Notifications"
+                    class="p-xs rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors">
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+                <button aria-label="Settings"
+                    class="p-xs rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors">
+                    <span class="material-symbols-outlined">settings</span>
+                </button>
+                <button aria-label="Help"
+                    class="p-xs rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors">
+                    <span class="material-symbols-outlined">help_outline</span>
+                </button>
+            </div>
+        </header>
+        <!-- Main Content Canvas -->
+        <main class="flex-1 overflow-y-auto p-gutter bg-surface-container-low">
+            <div class="max-w-7xl mx-auto space-y-gutter">
+                <!-- Top Section: Input Card -->
+                <section class="bg-surface-container-lowest rounded-xl border border-outline-variant p-lg shadow-sm">
+                    <h2 class="font-title-lg text-title-lg text-on-surface mb-md flex items-center">
+                        <span class="material-symbols-outlined mr-sm text-primary">edit_document</span>
+                        Nhập tình huống lâm sàng
+                    </h2>
+                    <div class="space-y-md">
+                        <div>
+                            <label class="sr-only" for="clinical-input">Clinical Input</label>
+                            <textarea
+                                class="w-full rounded-lg border-outline-variant focus:border-primary-container focus:ring focus:ring-primary-container/30 bg-surface text-on-surface font-body-md text-body-md p-md resize-none"
+                                id="clinical-input"
+                                placeholder="Bệnh nhân nam, 65 tuổi, có biểu hiện khát nhiều, tiểu nhiều. Đường huyết đói bình thường."
+                                rows="4"></textarea>
+                        </div>
+                        <div class="flex justify-end">
+                            <button
+                                class="bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md py-sm px-lg rounded-lg flex items-center transition-colors shadow-sm ambient-shadow hover:high-elevation">
+                                <span class="material-symbols-outlined mr-xs"
+                                    style="font-variation-settings: 'FILL' 1;">analytics</span>
+                                Phân tích GraphRAG
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Bottom Section: AI Reasoning Output -->
+                <section class="space-y-gutter">
+                    <!-- Circuit Breaker Banner -->
+                    <div
+                        class="bg-[#EF4444] text-white rounded-lg p-md flex items-start shadow-md high-elevation border border-[#DC2626]">
+                        <span class="material-symbols-outlined mr-sm text-white"
+                            style="font-variation-settings: 'FILL' 1;">warning</span>
+                        <div>
+                            <h3 class="font-title-lg text-title-lg font-bold mb-xs">🛑 KÍCH HOẠT NGẮT MẠCH: Chống chỉ
+                                định dùng Metformin</h3>
+                            <p
+                                class="font-body-md text-body-md bg-black/20 inline-block px-sm py-xs rounded font-mono text-sm mt-xs">
+                                [Suy thận mạn] → <span class="text-tertiary-fixed-dim">(has_contraindicated_drug)</span>
+                                → [Metformin]
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter">
+                        <!-- Left Column: Differential Diagnosis & Reasoning Path -->
+                        <div class="xl:col-span-8 space-y-gutter">
+                            <!-- Differential Diagnosis -->
+                            <div
+                                class="bg-surface-container-lowest rounded-xl border border-outline-variant p-lg shadow-sm">
+                                <h3 class="font-title-lg text-title-lg text-on-surface mb-md flex items-center">
+                                    <span class="material-symbols-outlined mr-sm text-secondary">compare</span>
+                                    Chẩn đoán phân biệt
+                                </h3>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-left font-body-md text-body-md border-collapse">
+                                        <thead>
+                                            <tr class="bg-surface-container border-b border-surface-container-high">
+                                                <th
+                                                    class="p-sm font-label-sm text-label-sm text-on-surface-variant w-1/3">
+                                                    Đặc điểm</th>
+                                                <th
+                                                    class="p-sm font-label-sm text-label-sm text-on-surface-variant w-1/3 border-l border-surface-container-high">
+                                                    Đái tháo đường (Diabetes Mellitus)</th>
+                                                <th
+                                                    class="p-sm font-label-sm text-label-sm text-on-surface-variant w-1/3 border-l border-surface-container-high bg-primary/5">
+                                                    Đái tháo nhạt (Diabetes Insipidus) <span
+                                                        class="material-symbols-outlined text-xs align-middle text-primary"
+                                                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-surface-container-low">
+                                            <tr class="hover:bg-surface-container-low/50 transition-colors">
+                                                <td class="p-sm font-medium text-on-surface">Triệu chứng chung</td>
+                                                <td class="p-sm border-l border-surface-container-low">Khát nhiều, tiểu
+                                                    nhiều <span
+                                                        class="inline-block bg-surface-container px-xs py-base rounded text-xs text-on-surface-variant ml-xs">(manifestation_of)</span>
+                                                </td>
+                                                <td class="p-sm border-l border-surface-container-low bg-primary/5">Khát
+                                                    nhiều, tiểu nhiều <span
+                                                        class="inline-block bg-surface-container px-xs py-base rounded text-xs text-on-surface-variant ml-xs">(manifestation_of)</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-surface-container-low/50 transition-colors">
+                                                <td class="p-sm font-medium text-on-surface">Đường huyết đói</td>
+                                                <td class="p-sm border-l border-surface-container-low text-tertiary">Cao
+                                                    (≥ 7.0 mmol/L)</td>
+                                                <td
+                                                    class="p-sm border-l border-surface-container-low bg-primary/5 text-secondary">
+                                                    Bình thường</td>
+                                            </tr>
+                                            <tr class="hover:bg-surface-container-low/50 transition-colors">
+                                                <td class="p-sm font-medium text-on-surface">Cơ chế bệnh sinh</td>
+                                                <td class="p-sm border-l border-surface-container-low">Thiếu Insulin /
+                                                    Kháng Insulin <span
+                                                        class="inline-block bg-surface-container px-xs py-base rounded text-xs text-on-surface-variant ml-xs">(associated_with)</span>
+                                                </td>
+                                                <td class="p-sm border-l border-surface-container-low bg-primary/5">
+                                                    Thiếu ADH / Kháng ADH <span
+                                                        class="inline-block bg-surface-container px-xs py-base rounded text-xs text-on-surface-variant ml-xs">(associated_with)</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- Reasoning Path (Graph View) -->
+                            <div
+                                class="bg-surface-container-lowest rounded-xl border border-outline-variant p-lg shadow-sm">
+                                <h3 class="font-title-lg text-title-lg text-on-surface mb-md flex items-center">
+                                    <span class="material-symbols-outlined mr-sm text-primary">account_tree</span>
+                                    Luồng tư duy AI (GraphRAG Path)
+                                </h3>
+                                <div
+                                    class="bg-surface p-md rounded-lg border border-outline-variant/50 flex flex-wrap items-center justify-start gap-sm font-body-sm overflow-x-auto">
+                                    <!-- Node: Symptom -->
+                                    <div
+                                        class="border border-outline bg-surface-container-low px-sm py-xs rounded flex items-center shadow-sm whitespace-nowrap">
+                                        <span class="w-2 h-2 rounded-full bg-outline mr-xs"></span>
+                                        <span class="text-on-surface-variant font-label-md">Triệu chứng: Khát
+                                            nhiều</span>
+                                    </div>
+                                    <!-- Edge -->
+                                    <div class="flex items-center text-outline-variant px-xs">
+                                        <div class="h-px w-8 bg-[#D1D5DB]"></div>
+                                        <span
+                                            class="text-xs px-xs text-on-surface-variant bg-surface rounded-full border border-surface-dim font-mono">(manifestation_of)</span>
+                                        <div class="h-px w-8 bg-[#D1D5DB]"></div>
+                                        <span
+                                            class="material-symbols-outlined text-sm -ml-1 text-[#D1D5DB]">arrow_forward_ios</span>
+                                    </div>
+                                    <!-- Node: Concept -->
+                                    <div
+                                        class="border-2 border-primary bg-white px-sm py-xs rounded flex items-center shadow-sm ambient-shadow whitespace-nowrap">
+                                        <span class="w-2 h-2 rounded-full bg-primary mr-xs"></span>
+                                        <span class="text-primary font-bold font-label-md">Đái tháo nhạt</span>
+                                    </div>
+                                    <!-- Edge -->
+                                    <div class="flex items-center text-outline-variant px-xs">
+                                        <div class="h-px w-8 bg-[#D1D5DB]"></div>
+                                        <span
+                                            class="text-xs px-xs text-on-surface-variant bg-surface rounded-full border border-surface-dim font-mono">(anatomical_site)</span>
+                                        <div class="h-px w-8 bg-[#D1D5DB]"></div>
+                                        <span
+                                            class="material-symbols-outlined text-sm -ml-1 text-[#D1D5DB]">arrow_forward_ios</span>
+                                    </div>
+                                    <!-- Node: Anatomy -->
+                                    <div
+                                        class="border border-outline bg-surface-container-low px-sm py-xs rounded flex items-center shadow-sm whitespace-nowrap">
+                                        <span class="w-2 h-2 rounded-full bg-outline mr-xs"></span>
+                                        <span class="text-on-surface-variant font-label-md">Tuyến yên</span>
+                                    </div>
+                                </div>
+                                <p class="text-label-sm text-on-surface-variant mt-sm px-xs">* Các nút màu xanh dương
+                                    thể hiện các khái niệm y khoa trọng tâm được AI suy luận từ dữ liệu đầu vào.</p>
+                            </div>
+                        </div>
+                        <!-- Right Column: Treatment Recommendations -->
+                        <div class="xl:col-span-4">
+                            <div
+                                class="bg-surface-container-lowest rounded-xl border border-outline-variant p-lg shadow-sm h-full">
+                                <h3 class="font-title-lg text-title-lg text-on-surface mb-md flex items-center">
+                                    <span
+                                        class="material-symbols-outlined mr-sm text-secondary-container">medication</span>
+                                    Khuyến nghị điều trị
+                                </h3>
+                                <div class="space-y-sm">
+                                    <!-- Treatment Card 1 -->
+                                    <div class="border border-[#10B981] bg-[#10B981]/5 rounded-lg p-md ambient-shadow">
+                                        <div class="flex justify-between items-start mb-xs">
+                                            <h4 class="font-headline-sm text-body-lg font-bold text-secondary">Liệu pháp
+                                                Insulin</h4>
+                                            <span class="material-symbols-outlined text-secondary"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                        </div>
+                                        <p class="font-body-md text-body-md text-on-surface-variant mb-sm">Lựa chọn an
+                                            toàn thay thế cho bệnh nhân có suy thận mạn độ 3 khi có rối loạn đường huyết
+                                            kề cận.</p>
+                                        <div
+                                            class="inline-flex items-center bg-white border border-surface-dim px-sm py-xs rounded-full text-xs text-on-surface-variant font-mono">
+                                            <span class="material-symbols-outlined text-xs mr-xs">link</span>
+                                            (may_be_treated_by)
+                                        </div>
+                                    </div>
+                                    <!-- Treatment Card 2 (Desmopressin) -->
+                                    <div
+                                        class="border border-[#10B981] bg-[#10B981]/5 rounded-lg p-md ambient-shadow mt-md">
+                                        <div class="flex justify-between items-start mb-xs">
+                                            <h4 class="font-headline-sm text-body-lg font-bold text-secondary">
+                                                Desmopressin (DDAVP)</h4>
+                                            <span class="material-symbols-outlined text-secondary"
+                                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                        </div>
+                                        <p class="font-body-md text-body-md text-on-surface-variant mb-sm">Điều trị đặc
+                                            hiệu cho Đái tháo nhạt trung ương để kiểm soát triệu chứng khát và đa niệu.
+                                        </p>
+                                        <div
+                                            class="inline-flex items-center bg-white border border-surface-dim px-sm py-xs rounded-full text-xs text-on-surface-variant font-mono">
+                                            <span class="material-symbols-outlined text-xs mr-xs">link</span>
+                                            (may_be_treated_by)
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border border-outline-variant bg-surface rounded-lg p-md mt-md opacity-70">
+                                        <div class="flex justify-between items-start mb-xs">
+                                            <h4
+                                                class="font-headline-sm text-body-lg font-bold text-on-surface-variant line-through decoration-tertiary">
+                                                Metformin</h4>
+                                            <span class="material-symbols-outlined text-tertiary"
+                                                style="font-variation-settings: 'FILL' 1;">block</span>
+                                        </div>
+                                        <p class="font-body-md text-body-md text-tertiary font-medium">Chống chỉ định
+                                            (Suy thận mạn độ 3)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
     </div>
-
 </body>
 
 </html>
