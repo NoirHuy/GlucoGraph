@@ -1,0 +1,1537 @@
+[
+    {
+        "index": 0,
+        "input_text": "﻿Insulin is required for all patients with type 1 diabetes mellitus because they do not produce adequate insulin (due to destruction of the pancreatic beta-cells) and will develop ketoacidosis without it.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "type 1 diabetes mellitus",
+                "may be treated by",
+                "insulin"
+            ]
+        ],
+        "oie": [
+            [
+                "type 1 diabetes mellitus",
+                "may be treated by",
+                "insulin"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "type 1 diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 1 diabetes mellitus",
+                "may be treated by",
+                "insulin"
+            ]
+        ]
+    },
+    {
+        "index": 1,
+        "input_text": "Insulin is also used in the management of many patients with type 2 diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "insulin"
+            ]
+        ],
+        "oie": [
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "insulin"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "type 2 diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "insulin"
+            ]
+        ]
+    },
+    {
+        "index": 2,
+        "input_text": "Insulin replacement in type 1 diabetes should ideally mimic beta-cell function to provide basal and prandial requirements (physiologic replacement or basal-bolus dosing).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "type 1 diabetes",
+                "may be treated by",
+                "insulin replacement"
+            ],
+            [
+                "insulin replacement",
+                "has dose adjustment",
+                "basal and prandial requirements"
+            ],
+            [
+                "beta-cell function",
+                "has evaluation",
+                "basal and prandial requirements"
+            ]
+        ],
+        "oie": [
+            [
+                "type 1 diabetes",
+                "may be treated by",
+                "insulin replacement"
+            ],
+            [
+                "insulin replacement",
+                "has dose adjustment",
+                "basal and prandial requirements"
+            ],
+            [
+                "beta-cell function",
+                "has evaluation",
+                "basal and prandial requirements"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has dose adjustment": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+            "has evaluation": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+            "_entries": [
+                {
+                    "subject": "type 1 diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "insulin replacement",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "insulin replacement",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dose adjustment",
+                    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+                    "object": "basal and prandial requirements",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                },
+                {
+                    "subject": "beta-cell function",
+                    "subject_type": "Symptom",
+                    "subject_type_definition": "A clinical sign or physiological state in which body cells do not respond effectively to insulin, often associated with metabolic disease.",
+                    "relation": "has evaluation",
+                    "relation_definition": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+                    "object": "basal and prandial requirements",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 1 diabetes",
+                "may be treated by",
+                "insulin replacement"
+            ],
+            [
+                "insulin replacement",
+                "has dose adjustment",
+                "basal and prandial requirements"
+            ],
+            [
+                "beta-cell function",
+                "has evaluation",
+                "basal and prandial requirements"
+            ]
+        ]
+    },
+    {
+        "index": 3,
+        "input_text": "To achieve this, different preparations of insulin and methods of administration can be used.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 4,
+        "input_text": "Except for use of regular insulin, which is given IV in hospitalized patients, insulin is almost always administered subcutaneously.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 5,
+        "input_text": "An inhaled insulin preparation is available for patients who prefer not to inject themselves.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 6,
+        "input_text": "It has a slightly more rapid onset of action compared to subcutaneously injected rapid acting insulin.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 7,
+        "input_text": "Multiple daily subcutaneous injections administered by the patient, with 2 preparations of insulin used depending on the anticipated glycemic control needs.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 8,
+        "input_text": "An insulin pump that delivers a rapid- or short-acting insulin and administers a basal rate of insulin and additional boluses with meals or for correcting a high blood glucose level.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "rapid-acting insulin"
+            ],
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "short-acting insulin"
+            ],
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "boluses"
+            ]
+        ],
+        "oie": [
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "rapid-acting insulin"
+            ],
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "short-acting insulin"
+            ],
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "boluses"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "rapid-acting insulin"
+            ],
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "short-acting insulin"
+            ],
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "high blood glucose level",
+                "may be treated by",
+                "boluses"
+            ]
+        ]
+    },
+    {
+        "index": 9,
+        "input_text": "Both strategies require close attention to diet and exercise as well as to insulin timing and dose.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 10,
+        "input_text": "When insulin is needed for patients with type 2 diabetes, glycemic control can often be achieved with basal insulin combined with non-insulin antihyperglycemic medications, although some patients may require prandial (bolus dosing at meals) insulin.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "non-insulin antihyperglycemic medications"
+            ],
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ]
+        ],
+        "oie": [
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "non-insulin antihyperglycemic medications"
+            ],
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "type 2 diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "basal insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "type 2 diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "non-insulin antihyperglycemic medications",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "type 2 diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "prandial insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "non-insulin antihyperglycemic medications"
+            ],
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "prandial insulin"
+            ]
+        ]
+    },
+    {
+        "index": 11,
+        "input_text": "Most insulin preparations are recombinant human, mostly eliminating the once-common allergic reactions to the medication when it was extracted from animal sources.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 12,
+        "input_text": "A number of analogs are also available.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 13,
+        "input_text": "These analogs were created by modifying the human insulin molecule to alter absorption rates and duration and time to action.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 14,
+        "input_text": "Insulin types are commonly categorized by their time to onset and duration of action (see table Onset, Peak, and Duration of Action of Human Insulin Preparations).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 15,
+        "input_text": "However, these parameters vary within and among patients, depending on many factors (eg, site and technique of injection, amount of subcutaneous fat, blood flow at the injection site).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 16,
+        "input_text": "Rapid-acting insulins, including insulin lispro and insulin aspart, are rapidly absorbed because reversal of an amino acid pair prevents the insulin molecule from associating into dimers and polymers.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 17,
+        "input_text": "They begin to reduce plasma glucose often within 15 minutes but have short duration of action (< 4 hours).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 18,
+        "input_text": "These insulins are best used at mealtime to control postprandial spikes in plasma glucose.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 19,
+        "input_text": "Inhaled regular insulin is a rapid-acting insulin that is taken with meals.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "diabetes",
+                "may be treated by",
+                "inhaled regular insulin"
+            ]
+        ],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 20,
+        "input_text": "It has a slightly more rapid onset of action compared to subcutaneously injected rapid-acting insulin but dosing is less flexible, and periodic pulmonary examinations are required.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 21,
+        "input_text": "Regular insulin is slightly slower in onset (30 to 60 minutes) than insulin lispro and insulin aspart but lasts longer (6 to 8 hours).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "regular insulin",
+                "has onset",
+                "30 to 60 minutes"
+            ],
+            [
+                "regular insulin",
+                "has duration",
+                "6 to 8 hours"
+            ],
+            [
+                "insulin lispro",
+                "has onset",
+                "30 to 60 minutes"
+            ],
+            [
+                "insulin lispro",
+                "has duration",
+                "6 to 8 hours"
+            ],
+            [
+                "insulin aspart",
+                "has onset",
+                "30 to 60 minutes"
+            ],
+            [
+                "insulin aspart",
+                "has duration",
+                "6 to 8 hours"
+            ]
+        ],
+        "oie": [
+            [
+                "regular insulin",
+                "has onset",
+                "30 to 60 minutes"
+            ],
+            [
+                "regular insulin",
+                "has duration",
+                "6 to 8 hours"
+            ],
+            [
+                "insulin lispro",
+                "has onset",
+                "30 to 60 minutes"
+            ],
+            [
+                "insulin lispro",
+                "has duration",
+                "6 to 8 hours"
+            ],
+            [
+                "insulin aspart",
+                "has onset",
+                "30 to 60 minutes"
+            ],
+            [
+                "insulin aspart",
+                "has duration",
+                "6 to 8 hours"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "index": 22,
+        "input_text": "It is the only insulin form for IV use.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 23,
+        "input_text": "Intermediate-acting insulins include insulin isophane (Neutral protamine Hagedorn, or NPH) and U-500 regular.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "diabetes",
+                "may be treated by",
+                "insulin isophane"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "U-500 regular"
+            ]
+        ],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 24,
+        "input_text": "The onset of action for insulin isophane is about 2 hours after injection; peak effect is 4 to 12 hours after injection, and duration of action is 18 to 26 hours.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "insulin isophane",
+                "has dose adjustment",
+                "2 hours after injection"
+            ],
+            [
+                "insulin isophane",
+                "has dose adjustment",
+                "4 to 12 hours after injection"
+            ],
+            [
+                "insulin isophane",
+                "has dose adjustment",
+                "18 to 26 hours"
+            ]
+        ],
+        "oie": [
+            [
+                "insulin isophane",
+                "has dose adjustment",
+                "2 hours after injection"
+            ],
+            [
+                "insulin isophane",
+                "has dose adjustment",
+                "18 to 26 hours"
+            ]
+        ],
+        "schema_definition": {
+            "has dose adjustment": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+            "_entries": [
+                {
+                    "subject": "insulin isophane",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dose adjustment",
+                    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+                    "object": "2 hours after injection",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units."
+                },
+                {
+                    "subject": "insulin isophane",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dose adjustment",
+                    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+                    "object": "18 to 26 hours",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "insulin isophane",
+                "has dose adjustment",
+                "2 hours after injection"
+            ],
+            [
+                "insulin isophane",
+                "has dose adjustment",
+                "18 to 26 hours"
+            ]
+        ]
+    },
+    {
+        "index": 25,
+        "input_text": "Concentrated regular insulin U-500 has a similar peak and duration of action (peak 4 to 8 hours; duration 13 to 24 hours) and can be dosed 2 to 3 times per day.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Concentrated regular insulin U-500",
+                "has dose adjustment",
+                "2 to 3 times per day"
+            ]
+        ],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 26,
+        "input_text": "Long-acting insulins, such as insulin glargine, insulin detemir, and U-300 insulin glargine, unlike insulin isophane, have no discernible peak of action and provide a steady basal effect over 24 hours.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "insulin glargine",
+                "may be treated by",
+                "diabetes"
+            ],
+            [
+                "insulin detemir",
+                "may be treated by",
+                "diabetes"
+            ],
+            [
+                "U-300 insulin glargine",
+                "may be treated by",
+                "diabetes"
+            ]
+        ],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 27,
+        "input_text": "Insulin degludec (another long-acting insulin) has an even longer duration of action of over 40 hours.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 28,
+        "input_text": "It is dosed daily, and although it requires 3 days to achieve steady state, the timing of dosing is less rigid.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 29,
+        "input_text": "Insulin icodec is a weekly insulin that is available in several regions of the world but not in the United States.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 30,
+        "input_text": "Combinations of insulin isophane and regular insulin and of insulin lispro and insulin lisproprotamine (a form of insulin lispro modified to act like insulin isophane) are commercially available in premixed preparations (see table Onset, Peak, and Duration of Action of Human Insulin Preparations).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "insulin isophane",
+                "may be treated by",
+                "insulin lisproprotamine"
+            ],
+            [
+                "insulin lispro",
+                "may be treated by",
+                "insulin lisproprotamine"
+            ],
+            [
+                "insulin isophane",
+                "may be treated by",
+                "regular insulin"
+            ],
+            [
+                "insulin lispro",
+                "may be treated by",
+                "insulin lisproprotamine"
+            ]
+        ],
+        "oie": [
+            [
+                "insulin isophane",
+                "may be treated by",
+                "insulin lisproprotamine"
+            ],
+            [
+                "insulin lispro",
+                "may be treated by",
+                "insulin lisproprotamine"
+            ],
+            [
+                "insulin isophane",
+                "may be treated by",
+                "regular insulin"
+            ],
+            [
+                "insulin lispro",
+                "may be treated by",
+                "insulin lisproprotamine"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "insulin isophane",
+                "may be treated by",
+                "insulin lisproprotamine"
+            ],
+            [
+                "insulin lispro",
+                "may be treated by",
+                "insulin lisproprotamine"
+            ],
+            [
+                "insulin isophane",
+                "may be treated by",
+                "regular insulin"
+            ],
+            [
+                "insulin lispro",
+                "may be treated by",
+                "insulin lisproprotamine"
+            ]
+        ]
+    },
+    {
+        "index": 31,
+        "input_text": "Other premixed formulations include insulin aspartprotamine (a form of insulin aspart modified to act like insulin isophane) with insulin aspart and a formulation of premixed insulin degludec and insulin aspart.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin aspartprotamine"
+            ],
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin aspart"
+            ],
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin degludec"
+            ],
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin aspart"
+            ]
+        ],
+        "oie": [
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin aspartprotamine"
+            ],
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin aspart"
+            ],
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin degludec"
+            ],
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin aspart"
+            ]
+        ],
+        "schema_definition": {
+            "has dose adjustment": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+            "_entries": [
+                {
+                    "subject": "premixed insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dose adjustment",
+                    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+                    "object": "insulin aspartprotamine",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "premixed insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dose adjustment",
+                    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+                    "object": "insulin aspart",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "premixed insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dose adjustment",
+                    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+                    "object": "insulin degludec",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "premixed insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dose adjustment",
+                    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+                    "object": "insulin aspart",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin aspartprotamine"
+            ],
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin aspart"
+            ],
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin degludec"
+            ],
+            [
+                "premixed insulin",
+                "has dose adjustment",
+                "insulin aspart"
+            ]
+        ]
+    },
+    {
+        "index": 32,
+        "input_text": "Different insulin types can be drawn into the same syringe for injection but should not be premixed in bottles except by a manufacturer.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 33,
+        "input_text": "On occasion, mixing insulins may affect rates of insulin absorption, producing variability of effect and making glycemic control less predictable, especially if mixed > 1 hour before use.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 34,
+        "input_text": "Insulin glargine should never be mixed with any other insulin.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "diabetes",
+                "may be treated by",
+                "insulin glargine"
+            ]
+        ],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 35,
+        "input_text": "Many prefilled insulin pen devices are available as an alternative to the conventional vial and syringe method.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 36,
+        "input_text": "Insulin pens may be more convenient for use away from home and may be preferable for patients with limited vision or manual dexterity.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "patients with limited vision or manual dexterity",
+                "may be treated by",
+                "insulin pens"
+            ]
+        ],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 37,
+        "input_text": "Spring-loaded self-injection devices (for use with a syringe) may be useful for the occasional patient who is fearful of injection, and syringe magnifiers are available for patients with low vision.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 38,
+        "input_text": "\"Smart\" or \"connected\" insulin pens and pen caps communicate with a smart phone application to track administered insulin and make dosing recommendations.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 39,
+        "input_text": "Regimens range from twice a day split-mixed (eg, split doses of rapid- and intermediate-acting insulins) to more physiologic basal-bolus regimens using multiple daily injections (eg, single fixed [basal] dose of long-acting and variable prandial [bolus] doses of rapid-acting insulin) or an insulin pump.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 40,
+        "input_text": "Intensive treatment, defined as glucose monitoring â‰¥ 4 times a day and â‰¥ 3 injections a day or continuous insulin infusion, is more effective than less frequent treatment (1 to 2 insulin injections a day with or without monitoring) for preventing diabetic retinopathy, nephropathy, and neuropathy.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "diabetic retinopathy",
+                "manifestation of",
+                "diabetes"
+            ],
+            [
+                "diabetic nephropathy",
+                "manifestation of",
+                "diabetes"
+            ],
+            [
+                "diabetic neuropathy",
+                "manifestation of",
+                "diabetes"
+            ],
+            [
+                "diabetes",
+                "may be treated by",
+                "intensive treatment"
+            ],
+            [
+                "intensive treatment",
+                "has dose adjustment",
+                "glucose monitoring ≥ 4 times a day"
+            ],
+            [
+                "intensive treatment",
+                "has dose adjustment",
+                "≥ 3 injections a day or continuous insulin infusion"
+            ],
+            [
+                "intensive treatment",
+                "has dose adjustment",
+                "1 to 2 insulin injections a day with or without monitoring"
+            ]
+        ],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 41,
+        "input_text": "However, intensive therapy may result in more frequent episodes of hypoglycemia and weight gain and is more effective in patients who are able and willing to take an active role in their self-care.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "hypoglycemia",
+                "may be finding of disease",
+                "intensive therapy"
+            ],
+            [
+                "weight gain",
+                "may be finding of disease",
+                "intensive therapy"
+            ],
+            [
+                "intensive therapy",
+                "may be treated by",
+                "self-care"
+            ]
+        ],
+        "oie": [
+            [
+                "hypoglycemia",
+                "may be finding of disease",
+                "intensive therapy"
+            ],
+            [
+                "weight gain",
+                "may be finding of disease",
+                "intensive therapy"
+            ],
+            [
+                "intensive therapy",
+                "may be treated by",
+                "self-care"
+            ]
+        ],
+        "schema_definition": {
+            "may be finding of disease": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "hypoglycemia",
+                    "subject_type": "Symptom",
+                    "subject_type_definition": "A clinical sign or physiological finding that indicates the presence or severity of a disease or condition.",
+                    "relation": "may be finding of disease",
+                    "relation_definition": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+                    "object": "intensive therapy",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or therapeutic approach used to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "weight gain",
+                    "subject_type": "Symptom",
+                    "subject_type_definition": "A clinical sign or physiological finding that indicates the presence or severity of a disease or condition.",
+                    "relation": "may be finding of disease",
+                    "relation_definition": "The subject clinical finding or symptom may be present in or associated with patients who have the object disease.",
+                    "object": "intensive therapy",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or therapeutic approach used to prevent, treat, or manage a disease or clinical condition."
+                },
+                {
+                    "subject": "intensive therapy",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A medical intervention or therapeutic approach used to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "self-care",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or therapeutic approach used to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "hypoglycemia",
+                "may be finding of disease",
+                "intensive therapy"
+            ],
+            [
+                "weight gain",
+                "may be finding of disease",
+                "intensive therapy"
+            ],
+            [
+                "intensive therapy",
+                "may be treated by",
+                "self-care"
+            ]
+        ]
+    },
+    {
+        "index": 42,
+        "input_text": "In general, most patients with type 1 diabetes mellitus can start with a total dose of 0.2 to 0.8 units of insulin/kg/day.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 43,
+        "input_text": "Patients with obesity may require higher doses.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "obesity",
+                "may be treated by",
+                "higher doses"
+            ]
+        ],
+        "oie": [
+            [
+                "obesity",
+                "may be treated by",
+                "higher doses"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "obesity",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "An abnormal or excessive accumulation of body fat that presents a risk to health, classified as a chronic disease.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "higher doses",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "obesity",
+                "may be treated by",
+                "higher doses"
+            ]
+        ]
+    },
+    {
+        "index": 44,
+        "input_text": "Physiologic replacement involves giving 40 to 60% of the daily insulin dose as an intermediate- or long-acting preparation to cover basal needs, with the remainder given as a rapid- or short-acting preparation to cover postprandial increases.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "diabetes",
+                "may be treated by",
+                "intermediate- or long-acting insulin"
+            ],
+            [
+                "intermediate- or long-acting insulin",
+                "has dose adjustment",
+                "40 to 60% of daily insulin dose"
+            ],
+            [
+                "rapid- or short-acting insulin",
+                "has dose adjustment",
+                "remainder of daily insulin dose"
+            ]
+        ],
+        "oie": [
+            [
+                "rapid- or short-acting insulin",
+                "has dose adjustment",
+                "remainder of daily insulin dose"
+            ]
+        ],
+        "schema_definition": {
+            "has dose adjustment": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+            "_entries": [
+                {
+                    "subject": "rapid- or short-acting insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dose adjustment",
+                    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+                    "object": "remainder of daily insulin dose",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "rapid- or short-acting insulin",
+                "has dose adjustment",
+                "remainder of daily insulin dose"
+            ]
+        ]
+    },
+    {
+        "index": 45,
+        "input_text": "This approach is most effective when the dose of rapid- or short-acting insulin is adjusted for preprandial blood glucose level and anticipated meal content.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "preprandial blood glucose level",
+                "has clinical threshold",
+                "rapid- or short-acting insulin"
+            ],
+            [
+                "rapid- or short-acting insulin",
+                "has dose adjustment",
+                "adjusted for preprandial blood glucose level and anticipated meal content"
+            ]
+        ],
+        "oie": [
+            [
+                "preprandial blood glucose level",
+                "has clinical threshold",
+                "rapid- or short-acting insulin"
+            ]
+        ],
+        "schema_definition": {
+            "has clinical threshold": "The subject clinical metric has a specific quantitative threshold that triggers a clinical action or defines a clinical state.",
+            "_entries": [
+                {
+                    "subject": "preprandial blood glucose level",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "has clinical threshold",
+                    "relation_definition": "The subject clinical metric has a specific quantitative threshold that triggers a clinical action or defines a clinical state.",
+                    "object": "rapid- or short-acting insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "preprandial blood glucose level",
+                "has clinical threshold",
+                "rapid- or short-acting insulin"
+            ]
+        ]
+    },
+    {
+        "index": 46,
+        "input_text": "A correction factor, also known as the insulin sensitivity factor, is the amount that 1 unit of insulin will lower a patient's blood glucose level over 2 to 4 hours; this factor is often calculated using the \"1800 rule\" when rapid-acting insulin is used for correction (1800/total daily dose of insulin).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "blood glucose level",
+                "has clinical threshold",
+                "1800/total daily dose of insulin"
+            ]
+        ],
+        "oie": [
+            [
+                "blood glucose level",
+                "has clinical threshold",
+                "1800/total daily dose of insulin"
+            ]
+        ],
+        "schema_definition": {
+            "has clinical threshold": "The subject clinical metric has a specific quantitative threshold that triggers a clinical action or defines a clinical state.",
+            "_entries": [
+                {
+                    "subject": "blood glucose level",
+                    "subject_type": "Clinical Metric",
+                    "subject_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "relation": "has clinical threshold",
+                    "relation_definition": "The subject clinical metric has a specific quantitative threshold that triggers a clinical action or defines a clinical state.",
+                    "object": "1800/total daily dose of insulin",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units."
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}]",
+        "schema_canonicalizaiton": [
+            [
+                "blood glucose level",
+                "has clinical threshold",
+                "1800/total daily dose of insulin"
+            ]
+        ]
+    },
+    {
+        "index": 47,
+        "input_text": "For regular insulin, a \"1500 rule\" can be used.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 48,
+        "input_text": "A correction dose (current glucose level - target glucose level/ correction factor) is the dose of insulin that will lower the blood glucose level into the target range.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 49,
+        "input_text": "This correction dose can be added to the prandial insulin dose that is calculated for the number of carbohydrates in a meal, using the carbohydrate-to-insulin ratio (CIR).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    }
+]

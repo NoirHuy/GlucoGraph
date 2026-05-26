@@ -1,0 +1,290 @@
+{
+    "type 1 diabetes mellitus": {
+        "cui": "C0011854",
+        "canonical": "Diabetes Mellitus, Insulin-Dependent",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.0
+    },
+    "insulin": {
+        "cui": "C0202098",
+        "canonical": "Insulin measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 1.0
+    },
+    "ketoacidosis": {
+        "cui": "C0220982",
+        "canonical": "Ketoacidosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.0
+    },
+    "type 2 diabetes": {
+        "cui": "C0011860",
+        "canonical": "Diabetes Mellitus, Non-Insulin-Dependent",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.0
+    },
+    "type 1 diabetes": {
+        "cui": "C0011854",
+        "canonical": "Diabetes Mellitus, Insulin-Dependent",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.0
+    },
+    "insulin replacement": {
+        "cui": "C3874750",
+        "canonical": "Basic insulin autoinjector, replaceable-cartridge",
+        "semantic_type": "Medical Device (T074)",
+        "score": 1.0
+    },
+    "injected insulin": {
+        "cui": "C5552803",
+        "canonical": "Injected Insulin Diabetes Therapy",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 1.0
+    },
+    "inhaled insulin preparation": {
+        "cui": "NONE",
+        "canonical": "inhaled insulin preparation",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "multiple daily subcutaneous injections": {
+        "cui": "NONE",
+        "canonical": "multiple daily subcutaneous injections",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "basal insulin": {
+        "cui": "C4548432",
+        "canonical": "basal insulin peglispro",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Hormone (T125)",
+        "score": 1.0
+    },
+    "non-insulin antihyperglycemic medications": {
+        "cui": "NONE",
+        "canonical": "non-insulin antihyperglycemic medications",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "prandial insulin": {
+        "cui": "C5212234",
+        "canonical": "Insulin^post meal:SCnc:Pt:Ser/Plas:Qn",
+        "semantic_type": "Clinical Attribute (T201)",
+        "score": 1.0
+    },
+    "rapid-acting insulins": {
+        "cui": "C0356365",
+        "canonical": "Insulin, Short-Acting",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.0
+    },
+    "insulin lispro": {
+        "cui": "C0293359",
+        "canonical": "insulin lispro",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.0
+    },
+    "insulin aspart": {
+        "cui": "C1708521",
+        "canonical": "Insulin Aspart",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.0
+    },
+    "plasma glucose": {
+        "cui": "C0202042",
+        "canonical": "Plasma Glucose Measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 1.0
+    },
+    "insulins": {
+        "cui": "C3537244",
+        "canonical": "Insulins",
+        "semantic_type": "Pharmacologic Substance (T121)",
+        "score": 1.0
+    },
+    "inhalation insulin": {
+        "cui": "C1725692",
+        "canonical": "insulin inhalation chamber",
+        "semantic_type": "Medical Device (T074)",
+        "score": 1.0
+    },
+    "regular insulin": {
+        "cui": "C0021641",
+        "canonical": "Insulin",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.0
+    },
+    "rapid-acting insulin": {
+        "cui": "C0356365",
+        "canonical": "Insulin, Short-Acting",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.0
+    },
+    "periodic pulmonary examinations": {
+        "cui": "NONE",
+        "canonical": "periodic pulmonary examinations",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "30 to 60 minutes": {
+        "cui": "C5912869",
+        "canonical": "Discontinue feedings 30 to 60 minutes before lowering head of bed",
+        "semantic_type": "Health Care Activity (T058)",
+        "score": 1.0
+    },
+    "6 to 8 hours": {
+        "cui": "C5452751",
+        "canonical": "6-8 hours",
+        "semantic_type": "Temporal Concept (T079)",
+        "score": 1.0
+    },
+    "insulin isophane": {
+        "cui": "C0021658",
+        "canonical": "insulin isophane",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.0
+    },
+    "insulin lisproprotamine": {
+        "cui": "NONE",
+        "canonical": "insulin lisproprotamine",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "insulin aspartprotamine": {
+        "cui": "NONE",
+        "canonical": "insulin aspartprotamine",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "premixed insulin degludec": {
+        "cui": "NONE",
+        "canonical": "premixed insulin degludec",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "glycemic control": {
+        "cui": "C5392125",
+        "canonical": "Glycemic Control",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 1.0
+    },
+    "less predictable": {
+        "cui": "C0429729",
+        "canonical": "Less than 60 percent of predicted peak expiratory flow rate",
+        "semantic_type": "Finding (T033)",
+        "score": 1.0
+    },
+    "insulin glargine": {
+        "cui": "C0907402",
+        "canonical": "insulin glargine",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.0
+    },
+    "any other insulin": {
+        "cui": "NONE",
+        "canonical": "any other insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "insulin pens": {
+        "cui": "C0181364",
+        "canonical": "Insulin Pens",
+        "semantic_type": "Medical Device (T074)",
+        "score": 1.0
+    },
+    "limited vision": {
+        "cui": "C1846337",
+        "canonical": "Limited vision",
+        "semantic_type": "Finding (T033)",
+        "score": 1.0
+    },
+    "manual dexterity": {
+        "cui": "C0678857",
+        "canonical": "Fine Motor Skills",
+        "semantic_type": "Organ or Tissue Function (T042)",
+        "score": 1.0
+    },
+    "hypoglycemia": {
+        "cui": "C0020615",
+        "canonical": "Hypoglycemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.0
+    },
+    "intensive therapy": {
+        "cui": "C5769133",
+        "canonical": "Intensive therapy nursing",
+        "semantic_type": "Biomedical Occupation or Discipline (T091)",
+        "score": 1.0
+    },
+    "weight gain": {
+        "cui": "C0043094",
+        "canonical": "Weight Gain",
+        "semantic_type": "Finding (T033)",
+        "score": 1.0
+    },
+    "obesity": {
+        "cui": "C0028754",
+        "canonical": "Obesity",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.0
+    },
+    "higher doses": {
+        "cui": "C3639809",
+        "canonical": "SOAPP-R - Need Higher Doses of Medication",
+        "semantic_type": "Intellectual Product (T170)",
+        "score": 1.0
+    },
+    "basal needs": {
+        "cui": "NONE",
+        "canonical": "basal needs",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "daily insulin dose": {
+        "cui": "C5230546",
+        "canonical": "Mean total daily insulin dose",
+        "semantic_type": "Quantitative Concept (T081)",
+        "score": 1.0
+    },
+    "preprandial blood glucose level": {
+        "cui": "NONE",
+        "canonical": "preprandial blood glucose level",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "rapid- or short-acting insulin": {
+        "cui": "NONE",
+        "canonical": "rapid- or short-acting insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "adjusted for anticipated meal content": {
+        "cui": "NONE",
+        "canonical": "adjusted for anticipated meal content",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "blood glucose level": {
+        "cui": "C0428554",
+        "canonical": "Finding of blood glucose level",
+        "semantic_type": "Laboratory or Test Result (T034)",
+        "score": 1.0
+    },
+    "1800/total daily dose of insulin": {
+        "cui": "NONE",
+        "canonical": "1800/total daily dose of insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0
+    },
+    "correction dose": {
+        "cui": "C5785101",
+        "canonical": "Heterogeneity Correction Used in Dose Calculation Question",
+        "semantic_type": "Intellectual Product (T170)",
+        "score": 1.0
+    },
+    "carbohydrate-to-insulin ratio": {
+        "cui": "C5230552",
+        "canonical": "Insulin to carbohydrate ratio",
+        "semantic_type": "Quantitative Concept (T081)",
+        "score": 1.0
+    }
+}

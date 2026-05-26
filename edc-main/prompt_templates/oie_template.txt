@@ -1,15 +1,15 @@
-Your task is to extract clinical knowledge as a semantic graph from biomedical text about diabetes management. Output a list of triples in the format: [Entity1, Relationship, Entity2].
+Your task is to extract clinical knowledge as a semantic graph from biomedical/clinical text. Output a list of triples in the format: [Entity1, Relationship, Entity2].
 
 ════════════════════════════════════════════════
 PART 1: ALLOWED ENTITY TYPES
 ════════════════════════════════════════════════
 Entities MUST ONLY belong to one of these UMLS-aligned types:
-  - [Disease/Condition]        e.g., Type 2 Diabetes Mellitus, Hypertension, Prediabetes, excess weight, overweight/obesity, hypoglycemia
-  - [Treatment/Medication]     e.g., Metformin, GLP-1 receptor agonist, lifestyle modification, basal insulin, prandial insulin, premixed insulin
-  - [Symptom/Clinical Finding] e.g., Hyperglycemia, Polyuria, insulin resistance, dyslipidemia, elevated blood pressure
-  - [Clinical Metric/Lab Test] e.g., HbA1c, eGFR, fasting blood glucose, blood pressure, glycemic control, premeal glucose
-  - [Anatomical Site]          e.g., Pancreas, Kidney, Retina, Beta cell
-  - [Dosage Value]             e.g., 20%, <110 mg/dL, 5 units, 50% of total daily dose, 10% to 20%
+  - [Disease/Condition]        e.g., Hypertension, Infection, Diabetes, Arthritis, Asthma, Cancer
+  - [Treatment/Medication]     e.g., Aspirin, Penicillin, Lifestyle Modification, Chemotherapy, Surgery
+  - [Symptom/Clinical Finding] e.g., Pain, Fever, High Blood Pressure, Cough, Inflammation, Dyspnea
+  - [Clinical Metric/Lab Test] e.g., Blood Pressure, Temperature, HbA1c, eGFR, Heart Rate, Lab value
+  - [Anatomical Site]          e.g., Heart, Lung, Kidney, Brain, Pancreas, Retina
+  - [Dosage Value]             e.g., 500mg, 10ml, once daily, 5 units, 20% dosage reduction
 
 ════════════════════════════════════════════════
 PART 2: STRICT IGNORE LIST — DO NOT EXTRACT
@@ -25,6 +25,12 @@ NEVER create a triple involving any of the following:
   - The GENERIC WORD 'relation' — NEVER use 'relation' as a relation label in a triple
   - BARE ADJECTIVES or COMPARATIVES without clinical meaning (e.g., 'longer', 'fewer', 'more', 'less') — these are NOT entities
   - ABSTRACT NON-ENTITIES like 'number of meals', 'simplicity', 'adherence', 'flexibility' — these are NOT clinical entities
+  - DURATIONS, TIME RANGES, or TEMPORAL INTERVALS (e.g., '30 to 60 minutes', '6 to 8 hours', '2 to 3 days', 'daily') — NEVER treat them as clinical subjects/objects.
+  - MATHEMATICAL FORMULAS, NUMBERS, RATIOS, or EQUATIONS (e.g., '1800/total daily dose of insulin') — these are calculations, not clinical entity nodes.
+  - CLINICAL WORKFLOW PROCEDURES, CLINICAL CHECKS, or NURSING PROCESSES (e.g., 'periodic pulmonary examinations', 'adjusted for anticipated meal content', 'taking an active role') — do NOT extract them as adverse effects or titration rules.
+  - COMPARATIVE, GENERIC, or NEGATIVE REFERENCE PHRASES (e.g., 'any other insulin', 'less predictable', 'higher doses', 'slightly slower') — do not extract these.
+  - DRUG-TO-DRUG RELATIONSHIPS FOR PREMIXED/COMPOUND DRUGS (e.g., 'insulin isophane' and 'regular insulin') — since the schema does not have a 'consists of' or 'contains' relation, do NOT force them into 'treated by' or other relations.
+
 
 ════════════════════════════════════════════════
 PART 3: SEVEN UNBREAKABLE EXTRACTION RULES
@@ -35,30 +41,28 @@ RULE 1 — DIRECTIONALITY IS MANDATORY (Fix Logic Inversion):
 
   1a. 'may be treated by' is ALWAYS: [Disease/Condition] → may be treated by → [Treatment/Medication].
       A [Treatment] can NEVER be the SUBJECT of 'may be treated by'.
-      ✗ WRONG: ['basal insulin', 'may be treated by', 'diabetes']
-      ✗ WRONG: ['prandial insulin', 'may be treated by', 'diabetes']
-      ✓ CORRECT: ['diabetes', 'may be treated by', 'basal insulin']
+      ✗ WRONG: ['antibiotics', 'may be treated by', 'pneumonia']
+      ✓ CORRECT: ['pneumonia', 'may be treated by', 'antibiotics']
 
   1b. 'manifestation of' is ALWAYS: [Symptom/Complication] → manifestation of → [Primary Disease].
-      Prediabetes PRECEDES Type 2 Diabetes — use 'may be associated disease of disease' instead.
-      ✗ WRONG: ['prediabetes', 'manifestation of', 'Type 2 Diabetes']
-      ✓ CORRECT: ['diabetic neuropathy', 'manifestation of', 'diabetes mellitus']
+      ✗ WRONG: ['lung cancer', 'manifestation of', 'chronic cough']
+      ✓ CORRECT: ['chronic cough', 'manifestation of', 'lung cancer']
 
   1c. 'associated finding of' is ALWAYS: [Symptom/Clinical Finding] → associated finding of → [Disease].
-      ✗ WRONG: ['weight loss', 'associated finding of', 'dyslipidemia']
-      ✓ CORRECT: ['dyslipidemia', 'may be treated by', 'weight loss']
+      ✗ WRONG: ['disease', 'associated finding of', 'symptom']
+      ✓ CORRECT: ['symptom', 'associated finding of', 'disease']
 
   1d. DRUG/TREATMENT DIRECTION IS ALWAYS: [Disease] → may be treated by → [Drug/Treatment]. NEVER REVERSE.
-      ✗ WRONG: ['metformin', 'may be treated by', 'Type 2 Diabetes']
-      ✓ CORRECT: ['Type 2 Diabetes', 'may be treated by', 'metformin']
+      ✗ WRONG: ['aspirin', 'may be treated by', 'headache']
+      ✓ CORRECT: ['headache', 'may be treated by', 'aspirin']
 
   1e. 'is preferred over' is ALWAYS: [Preferred Drug] → is preferred over → [Less-Preferred Drug].
-      ✗ WRONG: ['NPH', 'is preferred over', 'analog insulins']
-      ✓ CORRECT: ['analog insulins', 'is preferred over', 'NPH']
+      ✗ WRONG: ['generic/older drug', 'is preferred over', 'first-line drug']
+      ✓ CORRECT: ['first-line drug', 'is preferred over', 'generic/older drug']
 
   1f. 'has adverse effect' is ALWAYS: [Drug/Treatment] → has adverse effect → [Symptom/Condition].
-      ✗ WRONG: ['hypoglycemia', 'has adverse effect', 'premixed insulin']
-      ✓ CORRECT: ['premixed insulin', 'has adverse effect', 'hypoglycemia']
+      ✗ WRONG: ['nausea', 'has adverse effect', 'chemotherapy']
+      ✓ CORRECT: ['chemotherapy', 'has adverse effect', 'nausea']
 
 RULE 2 — ONE ENTITY PER SLOT, NO COMPOUND STRINGS (Fix Atomicity Bug):
   NEVER group multiple diseases, symptoms, or treatments into a single string using commas or 'and'.

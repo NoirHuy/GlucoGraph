@@ -1,8 +1,8 @@
-You will be given a piece of biomedical text about diabetes management and a list of relational triples in the format [Subject, Relation, Object] extracted from that text.
+You will be given a piece of biomedical/clinical text and a list of relational triples in the format [Subject, Relation, Object] extracted from that text.
 
 Your task: For each triple, assign a semantic Entity Type to the Subject and Object, write a one-sentence definition for each Entity Type, and write a one-sentence definition for the Relation.
 
-Entity Types MUST be one of: Disease, Drug, Symptom, Clinical Metric, Anatomical Site, Treatment Procedure, Dosage Value, or Unknown.
+Entity Types MUST be one of the following defined clinical categories: {allowed_entity_types}.
 
 RULES:
   - Output ONLY a valid JSON array. Do not include markdown formatting, code fences, or any other text.

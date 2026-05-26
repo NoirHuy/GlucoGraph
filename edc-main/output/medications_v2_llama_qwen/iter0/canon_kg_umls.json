@@ -1,0 +1,853 @@
+[
+    {
+        "line_index": 0,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 1,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 2,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 3,
+        "raw_triplets": [
+            [
+                "GLP-1 agonists",
+                "has adverse effect",
+                "nausea"
+            ],
+            [
+                "GLP-1 agonists",
+                "has adverse effect",
+                "vomiting"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "GLP-1 agonists",
+                    "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+                    "cui": "C1562104",
+                    "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+                    "score": 1.6
+                },
+                "relation": "has adverse effect",
+                "object": {
+                    "original": "nausea",
+                    "canonical": "Nausea",
+                    "cui": "C0027497",
+                    "semantic_type": "Sign or Symptom (T184)",
+                    "score": 13.09
+                }
+            },
+            {
+                "subject": {
+                    "original": "GLP-1 agonists",
+                    "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+                    "cui": "C1562104",
+                    "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+                    "score": 1.6
+                },
+                "relation": "has adverse effect",
+                "object": {
+                    "original": "vomiting",
+                    "canonical": "Vomiting",
+                    "cui": "C0042963",
+                    "semantic_type": "Sign or Symptom (T184)",
+                    "score": 13.1
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 4,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 5,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 6,
+        "raw_triplets": [
+            [
+                "type 2 diabetes",
+                "treated by",
+                "tirzepatide"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "type 2 diabetes",
+                    "canonical": "Diabetes Mellitus, Non-Insulin-Dependent",
+                    "cui": "C0011860",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 1.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "tirzepatide",
+                    "canonical": "tirzepatide",
+                    "cui": "C5139934",
+                    "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 7,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 8,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 9,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 10,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 11,
+        "raw_triplets": [
+            [
+                "obesity",
+                "treated by",
+                "Tirzepatide"
+            ],
+            [
+                "diabetes",
+                "treated by",
+                "Tirzepatide"
+            ],
+            [
+                "metabolic dysfunction-associated steatotic liver disease",
+                "treated by",
+                "pioglitazone"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "obesity",
+                    "canonical": "Obesity",
+                    "cui": "C0028754",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 13.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "Tirzepatide",
+                    "canonical": "tirzepatide",
+                    "cui": "C5139934",
+                    "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "diabetes",
+                    "canonical": "Diabetes",
+                    "cui": "C0011847",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 13.08
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "Tirzepatide",
+                    "canonical": "tirzepatide",
+                    "cui": "C5139934",
+                    "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "metabolic dysfunction-associated steatotic liver disease",
+                    "canonical": "Non-alcoholic Fatty Liver Disease",
+                    "cui": "C0400966",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 1.3000000000000003
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "pioglitazone",
+                    "canonical": "pioglitazone",
+                    "cui": "C0071097",
+                    "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 12,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 13,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 14,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 15,
+        "raw_triplets": [
+            [
+                "type 1 diabetes",
+                "has biomarker",
+                "subcutaneously"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "type 1 diabetes",
+                    "canonical": "Diabetes Mellitus, Insulin-Dependent",
+                    "cui": "C0011854",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 1.1
+                },
+                "relation": "has biomarker",
+                "object": {
+                    "original": "subcutaneously",
+                    "canonical": "Administered subcutaneously",
+                    "cui": "C1736929",
+                    "semantic_type": "Finding (T033)",
+                    "score": 8.1
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 16,
+        "raw_triplets": [
+            [
+                "beta-cell destruction",
+                "treated by",
+                "Teplizumab"
+            ],
+            [
+                "beta-cell destruction",
+                "has finding",
+                "cells"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "beta-cell destruction",
+                    "canonical": "diabetes (mellitus) due to immune mediated pancreatic islet beta-cell destruction",
+                    "cui": "C4290091",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 4.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "Teplizumab",
+                    "canonical": "teplizumab",
+                    "cui": "C2743673",
+                    "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Immunologic Factor (T129)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "beta-cell destruction",
+                    "canonical": "diabetes (mellitus) due to immune mediated pancreatic islet beta-cell destruction",
+                    "cui": "C4290091",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 4.1
+                },
+                "relation": "has finding",
+                "object": {
+                    "original": "cells",
+                    "canonical": "Cells",
+                    "cui": "C0007634",
+                    "semantic_type": "Cell (T025)",
+                    "score": 13.1
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 17,
+        "raw_triplets": [
+            [
+                "type 1 diabetes",
+                "treated by",
+                "teplizumab"
+            ],
+            [
+                "type 1 diabetes",
+                "has evaluation",
+                "glycemic control"
+            ],
+            [
+                "type 1 diabetes",
+                "has evaluation",
+                "insulin dosing requirement"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "type 1 diabetes",
+                    "canonical": "Diabetes Mellitus, Insulin-Dependent",
+                    "cui": "C0011854",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 1.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "teplizumab",
+                    "canonical": "teplizumab",
+                    "cui": "C2743673",
+                    "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Immunologic Factor (T129)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "type 1 diabetes",
+                    "canonical": "Diabetes Mellitus, Insulin-Dependent",
+                    "cui": "C0011854",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 1.1
+                },
+                "relation": "has evaluation",
+                "object": {
+                    "original": "glycemic control",
+                    "canonical": "Glycemic Control",
+                    "cui": "C5392125",
+                    "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "type 1 diabetes",
+                    "canonical": "Diabetes Mellitus, Insulin-Dependent",
+                    "cui": "C0011854",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 1.1
+                },
+                "relation": "has evaluation",
+                "object": {
+                    "original": "insulin dosing requirement",
+                    "canonical": "insulin dosing requirement",
+                    "cui": "NONE",
+                    "semantic_type": "Unknown",
+                    "score": 0.0
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 18,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 19,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 20,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 21,
+        "raw_triplets": [
+            [
+                "diabetes mellitus",
+                "treated by",
+                "inhibitors"
+            ],
+            [
+                "diabetes mellitus",
+                "treated by",
+                "angiotensin II receptor blockers"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "diabetes mellitus",
+                    "canonical": "Diabetes Mellitus",
+                    "cui": "C0011849",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 13.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "inhibitors",
+                    "canonical": "inhibitors",
+                    "cui": "C0243077",
+                    "semantic_type": "Chemical Viewed Functionally (T120)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "diabetes mellitus",
+                    "canonical": "Diabetes Mellitus",
+                    "cui": "C0011849",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 13.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "angiotensin II receptor blockers",
+                    "canonical": "Angiotensin II receptor antagonist",
+                    "cui": "C0521942",
+                    "semantic_type": "Pharmacologic Substance (T121)",
+                    "score": 2.34
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 22,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 23,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 24,
+        "raw_triplets": [
+            [
+                "CKD",
+                "treated by",
+                "finerenone"
+            ],
+            [
+                "CKD",
+                "contraindicated with",
+                "inhibitor"
+            ],
+            [
+                "albuminuria",
+                "has finding",
+                "CKD"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "CKD",
+                    "canonical": "CKD",
+                    "cui": "NONE",
+                    "semantic_type": "Unknown",
+                    "score": 0.0
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "finerenone",
+                    "canonical": "finerenone",
+                    "cui": "C4045511",
+                    "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "CKD",
+                    "canonical": "CKD",
+                    "cui": "NONE",
+                    "semantic_type": "Unknown",
+                    "score": 0.0
+                },
+                "relation": "contraindicated with",
+                "object": {
+                    "original": "inhibitor",
+                    "canonical": "Inhibitor",
+                    "cui": "C1999216",
+                    "semantic_type": "Biologically Active Substance (T123)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "albuminuria",
+                    "canonical": "Albuminuria",
+                    "cui": "C0001925",
+                    "semantic_type": "Finding (T033)",
+                    "score": 13.1
+                },
+                "relation": "has finding",
+                "object": {
+                    "original": "CKD",
+                    "canonical": "CKD",
+                    "cui": "NONE",
+                    "semantic_type": "Unknown",
+                    "score": 0.0
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 25,
+        "raw_triplets": [
+            [
+                "diabetes mellitus",
+                "treated by",
+                "inhibitors"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "diabetes mellitus",
+                    "canonical": "Diabetes Mellitus",
+                    "cui": "C0011849",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 13.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "inhibitors",
+                    "canonical": "inhibitors",
+                    "cui": "C0243077",
+                    "semantic_type": "Chemical Viewed Functionally (T120)",
+                    "score": 13.1
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 26,
+        "raw_triplets": [
+            [
+                "ASCVD",
+                "treated by",
+                "inhibitor"
+            ],
+            [
+                "ASCVD",
+                "treated by",
+                "ARB"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "ASCVD",
+                    "canonical": "Atherosclerosis",
+                    "cui": "C0004153",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 0.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "inhibitor",
+                    "canonical": "Inhibitor",
+                    "cui": "C1999216",
+                    "semantic_type": "Biologically Active Substance (T123)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "ASCVD",
+                    "canonical": "Atherosclerosis",
+                    "cui": "C0004153",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 0.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "ARB",
+                    "canonical": "ARB",
+                    "cui": "NONE",
+                    "semantic_type": "Unknown",
+                    "score": 0.0
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 27,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 28,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 29,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 30,
+        "raw_triplets": [
+            [
+                "ASCVD",
+                "treated by",
+                "Aspirin"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "ASCVD",
+                    "canonical": "Atherosclerosis",
+                    "cui": "C0004153",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 0.1
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "Aspirin",
+                    "canonical": "aspirin",
+                    "cui": "C0004057",
+                    "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 31,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 32,
+        "raw_triplets": [
+            [
+                "diabetes",
+                "treated by",
+                "aspirin"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "diabetes",
+                    "canonical": "Diabetes",
+                    "cui": "C0011847",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 13.08
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "aspirin",
+                    "canonical": "aspirin",
+                    "cui": "C0004057",
+                    "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 33,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 34,
+        "raw_triplets": [
+            [
+                "diabetes",
+                "treated by",
+                "statins"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "diabetes",
+                    "canonical": "Diabetes",
+                    "cui": "C0011847",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 13.08
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "statins",
+                    "canonical": "statins",
+                    "cui": "NONE",
+                    "semantic_type": "Unknown",
+                    "score": 0.0
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 35,
+        "raw_triplets": [
+            [
+                "high-intensity statin",
+                "preferred over",
+                "atorvastatin"
+            ],
+            [
+                "high-intensity statin",
+                "preferred over",
+                "rosuvastatin"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "high-intensity statin",
+                    "canonical": "High-intensity statin therapy",
+                    "cui": "C4047691",
+                    "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+                    "score": 8.1
+                },
+                "relation": "preferred over",
+                "object": {
+                    "original": "atorvastatin",
+                    "canonical": "atorvastatin",
+                    "cui": "C0286651",
+                    "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "high-intensity statin",
+                    "canonical": "High-intensity statin therapy",
+                    "cui": "C4047691",
+                    "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+                    "score": 8.1
+                },
+                "relation": "preferred over",
+                "object": {
+                    "original": "rosuvastatin",
+                    "canonical": "rosuvastatin",
+                    "cui": "C0965129",
+                    "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 36,
+        "raw_triplets": [
+            [
+                "diabetes",
+                "treated by",
+                "statin"
+            ],
+            [
+                "diabetes",
+                "treated by",
+                "ezetimibe"
+            ],
+            [
+                "low-density lipoprotein (LDL) cholesterol",
+                "has titration rule",
+                "< 70 mg/dL"
+            ]
+        ],
+        "umls_mapped_triplets": [
+            {
+                "subject": {
+                    "original": "diabetes",
+                    "canonical": "Diabetes",
+                    "cui": "C0011847",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 13.08
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "statin",
+                    "canonical": "EEF1A2 gene",
+                    "cui": "C1414273",
+                    "semantic_type": "Gene or Genome (T028)",
+                    "score": 0.09000000000000001
+                }
+            },
+            {
+                "subject": {
+                    "original": "diabetes",
+                    "canonical": "Diabetes",
+                    "cui": "C0011847",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "score": 13.08
+                },
+                "relation": "treated by",
+                "object": {
+                    "original": "ezetimibe",
+                    "canonical": "ezetimibe",
+                    "cui": "C1142985",
+                    "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+                    "score": 13.1
+                }
+            },
+            {
+                "subject": {
+                    "original": "low-density lipoprotein (LDL) cholesterol",
+                    "canonical": "LDL Cholesterol Lipoproteins",
+                    "cui": "C0023824",
+                    "semantic_type": "Organic Chemical (T109), Biologically Active Substance (T123)",
+                    "score": 0.85
+                },
+                "relation": "has titration rule",
+                "object": {
+                    "original": "< 70 mg/dL",
+                    "canonical": "< 70 mg/dL",
+                    "cui": "NONE",
+                    "semantic_type": "Unknown",
+                    "score": 0.0
+                }
+            }
+        ]
+    },
+    {
+        "line_index": 37,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 38,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 39,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    },
+    {
+        "line_index": 40,
+        "raw_triplets": [],
+        "umls_mapped_triplets": []
+    }
+]

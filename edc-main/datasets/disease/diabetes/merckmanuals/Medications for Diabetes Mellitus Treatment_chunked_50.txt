@@ -1,0 +1,50 @@
+﻿Insulin is required for all patients with type 1 diabetes mellitus because they do not produce adequate insulin (due to destruction of the pancreatic beta-cells) and will develop ketoacidosis without it.
+Insulin is also used in the management of many patients with type 2 diabetes.
+Insulin replacement in type 1 diabetes should ideally mimic beta-cell function to provide basal and prandial requirements (physiologic replacement or basal-bolus dosing).
+To achieve this, different preparations of insulin and methods of administration can be used.
+Except for use of regular insulin, which is given IV in hospitalized patients, insulin is almost always administered subcutaneously.
+An inhaled insulin preparation is available for patients who prefer not to inject themselves.
+It has a slightly more rapid onset of action compared to subcutaneously injected rapid acting insulin.
+Multiple daily subcutaneous injections administered by the patient, with 2 preparations of insulin used depending on the anticipated glycemic control needs.
+An insulin pump that delivers a rapid- or short-acting insulin and administers a basal rate of insulin and additional boluses with meals or for correcting a high blood glucose level.
+Both strategies require close attention to diet and exercise as well as to insulin timing and dose.
+When insulin is needed for patients with type 2 diabetes, glycemic control can often be achieved with basal insulin combined with non-insulin antihyperglycemic medications, although some patients may require prandial (bolus dosing at meals) insulin.
+Most insulin preparations are recombinant human, mostly eliminating the once-common allergic reactions to the medication when it was extracted from animal sources.
+A number of analogs are also available.
+These analogs were created by modifying the human insulin molecule to alter absorption rates and duration and time to action.
+Insulin types are commonly categorized by their time to onset and duration of action (see table Onset, Peak, and Duration of Action of Human Insulin Preparations).
+However, these parameters vary within and among patients, depending on many factors (eg, site and technique of injection, amount of subcutaneous fat, blood flow at the injection site).
+Rapid-acting insulins, including insulin lispro and insulin aspart, are rapidly absorbed because reversal of an amino acid pair prevents the insulin molecule from associating into dimers and polymers.
+They begin to reduce plasma glucose often within 15 minutes but have short duration of action (< 4 hours).
+These insulins are best used at mealtime to control postprandial spikes in plasma glucose.
+Inhaled regular insulin is a rapid-acting insulin that is taken with meals.
+It has a slightly more rapid onset of action compared to subcutaneously injected rapid-acting insulin but dosing is less flexible, and periodic pulmonary examinations are required.
+Regular insulin is slightly slower in onset (30 to 60 minutes) than insulin lispro and insulin aspart but lasts longer (6 to 8 hours).
+It is the only insulin form for IV use.
+Intermediate-acting insulins include insulin isophane (Neutral protamine Hagedorn, or NPH) and U-500 regular.
+The onset of action for insulin isophane is about 2 hours after injection; peak effect is 4 to 12 hours after injection, and duration of action is 18 to 26 hours.
+Concentrated regular insulin U-500 has a similar peak and duration of action (peak 4 to 8 hours; duration 13 to 24 hours) and can be dosed 2 to 3 times per day.
+Long-acting insulins, such as insulin glargine, insulin detemir, and U-300 insulin glargine, unlike insulin isophane, have no discernible peak of action and provide a steady basal effect over 24 hours.
+Insulin degludec (another long-acting insulin) has an even longer duration of action of over 40 hours.
+It is dosed daily, and although it requires 3 days to achieve steady state, the timing of dosing is less rigid.
+Insulin icodec is a weekly insulin that is available in several regions of the world but not in the United States.
+Combinations of insulin isophane and regular insulin and of insulin lispro and insulin lisproprotamine (a form of insulin lispro modified to act like insulin isophane) are commercially available in premixed preparations (see table Onset, Peak, and Duration of Action of Human Insulin Preparations).
+Other premixed formulations include insulin aspartprotamine (a form of insulin aspart modified to act like insulin isophane) with insulin aspart and a formulation of premixed insulin degludec and insulin aspart.
+Different insulin types can be drawn into the same syringe for injection but should not be premixed in bottles except by a manufacturer.
+On occasion, mixing insulins may affect rates of insulin absorption, producing variability of effect and making glycemic control less predictable, especially if mixed > 1 hour before use.
+Insulin glargine should never be mixed with any other insulin.
+Many prefilled insulin pen devices are available as an alternative to the conventional vial and syringe method.
+Insulin pens may be more convenient for use away from home and may be preferable for patients with limited vision or manual dexterity.
+Spring-loaded self-injection devices (for use with a syringe) may be useful for the occasional patient who is fearful of injection, and syringe magnifiers are available for patients with low vision.
+"Smart" or "connected" insulin pens and pen caps communicate with a smart phone application to track administered insulin and make dosing recommendations.
+Regimens range from twice a day split-mixed (eg, split doses of rapid- and intermediate-acting insulins) to more physiologic basal-bolus regimens using multiple daily injections (eg, single fixed [basal] dose of long-acting and variable prandial [bolus] doses of rapid-acting insulin) or an insulin pump.
+Intensive treatment, defined as glucose monitoring â‰¥ 4 times a day and â‰¥ 3 injections a day or continuous insulin infusion, is more effective than less frequent treatment (1 to 2 insulin injections a day with or without monitoring) for preventing diabetic retinopathy, nephropathy, and neuropathy.
+However, intensive therapy may result in more frequent episodes of hypoglycemia and weight gain and is more effective in patients who are able and willing to take an active role in their self-care.
+In general, most patients with type 1 diabetes mellitus can start with a total dose of 0.2 to 0.8 units of insulin/kg/day.
+Patients with obesity may require higher doses.
+Physiologic replacement involves giving 40 to 60% of the daily insulin dose as an intermediate- or long-acting preparation to cover basal needs, with the remainder given as a rapid- or short-acting preparation to cover postprandial increases.
+This approach is most effective when the dose of rapid- or short-acting insulin is adjusted for preprandial blood glucose level and anticipated meal content.
+A correction factor, also known as the insulin sensitivity factor, is the amount that 1 unit of insulin will lower a patient's blood glucose level over 2 to 4 hours; this factor is often calculated using the "1800 rule" when rapid-acting insulin is used for correction (1800/total daily dose of insulin).
+For regular insulin, a "1500 rule" can be used.
+A correction dose (current glucose level - target glucose level/ correction factor) is the dose of insulin that will lower the blood glucose level into the target range.
+This correction dose can be added to the prandial insulin dose that is calculated for the number of carbohydrates in a meal, using the carbohydrate-to-insulin ratio (CIR).

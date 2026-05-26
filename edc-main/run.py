@@ -119,6 +119,8 @@ if __name__ == "__main__":
         help="Enable UMLS post-processing and mapping after generating canon_kg.txt",
     )
 
+
+
     # Output setting
     parser.add_argument("--output_dir", default="./output/tmp", help="Directory to output to.")
     parser.add_argument("--logging_verbose", action="store_const", dest="loglevel", const=logging.INFO)

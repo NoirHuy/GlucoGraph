@@ -1,9 +1,9 @@
-You will be given a piece of biomedical text about diabetes management and a list of relational triples in the format [Subject, Relation, Object] extracted from that text.
+You will be given a piece of biomedical/clinical text and a list of relational triples in the format [Subject, Relation, Object] extracted from that text.
 
 Your task: For each UNIQUE relation label present in the triples, write a clear and general description that captures the semantic meaning of that relation. The description must:
   1. Be general enough to apply to other entity pairs, not just the ones in this example.
   2. Describe the direction: from Subject → to Object.
-  3. Be domain-aware: both entities are clinical concepts (Disease, Medication, Symptom, Clinical Metric, or Anatomical Site).
+  3. Be domain-aware: both entities are clinical concepts.
 
 RULES:
   - Only describe relations that appear in the provided triple list.

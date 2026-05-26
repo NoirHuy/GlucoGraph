@@ -42,6 +42,14 @@ class SemanticValidator:
         re.compile(r'^(simplicity|flexibility|adherence|compliance|convenience|complexity|tolerability|efficacy|safety|benefit|risk|cost|algorithm|guideline|management|therapy|treatment|intervention|interventions|proposed interventions|overall health|guidance|care|approach)$', re.IGNORECASE),
         # Empty or whitespace-only strings
         re.compile(r'^\s*$'),
+        # Durations and time ranges (e.g., "30 to 60 minutes", "6-8 hours", "2 to 3 days")
+        re.compile(r'^\d+(\s*(to|\-)\s*\d+)?\s*(minute|hour|day|week|month|year|sec|min|hr|day|wk|yr)s?$', re.IGNORECASE),
+        # Mathematical formulas and expressions starting with numbers (e.g., "1800/total daily dose of insulin")
+        re.compile(r'^\d+\s*[\/]\s*[a-zA-Z0-9_\s/*+\-]+$', re.IGNORECASE),
+        # Comparative/relative adjective phrases (e.g., "less predictable", "slightly slower", "longer duration", "higher doses")
+        re.compile(r'^(less|more|slightly|highly|very|slower|faster|longer|shorter|better|worse|higher|lower|greater|fewer|larger|smaller)\s+[a-zA-Z0-9_\-\s]+$', re.IGNORECASE),
+        # Negative/generic reference phrases (e.g., "any other insulin", "another drug")
+        re.compile(r'^(any|other|another|some|all|no|none\s+of|any\s+other)\s+[a-zA-Z0-9_\-\s]+$', re.IGNORECASE),
     ]
 
     def __init__(
@@ -165,6 +173,58 @@ class SemanticValidator:
             f"instruction_model: {self.is_instruction_model})"
         )
 
+    def _strip_ontology_noise(self, term: str) -> str:
+        """Removes common ontology noise prefixes (e.g. 'RNAx ', 'MESH:', '[RNAx] ') from entities."""
+        term_clean = term.strip()
+        
+        # Pattern 1: Matches brackets prefix like [RNAx] or [Code] at the beginning
+        term_clean = re.sub(r'^\[[A-Za-z0-9_\-]+\]\s*', '', term_clean)
+        
+        # Pattern 2: Matches word prefix with code like 'RNAx ', 'RNA-x ', 'MESH:', 'SNOMEDCT_US_' followed by space, colon, or dash
+        term_clean = re.sub(r'^(RNAx|MESH|SNOMEDCT|SNOMED|OMIM|RXNORM|ICD10|ICD9|ICD|EHR)[0-9_A-Za-z\-]*[:_\-\s]\s*', '', term_clean, flags=re.IGNORECASE)
+        
+        # Pattern 3: Matches single short uppercase code prefix like 'A1 ', 'R1 ' or similar y-axis tags at the very beginning
+        term_clean = re.sub(r'^[A-Z]+[0-9]*\s+', '', term_clean)
+        
+        return term_clean.strip()
+
+    def _is_atomic_entity(self, term: str) -> bool:
+        """Checks if a term is atomic (not a sentence or verbose instruction).
+        Discards terms exceeding a word count threshold or starting with instruction action verbs.
+        """
+        words = term.strip().split()
+        if not words:
+            return False
+            
+        # Word count check: most clinical entities are 1-5 words. Instructions are longer.
+        if len(words) > 5:
+            return False
+            
+        # Instruction and clinical workflow action verb check
+        first_word = words[0].lower().rstrip(',.:')
+        instruction_verbs = {
+            "instruct", "instructs", "instructing",
+            "teach", "teaches", "teaching",
+            "educate", "educates", "educating",
+            "advise", "advises", "advising",
+            "encourage", "encourages", "encouraging",
+            "recommend", "recommends", "recommending",
+            "recommended", "counsel", "counsels", "counseling",
+            "tell", "tells", "telling",
+            "monitor", "monitors", "monitoring",
+            "provide", "provides", "providing",
+            "refer", "refers", "referring",
+            "adjust", "adjusts", "adjusted", "adjusting",
+            "initiate", "initiates", "initiated", "initiating",
+            "discontinue", "discontinues", "discontinued", "discontinuing", "discontinuation",
+            "assess", "assesses", "assessed", "assessing",
+            "evaluate", "evaluates", "evaluated", "evaluating"
+        }
+        if first_word in instruction_verbs:
+            return False
+            
+        return True
+
     def _is_non_entity(self, entity_str: str) -> bool:
         """Check if a string is NOT a valid clinical entity."""
         for pattern in self._NON_ENTITY_PATTERNS:
@@ -272,9 +332,10 @@ class SemanticValidator:
 
     def try_auto_correct_direction_by_type(
         self, triple: List[str], subj_type: str, obj_type: str
-    ) -> Tuple[List[str], str, str]:
+    ) -> Tuple[Optional[List[str]], str, str]:
         """
-        Auto-correct directionality based on dynamically learned Entity Types.
+        Auto-correct directionality and perform strict domain/range validation 
+        based on dynamically learned Entity Types.
         Runs AFTER Schema Definition/Canonicalization when types are known.
         
         Args:
@@ -284,6 +345,7 @@ class SemanticValidator:
             
         Returns:
             Tuple of (corrected_triple, corrected_subj_type, corrected_obj_type)
+            If the triple violates type constraints and cannot be corrected, returns (None, "", "")
         """
         if len(triple) != 3:
             return triple, subj_type, obj_type
@@ -291,23 +353,48 @@ class SemanticValidator:
         subj, rel, obj = triple
         rel_lower = rel.strip().lower()
 
+        # Check if we have defined type constraints for this relation
         if rel_lower in self.relation_subj_types:
             allowed_subj_types = self.relation_subj_types[rel_lower]
             allowed_obj_types = self.relation_obj_types[rel_lower]
 
-            # Verify the relation has asymmetric/distinct subject/object types (no overlap)
+            # 1. Check if we need to swap direction
             intersection = allowed_subj_types.intersection(allowed_obj_types)
             if not intersection:
-                # If the current types match the inverted pattern (subj has obj type, obj has subj type)
+                # If current types match the inverted pattern, swap them
                 if subj_type in allowed_obj_types and obj_type in allowed_subj_types:
                     logger.debug(
                         f"[VALIDATOR] Dynamic type-based direction auto-corrected: "
                         f"[{subj} ({subj_type}), {rel}, {obj} ({obj_type})] → "
                         f"[{obj} ({obj_type}), {rel}, {subj} ({subj_type})]"
                     )
-                    return [obj, rel, subj], obj_type, subj_type
+                    subj, obj = obj, subj
+                    subj_type, obj_type = obj_type, subj_type
 
-        return triple, subj_type, obj_type
+            # 2. Strict Domain/Range Validation
+            # Verify the types are compatible. If not, discard the triple.
+            if subj_type not in allowed_subj_types or obj_type not in allowed_obj_types:
+                logger.debug(
+                    f"[VALIDATOR] Discarding triple violating domain/range: "
+                    f"[{subj} ({subj_type}), {rel}, {obj} ({obj_type})]. "
+                    f"Allowed subjects: {allowed_subj_types}, allowed objects: {allowed_obj_types}"
+                )
+                return None, "", ""
+
+        # Additional specific semantic rules as fail-safes for standard relations:
+        # Rule A: 'has adverse effect' - object CANNOT be a drug or treatment
+        if rel_lower in ["has adverse effect", "has_adverse_effect"]:
+            if obj_type in ["Drug", "Treatment Procedure"] or "drug" in obj.lower() or "insulin" in obj.lower():
+                logger.debug(f"[VALIDATOR] Discarding 'has adverse effect' with non-symptom object: {triple}")
+                return None, "", ""
+
+        # Rule B: 'treated by' - subject CANNOT be a drug
+        if rel_lower in ["treated by", "treated_by", "may be treated by"]:
+            if subj_type in ["Drug", "Treatment Procedure"]:
+                logger.debug(f"[VALIDATOR] Discarding 'treated by' with drug subject: {triple}")
+                return None, "", ""
+
+        return [subj, rel, obj], subj_type, obj_type
 
     def validate_triple(self, triple: List[str], input_text: str = "") -> Optional[List[str]]:
         """
@@ -323,12 +410,24 @@ class SemanticValidator:
 
         subj, rel, obj = triple
 
+        # Strip ontology noise early
+        subj = self._strip_ontology_noise(subj)
+        obj = self._strip_ontology_noise(obj)
+
         # Check 1: Non-entity detection
         if self._is_non_entity(subj):
             logger.debug(f"[VALIDATOR] Discarded non-entity subject: '{subj}' in {triple}")
             return None
         if self._is_non_entity(obj):
             logger.debug(f"[VALIDATOR] Discarded non-entity object: '{obj}' in {triple}")
+            return None
+
+        # Check 1.5: Atomicity check (discard instructions and sentences)
+        if not self._is_atomic_entity(subj):
+            logger.debug(f"[VALIDATOR] Discarded non-atomic subject: '{subj}' in {triple}")
+            return None
+        if not self._is_atomic_entity(obj):
+            logger.debug(f"[VALIDATOR] Discarded non-atomic object: '{obj}' in {triple}")
             return None
 
         # Check 2: Duplicate subject/object (tautology)

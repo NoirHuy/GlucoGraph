@@ -4,7 +4,7 @@ from edc.schema_canonicalization import SchemaCanonicalizer
 from edc.entity_extraction import EntityExtractor
 from edc.entity_type_canonicalization import EntityTypeCanonicalizer
 from edc.semantic_validator import SemanticValidator
-from edc.umls_normalizer import UMLSNormalizer
+from edc.post_processing.umls_normalizer import UMLSNormalizer
 import edc.utils.llm_utils as llm_utils
 from typing import List
 from edc.utils.e5_mistral_utils import MistralForSequenceEmbedding
@@ -194,6 +194,7 @@ class EDC:
 
         self.loaded_model_dict = {}
 
+
         self.umls_api_key = edc_configuration.get("umls_api_key", "")
         self.run_umls_normalization = edc_configuration.get("run_umls_normalization", False)
 
@@ -290,12 +291,22 @@ class EDC:
     def schema_definition(self, input_text_list: List[str], oie_triplets_list: List[List[str]], free_model=False):
         assert len(input_text_list) == len(oie_triplets_list)
 
+        allowed_types = list(self.entity_type_schema.keys()) if self.entity_type_schema else None
         if not llm_utils.is_model_openai(self.sd_llm_name):
             # Load the HF model for Schema Definition
             sd_model, sd_tokenizer = self.load_model(self.sd_llm_name, "hf")
-            schema_definer = SchemaDefiner(model=sd_model, tokenizer=sd_tokenizer, use_entity_types=True)
+            schema_definer = SchemaDefiner(
+                model=sd_model, 
+                tokenizer=sd_tokenizer, 
+                use_entity_types=True,
+                allowed_entity_types=allowed_types
+            )
         else:
-            schema_definer = SchemaDefiner(openai_model=self.sd_llm_name, use_entity_types=True)
+            schema_definer = SchemaDefiner(
+                openai_model=self.sd_llm_name, 
+                use_entity_types=True,
+                allowed_entity_types=allowed_types
+            )
 
         # Use entity-aware template + few-shot examples
         sd_template_path     = self._sd_template_with_entities
@@ -612,9 +623,9 @@ class EDC:
                 and iteration == refinement_iterations,
             )
 
-            # ── Phase 2.5: Type-based Direction Auto-Correction ──────────────────────
+            # ── Phase 2.5: Type-based Direction Auto-Correction & Validation ──────────
             # Now that we have Entity Types from Phase 2, we can perform reliable 
-            # directionality auto-correction based on the Schema before Phase 3.
+            # directionality auto-correction and type constraint checking before Phase 3.
             for idx in range(len(oie_triplets_list)):
                 oie_trips = oie_triplets_list[idx]
                 sd_dict = sd_dict_list[idx]
@@ -628,9 +639,12 @@ class EDC:
                     key = (entry.get("subject", ""), entry.get("relation", ""), entry.get("object", ""))
                     entry_map[key] = entry
                 
+                new_oie_trips = []
                 for i in range(len(oie_trips)):
                     trip = oie_trips[i]
-                    if len(trip) != 3: continue
+                    if len(trip) != 3: 
+                        new_oie_trips.append(trip)
+                        continue
                     key = (trip[0], trip[1], trip[2])
                     if key in entry_map:
                         entry = entry_map[key]
@@ -640,11 +654,18 @@ class EDC:
                         corrected_trip, c_subj, c_obj = validator.try_auto_correct_direction_by_type(
                             trip, subj_type, obj_type
                         )
-                        if corrected_trip != trip:
-                            oie_trips[i] = corrected_trip
+                        if corrected_trip is None:
+                            logger.info(f"[FRAMEWORK] Discarding triple violating semantic constraints in Phase 2.5: {trip}")
+                            if entry in sd_entries:
+                                sd_entries.remove(entry)
+                            continue
+                        elif corrected_trip != trip:
+                            trip = corrected_trip
                             # Update the sd_entry so Phase 3b Canonicalization sees the swapped types
                             entry["subject"], entry["object"] = entry["object"], entry["subject"]
                             entry["subject_type"], entry["object_type"] = entry["object_type"], entry["subject_type"]
+                    new_oie_trips.append(trip)
+                oie_triplets_list[idx] = new_oie_trips
 
             del required_model_dict_current_iteration["sc_embed"]
             del required_model_dict_current_iteration["sc_verify"]
@@ -659,11 +680,7 @@ class EDC:
             non_null_triplets_list = [
                 [triple for triple in triplets if triple is not None] for triplets in canon_triplets_list
             ]
-            # for triplets in canon_triplets_list:
-            #     non_null_triplets = []
-            #     for triple in triplets:
-            #         if triple is not None:
-            #             non_n
+
             triplets_from_last_iteration = non_null_triplets_list
 
             # Write results

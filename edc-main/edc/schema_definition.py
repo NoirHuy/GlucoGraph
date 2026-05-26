@@ -65,12 +65,17 @@ class SchemaDefiner:
         tokenizer: AutoTokenizer = None,
         openai_model: str = None,
         use_entity_types: bool = True,
+        allowed_entity_types: List[str] = None,
     ) -> None:
         assert openai_model is not None or (model is not None and tokenizer is not None)
         self.model        = model
         self.tokenizer    = tokenizer
         self.openai_model = openai_model
         self.use_entity_types = use_entity_types
+        self.allowed_entity_types = allowed_entity_types or [
+            "Disease", "Drug", "Symptom", "Clinical Metric", 
+            "Anatomical Site", "Treatment Procedure", "Dosage Value", "Unknown"
+        ]
 
     def define_schema(
         self,
@@ -105,12 +110,14 @@ class SchemaDefiner:
             if len(t) >= 2:
                 relations_present.add(t[1])
 
+        types_str = ", ".join(self.allowed_entity_types)
         filled_prompt = prompt_template_str.format_map(
             {
-                "text":             input_text_str,
-                "few_shot_examples": few_shot_examples_str,
-                "relations":        relations_present,
-                "triples":          extracted_triplets_list,
+                "text":                 input_text_str,
+                "few_shot_examples":    few_shot_examples_str,
+                "relations":           relations_present,
+                "triples":             extracted_triplets_list,
+                "allowed_entity_types": types_str,
             }
         )
         messages = [{"role": "user", "content": filled_prompt}]
