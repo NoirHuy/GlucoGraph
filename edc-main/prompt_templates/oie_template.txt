@@ -126,6 +126,12 @@ RULE 8 — STRICT TEXTUAL ANCHORING (No Hallucinated/Outside Entities):
   without a specific target disease, DO NOT hallucinate the target disease. If no specific 
   disease is mentioned, do not extract "may be treated by" triples containing outside diseases.
 
+RULE 9 — PRESERVE CONCEPT INTEGRITY & NOMENCLATURE (NEW):
+  - DO NOT truncate or shorten drug classes or drug names. Never extract a generic modifier or suffix word alone (e.g. extracting "inhibitors" instead of "SGLT2 inhibitors", or "agonists" instead of "GLP-1 receptor agonists", or "preparation" instead of "insulin preparation"). Always extract the complete clinical term.
+  - DO NOT simplify compound nouns identifying specific disease types or subtypes. Keep complete qualifiers like "type 2 diabetes" or "type 1 diabetes mellitus" rather than simplifying them to just "diabetes" or "disease".
+  - ✗ WRONG: ['diabetes', 'may be treated by', 'inhibitors']
+  - ✓ CORRECT: ['type 2 diabetes', 'may be treated by', 'SGLT2 inhibitors']
+
 
 ════════════════════════════════════════════════
 PART 4: ALLOWED RELATIONAL SCHEMA (Domain → Range)

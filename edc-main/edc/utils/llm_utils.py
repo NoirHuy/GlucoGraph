@@ -141,18 +141,15 @@ def parse_relation_definition(raw_definitions: str):
 
 
 def is_model_openai(model_name):
-    """Returns True if the model should be called via an OpenAI-compatible API.
-    Detects: OpenAI (gpt in name), OpenRouter (/ in name), Google (gemini in name), Xiaomi (mimo in name) or Groq (GROQ_KEY is set).
-    """
-    if "gpt" in model_name:
+    """Returns True if the model should be called via an OpenAI-compatible API."""
+    model_lower = model_name.lower()
+    prefixes = ["xiaomi/", "openrouter/", "google/", "gemini/", "openai/", "groq/"]
+    if any(model_lower.startswith(p) for p in prefixes):
         return True
-    if "/" in model_name:
+    if "gpt" in model_lower or "/" in model_lower:
         return True
-    if "gemini" in model_name.lower():
+    if "gemini" in model_lower or "mimo" in model_lower or "xiaomi" in model_lower:
         return True
-    if "mimo" in model_name.lower():
-        return True
-    # If GROQ_KEY is set, route all models through Groq API
     if os.environ.get("GROQ_KEY", ""):
         return True
     return False
@@ -276,36 +273,157 @@ def google_chat_completion(model, system_prompt, history, temperature=0, max_tok
     return response.choices[0].message.content
 
 
+def _extract_final_answer_from_reasoning(text: str) -> str:
+    """Extract the final structured answer from a reasoning model's chain-of-thought output.
+    
+    MiMo writes its full thought process into content. We want only the final answer
+    section (the actual triplets), not the intermediate reasoning paragraphs.
+    Strategy: look for common 'conclusion' markers and take everything after the last one.
+    If no marker is found, return the full text so the standard parser can still try.
+    """
+    if not text:
+        return text
+    
+    # Markers that indicate the model is transitioning from reasoning to final answer
+    answer_markers = [
+        "Triplets:",
+        "Final answer:",
+        "Final Answer:",
+        "FINAL ANSWER:",
+        "Final triplets:",
+        "Final Triplets:",
+        "Output:",
+        "Answer:",
+        "ANSWER:",
+        "So, the triples are:",
+        "So, the triplets are:",
+        "The triples are:",
+        "The triplets are:",
+        "Therefore, the triples",
+        "In conclusion,",
+        "To summarize,",
+    ]
+    
+    best_pos = -1
+    for marker in answer_markers:
+        pos = text.rfind(marker)  # rfind = last occurrence
+        if pos != -1 and pos > best_pos:
+            best_pos = pos
+    
+    if best_pos != -1:
+        return text[best_pos:]
+    
+    # No marker found — return the last ~600 chars where the final answer usually lives
+    # This prevents feeding thousands of reasoning tokens into the bracket-scanner
+    return text[-600:] if len(text) > 600 else text
+
+
 def xiaomi_chat_completion(model, system_prompt, history, temperature=0, max_tokens=512):
     """Call Xiaomi MiMo API via OpenAI-compatible interface."""
+    # Normalize model name for Xiaomi platform which typically expects lowercase e.g., mimo-v2.5-pro
+    model_lower = model.lower()
+    if "mimo" in model_lower:
+        if "2.5-pro" in model_lower or "2.5_pro" in model_lower:
+            model = "mimo-v2.5-pro"
+        elif "2.5" in model_lower:
+            model = "mimo-v2.5"
+        else:
+            model = "mimo-v2.5-pro"
+
+    api_key = os.environ.get("XIAOMI_API_KEY", "")
+    if not api_key:
+        raise ValueError("XIAOMI_API_KEY environment variable is not set! Please set it before running.")
+
     client = openai.OpenAI(
         base_url="https://token-plan-sgp.xiaomimimo.com/v1",
-        api_key=os.environ["XIAOMI_API_KEY"],
+        api_key=api_key,
     )
     response = None
     if system_prompt is not None:
         messages = [{"role": "system", "content": system_prompt}] + history
     else:
         messages = history
+    
+    # MiMo is a reasoning model — it writes its full chain-of-thought into content.
+    # 512 tokens is far too small; the model cuts off mid-reasoning and never writes
+    # the final answer. Use 4096 to give it enough room to finish.
+    effective_max_tokens = max(max_tokens, 4096)
+    
     while response is None:
         try:
             response = client.chat.completions.create(
-                model=model, messages=messages, temperature=temperature, max_tokens=max_tokens
+                model=model, messages=messages, temperature=temperature, max_tokens=effective_max_tokens
             )
         except Exception as e:
             logger.warning(f"Xiaomi MiMo API error: {e}. Retrying in 5s...")
             time.sleep(5)
-    logging.debug(f"Model: {model}\nPrompt:\n {messages}\n Result: {response.choices[0].message.content}")
-    return response.choices[0].message.content
+            
+    message_obj = response.choices[0].message
+    content = message_obj.content or ""
+    
+    # Fallback: some API versions return output in reasoning_content instead of content
+    if not content:
+        reasoning_content = getattr(message_obj, "reasoning_content", None)
+        if not reasoning_content and hasattr(message_obj, "model_extra"):
+            reasoning_content = message_obj.model_extra.get("reasoning_content", None)
+        if reasoning_content:
+            logger.info("[Xiaomi Router] Using 'reasoning_content' fallback because 'content' is empty.")
+            content = reasoning_content
+    
+    # For reasoning models: strip the chain-of-thought and return only the final answer
+    content = _extract_final_answer_from_reasoning(content)
+        
+    logging.debug(f"Model: {model}\nPrompt:\n {messages}\n Result: {content}")
+    return content
 
 
 def api_chat_completion(model, system_prompt, history, temperature=0, max_tokens=512):
-    """Unified entry point: routes to Google, Xiaomi, OpenRouter/Groq, or OpenAI based on model name and env vars."""
-    if os.environ.get("XIAOMI_API_KEY", "") and "mimo" in model.lower():
+    """Unified entry point: dynamically routes based on model prefix and environment variables."""
+    model_lower = model.lower()
+    
+    # 1. Xiaomi Prefix Routing
+    if model_lower.startswith("xiaomi/"):
+        actual_model = model[7:]
+        return xiaomi_chat_completion(actual_model, system_prompt, history, temperature, max_tokens)
+        
+    # 2. Google Gemini Prefix Routing
+    if model_lower.startswith("google/") or model_lower.startswith("gemini/"):
+        actual_model = model
+        if model_lower.startswith("google/"):
+            actual_model = model[7:]
+        elif model_lower.startswith("gemini/"):
+            actual_model = model[7:]
+        return google_chat_completion(actual_model, system_prompt, history, temperature, max_tokens)
+        
+    # 3. OpenRouter Prefix Routing
+    if model_lower.startswith("openrouter/"):
+        actual_model = model[11:]
+        return openrouter_chat_completion(actual_model, system_prompt, history, temperature, max_tokens)
+        
+    # 4. OpenAI Prefix Routing
+    if model_lower.startswith("openai/"):
+        if not os.environ.get("OPENAI_KEY") and (os.environ.get("OPENROUTER_KEY") or os.environ.get("OPENROUTER_API_KEY")):
+            return openrouter_chat_completion(model, system_prompt, history, temperature, max_tokens)
+        actual_model = model[7:]
+        return openai_chat_completion(actual_model, system_prompt, history, temperature, max_tokens)
+        
+    # 5. Groq Prefix Routing
+    if model_lower.startswith("groq/"):
+        actual_model = model[5:]
+        return openrouter_chat_completion(actual_model, system_prompt, history, temperature, max_tokens)
+
+    # --- Environment-based Key Fallbacks ---
+    if os.environ.get("XIAOMI_API_KEY", "") and ("mimo" in model_lower or "xiaomi" in model_lower):
         return xiaomi_chat_completion(model, system_prompt, history, temperature, max_tokens)
-    elif os.environ.get("GEMINI_API_KEY", "") and "gemini" in model:
+        
+    elif os.environ.get("GEMINI_API_KEY", "") and "gemini" in model_lower:
         return google_chat_completion(model, system_prompt, history, temperature, max_tokens)
-    elif is_model_openrouter(model) or os.environ.get("GROQ_KEY", ""):
+        
+    elif "/" in model or os.environ.get("GROQ_KEY", ""):
+        # Fallback to Xiaomi if OpenRouter/Groq keys are missing but Xiaomi key is present!
+        if not os.environ.get("OPENROUTER_KEY", "") and not os.environ.get("GROQ_KEY", "") and os.environ.get("XIAOMI_API_KEY", ""):
+            return xiaomi_chat_completion(model, system_prompt, history, temperature, max_tokens)
         return openrouter_chat_completion(model, system_prompt, history, temperature, max_tokens)
+        
     else:
         return openai_chat_completion(model, system_prompt, history, temperature, max_tokens)

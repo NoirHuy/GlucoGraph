@@ -534,5 +534,5 @@ if __name__ == "__main__":
             print(f"  ❌ {name}: {err}")
         sys.exit(1)
     else:
-        print("\n🎉 All tests passed!")
+        print("\nAll tests passed!")
         sys.exit(0)

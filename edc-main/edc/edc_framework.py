@@ -255,10 +255,11 @@ class EDC:
 
         logger.info("OIE finished.")
 
-        if free_model:
+        if free_model and not llm_utils.is_model_openai(self.oie_llm_name):
             logger.info(f"Freeing model {self.oie_llm_name} as it is no longer needed")
             llm_utils.free_model(oie_model, oie_tokenizer)
-            del self.loaded_model_dict[self.oie_llm_name]
+            if self.oie_llm_name in self.loaded_model_dict:
+                del self.loaded_model_dict[self.oie_llm_name]
 
         return oie_triples_list, entity_hint_list, relation_hint_list
 
@@ -333,10 +334,11 @@ class EDC:
             logger.debug(f"{input_text_list[idx]}, {oie_triplets}\n -> {schema_definition_dict}\n")
 
         logger.info("Schema Definition finished.")
-        if free_model:
+        if free_model and not llm_utils.is_model_openai(self.sd_llm_name):
             logger.info(f"Freeing model {self.sd_llm_name} as it is no longer needed")
             llm_utils.free_model(sd_model, sd_tokenizer)
-            del self.loaded_model_dict[self.sd_llm_name]
+            if self.sd_llm_name in self.loaded_model_dict:
+                del self.loaded_model_dict[self.sd_llm_name]
         return schema_definition_dict_list
 
     def schema_canonicalization(
@@ -404,13 +406,17 @@ class EDC:
                 d.get("_entries", []) if isinstance(d, dict) else []
                 for d in schema_definition_dict_list
             ]
-            canonicalized_triplets_list, _ = et_canonicalizer.canonicalize_all(
+            canonicalized_triplets_list, updated_sd_entries_list = et_canonicalizer.canonicalize_all(
                 input_text_list,
                 canonicalized_triplets_list,
                 sd_entries_per_sentence,
                 et_verify_prompt_str,
                 top_k=5,
             )
+            # Write canonicalized entity types back to original schema definition dicts
+            for idx, updated_entries in enumerate(updated_sd_entries_list):
+                if idx < len(schema_definition_dict_list) and isinstance(schema_definition_dict_list[idx], dict):
+                    schema_definition_dict_list[idx]["_entries"] = updated_entries
             logger.info("Entity-Type Canonicalization finished.")
         else:
             logger.warning(f"[Phase 3b] sc_entity_type_template not found at '{et_template_path}', skipping entity type canonicalization.")
@@ -561,9 +567,12 @@ class EDC:
         if free_model:
             logger.info(f"Freeing model {self.sr_embedder_name, self.ee_llm_name} as it is no longer needed")
             llm_utils.free_model(sr_embedding_model)
-            llm_utils.free_model(ee_model, ee_tokenizer)
-            del self.loaded_model_dict[self.sr_embedder_name]
-            del self.loaded_model_dict[self.ee_llm_name]
+            if self.sr_embedder_name in self.loaded_model_dict:
+                del self.loaded_model_dict[self.sr_embedder_name]
+            if not llm_utils.is_model_openai(self.ee_llm_name):
+                llm_utils.free_model(ee_model, ee_tokenizer)
+                if self.ee_llm_name in self.loaded_model_dict:
+                    del self.loaded_model_dict[self.ee_llm_name]
         return entity_hint_list, relation_hint_list
 
     def extract_kg(self, input_text_list: List[str], output_dir: str = None, refinement_iterations=0):
@@ -623,49 +632,7 @@ class EDC:
                 and iteration == refinement_iterations,
             )
 
-            # ── Phase 2.5: Type-based Direction Auto-Correction & Validation ──────────
-            # Now that we have Entity Types from Phase 2, we can perform reliable 
-            # directionality auto-correction and type constraint checking before Phase 3.
-            for idx in range(len(oie_triplets_list)):
-                oie_trips = oie_triplets_list[idx]
-                sd_dict = sd_dict_list[idx]
-                if not isinstance(sd_dict, dict) or "_entries" not in sd_dict:
-                    continue
-                sd_entries = sd_dict["_entries"]
-                
-                # Create a map for quick lookup by tuple to handle potential LLM reordering
-                entry_map = {}
-                for entry in sd_entries:
-                    key = (entry.get("subject", ""), entry.get("relation", ""), entry.get("object", ""))
-                    entry_map[key] = entry
-                
-                new_oie_trips = []
-                for i in range(len(oie_trips)):
-                    trip = oie_trips[i]
-                    if len(trip) != 3: 
-                        new_oie_trips.append(trip)
-                        continue
-                    key = (trip[0], trip[1], trip[2])
-                    if key in entry_map:
-                        entry = entry_map[key]
-                        subj_type = entry.get("subject_type", "")
-                        obj_type = entry.get("object_type", "")
-                        
-                        corrected_trip, c_subj, c_obj = validator.try_auto_correct_direction_by_type(
-                            trip, subj_type, obj_type
-                        )
-                        if corrected_trip is None:
-                            logger.info(f"[FRAMEWORK] Discarding triple violating semantic constraints in Phase 2.5: {trip}")
-                            if entry in sd_entries:
-                                sd_entries.remove(entry)
-                            continue
-                        elif corrected_trip != trip:
-                            trip = corrected_trip
-                            # Update the sd_entry so Phase 3b Canonicalization sees the swapped types
-                            entry["subject"], entry["object"] = entry["object"], entry["subject"]
-                            entry["subject_type"], entry["object_type"] = entry["object_type"], entry["subject_type"]
-                    new_oie_trips.append(trip)
-                oie_triplets_list[idx] = new_oie_trips
+
 
             del required_model_dict_current_iteration["sc_embed"]
             del required_model_dict_current_iteration["sc_verify"]

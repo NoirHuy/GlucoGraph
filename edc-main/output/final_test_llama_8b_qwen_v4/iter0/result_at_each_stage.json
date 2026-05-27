@@ -1,0 +1,427 @@
+[
+    {
+        "index": 0,
+        "input_text": "Insulin is required for all patients with type 1 diabetes mellitus because they do not produce adequate insulin (due to destruction of the pancreatic beta-cells) and will develop ketoacidosis without it.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "type 1 diabetes mellitus",
+                "may be treated by",
+                "insulin"
+            ],
+            [
+                "type 1 diabetes mellitus",
+                "has finding site",
+                "pancreatic beta-cells"
+            ]
+        ],
+        "oie": [
+            [
+                "type 1 diabetes mellitus",
+                "may be treated by",
+                "insulin"
+            ],
+            [
+                "type 1 diabetes mellitus",
+                "has finding site",
+                "pancreatic beta-cells"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "has finding site": "The subject disease or condition is associated with a specific anatomical location or site where the object finding or symptom is present.",
+            "_entries": [
+                {
+                    "subject": "type 1 diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "subject_type_canon": "Disease",
+                    "object_type_canon": "Drug"
+                },
+                {
+                    "subject": "type 1 diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "has finding site",
+                    "relation_definition": "The subject disease or condition is associated with a specific anatomical location or site where the object finding or symptom is present.",
+                    "object": "pancreatic beta-cells",
+                    "object_type": "Anatomical Site",
+                    "object_type_definition": "A specific location or region within the body where a disease or condition is present or manifests.",
+                    "subject_type_canon": "Disease",
+                    "object_type_canon": "Anatomical Site"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{'treated by': np.float64(0.8341371438565539), 'preferred over': np.float64(0.5477425315910154), 'is a': np.float64(0.5374261004962853), 'contraindicated with': np.float64(0.5219738510420979), 'has titration rule': np.float64(0.5064216522340736)}, {'has anatomic site': np.float64(0.642907670702564), 'is a': np.float64(0.6191462678702314), 'has finding': np.float64(0.5838472822809175), 'has biomarker': np.float64(0.5541528456922573), 'co occurs with': np.float64(0.5451226138232106)}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 1 diabetes mellitus",
+                "treated by",
+                "insulin"
+            ],
+            [
+                "type 1 diabetes mellitus",
+                "has anatomic site",
+                "pancreatic beta-cells"
+            ]
+        ]
+    },
+    {
+        "index": 1,
+        "input_text": "Insulin is also used in the management of many patients with type 2 diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "insulin"
+            ]
+        ],
+        "oie": [
+            [
+                "type 2 diabetes",
+                "may be treated by",
+                "insulin"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "type 2 diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "subject_type_canon": "Disease",
+                    "object_type_canon": "Drug"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{'treated by': np.float64(0.8341371438565539), 'preferred over': np.float64(0.5477425315910154), 'is a': np.float64(0.5374261004962853), 'contraindicated with': np.float64(0.5219738510420979), 'has titration rule': np.float64(0.5064216522340736)}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 2 diabetes",
+                "treated by",
+                "insulin"
+            ]
+        ]
+    },
+    {
+        "index": 2,
+        "input_text": "Insulin replacement in type 1 diabetes should ideally mimic beta-cell function to provide basal and prandial requirements (physiologic replacement or basal-bolus dosing).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "type 1 diabetes",
+                "may be treated by",
+                "insulin replacement"
+            ]
+        ],
+        "oie": [
+            [
+                "type 1 diabetes",
+                "may be treated by",
+                "insulin replacement"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "type 1 diabetes",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by the body's inability to produce insulin due to autoimmune destruction of pancreatic beta cells.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "insulin replacement",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or therapy aimed at alleviating or managing a disease or clinical condition.",
+                    "subject_type_canon": "Disease",
+                    "object_type_canon": "Treatment Procedure"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{'treated by': np.float64(0.8337129306075282), 'preferred over': np.float64(0.5472280692735452), 'is a': np.float64(0.5384505100294836), 'contraindicated with': np.float64(0.5218109156406117), 'has titration rule': np.float64(0.5066503991099827)}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 1 diabetes",
+                "treated by",
+                "insulin replacement"
+            ]
+        ]
+    },
+    {
+        "index": 3,
+        "input_text": "To achieve this, different preparations of insulin and methods of administration can be used.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 4,
+        "input_text": "Except for use of regular insulin, which is given IV in hospitalized patients, insulin is almost always administered subcutaneously.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 5,
+        "input_text": "An inhaled insulin preparation is available for patients who prefer not to inject themselves.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "patients who prefer not to inject themselves",
+                "may be treated by",
+                "inhaled insulin preparation"
+            ]
+        ],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 6,
+        "input_text": "It has a slightly more rapid onset of action compared to subcutaneously injected rapid acting insulin.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 7,
+        "input_text": "Multiple daily subcutaneous injections administered by the patient, with 2 preparations of insulin used depending on the anticipated glycemic control needs.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "insulin",
+                "has dose adjustment",
+                "2 preparations"
+            ]
+        ],
+        "oie": [
+            [
+                "insulin",
+                "has dose adjustment",
+                "2 preparations"
+            ]
+        ],
+        "schema_definition": {
+            "has dose adjustment": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+            "_entries": [
+                {
+                    "subject": "insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "has dose adjustment",
+                    "relation_definition": "The subject drug or treatment has a specific dosage modification rule or titration protocol tied to the object value.",
+                    "object": "2 preparations",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units.",
+                    "subject_type_canon": "Drug",
+                    "object_type_canon": "Dosage Value"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{'has titration rule': np.float64(0.737469004397951), 'treated by': np.float64(0.6378020864748657), 'contraindicated with': np.float64(0.5187228372542221), 'preferred over': np.float64(0.5149183651039468), 'relation': np.float64(0.5098873160333302)}]",
+        "schema_canonicalizaiton": [
+            [
+                "insulin",
+                "has titration rule",
+                "2 preparations"
+            ]
+        ]
+    },
+    {
+        "index": 8,
+        "input_text": "An insulin pump that delivers a rapid- or short-acting insulin and administers a basal rate of insulin and additional boluses with meals or for correcting a high blood glucose level.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "insulin pump",
+                "may be treated by",
+                "rapid-acting insulin"
+            ],
+            [
+                "insulin pump",
+                "may be treated by",
+                "short-acting insulin"
+            ],
+            [
+                "insulin pump",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "insulin pump",
+                "may be treated by",
+                "boluses"
+            ]
+        ],
+        "oie": [
+            [
+                "insulin pump",
+                "may be treated by",
+                "rapid-acting insulin"
+            ],
+            [
+                "insulin pump",
+                "may be treated by",
+                "short-acting insulin"
+            ],
+            [
+                "insulin pump",
+                "may be treated by",
+                "basal insulin"
+            ],
+            [
+                "insulin pump",
+                "may be treated by",
+                "boluses"
+            ]
+        ],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "index": 9,
+        "input_text": "Both strategies require close attention to diet and exercise as well as to insulin timing and dose.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "diet",
+                "may be treated by",
+                "exercise"
+            ],
+            [
+                "diet",
+                "may be treated by",
+                "insulin timing"
+            ],
+            [
+                "diet",
+                "may be treated by",
+                "dose"
+            ]
+        ],
+        "oie": [
+            [
+                "diet",
+                "may be treated by",
+                "exercise"
+            ],
+            [
+                "diet",
+                "may be treated by",
+                "insulin timing"
+            ],
+            [
+                "diet",
+                "may be treated by",
+                "dose"
+            ]
+        ],
+        "schema_definition": {
+            "may be treated by": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+            "_entries": [
+                {
+                    "subject": "diet",
+                    "subject_type": "Nutrient",
+                    "subject_type_definition": "A substance that provides energy, nutrients, or other essential components for growth, maintenance, or health.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "exercise",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A medical intervention or therapeutic approach used to prevent, treat, or manage a disease or clinical condition.",
+                    "subject_type_canon": "Nutrient",
+                    "object_type_canon": "Treatment Procedure"
+                },
+                {
+                    "subject": "diet",
+                    "subject_type": "Nutrient",
+                    "subject_type_definition": "A substance that provides energy, nutrients, or other essential components for growth, maintenance, or health.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "insulin timing",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "subject_type_canon": "Nutrient",
+                    "object_type_canon": "Clinical Metric"
+                },
+                {
+                    "subject": "diet",
+                    "subject_type": "Nutrient",
+                    "subject_type_definition": "A substance that provides energy, nutrients, or other essential components for growth, maintenance, or health.",
+                    "relation": "may be treated by",
+                    "relation_definition": "The subject disease or condition may be alleviated or managed through the use of the specified drug, procedure, or intervention.",
+                    "object": "dose",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units.",
+                    "subject_type_canon": "Nutrient",
+                    "object_type_canon": "Dosage Value"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{'treated by': np.float64(0.8337129306075282), 'preferred over': np.float64(0.5472280692735452), 'is a': np.float64(0.5384505100294836), 'contraindicated with': np.float64(0.5218109156406117), 'has titration rule': np.float64(0.5066503991099827)}, {'treated by': np.float64(0.8339386418931073), 'preferred over': np.float64(0.5481333524482219), 'is a': np.float64(0.5385336857558026), 'contraindicated with': np.float64(0.521804882377025), 'has titration rule': np.float64(0.506893083016592)}, {'treated by': np.float64(0.8341371438565539), 'preferred over': np.float64(0.5477425315910154), 'is a': np.float64(0.5374261004962853), 'contraindicated with': np.float64(0.5219738510420979), 'has titration rule': np.float64(0.5064216522340736)}]",
+        "schema_canonicalizaiton": [
+            [
+                "diet",
+                "treated by",
+                "exercise"
+            ],
+            [
+                "diet",
+                "treated by",
+                "insulin timing"
+            ],
+            [
+                "diet",
+                "treated by",
+                "dose"
+            ]
+        ]
+    }
+]

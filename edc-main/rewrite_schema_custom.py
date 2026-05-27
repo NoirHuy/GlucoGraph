@@ -71,8 +71,9 @@ if os.path.exists(entity_file):
     shutil.copyfile(entity_file, entity_backup)
 
 entity_types_to_define = [
-    "Disease", "Drug", "Symptom", "Clinical Metric", 
-    "Anatomical Site", "Treatment Procedure", "Dosage Value"
+    "Disease", "Symptom", "Drug", "Treatment Procedure", 
+    "Dosage Value", "Clinical Metric", "Biomarker", 
+    "Nutrient", "Clinical Rule", "Risk Factor", "Anatomical Site"
 ]
 
 print("Generating entity type definitions using meta-llama/Llama-3.1-8B-Instruct...")

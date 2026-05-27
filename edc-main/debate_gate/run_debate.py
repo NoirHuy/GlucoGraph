@@ -55,6 +55,11 @@ def load_relation_schema(schema_path: str) -> Dict[str, str]:
 
 
 async def run_standalone_debate(args):
+    # Set Xiaomi API Key environment variable if passed via CLI
+    if args.xiaomi_api_key:
+        os.environ["XIAOMI_API_KEY"] = args.xiaomi_api_key
+        logger.info("Xiaomi API Key loaded from CLI argument.")
+        
     # 1. Validate inputs
     input_json_path = args.input_json_path
     if not os.path.exists(input_json_path):
@@ -246,6 +251,11 @@ if __name__ == "__main__":
         default=5,
         type=int,
         help="Maximum concurrent triple verifications (default: 5)."
+    )
+    parser.add_argument(
+        "--xiaomi_api_key",
+        default=None,
+        help="Dedicated API key for Xiaomi MiMo API integration."
     )
     
     args = parser.parse_args()
