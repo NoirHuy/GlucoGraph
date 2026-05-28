@@ -421,12 +421,13 @@ def test_debate_result_to_dict():
 # ═══════════════════════════════════════════════════════════════════════════
 
 def test_valid_relations_count():
-    """Verify all 12 valid relations are defined."""
-    assert len(VALID_RELATIONS) == 12, f"Expected 12 relations, got {len(VALID_RELATIONS)}"
+    """Verify all 15 valid relations are defined."""
+    assert len(VALID_RELATIONS) == 15, f"Expected 15 relations, got {len(VALID_RELATIONS)}"
     expected = {
         "is_a", "has_anatomic_site", "cause_of", "has_finding",
         "has_biomarker", "co_occurs_with", "treated_by", "has_adverse_effect",
         "contraindicated_with", "preferred_over", "has_evaluation", "has_titration_rule",
+        "increases_risk_of", "administered_via", "dispenses",
     }
     assert VALID_RELATIONS == expected
     logger.info("✅ test_valid_relations_count PASSED")

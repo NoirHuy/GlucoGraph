@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from app.services.ai_chat import analyze_image_diet, generate_response
+from app.services.cdss import generate_medical_decision
 
 app = FastAPI()
 
@@ -13,28 +13,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-class ChatRequest(BaseModel):
-    question: str
-    disease: str
-
-class VisionRequest(BaseModel):
-    image_base64: str
-    disease: str
+class CDSSRequest(BaseModel):
+    clinical_text: str
+    patient_id: str
 
 @app.get("/")
 def read_root():
-    return {"status": "AI Nutrition System Ready"}
+    return {"status": "GlucoLogic AI CDSS Backend Ready"}
 
-@app.post("/api/chat")
-async def chat_endpoint(request: ChatRequest):
-    response = generate_response(request.question, request.disease)
-    if isinstance(response, str):
-        return {"bot_response": response, "nutrition": None}
-    return response
-
-@app.post("/api/vision")
-async def vision_endpoint(request: VisionRequest):
-    response = analyze_image_diet(request.image_base64, request.disease)
-    if isinstance(response, str):
-        return {"bot_response": response, "nutrition": None}
-    return response
+@app.post("/api/cdss/analyze")
+async def cdss_endpoint(request: CDSSRequest):
+    try:
+        decision = generate_medical_decision(request.clinical_text, request.patient_id)
+        return decision
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"CDSS Engine Error: {str(e)}")

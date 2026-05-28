@@ -1,15 +1,11 @@
 from edc.extract import Extractor
 from edc.schema_definition import SchemaDefiner
 from edc.schema_canonicalization import SchemaCanonicalizer
-from edc.entity_extraction import EntityExtractor
 from edc.entity_type_canonicalization import EntityTypeCanonicalizer
-from edc.semantic_validator import SemanticValidator
 from edc.post_processing.umls_normalizer import UMLSNormalizer
 import edc.utils.llm_utils as llm_utils
 from typing import List
-from edc.utils.e5_mistral_utils import MistralForSequenceEmbedding
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from edc.schema_retriever import SchemaRetriever
 from tqdm import tqdm
 import os
 import csv
@@ -47,6 +43,7 @@ class JinaEmbedder:
         """Encode texts using Jina Embeddings API. Accepts str or list[str]."""
         import requests
         import numpy as np
+        import time
         single = isinstance(texts, str)
         if single:
             texts = [texts]
@@ -59,11 +56,35 @@ class JinaEmbedder:
             "model": self.model_name,
             "input": texts,
         }
-        response = requests.post(self.api_url, headers=headers, json=payload)
-        response.raise_for_status()
-        data = response.json()
-        embeddings = np.array([item["embedding"] for item in data["data"]])
-        return embeddings[0] if single else embeddings
+        
+        max_retries = 10
+        retry_delay = 5
+        
+        for attempt in range(max_retries):
+            try:
+                response = requests.post(self.api_url, headers=headers, json=payload)
+                response.raise_for_status()
+                data = response.json()
+                
+                if "error" in data:
+                    err_msg = data["error"].get("message", str(data["error"]))
+                    logger.warning(f"[Jina Embeddings] API returned error on attempt {attempt+1}/{max_retries}: {err_msg}. Retrying in {retry_delay}s...")
+                    time.sleep(retry_delay)
+                    continue
+                    
+                if "data" not in data:
+                    logger.warning(f"[Jina Embeddings] 'data' key missing in response on attempt {attempt+1}/{max_retries}: {data}. Retrying in {retry_delay}s...")
+                    time.sleep(retry_delay)
+                    continue
+                
+                embeddings = np.array([item["embedding"] for item in data["data"]])
+                return embeddings[0] if single else embeddings
+                
+            except Exception as e:
+                logger.warning(f"[Jina Embeddings] Request failed on attempt {attempt+1}/{max_retries}: {e}. Retrying in {retry_delay}s...")
+                time.sleep(retry_delay)
+                
+        raise RuntimeError(f"Failed to get embeddings from Jina after {max_retries} attempts.")
 
 
 class OpenRouterEmbedder:
@@ -85,6 +106,7 @@ class OpenRouterEmbedder:
         """Encode texts using OpenRouter Embeddings API."""
         import requests
         import numpy as np
+        import time
         single = isinstance(texts, str)
         if single:
             texts = [texts]
@@ -97,11 +119,35 @@ class OpenRouterEmbedder:
             "model": self.model_name,
             "input": texts,
         }
-        response = requests.post(self.api_url, headers=headers, json=payload)
-        response.raise_for_status()
-        data = response.json()
-        embeddings = np.array([item["embedding"] for item in data["data"]])
-        return embeddings[0] if single else embeddings
+        
+        max_retries = 10
+        retry_delay = 5
+        
+        for attempt in range(max_retries):
+            try:
+                response = requests.post(self.api_url, headers=headers, json=payload)
+                response.raise_for_status()
+                data = response.json()
+                
+                if "error" in data:
+                    err_msg = data["error"].get("message", str(data["error"]))
+                    logger.warning(f"[OpenRouter Embeddings] API returned error on attempt {attempt+1}/{max_retries}: {err_msg}. Retrying in {retry_delay}s...")
+                    time.sleep(retry_delay)
+                    continue
+                    
+                if "data" not in data:
+                    logger.warning(f"[OpenRouter Embeddings] 'data' key missing in response on attempt {attempt+1}/{max_retries}: {data}. Retrying in {retry_delay}s...")
+                    time.sleep(retry_delay)
+                    continue
+                
+                embeddings = np.array([item["embedding"] for item in data["data"]])
+                return embeddings[0] if single else embeddings
+                
+            except Exception as e:
+                logger.warning(f"[OpenRouter Embeddings] Request failed on attempt {attempt+1}/{max_retries}: {e}. Retrying in {retry_delay}s...")
+                time.sleep(retry_delay)
+                
+        raise RuntimeError(f"Failed to get embeddings from OpenRouter after {max_retries} attempts.")
 
 def is_jina_model(model_name: str) -> bool:
     """Returns True if the model name refers to a Jina embedding API model."""
@@ -129,19 +175,7 @@ class EDC:
         self.sc_embedder_name = edc_configuration["sc_embedder"]
         self.sc_template_file_path = edc_configuration["sc_prompt_template_file_path"]
 
-        # Refinement settings
-        self.sr_adapter_path = edc_configuration["sr_adapter_path"]
-
-        self.sr_embedder_name = edc_configuration["sr_embedder"]
-        self.oie_r_prompt_template_file_path = edc_configuration["oie_refine_prompt_template_file_path"]
-        self.oie_r_few_shot_example_file_path = edc_configuration["oie_refine_few_shot_example_file_path"]
-
-        self.ee_llm_name = edc_configuration["ee_llm"]
-        self.ee_template_file_path = edc_configuration["ee_prompt_template_file_path"]
-        self.ee_few_shot_example_file_path = edc_configuration["ee_few_shot_example_file_path"]
-
-        self.em_template_file_path = edc_configuration["em_prompt_template_file_path"]
-
+        # Refinement settings (Disabled for traditional EDC)
         self.initial_schema_path = edc_configuration["target_schema_path"]
         self.enrich_schema = edc_configuration["enrich_schema"]
 
@@ -175,21 +209,21 @@ class EDC:
         # Path to the entity-type SC verify prompt (Phase 3b)
         self.sc_entity_type_template_file_path = edc_configuration.get(
             "sc_entity_type_prompt_template_file_path",
-            "./prompt_templates/sc_entity_type_template.txt"
+            "./prompt_templates/diabetic/sc_entity_type_template.txt"
         )
         # Paths to updated SD templates with entity types
         self._sd_template_with_entities = edc_configuration.get(
             "sd_entity_prompt_template_file_path",
-            "./prompt_templates/sd_template_with_entities.txt"
+            "./prompt_templates/diabetic/sd_template_with_entities.txt"
         )
         self._sd_few_shot_with_entities = edc_configuration.get(
             "sd_entity_few_shot_file_path",
             "./few_shot_examples/diabetic/sd_few_shot_examples_with_entities.txt"
         )
 
-        # Load the needed models and tokenizers
+        # Load the needed models and tokenizers (ee_llm removed for traditional EDC)
         self.needed_model_set = set(
-            [self.oie_llm_name, self.sd_llm_name, self.sc_llm_name, self.sc_embedder_name, self.ee_llm_name]
+            [self.oie_llm_name, self.sd_llm_name, self.sc_llm_name, self.sc_embedder_name]
         )
 
         self.loaded_model_dict = {}
@@ -575,82 +609,66 @@ class EDC:
                     del self.loaded_model_dict[self.ee_llm_name]
         return entity_hint_list, relation_hint_list
 
-    def extract_kg(self, input_text_list: List[str], output_dir: str = None, refinement_iterations=0):
+    def extract_kg(
+        self,
+        input_text_list: List[str],
+        output_dir: str = None,
+        free_model: bool = False,
+    ) -> List[List[List[str]]]:
+        """Run single-pass traditional EDC pipeline: OIE -> Semantic Validator -> SD -> SC -> Entity Type Canonicalization -> Post-processing."""
         if output_dir is not None:
             if os.path.exists(output_dir):
                 logger.error(f"Output directory {output_dir} already exists! Quitting.")
                 exit()
-            for iteration in range(refinement_iterations + 1):
-                pathlib.Path(f"{output_dir}/iter{iteration}").mkdir(parents=True, exist_ok=True)
-
+            pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True)
 
         # EDC run
-        logger.info("EDC starts running...")
+        logger.info("EDC starts running (traditional single-pass)...")
 
         required_model_dict = {
             "oie": self.oie_llm_name,
             "sd": self.sd_llm_name,
             "sc_embed": self.sc_embedder_name,
             "sc_verify": self.sc_llm_name,
-            "ee": self.ee_llm_name,
-            "sr": self.sr_embedder_name,
         }
 
-        triplets_from_last_iteration = None
-        for iteration in range(refinement_iterations + 1):
-            logger.info(f"Iteration {iteration}:")
+        required_model_dict_current = copy.deepcopy(required_model_dict)
 
-            iteration_result_dir = f"{output_dir}/iter{iteration}"
+        # ── Phase 1: Open Information Extraction ──────────────────────────
+        del required_model_dict_current["oie"]
+        oie_triplets_list, _, _ = self.oie(
+            input_text_list,
+            free_model=self.oie_llm_name not in required_model_dict_current.values(),
+            previous_extracted_triplets_list=None,
+        )
 
-            required_model_dict_current_iteration = copy.deepcopy(required_model_dict)
+        # ── Phase 1.5: Post-OIE Semantic Validation [DELETED] ─────────────
+        oie_raw_list = [list(triples) for triples in oie_triplets_list]
 
-            del required_model_dict_current_iteration["oie"]
-            oie_triplets_list, entity_hint_list, relation_hint_list = self.oie(
-                input_text_list,
-                free_model=self.oie_llm_name not in required_model_dict_current_iteration.values()
-                and iteration == refinement_iterations,
-                previous_extracted_triplets_list=triplets_from_last_iteration,
-            )
+        # ── Phase 2: Schema Definition ────────────────────────────────────
+        del required_model_dict_current["sd"]
+        sd_dict_list = self.schema_definition(
+            input_text_list,
+            oie_triplets_list,
+            free_model=self.sd_llm_name not in required_model_dict_current.values(),
+        )
 
-            # ── Phase 1.5: Post-OIE Semantic Validation ──────────────────────
-            # Auto-correct directionality, discard non-entities, remove tautologies
-            validator = SemanticValidator(
-                relation_schema=self.schema,
-                entity_type_schema=self.entity_type_schema,
-                embedder=self.load_model(self.sc_embedder_name, "sts"),
-                oie_few_shot_file_path=self.oie_few_shot_example_file_path,
-                sd_few_shot_file_path=self._sd_few_shot_with_entities,
-            )
-            oie_raw_list = [list(triples) for triples in oie_triplets_list]  # preserve original for logging
-            oie_triplets_list = validator.validate_batch(oie_triplets_list, input_text_list)
+        # ── Phase 3a & 3b: Schema & Entity Type Canonicalization ──────────
+        del required_model_dict_current["sc_embed"]
+        del required_model_dict_current["sc_verify"]
+        canon_triplets_list, canon_candidate_dict_list = self.schema_canonicalization(
+            input_text_list,
+            oie_triplets_list,
+            sd_dict_list,
+            free_model=self.sc_llm_name not in required_model_dict_current.values(),
+        )
 
-            del required_model_dict_current_iteration["sd"]
-            sd_dict_list = self.schema_definition(
-                input_text_list,
-                oie_triplets_list,
-                free_model=self.sd_llm_name not in required_model_dict_current_iteration.values()
-                and iteration == refinement_iterations,
-            )
+        non_null_triplets_list = [
+            [triple for triple in triplets if triple is not None] for triplets in canon_triplets_list
+        ]
 
-
-
-            del required_model_dict_current_iteration["sc_embed"]
-            del required_model_dict_current_iteration["sc_verify"]
-            canon_triplets_list, canon_candidate_dict_list = self.schema_canonicalization(
-                input_text_list,
-                oie_triplets_list,
-                sd_dict_list,
-                free_model=self.sc_llm_name not in required_model_dict_current_iteration.values()
-                and iteration == refinement_iterations,
-            )
-
-            non_null_triplets_list = [
-                [triple for triple in triplets if triple is not None] for triplets in canon_triplets_list
-            ]
-
-            triplets_from_last_iteration = non_null_triplets_list
-
-            # Write results
+        # Write results
+        if output_dir is not None:
             assert len(oie_triplets_list) == len(sd_dict_list) and len(sd_dict_list) == len(canon_triplets_list)
 
             json_results_list = []
@@ -658,8 +676,8 @@ class EDC:
                 result_json = {
                     "index": idx,
                     "input_text": input_text_list[idx],
-                    "entity_hint": entity_hint_list[idx],
-                    "relation_hint": relation_hint_list[idx],
+                    "entity_hint": "",
+                    "relation_hint": "",
                     "oie_raw": oie_raw_list[idx],
                     "oie": oie_triplets_list[idx],
                     "schema_definition": sd_dict_list[idx],
@@ -667,26 +685,25 @@ class EDC:
                     "schema_canonicalizaiton": canon_triplets_list[idx],
                 }
                 json_results_list.append(result_json)
-            result_at_each_stage_file = open(f"{iteration_result_dir}/result_at_each_stage.json", "w", encoding="utf-8")
-            json.dump(json_results_list, result_at_each_stage_file, indent=4, ensure_ascii=False)
 
-            final_result_file = open(f"{iteration_result_dir}/canon_kg.txt", "w", encoding="utf-8")
-            for idx, canon_triplets in enumerate(non_null_triplets_list):
-                final_result_file.write(str(canon_triplets))
-                if idx != len(canon_triplets_list) - 1:
-                    final_result_file.write("\n")
-                final_result_file.flush()
-            final_result_file.close()
+            with open(f"{output_dir}/result_at_each_stage.json", "w", encoding="utf-8") as f:
+                json.dump(json_results_list, f, indent=4, ensure_ascii=False)
+
+            with open(f"{output_dir}/canon_kg.txt", "w", encoding="utf-8") as f:
+                for idx, canon_triplets in enumerate(non_null_triplets_list):
+                    f.write(str(canon_triplets))
+                    if idx != len(canon_triplets_list) - 1:
+                        f.write("\n")
 
             # --- Phase 4: UMLS Normalization Post-Processing ---
             if self.run_umls_normalization:
-                logger.info(f"Iteration {iteration}: Running UMLS Entity Mapping and Normalization...")
-                cache_file_path = os.path.join(output_dir, "umls_cache.json") if output_dir else "./output/umls_cache.json"
+                logger.info("Running UMLS Entity Mapping and Normalization...")
+                cache_file_path = os.path.join(output_dir, "umls_cache.json")
                 normalizer = UMLSNormalizer(api_key=self.umls_api_key, cache_path=cache_file_path)
                 normalizer.normalize_file(
-                    input_file_path=f"{iteration_result_dir}/canon_kg.txt",
-                    output_json_path=f"{iteration_result_dir}/canon_kg_umls.json",
-                    output_txt_path=f"{iteration_result_dir}/canon_kg_umls.txt"
+                    input_file_path=f"{output_dir}/canon_kg.txt",
+                    output_json_path=f"{output_dir}/canon_kg_umls.json",
+                    output_txt_path=f"{output_dir}/canon_kg_umls.txt"
                 )
 
         return canon_triplets_list

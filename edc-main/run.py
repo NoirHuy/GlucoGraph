@@ -13,7 +13,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--oie_prompt_template_file_path",
-        default="./prompt_templates/oie_template.txt",
+        default="./prompt_templates/diabetic/oie_template.txt",
         help="Promp template used for open information extraction.",
     )
     parser.add_argument(
@@ -28,7 +28,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--sd_prompt_template_file_path",
-        default="./prompt_templates/sd_template.txt",
+        default="./prompt_templates/example/sd_template.txt",
         help="Prompt template used for schema definition.",
     )
     parser.add_argument(
@@ -48,43 +48,11 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--sc_prompt_template_file_path",
-        default="./prompt_templates/sc_template.txt",
+        default="./prompt_templates/diabetic/sc_template.txt",
         help="Prompt template used for schema canonicalization verification.",
     )
 
-    # Refinement setting
-    parser.add_argument("--sr_adapter_path", default=None, help="Path to adapter of schema retriever.")
-    parser.add_argument(
-        "--sr_embedder", default="intfloat/e5-mistral-7b-instruct", help="Embedding model used for schema retriever. Has to be a sentence transformer. Please refer to https://sbert.net/"
-    )
-    parser.add_argument(
-        "--oie_refine_prompt_template_file_path",
-        default="./prompt_templates/oie_r_template.txt",
-        help="Prompt template used for refined open information extraction.",
-    )
-    parser.add_argument(
-        "--oie_refine_few_shot_example_file_path",
-        default="./few_shot_examples/example/oie_few_shot_refine_examples.txt",
-        help="Few shot examples used for refined open information extraction.",
-    )
-    parser.add_argument(
-        "--ee_llm", default="mistralai/Mistral-7B-Instruct-v0.2", help="LLM used for entity extraction."
-    )
-    parser.add_argument(
-        "--ee_prompt_template_file_path",
-        default="./prompt_templates/ee_template.txt",
-        help="Prompt templated used for entity extraction.",
-    )
-    parser.add_argument(
-        "--ee_few_shot_example_file_path",
-        default="./few_shot_examples/example/ee_few_shot_examples.txt",
-        help="Few shot examples used for entity extraction.",
-    )
-    parser.add_argument(
-        "--em_prompt_template_file_path",
-        default="./prompt_templates/em_template.txt",
-        help="Prompt template used for entity merging.",
-    )
+    # Refinement / Retrieval settings (Pruned for traditional EDC)
 
     # Input setting
     parser.add_argument(
@@ -102,7 +70,7 @@ if __name__ == "__main__":
         default="./schemas/disease/diabetes_entity_type_schema.csv",
         help="File containing the target entity type schema to align to.",
     )
-    parser.add_argument("--refinement_iterations", default=0, type=int, help="Number of iteration to run.")
+    # traditional EDC single-pass run
     parser.add_argument(
         "--enrich_schema",
         action="store_true",
@@ -135,5 +103,4 @@ if __name__ == "__main__":
     output_kg = edc.extract_kg(
         input_text_list,
         args["output_dir"],
-        refinement_iterations=args["refinement_iterations"],
     )

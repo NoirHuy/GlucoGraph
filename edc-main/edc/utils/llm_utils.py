@@ -100,15 +100,21 @@ def parse_raw_triplets(raw_triplets: str):
     for l, r in matched_bracket_pairs:
         bracketed_str = raw_triplets[l : r + 1]
         try:
+            import ast
             parsed_triple = ast.literal_eval(bracketed_str)
-            if len(parsed_triple) == 3 and all([isinstance(t, str) for t in parsed_triple]):
-                if all([e != "" and e != "_" for e in parsed_triple]):
-                    collected_triples.append(parsed_triple)
-            elif not all([type(x) == type(parsed_triple[0]) for x in parsed_triple]):
+            if not isinstance(parsed_triple, (list, tuple)):
+                continue
+            if len(parsed_triple) == 3:
+                # Convert any nested lists to comma-separated strings
                 for e_idx, e in enumerate(parsed_triple):
                     if isinstance(e, list):
-                        parsed_triple[e_idx] = ", ".join(e)
-                collected_triples.append(parsed_triple)
+                        parsed_triple[e_idx] = ", ".join([str(item) for item in e])
+                
+                # Ensure all elements are indeed clean strings and not Ellipsis (...) or other objects
+                if all(isinstance(t, str) for t in parsed_triple):
+                    cleaned_triple = [t.strip() for t in parsed_triple]
+                    if all(e != "" and e != "_" and e != "..." for e in cleaned_triple):
+                        collected_triples.append(cleaned_triple)
         except Exception as e:
             pass
     logger.debug(f"Triplets {raw_triplets} parsed as {collected_triples}")
@@ -370,8 +376,18 @@ def xiaomi_chat_completion(model, system_prompt, history, temperature=0, max_tok
             logger.info("[Xiaomi Router] Using 'reasoning_content' fallback because 'content' is empty.")
             content = reasoning_content
     
-    # For reasoning models: strip the chain-of-thought and return only the final answer
-    content = _extract_final_answer_from_reasoning(content)
+    # For reasoning models: strip the chain-of-thought and return only the final answer.
+    # We must SKIP this truncation if it is a debate gate call, because the agents need the full,
+    # untruncated clinical/ontological reasoning to debate effectively in Rounds 2 and 3!
+    is_debate = False
+    for msg in messages:
+        msg_content = str(msg.get("content", ""))
+        if any(keyword in msg_content for keyword in ["Trạng thái:", "Clinical_Specialist", "Ontology_Inspector", "Medical_Skeptic"]):
+            is_debate = True
+            break
+            
+    if not is_debate:
+        content = _extract_final_answer_from_reasoning(content)
         
     logging.debug(f"Model: {model}\nPrompt:\n {messages}\n Result: {content}")
     return content
@@ -388,6 +404,8 @@ def api_chat_completion(model, system_prompt, history, temperature=0, max_tokens
         
     # 2. Google Gemini Prefix Routing
     if model_lower.startswith("google/") or model_lower.startswith("gemini/"):
+        if "gemini" not in model_lower or not os.environ.get("GEMINI_API_KEY"):
+            return openrouter_chat_completion(model, system_prompt, history, temperature, max_tokens)
         actual_model = model
         if model_lower.startswith("google/"):
             actual_model = model[7:]

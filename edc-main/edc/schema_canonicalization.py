@@ -69,24 +69,45 @@ class SchemaCanonicalizer:
         prompt_template_str: str,
         candidate_relation_definition_dict: dict,
         relation_example_dict: dict = None,
+        subject_type: str = "Unknown",
+        object_type: str = "Unknown",
     ):
         canonicalized_triplet = copy.deepcopy(query_triplet)
         choice_letters_list = []
         choices = ""
         candidate_relations = list(candidate_relation_definition_dict.keys())
         candidate_relation_descriptions = list(candidate_relation_definition_dict.values())
+        
+        # Mapping to trace which relation and direction is chosen
+        choice_mapping = {}
+        
+        letter_idx = 0
         for idx, rel in enumerate(candidate_relations):
-            choice_letter = chr(ord("@") + idx + 1)
-            choice_letters_list.append(choice_letter)
-            choices += f"{choice_letter}. '{rel}': {candidate_relation_descriptions[idx]}\n"
-            if relation_example_dict is not None:
-                choices += f"Example: '{relation_example_dict[candidate_relations[idx]]['triple']}' can be extracted from '{candidate_relations[idx]['sentence']}'\n"
-        choices += f"{chr(ord('@')+idx+2)}. None of the above.\n"
+            # Option 1: Original direction
+            letter_orig = chr(ord("@") + letter_idx + 1)
+            choice_letters_list.append(letter_orig)
+            choice_mapping[letter_orig] = (rel, False)
+            choices += f"{letter_orig}. '{rel}' (Original direction: Subject='{query_triplet[0]}', Object='{query_triplet[2]}')\n"
+            choices += f"   Definition: {candidate_relation_descriptions[idx]}\n\n"
+            letter_idx += 1
+            
+            # Option 2: Swapped direction (if swapping Subject & Object makes it fit better)
+            letter_swap = chr(ord("@") + letter_idx + 1)
+            choice_letters_list.append(letter_swap)
+            choice_mapping[letter_swap] = (rel, True)
+            choices += f"{letter_swap}. '{rel}' (Swapped direction: Subject='{query_triplet[2]}', Object='{query_triplet[0]}')\n"
+            choices += f"   Definition: {candidate_relation_descriptions[idx]}\n\n"
+            letter_idx += 1
+            
+        none_letter = chr(ord("@") + letter_idx + 1)
+        choices += f"{none_letter}. None of the above.\n"
 
         verification_prompt = prompt_template_str.format_map(
             {
                 "input_text": input_text_str,
                 "query_triplet": query_triplet,
+                "subject_type": subject_type,
+                "object_type": object_type,
                 "query_relation": query_triplet[1],
                 "query_relation_definition": query_relation_definition,
                 "choices": choices,
@@ -95,26 +116,48 @@ class SchemaCanonicalizer:
 
         messages = [{"role": "user", "content": verification_prompt}]
         if self.verifier_openai_model is None:
-            # llm_utils.generate_completion_transformers([messages], self.model, self.tokenizer, device=self.device)
             verification_result = llm_utils.generate_completion_transformers(
                 messages, self.verifier_model, self.verifier_tokenizer, answer_prepend="Answer: ", max_new_token=5
             )
         else:
             verification_result = llm_utils.api_chat_completion(
-                self.verifier_openai_model, None, messages, max_tokens=5
+                self.verifier_openai_model, None, messages, max_tokens=256
             )
 
-        # Robustly extract the selected letter
+        # ── Robust letter extraction supporting both small and reasoning models ──
         selected_letter = None
         if verification_result:
-            # Find the first uppercase letter that is a valid choice
-            for char in verification_result.strip(" `\"'*:-_"):
-                if char.upper() in choice_letters_list:
-                    selected_letter = char.upper()
-                    break
+            cleaned = verification_result.strip()
+
+            # Priority 1 — explicit answer marker (MiMo usually writes "Answer: A")
+            answer_match = re.search(r'[Aa]nswer\s*[:.=]?\s*([A-Z])', cleaned)
+            if answer_match and answer_match.group(1).upper() in choice_letters_list:
+                selected_letter = answer_match.group(1).upper()
+
+            # Priority 2 — last isolated valid letter (e.g. "...therefore I choose A")
+            if selected_letter is None:
+                isolated = re.findall(r'(?<![A-Za-z])([A-Z])(?![A-Za-z])', cleaned)
+                for letter in reversed(isolated):
+                    if letter.upper() in choice_letters_list:
+                        selected_letter = letter.upper()
+                        break
+
+            # Priority 3 — original scan from start (fallback for plain "A" responses)
+            if selected_letter is None:
+                for char in cleaned.strip(" `\"'*:-_"):
+                    if char.upper() in choice_letters_list:
+                        selected_letter = char.upper()
+                        break
 
         if selected_letter is not None:
-            canonicalized_triplet[1] = candidate_relations[choice_letters_list.index(selected_letter)]
+            chosen_rel, should_swap = choice_mapping[selected_letter]
+            if should_swap:
+                canonicalized_triplet[0] = query_triplet[2]
+                canonicalized_triplet[1] = chosen_rel
+                canonicalized_triplet[2] = query_triplet[0]
+                logger.info(f"[CANONICALIZER] Successfully swapped direction for: {query_triplet} -> {canonicalized_triplet}")
+            else:
+                canonicalized_triplet[1] = chosen_rel
         else:
             return None
 
@@ -148,6 +191,18 @@ class SchemaCanonicalizer:
             if open_relation not in cleaned_def_dict:
                 canonicalized_triplet = None
             else:
+                # Find subject and object types from _entries
+                subject_type = "Unknown"
+                object_type = "Unknown"
+                if "_entries" in open_relation_definition_dict:
+                    for entry in open_relation_definition_dict["_entries"]:
+                        if (entry.get("subject") == open_triplet[0] and
+                            entry.get("relation") == open_triplet[1] and
+                            entry.get("object") == open_triplet[2]):
+                            subject_type = entry.get("subject_type") or "Unknown"
+                            object_type = entry.get("object_type") or "Unknown"
+                            break
+
                 candidate_relations, candidate_scores = self.retrieve_similar_relations(
                     cleaned_def_dict[open_relation]
                 )
@@ -158,6 +213,8 @@ class SchemaCanonicalizer:
                     verify_prompt_template,
                     candidate_relations,
                     None,
+                    subject_type=subject_type,
+                    object_type=object_type,
                 )
         else:
             canonicalized_triplet = None

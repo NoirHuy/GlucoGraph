@@ -43,6 +43,7 @@ VALID_RELATIONS = frozenset([
     "is_a", "has_anatomic_site", "cause_of", "has_finding",
     "has_biomarker", "co_occurs_with", "treated_by", "has_adverse_effect",
     "contraindicated_with", "preferred_over", "has_evaluation", "has_titration_rule",
+    "increases_risk_of", "administered_via", "dispenses",
 ])
 
 # Canonical display map: underscore form → human-friendly
@@ -140,7 +141,7 @@ class DebateResult:
                 {
                     "agent": r.agent_name,
                     "round": r.round_number,
-                    "verdict": r.verdict.value,
+                    "verdict": r.verdict.name,
                     "confidence": r.confidence,
                     "reasoning": r.reasoning[:500],  # Truncate for brevity
                 }
@@ -177,9 +178,17 @@ YOUR ROLE IN THIS DEBATE:
 - Focus on: Does this triple represent a real, evidence-based medical relationship?
 - Consider standard clinical guidelines, peer-reviewed literature, and pharmacological databases
 
-RESPONSE FORMAT (STRICT — Vietnamese labels):
+CONFIDENCE SCORE CALIBRATION (CRITICAL):
+You must calibrate your confidence score carefully. Do NOT default to 95-100% unless it is an absolute textbook fact with zero ambiguity.
+- **95-100% (Absolute Certainty):** Flawless, standard textbook medical fact directly backed by the source text, with no clinical ambiguity.
+- **80-94% (High Certainty):** The relationship is highly accurate and clinically validated, but has minor clinical subtleties, missing non-essential context, or minor wording nuances.
+- **60-79% (Moderate Certainty):** The triple is clinically reasonable, but is debatable, lacks clear clinical guidelines, or there are multiple valid viewpoints.
+- **40-59% (Uncertain/Debatable):** Clinically speculative, highly contextual, or lacks sufficient supporting medical evidence.
+- **Below 40% (Low Certainty):** Highly ambiguous or clinically incorrect.
+
+RESPONSE FORMAT (REQUIRED):
 Provide your clinical reasoning, then on the LAST LINE of your response, write EXACTLY:
-Trạng thái: [ĐÚNG] hoặc [SAI] hoặc [KHÔNG_CHẮC_CHẮN] | Độ tin cậy: [ĐỘ_TIN_CẬY: <number 0-100>]"""
+Status: [CORRECT] or [INCORRECT] or [UNCERTAIN] | Confidence: [CONFIDENCE: <number from 0-100>]"""
 
 _SYSTEM_PROMPT_ONTOLOGY_INSPECTOR = """You are **Ontology_Inspector**, an expert in biomedical ontologies, knowledge representation, and semantic web technologies.
 
@@ -195,12 +204,22 @@ YOUR ROLE IN THIS DEBATE:
 - Check for semantic coherence: is the relationship label appropriate for these two entities?
 - Detect misclassifications (e.g., a symptom labeled as a drug, or a temporal value as a disease)
 
-VALID RELATIONS (12):
-is_a, has_anatomic_site, cause_of, has_finding, has_biomarker, co_occurs_with, treated_by, has_adverse_effect, contraindicated_with, preferred_over, has_evaluation, has_titration_rule
+VALID RELATIONS AND THEIR DEFINITIONS (DYNAMICALLY LOADED FROM SCHEMA CSV):
+__VALID_RELATIONS_WITH_DEFINITIONS__
 
-RESPONSE FORMAT (STRICT — Vietnamese labels):
+Note: Relation labels are case-insensitive and can be written with either spaces or underscores (e.g., 'increases risk of' and 'increases_risk_of' are equivalent). Both formats are ontologically identical and valid.
+
+CONFIDENCE SCORE CALIBRATION (CRITICAL):
+You must calibrate your confidence score carefully. Do NOT default to 95-100% unless it is an absolute textbook ontological fact with zero ambiguity.
+- **95-100% (Absolute Certainty):** The triple perfectly complies with formal ontology schema, domain/range constraints, and entity classifications with zero ambiguity.
+- **80-94% (High Certainty):** The relationship is ontologically correct, but has minor representation details, slightly debatable boundaries, or minor stylistic entity phrasing.
+- **60-79% (Moderate Certainty):** The triple is semantically plausible, but lacks clear ontological consensus, has borderline domain/range fit, or has alternative valid schemas.
+- **40-59% (Uncertain/Debatable):** Significant ontological ambiguity, borderline entity types, or doubtful relation alignment.
+- **Below 40% (Low Certainty):** Clear ontology schema violation or misclassified entity.
+
+RESPONSE FORMAT (REQUIRED):
 Provide your ontological analysis, then on the LAST LINE of your response, write EXACTLY:
-Trạng thái: [ĐÚNG] hoặc [SAI] hoặc [KHÔNG_CHẮC_CHẮN] | Độ tin cậy: [ĐỘ_TIN_CẬY: <number 0-100>]"""
+Status: [CORRECT] or [INCORRECT] or [UNCERTAIN] | Confidence: [CONFIDENCE: <number from 0-100>]"""
 
 _SYSTEM_PROMPT_MEDICAL_SKEPTIC = """You are **Medical_Skeptic**, a critical analyst specialized in detecting extraction errors, hallucinations, and logical fallacies in biomedical NLP outputs.
 
@@ -212,14 +231,22 @@ YOUR EXPERTISE:
 - Flagging temporal/numerical values incorrectly extracted as medical entities
 
 YOUR ROLE IN THIS DEBATE:
-- Be the **devil's advocate** — actively try to find reasons why the triple might be WRONG
-- Challenge assumptions made by the other agents
-- Look for: reversed directionality, wrong relation type, entity pollution (non-entities in S/O positions)
-- Check if the triple is too vague, too specific, or represents an extraction artifact rather than real knowledge
+- Act as a **critical yet objective medical auditor** — carefully examine whether the triple is faithful to the source text and medically plausible.
+- Reject a triple (INCORRECT) only if it contains clear extraction errors (e.g., reversed direction, wrong relation type, polluted entities) or represents an inaccurate/misleading medical statement.
+- Do not reject triples over minor stylistic, grammatical, or ontological representation details if the core medical fact is accurate, clinically useful, and supported by the source text.
+- Challenge assumptions made by other agents only when they lead to factual inaccuracies.
 
-RESPONSE FORMAT (STRICT — Vietnamese labels):
+CONFIDENCE SCORE CALIBRATION (CRITICAL):
+You must calibrate your confidence score carefully. Do NOT default to 95-100% unless there is an absolute factuality/extraction error or absolute factuality/extraction correctness.
+- **95-100% (Absolute Certainty):** Clear, unambiguous factuality/extraction correctness (if CORRECT) or clear, indisputable extraction/clinical error (if INCORRECT).
+- **80-94% (High Certainty):** Highly likely correct/incorrect, but with minor text interpretation subtleties or minor boundary issues.
+- **60-79% (Moderate Certainty):** Reasonable argument either way, moderate ambiguity in text support, or debatable clinical logic.
+- **40-59% (Uncertain/Debatable):** Highly ambiguous source text support, weak extraction rationale, or borderline clinical validity.
+- **Below 40% (Low Certainty):** Purely speculative or completely lacks support from the source text.
+
+RESPONSE FORMAT (REQUIRED):
 Provide your critical analysis, then on the LAST LINE of your response, write EXACTLY:
-Trạng thái: [ĐÚNG] hoặc [SAI] hoặc [KHÔNG_CHẮC_CHẮN] | Độ tin cậy: [ĐỘ_TIN_CẬY: <number 0-100>]"""
+Status: [CORRECT] or [INCORRECT] or [UNCERTAIN] | Confidence: [CONFIDENCE: <number from 0-100>]"""
 
 
 _ROUND1_USER_TEMPLATE = """## Triple Verification Task
@@ -284,7 +311,7 @@ class ResponseParser:
     Searches from the LAST LINE upward to find the verdict/confidence pattern.
     """
 
-    # Primary patterns (Vietnamese format)
+    # Primary patterns (English / Vietnamese format)
     _PAT_VERDICT = re.compile(
         r"\[?\s*(ĐÚNG|SAI|KHÔNG[_\s]?CHẮC[_\s]?CHẮN|CORRECT|INCORRECT|UNCERTAIN)\s*\]?",
         re.IGNORECASE,
@@ -295,9 +322,9 @@ class ResponseParser:
     )
     # Fallback: any [NUMBER] pattern at the end
     _PAT_CONFIDENCE_FALLBACK = re.compile(r"\[\s*(\d{1,3})\s*\]")
-    # Status line pattern: catches "Trạng thái: [X] | Độ tin cậy: [Y: Z]"
+    # Status line pattern: catches "Status: [X]" or "Trạng thái: [X]"
     _PAT_STATUS_LINE = re.compile(
-        r"Trạng\s*thái\s*:\s*\[?\s*(ĐÚNG|SAI|KHÔNG[_\s]?CHẮC[_\s]?CHẮN)\s*\]?",
+        r"(?:Trạng\s*thái|Status)\s*:\s*\[?\s*(ĐÚNG|SAI|KHÔNG[_\s]?CHẮC[_\s]?CHẮN|CORRECT|INCORRECT|UNCERTAIN)\s*\]?",
         re.IGNORECASE,
     )
 
@@ -448,6 +475,21 @@ class AgentLLMDebateGate:
             # Also keep original form
             self._relation_definitions[rel_name.strip().lower()] = rel_def
         
+        # Dynamically build VALID RELATIONS list with definitions from the active schema for the Ontology Inspector
+        valid_relations_list = []
+        for rel_name, rel_def in self.schema.items():
+            normalized = rel_name.strip().replace(" ", "_").lower()
+            original = rel_name.strip().lower()
+            valid_relations_list.append(f"- {normalized} (or '{original}'): {rel_def}")
+        
+        valid_relations_str = "\n".join(sorted(valid_relations_list))
+        
+        # Replace the placeholder in _SYSTEM_PROMPT_ONTOLOGY_INSPECTOR dynamically
+        ontology_system_prompt = _SYSTEM_PROMPT_ONTOLOGY_INSPECTOR.replace(
+            "__VALID_RELATIONS_WITH_DEFINITIONS__",
+            valid_relations_str
+        )
+        
         # Initialize the 3 weighted agent personas with dedicated or fallback models
         self.agents: List[AgentPersona] = [
             AgentPersona(
@@ -460,7 +502,7 @@ class AgentLLMDebateGate:
             AgentPersona(
                 name="Ontology_Inspector",
                 weight=0.3,
-                system_prompt=_SYSTEM_PROMPT_ONTOLOGY_INSPECTOR,
+                system_prompt=ontology_system_prompt,
                 temperature=temperature,
                 model_name=ontology_inspector_model or model_name,
             ),
@@ -534,7 +576,7 @@ class AgentLLMDebateGate:
         
         # All retries exhausted — return a fallback response
         logger.error(f"[DebateGate] All {self.retry_attempts} API attempts failed for {agent.name}")
-        return "Trạng thái: [KHÔNG_CHẮC_CHẮN] | Độ tin cậy: [ĐỘ_TIN_CẬY: 30]"
+        return "Status: [UNCERTAIN] | Confidence: [CONFIDENCE: 30]"
 
     # ─────────────────────────────────────────────────────────────
     # Prompt Construction
@@ -595,7 +637,7 @@ class AgentLLMDebateGate:
             }.get(resp.verdict, "❓")
             
             other_responses_parts.append(
-                f"**{resp.agent_name}** {verdict_emoji} [{resp.verdict.value}] "
+                f"**{resp.agent_name}** {verdict_emoji} [{resp.verdict.name}] "
                 f"(Confidence: {resp.confidence}%)\n"
                 f"```\n{resp.reasoning[:800]}\n```"
             )
@@ -801,7 +843,7 @@ class AgentLLMDebateGate:
                 unanimous_verdict = round_responses[0].verdict
                 logger.info(
                     f"[DebateGate] ✓ Consensus reached in Round {round_num}: "
-                    f"All agents agree [{unanimous_verdict.value}]. Early stopping."
+                    f"All agents agree [{unanimous_verdict.name}]. Early stopping."
                 )
                 break
         
@@ -983,7 +1025,7 @@ class AgentLLMDebateGate:
             
             logger.info(
                 f"[DebateGate] │ {resp.agent_name:<22} "
-                f"{icon} [{resp.verdict.value:<18}] "
+                f"{icon} [{resp.verdict.name:<18}] "
                 f"Conf: {resp.confidence:>3}% |{bar}| "
                 f"(w={resp.weight})"
             )

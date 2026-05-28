@@ -127,7 +127,7 @@ class SchemaDefiner:
                 messages, self.model, self.tokenizer, answer_prepend="Answer: "
             )
         else:
-            completion = llm_utils.api_chat_completion(self.openai_model, None, messages)
+            completion = llm_utils.api_chat_completion(self.openai_model, None, messages, max_tokens=2048)
 
         # ── New JSON-based parsing (entity types enabled) ──
         if self.use_entity_types:

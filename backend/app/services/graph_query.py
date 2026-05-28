@@ -1,140 +1,124 @@
 from app.database import get_db_driver
 
-# Quan hệ "cần tránh / hạn chế" trong KG tiếng Việt
-AVOID_RELATIONS = [
-    "làm trầm trọng",
-    "chống chỉ định với",
-    "cần hạn chế ở",
-    "là yếu tố nguy cơ của",
+# Standard clinical relations in diabetes_schema.csv
+CLINICAL_RELATIONS = [
+    "is a",
+    "has anatomic site",
+    "cause of",
+    "has finding",
+    "has biomarker",
+    "co occurs with",
+    "treated by",
+    "has adverse effect",
+    "contraindicated with",
+    "preferred over",
+    "has evaluation",
+    "has titration rule"
 ]
 
 
-def get_all_kg_nodes() -> list[str]:
-    """Lấy danh sách tất cả tên node trong KG (cho LLM semantic mapping)."""
+def get_all_cdss_nodes() -> list[str]:
+    """Retrieve all unique medical node names (Disease, Drug, Symptom, Anatomy) for LLM mapping."""
     driver = get_db_driver()
     if not driver:
         return []
-    with driver.session() as session:
-        result = session.run("MATCH (n) WHERE n.name IS NOT NULL RETURN collect(DISTINCT n.name) AS names")
-        record = result.single()
-        return record["names"] if record and record["names"] else []
+    try:
+        with driver.session() as session:
+            result = session.run("MATCH (n) WHERE n.name IS NOT NULL RETURN collect(DISTINCT n.name) AS names")
+            record = result.single()
+            return record["names"] if record and record["names"] else []
+    except Exception as e:
+        print(f"⚠️ Neo4j error in get_all_cdss_nodes: {e}")
+        return []
 
 
-def get_dietary_advice(disease_name: str):
-    """
-    Lấy danh sách chất/thực phẩm cần tránh theo bệnh từ KG.
-    """
+def check_contraindications(disease_name: str) -> list[dict]:
+    """Query Neo4j for drugs contraindicated with a specific medical condition/disease."""
     driver = get_db_driver()
     if not driver:
-        return None
+        return []
+
+    # Querying either standard 'contraindicated with' or custom vietnamese equivalent
+    query = """
+    MATCH (d)-[r]->(dr)
+    WHERE toLower(d.name) CONTAINS toLower($disease)
+      AND (toLower(r.relation) CONTAINS 'contraindicate' OR toLower(r.relation) CONTAINS 'chống chỉ định')
+    RETURN d.name AS disease, dr.name AS drug, r.relation AS relation
+    """
+    try:
+        with driver.session() as session:
+            results = session.run(query, disease=disease_name)
+            return [
+                {
+                    "disease": r["disease"],
+                    "drug": r["drug"],
+                    "relation": r["relation"]
+                }
+                for r in results
+            ]
+    except Exception as e:
+        print(f"⚠️ Neo4j error in check_contraindications: {e}")
+        return []
+
+
+def get_diseases_by_symptoms(symptoms: list[str]) -> list[dict]:
+    """Query Neo4j to find potential diseases associated with a list of symptoms for differential diagnosis."""
+    driver = get_db_driver()
+    if not driver or not symptoms:
+        return []
 
     query = """
-    MATCH (a)-[r]->(b)
-    WHERE toLower(b.name) CONTAINS toLower($name)
-      AND toLower(r.relation) IN $avoid_relations
-    RETURN collect(DISTINCT a.name) AS avoid_items
-    UNION
-    MATCH (a)-[r]->(b)
-    WHERE toLower(a.name) CONTAINS toLower($name)
-      AND toLower(r.relation) IN $avoid_relations
-    RETURN collect(DISTINCT b.name) AS avoid_items
+    MATCH (s)-[r]->(d)
+    WHERE s.name IN $symptoms 
+      AND (toLower(r.relation) CONTAINS 'manifestation' OR toLower(r.relation) CONTAINS 'finding' OR toLower(r.relation) CONTAINS 'triệu chứng')
+    RETURN s.name AS symptom, d.name AS disease, r.relation AS relation
     """
+    try:
+        with driver.session() as session:
+            results = session.run(query, symptoms=symptoms)
+            return [
+                {
+                    "symptom": r["symptom"],
+                    "disease": r["disease"],
+                    "relation": r["relation"]
+                }
+                for r in results
+            ]
+    except Exception as e:
+        print(f"⚠️ Neo4j error in get_diseases_by_symptoms: {e}")
+        return []
 
-    with driver.session() as session:
-        results = session.run(query, name=disease_name, avoid_relations=AVOID_RELATIONS)
-        avoid_items = []
-        for record in results:
-            avoid_items.extend(record["avoid_items"])
-        avoid_items = list(set(avoid_items))
 
-        if avoid_items:
-            return {
-                "disease": disease_name,
-                "avoid_nutrients": avoid_items,
-                "avoid_foods": []
-            }
-    return None
-
-
-def get_food_nutrients(food_name_input: str):
-    """
-    Tìm node thực phẩm/dưỡng chất trong KG và lấy các quan hệ liên quan cùng thông số dinh dưỡng.
-    """
+def get_node_relations(node_name: str) -> list[dict]:
+    """Retrieve all direct relations for a given node to draw the GraphRAG reasoning path."""
     driver = get_db_driver()
     if not driver:
-        return None
-
-    query = """
-    MATCH (a)
-    WHERE toLower(a.name) CONTAINS toLower($name) AND a.calories IS NOT NULL
-    OPTIONAL MATCH (a)-[r]->(b)
-    RETURN a.name AS found_name, 
-           a.calories AS calories, a.carbs AS carbs, a.protein AS protein, a.fat AS fat,
-           a.iron AS iron, a.zinc AS zinc, a.fiber AS fiber, a.cholesterol AS cholesterol,
-           a.calcium AS calcium, a.phosphorus AS phosphorus, a.potassium AS potassium,
-           a.sodium AS sodium, a.vitamin_a AS vitamin_a, a.vitamin_b1 AS vitamin_b1,
-           a.vitamin_c AS vitamin_c, a.beta_carotene AS beta_carotene,
-           collect(CASE WHEN r IS NOT NULL THEN {relation: r.relation, target: b.name} ELSE NULL END) AS connections
-    LIMIT 1
-    """
-
-    with driver.session() as session:
-        result = session.run(query, name=food_name_input).single()
-        if result and result["found_name"]:
-            conns = result["connections"]
-            connections = [c for c in conns if c is not None] if conns else []
-            return {
-                "found_name": result["found_name"],
-                "calories": result["calories"],
-                "carbs": result["carbs"],
-                "protein": result["protein"],
-                "fat": result["fat"],
-                "iron": result["iron"],
-                "zinc": result["zinc"],
-                "fiber": result["fiber"],
-                "cholesterol": result["cholesterol"],
-                "calcium": result["calcium"],
-                "phosphorus": result["phosphorus"],
-                "potassium": result["potassium"],
-                "sodium": result["sodium"],
-                "vitamin_a": result["vitamin_a"],
-                "vitamin_b1": result["vitamin_b1"],
-                "vitamin_c": result["vitamin_c"],
-                "beta_carotene": result["beta_carotene"],
-                "ingredients": [{"name": c["target"]} for c in connections if c]
-            }
-
-    return None
-
-def get_node_properties(node_name: str):
-    """Lấy tất cả properties của một node cụ thể."""
-    driver = get_db_driver()
-    if not driver: return {}
-    with driver.session() as session:
-        res = session.run("MATCH (n) WHERE n.name = $name RETURN n", name=node_name).single()
-        if res and res["n"]:
-            return dict(res["n"])
-    return {}
-
-
-def get_node_relations(node_name: str):
-    """Lấy tất cả quan hệ của một node cụ thể trong KG."""
-    driver = get_db_driver()
-    if not driver:
-        return None
+        return []
 
     query = """
     MATCH (a)-[r]->(b)
     WHERE a.name = $name
-    RETURN a.name AS subject, r.relation AS relation, b.name AS object
+    RETURN a.name AS subject, r.relation AS relation, b.name AS object,
+           labels(a)[0] AS subject_type, labels(b)[0] AS object_type
     UNION
     MATCH (a)-[r]->(b)
     WHERE b.name = $name
-    RETURN a.name AS subject, r.relation AS relation, b.name AS object
+    RETURN a.name AS subject, r.relation AS relation, b.name AS object,
+           labels(a)[0] AS subject_type, labels(b)[0] AS object_type
     """
-
-    with driver.session() as session:
-        results = session.run(query, name=node_name)
-        triples = [{"subject": r["subject"], "relation": r["relation"], "object": r["object"]}
-                   for r in results]
-        return triples if triples else None
+    try:
+        with driver.session() as session:
+            results = session.run(query, name=node_name)
+            return [
+                {
+                    "subject": r["subject"],
+                    "relation": r["relation"],
+                    "object": r["object"],
+                    "subject_type": r["subject_type"],
+                    "object_type": r["object_type"]
+                }
+                for r in results
+            ]
+    except Exception as e:
+        print(f"⚠️ Neo4j error in get_node_relations: {e}")
+        return []

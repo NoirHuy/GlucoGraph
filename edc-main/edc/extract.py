@@ -43,6 +43,6 @@ class Extractor:
                 messages, self.model, self.tokenizer, answer_prepend="Triplets: "
             )
         else:
-            completion = llm_utils.api_chat_completion(self.openai_model, None, messages)
+            completion = llm_utils.api_chat_completion(self.openai_model, None, messages, max_tokens=1024)
         extracted_triplets_list = llm_utils.parse_raw_triplets(completion)
         return extracted_triplets_list

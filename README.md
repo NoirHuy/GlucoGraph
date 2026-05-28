@@ -1,4 +1,4 @@
-# 🥗 Xây dựng Đồ thị Tri thức Dinh dưỡng Bệnh nhân
+# 🩺 GlucoLogic AI — Clinical Decision Support System (CDSS) cho Đái tháo đường
 
 > **Đồ án 2 – HK2 (2025–2026)** | Tác giả: Lê Quang Huy – MSSV: 223571
 
@@ -15,11 +15,11 @@
 
 | Dịch vụ | Đường link | Thông tin đăng nhập |
 |---|---|---|
-| 🌐 **Web App (Tư vấn Dinh dưỡng)** | [ainutritionassistant.noirhuy.id.vn](http://ainutritionassistant.noirhuy.id.vn) | *(không cần đăng nhập)* |
-| 🔬 **Neo4j Browser (Đồ thị Tri thức)** | [ainutritionassistant.noirhuy.id.vn:7474](http://ainutritionassistant.noirhuy.id.vn:7474) | Username: `neo4j` / Password: `password` |
+| 🌐 **Web App (CDSS Dashboard)** | [glucologic.noirhuy.id.vn](http://glucologic.noirhuy.id.vn) | *(không cần đăng nhập)* |
+| 🔬 **Neo4j Browser (CDSS Knowledge Graph)** | [glucologic.noirhuy.id.vn:7474](http://glucologic.noirhuy.id.vn:7474) | Username: `neo4j` / Password: `password` |
 | 💻 **IP trực tiếp (dự phòng)** | [103.82.27.129](http://103.82.27.129) | — |
 
-> 💡 **Hướng dẫn nhanh cho Hội đồng:** Vào link Web App → Chọn bệnh (VD: *Tiểu đường*) → Nhập tên món ăn (VD: *cơm trắng*) → Nhấn **Phân tích** để xem lời khuyên dinh dưỡng từ AI.
+> 💡 **Hướng dẫn nhanh cho Hội đồng:** Vào link Web App → Nhập bệnh án tóm tắt hoặc chọn Bệnh án lâm sàng mẫu (VD: *Robert - Đái tháo đường Type 1 cấp tính*) → Nhấn **Analyze Case** để xem phân tích chẩn đoán, cảnh báo chống chỉ định tương tác thuốc, và luồng suy luận y khoa trực quan trên Đồ thị Tri thức.
 >
 > Để xem Đồ thị Tri thức trực quan, vào Neo4j Browser → chạy lệnh Cypher: `MATCH (n) RETURN n LIMIT 100`
 
@@ -27,12 +27,12 @@
 
 ## 📋 Giới thiệu
 
-**Đồ án "Xây dựng đồ thị tri thức dinh dưỡng bệnh nhân"** nghiên cứu và xây dựng một hệ thống tự động trích xuất tri thức y khoa từ văn bản phi cấu trúc thành **Knowledge Graph (Đồ thị Tri thức)** có cấu trúc, kết hợp kiến trúc **GraphRAG** để cung cấp lời khuyên dinh dưỡng an toàn, có kiểm chứng cho bệnh nhân mắc các bệnh mãn tính.
+**Hệ thống Hỗ trợ Ra quyết định Lâm sàng Đái tháo đường (CDSS) - GlucoLogic AI** nghiên cứu và xây dựng một hệ thống tự động trích xuất tri thức y văn đái tháo đường từ văn bản phi cấu trúc thành **Knowledge Graph (Đồ thị Tri thức)** có cấu trúc, kết hợp kiến trúc **GraphRAG** để hỗ trợ bác sĩ chẩn đoán xác định, chẩn đoán phân biệt và đưa ra phác đồ điều trị an toàn cho bệnh nhân.
 
 > **Trọng tâm kỹ thuật:** Pipeline tự động xây dựng Knowledge Graph gồm 3 vấn đề cốt lõi:
 > 1. Thu thập và tiền xử lý dữ liệu y văn (Preprocessing + Coreference Resolution)
-> 2. Trích xuất thực thể và quan hệ bằng LLM (OIE + Few-shot Prompting)
-> 3. Xây dựng và chuẩn hóa đồ thị tri thức (EDC Framework + Semantic Deduplication)
+> 2. Trích xuất thực thể và quan hệ lâm sàng bằng LLM (OIE + Few-shot Prompting)
+> 3. Xây dựng và chuẩn hóa đồ thị tri thức (EDC Framework + Multi-Agent Debate Gate)
 
 ### Nhóm bệnh hỗ trợ
 
@@ -281,12 +281,12 @@ MyProject/
 ├── 📂 backend/                 # FastAPI Backend
 │   ├── app/
 │   │   ├── services/
-│   │   │   ├── ai_chat.py      # GraphRAG + Semantic Mapping + Circuit Breaker
+│   │   │   ├── cdss.py         # GraphRAG CDSS Decision Support
 │   │   │   └── graph_query.py  # Truy vấn Neo4j (Cypher)
 │   │   ├── config.py           # Quản lý biến môi trường (.env)
 │   │   └── main.py             # Khởi động FastAPI + CORS
 │   └── Dockerfile
-├── 📂 frontend-diet/           # React 18 + Vite Frontend
+├── 📂 frontend-CDSS/           # React 18 + Vite Frontend (CDSS Dashboard)
 ├── 📂 edc-main/                # Pipeline Xây dựng Knowledge Graph
 │   ├── edc/                    # Core: extract.py | schema_definition.py | schema_canonicalization.py
 │   ├── few_shot_examples/      # 5 ví dụ mẫu OIE cho 5 nhóm bệnh lý

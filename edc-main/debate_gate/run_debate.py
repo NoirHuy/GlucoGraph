@@ -236,9 +236,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--debate_gate_veto_threshold",
-        default=70,
+        default=85,
         type=int,
-        help="Confidence threshold for agent veto power (default: 70)."
+        help="Confidence threshold for agent veto power (default: 85)."
     )
     parser.add_argument(
         "--debate_gate_max_rounds",
