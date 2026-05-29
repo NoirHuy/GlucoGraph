@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>GlucoLogic AI - Patient Dashboard</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#e7e8ee",
+            "primary-fixed": "#e8ddff",
+            "surface": "#f9f9ff",
+            "secondary-fixed": "#68fadd",
+            "tertiary-fixed": "#e8deff",
+            "on-secondary-fixed-variant": "#005145",
+            "on-background": "#191c20",
+            "on-primary-fixed-variant": "#5300cd",
+            "on-tertiary-fixed": "#20005f",
+            "outline": "#7a7488",
+            "on-tertiary-container": "#cebfff",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#006b5c",
+            "surface-variant": "#e2e2e8",
+            "on-error": "#ffffff",
+            "tertiary-fixed-dim": "#cdbdff",
+            "primary-fixed-dim": "#cfbdff",
+            "surface-tint": "#6d23f9",
+            "primary": "#4800b2",
+            "inverse-surface": "#2e3035",
+            "secondary-fixed-dim": "#44ddc1",
+            "on-surface": "#191c20",
+            "secondary-container": "#68fadd",
+            "on-error-container": "#93000a",
+            "tertiary": "#4400b5",
+            "inverse-primary": "#cfbdff",
+            "background": "#f9f9ff",
+            "surface-bright": "#f9f9ff",
+            "on-secondary-fixed": "#00201a",
+            "error-container": "#ffdad6",
+            "on-primary-container": "#d0beff",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#007261",
+            "inverse-on-surface": "#f0f0f6",
+            "surface-dim": "#d9d9df",
+            "tertiary-container": "#5d21df",
+            "surface-container-low": "#f3f3f9",
+            "on-tertiary-fixed-variant": "#4f00d0",
+            "surface-container-highest": "#e2e2e8",
+            "outline-variant": "#cbc3d9",
+            "on-surface-variant": "#494456",
+            "primary-container": "#6200ee",
+            "on-primary": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "on-primary-fixed": "#22005d",
+            "surface-container": "#ededf3"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f9f9ff 0%, #e8ddff 100%);
+      min-height: 100vh;
+    }
+
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .markdown-body {
+      all: revert;
+      font-family: Inter, sans-serif;
+      color: #191c20;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .markdown-body h2,
+    .markdown-body h3 {
+      color: #4800b2;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      font-family: Manrope, sans-serif;
+      font-weight: 800;
+    }
+
+    .markdown-body ul {
+      list-style-type: disc;
+      padding-left: 1.5em;
+      margin-bottom: 1em;
+    }
+
+    .markdown-body li {
+      margin-bottom: 0.3em;
+    }
+
+    .markdown-body pre {
+      background: #f3f3f9;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .markdown-body code {
+      background: #e8ddff;
+      padding: 2px 4px;
+      border-radius: 4px;
+      color: #4800b2;
+    }
+  </style>
+</head>
+
+<body class="font-body text-on-surface selection:bg-primary-fixed selection:text-primary">
+  <!-- VITE REACT ROOT LAYER -->
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

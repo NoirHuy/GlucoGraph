@@ -1,0 +1,71 @@
+Your task is to extract clinical knowledge as a semantic graph from biomedical/clinical text. Output a list of triples in the format: [Entity1, Relationship, Entity2].
+
+════════════════════════════════════════════════
+PART 1: ALLOWED ENTITY TYPES
+════════════════════════════════════════════════
+Entities MUST ONLY belong to one of these UMLS-aligned types:
+  - [Disease/Condition]        e.g., Hypertension, Infection, Diabetes, Arthritis, Asthma, Cancer
+  - [Treatment/Medication]     e.g., Aspirin, Penicillin, Lifestyle Modification, Chemotherapy, Surgery
+  - [Symptom/Clinical Finding] e.g., Pain, Fever, High Blood Pressure, Cough, Inflammation, Dyspnea
+  - [Clinical Metric/Lab Test] e.g., Blood Pressure, Temperature, HbA1c, eGFR, Heart Rate, Lab value
+  - [Anatomical Site]          e.g., Heart, Lung, Kidney, Brain, Pancreas, Retina
+  - [Dosage Value]             e.g., 500mg, 10ml, once daily, 5 units, 20% dosage reduction
+
+════════════════════════════════════════════════
+PART 2: STRICT IGNORE LIST — DO NOT EXTRACT
+════════════════════════════════════════════════
+NEVER create a triple involving any of the following:
+  - Author names, physician credentials (MD, PhD, FACE, FACP, FRCPC, MACE)
+  - Hospitals, universities, research institutions, task forces, committees
+  - Publication dates, guideline version numbers, update years
+  - Standalone abbreviations or acronyms (AACE, CDC, ADA, ATP) — UNLESS they appear as a subject or object with a clear clinical meaning
+  - Administrative roles (Chair, Director, Task Force member, author)
+  - Document or article references (Consensus Statement, Clinical Practice Guideline, Algorithm Summary)
+  - Organizational names (American Association of..., Advisory Committee on...)
+  - BARE ADJECTIVES or COMPARATIVES without clinical meaning (e.g., 'longer', 'fewer', 'more', 'less') — these are NOT entities
+  - ABSTRACT NON-ENTITIES like 'number of meals', 'simplicity', 'adherence', 'flexibility' — these are NOT clinical entities
+  - DURATIONS, TIME RANGES, or TEMPORAL INTERVALS (e.g., '30 to 60 minutes', '6 to 8 hours', '2 to 3 days', 'daily') — NEVER treat them as clinical subjects/objects.
+  - MATHEMATICAL FORMULAS, NUMBERS, RATIOS, or EQUATIONS — these are calculations, not clinical entity nodes.
+  - VAGUE PRONOUNS (e.g., 'it', 'they', 'this', 'these') — NEVER use pronouns as subjects or objects. Resolve them to their actual clinical entity.
+  - COMPOUND CLINICAL WORKFLOW PHRASES (e.g., 'adjusted for anticipated meal content', 'taking an active role') — do NOT extract them as adverse effects or titration rules.
+
+════════════════════════════════════════════════
+PART 3: OPEN-DOMAIN EXTRACTION RULES
+════════════════════════════════════════════════
+
+RULE 1 — USE TEXT-BASED VERBS FOR RELATIONS:
+  Extract the relation as the actual verb or verbal phrase from the sentence.
+  DO NOT force or map relations to a fixed vocabulary. Use the text's own language.
+  ✗ WRONG (canonicalized): ['type 1 diabetes mellitus', 'may be treated by', 'insulin']
+  ✓ CORRECT (text-anchored): ['insulin', 'is required for', 'type 1 diabetes mellitus']
+
+RULE 2 — ONE ENTITY PER SLOT, NO COMPOUND STRINGS:
+  NEVER group multiple diseases, symptoms, or treatments into a single entity string.
+  If the text mentions multiple items, CREATE A SEPARATE TRIPLE FOR EACH ITEM.
+  ✗ WRONG: ['Type 2 Diabetes', 'associated condition of', 'heart failure, chronic kidney disease']
+  ✓ CORRECT: ['Type 2 Diabetes', 'co-occurs with', 'heart failure']
+             ['Type 2 Diabetes', 'co-occurs with', 'chronic kidney disease']
+
+RULE 3 — ATOMICITY: Keep entities short and clinical.
+  Subjects and objects should be short, named clinical concepts, not long descriptive phrases.
+  ✗ WRONG: ['all patients with type 1 diabetes mellitus', 'treated by', 'Insulin']
+  ✓ CORRECT: ['insulin', 'is required for', 'type 1 diabetes mellitus']
+
+RULE 4 — NO HALLUCINATION: Only extract triples directly supported by the sentence.
+  If the text does not explicitly state a relationship between two entities, do NOT invent one.
+  If the sentence is administrative, vague, or contains no clinical facts, output: []
+
+RULE 5 — METADATA EXCLUSION:
+  If the entire sentence is about authors, dates, institutions, copyright, or guideline metadata,
+  output an empty list [].
+
+════════════════════════════════════════════════
+PART 4: FEW-SHOT EXAMPLES
+════════════════════════════════════════════════
+{few_shot_examples}
+
+════════════════════════════════════════════════
+PART 5: TARGET CLINICAL TEXT FOR EXTRACTION
+════════════════════════════════════════════════
+Text: {input_text}
+Triplets:

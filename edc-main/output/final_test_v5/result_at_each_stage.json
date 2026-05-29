@@ -1,0 +1,502 @@
+[
+    {
+        "index": 0,
+        "input_text": "Insulin is required for all patients with type 1 diabetes mellitus because they do not produce adequate insulin (due to destruction of the pancreatic beta-cells) and will develop ketoacidosis without it.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Insulin",
+                "is required for",
+                "type 1 diabetes mellitus"
+            ],
+            [
+                "destruction of pancreatic beta-cells",
+                "causes",
+                "type 1 diabetes mellitus"
+            ],
+            [
+                "type 1 diabetes mellitus",
+                "is associated with",
+                "inadequate insulin production"
+            ],
+            [
+                "type 1 diabetes mellitus",
+                "increases risk of",
+                "ketoacidosis"
+            ]
+        ],
+        "oie": [
+            [
+                "Insulin",
+                "is required for",
+                "type 1 diabetes mellitus"
+            ],
+            [
+                "destruction of pancreatic beta-cells",
+                "causes",
+                "type 1 diabetes mellitus"
+            ],
+            [
+                "type 1 diabetes mellitus",
+                "is associated with",
+                "inadequate insulin production"
+            ],
+            [
+                "type 1 diabetes mellitus",
+                "increases risk of",
+                "ketoacidosis"
+            ]
+        ],
+        "schema_definition": {
+            "is required for": "The subject drug or treatment is necessary or essential for the management or alleviation of the object disease or condition.",
+            "causes": "The subject entity directly leads to or results in the object disease or condition.",
+            "is associated with": "The subject disease or condition is linked or correlated with the object clinical finding, symptom, or physiological state.",
+            "increases risk of": "The subject entity is a known risk factor that elevates the probability of developing the object disease or condition.",
+            "_entries": [
+                {
+                    "subject": "Insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "is required for",
+                    "relation_definition": "The subject drug or treatment is necessary or essential for the management or alleviation of the object disease or condition.",
+                    "object": "type 1 diabetes mellitus",
+                    "object_type": "Disease",
+                    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "subject_type_canon": "Drug",
+                    "object_type_canon": "Disease"
+                },
+                {
+                    "subject": "destruction of pancreatic beta-cells",
+                    "subject_type": "Risk Factor",
+                    "subject_type_definition": "A factor that increases the likelihood or probability of developing a disease or condition.",
+                    "relation": "causes",
+                    "relation_definition": "The subject entity directly leads to or results in the object disease or condition.",
+                    "object": "type 1 diabetes mellitus",
+                    "object_type": "Disease",
+                    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "subject_type_canon": "Risk Factor",
+                    "object_type_canon": "Disease"
+                },
+                {
+                    "subject": "type 1 diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "is associated with",
+                    "relation_definition": "The subject disease or condition is linked or correlated with the object clinical finding, symptom, or physiological state.",
+                    "object": "inadequate insulin production",
+                    "object_type": "Symptom",
+                    "object_type_definition": "A clinical sign or physiological state in which body cells do not respond effectively to insulin, often associated with metabolic disease.",
+                    "subject_type_canon": "Disease",
+                    "object_type_canon": "Symptom"
+                },
+                {
+                    "subject": "type 1 diabetes mellitus",
+                    "subject_type": "Disease",
+                    "subject_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "relation": "increases risk of",
+                    "relation_definition": "The subject entity is a known risk factor that elevates the probability of developing the object disease or condition.",
+                    "object": "ketoacidosis",
+                    "object_type": "Disease",
+                    "object_type_definition": "A metabolic disorder characterized by the accumulation of ketone bodies in the blood, often associated with diabetes.",
+                    "subject_type_canon": "Disease",
+                    "object_type_canon": "Disease"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{'treated by': np.float64(0.7760742904884239), 'dispenses': np.float64(0.6168261347541737), 'is a': np.float64(0.576883421485717), 'contraindicated with': np.float64(0.5728171714079522), 'preferred over': np.float64(0.5649212871357511)}, {'cause of': np.float64(0.7344580936546703), 'is a': np.float64(0.7052516162104364), 'increases risk of': np.float64(0.6752587164657521), 'has adverse effect': np.float64(0.6336554089959424), 'has anatomic site': np.float64(0.602427192862919)}, {'has finding': np.float64(0.7079609373703493), 'has biomarker': np.float64(0.6861439924581096), 'is a': np.float64(0.685454477511517), 'co occurs with': np.float64(0.6848229530093128), 'increases risk of': np.float64(0.6455925741072857)}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 1 diabetes mellitus",
+                "treated by",
+                "Insulin"
+            ],
+            [
+                "destruction of pancreatic beta-cells",
+                "cause of",
+                "type 1 diabetes mellitus"
+            ],
+            [
+                "type 1 diabetes mellitus",
+                "has finding",
+                "inadequate insulin production"
+            ],
+            [
+                "type 1 diabetes mellitus",
+                "increases risk of",
+                "ketoacidosis"
+            ]
+        ]
+    },
+    {
+        "index": 1,
+        "input_text": "Insulin is also used in the management of many patients with type 2 diabetes.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Insulin",
+                "is used in the management of",
+                "type 2 diabetes"
+            ]
+        ],
+        "oie": [
+            [
+                "Insulin",
+                "is used in the management of",
+                "type 2 diabetes"
+            ]
+        ],
+        "schema_definition": {
+            "is used in the management of": "The subject drug or treatment is applied or utilized in the care and management of the object disease or condition.",
+            "_entries": [
+                {
+                    "subject": "Insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "is used in the management of",
+                    "relation_definition": "The subject drug or treatment is applied or utilized in the care and management of the object disease or condition.",
+                    "object": "type 2 diabetes",
+                    "object_type": "Disease",
+                    "object_type_definition": "A chronic metabolic disorder characterized by elevated blood glucose levels due to insulin resistance or insufficient insulin production.",
+                    "subject_type_canon": "Drug",
+                    "object_type_canon": "Disease"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{'treated by': np.float64(0.8032581513424107), 'dispenses': np.float64(0.667096270964161), 'administered via': np.float64(0.649865556325197), 'is a': np.float64(0.6069297359013637), 'preferred over': np.float64(0.5771870516760911)}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 2 diabetes",
+                "treated by",
+                "Insulin"
+            ]
+        ]
+    },
+    {
+        "index": 2,
+        "input_text": "Insulin replacement in type 1 diabetes should ideally mimic beta-cell function to provide basal and prandial requirements (physiologic replacement or basal-bolus dosing).\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "basal-bolus dosing",
+                "is a",
+                "insulin replacement"
+            ],
+            [
+                "insulin replacement",
+                "should ideally mimic",
+                "beta-cell function"
+            ]
+        ],
+        "oie": [
+            [
+                "basal-bolus dosing",
+                "is a",
+                "insulin replacement"
+            ],
+            [
+                "insulin replacement",
+                "should ideally mimic",
+                "beta-cell function"
+            ]
+        ],
+        "schema_definition": {
+            "is a": "The subject is a specific type or category of the object.",
+            "should ideally mimic": "The subject treatment or intervention should ideally replicate or closely resemble the natural physiological process or function of the object.",
+            "_entries": [
+                {
+                    "subject": "basal-bolus dosing",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A clinical approach or protocol for administering a drug or treatment.",
+                    "relation": "is a",
+                    "relation_definition": "The subject is a specific type or category of the object.",
+                    "object": "insulin replacement",
+                    "object_type": "Treatment Procedure",
+                    "object_type_definition": "A clinical approach or protocol for administering a drug or treatment.",
+                    "subject_type_canon": "Treatment Procedure",
+                    "object_type_canon": "Treatment Procedure"
+                },
+                {
+                    "subject": "insulin replacement",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A clinical approach or protocol for administering a drug or treatment.",
+                    "relation": "should ideally mimic",
+                    "relation_definition": "The subject treatment or intervention should ideally replicate or closely resemble the natural physiological process or function of the object.",
+                    "object": "beta-cell function",
+                    "object_type": "Biomarker",
+                    "object_type_definition": "A measurable indicator or marker of a biological process, disease state, or physiological function.",
+                    "subject_type_canon": "Treatment Procedure",
+                    "object_type_canon": "Biomarker"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {'treated by': np.float64(0.5795820975807597), 'dispenses': np.float64(0.498521924467935), 'administered via': np.float64(0.46633779203570075), 'has titration rule': np.float64(0.4579534583733595), 'has evaluation': np.float64(0.4354565333203303)}]",
+        "schema_canonicalizaiton": [
+            [
+                "basal-bolus dosing",
+                "is a",
+                "insulin replacement"
+            ],
+            null
+        ]
+    },
+    {
+        "index": 3,
+        "input_text": "To achieve this, different preparations of insulin and methods of administration can be used.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 4,
+        "input_text": "Except for use of regular insulin, which is given IV in hospitalized patients, insulin is almost always administered subcutaneously.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "regular insulin",
+                "is given IV in",
+                "hospitalized patients"
+            ]
+        ],
+        "oie": [
+            [
+                "regular insulin",
+                "is given IV in",
+                "hospitalized patients"
+            ]
+        ],
+        "schema_definition": {
+            "is given IV in": "The subject drug or treatment is administered intravenously in the specified patient population or clinical context.",
+            "_entries": [
+                {
+                    "subject": "regular insulin",
+                    "subject_type": "Drug",
+                    "subject_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "is given IV in",
+                    "relation_definition": "The subject drug or treatment is administered intravenously in the specified patient population or clinical context.",
+                    "object": "hospitalized patients",
+                    "object_type": "Clinical Rule",
+                    "object_type_definition": "A general principle or guideline that outlines a specific clinical practice or protocol.",
+                    "subject_type_canon": "Drug",
+                    "object_type_canon": "Clinical Rule"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{'administered via': np.float64(0.7380549426498373), 'treated by': np.float64(0.6357663781403521), 'dispenses': np.float64(0.630841026013987), 'has titration rule': np.float64(0.519573715236596), 'has adverse effect': np.float64(0.4920296731008744)}]",
+        "schema_canonicalizaiton": [
+            null
+        ]
+    },
+    {
+        "index": 5,
+        "input_text": "An inhaled insulin preparation is available for patients who prefer not to inject themselves.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 6,
+        "input_text": "It has a slightly more rapid onset of action compared to subcutaneously injected rapid acting insulin.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 7,
+        "input_text": "Multiple daily subcutaneous injections administered by the patient, with 2 preparations of insulin used depending on the anticipated glycemic control needs.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 8,
+        "input_text": "An insulin pump that delivers a rapid- or short-acting insulin and administers a basal rate of insulin and additional boluses with meals or for correcting a high blood glucose level.\n",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "insulin pump",
+                "delivers",
+                "rapid-acting insulin"
+            ],
+            [
+                "insulin pump",
+                "delivers",
+                "short-acting insulin"
+            ],
+            [
+                "insulin pump",
+                "administers",
+                "basal rate of insulin"
+            ],
+            [
+                "insulin pump",
+                "administers",
+                "boluses with meals"
+            ],
+            [
+                "insulin pump",
+                "corrects",
+                "high blood glucose level"
+            ]
+        ],
+        "oie": [
+            [
+                "insulin pump",
+                "delivers",
+                "rapid-acting insulin"
+            ],
+            [
+                "insulin pump",
+                "delivers",
+                "short-acting insulin"
+            ],
+            [
+                "insulin pump",
+                "administers",
+                "basal rate of insulin"
+            ],
+            [
+                "insulin pump",
+                "administers",
+                "boluses with meals"
+            ],
+            [
+                "insulin pump",
+                "corrects",
+                "high blood glucose level"
+            ]
+        ],
+        "schema_definition": {
+            "delivers": "The subject device or system provides or dispenses the object substance or medication.",
+            "administers": "The subject device or system provides or dispenses the object substance or medication.",
+            "corrects": "The subject device or system is used to counteract or mitigate the object adverse effect or clinical state.",
+            "_entries": [
+                {
+                    "subject": "insulin pump",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "delivers",
+                    "relation_definition": "The subject device or system provides or dispenses the object substance or medication.",
+                    "object": "rapid-acting insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "subject_type_canon": "Treatment Procedure",
+                    "object_type_canon": "Drug"
+                },
+                {
+                    "subject": "insulin pump",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "delivers",
+                    "relation_definition": "The subject device or system provides or dispenses the object substance or medication.",
+                    "object": "short-acting insulin",
+                    "object_type": "Drug",
+                    "object_type_definition": "A pharmacological agent prescribed to prevent, treat, or manage a disease or clinical condition.",
+                    "subject_type_canon": "Treatment Procedure",
+                    "object_type_canon": "Drug"
+                },
+                {
+                    "subject": "insulin pump",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "administers",
+                    "relation_definition": "The subject device or system provides or dispenses the object substance or medication.",
+                    "object": "basal rate of insulin",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units.",
+                    "subject_type_canon": "Treatment Procedure",
+                    "object_type_canon": "Dosage Value"
+                },
+                {
+                    "subject": "insulin pump",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "administers",
+                    "relation_definition": "The subject device or system provides or dispenses the object substance or medication.",
+                    "object": "boluses with meals",
+                    "object_type": "Dosage Value",
+                    "object_type_definition": "A quantitative measurement of drug dosage, titration percentage, or clinical threshold level expressed with units.",
+                    "subject_type_canon": "Treatment Procedure",
+                    "object_type_canon": "Dosage Value"
+                },
+                {
+                    "subject": "insulin pump",
+                    "subject_type": "Treatment Procedure",
+                    "subject_type_definition": "A medical intervention or therapy used to prevent, treat, or manage a disease or clinical condition.",
+                    "relation": "corrects",
+                    "relation_definition": "The subject device or system is used to counteract or mitigate the object adverse effect or clinical state.",
+                    "object": "high blood glucose level",
+                    "object_type": "Clinical Metric",
+                    "object_type_definition": "A quantifiable laboratory or clinical measurement used to assess disease status, treatment response, or health outcomes.",
+                    "subject_type_canon": "Treatment Procedure",
+                    "object_type_canon": "Clinical Metric"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{'dispenses': np.float64(0.8166108678910533), 'administered via': np.float64(0.623891794288275), 'treated by': np.float64(0.619224595265156), 'is a': np.float64(0.5137691464848556), 'has adverse effect': np.float64(0.5036084043903342)}, {'dispenses': np.float64(0.8168621548773962), 'administered via': np.float64(0.6240766063379909), 'treated by': np.float64(0.6198581182965223), 'is a': np.float64(0.5141832374938953), 'has adverse effect': np.float64(0.5041749493274106)}, {'dispenses': np.float64(0.8166432476973369), 'administered via': np.float64(0.624723096956433), 'treated by': np.float64(0.6201338607393413), 'is a': np.float64(0.5147985210488388), 'has adverse effect': np.float64(0.5049615579771749)}, {'dispenses': np.float64(0.8166108678910533), 'administered via': np.float64(0.623891794288275), 'treated by': np.float64(0.619224595265156), 'is a': np.float64(0.5137691464848556), 'has adverse effect': np.float64(0.5036084043903342)}, {'treated by': np.float64(0.7133734380789185), 'dispenses': np.float64(0.6267550485938024), 'has adverse effect': np.float64(0.5965224269879403), 'contraindicated with': np.float64(0.5475665428330523), 'is a': np.float64(0.5206890863644633)}]",
+        "schema_canonicalizaiton": [
+            [
+                "insulin pump",
+                "dispenses",
+                "rapid-acting insulin"
+            ],
+            [
+                "insulin pump",
+                "dispenses",
+                "short-acting insulin"
+            ],
+            null,
+            [
+                "insulin pump",
+                "dispenses",
+                "boluses with meals"
+            ],
+            [
+                "high blood glucose level",
+                "treated by",
+                "insulin pump"
+            ]
+        ]
+    },
+    {
+        "index": 9,
+        "input_text": "Both strategies require close attention to diet and exercise as well as to insulin timing and dose.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [],
+        "oie": [],
+        "schema_definition": {
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": []
+    }
+]

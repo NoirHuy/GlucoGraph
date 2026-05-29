@@ -1,0 +1,31 @@
+Given the following clinical text and a relational triplet extracted from it:
+
+Text: {input_text}
+Triplet: {query_triplet}
+Subject Type: {subject_type}
+Object Type: {object_type}
+
+The relation '{query_relation}' in the triplet is currently defined as: '{query_relation_definition}'
+
+Your task: Select the BEST matching relation from the schema choices below, or choose "None of the above" if no choice is a good semantic match.
+
+DOMAIN/RANGE CONSTRAINTS — Verify these BEFORE selecting any choice:
+  - 'treated by':         Subject MUST be [Disease/Condition], [Symptom], or [Clinical Metric] (abnormal level, e.g. high blood glucose), Object MUST be [Drug/Treatment/Procedure/Device]
+  - 'has finding':        Subject MUST be [Disease/Condition],     Object MUST be [Symptom/Clinical Finding] — NEVER a Drug
+  - 'has biomarker':      Subject MUST be [Disease/Condition],     Object MUST be [Lab Test/Biomarker/Metric]
+  - 'has evaluation':     Subject MUST be [Disease/Condition],     Object MUST be [Clinical Assessment/Metric]
+  - 'has adverse effect': Subject MUST be [Drug/Treatment],        Object MUST be [Symptom/Condition] — NEVER a Drug
+  - 'has titration rule': Subject MUST be [Drug/Treatment],        Object MUST be a concrete dosing adjustment (e.g., 'increase by 20%', 'decrease by 10%'). NEVER use 'glycemic control', 'glycemic targets', or any clinical GOAL as the object.
+  - 'cause of':           Subject MUST be [Risk Factor/Pathological Process], Object MUST be [Disease/Condition]
+  - 'increases risk of':  Subject MUST be [Risk Factor/Disease],   Object MUST be [Disease/Complication]
+  - 'contraindicated with': Subject MUST be [Drug/Treatment],      Object MUST be [Disease/Condition]
+  - 'preferred over':     Subject MUST be [Drug/Treatment],        Object MUST be [Drug/Treatment]
+  - 'administered via':   Subject MUST be [Drug/Treatment/Substance], Object MUST be [Treatment/Procedure/Anatomical Site/Route]
+  - 'dispenses':          Subject MUST be [Device/Treatment/Procedure], Object MUST be [Drug/Treatment/Substance]
+
+If the Subject or Object type VIOLATES a constraint for a candidate relation, choose "None of the above" instead.
+
+IMPORTANT: Your answer must be a SINGLE LETTER ONLY (e.g., A, B, C...). Do not output any words, explanation, or punctuation — just the letter.
+
+Choices:
+{choices}

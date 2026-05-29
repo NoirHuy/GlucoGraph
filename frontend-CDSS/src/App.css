@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+:root {
+  --primary: #6c5ce7;
+  --secondary: #00b894;
+  --dark: #2d3436;
+  --light: #dfe6e9;
+  --glass: rgba(255, 255, 255, 0.95);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%);
+  height: 100vh; /* Cố định chiều cao màn hình */
+  overflow: hidden; /* Chặn scroll của body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  width: 95%;
+  max-width: 1100px;
+  height: 90vh; /* Khung app cố định */
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* --- HEADER --- */
+.navbar {
+  background: white;
+  padding: 15px 30px;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0; /* Header không bị co lại */
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* --- MAIN CONTENT --- */
+.dashboard {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  overflow-y: auto; /* Chỉ cho phép scroll phần nội dung bên trong */
+  flex: 1; /* Chiếm hết khoảng trống còn lại */
+}
+
+/* Scrollbar đẹp */
+.dashboard::-webkit-scrollbar { width: 8px; }
+.dashboard::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.5); border-radius: 4px; }
+
+.card {
+  background: var(--glass);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover { transform: translateY(-2px); }
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.full-width { grid-column: 1 / -1; }
+
+/* INPUT & BUTTONS */
+.input-group { display: flex; gap: 10px; flex-wrap: wrap; }
+.input-field, .select-field {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+.btn:active { transform: scale(0.95); }
+.btn-primary { background: var(--primary); color: white; }
+.btn-success { background: var(--secondary); color: white; }
+.btn-danger { background: #ff7675; color: white; }
+
+/* --- UPLOAD --- */
+.upload-area {
+  border: 2px dashed #b2bec3;
+  border-radius: 15px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #fdfdfd;
+  transition: 0.3s;
+}
+.upload-area:hover { border-color: var(--primary); background: #f0f3ff; }
+.preview-img { max-height: 100%; max-width: 100%; border-radius: 10px; object-fit: contain; }
+
+/* --- CAMERA --- */
+.camera-box {
+  width: 100%;
+  height: 250px;
+  background: black;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-feed { width: 100%; height: 100%; object-fit: cover; }
+
+/* --- MODAL RESULT (FIX LỖI CO GIÃN) --- */
+.modal-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Cho AnimeJS xử lý */
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  overflow-y: auto;
+  transform: scale(0.8); /* Cho AnimeJS zoom lên */
+}
+
+.result-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2d3436;
+  white-space: pre-line;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  border-left: 5px solid var(--secondary);
+}
+
+.loader { display: flex; align-items: center; gap: 10px; color: var(--primary); font-weight: bold; font-size: 1.2rem; }
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+@media (max-width: 768px) {
+  .dashboard { grid-template-columns: 1fr; }
+  .app-container { width: 100%; height: 100vh; border-radius: 0; }
+}
+/* --- PHẦN MỚI THÊM: FORMAT KẾT QUẢ MARKDOWN --- */
+
+/* Khung chứa nội dung Markdown */
+.markdown-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #2d3436;
+  overflow-wrap: break-word; /* Tự xuống dòng nếu chữ quá dài */
+}
+
+/* 1. Tiêu đề (##, ###) */
+.markdown-body h2 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+  margin-top: 20px;
+}
+.markdown-body h3 {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  margin-top: 15px;
+}
+
+/* 2. Bảng biểu (Table) - Quan trọng nhất */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Cho phép trượt ngang trên điện thoại */
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px; /* Đảm bảo bảng không bị co dúm lại */
+}
+
+.markdown-body th, .markdown-body td {
+  padding: 12px 15px;
+  border: 1px solid #dfe6e9;
+  text-align: left;
+}
+
+.markdown-body th {
+  background-color: #f1f2f6;
+  font-weight: 700;
+  color: #2d3436;
+}
+
+.markdown-body tr:nth-child(even) {
+  background-color: #fcfcfc; /* Tô màu dòng chẵn lẻ cho dễ nhìn */
+}
+
+/* 3. Chữ đậm, List */
+.markdown-body strong { color: #d63031; font-weight: 700; }
+.markdown-body ul { padding-left: 20px; }
+.markdown-body li { margin-bottom: 5px; }
+
+/* 4. Chỉnh lại Modal cho Responsive tốt hơn */
+.modal-content {
+  background: white;
+  width: 95%; /* Chiếm 95% màn hình trên mobile */
+  max-width: 800px; /* Giới hạn độ rộng tối đa trên PC */
+  max-height: 85vh; /* Giới hạn chiều cao */
+  border-radius: 20px;
+  padding: 25px; /* Giảm padding một chút */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 600px) {
+  .modal-content { padding: 15px; }
+  .markdown-body table { font-size: 0.9rem; }
+  .markdown-body th, .markdown-body td { padding: 8px; }
+}
