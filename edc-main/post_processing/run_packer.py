@@ -11,6 +11,13 @@ and generates `canon_kg_debated_packed.json` ready for high-fidelity Neo4j impor
 import sys
 import os
 import json
+
+# Try loading .env variables
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 import logging
 from argparse import ArgumentParser
 

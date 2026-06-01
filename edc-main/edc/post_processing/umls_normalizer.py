@@ -74,15 +74,34 @@ class UMLSNormalizer:
         term_clean = term_stripped.strip()
         
         if not term_clean:
-            return {"cui": "NONE", "canonical": "", "semantic_type": "Unknown", "score": 0.0}
+            return {
+                "cui": "NONE",
+                "canonical": "",
+                "semantic_type": "Unknown",
+                "score": 0.0,
+                "icd10_code": "NONE",
+                "rxnorm_id": "NONE",
+                "definition": ""
+            }
 
         term_key = term_clean.lower()
         if term_key in self.cache:
-            return self.cache[term_key]
+            cached_val = self.cache[term_key]
+            # Migration check: must contain the new clinical keys
+            if isinstance(cached_val, dict) and "definition" in cached_val and "icd10_code" in cached_val and "rxnorm_id" in cached_val:
+                return cached_val
 
         # Dry-run if no API key is set
         if not self.api_key:
-            res = {"cui": "NONE", "canonical": term_clean, "semantic_type": "Unknown", "score": 0.0}
+            res = {
+                "cui": "NONE",
+                "canonical": term_clean,
+                "semantic_type": "Unknown",
+                "score": 0.0,
+                "icd10_code": "NONE",
+                "rxnorm_id": "NONE",
+                "definition": ""
+            }
             self.cache[term_key] = res
             return res
 
@@ -97,7 +116,8 @@ class UMLSNormalizer:
                     "string": term_clean,
                     "apiKey": self.api_key,
                     "searchType": s_type,
-                    "pageSize": 10
+                    "pageSize": 10,
+                    "sabs": "RXNORM,SNOMEDCT_US,MSH"
                 }
                 
                 logger.debug(f"[UMLSNormalizer] Querying UTS Search ({s_type}) for: '{term_clean}'")
@@ -114,7 +134,15 @@ class UMLSNormalizer:
 
             if not results:
                 # No match found
-                res = {"cui": "NONE", "canonical": term_clean, "semantic_type": "Unknown", "score": 0.0}
+                res = {
+                    "cui": "NONE",
+                    "canonical": term_clean,
+                    "semantic_type": "Unknown",
+                    "score": 0.0,
+                    "icd10_code": "NONE",
+                    "rxnorm_id": "NONE",
+                    "definition": ""
+                }
                 self.cache[term_key] = res
                 self.save_cache()
                 return res
@@ -163,50 +191,136 @@ class UMLSNormalizer:
             
             # Sort by total_score descending
             ranked_results.sort(key=lambda x: x[0], reverse=True)
+
+            # We will search the ranked list of candidates sequentially (checking up to top 3)
+            # to verify that they satisfy the Semantic Type safety safeguard.
+            best_cui = "NONE"
+            best_pref_name = term_clean
+            best_semantic_type = "Unknown"
+            best_score_val = 0.0
             
-            best_score, best_match = ranked_results[0]
-            cui = best_match.get("ui", "NONE")
-            pref_name = best_match.get("name", term_clean)
-
-            # If score is very low (e.g. less than 1.0, meaning no direct lexical match or overlap occurred),
-            # fallback to the original canonical string.
-            if best_score < 1.0:
-                logger.info(f"[UMLSNormalizer] Rejected low-confidence UMLS mapping for '{term_clean}': '{pref_name}' (score={best_score:.2f})")
-                res = {"cui": "NONE", "canonical": term_clean, "semantic_type": "Unknown", "score": 0.0}
-                self.cache[term_key] = res
-                self.save_cache()
-                return res
-
-            # 2. Query specific concept details to get Semantic Types
-            semantic_type = "Unknown"
-            if cui != "NONE":
-                detail_url = f"{self.base_url}/content/current/CUI/{cui}"
+            safe_tuis = {"T047", "T121", "T184", "T033"}
+            
+            for score, match in ranked_results[:3]:
+                cui_cand = match.get("ui", "NONE")
+                pref_name_cand = match.get("name", term_clean)
+                
+                if score < 1.0:
+                    continue  # Low confidence, skip
+                
+                # Query concept details to check Semantic Type
+                detail_url = f"{self.base_url}/content/current/CUI/{cui_cand}"
                 detail_params = {"apiKey": self.api_key}
                 
-                logger.debug(f"[UMLSNormalizer] Fetching CUI details for: {cui} ({pref_name})")
+                logger.debug(f"[UMLSNormalizer] Fetching CUI details for candidate: {cui_cand} ({pref_name_cand})")
                 detail_response = requests.get(detail_url, params=detail_params, timeout=12)
                 
                 if detail_response.status_code == 200:
                     detail_data = detail_response.json()
                     sem_types = detail_data.get("result", {}).get("semanticTypes", [])
+                    tuis = []
+                    sem_type_list = []
+                    
                     if sem_types:
-                        sem_type_list = []
                         for st in sem_types:
                             st_name = st.get("name", "")
                             st_uri = st.get("uri", "")
-                            # Extract TUI from URI (e.g. "https://.../TUI/T047" -> "T047")
                             st_tui = st_uri.split("/")[-1] if st_uri else ""
                             if st_tui:
+                                tuis.append(st_tui)
                                 sem_type_list.append(f"{st_name} ({st_tui})")
                             else:
                                 sem_type_list.append(st_name)
-                        semantic_type = ", ".join(sem_type_list)
+                    
+                    # Verify Semantic Type Safety
+                    if any(t in safe_tuis for t in tuis):
+                        best_cui = cui_cand
+                        best_pref_name = pref_name_cand
+                        best_semantic_type = ", ".join(sem_type_list) if sem_type_list else "Unknown"
+                        best_score_val = float(score)
+                        break
+                    else:
+                        logger.info(f"[UMLSNormalizer] Rejected candidate CUI {cui_cand} '{pref_name_cand}' due to unsafe Semantic Types: {tuis}")
+
+            if best_cui == "NONE":
+                res = {
+                    "cui": "NONE",
+                    "canonical": term_clean,
+                    "semantic_type": "Unknown",
+                    "score": 0.0,
+                    "icd10_code": "NONE",
+                    "rxnorm_id": "NONE",
+                    "definition": ""
+                }
+                self.cache[term_key] = res
+                self.save_cache()
+                return res
+
+            # --- Gather extended properties for our CUI ---
+            cui = best_cui
+            
+            # 1. Definitions (prioritizing NCI or MSH)
+            definition = ""
+            def_url = f"{self.base_url}/content/current/CUI/{cui}/definitions"
+            logger.debug(f"[UMLSNormalizer] Fetching definitions for: {cui}")
+            def_response = requests.get(def_url, params={"apiKey": self.api_key}, timeout=10)
+            if def_response.status_code == 200:
+                def_data = def_response.json()
+                defs = def_data.get("result", [])
+                if defs:
+                    nci_def = None
+                    msh_def = None
+                    any_def = None
+                    for d in defs:
+                        vocab = d.get("sourceVocab", "").upper()
+                        val = d.get("value", "")
+                        if not val:
+                            continue
+                        if not any_def:
+                            any_def = val
+                        if vocab == "NCI":
+                            nci_def = val
+                        elif vocab == "MSH":
+                            msh_def = val
+                    definition = nci_def or msh_def or any_def or ""
+
+            # 2. ICD-10 Code
+            icd10_code = "NONE"
+            atoms_url = f"{self.base_url}/content/current/CUI/{cui}/atoms"
+            logger.debug(f"[UMLSNormalizer] Fetching ICD10CM atoms for: {cui}")
+            icd_response = requests.get(atoms_url, params={"apiKey": self.api_key, "sabs": "ICD10CM"}, timeout=10)
+            if icd_response.status_code == 200:
+                icd_data = icd_response.json()
+                results_atoms = icd_data.get("result", [])
+                if results_atoms:
+                    code_val = results_atoms[0].get("code", "")
+                    if "/" in code_val:
+                        code_val = code_val.split("/")[-1]
+                    if code_val:
+                        icd10_code = code_val
+
+            # 3. RxNorm ID
+            rxnorm_id = "NONE"
+            logger.debug(f"[UMLSNormalizer] Fetching RXNORM atoms for: {cui}")
+            rx_response = requests.get(atoms_url, params={"apiKey": self.api_key, "sabs": "RXNORM"}, timeout=10)
+            if rx_response.status_code == 200:
+                rx_data = rx_response.json()
+                results_atoms = rx_data.get("result", [])
+                if results_atoms:
+                    code_val = results_atoms[0].get("code", "")
+                    if "/" in code_val:
+                        code_val = code_val.split("/")[-1]
+                    if code_val:
+                        rxnorm_id = code_val
 
             res = {
                 "cui": cui,
-                "canonical": pref_name,
-                "semantic_type": semantic_type,
-                "score": float(best_score)
+                "canonical": best_pref_name,
+                "semantic_type": best_semantic_type,
+                "score": best_score_val,
+                "icd10_code": icd10_code,
+                "rxnorm_id": rxnorm_id,
+                "definition": definition
             }
             
             # Save to persistent cache
@@ -216,8 +330,15 @@ class UMLSNormalizer:
 
         except Exception as e:
             logger.warning(f"[UMLSNormalizer] Error querying UMLS API for '{term_clean}': {e}. Falling back to default.")
-            # Do not write temporary failures to the persistent cache so they can be retried later
-            return {"cui": "NONE", "canonical": term_clean, "semantic_type": "Unknown", "score": 0.0}
+            return {
+                "cui": "NONE",
+                "canonical": term_clean,
+                "semantic_type": "Unknown",
+                "score": 0.0,
+                "icd10_code": "NONE",
+                "rxnorm_id": "NONE",
+                "definition": ""
+            }
 
     def normalize_triplets(self, triplets: List[List[str]]) -> Tuple[List[Dict[str, Any]], List[List[str]]]:
         """Maps a list of raw triplets to UMLS.
@@ -233,9 +354,9 @@ class UMLSNormalizer:
                 # If malformed, preserve as-is
                 plain_triplets.append(triplet)
                 mapped_triplets.append({
-                    "subject": {"original": str(triplet), "canonical": str(triplet), "cui": "NONE", "semantic_type": "Unknown", "score": 0.0},
+                    "subject": {"original": str(triplet), "canonical": str(triplet), "cui": "NONE", "semantic_type": "Unknown", "score": 0.0, "icd10_code": "NONE", "rxnorm_id": "NONE", "definition": ""},
                     "relation": "Unknown",
-                    "object": {"original": "", "canonical": "", "cui": "NONE", "semantic_type": "Unknown", "score": 0.0}
+                    "object": {"original": "", "canonical": "", "cui": "NONE", "semantic_type": "Unknown", "score": 0.0, "icd10_code": "NONE", "rxnorm_id": "NONE", "definition": ""}
                 })
                 continue
 
@@ -249,7 +370,10 @@ class UMLSNormalizer:
                     "canonical": sub_res["canonical"],
                     "cui": sub_res["cui"],
                     "semantic_type": sub_res["semantic_type"],
-                    "score": sub_res["score"]
+                    "score": sub_res["score"],
+                    "icd10_code": sub_res.get("icd10_code", "NONE"),
+                    "rxnorm_id": sub_res.get("rxnorm_id", "NONE"),
+                    "definition": sub_res.get("definition", "")
                 },
                 "relation": rel,
                 "object": {
@@ -257,7 +381,10 @@ class UMLSNormalizer:
                     "canonical": obj_res["canonical"],
                     "cui": obj_res["cui"],
                     "semantic_type": obj_res["semantic_type"],
-                    "score": obj_res["score"]
+                    "score": obj_res["score"],
+                    "icd10_code": obj_res.get("icd10_code", "NONE"),
+                    "rxnorm_id": obj_res.get("rxnorm_id", "NONE"),
+                    "definition": obj_res.get("definition", "")
                 }
             })
 

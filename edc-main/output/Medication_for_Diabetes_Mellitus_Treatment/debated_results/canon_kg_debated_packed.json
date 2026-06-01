@@ -1,0 +1,3624 @@
+{
+  "nodes": [
+    {
+      "id": "type 1 diabetes mellitus",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "type 1 diabetes mellitus",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0021641",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0021641",
+        "umls_canonical": "Insulin",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "Hormon slinivky břišní tvořený v beta-buňkách Langerhansových ostrůvků. Peptid tvořený dvěma řetězci (A, B) spojenými C-peptidem. Je důležitý pro regulaci glykemie a pro metabolismus sacharidů, ovlivňuje však i metabolismus bílkovin a lipidů. Působí anabolicky, tlumí lipolýzu. Jeho vylučování stoupá po jídle jako odpověď na vzestup glukosy v krvi (jeho vylučování ovlivňují i některé další hormony a nervové vlivy, regulace souvisí s funkcí membránových přenašečů a iontových kanálů na beta-buňce, ovlivňuje jej např. kalemie), umožňuje její vstup do buněk a její další využití (zisk energie, uložení do zásoby). Na i. je závislý glukosový transportér GLUT4. V cílových tkáních (zejm. svalová a tuková tkáň, játra) působí přes specifický receptor, který má charakter tyrosinkinázy (v tom i v některých dalších vlastnostech se podobá růstovým faktorům, což mj. souvisí s vlivem hyperinzulinemie na proces aterogeneze). Při jeho absolutním nedostatku nebo nedostatečném účinku (inzulinové rezistenci) vzniká diabetes mellitus (typu 1, resp. 2). I. existuje i jako lék. V minulosti se používaly purifikované i. vepřové a hovězí, nověji se používá humánní i., vyrobený metodami genového inženýrství. I. k léčebnému použití se dělí podle rychlosti nástupu účinku a doby působení a liší se způsobem podání. Rizikem léčby i. je předávkování s hypoglykemií, zejm. u starších inzulinů existovalo riziko alergizace a vzniku protilátek. I. také zvyšuje vstup kalia do buněk a lze jej spolu s glukosou použít k léčbě hyperkalemie. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "U500 insulin",
+          "insulin",
+          "regular insulin"
+        ]
+      }
+    },
+    {
+      "id": "destruction of the pancreatic beta-cells",
+      "labels": [
+        "Concept",
+        "Risk Factor"
+      ],
+      "properties": {
+        "umls_canonical": "destruction of the pancreatic beta-cells",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "inadequate insulin production",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "inadequate insulin production",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0220982",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0220982",
+        "umls_canonical": "Ketoacidosis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Název někdy používaný pro hromadění ketolátek, popř. až ketoacidózu. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )",
+        "icd10_code": "NONE",
+        "aliases": [
+          "ketoacidosis"
+        ]
+      }
+    },
+    {
+      "id": "C0011860",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011860",
+        "umls_canonical": "Diabetes Mellitus, Non-Insulin-Dependent",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E11",
+        "description": "Typ diabetu, který není závislý na inzulinu. Je charakterizovaný nejprve inzulinovou rezistencí a hyperinzulinemií a posléze glukózovou intolerancí, hyperglykemií a zjevným diabetem. Výskyt tohoto typu není omezený jen na dospělou populaci. Pacienti jsou často obézní, ale málokdy se u nich vyvine ketóza.",
+        "aliases": [
+          "type 2 diabetes"
+        ]
+      }
+    },
+    {
+      "id": "basal-bolus dosing",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "basal-bolus dosing",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin replacement",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "insulin replacement",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0011854",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011854",
+        "umls_canonical": "Diabetes Mellitus, Insulin-Dependent",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E10",
+        "description": "Typ diabetu, pro který je charakteristický deficit inzulinu. Projevuje se náhle těžkou hyperglykemií a rychle se vyvíjející diabetickou ketoacidózou. Pokud se neléčí inzulinem, končí fatálně. Onemocnění může vzniknout v jakémkoli věku, ale nejčastěji se objevuje v dětství a v adolescenci.",
+        "aliases": [
+          "type 1 diabetes"
+        ]
+      }
+    },
+    {
+      "id": "insulin pump",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "insulin pump",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "rapid- or short-acting insulin",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "rapid- or short-acting insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C2919432",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_cui": "C2919432",
+        "umls_canonical": "Glucose in blood specimen above reference range",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "UMLS Standard Term: Glucose in blood specimen above reference range",
+        "aliases": [
+          "high blood glucose level"
+        ]
+      }
+    },
+    {
+      "id": "additional boluses",
+      "labels": [
+        "Concept",
+        "Dosage Value"
+      ],
+      "properties": {
+        "umls_canonical": "additional boluses",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0293359",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0293359",
+        "umls_canonical": "insulin lispro",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "86009",
+        "description": "Inzulin, který byl upraven tak, že v B-řetězci je v poloze 28 lysin místo prolinu a v poloze 29 prolin místo lysinu. Používá se k úpravě hladiny krevní glukózy u pacientů s diabetes mellitus 2. typu.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Rapid-acting insulins",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "Rapid-acting insulins",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C1708521",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1708521",
+        "umls_canonical": "Insulin Aspart",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "Inzulin, který byl modifikován tak, aby v poloze 38 B-řetězce obsahoval místo prolinu kyselinu aspartovou.",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "insulin aspart"
+        ]
+      }
+    },
+    {
+      "id": "postprandial glucose spikes",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "postprandial glucose spikes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Inhaled regular insulin",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "Inhaled regular insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "rapid-acting insulin",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "rapid-acting insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0021658",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0021658",
+        "umls_canonical": "insulin isophane",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "1605101",
+        "description": "Střednědobě působící inzulinový přípravek s nástupem účinku za 2 hodiny a trváním 24 hodin. Vyrábí se krystalizací protamin-zink-inzulinu při neutrálním pH 7. Proto se podle vynálezce Hanse Christiana Hagedorna nazývá neutrální protamin Hagedorn.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "intermediate-acting insulin",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "intermediate-acting insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0907402",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0907402",
+        "umls_canonical": "insulin glargine",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "274783",
+        "description": "Rekombinantní dlouhodobě působící inzulin a hypoglykemická látka. Používá se k regulaci krevní glukózy u pacientů s diabetes mellitus.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0304870",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0304870",
+        "umls_canonical": "Insulin, Long-Acting",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "Inzulinové přípravky obsahující látky, které zpomalují vstřebávání, čímž prodlužují dobu působení.",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "long-acting insulin"
+        ]
+      }
+    },
+    {
+      "id": "C5434213",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C5434213",
+        "umls_canonical": "insulin icodec",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "UMLS Standard Term: insulin icodec",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "Insulin icodec"
+        ]
+      }
+    },
+    {
+      "id": "weekly insulin",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "weekly insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0356369",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0356369",
+        "umls_canonical": "Biphasic Insulins",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "Inzulinový přípravek, který je navržen tak, aby v jedné dávce poskytoval okamžitou a dlouhodobou kontrolu glykemie. Dvoufázový inzulin typicky obsahuje směs regular inzulinu nebo krátkodobě působícího inzulinu v kombinaci s dlouhodobě působícím inzulinem.",
+        "aliases": [
+          "mixing insulins"
+        ]
+      }
+    },
+    {
+      "id": "variability of effect",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "variability of effect",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "glycemic control less predictable",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "glycemic control less predictable",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "intensive treatment",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "intensive treatment",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "less frequent treatment",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "less frequent treatment",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "intensive therapy",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "intensive therapy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0020615",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0020615",
+        "umls_canonical": "Hypoglycemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E16.2",
+        "description": "Nízká koncentrace krevního cukru (glukosy). Vede k závažným poruchám činnosti mozku, který je na přívodu cukru krví závislý. K příznakům patří slabost, hlad, třes, studený pot, zmatenost až bezvědomí (hypoglykemické kóma), někdy i s křečemi (kombinují se důsledky nedostatku glukosy v CNS a aktivace sympatiku). Nejč. k h. dochází při léčbě cukrovky předávkováním inzulinu nebo perorálních antidiabetik (roli může mít např. snížený příjem potravy, zvracení, výrazná fyzická námaha aj.). První pomocí i léčbou, která zlepší stav takřka okamžitě, je podání glukosy, ev. glukagonu i.m. K h. může dojít i při vytrvalostním sportu, po požití velkého množství alkoholu, u vzácného nádoru slinivky produkujícího velká množství inzulinu (inzulinom). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "aliases": [
+          "hypoglycemia"
+        ]
+      }
+    },
+    {
+      "id": "C0043094",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0043094",
+        "umls_canonical": "Weight Gain",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "Zvýšení tělesné hmotnosti během časového intervalu.",
+        "aliases": [
+          "weight gain"
+        ]
+      }
+    },
+    {
+      "id": "1800 rule",
+      "labels": [
+        "Clinical Rule",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "1800 rule",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "1500 rule",
+      "labels": [
+        "Clinical Rule",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "1500 rule",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin resistance",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "insulin resistance",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "variability in glucose levels",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "variability in glucose levels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Continuous subcutaneous insulin infusion pumps",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Continuous subcutaneous insulin infusion pumps",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C4302207",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C4302207",
+        "umls_canonical": "Neonatal hyperglycemia due to insulin deficiency",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Neonatal hyperglycemia due to insulin deficiency",
+        "icd10_code": "NONE",
+        "aliases": [
+          "insulin deficiency"
+        ]
+      }
+    },
+    {
+      "id": "reduction in loss of glucose in urine",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "reduction in loss of glucose in urine",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "moderate hypoglycemia",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "moderate hypoglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0030252",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0030252",
+        "umls_canonical": "Palpitations",
+        "umls_semantic_type": "Finding (T033)",
+        "icd10_code": "R00.2",
+        "description": "A sensation that the heart is pounding or racing, which is a non-specific sign but may be a manifestation of arrhythmia. [https://orcid.org/0000-0002-0736-9199]",
+        "aliases": [
+          "palpitations"
+        ]
+      }
+    },
+    {
+      "id": "mild hypoglycemia",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "mild hypoglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "light-headedness",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "light-headedness",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0344232",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0344232",
+        "umls_canonical": "Blurred vision",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "Lack of sharpness of vision resulting in the inability to see fine detail. [https://orcid.org/0000-0002-0736-9199]",
+        "aliases": [
+          "blurred vision"
+        ]
+      }
+    },
+    {
+      "id": "C0085631",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0085631",
+        "umls_canonical": "Agitation",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "description": "A state of restlessness associated with unpleasant feelings of irritability and tension. Causes include pain, stress, fever, alcohol and nicotine withdrawal, cocaine and hallucinogenic drugs use, depression, bipolar disorders, and schizophrenia.",
+        "aliases": [
+          "agitation"
+        ]
+      }
+    },
+    {
+      "id": "confusion",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "confusion",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0036572",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0036572",
+        "umls_canonical": "Seizures",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "description": "Klinické nebo subklinické poruchy funkce kortikálních nervových buněk, kdy dochází k náhlému, nekontrolovanému elektrickému výboji v šedé hmotě mozku. Klinické příznaky zahrnují abnormální motorické, senzorické a psychické jevy. Opakované záchvaty jsou obvykle diagnostikované jako epilepsie nebo záchvatovité poruchy.",
+        "aliases": [
+          "seizures"
+        ]
+      }
+    },
+    {
+      "id": "stroke",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "stroke",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0027051",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0027051",
+        "umls_canonical": "Myocardial Infarction",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "I21",
+        "description": "Odumření části myokardu vzniklé přerušením krevního zásobení. Příčinou bývá uzávěr některého úseku koronární tepny, nejč. při její ateroskleróze, s následnou těžkou ischemií příslušného okrsku tkáně. Rizikové faktory IM jsou v podstatě shodné s rizikovými faktory aterosklerózy. Onemocnění se klasicky projevuje silnou bolestí na hrudi, úzkostí, pocením. Někdy mohou nastat zažívací obtíže, projevem může být rovněž srdeční selhání. V důsledku elektrické nestability mohou vznikat arytmie, nejzávažnější je vznik fibrilace komor. Při diagnóze infarktu se uplatňuje EKG, laboratorní vyšetření, echokardiografie, rtg, scintigrafie aj. Podle EKG lze odhadnout lokalizaci i stáří infarktu. Kromě rozsahu IM je důležitá též jeho lokalizace (související s postiženou koronární tepnou) a hloubka. Nejč. lokalizacemi jsou IM spodní stěny (tzv. diafragmatický) při postižení a. coronaria dextra a IM přední (anteroseptální) stěny při postižení r. interventricularis anterior nebo IM postranní (anterolaterální) stěny při postižení r. circumflexus. Včasná léčba zabrání rozvoji nekrózy či zmenší ložisko infarktu. I později je vhodné řešení stavu koronárních tepen (angioplastika, bypass). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "aliases": [
+          "myocardial infarction"
+        ]
+      }
+    },
+    {
+      "id": "sulfonylureas",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "sulfonylureas",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "symptoms of hypoglycemia",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "symptoms of hypoglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0242209",
+      "labels": [
+        "Concept",
+        "Nutrient"
+      ],
+      "properties": {
+        "umls_cui": "C0242209",
+        "umls_canonical": "Sugars",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "Short chain carbohydrate molecules that have hydroxyl groups attached to each carbon atom unit with the exception of one carbon that has a doubly-bond aldehyde or ketone oxygen. Cyclical sugar molecules are formed when the aldehyde or ketone groups respectively form a hemiacetal or hemiketal bond with one of the hydroxyl carbons. The three dimensional structure of the sugar molecule occurs in a vast array of biological and synthetic classes of specialized compounds including AMINO SUGARS; CARBASUGARS; DEOXY SUGARS; SUGAR ACIDS; SUGAR ALCOHOLS; and SUGAR PHOSPHATES.",
+        "aliases": [
+          "sugar"
+        ]
+      }
+    },
+    {
+      "id": "oral glucose",
+      "labels": [
+        "Concept",
+        "Nutrient"
+      ],
+      "properties": {
+        "umls_canonical": "oral glucose",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0038636",
+      "labels": [
+        "Concept",
+        "Nutrient"
+      ],
+      "properties": {
+        "umls_cui": "C0038636",
+        "umls_canonical": "sucrose",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "rxnorm_id": "10159",
+        "description": "Neredukující disacharid složený z glukózy a fruktózy spojených anomerními uhlíky. Komerčně se získává z cukrové třtiny, cukrové řepy (Beta vulgaris) a dalších rostlin a hojně se používá jako potravina a sladidlo.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "IV dextrose",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "IV dextrose",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0017687",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0017687",
+        "umls_canonical": "glucagon",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "4832",
+        "description": "Peptidový hormon tvořený v Langerhansových ostrůvcích ve slinivce břišní. Má opačné účinky než inzulin (zvyšuje např. hladinu cukru v krvi - glykemii). Používá se v endokrinologické diagnostice (glukagonový test), terapeuticky kromě hypoglykemie se zvažuje využití účinků spasmolytických, pozitivně inotropních aj. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C5139868",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C5139868",
+        "umls_canonical": "dasiglucagon",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "2535233",
+        "description": "UMLS Standard Term: dasiglucagon",
+        "aliases": []
+      }
+    },
+    {
+      "id": "counter-regulatory response",
+      "labels": [
+        "Clinical Rule",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "counter-regulatory response",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "morning hyperglycemia",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "morning hyperglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "intracellular shifts of potassium",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "intracellular shifts of potassium",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0020621",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0020621",
+        "umls_canonical": "Hypokalemia",
+        "umls_semantic_type": "Finding (T033)",
+        "icd10_code": "E87.6",
+        "description": "Nízká koncentrace draslíku v krvi. Vzniká při větších ztrátách kalia močí např. v polyurické fázi renálního selhání, při léčbě diuretiky (furosemidem, saluretiky), při hyperaldosteronismu, v důsledku ztrát při průjmech atd. Způsobuje svalovou slabost, poruchu trávení (hypotonie hladkých svalů), poruchy srdeční činnosti (arytmie), ledvin aj. Na EKG se projevuje zvýrazněním vlny U. (cit. Velký lékařský slovník online, 2012, http://lekarske.slovniky.cz/ )",
+        "aliases": [
+          "hypokalemia"
+        ]
+      }
+    },
+    {
+      "id": "Insulin injections",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Insulin injections",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Local allergic reactions",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "Local allergic reactions",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "latex allergy",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "latex allergy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0795635",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0795635",
+        "umls_canonical": "insulin, regular, human",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "253182",
+        "description": "Běžné inzulínové přípravky, které obsahují peptidové sekvence lidského inzulinu.",
+        "aliases": [
+          "human insulins"
+        ]
+      }
+    },
+    {
+      "id": "generalized allergic reaction",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "generalized allergic reaction",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "desensitization",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "desensitization",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Lipohypertrophy",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "Lipohypertrophy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C2711433",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C2711433",
+        "umls_canonical": "Does rotate site of insulin injection",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "UMLS Standard Term: Does rotate site of insulin injection",
+        "aliases": [
+          "rotating injection sites"
+        ]
+      }
+    },
+    {
+      "id": "circulating anti-insulin antibodies",
+      "labels": [
+        "Biomarker",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "circulating anti-insulin antibodies",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "changing insulin preparations",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "changing insulin preparations",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "switching from animal to human insulin",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "switching from animal to human insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "glucocorticoids",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "glucocorticoids",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "immunosuppressants",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "immunosuppressants",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "type 2 diabetes mellitus",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "type 2 diabetes mellitus",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Oral antihyperglycemic medications",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "Oral antihyperglycemic medications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0017628",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0017628",
+        "umls_canonical": "glyburide",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "4815",
+        "description": "Perorální antidiabetikum, derivát sulfonylmočoviny II. generace. Má podobné účinky jako chlorpropamid. (upraveno podle: Velký lékařský slovník online, 2022 http://lekarske.slovniky.cz)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0017642",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0017642",
+        "umls_canonical": "glipizide",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "4821",
+        "description": "1-cyclohexyl-3-(p-(2-(5-methyl pyrazinecarboxamido) ethyl) phenyl) sulfonylurea; a typical member of the sulfonylurea family of type II (NIDDM) antidiabetic drugs.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0061323",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0061323",
+        "umls_canonical": "glimepiride",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "25789",
+        "description": "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C29073\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C29073\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C5690720",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C5690720",
+        "umls_canonical": "Insulin Secretagogues",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "Hypoglykemické látky, které stimulují (zvyšují) sekreci inzulinu z β-buněk pankreatu a tím ovlivňují postprandiální glykémii.",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "insulin secretagogues"
+        ]
+      }
+    },
+    {
+      "id": "hyperinsulinemia",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "hyperinsulinemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "long-acting medications",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "long-acting medications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "permanent neurologic disability",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "permanent neurologic disability",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "death",
+      "labels": [
+        "Concept",
+        "Risk Factor"
+      ],
+      "properties": {
+        "umls_canonical": "death",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0008287",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0008287",
+        "umls_canonical": "chlorpropamide",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "2404",
+        "description": "Derivát sulfonylmočoviny dříve používaný k léčbě cukrovky II. typu neodpovídající na dietu.",
+        "aliases": [
+          "Chlorpropamide"
+        ]
+      }
+    },
+    {
+      "id": "C0021141",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0021141",
+        "umls_canonical": "Inappropriate ADH Syndrome",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E22.2",
+        "description": "Paraneoplastický syndrom nadměrné sekrece antidiuretického hormonu, která komplikuje vysoce maligní plicní karcinom a vede k hyponatremii. Nadměrná produkce neodráží aktuální stav osmolality (je zvýšená navzdory současné hyposmolalitě). Příčinou jsou některé nádory s ektopickou produkcí ADH, nitrolební chorobné procesy, plicní onemocnění, vlivy některých léků a některé další chorobné stavy (např. akutní porfyrie). Projevuje se hyponatremií, zadržováním vody a v těžších případech příznaky postižení mozku v důsledku jeho edému. V léčbě je nutná přísná kontrola příjmu tekutin a zejm. léčba vyvolávající příčiny, která je rozhodující i pro prognózu. (cit. Velký lékařský slovník online, 2018 http://lekarske.slovniky.cz)",
+        "aliases": [
+          "syndrome of inappropriate ADH secretion"
+        ]
+      }
+    },
+    {
+      "id": "C0011849",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011849",
+        "umls_canonical": "Diabetes Mellitus",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E08-E13",
+        "description": "Heterogenní skupina chronických metabolických chorob, jejichž základním projevem je hyperglykemie a porušená glukózová tolerance. Vzniká v důsledku nedostatku inzulinu, jeho nedostatečného účinku (někdy se mluví o relativním nedostatku) nebo kombinací obojího. (cit. Wikiskripta 2017 http://www.wikiskripta.eu/)",
+        "aliases": [
+          "diabetes",
+          "diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "worsening of insulin secretion",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "worsening of insulin secretion",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hepatic glucose production",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "hepatic glucose production",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Biguanides (metformin)",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "Biguanides (metformin)",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "lipid levels",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "lipid levels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0005382",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0005382",
+        "umls_canonical": "Biguanides",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "Deriváty biguanidu (vzorec HN(C(NH)NH2)2), které se primárně používají jako perorální hypoglykemika k léčbě prediabetes a diabetes mellitus 2. typu.",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0025598",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0025598",
+        "umls_canonical": "metformin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "6809",
+        "description": "Hypoglykemikum ze skupiny biguanidů. Používá se k léčbě diabetes mellitus 2. typu. Metformin zlepšuje senzitivitu k inzulinu a snižuje absorpci glukózy ve střevech. Tím příznivě ovlivňuje kontrolu glykemie.",
+        "aliases": [
+          "Metformin"
+        ]
+      }
+    },
+    {
+      "id": "biguanide",
+      "labels": [
+        "Concept",
+        "Drug Class"
+      ],
+      "properties": {
+        "umls_canonical": "biguanide",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0011991",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0011991",
+        "umls_canonical": "Diarrhea",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R19.7",
+        "description": "Porucha zažívání, která se projevuje častým vyprazdňováním řídké stolice. Průjem je definován jako neformovaná stolice více než 3× za den, případně vodnatá stolice s překotným vyprázdněním a s přetrvávajícím nutkáním. (cit. Wikipedie 2016 http://www.cs.wikipedia.org/)",
+        "aliases": [
+          "diarrhea"
+        ]
+      }
+    },
+    {
+      "id": "gastrointestinal adverse effects",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "gastrointestinal adverse effects",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "vitamin B12 malabsorption",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "vitamin B12 malabsorption",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0001125",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0001125",
+        "umls_canonical": "Acidosis, Lactic",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E87.20",
+        "description": "Druh metabolické acidózy způsobený hromaděním laktátu. Vzniká zejm. při hypoxii různého původu (typ A). Některé vzácnější případy vznikají i bez hypoxie (typ B), např. u diabetiků léčených biguanidy může vyústit až v laktacidotické kóma. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )",
+        "aliases": [
+          "lactic acidosis"
+        ]
+      }
+    },
+    {
+      "id": "patients at risk of acidemia",
+      "labels": [
+        "Clinical Rule",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "patients at risk of acidemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0022658",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0022658",
+        "umls_canonical": "Kidney Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "N08",
+        "description": "Patologické procesy v ledvinách nebo v jejich tkáních.",
+        "aliases": [
+          "kidney disease"
+        ]
+      }
+    },
+    {
+      "id": "acidemia",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "acidemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hypoxia",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "hypoxia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C5203670",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C5203670",
+        "umls_canonical": "COVID-19 Virus Disease",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "U07.1",
+        "description": "Virové onemocnění obecně charakterizované vysokou horečkou, kašlem, dušností, zimnicí, stálým třesem, bolestí svalů, hlavy a krku, ztrátou chuti a/nebo čichu (ageuzie, anosmie) a dalšími příznaky virové pneumonie. U těžkých případů se podle závažnosti infekce často vyskytují nesčetné koagulopatie a další komplikace (např. hemokoagulace, trombóza, syndrom respirační tísně dospělých, křeče, infarkt myokardu, cévní mozková příhoda, mnohočetné cerebrální infarkty, selhání ledvin, katastrofální antifosfolipidový syndrom a/nebo diseminovaná intravaskulární koagulace). U mladších pacientů jsou s nemocí COVID-19 spojené vzácné zánětlivé syndromy (např. atypický Kawasakiho syndrom, septický šok, multisystémové zánětlivé onemocnění u dětí a syndrom cytokinové bouře). Původcem nemoci COVID-19 je koronavirus SARS-CoV-2 rodu Betacoronavirus.",
+        "aliases": [
+          "severe respiratory disease"
+        ]
+      }
+    },
+    {
+      "id": "alcohol use disorder",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "alcohol use disorder",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "metabolic acidosis",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "metabolic acidosis",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0011175",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011175",
+        "umls_canonical": "Dehydration",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E86.0",
+        "description": "Ztráta a nedostatek vody (v organismu, buňkách aj.). Vzniká ztrátami tekutin či jejich nedostatečným přívodem. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)",
+        "aliases": [
+          "dehydration"
+        ]
+      }
+    },
+    {
+      "id": "C0245514",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0245514",
+        "umls_canonical": "troglitazone",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "72610",
+        "description": "An orally-active thiazolidinedione with antidiabetic and hepatotoxic properties and potential antineoplastic activity. Troglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C1522\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C1522\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0162557",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0162557",
+        "umls_canonical": "Liver Failure, Acute",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Rychlý nástup akutního SELHÁNÍ JATER, známého také jako fulminantní jaterní selhání, je forma onemocnění způsobená těžkým poškozením jater nebo masivní ztrátou HEPATOCYTŮ. Je to charakteristické při náhlém rozvoji jaterní dysfunkce a při ŽLOUTENCE. Akutní selhání jater se může vyvinout až v cerebrální dysfunkci či dokonce v jaterní kóma, což závisí na etiologii, která může zahrnovat jaterní ischémii, otravu léky, maligní infiltraci a virové hepatitidy jako např. potransfúzní hepatitidu typu B a C (HEPATITIDA B, HEPATITIDA C).",
+        "aliases": [
+          "acute liver failure"
+        ]
+      }
+    },
+    {
+      "id": "C0289313",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0289313",
+        "umls_canonical": "rosiglitazone",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "84108",
+        "description": "Perorální antidiabetikum ze skupiny thiazolidindionů. U pacientů s diabetes mellitus 2. typu snižuje hladinu glukózy v plazmě, produkci glukózy a zvyšuje clearance glukózy. Rosiglitazon signifikantně zlepšuje citlivost k inzulinu, funkci pankreatických B-buněk a další parametry související s kardiovaskulárním rizikem. (cit. Doležal, T., Vnoučková, K. rosiglitazonum. Remedia 5/2002, 12) Funguje jako selektivní agonista pro PPAR gama.",
+        "aliases": [
+          "Rosiglitazone"
+        ]
+      }
+    },
+    {
+      "id": "C0018801",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0018801",
+        "umls_canonical": "Heart failure",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "I50",
+        "description": "Stav, kdy srdce není schopno plnit svou funkci (tj. přečerpávat, \"\"pumpovat\"\" krev) v množství přiměřeném nárokům organismu. K příčinám se řadí porucha myokardu (zejm. ischemie), objemové a tlakové přetěžování srdce (např. chlopenní vady, hypertenze). Nikoliv vzácné je s. oboustranné s kombinací příznaků. S. s. může být akutní nebo chronické s různě dramatickými příznaky a s různě zapojenými kompenzačními mechanismy. K nim patří zejm. zvyšování preloadu (dilatace komory), retence tekutin a solí v důsledku silné aktivace systému renin-angiotenzin-aldosteron, tachykardie a aktivace sympatoadrenálního systému (vazokonstrikce). S. s. je považováno za systémový stav se změnami nejen hemodynamickými, ale změnami v hormonální a cytokinové produkci, ve vnitřním prostředí apod. Některé změny se vyvíjejí rychle (např. tachykardie), jiné po delší dobu (retence tekutin), rozvoj některých trvá i měsíce (hypertrofie a strukturální změny myokardu). Kompenzační mechanismy samy o sobě mohou z dlouhodobého hlediska srdce poškozovat (tachykardie zvyšuje potřebu kyslíku, zhoršuje prokrvení, vazokonstrikce vede k zvýšení afterloadu atp.). Patofyziologicky se rozlišuje selhání backward, forward. Na nedostatečnosti se podílí systolická dysfunkce (špatná kontraktilní schopnost) i dysfunkce diastolická (snížená poddajnost komory v diastole se vzestupem enddiastolického tlaku). Důležitá je rovněž správná životospráva, omezení solení, dostatek fyzického i psychického odpočinku. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "aliases": [
+          "heart failure"
+        ]
+      }
+    },
+    {
+      "id": "C0071097",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0071097",
+        "umls_canonical": "pioglitazone",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "33738",
+        "description": "Thiazolidindion a agonista PPAR-gama, užívá se v léčbě diabetes mellitus 2. typu (tzv. inzulinový senzitizér).",
+        "aliases": [
+          "Pioglitazone"
+        ]
+      }
+    },
+    {
+      "id": "bladder cancer",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "bladder cancer",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "fractures",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "fractures",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C1299007",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1299007",
+        "umls_canonical": "alpha-Glucosidase Inhibitors",
+        "umls_semantic_type": "Pharmacologic Substance (T121)",
+        "description": "Sloučeniny, které inhibují (zpomalují) alfa-glukosidázu.",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "Alpha-glucosidase inhibitors"
+        ]
+      }
+    },
+    {
+      "id": "C0013395",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0013395",
+        "umls_canonical": "Dyspepsia",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R10.13",
+        "description": "Souhrnné označení pro řadu trávicích obtíží, které se vyskytují v různé kombinaci a mohou mít mnoho příčin. Termín se užívá, je-li přítomno více obtíží. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)",
+        "aliases": [
+          "dyspepsia"
+        ]
+      }
+    },
+    {
+      "id": "C0016204",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0016204",
+        "umls_canonical": "Flatulence",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R14.3",
+        "description": "Zvýšený odchod střevních plynů konečníkem. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )",
+        "aliases": [
+          "flatulence"
+        ]
+      }
+    },
+    {
+      "id": "C1958126",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1958126",
+        "umls_canonical": "alogliptin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "1368001",
+        "description": "A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C76906\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C76906\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Dipeptidyl peptidase-4 inhibitor",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "Dipeptidyl peptidase-4 inhibitor",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C2746078",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C2746078",
+        "umls_canonical": "linagliptin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "1100699",
+        "description": "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C83887\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C83887\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C1611934",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1611934",
+        "umls_canonical": "saxagliptin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "857974",
+        "description": "A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C1565750",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1565750",
+        "umls_canonical": "sitagliptin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "593411",
+        "description": "An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C5396293",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_cui": "C5396293",
+        "umls_canonical": "Hemoglobin A1C test declined",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "UMLS Standard Term: Hemoglobin A1C test declined",
+        "aliases": [
+          "hemoglobin A1C"
+        ]
+      }
+    },
+    {
+      "id": "C1827106",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1827106",
+        "umls_canonical": "Dipeptidyl-Peptidase IV Inhibitors",
+        "umls_semantic_type": "Pharmacologic Substance (T121)",
+        "description": "Sloučeniny, které potlačují degradaci inkretinů blokováním účinku dipeptidylpeptidázy 4. To pomáhá korigovat defektní sekreci insulinu a glukagonu charakteristickou pro diabetes mellitus 2. typu tím, že stimuluje sekreci inzulinu a potlačuje uvolňování glukagonu.",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "DPP-4 inhibitors"
+        ]
+      }
+    },
+    {
+      "id": "plasma glucose",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "plasma glucose",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "SGLT2 inhibitors",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "SGLT2 inhibitors",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C3273807",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C3273807",
+        "umls_canonical": "Sodium-Glucose Transporter 2 Inhibitors",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "Glifloziny jsou selektivní inhibitory transportéru pro sodík a glukózu 2 (SGLT2). Blokují reabsorpci glukózy v ledvinách a navozují glykosurii. Glifloziny (dapagliflozin, canagliflozin, empagliflozin) selektivně blokují SGLT2, snižují glykemický práh a reabsorpční kapacitu pro glukózu. Navozují tak glykosurii a vedou k velmi významnému poklesu glykémie postprandiální i nalačno a k poklesu glykosylovaného hemoglobinu asi o 15-25 mmol/mol. Účinek gliflozinů není závislý na inzulinu, jejich výhodou je nízké riziko výskytu hypoglykémie (srovnatelné s placebem). (uprav. podle https://www.cukrovka.cz/glifloziny [cit. online 23. 12. 2021])",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "SGLT-2 inhibitors"
+        ]
+      }
+    },
+    {
+      "id": "C0011880",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011880",
+        "umls_canonical": "Diabetic Ketoacidosis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Druh metabolické acidózy způsobené nadměrným vznikem ketolátek (acetoctová kyselina, beta-hydroxymáselná kyselina, aceton). Tyto látky vznikají při nadměrném štěpení tuků, které jsou využívány k zisku energie místo glukosy. Tento stav nastává při hladovění, závažný je pak především jako akutní komplikace diabetu 1. typu (nedostatek inzulinu snižuje využití glukosy a chybí i jeho antilipolytický účinek). Nápadným příznakem bývá zrychlené hluboké Kussmaulovo dýchání (respirační kompenzace acidózy) a zápach acetonu v dechu, v těžkých případech hrozí až kóma. Ketolátky bývají i v moči (ketonurie). Diabetická k. vyžaduje intenzivní léčbu opatrnou alkalizaci, podávání inzulinu, péči o vnitřní prostředí. Ketóza souvisí úzce s acidózou vzhledem ke klíčovému postavení acetoctové kyseliny - ta je v rovnováze s beta-hydroxymáselnou kyselinou která vzniká oxidací ketoskupiny (acetoctové kyseliny) a má hlavní význam pro vznik acidózy, dekarboxylací acetoctové kyseliny vzniká aceton. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )",
+        "icd10_code": "NONE",
+        "aliases": [
+          "diabetic ketoacidosis (DKA)"
+        ]
+      }
+    },
+    {
+      "id": "euglycemic DKA",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "euglycemic DKA",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C2974540",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C2974540",
+        "umls_canonical": "canagliflozin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "1373458",
+        "description": "Canagliflozin je vysoce selektivní inhibitor společného transportéru pro sodík a glukózu typu 2 (SGLT2), zodpovědného za renální reabsorpci glukózy. Inhibice SGLT-2 pomocí canagliflozinu zvyšuje exkreci glukózy ledvinami, což vede k poklesu glykemie a zlepšení kompenzace diabetu (2. typu) prakticky bez zvýšení rizika hypoglykemie. (cit. podle Haluzík, Martin: canafligozin, Profily léčiv. In: Farmakoterapie, Supplementum 2/2014)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "lower limb amputation",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "lower limb amputation",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0537551",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0537551",
+        "umls_canonical": "pramlintide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "139953",
+        "description": "A peptide analogue of human amylin with 3 proline substitutions at positions 25, 28 and 29, with antihyperglycemic activity. By mimicking amylin, pramlintide slows gastric emptying, inhibits digestive secretions (gastric acid, pancreatic enzymes, and bile), reduces glucagon secretion, and increases satiety; all of these actions are mediated mostly by glucose-sensitive areas in the brain stem. The overall result is a decrease in blood glucose levels. The use of pramlintide may cause an increased risk of insulin-induced hypoglycemia.",
+        "aliases": [
+          "Pramlintide"
+        ]
+      }
+    },
+    {
+      "id": "C1562561",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1562561",
+        "umls_canonical": "Amylin Analog",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "UMLS Standard Term: Amylin Analog",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "amylin analog"
+        ]
+      }
+    },
+    {
+      "id": "injectable antihyperglycemic medication",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "injectable antihyperglycemic medication",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C1562104",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1562104",
+        "umls_canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "umls_semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "Sloučeniny, které stimulují aktivitu receptoru pro peptid podobný glukagonu-1. Agonisté receptoru pro peptid podobný glukagonu-1 se používají k léčbě diabetu 2. typu a obezity.",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "GLP-1 agonists",
+          "GLP-1 receptor agonists"
+        ]
+      }
+    },
+    {
+      "id": "subcutaneous injections",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "subcutaneous injections",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C3885068",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C3885068",
+        "umls_canonical": "semaglutide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "rxnorm_id": "1991302",
+        "description": "Glukagonový peptid a agonista GLP-1 používaný ke zlepšení glykemické kontroly u diabetes mellitus 2. typu a k léčbě obezity.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "oral form",
+      "labels": [
+        "Concept",
+        "Dosage Value"
+      ],
+      "properties": {
+        "umls_canonical": "oral form",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0027497",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0027497",
+        "umls_canonical": "Nausea",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R11.0",
+        "description": "Nevolnost, pocit na zvracení. Objevuje se při mořské nemoci a jiných kinetózách, zažívacích obtížích různého původu, metabolických poruchách, na počátku těhotenství, při závrati aj. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)",
+        "aliases": [
+          "nausea"
+        ]
+      }
+    },
+    {
+      "id": "C0042963",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0042963",
+        "umls_canonical": "Vomiting",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R11.1",
+        "description": "Reflexní vyprázdnění žaludečního obsahu. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)",
+        "aliases": [
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "id": "C0030305",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0030305",
+        "umls_canonical": "Pancreatitis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "K85.9",
+        "description": "Akutní p. je náhle vzniklé, prudce a těžce probíhající onemocnění s výraznou bolestí břicha, zvracením, horečkou až vznikem šoku (náhlá příhoda břišní). Někdy vzniká v souvislosti se žlučovými kaménky, může být vyprovokována těžkou dietní chybou, alkoholem nebo některými celkovými onemocněními např. hyperparatyreózou. Těžká forma vede k hemoragické nekróze. Vyžaduje intenzivní léčbu(tlumení bolesti, somatostatin, blokátory žaludeční sekrece, infuze, umělou výživu, antibiotika, léčbu šoku atd.). Lehčí formy se někdy označují jako \"\"podráždění\"\" (iritace) pankreatu. Má různé projevy bolesti, záchvaty akutní p., poruchy trávení. Komplikací zánětů může být vznik dutiny (cysty či spíše pseudocysty), která může stlačovat některé okolní orgány a být někdy důvodem k operaci. Onemocnění slinivky vyžaduje přísnou tzv. pankreatickou dietu. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )",
+        "aliases": [
+          "pancreatitis"
+        ]
+      }
+    },
+    {
+      "id": "C5139934",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C5139934",
+        "umls_canonical": "tirzepatide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121)",
+        "rxnorm_id": "2601723",
+        "description": "Agonista receptoru pro na glukóze závislý inzulinotropní polypeptid (GIP) a receptoru pro glukóze podobný peptid-1 (GLP-1), který je indikován jako doplněk diety se sníženým obsahem kalorií a zvýšenou fyzickou aktivitou pro chronickou regulaci hmotnosti u dospělých s určitým BMI.",
+        "aliases": [
+          "Tirzepatide"
+        ]
+      }
+    },
+    {
+      "id": "GIP/GLP-1 receptor agonist",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "GIP/GLP-1 receptor agonist",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0028754",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0028754",
+        "umls_canonical": "Obesity",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E66.9",
+        "description": "Stav, kdy tělesná hmotnost výrazně převyšuje doporučené hodnoty, obvykle díky akumulaci tuku v těle. Normy se mohou lišit podle věku, pohlaví, podle genetického nebo kulturního pozadí. BMI větší než 30 kg/m2 se hodnotí jako obezita, BMI větší než 40 kg/m2 se hodnotí jako morbidní obezita.",
+        "aliases": [
+          "obesity"
+        ]
+      }
+    },
+    {
+      "id": "C0400966",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0400966",
+        "umls_canonical": "Non-alcoholic Fatty Liver Disease",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "K76.0",
+        "description": "Stav ztučnění jater bez nadměrné konzumace alkoholu.",
+        "aliases": [
+          "metabolic dysfunction-associated steatotic liver disease"
+        ]
+      }
+    },
+    {
+      "id": "Tirzepatide in combination with pioglitazone",
+      "labels": [
+        "Concept",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Tirzepatide in combination with pioglitazone",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "postprandial glucagon secretion",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "postprandial glucagon secretion",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C5847615",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C5847615",
+        "umls_canonical": "Diabetes mellitus type 1 stage 2",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Includes individuals with two or more islet autoantibodies but whose disease has now progressed to the development of glucose intolerance, or dysglycemia, from loss of functional β-cell mass.",
+        "icd10_code": "NONE",
+        "aliases": [
+          "type 1 stage 2 diabetes"
+        ]
+      }
+    },
+    {
+      "id": "C1960636",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C1960636",
+        "umls_canonical": "Dysglycemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Dysglycemia",
+        "aliases": [
+          "dysglycemia"
+        ]
+      }
+    },
+    {
+      "id": "C0948245",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0948245",
+        "umls_canonical": "Cytokine Release Syndrome",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "D89.83",
+        "description": "Závažná imunitní reakce charakterizovaná značným zvýšením různých zánětlivých cytokinů a s tím spojenými stavy jako je dyspnoe, horečka, bolesti hlavy, hypotenze, nauzea, vyrážka, tachykardie, hypoxie, hyperferritinemie a multiorgánové selhání. Je spojená s virovými infekcemi, sepsí, autoimunitními nemocemi a imunoterapií.",
+        "aliases": [
+          "cytokine release syndrome"
+        ]
+      }
+    },
+    {
+      "id": "C0015967",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0015967",
+        "umls_canonical": "Fever",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R50.9",
+        "description": "Abnormální zvýšení tělesné teploty, obvykle způsobené nějakým patologickým procesem.",
+        "aliases": [
+          "fever"
+        ]
+      }
+    },
+    {
+      "id": "C0015672",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0015672",
+        "umls_canonical": "Fatigue",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R53.83",
+        "description": "Snížení schopnosti vykonávat činnost, které vyplývá z předchozího vynaloženého úsilí, ať už fyzického, nebo psychického. Vzniká v důsledku nahromadění odpadů metabolismu v krvi či ve svalech. Psychicky je provázena zhoršeným vnímáním, sníženou pozorností, zhoršenou vštípivostí a výbavností, změnami nálady aj. (cit. Wikipedie 2016 http://www.cs.wikipedia.org/)",
+        "aliases": [
+          "fatigue"
+        ]
+      }
+    },
+    {
+      "id": "C0018681",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0018681",
+        "umls_canonical": "Headache",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R51",
+        "description": "Symptom bolesti v kraniální oblasti. Může se projevit izolovaně nebo jako součást nejrůznějších onemocnění souvisejících s hlavou.",
+        "aliases": [
+          "headache"
+        ]
+      }
+    },
+    {
+      "id": "C0231528",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0231528",
+        "umls_canonical": "Myalgia",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "M79.1",
+        "description": "Bolesti svalů. Často se spolu s bolestmi kloubů objevují u chřipky a podobných viróz. Epidemická m. - myalgia epidemica, pleurodynie. (cit. Velký lékařský slovník online, 2015 http://lekarske.slovniky.cz)",
+        "aliases": [
+          "myalgia"
+        ]
+      }
+    },
+    {
+      "id": "C0003862",
+      "labels": [
+        "Concept",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0003862",
+        "umls_canonical": "Arthralgia",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "M25.5",
+        "description": "Bolesti kloubů. Kromě vlastních kloubních nemocí mohou provázet řadu chorob, např. chřipku. (cit. Velký lékařský slovník online, 2015 http://lekarske.slovniky.cz)",
+        "aliases": [
+          "arthralgia"
+        ]
+      }
+    },
+    {
+      "id": "C0857093",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_cui": "C0857093",
+        "umls_canonical": "Liver enzymes level above reference range",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "UMLS Standard Term: Liver enzymes level above reference range",
+        "aliases": [
+          "elevated liver enzymes"
+        ]
+      }
+    },
+    {
+      "id": "long-term complications of diabetes mellitus",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "long-term complications of diabetes mellitus",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "ACE inhibitors",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "ACE inhibitors",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "ARBs",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "ARBs",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C1561643",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C1561643",
+        "umls_canonical": "Chronic Kidney Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "N18",
+        "description": "<p>You have two kidneys, each about the size of your fist. Their main job is to filter your blood. They remove wastes and extra water, which become urine. They also keep the body's chemicals balanced, help control blood pressure, and make hormones.</p> <p>Chronic kidney disease (CKD) means that your kidneys are damaged and can't filter blood as they should. This damage can cause wastes to build up in your body. It can also cause other problems that can harm your health. Diabetes and high blood pressure are the most common causes of CKD.</p> <p>The kidney damage occurs slowly over many years. Many people don't have any symptoms until their kidney disease is very advanced. <a href=\"https://medlineplus.gov/kidneytests.html\">Blood and urine tests</a> are the only way to know if you have kidney disease.</p> <p>Treatments cannot cure kidney disease, but they may slow kidney disease. They include <a href=\"https://medlineplus.gov/bloodpressuremedicines.html\">medicines to lower blood pressure</a>, control <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, and lower <a href=\"https://medlineplus.gov/cholesterol.html\">cholesterol</a>. CKD may still get worse over time. Sometimes it can lead to <a href=\"https://medlineplus.gov/kidneyfailure.html\">kidney failure</a>. If your kidneys fail, you will need <a href=\"https://medlineplus.gov/dialysis.html\">dialysis</a> or a <a href=\"https://medlineplus.gov/kidneytransplantation.html\">kidney transplantation</a>.</p> <p>You can take steps to keep your kidneys healthier longer:</p> <ul> <li>Choose foods with less <a href=\"https://medlineplus.gov/sodium.html\">salt</a> (sodium)</li> <li><a href=\"https://medlineplus.gov/howtopreventhighbloodpressure.html\">Control your blood pressure</a>; your health care provider can tell you what your blood pressure should be</li> <li>Keep your blood sugar in the target range, if you have <a href=\"https://medlineplus.gov/diabetes.html\">diabetes</a></li> <li>Limit the amount of alcohol you drink</li> <li>Choose foods that are healthy for your heart: fruits, vegetables, whole grains, and low-fat dairy foods</li> <li>Lose weight if you are overweight</li> <li>Be physically active</li> <li>Don't smoke</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+        "aliases": [
+          "chronic kidney disease"
+        ]
+      }
+    },
+    {
+      "id": "C0853068",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_cui": "C0853068",
+        "umls_canonical": "Glomerular filtration rate below reference range",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "A laboratory test result which indicates a decreased glomerular filtration rate.",
+        "aliases": [
+          "decreased glomerular filtration rate"
+        ]
+      }
+    },
+    {
+      "id": "C0762739",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0762739",
+        "umls_canonical": "CKD 602",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "The hydrochloride salt of the semi-synthetic camptothecin analogue belotecan with potential antitumor activity. Belotecan binds to and inhibits the activity of topoisomerase I, stabilizing the cleavable complex of topoisomerase I-DNA, which inhibits the religation of single-stranded DNA breaks generated by topoisomerase I; lethal double-stranded DNA breaks occur when the topoisomerase I-DNA complex is encountered by the DNA replication machinery, DNA replication is disrupted, and the tumor cell undergoes apoptosis. Topoisomerase I is an enzyme that mediates reversible single-strand breaks in DNA during DNA replication. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C66954\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C66954\" NCI Thesaurus)",
+        "icd10_code": "NONE",
+        "aliases": [
+          "CKD"
+        ]
+      }
+    },
+    {
+      "id": "C4045511",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C4045511",
+        "umls_canonical": "finerenone",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "2562811",
+        "description": "UMLS Standard Term: finerenone",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C4546070",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_cui": "C4546070",
+        "umls_canonical": "Persistent albuminuria",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "UMLS Standard Term: Persistent albuminuria",
+        "aliases": [
+          "persistent albuminuria"
+        ]
+      }
+    },
+    {
+      "id": "C0007222",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0007222",
+        "umls_canonical": "Cardiovascular Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Onemocnění kardiovaskulárního systému, včetně srdce, krevních cév a perikardia.",
+        "icd10_code": "NONE",
+        "aliases": [
+          "cardiovascular disease"
+        ]
+      }
+    },
+    {
+      "id": "SGLT2-inhibitors",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "SGLT2-inhibitors",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "ASCVD",
+      "labels": [
+        "Concept",
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "ASCVD",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0004057",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0004057",
+        "umls_canonical": "aspirin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "1191",
+        "description": "Prototypové analgetikum používané při léčbě mírné až střední bolesti. Má protizánětlivé a antipyretické vlastnosti a působí jako inhibitor cyklooxygenázy, což vede k inhibici biosyntézy prostaglandinů. Aspirin také inhibuje agregaci destiček a používá se v prevenci arteriální a žilní trombózy.",
+        "aliases": [
+          "Aspirin"
+        ]
+      }
+    },
+    {
+      "id": "C0286651",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0286651",
+        "umls_canonical": "atorvastatin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "83367",
+        "description": "a synthetic lipid-lowering agent; an inhibitor of 3-hydroxy-3-methylglutaryl-coenzyme A (HMG-CoA) reductase that catalyzes the conversion of HMG-CoA to mevalonate, an early and rate-limiting step in cholesterol biosynthesis.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "high-intensity statin",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "high-intensity statin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C0965129",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0965129",
+        "umls_canonical": "rosuvastatin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "301542",
+        "description": "A statin with antilipidemic and potential antineoplastic activities. Rosuvastatin selectively and competitively binds to and inhibits hepatic hydroxymethyl-glutaryl coenzyme A (HMG-CoA) reductase, the enzyme which catalyzes the conversion of HMG-CoA to mevalonate, a precursor of cholesterol. This leads to a decrease in hepatic cholesterol levels and increase in uptake of LDL cholesterol. In addition, rosuvastatin, like other statins, exhibits pro-apoptotic, growth inhibitory, and pro-differentiation activities in a variety of tumor cell types; these antineoplastic activities may be due, in part, to inhibition of the isoprenylation of Ras and Rho GTPases and related signaling cascades.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "low-density lipoprotein (LDL) cholesterol level",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "low-density lipoprotein (LDL) cholesterol level",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "maximally tolerated statin",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "maximally tolerated statin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "C1142985",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1142985",
+        "umls_canonical": "ezetimibe",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "341248",
+        "description": "An azetidinone derivative and a cholesterol absorption inhibitor with lipid-lowering activity. Ezetimibe appears to interact physically with cholesterol transporters at the brush border of the small intestine and inhibits the intestinal absorption of cholesterol and related phytosterols. As a result, ezetimibe causes a decrease in the level of blood cholesterol or an increase in the clearance of cholesterol from the bloodstream. Overall, the following effects observed are a reduction of hepatic cholesterol stores and a reduction of total cholesterol, LDL cholesterol, and other triglycerides in the blood. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C47529\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C47529\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "proprotein convertase subtilisin/kexin type 9 (PCSK-9) inhibitor",
+      "labels": [
+        "Concept",
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "proprotein convertase subtilisin/kexin type 9 (PCSK-9) inhibitor",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "small, dense LDL cholesterol",
+      "labels": [
+        "Clinical Metric",
+        "Concept"
+      ],
+      "properties": {
+        "umls_canonical": "small, dense LDL cholesterol",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "start": "type 1 diabetes mellitus",
+      "end": "C0021641",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "destruction of the pancreatic beta-cells",
+      "end": "type 1 diabetes mellitus",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "type 1 diabetes mellitus",
+      "end": "inadequate insulin production",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "type 1 diabetes mellitus",
+      "end": "C0220982",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "C0011860",
+      "end": "C0021641",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "basal-bolus dosing",
+      "end": "insulin replacement",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0011854",
+      "end": "insulin replacement",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "insulin pump",
+      "end": "rapid- or short-acting insulin",
+      "type": "dispenses",
+      "properties": {}
+    },
+    {
+      "start": "insulin pump",
+      "end": "C0021641",
+      "type": "dispenses",
+      "properties": {}
+    },
+    {
+      "start": "C2919432",
+      "end": "additional boluses",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0293359",
+      "end": "Rapid-acting insulins",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C1708521",
+      "end": "Rapid-acting insulins",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "postprandial glucose spikes",
+      "end": "C0021641",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Inhaled regular insulin",
+      "end": "rapid-acting insulin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0021658",
+      "end": "intermediate-acting insulin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0907402",
+      "end": "C0304870",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C5434213",
+      "end": "weekly insulin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0356369",
+      "end": "variability of effect",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0356369",
+      "end": "glycemic control less predictable",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "intensive treatment",
+      "end": "less frequent treatment",
+      "type": "preferred_over",
+      "properties": {}
+    },
+    {
+      "start": "intensive therapy",
+      "end": "C0020615",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "intensive therapy",
+      "end": "C0043094",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "rapid-acting insulin",
+      "end": "1800 rule",
+      "type": "has_titration_rule",
+      "properties": {}
+    },
+    {
+      "start": "C0021641",
+      "end": "1500 rule",
+      "type": "has_titration_rule",
+      "properties": {}
+    },
+    {
+      "start": "C0293359",
+      "end": "insulin pump",
+      "type": "administered_via",
+      "properties": {}
+    },
+    {
+      "start": "C1708521",
+      "end": "insulin pump",
+      "type": "administered_via",
+      "properties": {}
+    },
+    {
+      "start": "insulin resistance",
+      "end": "C0021641",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "variability in glucose levels",
+      "end": "Continuous subcutaneous insulin infusion pumps",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C4302207",
+      "end": "C0021641",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0011860",
+      "end": "insulin resistance",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "reduction in loss of glucose in urine",
+      "end": "C0043094",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "moderate hypoglycemia",
+      "end": "C0030252",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "mild hypoglycemia",
+      "end": "light-headedness",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "moderate hypoglycemia",
+      "end": "light-headedness",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "mild hypoglycemia",
+      "end": "C0344232",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "moderate hypoglycemia",
+      "end": "C0344232",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "mild hypoglycemia",
+      "end": "C0085631",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "moderate hypoglycemia",
+      "end": "C0085631",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "mild hypoglycemia",
+      "end": "confusion",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "moderate hypoglycemia",
+      "end": "confusion",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "C0036572",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "stroke",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "C0027051",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "C0021641",
+      "end": "C0020615",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "sulfonylureas",
+      "end": "C0020615",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "symptoms of hypoglycemia",
+      "end": "C0242209",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "oral glucose",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "C0038636",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "IV dextrose",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "C0017687",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "C5139868",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "counter-regulatory response",
+      "end": "morning hyperglycemia",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "intracellular shifts of potassium",
+      "end": "C0020621",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "Insulin injections",
+      "end": "Local allergic reactions",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Local allergic reactions",
+      "end": "latex allergy",
+      "type": "co_occurs_with",
+      "properties": {}
+    },
+    {
+      "start": "C0795635",
+      "end": "generalized allergic reaction",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "generalized allergic reaction",
+      "end": "desensitization",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Lipohypertrophy",
+      "end": "C2711433",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "circulating anti-insulin antibodies",
+      "end": "insulin resistance",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "insulin resistance",
+      "end": "changing insulin preparations",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "switching from animal to human insulin",
+      "end": "changing insulin preparations",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "insulin resistance",
+      "end": "glucocorticoids",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "insulin resistance",
+      "end": "immunosuppressants",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "type 2 diabetes mellitus",
+      "end": "Oral antihyperglycemic medications",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0017628",
+      "end": "sulfonylureas",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0017642",
+      "end": "sulfonylureas",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0061323",
+      "end": "sulfonylureas",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "sulfonylureas",
+      "end": "C5690720",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "sulfonylureas",
+      "end": "hyperinsulinemia",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "sulfonylureas",
+      "end": "C0043094",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "hyperinsulinemia",
+      "end": "insulin resistance",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "long-acting medications",
+      "end": "C0020615",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "permanent neurologic disability",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "C0020615",
+      "end": "death",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "C0008287",
+      "end": "C0021141",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0011849",
+      "end": "worsening of insulin secretion",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0011849",
+      "end": "insulin resistance",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "hepatic glucose production",
+      "end": "Biguanides (metformin)",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "lipid levels",
+      "end": "C0005382",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0025598",
+      "end": "biguanide",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0011991",
+      "end": "gastrointestinal adverse effects",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0025598",
+      "end": "vitamin B12 malabsorption",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0025598",
+      "end": "C0001125",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0025598",
+      "end": "patients at risk of acidemia",
+      "type": "contraindicated_with",
+      "properties": {}
+    },
+    {
+      "start": "C0022658",
+      "end": "acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "hypoxia",
+      "end": "acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "C5203670",
+      "end": "acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "alcohol use disorder",
+      "end": "acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "metabolic acidosis",
+      "end": "acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "C0011175",
+      "end": "acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "C0245514",
+      "end": "C0162557",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0289313",
+      "end": "C0018801",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "C0289313",
+      "end": "C0027051",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "C0071097",
+      "end": "bladder cancer",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0071097",
+      "end": "C0018801",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0071097",
+      "end": "fractures",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C1299007",
+      "end": "C0013395",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C1299007",
+      "end": "C0016204",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C1299007",
+      "end": "C0011991",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C1958126",
+      "end": "Dipeptidyl peptidase-4 inhibitor",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C2746078",
+      "end": "Dipeptidyl peptidase-4 inhibitor",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C1611934",
+      "end": "Dipeptidyl peptidase-4 inhibitor",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C1565750",
+      "end": "Dipeptidyl peptidase-4 inhibitor",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C5396293",
+      "end": "C1827106",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "plasma glucose",
+      "end": "SGLT2 inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria",
+      "end": "C3273807",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C3273807",
+      "end": "C0011880",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0011880",
+      "end": "C0011860",
+      "type": "co_occurs_with",
+      "properties": {}
+    },
+    {
+      "start": "C3273807",
+      "end": "euglycemic DKA",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C2974540",
+      "end": "lower limb amputation",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0537551",
+      "end": "C1562561",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0537551",
+      "end": "injectable antihyperglycemic medication",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C1562104",
+      "end": "subcutaneous injections",
+      "type": "administered_via",
+      "properties": {}
+    },
+    {
+      "start": "C3885068",
+      "end": "oral form",
+      "type": "administered_via",
+      "properties": {}
+    },
+    {
+      "start": "C1562104",
+      "end": "gastrointestinal adverse effects",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C0027497",
+      "end": "gastrointestinal adverse effects",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0042963",
+      "end": "gastrointestinal adverse effects",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C1562104",
+      "end": "C0030305",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "C5139934",
+      "end": "GIP/GLP-1 receptor agonist",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0011860",
+      "end": "C5139934",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0028754",
+      "end": "C5139934",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0400966",
+      "end": "Tirzepatide in combination with pioglitazone",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "postprandial glucagon secretion",
+      "end": "C0537551",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C5847615",
+      "end": "C1960636",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0948245",
+      "end": "C0015967",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0948245",
+      "end": "C0027497",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0948245",
+      "end": "C0015672",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0948245",
+      "end": "C0018681",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0948245",
+      "end": "C0231528",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0948245",
+      "end": "C0003862",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0948245",
+      "end": "C0857093",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "long-term complications of diabetes mellitus",
+      "end": "ACE inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "long-term complications of diabetes mellitus",
+      "end": "ARBs",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C1561643",
+      "end": "ACE inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C1561643",
+      "end": "ARBs",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C1561643",
+      "end": "C0853068",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "C0762739",
+      "end": "C4045511",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C4546070",
+      "end": "C4045511",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0007222",
+      "end": "C1562104",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0011849",
+      "end": "SGLT2-inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0762739",
+      "end": "SGLT2-inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0011849",
+      "end": "C1562104",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "ASCVD",
+      "end": "C0004057",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "C0286651",
+      "end": "high-intensity statin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "C0965129",
+      "end": "high-intensity statin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "low-density lipoprotein (LDL) cholesterol level",
+      "end": "maximally tolerated statin",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "low-density lipoprotein (LDL) cholesterol level",
+      "end": "C1142985",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "low-density lipoprotein (LDL) cholesterol level",
+      "end": "proprotein convertase subtilisin/kexin type 9 (PCSK-9) inhibitor",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "type 2 diabetes mellitus",
+      "end": "small, dense LDL cholesterol",
+      "type": "has_biomarker",
+      "properties": {}
+    }
+  ]
+}

@@ -8,6 +8,13 @@ import os
 import logging
 from typing import Any, Dict, List, Optional, Tuple
 
+# Try loading .env variables
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 logger = logging.getLogger(__name__)
 
 # Pattern to capture comparison signs (<, >, <=, >=, =) and numbers with optional units
@@ -23,172 +30,7 @@ _PAT_PERCENT_ADJUST = re.compile(
 )
 
 # Local dictionary mapping 20+ common clinical concepts in diabetes/medications to their ontology IDs
-LOCAL_ONTOLOGY_DB: Dict[str, Dict[str, str]] = {
-    "insulin": {
-        "umls_cui": "C0021853",
-        "umls_canonical": "Insulin",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN8609",
-        "description": "A peptide hormone produced by beta cells of the pancreatic islets; it regulates carbohydrate and fat metabolism."
-    },
-    "insulin replacement": {
-        "umls_cui": "C0021853",
-        "umls_canonical": "Insulin",
-        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
-        "rxnorm_id": "RXN8609",
-        "description": "Exogenous administration of insulin to replace or supplement endogenous production in diabetes."
-    },
-    "basal insulin": {
-        "umls_cui": "C1516104",
-        "umls_canonical": "Basal Insulin",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN1605101",
-        "description": "Long-acting or intermediate-acting insulin that provides a steady plateau of insulin coverage throughout the day and night."
-    },
-    "regular insulin": {
-        "umls_cui": "C0043135",
-        "umls_canonical": "Regular Insulin",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN11202",
-        "description": "Short-acting soluble insulin that is structurally identical to native human insulin."
-    },
-    "insulin lispro": {
-        "umls_cui": "C0282638",
-        "umls_canonical": "Insulin Lispro",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN85698",
-        "description": "A rapid-acting human insulin analog used to reduce postprandial blood glucose spikes."
-    },
-    "insulin aspart": {
-        "umls_cui": "C0908861",
-        "umls_canonical": "Insulin Aspart",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN261551",
-        "description": "A rapid-acting human insulin analog created by replacing proline with aspartic acid."
-    },
-    "insulin glargine": {
-        "umls_cui": "C0909569",
-        "umls_canonical": "Insulin Glargine",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN274786",
-        "description": "A long-acting human insulin analog given once daily as a basal insulin."
-    },
-    "insulin detemir": {
-        "umls_cui": "C1123497",
-        "umls_canonical": "Insulin Detemir",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN358265",
-        "description": "A long-acting basal insulin analog with a fatty acid side chain."
-    },
-    "insulin isophane": {
-        "umls_cui": "C0021865",
-        "umls_canonical": "Insulin Isophane",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN11207",
-        "description": "Intermediate-acting Neutral Protamine Hagedorn (NPH) insulin suspension."
-    },
-    "metformin": {
-        "umls_cui": "C0025598",
-        "umls_canonical": "Metformin",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN6809",
-        "description": "First-line oral biguanide antihyperglycemic medication that decreases hepatic glucose production."
-    },
-    "pioglitazone": {
-        "umls_cui": "C0699298",
-        "umls_canonical": "Pioglitazone",
-        "umls_semantic_type": "Pharmacologic Substance (T121)",
-        "rxnorm_id": "RXN220067",
-        "description": "A thiazolidinedione oral antihyperglycemic agent that increases insulin sensitivity via PPAR-gamma."
-    },
-    "type 1 diabetes": {
-        "umls_cui": "C0011854",
-        "umls_canonical": "Type 1 Diabetes Mellitus",
-        "umls_semantic_type": "Disease or Syndrome (T047)",
-        "icd10_code": "E10",
-        "description": "An autoimmune disorder characterized by destruction of insulin-producing pancreatic beta-cells."
-    },
-    "type 1 diabetes mellitus": {
-        "umls_cui": "C0011854",
-        "umls_canonical": "Type 1 Diabetes Mellitus",
-        "umls_semantic_type": "Disease or Syndrome (T047)",
-        "icd10_code": "E10",
-        "description": "An autoimmune disorder characterized by destruction of insulin-producing pancreatic beta-cells."
-    },
-    "type 2 diabetes": {
-        "umls_cui": "C0011860",
-        "umls_canonical": "Type 2 Diabetes Mellitus",
-        "umls_semantic_type": "Disease or Syndrome (T047)",
-        "icd10_code": "E11",
-        "description": "A metabolic disease characterized by chronic high blood sugar, insulin resistance, and relative lack of insulin."
-    },
-    "type 2 diabetes mellitus": {
-        "umls_cui": "C0011860",
-        "umls_canonical": "Type 2 Diabetes Mellitus",
-        "umls_semantic_type": "Disease or Syndrome (T047)",
-        "icd10_code": "E11",
-        "description": "A metabolic disease characterized by chronic high blood sugar, insulin resistance, and relative lack of insulin."
-    },
-    "obesity": {
-        "umls_cui": "C0028754",
-        "umls_canonical": "Obesity",
-        "umls_semantic_type": "Disease or Syndrome (T047)",
-        "icd10_code": "E66",
-        "description": "A chronic medical condition characterized by excess body fat accumulation that impairs health."
-    },
-    "hyperglycemia": {
-        "umls_cui": "C0020456",
-        "umls_canonical": "Hyperglycemia",
-        "umls_semantic_type": "Finding (T033)",
-        "icd10_code": "R73.9",
-        "description": "An abnormally high concentration of glucose in the circulating blood."
-    },
-    "hypoglycemia": {
-        "umls_cui": "C0020615",
-        "umls_canonical": "Hypoglycemia",
-        "umls_semantic_type": "Finding (T033)",
-        "icd10_code": "E16.2",
-        "description": "An abnormally low concentration of glucose in the circulating blood."
-    },
-    "ketoacidosis": {
-        "umls_cui": "C0022638",
-        "umls_canonical": "Diabetic Ketoacidosis",
-        "umls_semantic_type": "Disease or Syndrome (T047)",
-        "icd10_code": "E10.1",
-        "description": "A life-threatening complication of diabetes characterized by high ketonemia and metabolic acidosis."
-    },
-    "hba1c": {
-        "umls_cui": "C0523829",
-        "umls_canonical": "Hemoglobin A, Glycated",
-        "umls_semantic_type": "Clinical Attribute (T201)",
-        "description": "Glycated hemoglobin level, representing a 3-month average of plasma glucose concentrations."
-    },
-    "fasting blood glucose": {
-        "umls_cui": "C0202054",
-        "umls_canonical": "Fasting Blood Glucose",
-        "umls_semantic_type": "Laboratory Procedure (T059)",
-        "description": "Measurement of blood glucose concentration after a period of fasting for at least 8 hours."
-    },
-    "pancreatic islet cells": {
-        "umls_cui": "C0022131",
-        "umls_canonical": "Islets of Langerhans",
-        "umls_semantic_type": "Cell (T025)",
-        "description": "Regions of the pancreas that contain endocrine cells, including beta-cells."
-    },
-    "pancreatic beta-cells": {
-        "umls_cui": "C0229983",
-        "umls_canonical": "Insulin-Secreting Cells",
-        "umls_semantic_type": "Cell (T025)",
-        "description": "Pancreatic endocrine cells that synthesize and secrete insulin."
-    },
-    "heart failure": {
-        "umls_cui": "C0018801",
-        "umls_canonical": "Heart Failure",
-        "umls_semantic_type": "Disease or Syndrome (T047)",
-        "icd10_code": "I50",
-        "description": "A chronic condition where the heart muscle is unable to pump blood efficiently to meet physiological needs."
-    }
-}
+LOCAL_ONTOLOGY_DB: Dict[str, Dict[str, str]] = {}
 
 
 def normalize_entity_type(t: str) -> str:
@@ -294,45 +136,56 @@ def enrich_ontology_metadata(
     node_labels: List[str],
     normalizer: Optional[Any] = None
 ) -> Dict[str, str]:
-    """Enrich node properties with UMLS, RxNorm, and ICD-10 metadata using a Hybrid Approach."""
-    properties = {}
-    term_key = node_id.lower().strip()
+    """Enrich node properties with UMLS, RxNorm, and ICD-10 metadata by querying the online UMLS UTS REST API.
     
-    # 1. Local Database Lookup (Instant Offline Mapping)
-    if term_key in LOCAL_ONTOLOGY_DB:
-        entry = LOCAL_ONTOLOGY_DB[term_key]
-        properties.update(entry)
-    else:
-        # 2. Optional Online UMLS UTS API Querying
-        if normalizer:
-            try:
-                res = normalizer.query_term(node_id)
-                if res and res.get("cui") != "NONE":
-                    properties["umls_cui"] = res["cui"]
-                    properties["umls_canonical"] = res["canonical"]
-                    properties["umls_semantic_type"] = res["semantic_type"]
-                    properties["description"] = f"UMLS Standard Term: {res['canonical']}"
-            except Exception as e:
-                logger.warning(f"Failed to query online UMLS API for node '{node_id}': {e}")
+    Dynamically maps raw entities to their standard UMLS CUI codes and semantic types.
+    """
+    properties = {}
+    
+    # 1. Query the online UMLS REST API directly
+    if normalizer and normalizer.api_key:
+        try:
+            res = normalizer.query_term(node_id)
+            if res and res.get("cui") != "NONE":
+                properties["umls_cui"] = res["cui"]
+                properties["umls_canonical"] = res["canonical"]
+                properties["umls_semantic_type"] = res["semantic_type"]
+                properties["icd10_code"] = res.get("icd10_code", "NONE")
+                properties["rxnorm_id"] = res.get("rxnorm_id", "NONE")
                 
-    # 3. Handle default values for critical keys if not mapped
+                # Set description from definition if non-empty, else fallback
+                definition = res.get("definition", "").strip()
+                if definition:
+                    properties["description"] = definition
+                else:
+                    properties["description"] = f"UMLS Standard Term: {res['canonical']}"
+        except Exception as e:
+            logger.warning(f"Failed to query online UMLS API for node '{node_id}': {e}")
+                
+    # 2. Handle default values for critical keys if not mapped or if offline/unmapped
     if "umls_cui" not in properties:
         properties["umls_cui"] = "NONE"
     if "umls_canonical" not in properties:
-        properties["umls_canonical"] = node_id  # Hybrid Approach: Fallback to original term name!
+        properties["umls_canonical"] = node_id  # Fallback to the extracted entity name!
     if "umls_semantic_type" not in properties:
         properties["umls_semantic_type"] = "Unknown"
+    if "description" not in properties:
+        properties["description"] = ""
         
-    # Standardize label specific keys
-    if "Drug" in node_labels and "rxnorm_id" not in properties:
-        properties["rxnorm_id"] = "NONE"
-    if "Disease" in node_labels and "icd10_code" not in properties:
-        properties["icd10_code"] = "NONE"
+    # Standardize label-specific keys
+    if "Drug" in node_labels:
+        properties["rxnorm_id"] = properties.get("rxnorm_id", "NONE")
+    if "Disease" in node_labels:
+        properties["icd10_code"] = properties.get("icd10_code", "NONE")
         
     return properties
 
 
-def pack_properties(records: List[dict], umls_api_key: Optional[str] = None) -> Dict[str, Any]:
+def pack_properties(
+    records: List[dict],
+    umls_api_key: Optional[str] = None,
+    normalizer: Optional[Any] = None
+) -> Dict[str, Any]:
     """Iterate through OIE records, resolve, and pack clinical values and ontology metadata.
     
     Generates a structured graph dictionary containing clean Nodes and Relationships with properties.
@@ -340,15 +193,16 @@ def pack_properties(records: List[dict], umls_api_key: Optional[str] = None) -> 
     nodes: Dict[str, dict] = {}
     relationships: List[dict] = []
     
-    # Optional UMLS API initialization
-    normalizer = None
-    if umls_api_key:
-        try:
-            from edc.post_processing.umls_normalizer import UMLSNormalizer
-            normalizer = UMLSNormalizer(api_key=umls_api_key)
-            logger.info("Online UMLS UTS API Normalizer initialized for property packing.")
-        except Exception as e:
-            logger.warning(f"Failed to initialize UMLSNormalizer: {e}")
+    # Optional UMLS API initialization if not already provided
+    if normalizer is None:
+        api_key_to_use = umls_api_key or os.environ.get("UMLS_API_KEY", "")
+        if api_key_to_use:
+            try:
+                from edc.post_processing.umls_normalizer import UMLSNormalizer
+                normalizer = UMLSNormalizer(api_key=api_key_to_use)
+                logger.info("Online UMLS UTS API Normalizer initialized for property packing.")
+            except Exception as e:
+                logger.warning(f"Failed to initialize UMLSNormalizer: {e}")
             
     for idx, record in enumerate(records):
         triplets = record.get("schema_canonicalizaiton", [])
@@ -474,9 +328,131 @@ def pack_properties(records: List[dict], umls_api_key: Optional[str] = None) -> 
                 # Determine property key
                 prop_key = "target_threshold" if r_norm in ["has_clinical_threshold", "has_titration_rule"] else "dosage_value"
                 nodes[s]["properties"][prop_key] = cleaned
-                
-    # Return formatted Neo4j structure
+                    
+    # === Integrate Entity Deduplication / Resolution ===
+    deduped_nodes: Dict[str, dict] = {}
+    node_id_mapping: Dict[str, str] = {}  # Old Raw ID -> New Canonical CUI/Raw ID
+
+    # 1. Build mapping from raw node ID to its new canonical ID (CUI or case-insensitive raw fallback)
+    for raw_id, node in nodes.items():
+        cui = node["properties"].get("umls_cui", "NONE")
+        if cui != "NONE":
+            node_id_mapping[raw_id] = cui
+        else:
+            # Case-insensitive normalization for none-CUI nodes
+            norm_name = raw_id.strip()
+            # Check if we already mapped another casing of this raw_id to a canonical ID
+            found_id = None
+            for k, v in node_id_mapping.items():
+                if k.strip().lower() == norm_name.lower():
+                    found_id = v
+                    break
+            if found_id:
+                node_id_mapping[raw_id] = found_id
+            else:
+                node_id_mapping[raw_id] = raw_id
+
+    # 2. Group nodes by their new canonical ID
+    canon_groups: Dict[str, List[dict]] = {}
+    for raw_id, node in nodes.items():
+        canon_id = node_id_mapping[raw_id]
+        canon_groups.setdefault(canon_id, []).append(node)
+
+    # 3. Merge nodes in each group
+    for canon_id, group in canon_groups.items():
+        # Find best node to use as base (prefer non-empty properties/valid UMLS CUI if available)
+        base_node = group[0]
+        for node in group:
+            if node["properties"].get("umls_cui", "NONE") != "NONE":
+                base_node = node
+                break
+
+        merged_labels = set()
+        merged_aliases = set()
+        merged_props = {}
+
+        # Collect all labels and aliases from the group
+        for node in group:
+            merged_labels.update(node.get("labels", []))
+            merged_aliases.add(node["id"].strip())
+            if "aliases" in node["properties"]:
+                merged_aliases.update(node["properties"]["aliases"])
+
+            # Merge properties
+            for k, v in node.get("properties", {}).items():
+                if v and v != "NONE" and v != "Unknown" and v != "":
+                    if k not in merged_props or merged_props[k] in ["NONE", "Unknown", ""]:
+                        merged_props[k] = v
+
+        # Set standardized canonical fields
+        # If canon_id is a CUI, prioritize standard UMLS fields
+        cui_val = merged_props.get("umls_cui", "NONE")
+        if cui_val != "NONE":
+            merged_props["umls_cui"] = cui_val
+            merged_props["umls_canonical"] = merged_props.get("umls_canonical", canon_id)
+        else:
+            merged_props["umls_cui"] = "NONE"
+            merged_props["umls_canonical"] = merged_props.get("umls_canonical", canon_id)
+
+        # Standardize empty values
+        merged_props["umls_semantic_type"] = merged_props.get("umls_semantic_type", "Unknown")
+        merged_props["description"] = merged_props.get("description", "")
+
+        # Target thresholds and dosage values
+        for k in ["target_threshold", "dosage_value", "icd10_code", "rxnorm_id"]:
+            # Ensure they are set if present in any node in the group
+            for node in group:
+                if k in node["properties"] and node["properties"][k] not in ["NONE", "", None]:
+                    merged_props[k] = node["properties"][k]
+                    break
+            # Default fallback for label-specific properties
+            if k in ["icd10_code", "rxnorm_id"] and k not in merged_props:
+                if (k == "icd10_code" and "Disease" in merged_labels) or (k == "rxnorm_id" and "Drug" in merged_labels):
+                    merged_props[k] = "NONE"
+
+        # Remove the CUI or standard raw name itself from the aliases to keep it clean (or keep it if it differs)
+        canonical_name = merged_props["umls_canonical"]
+        merged_aliases.discard(canon_id)
+        merged_aliases.discard(canonical_name)
+        
+        # Populate aliases array property (sorted and unique)
+        merged_props["aliases"] = sorted(list(merged_aliases))
+
+        deduped_nodes[canon_id] = {
+            "id": canon_id,
+            "labels": sorted(list(merged_labels)),
+            "properties": merged_props
+        }
+
+    # 4. Remap and deduplicate relationships
+    deduped_relationships: List[dict] = []
+    seen_relations = set()
+
+    for rel in relationships:
+        old_start = rel["start"]
+        old_end = rel["end"]
+        
+        new_start = node_id_mapping.get(old_start, old_start)
+        new_end = node_id_mapping.get(old_end, old_end)
+        
+        # Avoid self-loops from deduplication merging
+        if new_start == new_end:
+            continue
+            
+        rel_type = rel["type"]
+        rel_key = (new_start, rel_type, new_end)
+        
+        if rel_key not in seen_relations:
+            seen_relations.add(rel_key)
+            deduped_relationships.append({
+                "start": new_start,
+                "end": new_end,
+                "type": rel_type,
+                "properties": rel.get("properties", {})
+            })
+
+    # Return formatted Neo4j structure with deduped nodes and edges
     return {
-        "nodes": list(nodes.values()),
-        "relationships": relationships
+        "nodes": list(deduped_nodes.values()),
+        "relationships": deduped_relationships
     }

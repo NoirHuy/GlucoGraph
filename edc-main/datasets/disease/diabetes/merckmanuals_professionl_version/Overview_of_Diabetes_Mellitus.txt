@@ -1,0 +1,527 @@
+Diabetes mellitus is a metabolic disease characterized by elevated blood glucose levels and inadequate insulin release relative to the body's needs.
+Between 11 and 14% of adults worldwide have diabetes mellitus.
+Type 1 diabetes comprises 5 to 10% of all diagnosed diabetes mellitus cases.
+Type 2 diabetes comprises 90 to 95% of diabetes mellitus cases.
+Other types of diabetes mellitus account for the remainder of diabetes mellitus cases.
+The International Diabetes Federation provides information about diabetes mellitus in the publication "About diabetes: Facts and Figures".
+The World Health Organization provides key facts about diabetes mellitus in the publication "Diabetes: Key Facts".
+The American Diabetes Association Professional Practice Committee publishes standards of care in diabetes mellitus, including diagnosis and classification, in the publication "Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2025".
+Type 1 diabetes is primarily characterized by inadequate insulin production due to autoimmune destruction of pancreatic beta cells.
+Type 2 diabetes is primarily characterized by insulin resistance and a relative insufficiency of insulin.
+The two types of diabetes, Type 1 diabetes and Type 2 diabetes, can be distinguished by a number of features.
+There is significant overlap between Type 1 diabetes and Type 2 diabetes.
+Terms that describe the age of onset, such as juvenile or adult, are not used to describe Type 1 diabetes and Type 2 diabetes because of overlap in age groups between the two disease types.
+Terms that describe the type of treatment, such as insulin-dependent or non-insulin-dependent, are not used to describe Type 1 diabetes and Type 2 diabetes because of overlap in treatments between the two disease types.
+Prediabetes is an intermediate, possibly transitional, state between normal glucose metabolism and diabetes mellitus, most commonly Type 2 diabetes.
+Other types of diabetes mellitus, including Gestational diabetes, Monogenic diabetes, Latent autoimmune diabetes in adults, Cystic fibrosis-related diabetes, and Pancreatogenous diabetes, account for a smaller proportion of diabetes mellitus cases.
+Gestational diabetes is a cause of diabetes mellitus.
+Monogenic diabetes is a cause of diabetes mellitus.
+Latent autoimmune diabetes in adults is a cause of diabetes mellitus.
+Cystic fibrosis-related diabetes is a cause of diabetes mellitus.
+Pancreatogenous diabetes, due to destruction or removal of pancreas, including chronic pancreatitis, sometimes referred to as Type 3c diabetes, is a cause of diabetes mellitus.
+Hemochromatosis is a condition that affects the pancreas.
+Post-transplant diabetes is a condition that occurs after a transplant.
+Malnutrition-related diabetes is a type of diabetes that is related to malnutrition.
+Endocrinopathies, such as Cushing syndrome and acromegaly, are conditions that affect the endocrine system.
+Glucocorticoids are medications that can affect blood sugar levels.
+Beta-blockers are medications that can affect blood sugar levels.
+Protease inhibitors are medications that can affect blood sugar levels.
+Atypical antipsychotics are medications that can affect blood sugar levels.
+Immune checkpoint inhibitors are medications that can affect blood sugar levels.
+Calcineurin inhibitors are medications that can affect blood sugar levels.
+Gestational diabetes occurs in some pregnant people because pregnancy induces insulin resistance in pregnant people.
+Monogenic diabetes is caused by genetic defects affecting beta-cell function, insulin action, or mitochondrial DNA in people with monogenic diabetes.
+Neonatal diabetes is a type of monogenic diabetes that is caused by genetic defects affecting beta-cell function, insulin action, or mitochondrial DNA in people with neonatal diabetes.
+Latent autoimmune diabetes in adults is a variant of diabetes that develops in adulthood in adults with latent autoimmune diabetes.
+Latent autoimmune diabetes in adults is more slowly progressive than classic type 1 diabetes in adults with latent autoimmune diabetes.
+Some adults with latent autoimmune diabetes do not need insulin when dysglycemia first develops in adults with latent autoimmune diabetes.
+Latent autoimmune diabetes in adults is commonly misdiagnosed as type 2 diabetes due to its slower progression and overlapping clinical features in adults with latent autoimmune diabetes.
+Diabetes mellitus is suggested by typical symptoms and signs in people with diabetes mellitus.
+Diabetes mellitus is confirmed by measurement of plasma glucose in people with diabetes mellitus.
+Diabetes mellitus is often detected through screening in people with diabetes mellitus.
+Diabetes is diagnosed when glycosylated hemoglobin (HbA1C) is ≥ 6.5% (≥ 48 mmol/mol) in people with diabetes.
+Diabetes is diagnosed when fasting plasma glucose (FPG) level is ≥ 126 mg/dL (≥ 7.0 mmol/L) in people with diabetes.
+Diabetes is diagnosed when 2-hour glucose tolerance test (OGTT) is ≥ 200 mg/dL (≥ 11.1 mmol/L) in people with diabetes.
+Random glucose levels of ≥ 200 mg/dL (≥ 11.1 mmol/L) with symptoms of hyperglycemic or hypoglycemic crisis are indicative of diabetes.
+The diagnosis of diabetes is classified into type 1 diabetes, type 2 diabetes, gestational diabetes, or other forms of diabetes based on the patient's presentation as well as genetic, immunologic, and contextual factors.
+HbA1C is a form of hemoglobin that is chemically attached to a sugar that increases with blood glucose levels and has a validated relationship with average glucose levels over the preceding 3 months.
+HbA1C measurements are included in the diagnostic criteria for diabetes, where HbA1C ≥ 6.5% (≥ 48 mmol/mol) indicates diabetes.
+HbA1C levels between 5.7% and 6.4% indicate prediabetes or an increased risk of developing diabetes.
+HbA1C is an indirect measure of blood glucose levels, and values may be falsely high or low due to various factors, including race or ethnicity.
+HbA1C tests must be performed in a certified clinical laboratory with an assay that is certified and standardized to a reference assay.
+Point-of-care fingerstick HbA1C measurements should not be used for diagnostic purposes, although they can be used for monitoring diabetes control.
+Measurement of glucose levels after an 8- to 12-hour fast, also known as fasting plasma glucose (FPG), is a preferred method for diagnosing diabetes.
+Measurement of glucose levels 2 hours after ingestion of a concentrated glucose solution, also known as an oral glucose tolerance test (OGTT), is a preferred method for diagnosing diabetes.
+The Oral Glucose Tolerance Test (OGTT) involves measuring plasma glucose 2 hours after a 75-g glucose load dissolved in liquid.
+The Oral Glucose Tolerance Test (OGTT) is more sensitive for diagnosing diabetes mellitus and impaired glucose tolerance than the Fasting Plasma Glucose (FPG) test.
+The Oral Glucose Tolerance Test (OGTT) is less convenient and reproducible than the Fasting Plasma Glucose (FPG) test.
+The Oral Glucose Tolerance Test (OGTT) is rarely used routinely, except for diagnosing gestational diabetes and for research purposes.
+Diabetes mellitus or impaired fasting glucose regulation is often diagnosed using random measures of plasma glucose or of Hemoglobin A1C (HbA1C).
+A random glucose value greater than 200 mg/dL (or 11.1 mmol/L) may be diagnostic of diabetes mellitus.
+Random glucose values can be affected by recent meals and must be confirmed by repeat testing for diabetes mellitus diagnosis.
+Repeat testing for diabetes mellitus diagnosis may not be necessary in the presence of symptoms of diabetes mellitus.
+In sick, hospitalized patients, blood glucose may be elevated due to stress hyperglycemia.
+Patients with elevated plasma glucose levels during a hospitalization should be evaluated for diabetes mellitus once they are stable and outside of the hospital.
+Urine glucose measurement is no longer used for diagnosis or monitoring of diabetes mellitus because it is neither sensitive nor specific.
+Point-of-care fingerstick Hemoglobin A1C (HbA1C) tests are not accurate enough to be used for initial diagnosis of diabetes mellitus.
+Prediabetes is diagnosed when the Hemoglobin A1C (HbA1C), Oral Glucose Tolerance Test (OGTT), or Fasting Plasma Glucose (FPG) is between the normal range and the range diagnostic for diabetes mellitus.
+Diabetes Mellitus has acute complications that include metabolic derangements such as diabetic ketoacidosis, hypoglycemia, and hyperosmolar hyperglycemic state.
+Diabetes Mellitus has long-term complications due to chronic hyperglycemia that include primarily vascular complications.
+Vascular complications of Diabetes Mellitus affect small vessels, which are referred to as microvascular complications.
+Vascular complications of Diabetes Mellitus affect large vessels, which are referred to as macrovascular complications.
+Microvascular disease underlies Retinopathy, which is a common and severe complication of Diabetes Mellitus.
+Microvascular disease underlies Nephropathy, which is a common and severe complication of Diabetes Mellitus.
+Microvascular disease underlies Neuropathy, which is a common and severe complication of Diabetes Mellitus.
+Microvascular disease may impair wound healing in patients with Diabetes Mellitus, so that even minor breaks in skin integrity can develop into deeper ulcers.
+Minor breaks in skin integrity can easily become infected, particularly in the lower extremities of patients with Diabetes Mellitus.
+Intensive control of plasma glucose in patients with Diabetes Mellitus can prevent or delay many complications of Diabetes Mellitus.
+Intensive control of plasma glucose in patients with Diabetes Mellitus will not reverse complications of Diabetes Mellitus once they are established.
+Macrovascular disease involves atherosclerosis of large vessels in patients with Diabetes Mellitus, which can lead to angina pectoris.
+Atherosclerosis of large vessels in patients with Diabetes Mellitus can lead to myocardial infarction.
+Atherosclerosis of large vessels in patients with Diabetes Mellitus can lead to transient ischemic attacks.
+Atherosclerosis of large vessels in patients with Diabetes Mellitus can lead to strokes.
+Atherosclerosis of large vessels in patients with Diabetes Mellitus can lead to peripheral artery disease.
+Immune dysfunction is another major complication of diabetes mellitus and develops from the direct effects of hyperglycemia on cellular immunity.
+Patients with diabetes mellitus are particularly susceptible to bacterial and fungal infections.
+Diabetes care requires careful adjustment for patient factors, including those related to age and lifestyle, comorbid conditions, and need for treatment of other acute or chronic conditions.
+The term brittle diabetes has been used to refer to patients with diabetes mellitus who have dramatic, recurrent swings in glucose levels, often for no apparent reason.
+Labile plasma glucose levels are more likely to occur in patients with type 1 diabetes because endogenous insulin production is almost completely absent in patients with type 1 diabetes.
+In some patients with type 1 diabetes, counter-regulatory response to hypoglycemia is impaired.
+Occult infection is a cause of labile plasma glucose levels in patients with diabetes mellitus.
+Gastroparesis is a cause of labile plasma glucose levels in patients with diabetes mellitus because gastroparesis leads to erratic absorption of dietary carbohydrates in patients with diabetes mellitus.
+Other endocrine disorders, such as Addison disease, are causes of labile plasma glucose levels in patients with diabetes mellitus.
+Patients with diabetes mellitus who have chronic difficulty maintaining acceptable glucose levels should be evaluated for situational factors that affect glucose control in patients with diabetes mellitus.
+Inadequate patient education or understanding is a situational factor that affects glucose control in patients with diabetes mellitus and leads to errors in insulin administration.
+Suboptimal food choices are a situational factor that affects glucose control in patients with diabetes mellitus.
+Psychosocial stress is a situational factor that affects glucose control in patients with diabetes mellitus and expresses itself in inconsistent medication use and food intake.
+The initial approach to managing diabetes is to thoroughly review self-care techniques, including insulin preparation and injection and glucose testing, for patients with diabetes.
+Increased frequency of glucose testing may reveal previously unrecognized patterns in glucose levels and provides patients with diabetes with helpful feedback on their glucose control.
+A thorough dietary history, including timing of meals, should be taken to identify potential contributions to poor glucose control in patients with diabetes.
+Underlying disorders, such as Cushing syndrome, should be excluded by physical examination and appropriate laboratory tests in patients with diabetes to determine the cause of poor glucose control.
+Adjusting to a more intensive insulin regimen that allows for frequent dose adjustments, based on glucose testing, is helpful for some patients with diabetes who are being treated with insulin.
+Continuous glucose monitoring with alarms and sensor-augmented or hybrid closed-loop insulin pump therapy are useful tools in individuals with diabetes who fluctuate between hypoglycemia and hyperglycemia.
+Patients with type 2 diabetes who are hospitalized for heart failure should receive sodium glucose cotransporter 2 inhibitors, also known as SGLT-2 inhibitors, after the acute heart failure illness has improved.
+SGLT2 inhibitors should be avoided in patients with severe illness, those who are fasting, or those with ketonemia or ketonuria because these conditions increase the risk of SGLT2 inhibitor-induced diabetic ketoacidosis in patients with diabetes.
+Thiazolidinediones, such as pioglitazone, should also be avoided in patients with heart failure and diabetes because they can worsen heart failure.
+Diabetes mellitus may be a primary reason for hospitalization of patients with diabetes mellitus or may accompany other illnesses that require inpatient care for patients with diabetes mellitus.
+Patients with hypoglycemia induced by sulfonylureas, poorly controlled hyperglycemia, or acute worsening of diabetic complications may benefit from brief hospitalization for diabetes mellitus.
+Some hospitalized patients with pre-existing diabetes can continue on the diabetes treatment regimens they use at home when other illnesses mandate hospitalization for these patients.
+Glucose control often proves difficult in hospitalized patients with pre-existing diabetes when other diseases are more acute in these patients.
+Restricted physical activity and acute illness worsen hyperglycemia in some hospitalized patients with pre-existing diabetes.
+Dietary restrictions and symptoms that accompany illness, such as nausea, vomiting, diarrhea, and anorexia, precipitate hypoglycemia in some hospitalized patients with pre-existing diabetes, especially when antihyperglycemic medication doses remain unchanged for these patients.
+It may be difficult to control glucose adequately in hospitalized patients with pre-existing diabetes because usual routines, such as timing of meals, medications, and procedures, are inflexibly timed relative to diabetes treatment regimens for these patients.
+Hospitalized patients with pre-existing diabetes often experience difficulty with glucose control due to inflexibly timed usual routines, including timing of meals, medications, and procedures, relative to their diabetes treatment regimens.
+Patients who are hospitalized often need to have their oral antihyperglycemic medications stopped.
+Metformin can cause lactic acidosis in patients with end-stage renal disease and has to be stopped if contrast agents need to be given to these patients.
+Metformin is withheld in all but the most stable patients who are hospitalized.
+Sulfonylureas can cause hypoglycemia in patients and should also be stopped in hospitalized patients.
+Most inpatients can be appropriately treated with basal insulin without supplemental short-acting insulin or with supplemental short-acting insulin.
+Sliding-scale insulin should not be the only intervention to correct hyperglycemia in patients.
+Sliding-scale insulin is reactive rather than proactive and leads to poor glycemic control compared to basal-bolus insulin in patients.
+Longer-acting insulins should be adjusted to prevent hyperglycemia in patients rather than just using short-acting insulins to correct hyperglycemia.
+Patients using insulin pumps should continue using their insulin pumps in the hospital when feasible and appropriate, with confirmatory blood glucose measurements.
+Patients who are already monitoring glucose with continuous glucose monitoring should continue to use their devices in conjunction with point-of-care fingerstick glucose monitoring for confirmation of hypoglycemia and for insulin dosing.
+The use of continuous glucose monitoring in conjunction with point-of-care fingerstick glucose monitoring may decrease nocturnal hypoglycemia in patients.
+Data to support the use of glucagon-like peptide-1 receptor agonist therapy in the inpatient setting are limited.
+Dipeptidyl peptidase-4 inhibitors, such as sitagliptin, saxagliptin, linagliptin, and alogliptin, are relatively safe, even in patients with kidney disease.
+Dipeptidyl peptidase-4 inhibitors, such as sitagliptin, saxagliptin, linagliptin, and alogliptin, may also be used for postprandial glucose lowering in patients with kidney disease.
+Inpatient hyperglycemia is associated with increased infection rate and mortality in critically ill patients.
+Critical illness causes insulin resistance and hyperglycemia even in patients without known diabetes mellitus.
+Stress-induced hyperglycemia is associated with poor outcomes, including increased mortality, in critically ill patients.
+Insulin infusion to maintain plasma glucose between 140 and 180 mg/dL prevents adverse outcomes, such as organ failure, in critically ill patients.
+Insulin infusion to maintain plasma glucose between 140 and 180 mg/dL possibly enhances recovery from stroke in critically ill patients.
+Insulin infusion to maintain plasma glucose between 140 and 180 mg/dL leads to improved survival in patients requiring prolonged critical care.
+Maintaining less stringent insulin targets may be sufficient to prevent adverse outcomes in critically ill patients.
+Severely ill patients, especially those treated with glucocorticoids or pressors and those receiving parenteral nutrition, may need very high doses of insulin because of insulin resistance.
+Insulin infusion protocols and/or computerized algorithms can be used to titrate insulin drips to maintain euglycemia in critically ill patients.
+A large percentage of patients undergoing surgery have diabetes or prediabetes, sometimes undiagnosed.
+The physiologic stress of surgery can increase plasma glucose in patients with diabetes and induce diabetic ketoacidosis in patients with type 1 diabetes.
+For shorter procedures, subcutaneous insulin can be used for patients undergoing surgery.
+In patients with type 1 diabetes, one-half of the usual morning dose of intermediate-acting insulin can be given the night or morning before surgery.
+In patients with type 1 diabetes, 75 to 80% of the dose of long-acting insulin, such as glargine or detemir, can be given the night or morning before surgery at the usual time of long-acting insulin administration.
+During and after surgery, plasma glucose should be measured at least every 2 to 4 hours in patients undergoing surgery.
+During and after surgery, ketones should be measured at least every 2 to 4 hours in patients undergoing surgery if hyperglycemia suggests the need.
+Dextrose infusion can be given to patients undergoing surgery to maintain the plasma glucose level between 100 and 180 mg/dL.
+Subcutaneous regular or short-acting insulin can be given every 4 to 6 hours as needed to patients undergoing surgery to maintain the plasma glucose level between 100 and 180 mg/dL.
+The plasma glucose level should be maintained between 100 and 180 mg/dL in patients undergoing surgery until the patient can be switched to oral feedings and resume the usual insulin regimen.
+Additional doses of intermediate-acting insulin should be given to patients undergoing surgery if there is a substantial delay, greater than 24 hours, in resuming the usual insulin regimen.
+Additional doses of long-acting insulin should be given to patients undergoing surgery if there is a substantial delay, greater than 24 hours, in resuming the usual insulin regimen.
+The approach of measuring plasma glucose and administering insulin can also be used for insulin-treated patients with type 2 diabetes undergoing surgery.
+Frequent measurement of ketones may be omitted in insulin-treated patients with type 2 diabetes undergoing surgery.
+Physicians prefer to withhold subcutaneous or inhaled insulin on the day of surgery and to give insulin by IV infusion to patients undergoing surgery.
+For patients undergoing a long procedure or major surgery, a continuous insulin infusion is preferable because insulin requirements can increase due to the stress of surgery.
+IV insulin infusion can be given at the same time as intravenous dextrose solution to maintain blood glucose in patients undergoing surgery.
+A common approach is to infuse insulin and dextrose separately to patients undergoing surgery.
+Insulin can be infused at a rate of 1 to 2 U/hour with 5% dextrose infusing at 75 to 150 mL/hour in patients undergoing surgery.
+The insulin rate may need to be decreased for patients with type 1 diabetes and increased for patients with type 2 diabetes.
+An infusion of 10% dextrose may also be used in addition to insulin infusion for patients undergoing surgery.
+It is important to continue insulin infusion, even at a low rate, in patients with type 1 diabetes to avoid development of diabetic ketoacidosis.
+Insulin adsorption onto IV tubing can lead to inconsistent effects in patients receiving insulin infusion.
+Preflushing the IV tubing with insulin solution can minimize inconsistent effects caused by insulin adsorption onto IV tubing.
+Insulin infusion is continued through recovery in postsurgical patients, with insulin dose adjusted based on plasma glucose levels.
+Plasma glucose levels are obtained in the recovery room and at 1- to 2-hour intervals thereafter to adjust insulin dose in postsurgical patients.
+Insulin infusion protocols can be used to maintain euglycemia in postsurgical patients who are in an intensive care unit.
+Insulin delivery through insulin pumps and automated insulin delivery systems can be continued during surgeries that last less than 2 hours.
+Continuous glucose monitors can remain operational during surgery, but the accuracy of the Continuous glucose monitors measurements may be affected by fluoroscopy or electrocautery in the vicinity.
+Removal of insulin pump insertion sets or Continuous glucose monitors may be required if the insulin pump insertion sets or Continuous glucose monitors are within the surgical field.
+If a patient is off their insulin pump during surgery, intravenous insulin can be administered to the patient to cover the period while the patient is off the insulin pump.
+If a patient is off their insulin pump during surgery, a dose of subcutaneous insulin can be administered to the patient to cover the period while the patient is off the insulin pump.
+Intravenous or subcutaneous insulin administration is particularly important for patients with type 1 diabetes who should not have any periods without insulin coverage.
+Non-insulin diabetes medications should be withheld before surgery.
+Metformin increases the risk of lactic acidosis and must be withheld the day of surgery.
+SGLT-2 inhibitors should be stopped 3 to 4 days before surgery to avoid diabetic ketoacidosis.
+GLP-1 receptor agonists can delay gastric emptying and increase the risk of aspiration in patients undergoing general anesthesia.
+Professional societies suggest that patients discontinue daily GLP-1 receptor agonists on the day of the procedure or surgery.
+Patients taking a once-weekly dose of a GLP-1 receptor agonist should not take the GLP-1 receptor agonist for at least 7 days prior to procedures or surgery.
+Patients taking a dual glucose-dependent insulinotropic polypeptide and GLP-1 receptor agonist should not take the dual glucose-dependent insulinotropic polypeptide and GLP-1 receptor agonist for at least 7 days prior to procedures or surgery.
+The HbA1C goal for elective surgeries should be less than 8% or less than 64.0 mmol/L.
+The study by Singh and colleagues published in Diabetes Care in 2020 investigated the use of real-time continuous glucose monitoring to reduce inpatient hypoglycemia in general wards.
+The Kidney Disease: Improving Global Outcomes Diabetes Work Group published a clinical practice guideline for diabetes management in chronic kidney disease in Kidney International in 2022.
+Barmanray and colleagues found that hyperglycemia in hospital is an independent marker of infection, acute kidney injury, and stroke for hospital inpatients, as reported in the Journal of Clinical Endocrinology and Metabolism in 2024.
+Cruz and colleagues discussed the perioperative care of patients using wearable diabetes devices in Anesthesia and Analgesia in 2025.
+Kindel and colleagues provided multisociety clinical practice guidance for the safe use of glucagon-like peptide-1 receptor agonists in the perioperative period, as published in Surgery for Obesity and Related Diseases in 2024.
+The Kidney Disease: Improving Global Outcomes Diabetes Work Group developed a clinical practice guideline for diabetes management in chronic kidney disease, which was published in Kidney International in 2022.
+The study by Singh and colleagues used the Glucose Telemetry System, a randomized clinical trial, to investigate the reduction of inpatient hypoglycemia in general wards using real-time continuous glucose monitoring.
+Hyperglycemia in hospital is associated with an increased risk of infection, acute kidney injury, and stroke for hospital inpatients, according to the study by Barmanray and colleagues.
+The clinical practice guideline for diabetes management in chronic kidney disease published by the Kidney Disease: Improving Global Outcomes Diabetes Work Group provides recommendations for the management of diabetes in patients with chronic kidney disease.
+The use of wearable diabetes devices requires special consideration in the perioperative period, as discussed by Cruz and colleagues in Anesthesia and Analgesia in 2025.
+Glucagon-like peptide-1 receptor agonists can be used safely in the perioperative period if certain guidelines are followed, according to the multisociety clinical practice guidance provided by Kindel and colleagues.
+Type 1 diabetes mellitus is an autoimmune disease that involves destruction of the insulin-secreting pancreatic beta cells of patients with type 1 diabetes mellitus, leading to impaired insulin secretion, hyperglycemia, and eventually variable degrees of peripheral insulin resistance in patients with type 1 diabetes mellitus.
+Early symptoms of type 1 diabetes mellitus are related to hyperglycemia and include polydipsia, polyphagia, polyuria, and blurred vision in patients with type 1 diabetes mellitus.
+Later complications of type 1 diabetes mellitus include vascular disease, peripheral neuropathy, nephropathy, and predisposition to infection in patients with type 1 diabetes mellitus.
+Diagnosis of type 1 diabetes mellitus is by measuring plasma glucose and autoantibodies in patients with type 1 diabetes mellitus.
+Treatment of type 1 diabetes mellitus is with insulin and glucose monitoring, as well as dietary and exercise modifications for patients with type 1 diabetes mellitus.
+Complications of type 1 diabetes mellitus can be delayed or prevented with adequate glycemic control in patients with type 1 diabetes mellitus.
+Cardiovascular disease remains the leading cause of premature mortality in patients with type 1 diabetes mellitus.
+Autoimmune pancreatic beta-cell destruction leads to insufficient insulin production in type 1 diabetes mellitus.
+Type 1 diabetes mellitus accounts for 5 to 10% of all cases of diabetes mellitus.
+Type 1 diabetes mellitus is characterized by absent or severely deficient insulin production due to autoimmune pancreatic beta-cell destruction.
+Autoimmune pancreatic beta-cell destruction in type 1 diabetes mellitus is possibly triggered by an environmental exposure in people who are genetically susceptible to type 1 diabetes mellitus.
+Destruction of pancreatic beta-cells in type 1 diabetes mellitus progresses subclinically over months or years until pancreatic beta-cell mass decreases to the point that insulin concentrations are no longer adequate to control plasma glucose levels in patients with type 1 diabetes mellitus.
+Type 1 diabetes mellitus generally develops in childhood or adolescence and is the most common form of diabetes diagnosed before age 20 years in patients with type 1 diabetes mellitus.
+Type 1 diabetes mellitus can also develop in adults with type 1 diabetes mellitus.
+Susceptibility genes to type 1 diabetes mellitus include those within the major histocompatibility complex (MHC), especially the DR3-DQ2.5 and DR4-DQ8 haplotypes.
+The DR3-DQ2.5 and DR4-DQ8 haplotypes are present in more than 90% of patients with type 1 diabetes mellitus who are younger than 30 years.
+Susceptibility genes to type 1 diabetes mellitus outside the MHC seem to regulate insulin production and processing and confer risk of type 1 diabetes mellitus in concert with MHC genes in patients with type 1 diabetes mellitus.
+Susceptibility genes to type 1 diabetes mellitus are more common among some populations than among others and explain the higher prevalence of type 1 diabetes mellitus in people with ancestry from certain areas, such as Scandinavians and Sardinians.
+Autoantigens include glutamic acid decarboxylase, insulin, proinsulin, insulinoma-associated protein, zinc transporter ZnT8, and other proteins in beta cells.
+Glutamic acid decarboxylase, insulin, proinsulin, insulinoma-associated protein, zinc transporter ZnT8, and other proteins in beta cells are thought to be exposed or released during normal beta-cell turnover or beta-cell injury, such as infection, activating primarily a T cell‒mediated immune response that results in beta-cell destruction, also known as insulitis.
+Glucagon-secreting alpha cells remain unharmed during the T cell‒mediated immune response that results in beta-cell destruction.
+Antibodies to glutamic acid decarboxylase, insulin, proinsulin, insulinoma-associated protein, zinc transporter ZnT8, and other proteins in beta cells, which can be detected in serum, seem to be a response to beta-cell destruction, not a cause of beta-cell destruction.
+Coxsackievirus has been linked to the onset of type 1 diabetes.
+Severe acute respiratory syndrome coronavirus 2, which causes COVID-19, has been linked to the onset of type 1 diabetes.
+Congenital cytomegalovirus has been linked to the onset of type 1 diabetes.
+Rubella has been linked to the onset of type 1 diabetes.
+Retroviruses have been potentially linked to the onset of type 1 diabetes.
+Viruses, such as coxsackievirus and severe acute respiratory syndrome coronavirus 2, may directly infect and destroy beta cells.
+Viruses, such as coxsackievirus and severe acute respiratory syndrome coronavirus 2, may cause beta-cell destruction indirectly by exposing autoantigens, such as glutamic acid decarboxylase, insulin, proinsulin, insulinoma-associated protein, and zinc transporter ZnT8.
+Viruses, such as coxsackievirus and severe acute respiratory syndrome coronavirus 2, may cause beta-cell destruction indirectly by activating autoreactive lymphocytes.
+Viruses, such as coxsackievirus and severe acute respiratory syndrome coronavirus 2, may cause beta-cell destruction indirectly by mimicking molecular sequences of autoantigens, such as glutamic acid decarboxylase, insulin, proinsulin, insulinoma-associated protein, and zinc transporter ZnT8, which stimulate an immune response, also known as molecular mimicry.
+Diet may also be a factor in the development of type 1 diabetes.
+Intake of cow's milk during infancy is associated with an increased risk of type 1 diabetes.
+Intake of oats during infancy is associated with an increased risk of type 1 diabetes.
+Intake of gluten during infancy is associated with an increased risk of type 1 diabetes.
+Intake of dietary fiber during infancy is associated with an increased risk of type 1 diabetes.
+Sugar intake during infancy is weakly associated with the development of type 1 diabetes.
+Carbohydrate intake during infancy is weakly associated with the development of type 1 diabetes.
+Vitamin D supplementation during infancy is weakly associated with the development of type 1 diabetes.
+Nitrite intake during infancy is weakly associated with the development of type 1 diabetes.
+Protein intake during infancy is weakly associated with the development of type 1 diabetes.
+The mechanisms for the associations between dietary factors and type 1 diabetes are unclear.
+Later introduction of cow's milk, after 2 to 3 months, is a protective dietary factor for type 1 diabetes.
+Later introduction of gluten, after 3 to 6 months, is a protective dietary factor for type 1 diabetes.
+Later introduction of fruit, after 4 to 6 months, is a protective dietary factor for type 1 diabetes.
+Autoimmune diabetes can develop in adulthood and is often more slowly progressive than childhood type 1 diabetes.
+Latent autoimmune diabetes of adulthood, or LADA, is a form of autoimmune diabetes that develops in adulthood.
+Some cases of type 1 diabetes do not appear to be autoimmune in nature and are considered idiopathic type 1 diabetes.
+People with a family history of type 1 diabetes, such as siblings and children of people with type 1 diabetes, are at high risk of developing type 1 diabetes.
+People at high risk of type 1 diabetes can be tested for the presence of autoantibodies, including insulin autoantibodies.
+People at high risk of type 1 diabetes can be tested for the presence of autoantibodies, including glutamic acid decarboxylase autoantibodies.
+People at high risk of type 1 diabetes can be tested for the presence of autoantibodies, including insulinoma-associated-2-autoantibodies.
+People at high risk of type 1 diabetes can be tested for the presence of autoantibodies, including zinc transporter-8 autoantibodies.
+People at high risk of type 1 diabetes can be tested for the presence of autoantibodies, including islet cell autoantibodies.
+There are no therapies to completely prevent type 1 diabetes.
+Progression of type 1 diabetes from preclinical to diagnosable disease can be delayed with pharmacologic therapy.
+Teplizumab is a monoclonal antibody that binds to CD3 cell surface antigens on T cells, which leads to an increase in the proportion of regulatory T cells and exhausted CD8+ T cells and attenuates the autoimmune response that leads to beta-cell destruction in type 1 diabetes.
+Trials have shown that Teplizumab can delay onset of clinical type 1 diabetes and preserve beta-cell function in patients with type 1 diabetes.
+Antithymocyte globulin (ATG), tumor necrosis factor-alpha (TNF-alpha) inhibitors, and abatacept (CTLA-4-Ig) have shown some promise in preserving beta-cell function in patients with recent-onset type 1 diabetes.
+Verapamil may also preserve beta-cell function in patients with newly diagnosed type 1 diabetes.
+The study by Sims and colleagues provides a status report and perspective on screening for type 1 diabetes in the general population.
+The study by Herold and colleagues investigated the use of Teplizumab, an anti-CD3 antibody, in relatives at risk for type 1 diabetes.
+The study by Ramos and colleagues examined the effect of Teplizumab on beta-cell function in patients with newly diagnosed type 1 diabetes.
+Type 1 diabetes mellitus is characterized by islet cell destruction that generally precedes the initial presentation of type 1 diabetes mellitus, causing hyperglycemia and eventually symptoms when insulin production falls below a physiologic threshold in patients with type 1 diabetes mellitus.
+Type 1 diabetes mellitus progresses in stages, including Stage 1, Stage 2, and Stage 3, in patients with type 1 diabetes mellitus.
+Stage 1 of type 1 diabetes mellitus is characterized by the presence of ≥ 2 islet autoantibodies with normal plasma glucose and no symptoms in patients with type 1 diabetes mellitus.
+Stage 2 of type 1 diabetes mellitus is characterized by glucose intolerance or dysglycemia but no symptoms in patients with type 1 diabetes mellitus.
+Stage 3 of type 1 diabetes mellitus is characterized by clinical symptoms in patients with type 1 diabetes mellitus.
+More significant hyperglycemia, above 160 to 180 mg/dL, causes glycosuria and thus an osmotic diuresis, leading to urinary frequency, polyuria, and polydipsia that may progress to orthostatic hypotension and dehydration in patients with type 1 diabetes mellitus.
+Severe dehydration causes weakness, fatigue, and mental status changes in patients with type 1 diabetes mellitus.
+Symptoms of type 1 diabetes mellitus may come and go as plasma glucose levels fluctuate in patients with type 1 diabetes mellitus.
+Polyphagia may accompany symptoms of hyperglycemia in patients with type 1 diabetes mellitus, but is not typically a primary patient concern for patients with type 1 diabetes mellitus.
+Hyperglycemia can also cause weight loss, nausea and vomiting, and blurred vision, and it may predispose patients with type 1 diabetes mellitus to bacterial or fungal infections.
+Patients with type 1 diabetes may also present with diabetic ketoacidosis.
+Patients with type 1 diabetes experience a long but transient phase of near-normal glucose levels after the acute onset of type 1 diabetes, known as the honeymoon phase, due to partial recovery of insulin secretion in patients with type 1 diabetes.
+The diagnosis of type 1 diabetes mellitus is made using fasting plasma glucose, glycosylated hemoglobin, or oral glucose tolerance test.
+The diagnosis of type 1 diabetes mellitus may also use autoantibodies, C-peptide, or genetic markers.
+The diagnosis of type 1 diabetes may be suspected based upon typical symptoms of type 1 diabetes or a family history of elevated fasting plasma glucose or glycosylated hemoglobin level in patients with type 1 diabetes.
+The diagnosis of type 1 diabetes may be suspected based upon oral glucose tolerance test findings in patients with type 1 diabetes.
+The diagnosis of type 1 diabetes may be suspected based upon random glucose in the presence of certain symptoms of type 1 diabetes.
+Diabetes may be classified as Type 1 diabetes based on evidence of autoimmune destruction of beta cells in patients with diabetes.
+Autoimmune destruction of beta cells in patients with diabetes is characterized by the presence of autoantibodies, including antibodies to islet cells, glutamic acid decarboxylase, islet antigen 2, zinc transporter 8, and insulin in patients with diabetes.
+Low levels of C-peptide in patients with diabetes may indicate a lack of endogenous insulin production in patients with diabetes.
+Genetic markers may help distinguish Type 1 diabetes from Type 2 diabetes in patients with diabetes.
+The age of patients with diabetes at the time of presentation may suggest the classification of the patient's diabetes as Type 1 diabetes or Type 2 diabetes.
+Younger age at presentation is more common in patients with Type 1 diabetes than in patients with Type 2 diabetes.
+Polydipsia, polyuria, and diabetic ketoacidosis are more common presenting signs and symptoms of Type 1 diabetes in patients with diabetes.
+Adults with diabetes can develop Type 1 diabetes, in addition to children with diabetes.
+Age alone is not a reliable differentiator between Type 1 diabetes and Type 2 diabetes in patients with diabetes.
+The American Diabetes Association Professional Practice Committee publishes standards of care in diabetes, including diagnosis and classification of diabetes.
+The Diagnosis and Classification of Diabetes standards are outlined in the article "Standards of Care in Diabetes-2025" published in Diabetes Care in 2025.
+The article "Guidelines and Recommendations for Laboratory Analysis in the Diagnosis and Management of Diabetes Mellitus" published in Diabetes Care in 2023 provides guidelines for laboratory analysis in the diagnosis and management of diabetes mellitus.
+Patients with type 1 diabetes require insulin therapy.
+The American Diabetes Association and the European Association for the Study of Diabetes published a consensus report on the management of type 1 diabetes in adults in Diabetologia in 2021.
+Type 1 diabetes treatment includes insulin and glucose monitoring.
+Type 1 diabetes treatment includes dietary management.
+Type 1 diabetes treatment includes diabetes education.
+Renin-angiotensin-aldosterone system blockers, such as angiotensin-converting enzyme inhibitors or angiotensin II receptor blockers, are often used to prevent complications in patients with type 1 diabetes.
+Statins are often used to prevent complications in patients with type 1 diabetes.
+Patients with type 1 diabetes require patient education as a key element of their treatment.
+Patients with type 1 diabetes require dietary management as a key element of their treatment.
+Patients with type 1 diabetes require monitoring of glucose control as a key element of their treatment.
+The goal of basal-bolus insulin therapy in patients with type 1 diabetes is to replicate the pattern of insulin secretion of a person who does not have diabetes.
+Basal-bolus insulin therapy in patients with type 1 diabetes uses a longer-acting insulin to simulate basal insulin production that suppresses hepatic glucose production, especially in the fasting state.
+Basal-bolus insulin therapy in patients with type 1 diabetes uses a shorter-acting insulin before meals to control postprandial glucose excursions.
+A continuous subcutaneous infusion of rapid-acting insulin delivered by a pump can be used as a longer-acting insulin in basal-bolus therapy for patients with type 1 diabetes.
+Patients with type 1 diabetes should use carbohydrate counting or the carbohydrate exchange system to match insulin dose to carbohydrate intake and facilitate physiologic insulin replacement.
+The carbohydrate counting method involves calculating the preprandial insulin dose by counting the amount of carbohydrate in the meal.
+For patients with type 1 diabetes, a carbohydrate-to-insulin ratio of 15 gram:1 unit can be used to determine the preprandial insulin dose.
+Patients with type 1 diabetes will require 1 unit of rapid-acting insulin for each 15 grams of carbohydrate in a meal when using a carbohydrate-to-insulin ratio of 15 gram:1 unit.
+The carbohydrate-to-insulin ratios for patients with type 1 diabetes can vary significantly between patients with type 1 diabetes, depending on their degree of insulin sensitivity.
+The carbohydrate-to-insulin ratios for patients with type 1 diabetes must be tailored to the individual patient with type 1 diabetes and adjusted over time.
+Patients with type 1 diabetes should be educated that meals with higher protein or fat content can increase their insulin requirements.
+Patients with type 1 diabetes may require dose adjustments when consuming meals with higher protein or fat content.
+The carbohydrate counting approach requires detailed patient education for patients with type 1 diabetes.
+The carbohydrate counting approach is most successful when guided by a dietitian experienced in working with patients with type 1 diabetes.
+Some experts have advised using the glycemic index to delineate between rapid and slowly metabolized carbohydrates for patients with type 1 diabetes.
+The glycemic index is a measure of the impact of an ingested carbohydrate-containing food on the blood glucose level of patients with type 1 diabetes.
+There is no recommendation to support the use of glycemic index specifically for insulin dosing in patients with type 1 diabetes.
+Insulin pumps can be integrated with continuous glucose monitoring systems to provide real-time adjustment of insulin doses based on blood glucose levels.
+Automated insulin delivery systems, also known as hybrid closed-loop systems, are recommended for all patients with type 1 diabetes or other conditions who take multiple daily injections of insulin and have been shown to lower HbA1C levels and decrease hypoglycemia.
+Hybrid closed-loop systems are commonly used by patients with type 1 diabetes or other conditions, and some versions of hybrid closed-loop systems do not require daily fingerstick glucose testing to calibrate the glucose monitor.
+Hybrid closed-loop systems are especially useful in patients with type 1 diabetes, particularly for patients with type 1 diabetes who have hypoglycemia unawareness or nocturnal hypoglycemia.
+Hybrid closed-loop systems require patients with type 1 diabetes or other conditions to input carbohydrate intake prior to meals.
+Fully closed-loop systems, which are not yet available, will not require patients with type 1 diabetes or other conditions to input carbohydrate intake prior to meals.
+Sliding-scale insulin is a strategy in which varying doses of rapid-acting insulin are given to patients with type 1 diabetes or other conditions depending on the patient's plasma glucose level.
+A sliding scale insulin regimen on its own is not an effective strategy for maintaining euglycemia in patients with type 1 diabetes.
+Pramlintide, an amylin analogue produced by beta-cells, can be used as an adjunct to insulin for patients with type 1 diabetes or other conditions.
+An angiotensin-converting enzyme inhibitor or angiotensin II receptor blocker is recommended for patients with type 1 diabetes who have hypertension or chronic kidney disease, characterized by albuminuria and/or reduced glomerular filtration rate.
+A statin is recommended for all patients with type 1 diabetes who are 40 to 75 years old.
+A statin is recommended for patients with type 1 diabetes who are 20 to 39 years old and have additional risk factors for atherosclerotic cardiovascular disease.
+A statin is recommended for patients with type 1 diabetes and chronic kidney disease, regardless of age.
+The intensity of statin therapy for patients with type 1 diabetes depends upon specific risk factors for atherosclerotic cardiovascular disease.
+The risk of teratogenicity should be considered in all individuals with type 1 diabetes of childbearing potential.
+Formal diabetes education for patients with type 1 diabetes and their families, including diabetes self-management education and support, is often very effective.
+Diabetes self-management education and support for patients with type 1 diabetes has been shown to improve diabetes outcomes.
+Diabetes education for patients with type 1 diabetes is considered as important as pharmacologic therapy in managing type 1 diabetes.
+Diabetes education for patients with type 1 diabetes should include information about the causes of type 1 diabetes.
+Diabetes education for patients with type 1 diabetes should include information about diet.
+Diabetes education for patients with type 1 diabetes should include information about exercise.
+Diabetes education for patients with type 1 diabetes should include information about insulin and other medication use.
+Diabetes education for patients with type 1 diabetes should include information about adjusting insulin doses based on carbohydrate intake and glucose level.
+Diabetes education for patients with type 1 diabetes should include information about self-monitoring with fingerstick testing or continuous glucose monitoring.
+Diabetes education for patients with type 1 diabetes should include information about monitoring HbA1C.
+Diabetes education for patients with type 1 diabetes should include information about symptoms and signs of hypoglycemia, hyperglycemia, and diabetic complications.
+Diabetes education for patients with type 1 diabetes should be reinforced at every physician visit.
+Diabetes education for patients with type 1 diabetes should be reinforced at every hospitalization.
+Individualized medical nutrition therapy with a dietitian should complement physician counseling and diabetes education for patients with type 1 diabetes.
+The patient with type 1 diabetes and any person who prepares the patient's meals should be present during individualized medical nutrition therapy with a dietitian.
+The dietary management of patients with diabetes should be individualized based on the patient's age, size, activity level, tastes, preferences, culture, and goals.
+Patients with diabetes should be educated on consuming a diet rich in whole foods rather than processed foods to help control their glucose level.
+The diet of patients with diabetes should be formulated to accommodate requirements posed by comorbid conditions, such as heart disease or kidney disease.
+Carbohydrates in the diet of patients with diabetes should be high quality and should contain adequate amounts of fiber, vitamins, and minerals.
+The diet of patients with diabetes should be low in added sugar, fat, and sodium to help control fluctuations in their glucose level.
+Patients with diabetes should be educated about using carbohydrate consumption to guide bolus insulin dosing and improve their glucose control.
+The concept of the glycemic index, a measure of the impact of an ingested carbohydrate-containing food on the blood glucose level of patients with diabetes, may be useful in general dietary management.
+The glycemic index can help patients with diabetes make informed food choices to manage their blood glucose level.
+Exercise has been shown to decrease mortality in patients with diabetes.
+Regular physical activity has a direct positive impact on overall glycemic control in patients with diabetes.
+Regular physical activity has a direct positive impact on physical function in patients with diabetes.
+Regular physical activity has a direct positive impact on quality of life in patients with diabetes.
+Regular physical activity has a direct positive impact on cardiometabolic risk factors, including blood pressure, lipid profile, and depression, in patients with diabetes.
+Adults with diabetes and without physical limitations should exercise for a minimum of 150 minutes per week, divided over at least 3 days.
+For adults with diabetes who have physical limitations, physical activity should increase incrementally to whatever level the patient with diabetes can tolerate.
+Physical activity for patients with diabetes should include moderate or vigorous aerobic activity.
+Physical activity for patients with diabetes should include strength training.
+For older adults with diabetes, physical activity should include flexibility and balance training.
+Exercise has a variable short-term effect on blood glucose levels in patients with diabetes, depending on the timing of exercise in relation to meals and the duration, intensity, and type of exercise.
+In patients with type 1 diabetes, exercise can lead to hypoglycemia.
+Blood glucose levels should be monitored immediately before and after exercise in patients with diabetes.
+The target range for blood glucose levels prior to exercise in patients with diabetes should be between 90 mg/dL and 250 mg/dL.
+The target range for blood glucose levels prior to exercise in patients with diabetes should be between 5 mmol/L and 14 mmol/L.
+Patients who experience hypoglycemic symptoms during exercise should be advised to test their blood glucose and ingest carbohydrates or lower their insulin dose as needed so that their glucose is slightly above normal just before exercise.
+Hypoglycemia during vigorous exercise may require carbohydrate ingestion during the workout period, typically 5 to 15 g of sucrose or another simple sugar.
+Patients with known or suspected cardiovascular disease may benefit from a pre-exercise evaluation, possibly including exercise stress testing before beginning an exercise program.
+Activity goals may need to be modified for patients with complications of diabetes, such as neuropathy and retinopathy.
+All adults with diabetes, including type 1 diabetes, should undergo a comprehensive foot examination at least annually.
+Individuals with peripheral neuropathy, history of ulcers or amputations, or poorly controlled glucose, should have a foot examination at every visit.
+Certain guidelines recommend that all patients with diabetes should have a comprehensive foot examination at every visit.
+The assessment of neuropathy in patients with diabetes includes a 10 g monofilament test as well as pinprick, temperature, vibration testing.
+Patients with sensory loss or circulatory impairment require regular professional podiatric care, including trimming of toenails and calluses.
+Patients with sensory loss or circulatory impairment should be advised to inspect their feet daily for cracks, fissures, calluses, corns, and ulcers.
+The feet of patients with sensory loss or circulatory impairment should be washed daily in lukewarm water, using mild soap, and dried gently and thoroughly.
+A lubricant, such as lanolin, should be applied to dry, scaly skin of patients with sensory loss or circulatory impairment.
+Nonmedicated foot powders should be applied to the moist feet of patients with sensory loss or circulatory impairment.
+The toenails of patients with sensory loss or circulatory impairment should be cut, preferably by a podiatrist, straight across and not too close to the skin.
+Adhesive plasters and tape, harsh chemicals, corn cures, water bottles, and electric pads should not be used on the skin of patients with sensory loss or circulatory impairment.
+Patients with sensory loss or circulatory impairment should change their socks or stockings daily and not wear constricting clothing, such as garters, socks, or stockings with tight elastic tops.
+Shoes for patients with sensory loss or circulatory impairment should fit well, be wide-toed without open heels or toes, and be changed frequently.
+Special shoes should be prescribed to patients with sensory loss or circulatory impairment to reduce trauma if the foot is deformed, such as in the case of previous toe amputation, hammer toe, or bunion.
+Patients with sensory loss or circulatory impairment should avoid walking barefoot.
+Patients with neuropathic foot ulcers should avoid weight bearing until neuropathic foot ulcers heal.
+Patients with neuropathic foot ulcers should wear appropriate orthotic protection if they cannot avoid weight bearing.
+Most patients with neuropathic foot ulcers have little or no macrovascular occlusive disease.
+Debridement and antibiotics frequently result in good healing of neuropathic foot ulcers and may prevent major surgery in patients with neuropathic foot ulcers.
+Debridement and antibiotics are used to treat neuropathic foot ulcers in patients with neuropathic foot ulcers.
+Appropriate inserts or special shoes should be prescribed for patients with neuropathic foot ulcers after neuropathic foot ulcers have healed.
+Surgical removal of the metatarsal head may be required in refractory cases of neuropathic foot ulcers, especially if osteomyelitis is present in patients with neuropathic foot ulcers.
+Amputation of the involved toe may be required in refractory cases of neuropathic foot ulcers, especially if osteomyelitis is present in patients with neuropathic foot ulcers.
+Transmetatarsal amputation may be required in refractory cases of neuropathic foot ulcers, especially if osteomyelitis is present in patients with neuropathic foot ulcers.
+A neuropathic joint can often be satisfactorily managed with orthopedic devices, such as short leg braces, molded shoes, sponge-rubber arch supports, crutches, and prostheses, in patients with neuropathic joint.
+All patients with diabetes, including patients with type 1 diabetes, should be vaccinated against Streptococcus pneumoniae as per standard recommendations.
+All patients with diabetes, including patients with type 1 diabetes, should be vaccinated against influenza virus as per standard recommendations.
+All patients with diabetes, including patients with type 1 diabetes, should be vaccinated against hepatitis B as per standard recommendations.
+All patients with diabetes, including patients with type 1 diabetes, should be vaccinated against varicella as per standard recommendations.
+All patients with diabetes, including patients with type 1 diabetes, should be vaccinated against respiratory syncytial virus as per standard recommendations.
+All patients with diabetes, including patients with type 1 diabetes, should be vaccinated against SARS-CoV-2 as per standard recommendations.
+Pancreas transplantation is an alternative means of insulin delivery for patients with type 1 diabetes mellitus who are insulin deficient.
+Transplantation of pancreatic islet cells is an alternative means of insulin delivery for patients with type 1 diabetes mellitus who are insulin deficient.
+Pancreas transplantation effectively transplants insulin-producing beta-cells into patients with type 1 diabetes mellitus who are insulin deficient.
+Transplantation of pancreatic islet cells effectively transplants insulin-producing beta-cells into patients with type 1 diabetes mellitus who are insulin deficient.
+Stem-cell derived islet cell preparations, such as zimislecel and donislecel, are administered directly into the portal vein and have been successful in controlling hyperglycemia in patients with Type 1 Diabetes who have previously experienced treatment-limiting hypoglycemic episodes.
+The goals of Type 1 Diabetes treatment are to control hyperglycemia while minimizing hypoglycemic episodes, to relieve symptoms of Diabetes mellitus, and to prevent complications of Diabetes mellitus.
+Diabetes mellitus control can be monitored by measuring levels of Plasma glucose.
+Diabetes mellitus control can be monitored by measuring levels of HbA1C.
+Diabetes mellitus control can be monitored by measuring levels of Plasma fructosamine.
+Diabetes mellitus control can be monitored by measuring levels of Urine ketones when patients with Diabetes mellitus are symptomatic.
+The goal for glycemic control for most people with Diabetes mellitus is to have HbA1C levels less than 7% or less than 53 mmol/mol.
+The goal for glycemic control for most people with Diabetes mellitus is to have Preprandial blood glucose between 80 and 130 mg/dL or between 4.4 and 7.2 mmol/L.
+The goal for glycemic control for most people with Diabetes mellitus is to have Peak postprandial blood glucose less than 180 mg/dL or less than 10 mmol/L.
+The goal for glycemic control for most people with Diabetes mellitus using continuous glucose monitoring is to have a 14-day time in range greater than 70% with a target blood glucose range of 70 to 180 mg/mL or 3.9 to 9.9 mmol/L.
+The goals for glycemic control for patients with Diabetes mellitus may be adjusted to be less strict for Frail older patients with Diabetes mellitus.
+The goals for glycemic control for patients with Diabetes mellitus may be adjusted to be less strict for patients with Diabetes mellitus who have a short life expectancy.
+The goals for glycemic control for patients with Diabetes mellitus may be adjusted to be less strict for patients with Diabetes mellitus who experience repeated episodes of hypoglycemia.
+The goals for glycemic control for patients with Diabetes mellitus may be adjusted to be less strict for patients with Diabetes mellitus who experience repeated episodes of hypoglycemia and do not develop symptoms of hypoglycemia, also known as hypoglycemia unawareness.
+The goals for glycemic control for patients with Diabetes mellitus may be adjusted to be less strict for young children with Diabetes mellitus who cannot communicate the presence of hypoglycemia symptoms.
+The goals for glycemic control for patients with Diabetes mellitus may be adjusted to be less strict for patients with Diabetes mellitus and dementia who cannot communicate the presence of hypoglycemia symptoms.
+Clinicians may also recommend stricter glycemic goals, such as HbA1C levels less than 6.5%, in select patients with diabetes mellitus if these goals can be achieved without hypoglycemia.
+Patients with diabetes mellitus who are not being treated with medications that induce hypoglycemia are potential candidates for tighter glycemic control.
+Patients with diabetes mellitus who have had a shorter duration of less than 10 years of diabetes mellitus are potential candidates for tighter glycemic control.
+Patients with diabetes mellitus who have a long life expectancy are potential candidates for tighter glycemic control.
+Patients with diabetes mellitus who have no cardiovascular disease are potential candidates for tighter glycemic control.
+Glucose levels in patients with diabetes mellitus are typically determined by home monitoring of capillary blood glucose, such as from a fingerstick.
+Glucose levels in patients with diabetes mellitus are typically determined by continuous glucose monitoring.
+Home monitoring of capillary blood glucose and continuous glucose monitoring help patients with diabetes mellitus adjust dietary intake and insulin dosing.
+Home monitoring of capillary blood glucose and continuous glucose monitoring help physicians recommend adjustments in the timing and doses of medications for patients with diabetes mellitus.
+Most patients with type 1 diabetes mellitus benefit from testing blood glucose levels at least 4 times a day.
+The frequency of blood glucose testing in patients with diabetes mellitus depends on blood glucose levels, the patient's needs and abilities, and the complexity of the treatment regimen for diabetes mellitus.
+More frequent self-monitoring of blood glucose is recommended when blood glucose levels in patients with diabetes mellitus are suboptimal.
+More frequent self-monitoring of blood glucose is recommended when there are changes in the medication regimen for patients with diabetes mellitus.
+HbA1C levels measured in venous plasma are monitored every 3 months in patients with diabetes mellitus.
+HbA1C levels measured in venous plasma are monitored every 6 months in patients with diabetes mellitus who have consistently good control.
+Fingerstick glucose monitors measure capillary blood glucose.
+Many different glucose meters are available for measuring capillary blood glucose.
+Nearly all glucose meters require test strips and a means for pricking the skin and obtaining a blood sample from patients.
+The choice among glucose meter devices is usually based on patient preferences for features such as time to results, which usually ranges from 5 to 30 seconds.
+The choice among glucose meter devices is also based on patient preferences for size of display panel, with large screens benefiting patients with poor eyesight.
+The choice among glucose meter devices is also based on patient preferences for voice readout, which benefits patients with visual impairment.
+The choice among glucose meter devices is also based on patient preferences for smartphone app connectivity.
+The choice among glucose meter devices is also based on availability, affordability, and insurance coverage of test strips for patients.
+Continuous glucose monitoring systems estimate capillary blood glucose from interstitial glucose detected by a subcutaneous sensor.
+Continuous glucose monitoring systems can either provide glucose measurements continuously, known as real-time continuous glucose monitoring, or intermittently when scanned with a device, known as intermittently scanned continuous glucose monitoring.
+Continuous glucose monitoring systems provide real-time glucose data, including an alarm to warn patients of hypoglycemia.
+Continuous glucose monitoring systems provide real-time glucose data, including an alarm to warn patients of hyperglycemia.
+Continuous glucose monitoring systems provide real-time glucose data, including an alarm to warn patients of rapidly changing glucose levels.
+Continuous glucose monitoring systems have less stringent accuracy requirements than capillary blood glucose monitors.
+Continuous glucose monitoring systems allow users, including patients and clinicians, to assess for patterns of hyperglycemia that are not identified with fingerstick glucose monitoring.
+Continuous glucose monitoring systems allow users, including patients and clinicians, to assess for patterns of hypoglycemia that are not identified with fingerstick glucose monitoring.
+The use of continuous glucose monitoring systems has been shown to increase patients' time in target range, also known as time in range.
+The use of continuous glucose monitoring systems has been shown to decrease hemoglobin A1C, also known as HbA1C, in patients.
+The use of continuous glucose monitoring systems is recommended for all patients who are treated with intensive insulin therapy and can use the devices safely.
+Patients with diabetes who use Continuous Glucose Monitors have a Time In Range defined as the percentage of time blood glucose measurement on Continuous Glucose Monitors is within the target blood glucose range of 70 to 180 mg/mL over 14 days.
+A 14-day Time In Range greater than 70% is associated with decreased risk of diabetes complications in patients with diabetes.
+A 14-day Time In Range greater than 70% is inversely correlated with Hemoglobin A1C level in patients with diabetes.
+Time below the glucose range of less than 70 mg/dL should be less than 4% to decrease the risk of severe hypoglycemia in patients with diabetes.
+Time below the glucose range of less than 54 mg/dL should be less than 1% to decrease the risk of severe hypoglycemia in patients with diabetes.
+The Continuous Glucose Monitor target range should be individualized depending on the age of patients with diabetes, their comorbidities, and their risk of hypoglycemia.
+External Continuous Glucose Monitor sensors can be used for up to 2 weeks or before they need to be replaced in patients with diabetes.
+Implantable Continuous Glucose Monitor systems may last for 1 year in patients with diabetes.
+Clinicians can review the recorded data from Continuous Glucose Monitors to determine whether patients with diabetes are experiencing undetected hyperglycemia or hypoglycemia.
+Hemoglobin A1C levels reflect glucose control over the preceding 3 months in patients with diabetes.
+Hemoglobin A1C levels assess control between physician visits in patients with diabetes.
+Hemoglobin A1C should be assessed quarterly in patients with type 1 diabetes.
+The goal Hemoglobin A1C is less than 7% for most patients with diabetes.
+The goal Hemoglobin A1C should be individualized for patients with diabetes.
+Home testing kits for Hemoglobin A1C are available but are used infrequently by patients with diabetes.
+HbA1C values sometimes appear to differ from daily glucose readings because of falsely elevated or normal HbA1C values.
+False elevations of HbA1C may occur with low red blood cell turnover, such as iron deficiency anemia.
+False elevations of HbA1C may occur with low red blood cell turnover, such as folate deficiency anemia.
+False elevations of HbA1C may occur with low red blood cell turnover, such as vitamin B12 deficiency anemia.
+False elevations of HbA1C may occur with high doses of aspirin.
+False elevations of HbA1C may occur with high blood alcohol concentrations.
+Falsely normal HbA1C values occur with increased red blood cell turnover, such as hemolytic anemias.
+Falsely normal HbA1C values occur with increased red blood cell turnover, such as hemoglobinopathies, including HbS disease.
+Falsely normal HbA1C values occur with increased red blood cell turnover, such as hemoglobinopathies, including HbC disease.
+Falsely normal HbA1C values occur with increased red blood cell turnover during treatment of deficiency anemias.
+In patients with cirrhosis, correlation between HbA1C and glycemic levels is poor.
+In patients with chronic kidney disease stages 4 and 5, correlation between HbA1C and glycemic levels is poor.
+HbA1C can be falsely decreased in patients with cirrhosis.
+HbA1C can be falsely decreased in patients with chronic kidney disease stages 4 and 5.
+Pregnancy falsely decreases HbA1C values.
+Fructosamine reflects glucose control in the previous 1 to 2 weeks.
+Fructosamine is mostly glycosylated albumin but also comprises other glycosylated proteins.
+Fructosamine monitoring may be used during intensive treatment of diabetes.
+Fructosamine monitoring may be used for patients with hemoglobin variants.
+Fructosamine monitoring may be used for patients with high red blood cell turnover, which causes false HbA1C results.
+Self-measurement of urine ketones is recommended for patients with type 1 diabetes if patients with type 1 diabetes experience symptoms of ketoacidosis, such as nausea or vomiting, abdominal pain, fever, cold or flu-like symptoms, especially in the setting of hyperglycemia greater than 200 mg/dL.
+Self-measurement of urine ketones is recommended for patients with type 1 diabetes if patients with type 1 diabetes experience sustained hyperglycemia greater than 250 to 300 mg/dL during glucose self-monitoring.
+Urine glucose monitoring is inaccurate and not recommended for patients with type 1 diabetes.
+Most long-term complications that occur in patients with type 1 diabetes are the vascular, neurologic, and immunologic complications of diabetes.
+Some long-term complications that occur in patients with type 1 diabetes are related to autoimmune comorbidities specific to type 1 diabetes.
+Screening recommendations exist for both general complications of diabetes and specific complications of type 1 diabetes.
+Acute complications of type 1 diabetes, including diabetic ketoacidosis and hypoglycemia, are discussed elsewhere.
+Chronic hyperglycemia leads to complications that affect small vessels, or microvascular complications, in patients with type 1 diabetes.
+Chronic hyperglycemia leads to complications that affect large vessels, or macrovascular complications, in patients with type 1 diabetes.
+Chronic hyperglycemia leads to complications that affect both small and large vessels in patients with type 1 diabetes.
+Microvascular complications of type 1 diabetes include retinopathy, nephropathy, and neuropathy.
+Neuropathy is a heterogeneous long-term complication of type 1 diabetes, with multifactorial pathogenesis that includes toxic effects of hyperglycemia and advanced glycation end-products on nerves, and ischemia to nerves from microvascular disease of type 1 diabetes.
+Macrovascular complications of type 1 diabetes include atherosclerosis of large vessels leading to angina pectoris and myocardial infarction, transient ischemic attacks and strokes, and peripheral artery disease.
+Immune dysfunction is another major long-term complication of type 1 diabetes.
+Risk of complications of type 1 diabetes can be decreased by strict glycemic control and by management of hypertension and lipid levels in patients with type 1 diabetes.
+Specific measures for prevention of progression of complications of type 1 diabetes once detected are described separately under Long-Term Complications of type 1 diabetes.
+Patients with type 1 diabetes are at risk for other autoimmune diseases, including thyroid disease, celiac disease, and pernicious anemia.
+Thyroid disease is one of the most common comorbidities associated with type 1 diabetes.
+Celiac disease is one of the most common comorbidities associated with type 1 diabetes.
+Pernicious anemia, also known as vitamin B12 deficiency, is one of the most common comorbidities associated with type 1 diabetes.
+Addison disease is a less commonly associated disease with type 1 diabetes.
+Autoimmune liver disease is a less commonly associated disease with type 1 diabetes.
+Myasthenia gravis is a less commonly associated disease with type 1 diabetes.
+Adults with type 1 diabetes should undergo screening for retinopathy, a complication of type 1 diabetes, through dilated and comprehensive eye examination within 5 years of diagnosis, and then every 1 to 2 years.
+Patients with diabetes should undergo foot examination with pulses, reflexes, temperature or pinprick sensation, vibration, and monofilament testing for neuropathy and foot ulcers within 5 years of diabetes diagnosis, and then at least annually.
+Patients with diabetes should undergo spot urine albumin-to-creatinine ratio and estimated glomerular filtration rate (eGFR) testing for nephropathy within 5 years of diabetes diagnosis, and then annually.
+Patients with diabetes and hypertension should have their blood pressure measured at every visit.
+Patients with diabetes and atherosclerotic cardiovascular disease should undergo lipid profile testing soon after diabetes diagnosis, and then annually.
+Patients with diabetes and atherosclerotic cardiovascular disease may require additional screening depending on signs, symptoms, and additional risk factors.
+Patients with diabetes and heart failure should be considered for natriuretic peptide measurement.
+Patients with diabetes and peripheral artery disease should be considered for ankle-brachial index testing if they are 65 years or older and have microvascular disease, foot complications, or end-organ damage.
+Patients with diabetes and autoimmune thyroid disease should undergo thyroid function tests soon after diabetes diagnosis.
+Patients with diabetes and celiac disease should undergo testing in the presence of diarrhea, malabsorption, or abdominal pain.
+Patients with diabetes and pernicious anemia should undergo testing in the presence of peripheral neuropathy or unexplained anemia.
+Patients with diabetes may require additional cardiovascular screening, including risk stratification, electrocardiography, or other testing.
+Screening for microvascular complications in children with diabetes begins once the child has reached puberty or age 10 years, whichever is earlier, and 5 years after diabetes diagnosis.
+Children and adolescents with type 1 diabetes have similar specific screening recommendations as other patients with diabetes.
+The American Diabetes Association Professional Practice Committee published the Comprehensive Medical Evaluation and Assessment of Comorbidities standards in Diabetes Care, volume 48, issue 1 Suppl 1, pages S59-S85, in 2025.
+The American Diabetes Association Professional Practice Committee published the Cardiovascular Disease and Risk Management standards in Diabetes Care, volume 48, issue 1 Suppl 1, pages S207-S238, in 2025.
+The American Diabetes Association Professional Practice Committee published the Chronic Kidney Disease and Risk Management standards in Diabetes Care, volume 48, issue 1 Suppl 1, pages S239-S251, in 2025.
+The American Diabetes Association Professional Practice Committee published the Retinopathy, Neuropathy, and Foot Care standards in Diabetes Care, volume 48, issue 1 Suppl 1, pages S252-S265, in 2025.
+The Revised Pooled Cohort Equations 2018 are used for the 10-year Cardiovascular Risk Assessment.
+The Cardiovascular Risk Assessment is based on the Revised Pooled Cohort Equations 2018.

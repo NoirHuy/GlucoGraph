@@ -286,41 +286,49 @@ add_title(s, "1b. CÁC NGHIÊN CỨU TIỀN ĐỀ LIÊN QUAN")
 # Column 1
 draw_premium_card(
     s,
-    "Lập luận LLM & Đồ thị y tế",
+    "Kế thừa Lược đồ ràng buộc EDC",
     [
-        {"text": "Xu hướng y học lâm sàng:", "bold": True, "color": CYAN},
-        {"text": "Kết hợp thế mạnh biểu diễn lập luận ngôn ngữ tự nhiên của LLM và tính chính xác, minh bạch dữ liệu của Đồ thị tri thức (KG) trong môi trường lâm sàng y tế chuyên sâu [1][2]."}
+        {"text": "Thành tựu tiền đề:", "bold": True, "color": CYAN},
+        {"text": "Xây dựng thành công quy trình trích xuất ràng buộc 3 bước (Extract-Define-Canonicalize) giúp tự động hóa dựng đồ thị tri thức y sinh [4][5].", "size": 11.0},
+        {"text": "Hạn chế & Khoảng trống:", "bold": True, "color": CYAN, "space_before": 8},
+        {"text": "Chưa tối ưu hóa cho chuyên khoa tiểu đường phức tạp; thiếu cơ chế chuẩn hóa sâu để khử trùng lặp thực thể về siêu từ điển y học quy mô lớn.", "size": 11.0},
+        {"text": "Giải pháp cải tiến đề tài:", "bold": True, "color": CYAN, "space_before": 8},
+        {"text": "Kế thừa quy trình EDC, phát triển module tự động hóa ánh xạ ngữ nghĩa chuẩn hóa toàn bộ thực thể thô về mã UMLS CUI duy nhất ở Phase 3b.", "size": 11.0}
     ],
     top=Inches(1.2), left=Inches(0.6), width=Inches(3.8), height=Inches(5.4),
-    glow_color=CYAN, emoji="🧬", body_size=13.5
+    glow_color=CYAN, emoji="🧬"
 )
 
 # Column 2
 draw_premium_card(
     s,
-    "Tự động xây dựng KG y sinh",
+    "Học hỏi mô hình Local GraphRAG",
     [
-        {"text": "Thay thế phương pháp thủ công:", "bold": True, "color": EMERALD},
-        {"text": "Sử dụng Prompt engineering nâng cao [3] và các hệ thống mở rộng tự động như AutoBioKG [4]."},
-        {"text": "Framework EDC [5]:", "bold": True, "color": EMERALD, "space_before": 12},
-        {"text": "Giải quyết bài toán trích xuất y sinh ràng buộc lược đồ nghiêm ngặt, chuẩn hóa thực thể và quan hệ theo siêu từ điển y học."}
+        {"text": "Thành tựu tiền đề:", "bold": True, "color": EMERALD},
+        {"text": "Ứng dụng thành công GraphRAG lâm sàng trên mô hình ngôn ngữ lớn cục bộ (Local LLM) để bảo mật thông tin y tế chuyên sâu [2][3].", "size": 11.0},
+        {"text": "Hạn chế & Khoảng trống:", "bold": True, "color": EMERALD, "space_before": 8},
+        {"text": "Mới chỉ dừng lại ở các tác vụ hỏi đáp cơ bản; chưa tích hợp hệ thống ngắt mạch an toàn lâm sàng thời gian thực khi có xung đột phác đồ hoặc suy chức năng tạng.", "size": 11.0},
+        {"text": "Giải pháp cải tiến đề tài:", "bold": True, "color": EMERALD, "space_before": 8},
+        {"text": "Mở rộng động cơ GraphRAG cục bộ trên y văn Merck Manuals và xây dựng bộ ngắt mạch y khoa (Clinical Circuit Breaker) tự động phát hiện rủi ro để bảo vệ bệnh nhân.", "size": 11.0}
     ],
     top=Inches(1.2), left=Inches(4.7), width=Inches(3.9), height=Inches(5.4),
-    glow_color=EMERALD, emoji="⚙️", body_size=13.5
+    glow_color=EMERALD, emoji="⚙️"
 )
 
 # Column 3
 draw_premium_card(
     s,
-    "Thẩm định qua Multi-Agent",
+    "Áp dụng phản biện Multi-Agent",
     [
-        {"text": "Đánh giá chất lượng tự động:", "bold": True, "color": WARN_ROSE},
-        {"text": "Ứng dụng mô hình thẩm định tự động 'LLM-as-a-judge' kết hợp truy xuất tăng cường RAG [6]."},
-        {"text": "Giao thức phản biện chéo:", "bold": True, "color": WARN_ROSE, "space_before": 12},
-        {"text": "Sử dụng Giao thức Tranh luận Đa tác nhân (Multi-Agent Debate) của MIT & Google Brain [7] và ChatEval [8] đồng cấp để triệt tiêu tối đa hiện tượng ảo giác lâm sàng."}
+        {"text": "Thành tựu tiền đề:", "bold": True, "color": WARN_ROSE},
+        {"text": "Đề xuất giao thức tranh luận đa tác nhân (Multi-Agent Debate) đồng cấp giúp giảm thiểu ảo giác tri thức của mô hình ngôn ngữ lớn [6][7][8].", "size": 11.0},
+        {"text": "Hạn chế & Khoảng trống:", "bold": True, "color": WARN_ROSE, "space_before": 8},
+        {"text": "Mới đánh giá các tác vụ NLP hội thoại tổng quát; chưa xây dựng luật ngắt mạch y sinh học hoặc công thức chốt điểm đồng thuận để lọc dữ liệu trước khi nạp đồ thị.", "size": 11.0},
+        {"text": "Giải pháp cải tiến đề tài:", "bold": True, "color": WARN_ROSE, "space_before": 8},
+        {"text": "Hiện thực hóa giao thức thành cổng tự động thẩm định P2P Debate Gate, chốt điểm đồng thuận FCS >= 80 và tích hợp Luật phủ quyết lâm sàng (Clinical Veto).", "size": 11.0}
     ],
     top=Inches(1.2), left=Inches(8.9), width=Inches(3.8), height=Inches(5.4),
-    glow_color=WARN_ROSE, emoji="👥", body_size=13.5
+    glow_color=WARN_ROSE, emoji="👥"
 )
 
 
@@ -584,10 +592,10 @@ draw_premium_card(
     s,
     "Tài liệu khoa học liên quan (1 - 4)",
     [
-        {"text": "[1] H. Xu et al., \"medIKAL: Integrating KGs as Assistants of LLMs for Clinical Diagnosis on EMRs,\" IEEE TKDE, Feb. 2025.", "size": 12.5, "space_before": 10},
-        {"text": "[2] L. M. Nguyen et al., \"Local LLMs Integrated with GraphRAG for Gestational Diabetes Mellitus,\" Proc. IEEE BIBM, 2025.", "size": 12.5, "space_before": 10},
-        {"text": "[3] X. Li et al., \"LLM-Driven KG Construction for Personalized Diabetes Decision Support,\" IEEE JBHI, May 2024.", "size": 12.5, "space_before": 10},
-        {"text": "[4] Y. Zhang et al., \"AutoBioKG: Automated Context-Aware Biomedical KG Construction,\" IEEE/ACM TCBB, Jan. 2025.", "size": 12.5, "space_before": 10}
+        {"text": "[1] H. Xu et al., \"medIKAL: Integrating Knowledge Graphs as Assistants of LLMs for Enhanced Clinical Diagnosis on EMRs,\" in Proceedings of the 31st International Conference on Computational Linguistics (COLING), Jan. 2025.", "size": 11.5, "space_before": 10},
+        {"text": "[2] E. Evangelista et al., \"GraphRAG-Enabled Local Large Language Model for Gestational Diabetes Mellitus: Development of a Proof-of-Concept,\" JMIR Diabetes, vol. 11, e76454, Jan. 2026.", "size": 11.5, "space_before": 10},
+        {"text": "[3] X. Wang et al., \"Building an intelligent diabetes Q&A system with knowledge graphs and large models,\" Frontiers in Public Health, vol. 13, 2025.", "size": 11.5, "space_before": 10},
+        {"text": "[4] Y. Zheng et al., \"Automating Biomedical Knowledge Graph Construction For Context-Aware Scientific Inference,\" bioRxiv, Jan. 2026.", "size": 11.5, "space_before": 10}
     ],
     top=Inches(1.2), left=Inches(0.6), width=Inches(5.9), height=Inches(5.4),
     glow_color=CYAN, emoji="📚"
@@ -598,10 +606,10 @@ draw_premium_card(
     s,
     "Tài liệu khoa học liên quan (5 - 8)",
     [
-        {"text": "[5] E. Zhang & H. Soh, \"EDC: Extract-Define-Canonicalize Paradigm for Schema-Constrained KG Construction,\" EMNLP, Nov. 2024.", "size": 12.5, "space_before": 10},
-        {"text": "[6] M. J. R. Smith & K. L. Johnson, \"Multi-Agent Debate & Trust Validation for Clinical KGs,\" IEEE TNNLS, Mar. 2026.", "size": 12.5, "space_before": 10},
-        {"text": "[7] Y. Du, S. Li et al., \"Improving Factuality and Reasoning in LMs through Multiagent Debate,\" arXiv:2305.14325, 2023.", "size": 12.5, "space_before": 10},
-        {"text": "[8] C.-M. Chan et al., \"ChatEval: Towards better LLM-based evaluators through multi-agent debate,\" ICLR, May 2024.", "size": 12.5, "space_before": 10}
+        {"text": "[5] E. Zhang and H. Soh, \"Extract, Define, Canonicalize: An LLM-based Framework for Knowledge Graph Construction,\" in Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing, Miami, Florida, Nov. 2024, pp. 9548-9562.", "size": 11.5, "space_before": 10},
+        {"text": "[6] J. Wu et al., \"Evidence-based Medical Large Language Model via Graph Retrieval-Augmented Generation,\" in Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics, 2025, pp. 28443-28467.", "size": 11.5, "space_before": 10},
+        {"text": "[7] Y. Du, S. Li, A. Torralba, J. B. Tenenbaum, and I. Mordatch, \"Improving Factuality and Reasoning in Language Models through Multiagent Debate,\" in Proceedings of the 12th International Conference on Learning Representations (ICLR), May 2024.", "size": 11.5, "space_before": 10},
+        {"text": "[8] C.-M. Chan et al., \"ChatEval: Towards better LLM-based evaluators through multi-agent debate,\" in Proceedings of the 12th International Conference on Learning Representations (ICLR), May 2024, Art. no. 412.", "size": 11.5, "space_before": 10}
     ],
     top=Inches(1.2), left=Inches(6.8), width=Inches(5.9), height=Inches(5.4),
     glow_color=EMERALD, emoji="📚"

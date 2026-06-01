@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+sentence_rewriter.py — Sentence splitter and coreference resolution engine
+                        configured to strictly use OpenRouter API.
+"""
+
 import logging
 from typing import List
 import os
@@ -13,13 +19,18 @@ class SentenceRewriter:
     using an LLM, making each sentence standalone and suitable for Information Extraction.
     """
     def __init__(self, model_name: str = "meta-llama/llama-3.3-70b-instruct", temperature: float = 0.0):
+        openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
+        if not openrouter_api_key:
+            raise ValueError("OPENROUTER_API_KEY environment variable is not set in the environment or .env file.")
+            
+        logger.info("[SentenceRewriter] Initializing preprocessor LLM via OpenRouter API...")
         self.llm = ChatOpenAI(
             model=model_name, 
             temperature=temperature,
-            api_key=os.getenv("OPENROUTER_API_KEY"),
+            api_key=openrouter_api_key,
             base_url="https://openrouter.ai/api/v1"
         )
-        
+            
         self.prompt = PromptTemplate(
             input_variables=["section_headers", "chunk_content"],
             template=(

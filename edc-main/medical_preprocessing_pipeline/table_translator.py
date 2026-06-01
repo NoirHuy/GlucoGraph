@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+table_translator.py — Translates markdown tables into narrative text
+                      configured to strictly use OpenRouter API.
+"""
+
 import logging
 from typing import Optional
 import os
@@ -13,10 +19,15 @@ class TableTranslator:
     into flat, narrative clinical English sentences using an LLM.
     """
     def __init__(self, model_name: str = "meta-llama/llama-3.3-70b-instruct", temperature: float = 0.0):
+        openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
+        if not openrouter_api_key:
+            raise ValueError("OPENROUTER_API_KEY environment variable is not set in the environment or .env file.")
+            
+        logger.info("[TableTranslator] Initializing preprocessor LLM via OpenRouter API...")
         self.llm = ChatOpenAI(
             model=model_name, 
             temperature=temperature,
-            api_key=os.getenv("OPENROUTER_API_KEY"),
+            api_key=openrouter_api_key,
             base_url="https://openrouter.ai/api/v1"
         )
         

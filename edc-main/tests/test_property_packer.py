@@ -224,20 +224,121 @@ def test_labels_and_ontology_enrichment():
     treated_rels = [r for r in packed["relationships"] if r["type"] == "treated_by"]
     assert len(treated_rels) == 2
     
-    # Check 3: Local Ontology Mapping & Enrichment (Hybrid Approach)
+    # Check 3: Local Ontology Mapping & Enrichment (Dynamic Fallback when offline/no key)
     insulin_node = nodes_map["insulin"]
-    assert insulin_node["properties"]["umls_cui"] == "C0021853"
-    assert insulin_node["properties"]["umls_canonical"] == "Insulin"
-    assert insulin_node["properties"]["rxnorm_id"] == "RXN8609"
-    assert "peptide hormone" in insulin_node["properties"]["description"]
+    assert insulin_node["properties"]["umls_cui"] == "NONE"
+    assert insulin_node["properties"]["umls_canonical"] == "insulin"
+    assert insulin_node["properties"]["rxnorm_id"] == "NONE"
     
     diabetes_node = nodes_map["type 2 diabetes mellitus"]
-    assert diabetes_node["properties"]["umls_cui"] == "C0011860"
-    assert diabetes_node["properties"]["umls_canonical"] == "Type 2 Diabetes Mellitus"
-    assert diabetes_node["properties"]["icd10_code"] == "E11"
-    assert "chronic high blood sugar" in diabetes_node["properties"]["description"]
+    assert diabetes_node["properties"]["umls_cui"] == "NONE"
+    assert diabetes_node["properties"]["umls_canonical"] == "type 2 diabetes mellitus"
+    assert diabetes_node["properties"]["icd10_code"] == "NONE"
     
     logger.info("✅ test_labels_and_ontology_enrichment PASSED")
+
+
+def test_cui_primary_key_redirection_and_deduplication():
+    """Verify that nodes with identical CUIs are merged under the CUI as the primary key ID,
+    synonyms are saved to aliases, and relationship endpoints are remapped to the CUI.
+    """
+    class MockNormalizer:
+        def __init__(self):
+            self.api_key = "dummy_key"
+            
+        def query_term(self, term: str):
+            t = term.lower().strip()
+            if t in ["metformin", "glucophage"]:
+                return {
+                    "cui": "C0025598",
+                    "canonical": "Metformin",
+                    "semantic_type": "Pharmacologic Substance (T121)",
+                    "icd10_code": "NONE",
+                    "rxnorm_id": "6809",
+                    "definition": "A biguanide hypoglycemic agent."
+                }
+            elif t in ["type 2 diabetes", "t2dm"]:
+                return {
+                    "cui": "C0011860",
+                    "canonical": "Diabetes Mellitus, Non-Insulin-Dependent",
+                    "semantic_type": "Disease or Syndrome (T047)",
+                    "icd10_code": "E11",
+                    "rxnorm_id": "NONE",
+                    "definition": "A chronic metabolic disorder."
+                }
+            return {
+                "cui": "NONE",
+                "canonical": term,
+                "semantic_type": "Unknown",
+                "score": 0.0,
+                "icd10_code": "NONE",
+                "rxnorm_id": "NONE",
+                "definition": ""
+            }
+
+    # Setup OIE mock records
+    mock_records = [
+        {
+            "schema_definition": {
+                "_entries": [
+                    {
+                        "subject": "Glucophage",
+                        "subject_type": "Drug",
+                        "relation": "treated_by",
+                        "object": "type 2 diabetes",
+                        "object_type": "Disease"
+                    },
+                    {
+                        "subject": "metformin",
+                        "subject_type": "Drug",
+                        "relation": "treated_by",
+                        "object": "T2DM",
+                        "object_type": "Disease"
+                    }
+                ]
+            },
+            "schema_canonicalizaiton": [
+                ["Glucophage", "treated_by", "type 2 diabetes"],
+                ["metformin", "treated_by", "T2DM"]
+            ]
+        }
+    ]
+
+    normalizer = MockNormalizer()
+    packed = pack_properties(mock_records, normalizer=normalizer)
+    
+    # Assert CUI redirection
+    nodes_map = {n["id"]: n for n in packed["nodes"]}
+    
+    # There should only be CUI-based nodes!
+    assert "C0025598" in nodes_map
+    assert "C0011860" in nodes_map
+    assert "Glucophage" not in nodes_map
+    assert "metformin" not in nodes_map
+    assert "type 2 diabetes" not in nodes_map
+    assert "T2DM" not in nodes_map
+
+    # Assert aliases & properties merging
+    metformin_node = nodes_map["C0025598"]
+    assert metformin_node["properties"]["umls_cui"] == "C0025598"
+    assert metformin_node["properties"]["umls_canonical"] == "Metformin"
+    assert metformin_node["properties"]["rxnorm_id"] == "6809"
+    assert metformin_node["properties"]["description"] == "A biguanide hypoglycemic agent."
+    
+    # Original raw names should be in the aliases list
+    aliases = metformin_node["properties"]["aliases"]
+    assert "Glucophage" in aliases
+    assert "metformin" in aliases
+    
+    # Assert relationship re-mapping
+    rels = packed["relationships"]
+    assert len(rels) == 1  # The duplicate was merged!
+    rel = rels[0]
+    assert rel["start"] == "C0025598"
+    assert rel["end"] == "C0011860"
+    assert rel["type"] == "treated_by"
+    
+    logger.info("✅ test_cui_primary_key_redirection_and_deduplication PASSED")
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -256,7 +357,8 @@ if __name__ == "__main__":
         test_is_value_like,
         test_pack_titration_merging,
         test_pack_standalone_node_properties,
-        test_labels_and_ontology_enrichment
+        test_labels_and_ontology_enrichment,
+        test_cui_primary_key_redirection_and_deduplication
     ]
     
     passed = 0

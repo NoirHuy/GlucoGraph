@@ -1,0 +1,1613 @@
+{
+    "type 1 diabetes mellitus": {
+        "cui": "NONE",
+        "canonical": "type 1 diabetes mellitus",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin": {
+        "cui": "C0021641",
+        "canonical": "Insulin",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Hormon slinivky břišní tvořený v beta-buňkách Langerhansových ostrůvků. Peptid tvořený dvěma řetězci (A, B) spojenými C-peptidem. Je důležitý pro regulaci glykemie a pro metabolismus sacharidů, ovlivňuje však i metabolismus bílkovin a lipidů. Působí anabolicky, tlumí lipolýzu. Jeho vylučování stoupá po jídle jako odpověď na vzestup glukosy v krvi (jeho vylučování ovlivňují i některé další hormony a nervové vlivy, regulace souvisí s funkcí membránových přenašečů a iontových kanálů na beta-buňce, ovlivňuje jej např. kalemie), umožňuje její vstup do buněk a její další využití (zisk energie, uložení do zásoby). Na i. je závislý glukosový transportér GLUT4. V cílových tkáních (zejm. svalová a tuková tkáň, játra) působí přes specifický receptor, který má charakter tyrosinkinázy (v tom i v některých dalších vlastnostech se podobá růstovým faktorům, což mj. souvisí s vlivem hyperinzulinemie na proces aterogeneze). Při jeho absolutním nedostatku nebo nedostatečném účinku (inzulinové rezistenci) vzniká diabetes mellitus (typu 1, resp. 2). I. existuje i jako lék. V minulosti se používaly purifikované i. vepřové a hovězí, nověji se používá humánní i., vyrobený metodami genového inženýrství. I. k léčebnému použití se dělí podle rychlosti nástupu účinku a doby působení a liší se způsobem podání. Rizikem léčby i. je předávkování s hypoglykemií, zejm. u starších inzulinů existovalo riziko alergizace a vzniku protilátek. I. také zvyšuje vstup kalia do buněk a lze jej spolu s glukosou použít k léčbě hyperkalemie. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "destruction of the pancreatic beta-cells": {
+        "cui": "NONE",
+        "canonical": "destruction of the pancreatic beta-cells",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "inadequate insulin production": {
+        "cui": "NONE",
+        "canonical": "inadequate insulin production",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "ketoacidosis": {
+        "cui": "C0220982",
+        "canonical": "Ketoacidosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Název někdy používaný pro hromadění ketolátek, popř. až ketoacidózu. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+    },
+    "type 2 diabetes": {
+        "cui": "C0011860",
+        "canonical": "Diabetes Mellitus, Non-Insulin-Dependent",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.1,
+        "icd10_code": "E11",
+        "rxnorm_id": "NONE",
+        "definition": "Typ diabetu, který není závislý na inzulinu. Je charakterizovaný nejprve inzulinovou rezistencí a hyperinzulinemií a posléze glukózovou intolerancí, hyperglykemií a zjevným diabetem. Výskyt tohoto typu není omezený jen na dospělou populaci. Pacienti jsou často obézní, ale málokdy se u nich vyvine ketóza."
+    },
+    "basal-bolus dosing": {
+        "cui": "NONE",
+        "canonical": "basal-bolus dosing",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin replacement": {
+        "cui": "NONE",
+        "canonical": "insulin replacement",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "type 1 diabetes": {
+        "cui": "C0011854",
+        "canonical": "Diabetes Mellitus, Insulin-Dependent",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.1,
+        "icd10_code": "E10",
+        "rxnorm_id": "NONE",
+        "definition": "Typ diabetu, pro který je charakteristický deficit inzulinu. Projevuje se náhle těžkou hyperglykemií a rychle se vyvíjející diabetickou ketoacidózou. Pokud se neléčí inzulinem, končí fatálně. Onemocnění může vzniknout v jakémkoli věku, ale nejčastěji se objevuje v dětství a v adolescenci."
+    },
+    "insulin pump": {
+        "cui": "NONE",
+        "canonical": "insulin pump",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "rapid- or short-acting insulin": {
+        "cui": "NONE",
+        "canonical": "rapid- or short-acting insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "high blood glucose level": {
+        "cui": "C2919432",
+        "canonical": "Glucose in blood specimen above reference range",
+        "semantic_type": "Finding (T033)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "additional boluses": {
+        "cui": "NONE",
+        "canonical": "additional boluses",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin lispro": {
+        "cui": "C0293359",
+        "canonical": "insulin lispro",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "86009",
+        "definition": "Inzulin, který byl upraven tak, že v B-řetězci je v poloze 28 lysin místo prolinu a v poloze 29 prolin místo lysinu. Používá se k úpravě hladiny krevní glukózy u pacientů s diabetes mellitus 2. typu."
+    },
+    "rapid-acting insulins": {
+        "cui": "NONE",
+        "canonical": "Rapid-acting insulins",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin aspart": {
+        "cui": "C1708521",
+        "canonical": "Insulin Aspart",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Inzulin, který byl modifikován tak, aby v poloze 38 B-řetězce obsahoval místo prolinu kyselinu aspartovou."
+    },
+    "postprandial glucose spikes": {
+        "cui": "NONE",
+        "canonical": "postprandial glucose spikes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "inhaled regular insulin": {
+        "cui": "NONE",
+        "canonical": "Inhaled regular insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "rapid-acting insulin": {
+        "cui": "NONE",
+        "canonical": "rapid-acting insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin isophane": {
+        "cui": "C0021658",
+        "canonical": "insulin isophane",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1605101",
+        "definition": "Střednědobě působící inzulinový přípravek s nástupem účinku za 2 hodiny a trváním 24 hodin. Vyrábí se krystalizací protamin-zink-inzulinu při neutrálním pH 7. Proto se podle vynálezce Hanse Christiana Hagedorna nazývá neutrální protamin Hagedorn."
+    },
+    "intermediate-acting insulin": {
+        "cui": "NONE",
+        "canonical": "intermediate-acting insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin glargine": {
+        "cui": "C0907402",
+        "canonical": "insulin glargine",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "274783",
+        "definition": "Rekombinantní dlouhodobě působící inzulin a hypoglykemická látka. Používá se k regulaci krevní glukózy u pacientů s diabetes mellitus."
+    },
+    "long-acting insulin": {
+        "cui": "C0304870",
+        "canonical": "Insulin, Long-Acting",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Inzulinové přípravky obsahující látky, které zpomalují vstřebávání, čímž prodlužují dobu působení."
+    },
+    "insulin icodec": {
+        "cui": "C5434213",
+        "canonical": "insulin icodec",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "weekly insulin": {
+        "cui": "NONE",
+        "canonical": "weekly insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "mixing insulins": {
+        "cui": "C0356369",
+        "canonical": "Biphasic Insulins",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Inzulinový přípravek, který je navržen tak, aby v jedné dávce poskytoval okamžitou a dlouhodobou kontrolu glykemie. Dvoufázový inzulin typicky obsahuje směs regular inzulinu nebo krátkodobě působícího inzulinu v kombinaci s dlouhodobě působícím inzulinem."
+    },
+    "variability of effect": {
+        "cui": "NONE",
+        "canonical": "variability of effect",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glycemic control less predictable": {
+        "cui": "NONE",
+        "canonical": "glycemic control less predictable",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "intensive treatment": {
+        "cui": "NONE",
+        "canonical": "intensive treatment",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "less frequent treatment": {
+        "cui": "NONE",
+        "canonical": "less frequent treatment",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "intensive therapy": {
+        "cui": "NONE",
+        "canonical": "intensive therapy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hypoglycemia": {
+        "cui": "C0020615",
+        "canonical": "Hypoglycemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "E16.2",
+        "rxnorm_id": "NONE",
+        "definition": "Nízká koncentrace krevního cukru (glukosy). Vede k závažným poruchám činnosti mozku, který je na přívodu cukru krví závislý. K příznakům patří slabost, hlad, třes, studený pot, zmatenost až bezvědomí (hypoglykemické kóma), někdy i s křečemi (kombinují se důsledky nedostatku glukosy v CNS a aktivace sympatiku). Nejč. k h. dochází při léčbě cukrovky předávkováním inzulinu nebo perorálních antidiabetik (roli může mít např. snížený příjem potravy, zvracení, výrazná fyzická námaha aj.). První pomocí i léčbou, která zlepší stav takřka okamžitě, je podání glukosy, ev. glukagonu i.m. K h. může dojít i při vytrvalostním sportu, po požití velkého množství alkoholu, u vzácného nádoru slinivky produkujícího velká množství inzulinu (inzulinom). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "weight gain": {
+        "cui": "C0043094",
+        "canonical": "Weight Gain",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Zvýšení tělesné hmotnosti během časového intervalu."
+    },
+    "1800 rule": {
+        "cui": "NONE",
+        "canonical": "1800 rule",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "regular insulin": {
+        "cui": "C0021641",
+        "canonical": "Insulin",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Hormon slinivky břišní tvořený v beta-buňkách Langerhansových ostrůvků. Peptid tvořený dvěma řetězci (A, B) spojenými C-peptidem. Je důležitý pro regulaci glykemie a pro metabolismus sacharidů, ovlivňuje však i metabolismus bílkovin a lipidů. Působí anabolicky, tlumí lipolýzu. Jeho vylučování stoupá po jídle jako odpověď na vzestup glukosy v krvi (jeho vylučování ovlivňují i některé další hormony a nervové vlivy, regulace souvisí s funkcí membránových přenašečů a iontových kanálů na beta-buňce, ovlivňuje jej např. kalemie), umožňuje její vstup do buněk a její další využití (zisk energie, uložení do zásoby). Na i. je závislý glukosový transportér GLUT4. V cílových tkáních (zejm. svalová a tuková tkáň, játra) působí přes specifický receptor, který má charakter tyrosinkinázy (v tom i v některých dalších vlastnostech se podobá růstovým faktorům, což mj. souvisí s vlivem hyperinzulinemie na proces aterogeneze). Při jeho absolutním nedostatku nebo nedostatečném účinku (inzulinové rezistenci) vzniká diabetes mellitus (typu 1, resp. 2). I. existuje i jako lék. V minulosti se používaly purifikované i. vepřové a hovězí, nověji se používá humánní i., vyrobený metodami genového inženýrství. I. k léčebnému použití se dělí podle rychlosti nástupu účinku a doby působení a liší se způsobem podání. Rizikem léčby i. je předávkování s hypoglykemií, zejm. u starších inzulinů existovalo riziko alergizace a vzniku protilátek. I. také zvyšuje vstup kalia do buněk a lze jej spolu s glukosou použít k léčbě hyperkalemie. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "1500 rule": {
+        "cui": "NONE",
+        "canonical": "1500 rule",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin resistance": {
+        "cui": "NONE",
+        "canonical": "insulin resistance",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "variability in glucose levels": {
+        "cui": "NONE",
+        "canonical": "variability in glucose levels",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "continuous subcutaneous insulin infusion pumps": {
+        "cui": "NONE",
+        "canonical": "Continuous subcutaneous insulin infusion pumps",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin deficiency": {
+        "cui": "C4302207",
+        "canonical": "Neonatal hyperglycemia due to insulin deficiency",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 4.09,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "reduction in loss of glucose in urine": {
+        "cui": "NONE",
+        "canonical": "reduction in loss of glucose in urine",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "moderate hypoglycemia": {
+        "cui": "NONE",
+        "canonical": "moderate hypoglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "palpitations": {
+        "cui": "C0030252",
+        "canonical": "Palpitations",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "R00.2",
+        "rxnorm_id": "NONE",
+        "definition": "A sensation that the heart is pounding or racing, which is a non-specific sign but may be a manifestation of arrhythmia. [https://orcid.org/0000-0002-0736-9199]"
+    },
+    "mild hypoglycemia": {
+        "cui": "NONE",
+        "canonical": "mild hypoglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "light-headedness": {
+        "cui": "NONE",
+        "canonical": "light-headedness",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "blurred vision": {
+        "cui": "C0344232",
+        "canonical": "Blurred vision",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Lack of sharpness of vision resulting in the inability to see fine detail. [https://orcid.org/0000-0002-0736-9199]"
+    },
+    "agitation": {
+        "cui": "C0085631",
+        "canonical": "Agitation",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "A state of restlessness associated with unpleasant feelings of irritability and tension. Causes include pain, stress, fever, alcohol and nicotine withdrawal, cocaine and hallucinogenic drugs use, depression, bipolar disorders, and schizophrenia."
+    },
+    "confusion": {
+        "cui": "NONE",
+        "canonical": "confusion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "seizures": {
+        "cui": "C0036572",
+        "canonical": "Seizures",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Klinické nebo subklinické poruchy funkce kortikálních nervových buněk, kdy dochází k náhlému, nekontrolovanému elektrickému výboji v šedé hmotě mozku. Klinické příznaky zahrnují abnormální motorické, senzorické a psychické jevy. Opakované záchvaty jsou obvykle diagnostikované jako epilepsie nebo záchvatovité poruchy."
+    },
+    "stroke": {
+        "cui": "NONE",
+        "canonical": "stroke",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "myocardial infarction": {
+        "cui": "C0027051",
+        "canonical": "Myocardial Infarction",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "I21",
+        "rxnorm_id": "NONE",
+        "definition": "Odumření části myokardu vzniklé přerušením krevního zásobení. Příčinou bývá uzávěr některého úseku koronární tepny, nejč. při její ateroskleróze, s následnou těžkou ischemií příslušného okrsku tkáně. Rizikové faktory IM jsou v podstatě shodné s rizikovými faktory aterosklerózy. Onemocnění se klasicky projevuje silnou bolestí na hrudi, úzkostí, pocením. Někdy mohou nastat zažívací obtíže, projevem může být rovněž srdeční selhání. V důsledku elektrické nestability mohou vznikat arytmie, nejzávažnější je vznik fibrilace komor. Při diagnóze infarktu se uplatňuje EKG, laboratorní vyšetření, echokardiografie, rtg, scintigrafie aj. Podle EKG lze odhadnout lokalizaci i stáří infarktu. Kromě rozsahu IM je důležitá též jeho lokalizace (související s postiženou koronární tepnou) a hloubka. Nejč. lokalizacemi jsou IM spodní stěny (tzv. diafragmatický) při postižení a. coronaria dextra a IM přední (anteroseptální) stěny při postižení r. interventricularis anterior nebo IM postranní (anterolaterální) stěny při postižení r. circumflexus. Včasná léčba zabrání rozvoji nekrózy či zmenší ložisko infarktu. I později je vhodné řešení stavu koronárních tepen (angioplastika, bypass). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "sulfonylureas": {
+        "cui": "NONE",
+        "canonical": "sulfonylureas",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "symptoms of hypoglycemia": {
+        "cui": "NONE",
+        "canonical": "symptoms of hypoglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sugar": {
+        "cui": "C0242209",
+        "canonical": "Sugars",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 2.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Short chain carbohydrate molecules that have hydroxyl groups attached to each carbon atom unit with the exception of one carbon that has a doubly-bond aldehyde or ketone oxygen. Cyclical sugar molecules are formed when the aldehyde or ketone groups respectively form a hemiacetal or hemiketal bond with one of the hydroxyl carbons. The three dimensional structure of the sugar molecule occurs in a vast array of biological and synthetic classes of specialized compounds including AMINO SUGARS; CARBASUGARS; DEOXY SUGARS; SUGAR ACIDS; SUGAR ALCOHOLS; and SUGAR PHOSPHATES."
+    },
+    "oral glucose": {
+        "cui": "NONE",
+        "canonical": "oral glucose",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sucrose": {
+        "cui": "C0038636",
+        "canonical": "sucrose",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "10159",
+        "definition": "Neredukující disacharid složený z glukózy a fruktózy spojených anomerními uhlíky. Komerčně se získává z cukrové třtiny, cukrové řepy (Beta vulgaris) a dalších rostlin a hojně se používá jako potravina a sladidlo."
+    },
+    "dextrose": {
+        "cui": "NONE",
+        "canonical": "dextrose",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucagon": {
+        "cui": "C0017687",
+        "canonical": "glucagon",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "4832",
+        "definition": "Peptidový hormon tvořený v Langerhansových ostrůvcích ve slinivce břišní. Má opačné účinky než inzulin (zvyšuje např. hladinu cukru v krvi - glykemii). Používá se v endokrinologické diagnostice (glukagonový test), terapeuticky kromě hypoglykemie se zvažuje využití účinků spasmolytických, pozitivně inotropních aj. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "dasiglucagon": {
+        "cui": "C5139868",
+        "canonical": "dasiglucagon",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "2535233",
+        "definition": ""
+    },
+    "counter-regulatory response": {
+        "cui": "NONE",
+        "canonical": "counter-regulatory response",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "morning hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "morning hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "intracellular shifts of potassium": {
+        "cui": "NONE",
+        "canonical": "intracellular shifts of potassium",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hypokalemia": {
+        "cui": "C0020621",
+        "canonical": "Hypokalemia",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "E87.6",
+        "rxnorm_id": "NONE",
+        "definition": "Nízká koncentrace draslíku v krvi. Vzniká při větších ztrátách kalia močí např. v polyurické fázi renálního selhání, při léčbě diuretiky (furosemidem, saluretiky), při hyperaldosteronismu, v důsledku ztrát při průjmech atd. Způsobuje svalovou slabost, poruchu trávení (hypotonie hladkých svalů), poruchy srdeční činnosti (arytmie), ledvin aj. Na EKG se projevuje zvýrazněním vlny U. (cit. Velký lékařský slovník online, 2012, http://lekarske.slovniky.cz/ )"
+    },
+    "insulin injections": {
+        "cui": "NONE",
+        "canonical": "Insulin injections",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "local allergic reactions": {
+        "cui": "NONE",
+        "canonical": "Local allergic reactions",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "latex allergy": {
+        "cui": "NONE",
+        "canonical": "latex allergy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "human insulins": {
+        "cui": "C0795635",
+        "canonical": "insulin, regular, human",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "253182",
+        "definition": "Běžné inzulínové přípravky, které obsahují peptidové sekvence lidského inzulinu."
+    },
+    "generalized allergic reaction": {
+        "cui": "NONE",
+        "canonical": "generalized allergic reaction",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "desensitization": {
+        "cui": "NONE",
+        "canonical": "desensitization",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "lipohypertrophy": {
+        "cui": "NONE",
+        "canonical": "Lipohypertrophy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "rotating injection sites": {
+        "cui": "C2711433",
+        "canonical": "Does rotate site of insulin injection",
+        "semantic_type": "Finding (T033)",
+        "score": 1.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "circulating anti-insulin antibodies": {
+        "cui": "NONE",
+        "canonical": "circulating anti-insulin antibodies",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "changing insulin preparations": {
+        "cui": "NONE",
+        "canonical": "changing insulin preparations",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "switching from animal to human insulin": {
+        "cui": "NONE",
+        "canonical": "switching from animal to human insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucocorticoids": {
+        "cui": "NONE",
+        "canonical": "glucocorticoids",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "immunosuppressants": {
+        "cui": "NONE",
+        "canonical": "immunosuppressants",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "type 2 diabetes mellitus": {
+        "cui": "NONE",
+        "canonical": "type 2 diabetes mellitus",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "oral antihyperglycemic medications": {
+        "cui": "NONE",
+        "canonical": "Oral antihyperglycemic medications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glyburide": {
+        "cui": "C0017628",
+        "canonical": "glyburide",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "4815",
+        "definition": "Perorální antidiabetikum, derivát sulfonylmočoviny II. generace. Má podobné účinky jako chlorpropamid. (upraveno podle: Velký lékařský slovník online, 2022 http://lekarske.slovniky.cz)"
+    },
+    "glipizide": {
+        "cui": "C0017642",
+        "canonical": "glipizide",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "4821",
+        "definition": "1-cyclohexyl-3-(p-(2-(5-methyl pyrazinecarboxamido) ethyl) phenyl) sulfonylurea; a typical member of the sulfonylurea family of type II (NIDDM) antidiabetic drugs."
+    },
+    "glimepiride": {
+        "cui": "C0061323",
+        "canonical": "glimepiride",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "25789",
+        "definition": "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C29073\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C29073\" NCI Thesaurus)"
+    },
+    "insulin secretagogues": {
+        "cui": "C5690720",
+        "canonical": "Insulin Secretagogues",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Hypoglykemické látky, které stimulují (zvyšují) sekreci inzulinu z β-buněk pankreatu a tím ovlivňují postprandiální glykémii."
+    },
+    "hyperinsulinemia": {
+        "cui": "NONE",
+        "canonical": "hyperinsulinemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "long-acting medications": {
+        "cui": "NONE",
+        "canonical": "long-acting medications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "permanent neurologic disability": {
+        "cui": "NONE",
+        "canonical": "permanent neurologic disability",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "death": {
+        "cui": "NONE",
+        "canonical": "death",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "chlorpropamide": {
+        "cui": "C0008287",
+        "canonical": "chlorpropamide",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "2404",
+        "definition": "Derivát sulfonylmočoviny dříve používaný k léčbě cukrovky II. typu neodpovídající na dietu."
+    },
+    "syndrome of inappropriate adh secretion": {
+        "cui": "C0021141",
+        "canonical": "Inappropriate ADH Syndrome",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.9,
+        "icd10_code": "E22.2",
+        "rxnorm_id": "NONE",
+        "definition": "Paraneoplastický syndrom nadměrné sekrece antidiuretického hormonu, která komplikuje vysoce maligní plicní karcinom a vede k hyponatremii. Nadměrná produkce neodráží aktuální stav osmolality (je zvýšená navzdory současné hyposmolalitě). Příčinou jsou některé nádory s ektopickou produkcí ADH, nitrolební chorobné procesy, plicní onemocnění, vlivy některých léků a některé další chorobné stavy (např. akutní porfyrie). Projevuje se hyponatremií, zadržováním vody a v těžších případech příznaky postižení mozku v důsledku jeho edému. V léčbě je nutná přísná kontrola příjmu tekutin a zejm. léčba vyvolávající příčiny, která je rozhodující i pro prognózu. (cit. Velký lékařský slovník online, 2018 http://lekarske.slovniky.cz)"
+    },
+    "diabetes mellitus": {
+        "cui": "C0011849",
+        "canonical": "Diabetes Mellitus",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "E08-E13",
+        "rxnorm_id": "NONE",
+        "definition": "Heterogenní skupina chronických metabolických chorob, jejichž základním projevem je hyperglykemie a porušená glukózová tolerance. Vzniká v důsledku nedostatku inzulinu, jeho nedostatečného účinku (někdy se mluví o relativním nedostatku) nebo kombinací obojího. (cit. Wikiskripta 2017 http://www.wikiskripta.eu/)"
+    },
+    "worsening of insulin secretion": {
+        "cui": "NONE",
+        "canonical": "worsening of insulin secretion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hepatic glucose production": {
+        "cui": "NONE",
+        "canonical": "hepatic glucose production",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "biguanides (metformin)": {
+        "cui": "NONE",
+        "canonical": "Biguanides (metformin)",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "lipid levels": {
+        "cui": "NONE",
+        "canonical": "lipid levels",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "biguanides": {
+        "cui": "C0005382",
+        "canonical": "Biguanides",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Deriváty biguanidu (vzorec HN(C(NH)NH2)2), které se primárně používají jako perorální hypoglykemika k léčbě prediabetes a diabetes mellitus 2. typu."
+    },
+    "metformin": {
+        "cui": "C0025598",
+        "canonical": "metformin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "6809",
+        "definition": "Hypoglykemikum ze skupiny biguanidů. Používá se k léčbě diabetes mellitus 2. typu. Metformin zlepšuje senzitivitu k inzulinu a snižuje absorpci glukózy ve střevech. Tím příznivě ovlivňuje kontrolu glykemie."
+    },
+    "biguanide": {
+        "cui": "NONE",
+        "canonical": "biguanide",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "diarrhea": {
+        "cui": "C0011991",
+        "canonical": "Diarrhea",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R19.7",
+        "rxnorm_id": "NONE",
+        "definition": "Porucha zažívání, která se projevuje častým vyprazdňováním řídké stolice. Průjem je definován jako neformovaná stolice více než 3× za den, případně vodnatá stolice s překotným vyprázdněním a s přetrvávajícím nutkáním. (cit. Wikipedie 2016 http://www.cs.wikipedia.org/)"
+    },
+    "gastrointestinal adverse effects": {
+        "cui": "NONE",
+        "canonical": "gastrointestinal adverse effects",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "vitamin b12 malabsorption": {
+        "cui": "NONE",
+        "canonical": "vitamin B12 malabsorption",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "lactic acidosis": {
+        "cui": "C0001125",
+        "canonical": "Acidosis, Lactic",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.6,
+        "icd10_code": "E87.20",
+        "rxnorm_id": "NONE",
+        "definition": "Druh metabolické acidózy způsobený hromaděním laktátu. Vzniká zejm. při hypoxii různého původu (typ A). Některé vzácnější případy vznikají i bez hypoxie (typ B), např. u diabetiků léčených biguanidy může vyústit až v laktacidotické kóma. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )"
+    },
+    "patients at risk of acidemia": {
+        "cui": "NONE",
+        "canonical": "patients at risk of acidemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "kidney disease": {
+        "cui": "C0022658",
+        "canonical": "Kidney Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 3.6,
+        "icd10_code": "N08",
+        "rxnorm_id": "NONE",
+        "definition": "Patologické procesy v ledvinách nebo v jejich tkáních."
+    },
+    "acidemia": {
+        "cui": "NONE",
+        "canonical": "acidemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hypoxia": {
+        "cui": "NONE",
+        "canonical": "hypoxia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "severe respiratory disease": {
+        "cui": "C5203670",
+        "canonical": "COVID-19 Virus Disease",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.06,
+        "icd10_code": "U07.1",
+        "rxnorm_id": "NONE",
+        "definition": "Virové onemocnění obecně charakterizované vysokou horečkou, kašlem, dušností, zimnicí, stálým třesem, bolestí svalů, hlavy a krku, ztrátou chuti a/nebo čichu (ageuzie, anosmie) a dalšími příznaky virové pneumonie. U těžkých případů se podle závažnosti infekce často vyskytují nesčetné koagulopatie a další komplikace (např. hemokoagulace, trombóza, syndrom respirační tísně dospělých, křeče, infarkt myokardu, cévní mozková příhoda, mnohočetné cerebrální infarkty, selhání ledvin, katastrofální antifosfolipidový syndrom a/nebo diseminovaná intravaskulární koagulace). U mladších pacientů jsou s nemocí COVID-19 spojené vzácné zánětlivé syndromy (např. atypický Kawasakiho syndrom, septický šok, multisystémové zánětlivé onemocnění u dětí a syndrom cytokinové bouře). Původcem nemoci COVID-19 je koronavirus SARS-CoV-2 rodu Betacoronavirus."
+    },
+    "alcohol use disorder": {
+        "cui": "NONE",
+        "canonical": "alcohol use disorder",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "metabolic acidosis": {
+        "cui": "NONE",
+        "canonical": "metabolic acidosis",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dehydration": {
+        "cui": "C0011175",
+        "canonical": "Dehydration",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "E86.0",
+        "rxnorm_id": "NONE",
+        "definition": "Ztráta a nedostatek vody (v organismu, buňkách aj.). Vzniká ztrátami tekutin či jejich nedostatečným přívodem. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)"
+    },
+    "troglitazone": {
+        "cui": "C0245514",
+        "canonical": "troglitazone",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "72610",
+        "definition": "An orally-active thiazolidinedione with antidiabetic and hepatotoxic properties and potential antineoplastic activity. Troglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C1522\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C1522\" NCI Thesaurus)"
+    },
+    "acute liver failure": {
+        "cui": "C0162557",
+        "canonical": "Liver Failure, Acute",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 2.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Rychlý nástup akutního SELHÁNÍ JATER, známého také jako fulminantní jaterní selhání, je forma onemocnění způsobená těžkým poškozením jater nebo masivní ztrátou HEPATOCYTŮ. Je to charakteristické při náhlém rozvoji jaterní dysfunkce a při ŽLOUTENCE. Akutní selhání jater se může vyvinout až v cerebrální dysfunkci či dokonce v jaterní kóma, což závisí na etiologii, která může zahrnovat jaterní ischémii, otravu léky, maligní infiltraci a virové hepatitidy jako např. potransfúzní hepatitidu typu B a C (HEPATITIDA B, HEPATITIDA C)."
+    },
+    "rosiglitazone": {
+        "cui": "C0289313",
+        "canonical": "rosiglitazone",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "84108",
+        "definition": "Perorální antidiabetikum ze skupiny thiazolidindionů. U pacientů s diabetes mellitus 2. typu snižuje hladinu glukózy v plazmě, produkci glukózy a zvyšuje clearance glukózy. Rosiglitazon signifikantně zlepšuje citlivost k inzulinu, funkci pankreatických B-buněk a další parametry související s kardiovaskulárním rizikem. (cit. Doležal, T., Vnoučková, K. rosiglitazonum. Remedia 5/2002, 12) Funguje jako selektivní agonista pro PPAR gama."
+    },
+    "heart failure": {
+        "cui": "C0018801",
+        "canonical": "Heart failure",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "I50",
+        "rxnorm_id": "NONE",
+        "definition": "Stav, kdy srdce není schopno plnit svou funkci (tj. přečerpávat, \"\"pumpovat\"\" krev) v množství přiměřeném nárokům organismu. K příčinám se řadí porucha myokardu (zejm. ischemie), objemové a tlakové přetěžování srdce (např. chlopenní vady, hypertenze). Nikoliv vzácné je s. oboustranné s kombinací příznaků. S. s. může být akutní nebo chronické s různě dramatickými příznaky a s různě zapojenými kompenzačními mechanismy. K nim patří zejm. zvyšování preloadu (dilatace komory), retence tekutin a solí v důsledku silné aktivace systému renin-angiotenzin-aldosteron, tachykardie a aktivace sympatoadrenálního systému (vazokonstrikce). S. s. je považováno za systémový stav se změnami nejen hemodynamickými, ale změnami v hormonální a cytokinové produkci, ve vnitřním prostředí apod. Některé změny se vyvíjejí rychle (např. tachykardie), jiné po delší dobu (retence tekutin), rozvoj některých trvá i měsíce (hypertrofie a strukturální změny myokardu). Kompenzační mechanismy samy o sobě mohou z dlouhodobého hlediska srdce poškozovat (tachykardie zvyšuje potřebu kyslíku, zhoršuje prokrvení, vazokonstrikce vede k zvýšení afterloadu atp.). Patofyziologicky se rozlišuje selhání backward, forward. Na nedostatečnosti se podílí systolická dysfunkce (špatná kontraktilní schopnost) i dysfunkce diastolická (snížená poddajnost komory v diastole se vzestupem enddiastolického tlaku). Důležitá je rovněž správná životospráva, omezení solení, dostatek fyzického i psychického odpočinku. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "pioglitazone": {
+        "cui": "C0071097",
+        "canonical": "pioglitazone",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "33738",
+        "definition": "Thiazolidindion a agonista PPAR-gama, užívá se v léčbě diabetes mellitus 2. typu (tzv. inzulinový senzitizér)."
+    },
+    "bladder cancer": {
+        "cui": "NONE",
+        "canonical": "bladder cancer",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "fractures": {
+        "cui": "NONE",
+        "canonical": "fractures",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "alpha-glucosidase inhibitors": {
+        "cui": "C1299007",
+        "canonical": "alpha-Glucosidase Inhibitors",
+        "semantic_type": "Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Sloučeniny, které inhibují (zpomalují) alfa-glukosidázu."
+    },
+    "dyspepsia": {
+        "cui": "C0013395",
+        "canonical": "Dyspepsia",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R10.13",
+        "rxnorm_id": "NONE",
+        "definition": "Souhrnné označení pro řadu trávicích obtíží, které se vyskytují v různé kombinaci a mohou mít mnoho příčin. Termín se užívá, je-li přítomno více obtíží. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)"
+    },
+    "flatulence": {
+        "cui": "C0016204",
+        "canonical": "Flatulence",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R14.3",
+        "rxnorm_id": "NONE",
+        "definition": "Zvýšený odchod střevních plynů konečníkem. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )"
+    },
+    "alogliptin": {
+        "cui": "C1958126",
+        "canonical": "alogliptin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1368001",
+        "definition": "A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C76906\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C76906\" NCI Thesaurus)"
+    },
+    "dipeptidyl peptidase-4 inhibitor": {
+        "cui": "NONE",
+        "canonical": "Dipeptidyl peptidase-4 inhibitor",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "linagliptin": {
+        "cui": "C2746078",
+        "canonical": "linagliptin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1100699",
+        "definition": "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C83887\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C83887\" NCI Thesaurus)"
+    },
+    "saxagliptin": {
+        "cui": "C1611934",
+        "canonical": "saxagliptin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "857974",
+        "definition": "A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite."
+    },
+    "sitagliptin": {
+        "cui": "C1565750",
+        "canonical": "sitagliptin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "593411",
+        "definition": "An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis."
+    },
+    "hemoglobin a1c": {
+        "cui": "C5396293",
+        "canonical": "Hemoglobin A1C test declined",
+        "semantic_type": "Finding (T033)",
+        "score": 8.07,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dpp-4 inhibitors": {
+        "cui": "C1827106",
+        "canonical": "Dipeptidyl-Peptidase IV Inhibitors",
+        "semantic_type": "Pharmacologic Substance (T121)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Sloučeniny, které potlačují degradaci inkretinů blokováním účinku dipeptidylpeptidázy 4. To pomáhá korigovat defektní sekreci insulinu a glukagonu charakteristickou pro diabetes mellitus 2. typu tím, že stimuluje sekreci inzulinu a potlačuje uvolňování glukagonu."
+    },
+    "plasma glucose": {
+        "cui": "NONE",
+        "canonical": "plasma glucose",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "inhibitors": {
+        "cui": "NONE",
+        "canonical": "inhibitors",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria": {
+        "cui": "NONE",
+        "canonical": "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sglt-2 inhibitors": {
+        "cui": "C3273807",
+        "canonical": "Sodium-Glucose Transporter 2 Inhibitors",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Glifloziny jsou selektivní inhibitory transportéru pro sodík a glukózu 2 (SGLT2). Blokují reabsorpci glukózy v ledvinách a navozují glykosurii. Glifloziny (dapagliflozin, canagliflozin, empagliflozin) selektivně blokují SGLT2, snižují glykemický práh a reabsorpční kapacitu pro glukózu. Navozují tak glykosurii a vedou k velmi významnému poklesu glykémie postprandiální i nalačno a k poklesu glykosylovaného hemoglobinu asi o 15-25 mmol/mol. Účinek gliflozinů není závislý na inzulinu, jejich výhodou je nízké riziko výskytu hypoglykémie (srovnatelné s placebem). (uprav. podle https://www.cukrovka.cz/glifloziny [cit. online 23. 12. 2021])"
+    },
+    "diabetic ketoacidosis (dka)": {
+        "cui": "C0011880",
+        "canonical": "Diabetic Ketoacidosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 2.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Druh metabolické acidózy způsobené nadměrným vznikem ketolátek (acetoctová kyselina, beta-hydroxymáselná kyselina, aceton). Tyto látky vznikají při nadměrném štěpení tuků, které jsou využívány k zisku energie místo glukosy. Tento stav nastává při hladovění, závažný je pak především jako akutní komplikace diabetu 1. typu (nedostatek inzulinu snižuje využití glukosy a chybí i jeho antilipolytický účinek). Nápadným příznakem bývá zrychlené hluboké Kussmaulovo dýchání (respirační kompenzace acidózy) a zápach acetonu v dechu, v těžkých případech hrozí až kóma. Ketolátky bývají i v moči (ketonurie). Diabetická k. vyžaduje intenzivní léčbu opatrnou alkalizaci, podávání inzulinu, péči o vnitřní prostředí. Ketóza souvisí úzce s acidózou vzhledem ke klíčovému postavení acetoctové kyseliny - ta je v rovnováze s beta-hydroxymáselnou kyselinou která vzniká oxidací ketoskupiny (acetoctové kyseliny) a má hlavní význam pro vznik acidózy, dekarboxylací acetoctové kyseliny vzniká aceton. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+    },
+    "euglycemic dka": {
+        "cui": "NONE",
+        "canonical": "euglycemic DKA",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "canagliflozin": {
+        "cui": "C2974540",
+        "canonical": "canagliflozin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1373458",
+        "definition": "Canagliflozin je vysoce selektivní inhibitor společného transportéru pro sodík a glukózu typu 2 (SGLT2), zodpovědného za renální reabsorpci glukózy. Inhibice SGLT-2 pomocí canagliflozinu zvyšuje exkreci glukózy ledvinami, což vede k poklesu glykemie a zlepšení kompenzace diabetu (2. typu) prakticky bez zvýšení rizika hypoglykemie. (cit. podle Haluzík, Martin: canafligozin, Profily léčiv. In: Farmakoterapie, Supplementum 2/2014)"
+    },
+    "lower limb amputation": {
+        "cui": "NONE",
+        "canonical": "lower limb amputation",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "pramlintide": {
+        "cui": "C0537551",
+        "canonical": "pramlintide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "139953",
+        "definition": "A peptide analogue of human amylin with 3 proline substitutions at positions 25, 28 and 29, with antihyperglycemic activity. By mimicking amylin, pramlintide slows gastric emptying, inhibits digestive secretions (gastric acid, pancreatic enzymes, and bile), reduces glucagon secretion, and increases satiety; all of these actions are mediated mostly by glucose-sensitive areas in the brain stem. The overall result is a decrease in blood glucose levels. The use of pramlintide may cause an increased risk of insulin-induced hypoglycemia."
+    },
+    "amylin analog": {
+        "cui": "C1562561",
+        "canonical": "Amylin Analog",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "injectable antihyperglycemic medication": {
+        "cui": "NONE",
+        "canonical": "injectable antihyperglycemic medication",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glp-1 agonists": {
+        "cui": "C1562104",
+        "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Sloučeniny, které stimulují aktivitu receptoru pro peptid podobný glukagonu-1. Agonisté receptoru pro peptid podobný glukagonu-1 se používají k léčbě diabetu 2. typu a obezity."
+    },
+    "subcutaneous injections": {
+        "cui": "NONE",
+        "canonical": "subcutaneous injections",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "semaglutide": {
+        "cui": "C3885068",
+        "canonical": "semaglutide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1991302",
+        "definition": "Glukagonový peptid a agonista GLP-1 používaný ke zlepšení glykemické kontroly u diabetes mellitus 2. typu a k léčbě obezity."
+    },
+    "oral form": {
+        "cui": "NONE",
+        "canonical": "oral form",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "nausea": {
+        "cui": "C0027497",
+        "canonical": "Nausea",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R11.0",
+        "rxnorm_id": "NONE",
+        "definition": "Nevolnost, pocit na zvracení. Objevuje se při mořské nemoci a jiných kinetózách, zažívacích obtížích různého původu, metabolických poruchách, na počátku těhotenství, při závrati aj. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)"
+    },
+    "vomiting": {
+        "cui": "C0042963",
+        "canonical": "Vomiting",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R11.1",
+        "rxnorm_id": "NONE",
+        "definition": "Reflexní vyprázdnění žaludečního obsahu. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)"
+    },
+    "pancreatitis": {
+        "cui": "C0030305",
+        "canonical": "Pancreatitis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "K85.9",
+        "rxnorm_id": "NONE",
+        "definition": "Akutní p. je náhle vzniklé, prudce a těžce probíhající onemocnění s výraznou bolestí břicha, zvracením, horečkou až vznikem šoku (náhlá příhoda břišní). Někdy vzniká v souvislosti se žlučovými kaménky, může být vyprovokována těžkou dietní chybou, alkoholem nebo některými celkovými onemocněními např. hyperparatyreózou. Těžká forma vede k hemoragické nekróze. Vyžaduje intenzivní léčbu(tlumení bolesti, somatostatin, blokátory žaludeční sekrece, infuze, umělou výživu, antibiotika, léčbu šoku atd.). Lehčí formy se někdy označují jako \"\"podráždění\"\" (iritace) pankreatu. Má různé projevy bolesti, záchvaty akutní p., poruchy trávení. Komplikací zánětů může být vznik dutiny (cysty či spíše pseudocysty), která může stlačovat některé okolní orgány a být někdy důvodem k operaci. Onemocnění slinivky vyžaduje přísnou tzv. pankreatickou dietu. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+    },
+    "tirzepatide": {
+        "cui": "C5139934",
+        "canonical": "tirzepatide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "2601723",
+        "definition": "Agonista receptoru pro na glukóze závislý inzulinotropní polypeptid (GIP) a receptoru pro glukóze podobný peptid-1 (GLP-1), který je indikován jako doplněk diety se sníženým obsahem kalorií a zvýšenou fyzickou aktivitou pro chronickou regulaci hmotnosti u dospělých s určitým BMI."
+    },
+    "gip/glp-1 receptor agonist": {
+        "cui": "NONE",
+        "canonical": "GIP/GLP-1 receptor agonist",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "obesity": {
+        "cui": "C0028754",
+        "canonical": "Obesity",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "E66.9",
+        "rxnorm_id": "NONE",
+        "definition": "Stav, kdy tělesná hmotnost výrazně převyšuje doporučené hodnoty, obvykle díky akumulaci tuku v těle. Normy se mohou lišit podle věku, pohlaví, podle genetického nebo kulturního pozadí. BMI větší než 30 kg/m2 se hodnotí jako obezita, BMI větší než 40 kg/m2 se hodnotí jako morbidní obezita."
+    },
+    "metabolic dysfunction-associated steatotic liver disease": {
+        "cui": "C0400966",
+        "canonical": "Non-alcoholic Fatty Liver Disease",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.3000000000000003,
+        "icd10_code": "K76.0",
+        "rxnorm_id": "NONE",
+        "definition": "Stav ztučnění jater bez nadměrné konzumace alkoholu."
+    },
+    "tirzepatide in combination with pioglitazone": {
+        "cui": "NONE",
+        "canonical": "Tirzepatide in combination with pioglitazone",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "postprandial glucagon secretion": {
+        "cui": "NONE",
+        "canonical": "postprandial glucagon secretion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "type 1 stage 2 diabetes": {
+        "cui": "C5847615",
+        "canonical": "Diabetes mellitus type 1 stage 2",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 3.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Includes individuals with two or more islet autoantibodies but whose disease has now progressed to the development of glucose intolerance, or dysglycemia, from loss of functional β-cell mass."
+    },
+    "dysglycemia": {
+        "cui": "C1960636",
+        "canonical": "Dysglycemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "cytokine release syndrome": {
+        "cui": "C0948245",
+        "canonical": "Cytokine Release Syndrome",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "D89.83",
+        "rxnorm_id": "NONE",
+        "definition": "Závažná imunitní reakce charakterizovaná značným zvýšením různých zánětlivých cytokinů a s tím spojenými stavy jako je dyspnoe, horečka, bolesti hlavy, hypotenze, nauzea, vyrážka, tachykardie, hypoxie, hyperferritinemie a multiorgánové selhání. Je spojená s virovými infekcemi, sepsí, autoimunitními nemocemi a imunoterapií."
+    },
+    "fever": {
+        "cui": "C0015967",
+        "canonical": "Fever",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R50.9",
+        "rxnorm_id": "NONE",
+        "definition": "Abnormální zvýšení tělesné teploty, obvykle způsobené nějakým patologickým procesem."
+    },
+    "fatigue": {
+        "cui": "C0015672",
+        "canonical": "Fatigue",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R53.83",
+        "rxnorm_id": "NONE",
+        "definition": "Snížení schopnosti vykonávat činnost, které vyplývá z předchozího vynaloženého úsilí, ať už fyzického, nebo psychického. Vzniká v důsledku nahromadění odpadů metabolismu v krvi či ve svalech. Psychicky je provázena zhoršeným vnímáním, sníženou pozorností, zhoršenou vštípivostí a výbavností, změnami nálady aj. (cit. Wikipedie 2016 http://www.cs.wikipedia.org/)"
+    },
+    "headache": {
+        "cui": "C0018681",
+        "canonical": "Headache",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R51",
+        "rxnorm_id": "NONE",
+        "definition": "Symptom bolesti v kraniální oblasti. Může se projevit izolovaně nebo jako součást nejrůznějších onemocnění souvisejících s hlavou."
+    },
+    "myalgia": {
+        "cui": "C0231528",
+        "canonical": "Myalgia",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "M79.1",
+        "rxnorm_id": "NONE",
+        "definition": "Bolesti svalů. Často se spolu s bolestmi kloubů objevují u chřipky a podobných viróz. Epidemická m. - myalgia epidemica, pleurodynie. (cit. Velký lékařský slovník online, 2015 http://lekarske.slovniky.cz)"
+    },
+    "arthralgia": {
+        "cui": "C0003862",
+        "canonical": "Arthralgia",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "M25.5",
+        "rxnorm_id": "NONE",
+        "definition": "Bolesti kloubů. Kromě vlastních kloubních nemocí mohou provázet řadu chorob, např. chřipku. (cit. Velký lékařský slovník online, 2015 http://lekarske.slovniky.cz)"
+    },
+    "elevated liver enzymes": {
+        "cui": "C0857093",
+        "canonical": "Liver enzymes level above reference range",
+        "semantic_type": "Finding (T033)",
+        "score": 2.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "long-term complications of diabetes mellitus": {
+        "cui": "NONE",
+        "canonical": "long-term complications of diabetes mellitus",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "arbs": {
+        "cui": "NONE",
+        "canonical": "ARBs",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "chronic kidney disease": {
+        "cui": "C1561643",
+        "canonical": "Chronic Kidney Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 4.1,
+        "icd10_code": "N18",
+        "rxnorm_id": "NONE",
+        "definition": "<p>You have two kidneys, each about the size of your fist. Their main job is to filter your blood. They remove wastes and extra water, which become urine. They also keep the body's chemicals balanced, help control blood pressure, and make hormones.</p> <p>Chronic kidney disease (CKD) means that your kidneys are damaged and can't filter blood as they should. This damage can cause wastes to build up in your body. It can also cause other problems that can harm your health. Diabetes and high blood pressure are the most common causes of CKD.</p> <p>The kidney damage occurs slowly over many years. Many people don't have any symptoms until their kidney disease is very advanced. <a href=\"https://medlineplus.gov/kidneytests.html\">Blood and urine tests</a> are the only way to know if you have kidney disease.</p> <p>Treatments cannot cure kidney disease, but they may slow kidney disease. They include <a href=\"https://medlineplus.gov/bloodpressuremedicines.html\">medicines to lower blood pressure</a>, control <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, and lower <a href=\"https://medlineplus.gov/cholesterol.html\">cholesterol</a>. CKD may still get worse over time. Sometimes it can lead to <a href=\"https://medlineplus.gov/kidneyfailure.html\">kidney failure</a>. If your kidneys fail, you will need <a href=\"https://medlineplus.gov/dialysis.html\">dialysis</a> or a <a href=\"https://medlineplus.gov/kidneytransplantation.html\">kidney transplantation</a>.</p> <p>You can take steps to keep your kidneys healthier longer:</p> <ul> <li>Choose foods with less <a href=\"https://medlineplus.gov/sodium.html\">salt</a> (sodium)</li> <li><a href=\"https://medlineplus.gov/howtopreventhighbloodpressure.html\">Control your blood pressure</a>; your health care provider can tell you what your blood pressure should be</li> <li>Keep your blood sugar in the target range, if you have <a href=\"https://medlineplus.gov/diabetes.html\">diabetes</a></li> <li>Limit the amount of alcohol you drink</li> <li>Choose foods that are healthy for your heart: fruits, vegetables, whole grains, and low-fat dairy foods</li> <li>Lose weight if you are overweight</li> <li>Be physically active</li> <li>Don't smoke</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>"
+    },
+    "decreased glomerular filtration rate": {
+        "cui": "C0853068",
+        "canonical": "Glomerular filtration rate below reference range",
+        "semantic_type": "Finding (T033)",
+        "score": 2.35,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "A laboratory test result which indicates a decreased glomerular filtration rate."
+    },
+    "ckd": {
+        "cui": "C0762739",
+        "canonical": "CKD 602",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 8.09,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "The hydrochloride salt of the semi-synthetic camptothecin analogue belotecan with potential antitumor activity. Belotecan binds to and inhibits the activity of topoisomerase I, stabilizing the cleavable complex of topoisomerase I-DNA, which inhibits the religation of single-stranded DNA breaks generated by topoisomerase I; lethal double-stranded DNA breaks occur when the topoisomerase I-DNA complex is encountered by the DNA replication machinery, DNA replication is disrupted, and the tumor cell undergoes apoptosis. Topoisomerase I is an enzyme that mediates reversible single-strand breaks in DNA during DNA replication. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C66954\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C66954\" NCI Thesaurus)"
+    },
+    "finerenone": {
+        "cui": "C4045511",
+        "canonical": "finerenone",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "2562811",
+        "definition": ""
+    },
+    "persistent albuminuria": {
+        "cui": "C4546070",
+        "canonical": "Persistent albuminuria",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "cardiovascular disease": {
+        "cui": "C0007222",
+        "canonical": "Cardiovascular Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 3.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Onemocnění kardiovaskulárního systému, včetně srdce, krevních cév a perikardia."
+    },
+    "glp-1 receptor agonists": {
+        "cui": "C1562104",
+        "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 2.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Sloučeniny, které stimulují aktivitu receptoru pro peptid podobný glukagonu-1. Agonisté receptoru pro peptid podobný glukagonu-1 se používají k léčbě diabetu 2. typu a obezity."
+    },
+    "diabetes": {
+        "cui": "C0011849",
+        "canonical": "Diabetes Mellitus",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 8.1,
+        "icd10_code": "E08-E13",
+        "rxnorm_id": "NONE",
+        "definition": "Heterogenní skupina chronických metabolických chorob, jejichž základním projevem je hyperglykemie a porušená glukózová tolerance. Vzniká v důsledku nedostatku inzulinu, jeho nedostatečného účinku (někdy se mluví o relativním nedostatku) nebo kombinací obojího. (cit. Wikiskripta 2017 http://www.wikiskripta.eu/)"
+    },
+    "sglt2-inhibitors": {
+        "cui": "NONE",
+        "canonical": "SGLT2-inhibitors",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "ascvd": {
+        "cui": "NONE",
+        "canonical": "ASCVD",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "aspirin": {
+        "cui": "C0004057",
+        "canonical": "aspirin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1191",
+        "definition": "Prototypové analgetikum používané při léčbě mírné až střední bolesti. Má protizánětlivé a antipyretické vlastnosti a působí jako inhibitor cyklooxygenázy, což vede k inhibici biosyntézy prostaglandinů. Aspirin také inhibuje agregaci destiček a používá se v prevenci arteriální a žilní trombózy."
+    },
+    "atorvastatin": {
+        "cui": "C0286651",
+        "canonical": "atorvastatin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "83367",
+        "definition": "a synthetic lipid-lowering agent; an inhibitor of 3-hydroxy-3-methylglutaryl-coenzyme A (HMG-CoA) reductase that catalyzes the conversion of HMG-CoA to mevalonate, an early and rate-limiting step in cholesterol biosynthesis."
+    },
+    "high-intensity statin": {
+        "cui": "NONE",
+        "canonical": "high-intensity statin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "rosuvastatin": {
+        "cui": "C0965129",
+        "canonical": "rosuvastatin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "301542",
+        "definition": "A statin with antilipidemic and potential antineoplastic activities. Rosuvastatin selectively and competitively binds to and inhibits hepatic hydroxymethyl-glutaryl coenzyme A (HMG-CoA) reductase, the enzyme which catalyzes the conversion of HMG-CoA to mevalonate, a precursor of cholesterol. This leads to a decrease in hepatic cholesterol levels and increase in uptake of LDL cholesterol. In addition, rosuvastatin, like other statins, exhibits pro-apoptotic, growth inhibitory, and pro-differentiation activities in a variety of tumor cell types; these antineoplastic activities may be due, in part, to inhibition of the isoprenylation of Ras and Rho GTPases and related signaling cascades."
+    },
+    "low-density lipoprotein (ldl) cholesterol level": {
+        "cui": "NONE",
+        "canonical": "low-density lipoprotein (LDL) cholesterol level",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "maximally tolerated statin": {
+        "cui": "NONE",
+        "canonical": "maximally tolerated statin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "ezetimibe": {
+        "cui": "C1142985",
+        "canonical": "ezetimibe",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "341248",
+        "definition": "An azetidinone derivative and a cholesterol absorption inhibitor with lipid-lowering activity. Ezetimibe appears to interact physically with cholesterol transporters at the brush border of the small intestine and inhibits the intestinal absorption of cholesterol and related phytosterols. As a result, ezetimibe causes a decrease in the level of blood cholesterol or an increase in the clearance of cholesterol from the bloodstream. Overall, the following effects observed are a reduction of hepatic cholesterol stores and a reduction of total cholesterol, LDL cholesterol, and other triglycerides in the blood. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C47529\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C47529\" NCI Thesaurus)"
+    },
+    "proprotein convertase subtilisin/kexin type 9 (pcsk-9) inhibitor": {
+        "cui": "NONE",
+        "canonical": "proprotein convertase subtilisin/kexin type 9 (PCSK-9) inhibitor",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "small, dense ldl cholesterol": {
+        "cui": "NONE",
+        "canonical": "small, dense LDL cholesterol",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    }
+}
