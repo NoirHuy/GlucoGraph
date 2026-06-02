@@ -1,37 +1,26 @@
 # -*- coding: utf-8 -*-
 """
 table_translator.py — Translates markdown tables into narrative text
-                      configured to strictly use OpenRouter API.
+                      configured to use the unified API key pool in llm_utils.py.
 """
 
 import logging
 from typing import Optional
 import os
-from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
-from langchain_core.output_parsers import StrOutputParser
 
 logger = logging.getLogger(__name__)
 
 class TableTranslator:
     """
     A specialized class to handle the translation of Markdown tables
-    into flat, narrative clinical English sentences using an LLM.
+    into flat, narrative clinical English sentences using the global APIKeyPool.
     """
     def __init__(self, model_name: str = "meta-llama/llama-3.3-70b-instruct", temperature: float = 0.0):
-        openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
-        if not openrouter_api_key:
-            raise ValueError("OPENROUTER_API_KEY environment variable is not set in the environment or .env file.")
-            
-        logger.info("[TableTranslator] Initializing preprocessor LLM via OpenRouter API...")
-        self.llm = ChatOpenAI(
-            model=model_name, 
-            temperature=temperature,
-            api_key=openrouter_api_key,
-            base_url="https://openrouter.ai/api/v1"
-        )
+        logger.info("[TableTranslator] Initializing preprocessor LLM wrapper...")
+        self.model_name = model_name
+        self.temperature = temperature
         
-        # We include the section headers as context so the LLM understands the context of the table.
         self.prompt = PromptTemplate(
             input_variables=["section_headers", "table_content"],
             template=(
@@ -46,7 +35,6 @@ class TableTranslator:
                 "Narrative translation:"
             )
         )
-        self.chain = self.prompt | self.llm | StrOutputParser()
 
     def translate_table(self, table_content: str, section_headers: str) -> Optional[str]:
         """
@@ -59,11 +47,28 @@ class TableTranslator:
         Returns:
             Optional[str]: The translated narrative string, or None if translation failed.
         """
+        import sys
+        # Ensure root of edc-main is in sys.path
+        root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        if root_dir not in sys.path:
+            sys.path.insert(0, root_dir)
+            
+        import edc.utils.llm_utils as llm_utils
+        
         try:
-            narrative = self.chain.invoke({
-                "section_headers": section_headers,
-                "table_content": table_content
-            })
+            user_content = self.prompt.format(
+                section_headers=section_headers,
+                table_content=table_content
+            )
+            messages = [{"role": "user", "content": user_content}]
+            
+            narrative = llm_utils.api_chat_completion(
+                model=self.model_name,
+                system_prompt=None,
+                history=messages,
+                temperature=self.temperature,
+                max_tokens=2048
+            )
             return narrative.strip()
         except Exception as e:
             logger.error(f"Error translating table: {e}")

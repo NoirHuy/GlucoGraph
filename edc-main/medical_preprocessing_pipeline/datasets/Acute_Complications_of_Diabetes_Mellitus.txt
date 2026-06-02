@@ -1,0 +1,345 @@
+Acute Complications of Diabetes Mellitus
+
+
+ByErika F. Brutsaert, MD, New York Medical College
+Reviewed ByGlenn D. Braunstein, MD, Cedars-Sinai Medical Center
+Reviewed/Revised Dec 2025 | Modified May 2026
+View Patient Education
+Diabetic Ketoacidosis
+|
+Pathophysiology
+|
+Symptoms and Signs
+|
+Diagnosis
+|
+Treatment
+|
+Prognosis
+|
+Key Points
+|
+Hyperosmolar Hyperglycemic State (HHS)
+|
+Symptoms and Signs
+|
+Diagnosis
+|
+Treatment
+|
+Key Points
+|
+Alcoholic Ketoacidosis
+|
+Pathophysiology
+|
+Symptoms and Signs
+|
+Diagnosis
+|
+Treatment
+|
+Key Points
+|
+Drug Information
+|
+	Multimedia
+Acute complications of diabetes include diabetic ketoacidosis and hyperosmolar hyperglycemic state. Alcoholic ketoacidosis, though not a complication of diabetes, is discussed here due to overlap in physiology and treatment.
+
+Diabetic Ketoacidosis
+Diabetic ketoacidosis (DKA) is an acute metabolic complication of diabetes characterized by hyperglycemia, hyperketonemia, and metabolic acidosis. Hyperglycemia causes an osmotic diuresis with significant fluid and electrolyte loss. DKA occurs mostly in type 1 diabetes mellitus. It causes nausea, vomiting, and abdominal pain and can progress to cerebral edema, coma, and death. DKA is diagnosed by detection of hyperketonemia and anion gap metabolic acidosis in the presence of hyperglycemia. Treatment involves volume expansion, insulin replacement, and prevention of hypokalemia.
+
+
+Diabetic ketoacidosis (DKA) occurs primarily in patients with type 1 diabetes mellitus and is less common in those with type 2 diabetes. It develops when insulin levels are insufficient to meet the body’s basic metabolic requirements. DKA is the first manifestation of type 1 diabetes in approximately one-third of patients (1). Insulin deficiency can be absolute (eg, during lapses in the administration of exogenous insulin) or relative (eg, when usual insulin doses do not meet metabolic needs during physiologic stress).
+
+Common physiologic stresses that can trigger DKA include:
+
+Acute infection (eg, pneumonia, urinary tract infection, COVID-19)
+
+Myocardial infarction
+
+Stroke
+
+Pancreatitis
+
+Pregnancy
+
+Trauma
+
+Missed insulin doses
+
+Some medications implicated in causing DKA include:
+
+Sodium glucose cotransporter 2 (SGLT-2) inhibitors
+
+Glucocorticoids
+
+Thiazide diuretics
+
+Sympathomimetics
+
+DKA is less common in type 2 diabetes mellitus, but it may occur in situations of unusual physiologic stress. Ketosis-prone type 2 diabetes (also referred to as Flatbush diabetes) is a variant of type 2 diabetes, which sometimes occurs in patients with obesity, often those with African (including African American or Afro-Caribbean) ancestry (2). Patients with ketosis-prone diabetes can have significant impairment of beta-cell function with hyperglycemia, and are therefore more likely to develop DKA when significant hyperglycemia occurs.
+
+SGLT-2 inhibitors have been implicated in causing DKA in both type 1 and type 2 diabetes (3). In pregnant patients and in patients taking SGLT2 inhibitors, DKA may occur at lower or even normal blood glucose levels (euglycemic DKA). Euglycemic DKA (ketoacidosis without elevated glucose levels) can also occur with alcohol overuse or cirrhosis.
+
+General references
+1. Dovc K, Neuman V, Gita G, et al. Association of Diabetic Ketoacidosis at Onset, Diabetes Technology Uptake, and Clinical Outcomes After 1 and 2 Years of Follow-up: A Collaborative Analysis of Pediatric Registries Involving 9,269 Children With Type 1 Diabetes From Nine Countries. Diabetes Care. 2025;48(4):648-654. doi:10.2337/dc24-2483
+
+2. Lebovitz HE, Banerji MA. Ketosis-Prone Diabetes (Flatbush Diabetes): an Emerging Worldwide Clinically Important Entity. Curr Diab Rep. 2018;18(11):120. Published 2018 Oct 2. doi:10.1007/s11892-018-1075-4
+
+3. Wang Y, Qin Y, Zhang J, et al. Sodium-Glucose Cotransporter-2 Inhibitors and Diabetic-Ketoacidosis in T2DM Patients: An Updated Meta-Analysis and a Mendelian Randomization Analysis. Clin Pharmacol Ther. 2025;117(6):1661-1669. doi:10.1002/cpt.3615
+
+Pathophysiology of DKA
+Insulin deficiency and an increase in counterregulatory hormones (glucagon, catecholamines, cortisol) causes the body to metabolize triglycerides and amino acids instead of glucose for energy. Serum levels of glycerol and free fatty acids rise because of unrestrained lipolysis. Alanine levels rise because of muscle catabolism. Glycerol and alanine provide substrate for hepatic gluconeogenesis, which is stimulated by the excess of glucagon that accompanies insulin deficiency.
+
+Glucagon also stimulates mitochondrial conversion of free fatty acids into ketones. Insulin normally blocks ketogenesis by inhibiting the transport of free fatty acid derivatives into the mitochondrial matrix, but ketogenesis proceeds in the absence of insulin. The major ketoacids produced, acetoacetic acid and beta-hydroxybutyric acid, are strong organic acids that create metabolic acidosis. Acetone derived from the metabolism of acetoacetic acid accumulates in serum and is slowly disposed of by respiration.
+
+Hyperglycemia due to insulin deficiency causes an osmotic diuresis that leads to marked urinary losses of water and electrolytes. Urinary excretion of ketones obligates additional losses of sodium and potassium. Serum sodium may fall due to natriuresis or rise due to excretion of large volumes of free water.
+
+Potassium is also lost in large quantities. Despite a significant total body deficit of potassium, initial serum potassium is typically normal or elevated because of the extracellular migration of potassium in response to acidosis. Potassium levels generally fall further during treatment as insulin therapy drives potassium into cells. If serum potassium is not monitored and replaced as needed, life-threatening hypokalemia may develop.
+
+Symptoms and Signs of DKA
+Symptoms and signs of diabetic ketoacidosis include symptoms of hyperglycemia with the addition of nausea, vomiting, and—particularly in children—abdominal pain. Lethargy and somnolence are symptoms of more severe decompensation. Patients may be hypotensive and tachycardic due to dehydration and acidosis; they may breathe rapidly and deeply to compensate for acidemia (Kussmaul respirations). They may also have fruity breath due to exhaled acetone. Fever is not a sign of DKA itself and, if present, signifies underlying infection. In the absence of timely treatment, DKA progresses to coma and death.
+
+Acute cerebral edema, a complication in less than 1% of patients with DKA (1, 2), occurs primarily in children and less often in adolescents and young adults. Headache and fluctuating level of consciousness herald this complication in some patients, but respiratory arrest is the initial manifestation in others. The cause is not well understood but may be related to too-rapid reductions in serum osmolality or to brain ischemia. In studies primarily of children, those the highest blood urea nitrogen (BUN) levels and lowest PaCO2 at presentation appear to be at greatest risk. Delays in correction of hyponatremia, and the use of bicarbonate during DKA treatment are other possible risk factors (3).
+
+Symptoms and signs references
+1. Edge JA, Hawkins MM, Winter DL, Dunger DB. The risk and outcome of cerebral oedema developing during diabetic ketoacidosis. Arch Dis Child. 2001;85(1):16-22. doi:10.1136/adc.85.1.16
+
+2. Lawrence SE, Cummings EA, Gaboury I, Daneman D. Population-based study of incidence and risk factors for cerebral edema in pediatric diabetic ketoacidosis. J Pediatr. 2005;146(5):688-692. doi:10.1016/j.jpeds.2004.12.041
+
+3. Nigrovic LE, Kuppermann N, Ghetti S, et al. Emergency Department Presentations of Diabetic Ketoacidosis in a Large Cohort of Children. Pediatr Diabetes. 2023;2023:6693226. doi:10.1155/2023/6693226
+
+Diagnosis of DKA
+Arterial pH
+
+Serum glucose
+
+Serum and urine ketones
+
+Calculation of anion gap
+
+Serum electrolytes, BUN, and creatinine
+
+In patients suspected of having diabetic ketoacidosis, serum electrolytes, blood urea nitrogen (BUN) and creatinine, glucose, ketones, and osmolarity should be measured. Urine should be tested for ketones. Patients who appear significantly ill and those with positive ketones should have arterial blood gas measurement.
+
+Diagnostic criteria for DKA include (1, 2, 3):
+
+Arterial or venous pH < 7.30
+
+Anion gap > 10 to 12 mEq/L (10 to 12 mmol/L)
+
+Serum bicarbonate < 15 to 18 mEq/L (15 to 18 mmol/L)
+
+Presence of serum or urine ketones
+
+Serum glucose > 200 to 250 mg/dL (11.1 to 13.8 mmol/L)
+
+Some guidelines do not require a specific serum glucose level for the diagnosis of DKA and allow for the presence of known diabetes to substitute for a specific glucose cutoff due to the recognition that DKA can occur in patients with normal or mildly elevated glucose levels (euglycemic DKA) (1, 2, 3).
+
+A presumptive diagnosis may be made when urine glucose and ketones are positive on urinalysis. Urine test strips and some assays for serum ketones may underestimate the degree of ketosis because they detect acetoacetic acid and not beta-hydroxybutyric acid, which is usually the predominant ketoacid. Blood beta-hydroxybutyrate can be measured, or treatment can be initiated based on clinical suspicion and the presence of anion gap acidosis if serum or urine ketones are low.
+
+Symptoms and signs of a triggering illness should be pursued with appropriate studies (eg, cultures, imaging studies). Adults should have an ECG to screen for acute myocardial infarction and to help determine the significance of abnormalities in serum potassium.
+
+Other laboratory abnormalities include:
+
+Hyponatremia
+
+Elevated serum creatinine
+
+Elevated plasma osmolality
+
+Hypokalemia, after correction of acidosis
+
+Elevated serum amylase and lipase
+
+Hyperglycemia may cause dilutional hyponatremia, so measured serum sodium is corrected by adding 1.6 mEq/L (1.6 mmol/L) for each 100 mg/dL (5.6 mmol/L) elevation of serum glucose over 100 mg/dL (5.6 mmol/L).
+
+Clinical Calculators
+Sodium Correction in Hyperglycemia (Katz 1973)
+
+Clinical Calculators
+As acidosis is corrected, serum potassium drops. An initial potassium level < 4.5 mEq/L (< 4.5 mmol/L) indicates marked potassium depletion and requires immediate potassium supplementation.
+
+Serum amylase and lipase are often elevated, even in the absence of pancreatitis (which may be present in patients with alcoholic ketoacidosis and in those with coexisting hypertriglyceridemia).
+
+Clinical Calculators
+Anion Gap
+
+Clinical Calculators
+Diagnosis references
+1.Buse JB, Wexler DJ, Tsapas A, et al: 2019 Update to: Management of Hyperglycemia in Type 2 Diabetes, 2018. A Consensus Report by the American Diabetes Association (ADA) and the European Association for the Study of Diabetes (EASD). Diabetes Care 43(2):487–493, 2020. doi: 10.2337/dci19-0066
+
+2. Garber AJ, Handelsman Y, Grunberger G, et al: Consensus statement by the American Association of Clinical Endocrinologists and American College of Endocrinology on the comprehensive type 2 diabetes management algorithm--2020 executive summary. Endocrine Practice 26:107–139, 2020.
+
+Treatment of DKA
+Fluid resuscitation with IV 0.9% saline
+
+Correction of hypokalemia
+
+IV insulin (as long as serum potassium is ≥ 3.3 mEq/L [3.3 mmol/L])
+
+Rarely IV sodium bicarbonate (if pH < 7 after 1 hour of treatment)
+
+The most urgent goals for treating diabetic ketoacidosis are rapid intravascular volume repletion, correction of hyperglycemia and acidosis, and prevention of hypokalemia (1, 2, 3). Identification of precipitating factors is also important.
+
+Treatment of most cases of DKA should occur in intensive care settings because clinical and laboratory assessments are initially needed every hour or every other hour with appropriate adjustments in treatment. Milder cases may be able to be managed with subcutaneous insulin every 1 to 2 hours, in a step-down or emergency room.
+
+Volume repletion
+Intravascular volume should be restored rapidly to raise blood pressure and ensure glomerular perfusion (1, 2, 3). Initial volume resuscitation in adults is typically achieved with rapid IV infusion of 1 to 1.5 L of 0.9% saline solution in the first hour, followed by saline infusions at 250 to 500 mL/hour. Additional boluses or a faster rate of infusion may be needed to correct hypotension. Slower rates of infusion may be needed in patients with heart failure or in those at risk for volume overload. If the serum sodium level is normal or high, the normal saline is replaced by 0.45% saline after initial volume resuscitation. Once intravascular volume is restored, remaining total body water deficits are corrected more slowly, typically over about 24 hours. When plasma glucose falls to < 200 mg/dL (< 11.1 mmol/L), IV fluid should be changed, and 5% to 10% dextrose can be added to 0.45% saline.
+
+Correction of hyperglycemia and acidosis
+In adults, an initial bolus of regular insulin 0.1 unit/kg IV bolus may be given. Then, whether or not a bolus has been given, adults should be administered a continuous IV infusion of regular insulin 0.1 unit/kg/hour in 0.9% saline solution. Insulin should be withheld until serum potassium is ≥ 3.3 mEq/L (≥ 3.3 mmol/L). Insulin adsorption onto IV tubing can lead to inconsistent effects, which can be minimized by preflushing the IV tubing with insulin solution. If plasma glucose does not fall by 50 to 75 mg/dL (2.8 to 4.2 mmol/L) in the first hour, insulin doses should be doubled.
+
+Ketones should begin to clear within hours if insulin is given in sufficient doses. However, clearance of ketones may appear to lag because of conversion of beta-hydroxybutyrate to acetoacetate (the ketone measured in most hospital laboratories) as acidosis resolves.
+
+Serum pH and bicarbonate levels should also quickly improve, but restoration of a normal serum bicarbonate level may take 24 hours. Bicarbonate should not be given routinely because it can lead to development of acute cerebral edema (primarily in children). If bicarbonate is used, it should be started only if the pH is < 7 (4), and only modest pH elevation should be attempted with doses of 50 to 100 mEq (50 to 100 mmol) given over 2 hours, followed by repeat measurement of arterial pH and serum potassium.
+
+When plasma glucose becomes < 250 mg/dL (< 13.9 mmol/L) in adults, 5% to 10% dextrose should be added to IV fluids to reduce the risk of hypoglycemia (2, 4). The dextrose concentration can be adjusted and the insulin dose can be reduced to maintain glucose 150 to 200 mg/dL (8.3 to 11.1 mmol/L), but the continuous IV infusion of regular insulin should be maintained until the anion gap has narrowed on 2 consecutive blood tests and blood and urine are consistently negative for ketones. A longer duration of treatment with insulin and dextrose may be required in DKA associated with SGLT-2 inhibitor use.
+
+When the patient is stable and able to eat, a typical basal-bolus insulin regimen is begun. IV insulin should be continued for 2 hours after the initial dose of basal subcutaneous insulin is given.
+
+Hypokalemia prevention
+Prevention of hypokalemia requires replacement of 20 to 30 mEq (20 to 30 mmol) potassium in each liter of IV fluid to keep serum potassium between 4 and 5 mEq/L (4 and 5 mmol/L). If serum potassium is < 3.3 mEq/L (< 3.3 mmol/L), insulin should be withheld (or stopped temporarily) and potassium given at 40 mEq/hour until serum potassium is ≥ 3.3 mEq/L (≥ 3.3 mmol/L); if serum potassium is > 5 mEq/L (> 5 mmol/L), potassium supplementation can be withheld.
+
+Initially normal or elevated serum potassium measurements may reflect shifts from intracellular stores in response to acidemia and belie the true potassium deficits that almost all patients with DKA have. Insulin replacement rapidly shifts potassium into cells, so levels should be checked hourly or every other hour in the initial stages of treatment.
+
+Other measures
+Hypophosphatemia often develops during treatment of DKA, but phosphate repletion does not appear to be of benefit except for cases of severe hypophosphatemia (< 0.78 mg/dL [<0.32 mmol/L]) (5). If indicated (eg, if rhabdomyolysis, hemolysis, or neurologic deterioration occurs), potassium phosphate, 1 to 2 mmol/kg of phosphate, can be infused over 6 to 12 hours. If potassium phosphate is given, the serum calcium level usually decreases and should be monitored.
+
+Treatment of suspected cerebral edema is hyperventilation, glucocorticoids, and mannitol, but these measures are often ineffective after the onset of respiratory arrest.
+
+Treatment references
+1. American Diabetes Association Professional Practice Committee. 6. Glycemic Goals and Hypoglycemia: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1 Suppl 1):S128-S145. doi:10.2337/dc25-S006
+
+2. Dhatariya KK; Joint British Diabetes Societies for Inpatient Care. The management of diabetic ketoacidosis in adults-An updated guideline from the Joint British Diabetes Society for Inpatient Care. Diabet Med. 2022;39(6):e14788. doi:10.1111/dme.14788
+
+3. Wolfsdorf JI, Glaser N, Agus M, et al. ISPAD Clinical Practice Consensus Guidelines 2018: Diabetic ketoacidosis and the hyperglycemic hyperosmolar state. Pediatr Diabetes. 2018;19 Suppl 27:155-177. doi:10.1111/pedi.12701
+
+4. American Diabetes Association Professional Practice Committee. 16. Diabetes Care in the Hospital: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1 Suppl 1):S321-S334. doi:10.2337/dc25-S016
+
+5. Tran TTT, Pease A, Wood AJ, et al. Review of Evidence for Adult Diabetic Ketoacidosis Management Protocols. Front Endocrinol (Lausanne). 2017;8:106. doi:10.3389/fendo.2017.00106
+
+Prognosis for DKA
+Overall mortality rates for diabetic ketoacidosis are < 1% (1); however, mortality is higher in older patients and in patients with other life-threatening illnesses. Type 2 (versus type 1) diabetes, sepsis, altered level of consciousness, and obesity are also associated with an increased risk of mortality (2, 3). Cerebral edema in adults with DKA is thought to be very rare.
+
+Prognosis references
+1. Umpierrez G, Korytkowski M. Diabetic emergencies - ketoacidosis, hyperglycaemic hyperosmolar state and hypoglycaemia. Nat Rev Endocrinol. 2016;12(4):222-232. doi:10.1038/nrendo.2016.15
+
+2. Eledrisi MS, Alkabbani H, Aboawon M, et al. Clinical characteristics and outcomes of care in patients hospitalized with diabetic ketoacidosis. Diabetes Res Clin Pract. 2022;192:110041. doi:10.1016/j.diabres.2022.110041
+
+3. Sato Y, Morita K, Okada A, Matsui H, Fushimi K, Yasunaga H. Factors affecting in-hospital mortality of diabetic ketoacidosis patients: A retrospective cohort study. Diabetes Res Clin Pract. 2021;171:108588. doi:10.1016/j.diabres.2020.108588
+
+Key Points
+Diabetic ketoacidosis (DKA) is an acute metabolic complication of diabetes characterized by hyperglycemia, hyperketonemia, and metabolic acidosis.
+
+DKA can occur when acute physiologic stressors (eg, infections, myocardial infarction) trigger acidosis, moderate glucose elevation, dehydration, and severe potassium loss, particularly in patients with type 1 diabetes.
+
+Diagnose by an arterial pH < 7.30, the presence of serum or urine ketones, hyperglycemia, decreased serum bicarbonate and/or increased anion gap.
+
+Correct acidosis and hyperglycemia with IV fluid and insulin.
+
+Withhold insulin until serum potassium is ≥ 3.3 mEq/L (≥ 3.3 mmol/L).
+
+Acute cerebral edema is a rare but lethal complication.
+
+Hyperosmolar Hyperglycemic State (HHS)
+Hyperosmolar hyperglycemic state is a metabolic complication of diabetes mellitus characterized by severe hyperglycemia, extreme dehydration, hyperosmolar plasma, and altered consciousness. It most often occurs in type 2 diabetes, often in the setting of physiologic stress. Hyperosmolar hyperglycemic state is diagnosed by severe hyperglycemia and plasma hyperosmolality in the absence of significant ketosis. Treatment is IV saline solution and insulin. Complications include coma, seizures, and death.
+
+
+Hyperosmolar hyperglycemic state (previously referred to as hyperglycemic hyperosmolar nonketotic coma [HHNK] and nonketotic hyperosmolar syndrome [NKHS]) is a complication of type 2 diabetes mellitus and has an estimated mortality rate of up to approximately 2%, higher than the mortality for diabetic ketoacidosis (currently < 1%) (1).
+
+It usually develops after a period of symptomatic hyperglycemia in which fluid intake is inadequate to prevent extreme dehydration due to the hyperglycemia-induced osmotic diuresis.
+
+Precipitating factors include:
+
+Acute infections and other medical conditions
+
+Medications that impair glucose tolerance (glucocorticoids) or increase fluid loss (diuretics)
+
+Nonadherence to diabetes treatment
+
+Serum ketones are not present because the amount of insulin present in most patients with type 2 diabetes is adequate to suppress ketogenesis. Because symptoms of acidosis are not present, most patients endure a significantly longer period of osmotic diuresis (high solute concentrations from glucose in the renal tubules, leading to excess water loss). This causes more severe dehydration before presentation, and thus plasma glucose (> 600 mg/dL [> 33.3 mmol/L]) and osmolality (> 320 mOsm/L) are typically much higher than in diabetic ketoacidosis.
+
+General reference
+1. American Diabetes Association Professional Practice Committee. 6. Glycemic Goals and Hypoglycemia: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1 Suppl 1):S128-S145. doi:10.2337/dc25-S006
+
+Symptoms and Signs of Hyperosmolar Hyperglycemic State
+The primary symptom of hyperosmolar hyperglycemic state is altered consciousness, varying from confusion or disorientation to coma, usually as a result of extreme dehydration with or without prerenal azotemia, hyperglycemia, and hyperosmolality. In contrast to diabetic ketoacidosis, focal or generalized seizures and transient hemiplegia may occur.
+
+Diagnosis of Hyperosmolar Hyperglycemic State
+The diagnostic criteria for HHS are (1):
+
+Plasma glucose level ≥ 600 mg/dL (33.3 mmol/L)
+
+Serum osmolality > 300 mOsm/kg
+
+Absence of ketosis: Urine ketones < 2+ or beta-hydroxybutyrate < 3.0 mmol/L
+
+Absence of acidosis: pH ≥ 7.3 and serum bicarbonate ≥ 15 mEq/L (15 mmol/L)
+
+Hyperosmolar hyperglycemic state is initially suspected when a markedly elevated glucose level is found in a fingerstick specimen obtained in the course of an evaluation of altered mental status. If measurements have not already been obtained, urine should be tested for ketones and the following should be measured in a blood sample:
+
+Serum electrolytes
+
+Blood urea nitrogen (BUN)
+
+Creatinine
+
+Glucose
+
+Ketones
+
+Plasma osmolality
+
+Serum potassium levels are usually normal, but sodium may be low or high, depending on volume deficits.
+
+Hyperglycemia may cause dilutional hyponatremia, so measured serum sodium is corrected by adding 1.6 mEq/L (1.6 mmol/L) for each 100 mg/dL (5.6 mmol/L) elevation of serum glucose over 100 mg/dL (5.6 mmol/L).
+
+Clinical Calculators
+Sodium Correction in Hyperglycemia (Katz 1973)
+
+Clinical Calculators
+BUN and serum creatinine levels are markedly increased.
+
+Arterial pH is usually > 7.3, but occasionally mild metabolic acidosis develops due to lactate accumulation.
+
+The fluid deficit can exceed 10 L, and acute circulatory collapse is a common cause of death. Widespread thrombosis is a frequent finding on autopsy and in some cases bleeding may occur as a consequence of disseminated intravascular coagulation. Other complications include aspiration pneumonia, acute renal failure, and acute respiratory distress syndrome.
+
+It is not uncommon for features of both DKA and HHS to be present. For example, mild ketonemia often occurs in individuals with HHS. However, if significant ketonemia and acidosis are present in a patient with HHS/DKA overlap, insulin should be administered according to DKA protocols.
+
+Clinical Calculators
+Anion Gap
+
+Clinical Calculators
+Diagnosis reference
+1. American Diabetes Association Professional Practice Committee. 6. Glycemic Goals and Hypoglycemia: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1 Suppl 1):S128-S145. doi:10.2337/dc25-S006
+
+Treatment of Hyperosmolar Hyperglycemic State
+IV 0.9% saline
+
+Correction of any hypokalemia
+
+IV insulin (as long as serum potassium is ≥ 3.3 mEq/L [≥ 3.3 mmol/L])
+
+All patients with hyperosmolar hyperglycemic state should be hospitalized and managed in the intensive care setting.
+
+Treatment consists of IV saline, correction of hypokalemia, and IV insulin (1, 2, 3).
+
+Treatment is 0.9% (isotonic) saline solution; 1000 mL is given in the first hour. Smaller boluses (500 mL) can be given if there is risk for exacerbation of heart failure or volume overload. Additional boluses may be needed for patients who are hypotensive.
+
+After the first hour, intravenous fluids should be adjusted based on hemodynamic and electrolyte status but should generally be continued at a rate of 250 to 500 mL/hour.
+
+A corrected sodium should be calculated. If the corrected sodium is < 135 mEq/L (< 135 mmol/L), then isotonic saline can be continued. If the corrected sodium is normal or elevated, then 0.45% saline (half normal) should be used.
+
+Dextrose should be added once the glucose level reaches 250 to 300 mg/dL (13.9 to 16.7 mmol/L).
+
+The rate of infusion of IV fluids should be adjusted depending on blood pressure, cardiac status, and the balance between fluid input and output.
+
+Insulin is given as a 0.05 unit/kg/hour infusion after the first liter of saline has been infused and hypokalemia has been corrected. Hydration alone can sometimes precipitously decrease plasma glucose, so insulin dose may need to be reduced. A too-quick reduction in osmolality can lead to cerebral edema. Occasional patients with insulin-resistant type 2 diabetes with hyperosmolar hyperglycemic state require larger insulin doses. Once plasma glucose reaches 300 mg/dL (16.7 mmol/L), insulin infusion should be reduced to basal levels (1 to 2 units/hour) until rehydration is complete and the patient is able to eat.
+
+If significant ketonemia and acidosis are present in a patient with HHS/DKA overlap, insulin should be administered according to DKA protocols.
+
+Target plasma glucose is between 250 and 300 mg/dL (13.9 to 16.7 mmol/L). After recovery from the acute episode, patients are usually switched to adjusted doses of subcutaneous insulin.
+
+Potassium replacement is similar to that in diabetic ketoacidosis: 40 mEq/hour for serum potassium < 3.3 mEq/L (< 3.3 mmol/L); 20 to 30 mEq/hour for serum potassium between 3.3 and 4.9 mEq/L (3.3 and 4.9 mmol/L); and none for serum potassium ≥ 5 mEq/L (≥ 5 mmol/L).

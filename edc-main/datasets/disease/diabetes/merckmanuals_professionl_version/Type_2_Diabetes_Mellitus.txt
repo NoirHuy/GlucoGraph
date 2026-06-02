@@ -1,0 +1,355 @@
+Type 2 Diabetes Mellitus
+
+
+ByErika F. Brutsaert, MD, New York Medical College
+Reviewed ByGlenn D. Braunstein, MD, Cedars-Sinai Medical Center
+Reviewed/Revised Dec 2025 | Modified Feb 2026
+View Patient Education
+Type 2 diabetes mellitus is characterized by insulin resistance and inadequate insulin secretion relative to needs. Early symptoms are related to hyperglycemia and include polydipsia, polyphagia, polyuria, and blurred vision. Later complications include vascular disease, peripheral neuropathy, nephropathy, and predisposition to infection. Diagnosis is by measuring plasma glucose. Treatment is diet, exercise, and medications that reduce glucose levels, including insulin, oral antihyperglycemic medications, and non-insulin injectable medications. Complications can be delayed or prevented with adequate glycemic control; cardiovascular disease remains the leading cause of mortality in diabetes mellitus.
+
+Etiology
+|
+Screening and Prevention of Type 2 Diabetes
+|
+Symptoms and Signs
+|
+Diagnosis
+|
+Treatment
+|
+Monitoring Type 2 Diabetes Treatment
+|
+Complications
+|
+Key Points
+|
+More Information
+|
+Drug Information
+|
+	Multimedia
+Overview of Diabetes
+
+video
+Etiology of Type 2 Diabetes Mellitus
+Type 2 diabetes is caused by:
+
+Resistance to insulin
+
+In type 2 diabetes mellitus, insulin secretion is inadequate because patients have developed resistance to insulin (see table General Characteristics of Types 1 and 2 Diabetes Mellitus). Hepatic insulin resistance leads to an inability to suppress hepatic glucose production, and peripheral insulin resistance impairs peripheral glucose uptake. This combination gives rise to fasting and postprandial hyperglycemia. Often insulin levels are very high, especially early in the disease. Later in the course of the disease, insulin production may fall, further exacerbating hyperglycemia.
+
+The disease generally develops in adults and becomes more common with increasing age. In the United States, approximately 30% of adults aged 18 to 44 years have impaired fasting glucose regulation or impaired glucose tolerance, while nearly 50% of adults > 65 do (1). In older adults, plasma glucose levels reach higher levels after eating than in younger adults, especially after meals with high carbohydrate loads. Glucose levels also take longer to return to normal, in part because of increased accumulation of visceral and abdominal fat and decreased muscle mass.
+
+Type 2 diabetes has also become more common among children because childhood obesity has become epidemic (2).
+
+More than 90% of adults with diabetes have type 2 disease (3, 4). There are both environmental and genetic determinants, as evidenced by the high prevalence of the disease in relatives of people with the disease (3, 5). Although several genetic polymorphisms have been identified, no single gene responsible for the most common forms of type 2 diabetes has been identified (6).
+
+Pathogenesis is complex and incompletely understood. Hyperglycemia develops when insulin secretion can no longer compensate for insulin resistance. Although insulin resistance is characteristic in patients with type 2 diabetes and those at risk of it, patients also exhibit beta cell dysfunction and impaired insulin secretion that progresses over time, including:
+
+Impaired first-phase insulin secretion
+
+A loss of normally pulsatile insulin secretion
+
+An increase in proinsulin secretion signaling, indicating impaired insulin processing
+
+An accumulation of islet amyloid polypeptide (a protein normally secreted with insulin)
+
+Hyperglycemia itself may impair insulin secretion, because high glucose levels desensitize beta cells, cause beta cell dysfunction (glucose toxicity), or both.
+
+Obesity and weight gain are important determinants of insulin resistance in type 2 diabetes. They have some genetic determinants but also reflect diet, exercise, and lifestyle. An inability to suppress lipolysis in adipose tissue increases plasma levels of free fatty acids that may impair insulin-stimulated glucose transport and muscle glycogen synthase activity. Adipose tissue also functions as an endocrine organ, releasing multiple factors (adipocytokines) that favorably (adiponectin) and adversely (tumor necrosis factor-alpha, interleukin-6, leptin, resistin) influence glucose metabolism.
+
+Intrauterine growth restriction and low birth weight have also been associated with insulin resistance in later life and may reflect adverse prenatal environmental influences on glucose metabolism (7, 8).
+
+Etiology references
+1. Echouffo-Tcheugui JB, Perreault L, Ji L, Dagogo-Jack S. Diagnosis and Management of Prediabetes: A Review. JAMA. 2023;329(14):1206-1216. doi:10.1001/jama.2023.4063
+
+2. US Preventive Services Task Force, Mangione CM, Barry MJ, et al. Screening for Prediabetes and Type 2 Diabetes in Children and Adolescents: US Preventive Services Task Force Recommendation Statement. JAMA. 2022;328(10):963-967. doi:10.1001/jama.2022.14543
+
+3. American Diabetes Association Professional Practice Committee. 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1 Suppl 1):S27-S49. doi:10.2337/dc25-S002
+
+4. Xu G, Liu B, Sun Y, et al. Prevalence of diagnosed type 1 and type 2 diabetes among US adults in 2016 and 2017: population based study. BMJ. 2018;362:k1497. doi:10.1136/bmj.k1497
+
+5. Nathan DM. Diabetes: Advances in Diagnosis and Treatment. JAMA. 2015;314(10):1052-1062. doi:10.1001/jama.2015.9536
+
+6. Laakso M, Fernandes Silva L. Genetics of Type 2 Diabetes: Past, Present, and Future. Nutrients. 2022;14(15):3201. doi:10.3390/nu14153201
+
+7. Crume TL, Scherzinger A, Stamm E, et al. The long-term impact of intrauterine growth restriction in a diverse U.S. cohort of children: the EPOCH study. Obesity (Silver Spring). 2014;22(2):608-615. doi:10.1002/oby.20565
+
+8. Darendeliler F. IUGR: Genetic influences, metabolic problems, environmental associations/triggers, current and future management. Best Pract Res Clin Endocrinol Metab. 2019;33(3):101260. doi:10.1016/j.beem.2019.01.001
+
+Screening and Prevention of Type 2 Diabetes
+Screening
+Risk factors fortype 2 diabetes include (1):
+
+Age ≥ 35 years
+
+Overweight or obesity (body mass index > 25 kg/m2 or > 23 kg/m2 in individuals of Asian descent)
+
+Physical inactivity
+
+Family history of type 2 diabetes mellitus
+
+History of impaired glucose regulation (prediabetes)
+
+Gestational diabetes mellitus or delivery of a baby > 4.1 kg
+
+Hypertension
+
+Dyslipidemia (high-density lipoprotein [HDL] cholesterol < 35 mg/dL [0.9 mmol/L] or triglyceride level > 250 mg/dL [2.8 mmol/L])
+
+History of cardiovascular disease
+
+Polycystic ovary syndrome
+
+African, Spanish, Latin American, Asian, or American Indian ancestry
+
+Metabolic dysfunction-associated steatotic liver disease (formerly fatty liver disease)
+
+HIV infection
+
+People ≥ age 35 years and all adults with one or more risk factors should be screened for diabetes with a fasting plasma glucose level, glycosylated hemoglobin (HbA1C), or a 2-hour value on a 75-g oral glucose tolerance test (OGTT) at least once every 3 years as long as plasma glucose measurements are normal and at least annually if results reveal impaired fasting glucose levels (see table Diagnostic Criteria for Diabetes Mellitus and Prediabetes) (1).
+
+Individuals taking second-generation antipsychotic medications, long-term glucocorticoids, statins, some thiazide diuretics, and some HIV medications should also be screened for prediabetes and diabetes (1).
+
+Clinical Calculators
+Diabetes Risk Self-Assessment
+
+Clinical Calculators
+Clinical Calculators
+Body Mass Index (Quetelet's index)
+
+Clinical Calculators
+Prevention
+Patients with impaired glucose regulation (prediabetes) should receive counseling addressing their risk of developing diabetes and the importance of lifestyle changes for preventing or delaying the onset of type 2 diabetes. They should be monitored closely for development of diabetes symptoms or elevated plasma glucose (via hemoglobin A1c every 6 months, and annual oral glucose tolerance testing) (2).
+
+Type 2 diabetes usually can be prevented with lifestyle modification. Weight loss of as little as 7% of baseline body weight, combined with moderate-intensity physical activity (such as brisk walking) for at least 150 minutes/week, may reduce the incidence of diabetes in high-risk people by > 50% (2).
+
+Various medications have been shown to prevent or slow progression of prediabetes to diabetes. These include metformin, glucagon-like peptide (GLP-1) receptor agonists (eg, liraglutide, semaglutide, tirzepatide), acarbose, thiazolidinediones, valsartan, testosterone, orlistat, and phentermine/topiramate (2, 3). Metformin is safe and cost-effective and has the most established evidence for the prevention of diabetes. It can be considered if diet and lifestyle are not successful, especially in patients who are at highest risk for developing diabetes (body mass index ≥ 35 or history of gestational diabetes) (4, 5).
+
+In patients with obesity, pharmacotherapy for weight loss, medical devices, or weight loss surgery can be used as adjuncts to diet and physical activity (see weight loss in diabetes). Metabolic surgery (bariatric surgery) has been shown to decrease the risk of progression to diabetes (6).
+
+Screening and prevention references
+1. American Diabetes Association Professional Practice Committee. 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1 Suppl 1):S27-S49. doi:10.2337/dc25-S002
+
+2. American Diabetes Association Professional Practice Committee. 3. Prevention or Delay of Diabetes and Associated Comorbidities: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1 Suppl 1):S50-S58. doi:10.2337/dc25-S003
+
+3. Wang W, Wei R, Huang Z, Luo J, Pan Q, Guo L. Effects of treatment with Glucagon-like peptide-1 receptor agonist on prediabetes with overweight/obesity: A systematic review and meta-analysis. Diabetes Metab Res Rev. 2023;39(7):e3680. doi:10.1002/dmrr.3680
+
+4. Hostalek U, Gwilt M, Hildemann S. Therapeutic Use of Metformin in Prediabetes and Diabetes Prevention. Drugs. 2015;75(10):1071-1094. doi:10.1007/s40265-015-0416-8
+
+5. American Diabetes Association Professional Practice Committee. 1. Improving Care and Promoting Health in Populations: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1 Suppl 1):S14-S26. doi:10.2337/dc25-S001
+
+6. Mechanick JI, Apovian C, Brethauer S, et al. Clinical Practice Guidelines for the Perioperative Nutrition, Metabolic, and Nonsurgical Support of Patients Undergoing Bariatric Procedures - 2019 Update: Cosponsored by American Association of Clinical Endocrinologists/American College of Endocrinology, The Obesity Society, American Society for Metabolic and Bariatric Surgery, Obesity Medicine Association, and American Society of Anesthesiologists. Obesity (Silver Spring). 2020;28(4):O1-O58. doi:10.1002/oby.22719
+
+Symptoms and Signs of Type 2 Diabetes Mellitus
+The mild hyperglycemia of early diabetes is often asymptomatic; therefore, diagnosis may be delayed for many years if routine screening is not performed.
+
+Once symptomatic, the most common symptoms of diabetes mellitus are those of hyperglycemia. More significant hyperglycemia causes glycosuria and thus an osmotic diuresis, leading to urinary frequency, polyuria, and polydipsia that may progress to orthostatic hypotension and dehydration. Severe dehydration causes weakness, fatigue, and mental status changes. Symptoms may come and go as plasma glucose levels fluctuate.
+
+Polyphagia may accompany symptoms of hyperglycemia but is not typically a primary patient concern. Hyperglycemia can also cause weight loss, nausea and vomiting, and blurred vision, and it may predispose to bacterial or fungal infections.
+
+Dermatologic Signs of Insulin Resistance
+
+
+
+Acanthosis Nigricans
+Acanthosis Nigricans
+Acanthosis nigricans is skin thickening and pigmentation most typically developing in the axillae and nape of the neck ... read more
+Photos provided by Thomas Habif, MD.
+
+
+
+
+In some patients, initial symptoms are those of long-term diabetic complications, suggesting that the disease has been present for some time. In some patients, hyperosmolar hyperglycemic state occurs initially, especially during a period of stress or when glucose metabolism is further impaired by medications, such as glucocorticoids.
+
+In addition to symptoms of hyperglycemia, individuals with type 2 diabetes frequently have overweight or obesity, as well as findings of insulin resistance (eg, acanthosis nigricans, skin tags).
+
+Diagnosis of Type 2 Diabetes Mellitus
+Fasting plasma glucose, glycosylated hemoglobin (HbA1C), or oral glucose tolerance test
+
+The diagnosis of diabetes mellitus itself is made based on an abnormal fasting plasma glucose, glycosylated hemoglobin (HbA1C), oral glucose tolerance test, or random glucose in the presence of certain symptoms. (See Diagnosis of Diabetes Mellitus and table Diagnostic Criteria for Diabetes Mellitus and Prediabetes for more details.)
+
+Once diabetes is diagnosed, it may be classified as type 2 diabetes based on evidence of insulin resistance and relative inadequacy of insulin secretion, without evidence of autoimmune causes. The age and manner of presentation may also suggest the classification of the patient's diabetes, typically with older age at presentation than in type 1 diabetes and with associated obesity (1). Note, however, that children can and do develop type 2 diabetes, so age alone is not a reliable differentiator. (See table General Characteristics of Types 1 and 2 Diabetes Mellitus for more details.)
+
+Prediabetes is diagnosed when measures of glucose are between the normal range and the range diagnostic for diabetes (see table Diagnostic Criteria for Diabetes Mellitus and Prediabetes). It is sometimes considered a precursor or transitional state prior to the development of type 2 diabetes. It is a significant risk factor for diabetes and may be present for many years before onset of diabetes. It is associated with an increased risk of cardiovascular disease, mortality, and microvascular complications of diabetes (retinopathy in approximately 8%, peripheral neuropathy in 7 to 16%, and chronic kidney disease in approximately 10%) (2).
+
+Diagnosis references
+1. American Diabetes Association Professional Practice Committee. 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1Suppl 1):S27-S49. doi:10.2337/dc25-S002
+
+2. Echouffo-Tcheugui JB, Perreault L, Ji L, Dagogo-Jack S. Diagnosis and Management of Prediabetes: A Review. JAMA. 2023;329(14):1206-1216. doi:10.1001/jama.2023.4063
+
+Treatment of Type 2 Diabetes Mellitus
+Education
+
+Diet and exercise
+
+Weight loss
+
+Often oral antihyperglycemics (metformin, sodium glucose cotransporter 2 [SGLT2] inhibitors)
+
+Often non-insulin injectable medications (glucagon-like peptide-1 [GLP-1] receptor agonists and dual glucose-dependent insulinotropic polypeptide [GIP] / GLP-1 receptor agonists)
+
+Sometimes insulin
+
+To prevent complications, often renin-angiotensin-aldosterone system blockers (angiotensin-converting enzyme [ACE] inhibitors or angiotensin II receptor blockers [ARBs]), aspirin, and/or statins
+
+Key elements of treatment for all patients are patient education, diet, exercise, weight loss, and monitoring of glucose control. Some patients with type 2 diabetes may be able to avoid or cease treatment with medications if they are able to maintain plasma glucose levels with diet and exercise alone. For detailed discussion, see Medication Treatment of Diabetes.
+
+Diabetes education
+Formal diabetes education (diabetes self-management education and support or DSMES), generally conducted by diabetes nurses and nutrition specialists, is often very effective and have been shown to improve diabetes outcomes (1, 2, 3, 4). Education is considered as important as pharmacologic therapy in managing type 2 diabetes. Education should include information about the following:
+
+Causes of diabetes
+
+Diet
+
+Exercise
+
+Medication use, including insulin when appropriate
+
+Self-monitoring with fingerstick testing or continuous glucose monitoring
+
+Monitoring HbA1C
+
+Symptoms and signs of hypoglycemia, hyperglycemia, and diabetic complications
+
+Education should be reinforced at every physician visit and hospitalization.
+
+Diet
+Individualized medical nutrition therapy with a dietitian should complement physician counseling and diabetes education; the patient and any person who prepares the patient’s meals should be present (1).
+
+Patients should be educated on consuming a diet rich in whole foods rather than processed foods. Carbohydrates should be high quality and should contain adequate amounts of fiber, vitamins, and minerals and be low in added sugar, fat, and sodium.
+
+There are no specific recommendations on the percentages of calories that should come from carbohydrate, protein, or fat. Adjusting diet to individual circumstances can help patients control fluctuations in their glucose level. Dietary management should be individualized based on patient age, size, activity level, tastes, preferences, culture, and goals and should be formulated to accommodate requirements posed by comorbid conditions.   
+
+When appropriate, patients should be educated about using carbohydrate consumption ("counting" carbohydrates) to guide bolus insulin dosing. The concept of the glycemic index (a measure of the impact of an ingested carbohydrate-containing food on the blood glucose level) may be useful in general dietary management as well (1).
+
+Exercise
+Physical activity should increase incrementally to whatever level a patient can tolerate. Both aerobic exercise and resistance exercise have been shown to improve glycemic control in type 2 diabetes, and several studies have shown a combination of resistance and aerobic exercise to be superior to either alone (5, 6, 7). Adults with diabetes and without physical limitations should exercise for a minimum of 150 minutes/week (divided over at least 3 days) (1). Exercise has a variable short-term effect on blood glucose, depending on the timing of exercise in relation to meals and the duration, intensity, and type of exercise.
+
+Patients with known or suspected cardiovascular disease may benefit from a pre-exercise evaluation, possibly including exercise stress testing before beginning an exercise program (1). Activity goals may require modification for patients with complications of diabetes such as neuropathy and retinopathy.
+
+Weight loss
+In people with diabetes and obesity, physicians should prescribe antihyperglycemic medications that promote weight loss (eg, GLP-1 receptor agonists, SGLT-2 inhibitors, or a dual GIP/GLP-1 receptor agonist) or are weight-neutral (eg, dipeptidyl peptidase-4 inhibitors, metformin) if possible (for details, see Medication Treatment of Diabetes). Specific GLP-1 receptor agonists (semaglutide and liraglutide) and a dual GIP/GLP-1 receptor agonist (tirzepatide) used for weight loss at higher doses are associated with significant weight loss even at doses used for diabetes treatment (2, 8).
+
+Other weight loss medications, including orlistat, phentermine/topiramate, and naltrexone/bupropion, may be useful in selected patients as part of a comprehensive weight loss program (8). Orlistat, an intestinal lipase inhibitor, reduces dietary fat absorption; it reduces serum lipids and helps promote weight loss. Phentermine/topiramate is a combination medication that reduces appetite through multiple mechanisms in the brain. These medications have less weight loss efficacy than GLP-1 receptor agonists or tirzepatide but can be considered if there are contraindications or poor tolerance of more effective options.
+
+An oral hydrogel containing cellulose and citric acid that causes patients to feel full and eat less can induce modest weight loss in patients with prediabetes and diabetes (9).
+
+Medical weight-loss devices, including implanted gastric balloons, a vagus nerve stimulator, and gastric aspiration therapy, are also available, but their use remains limited.
+
+Metabolic surgery, such as sleeve gastrectomy or gastric bypass, also leads to weight loss and improvement in glucose control (independent of weight loss) and decreased cardiovascular risk in patients who have diabetes mellitus and should be recommended for appropriately selected patients (8). Consideration of metabolic surgery is specifically recommended in patients with diabetes and a body mass index ≥ 30 kg/m2. Rapid weight loss induced by GLP-1 receptor agonist pharmacotherapy or bariatric surgery can lead to malnutrition (undernutrition) or sarcopenia. A diet with sufficient protein and resistance exercise should be encouraged, and patients should be tested for micronutrient deficiencies.
+
+Pharmacotherapy
+(See also Medications for Diabetes Mellitus Treatment.)
+
+Treatment goals in type 2 diabetes include glycemic control, weight management, and risk reduction in patients with comorbidities such as atherosclerotic cardiovascular disease (ASCVD), heart failure, chronic kidney disease (CKD), and metabolic dysfunction-associated steatohepatitis. Monitoring treatment effectiveness is discussed elsewhere.
+
+(See Weight Loss for a discussion of relevant pharmacotherapy.)
+
+Initial medication selection
+Patients with type 2 diabetes and mildly elevated plasma glucose (HbA1C approximately 7.5%) may be prescribed a trial of diet and exercise. For patients with an inadequate response to a trial of diet and exercise, or in those with more significant hyperglycemia, pharmacologic therapy is necessary.
+
+In patients without ASCVD, heart failure, or CKD, selection of therapy involves consideration of adverse effects, convenience, cost, and patient preference. Metformin is usually the first oral medication used due to its cost-effectiveness and safety profile. GLP-1 or dual GIP/GLP-1 receptor agonists are an effective second-line therapy after metformin and may be more effective than insulin; they may also be used as an add-on to insulin (10, 11). Patients with obesity can also benefit from the weight-lowering effects of GLP-1 receptor agonist therapy or from the use of tirzepatide, a dual GIP/GLP-1 receptor agonist (12).
+
+In patients with more significant glucose elevations at diagnosis or with HbA1C levels 1.5 to 2.0% above target, early combination therapy (metformin plus a dipeptyl-peptidase-4 inhibitor, a GLP-1 or dual GIP/GLP-1 receptor agonist, or a SGLT2 inhibitor), and/or insulin therapy should be initiated. There is evidence that early combination medication therapy with vildagliptin and metformin leads to superior and more durable blood glucose control than a stepwise approach to adding diabetes pharmacotherapy (10, 13).
+
+Medications in patients with comorbidities
+In patients with known ASCVD or at moderate or high risk for ASCVD (> 3 cardiovascular risk factors not including diabetes), or with known CKD, a SGLT2 inhibitor or a GLP-1 receptor agonist is recommended because these medication classes decrease major adverse cardiovascular events (eg, myocardial infarction, stroke) and mortality (10, 12). Specific cardiovascular risk factors used for this determination include:
+
+Poor glycemic control
+
+Hypertension
+
+Dyslipidemia
+
+Smoking or tobacco use
+
+Harmful alcohol use
+
+Family history of ASCVD or CKD
+
+Obesity
+
+For patients with type 2 diabetes, a statin is recommended for all adults 40 to 75 years old, for those 20 to 39 years old with additional risk factors for ASCVD, and those of any age with CKD (14, 15, 16). The intensity of statin therapy depends upon specific risk factors. The risk of teratogenicity should be considered in all individuals of childbearing potential.
+
+Aspirin is recommended for patients with diabetes and known ASCVD (14).
+
+Patients with type 2 diabetes and heart failure with either reduced or preserved ejection fraction should be treated with an SGLT2 inhibitor. Those with symptomatic heart failure with preserved ejection fraction and obesity may also receive a GLP-1 receptor agonist (10).
+
+In patients with CKD (17, 18) or heart failure (19) without contraindications, SGLT2-inhibitors are recommended because they have been shown to decrease disease progression and mortality. An ACE inhibitor or ARB is recommended for patients with diabetes and CKD (evidenced by albuminuria and/or decreased glomerular filtration rate), and is first-line therapy for patients with diabetes and hypertension regardless of CKD status (15). A nonsteroidal mineralocorticoid receptor antagonists (eg, finerenone) is recommended in individuals with CKD, particularly those with persistent albuminuria despite maximal ACE inhibitor or ARB therapy (12).
+
+GLP-1 or dual GIP/GLP-1 receptor agonists and pioglitazone are recommended for patients with metabolic dysfunction-associated steatotic liver disease or metabolic dysfunction-associated steatohepatitis (10).
+
+Insulin
+Insulin should generally be considered in patients with evidence of ongoing catabolism (unintentional weight loss) or symptoms of hyperglycemia (ie, polyuria, polydipsia) with HbA1C levels > 10% (86 mmol/mol) and blood glucose levels ≥ 300 mg/dL (16.7 mmol/L) (10).
+
+Insulin is also indicated as initial therapy for patients with type 2 diabetes who are pregnant (20), and for patients who present with acute metabolic decompensation, such as hyperosmolar hyperglycemic state or diabetic ketoacidosis (DKA). Patients with severe hyperglycemia may respond better to therapy after glucose levels are normalized with insulin treatment.
+
+Depending on patient needs, insulin can be administered as basal insulin (long- or intermediate-acting insulin), bolus insulin with meals (rapid acting insulin), a combination of basal and bolus insulin, or as twice daily premixed intermediate- and short- or rapid-acting insulin.
+
+Foot care
+Adults with diabetes, including type 2 diabetes, should undergo a comprehensive foot examination at least annually (see Complications for more details) (21, 22, 23). Individuals with peripheral neuropathy, history of ulcers or amputations, or poorly controlled glucose, should have an examination at every visit and certain guidelines, recommend this approach for all patients with diabetes. Assessment of neuropathy includes 10 g monofilament test as well as pinprick, temperature, vibration testing.
+
+Regular professional podiatric care, including trimming of toenails and calluses, is important for patients with sensory loss or circulatory impairment. Toenails should be cut, preferably by a podiatrist, straight across and not too close to the skin.
+
+Patients with sensory loss or circulatory impairment should be advised to inspect their feet daily for cracks, fissures, calluses, corns, and ulcers. Feet should be washed daily in lukewarm water, using mild soap, and dried gently and thoroughly. A lubricant (eg, lanolin) should be applied to dry, scaly skin. Nonmedicated foot powders should be applied to moist feet. Adhesive plasters and tape, harsh chemicals, corn cures, water bottles, and electric pads should not be used on skin. Patients should change socks or stockings daily and not wear constricting clothing (eg, garters, socks, stockings with tight elastic tops).
+
+Shoes should fit well, be wide-toed without open heels or toes, and be changed frequently. Special shoes should be prescribed to reduce trauma if the foot is deformed (eg, previous toe amputation, hammer toe, bunion). Walking barefoot should be avoided.
+
+Patients with neuropathic foot ulcers ideally should avoid weight bearing until ulcers heal. If they cannot, they should wear appropriate orthotic protection. Debridement and antibiotics may result in good healing and may prevent major surgery. After the ulcer has healed, appropriate inserts or special shoes should be prescribed. In refractory cases, especially if osteomyelitis is present, surgical removal of the metatarsal head (the source of pressure), amputation of the involved toe, or transmetatarsal amputation may be required. A neuropathic joint can often be satisfactorily managed with orthopedic devices (eg, short leg braces, molded shoes, sponge-rubber arch supports, crutches, prostheses).
+
+Vaccination
+All patients with diabetes, should be vaccinated against Streptococcus pneumoniae, influenza virus, hepatitis B, varicella, respiratory syncytial virus, and SARS-CoV-2 as per standard recommendations (24).
+
+Treatment references
+Monitoring Type 2 Diabetes Treatment
+HbA1C levels reflect glucose control over the preceding 3 months and hence assess control between physician visits. HbA1C should be assessed at least twice a year in patients with type 2 diabetes when plasma glucose appears stable and more frequently when control is uncertain. For most patients, the goal HbA1C is < 7%; however, this goal should be individualized. For older adults, those with high risk of hypoglycemia, and those with limited life expectancy, a target HbA1C of < 7.5 to 8.5% may be appropriate (1, 2). Home HbA1c testing kits are available but are used infrequently.
+
+The frequency of home blood glucose monitoring or need for continuous glucose monitoring in type 2 diabetes should be tailored to the individual depending upon the risk of hypoglycemia, the use of insulin, and overall glycemic control (HbA1c level). Patients treated with insulin should monitor glucose at least once daily, and patients taking multiple daily injections of insulin should use continuous glucose monitoring when possible, or check fingerstick glucose multiple times per day, similar to monitoring in a patient with type 1 diabetes. Even for patients whose type 2 diabetes is relatively well-controlled without insulin, continuous glucose monitoring can help support behavioral modification to understand the impact of dietary choices and exercise on glucose levels.
+
+Monitoring references
+1. American Diabetes Association Professional Practice Committee. 6. Glycemic Goals and Hypoglycemia: Standards of Care in Diabetes-2025. Diabetes Care. 2025;48(1 Suppl 1):S128-S145. doi:10.2337/dc25-S006
+
+2. Kalyani RR, Neumiller JJ, Maruthur NM, Wexler DJ. Diagnosis and Treatment of Type 2 Diabetes in Adults: A Review. JAMA. Published online June 23, 2025. doi:10.1001/jama.2025.5956
+
+Complications of Type 2 Diabetes
+Most complications that occur in patients with type 2 diabetes are the vascular, neurologic, and immunologic complications of diabetes in general; metabolic-dysfunction associated liver disease is more specific to type 2 diabetes. Screening recommendations exist for both general and specific complications.
+
+Acute complications of type 1 diabetes and its treatment, including hyperosmolar hyperglycemic state and hypoglycemia, and are discussed elsewhere.
+
+See Long-Term Complications of Diabetes Mellitus for a more detailed discussion of specific complications.
+
+Complications of diabetes in general
+Chronic hyperglycemia leads to complications that affect small vessels (microvascular), large vessels (macrovascular), or both.
+
+Microvascular complications include retinopathy, nephropathy, and neuropathy. Neuropathy is a heterogeneous long-term complication, with multifactorial pathogenesis that includes toxic effects of hyperglycemia and advanced glycation end-products on nerves, and ischemia to nerves from microvascular disease.
+
+Macrovascular complications include atherosclerosis of large vessels leading to angina pectoris and myocardial infarction, transient ischemic attacks and strokes, and peripheral artery disease.
+
+Immune dysfunction is another major long-term complication.
+
+Risk of complications can be decreased by strict glycemic control and by management of hypertension and lipid levels. Specific measures for prevention of progression of complications once detected are described under Long-Term Complications.
+
+Complications specific to type 2 diabetes
+The majority, but not all, adults with type 2 diabetes also have metabolic dysfunction-associated steatotic liver disease (MASLD), placing them at risk for the development of metabolic dysfunction-associated steatohepatitis (MASH) and cirrhosis (1, 2).
+
+Screening for complications in type 2 diabetes
+Adults with type 2 diabetes should undergo the following screening for complications (1, 3, 4, 5):
+
+Retinopathy: Dilated and comprehensive eye examination at diagnosis, and then every 1 to 2 years
+
+Neuropathy and foot ulcers: Foot examination with pulses, reflexes, temperature or pinprick sensation, vibration, and monofilament testing at diagnosis, then annually
+
+Nephropathy: Spot urine albumin-to-creatinine ratio and estimated glomerular filtration rate (eGFR) at diagnosis, then annually
+
+Hypertension: Blood pressure measurement at every visit
+
+Atherosclerotic cardiovascular disease: Lipid profile soon after diagnosis, then annually; additional screening depends on signs, symptoms, and additional risk factors
+
+Heart failure: Consider measuring a natriuretic peptide
+
+Peripheral artery disease: Consider ankle-brachial index if ≥ 65 years and any other microvascular disease, foot complications, or end-organ damage is present
+
+MASH and cirrhosis: Calculate the fibrosis-4 (FIB-4) index using alanine aminotransferase (ALT), aspartate aminotransferase (AST), and platelet count
+
+Additional cardiovascular screening may include risk stratification, electrocardiography, or other testing.

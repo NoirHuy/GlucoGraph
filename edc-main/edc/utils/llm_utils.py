@@ -8,8 +8,106 @@ from typing import List
 import gc
 import torch
 import logging
+import threading
 
 logger = logging.getLogger(__name__)
+
+
+class APIKeyPool:
+    """Thread-safe and Coroutine-safe API Key rotation pool for OpenRouter."""
+    def __init__(self, env_prefix: str = "OPENROUTER_API_KEY"):
+        # Dynamically load .env files up to two levels of parent directories
+        try:
+            from dotenv import load_dotenv
+            load_dotenv()                              # Current directory
+            load_dotenv(dotenv_path="../.env")         # One level up (e.g. edc-main/)
+            load_dotenv(dotenv_path="../../.env")      # Two levels up (root folder MyProject/)
+        except ImportError:
+            pass
+
+        self.keys = []
+        # 1. Primary key
+        primary = os.environ.get("OPENROUTER_API_KEY") or os.environ.get("OPENROUTER_KEY")
+        if primary:
+            self.keys.append(primary)
+        
+        # 2. Check indexed keys (1 to 20)
+        for i in range(1, 21):
+            k = os.environ.get(f"{env_prefix}_{i}") or os.environ.get(f"OPENROUTER_KEY_{i}")
+            if k and k not in self.keys:
+                self.keys.append(k)
+        
+        self.current_index = 0
+        self.lock = threading.Lock()
+        logger.info(f"[APIKeyPool] Initialized with {len(self.keys)} OpenRouter API keys.")
+
+    def get_active_key(self) -> str:
+        with self.lock:
+            if not self.keys:
+                # If no keys loaded, fallback to empty string so API call raises standard auth error
+                return ""
+            return self.keys[self.current_index]
+
+    def report_failure(self, failed_key: str):
+        with self.lock:
+            if failed_key in self.keys:
+                # Proactively mark key as expired in .env files to disable/comment it out!
+                self._mark_key_expired_in_env(failed_key)
+                
+                idx = self.keys.index(failed_key)
+                if idx == self.current_index:
+                    next_idx = (self.current_index + 1) % len(self.keys)
+                    logger.warning(
+                        f"[APIKeyPool] Key index {self.current_index} failed/exhausted. "
+                        f"Automatically rotating to key index {next_idx}."
+                    )
+                    self.current_index = next_idx
+
+    def _mark_key_expired_in_env(self, failed_key: str):
+        """Comments out the failed key in any loaded .env files to mark it as EXPIRED."""
+        if not failed_key:
+            return
+            
+        env_paths = [
+            ".env",
+            "../.env",
+            "../../.env",
+            "edc-main/medical_preprocessing_pipeline/.env"
+        ]
+        
+        import datetime
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        for path in env_paths:
+            if os.path.exists(path):
+                try:
+                    with open(path, "r", encoding="utf-8") as f:
+                        lines = f.readlines()
+                    
+                    modified = False
+                    new_lines = []
+                    for line in lines:
+                        # If the key exists on this line and is NOT already commented out as EXPIRED
+                        if failed_key in line and not line.strip().startswith("# [EXPIRED]"):
+                            stripped_line = line.rstrip("\r\n")
+                            # Disable the key by commenting it out and appending a timestamp
+                            new_line = f"# [EXPIRED at {timestamp}] {stripped_line}\n"
+                            new_lines.append(new_line)
+                            modified = True
+                        else:
+                            new_lines.append(line)
+                            
+                    if modified:
+                        with open(path, "w", encoding="utf-8") as f:
+                            f.writelines(new_lines)
+                        logger.info(f"[APIKeyPool] Successfully marked and commented out expired key in: {path}")
+                except Exception as env_err:
+                    logger.warning(f"[APIKeyPool] Failed to write expired label to {path}: {env_err}")
+
+
+# Global instance of key pool
+global_key_pool = APIKeyPool()
+
 
 
 def free_model(model: AutoModelForCausalLM = None, tokenizer: AutoTokenizer = None):
@@ -223,35 +321,48 @@ def openrouter_chat_completion(model, system_prompt, history, temperature=0, max
     Detection is automatic: if GROQ_KEY is set, Groq is used.
     """
     groq_key = os.environ.get("GROQ_KEY", "")
-    openrouter_key = os.environ.get("OPENROUTER_KEY", os.environ.get("OPENROUTER_API_KEY", ""))
     
-    # If the model has a '/' (like meta-llama/...), it MUST go to OpenRouter.
-    # Otherwise, if GROQ_KEY is present, send to Groq.
-    if "/" in model or not groq_key:
-        # Use OpenRouter API
-        client = openai.OpenAI(
-            base_url="https://openrouter.ai/api/v1",
-            api_key=openrouter_key,
-        )
-    else:
-        # Use Groq API
-        client = openai.OpenAI(
-            base_url="https://api.groq.com/openai/v1",
-            api_key=groq_key,
-        )
     response = None
     if system_prompt is not None:
         messages = [{"role": "system", "content": system_prompt}] + history
     else:
         messages = history
+        
     while response is None:
+        # If the model has a '/' (like meta-llama/...), it MUST go to OpenRouter.
+        # Otherwise, if GROQ_KEY is present, send to Groq.
+        if "/" in model or not groq_key:
+            # Use OpenRouter API with key rotation
+            openrouter_key = global_key_pool.get_active_key()
+            client = openai.OpenAI(
+                base_url="https://openrouter.ai/api/v1",
+                api_key=openrouter_key,
+            )
+        else:
+            # Use Groq API
+            client = openai.OpenAI(
+                base_url="https://api.groq.com/openai/v1",
+                api_key=groq_key,
+            )
+            
         try:
             response = client.chat.completions.create(
                 model=model, messages=messages, temperature=temperature, max_tokens=max_tokens
             )
         except Exception as e:
+            err_msg = str(e).lower()
+            if "/" in model or not groq_key:
+                # Detect billing, balance, quota, authentication, or rate limit issues
+                is_quota_or_rate = any(x in err_msg for x in ["rate limit", "429", "quota", "balance", "insufficient", "unauthorized", "401", "invalid api key", "credit"])
+                if is_quota_or_rate:
+                    logger.warning(f"OpenRouter API Key failed due to: {e}. Rotating to next key...")
+                    global_key_pool.report_failure(openrouter_key)
+                    # Retry immediately with the next key, skipping the sleep
+                    continue
+                    
             logger.warning(f"API error: {e}. Retrying in 5s...")
             time.sleep(5)
+            
     logging.debug(f"Model: {model}\nPrompt:\n {messages}\n Result: {response.choices[0].message.content}")
     return response.choices[0].message.content
 

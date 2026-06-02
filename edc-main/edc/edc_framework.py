@@ -617,6 +617,7 @@ class EDC:
     ) -> List[List[List[str]]]:
         """Run single-pass traditional EDC pipeline: OIE -> Semantic Validator -> SD -> SC -> Entity Type Canonicalization -> Post-processing."""
         if output_dir is not None:
+            output_dir = output_dir.strip()
             if os.path.exists(output_dir):
                 logger.error(f"Output directory {output_dir} already exists! Quitting.")
                 exit()

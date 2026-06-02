@@ -1,35 +1,25 @@
 # -*- coding: utf-8 -*-
 """
 sentence_rewriter.py — Sentence splitter and coreference resolution engine
-                        configured to strictly use OpenRouter API.
+                        configured to use the unified API key pool in llm_utils.py.
 """
 
 import logging
 from typing import List
 import os
-from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
-from langchain_core.output_parsers import StrOutputParser
 
 logger = logging.getLogger(__name__)
 
 class SentenceRewriter:
     """
     A class to split text into smaller sentences and perform coreference resolution
-    using an LLM, making each sentence standalone and suitable for Information Extraction.
+    using the global APIKeyPool, making each sentence standalone and suitable for Information Extraction.
     """
     def __init__(self, model_name: str = "meta-llama/llama-3.3-70b-instruct", temperature: float = 0.0):
-        openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
-        if not openrouter_api_key:
-            raise ValueError("OPENROUTER_API_KEY environment variable is not set in the environment or .env file.")
-            
-        logger.info("[SentenceRewriter] Initializing preprocessor LLM via OpenRouter API...")
-        self.llm = ChatOpenAI(
-            model=model_name, 
-            temperature=temperature,
-            api_key=openrouter_api_key,
-            base_url="https://openrouter.ai/api/v1"
-        )
+        logger.info("[SentenceRewriter] Initializing preprocessor LLM wrapper...")
+        self.model_name = model_name
+        self.temperature = temperature
             
         self.prompt = PromptTemplate(
             input_variables=["section_headers", "chunk_content"],
@@ -46,17 +36,34 @@ class SentenceRewriter:
                 "Resolved Standalone Sentences (one per line):"
             )
         )
-        self.chain = self.prompt | self.llm | StrOutputParser()
 
     def rewrite(self, chunk_content: str, section_headers: str) -> List[str]:
         """
         Rewrites a chunk of text into standalone sentences with coreference resolution.
         """
+        import sys
+        # Ensure root of edc-main is in sys.path
+        root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        if root_dir not in sys.path:
+            sys.path.insert(0, root_dir)
+            
+        import edc.utils.llm_utils as llm_utils
+        
         try:
-            result = self.chain.invoke({
-                "section_headers": section_headers,
-                "chunk_content": chunk_content
-            })
+            # Format the user prompt
+            user_message = self.prompt.format(
+                section_headers=section_headers,
+                chunk_content=chunk_content
+            )
+            messages = [{"role": "user", "content": user_message}]
+            
+            result = llm_utils.api_chat_completion(
+                model=self.model_name,
+                system_prompt=None,
+                history=messages,
+                temperature=self.temperature,
+                max_tokens=2048
+            )
             
             # Post-process the output
             lines = result.split('\n')
