@@ -2,7 +2,7 @@ from edc.extract import Extractor
 from edc.schema_definition import SchemaDefiner
 from edc.schema_canonicalization import SchemaCanonicalizer
 from edc.entity_type_canonicalization import EntityTypeCanonicalizer
-from edc.post_processing.umls_normalizer import UMLSNormalizer
+from post_processing.umls_normalizer import UMLSNormalizer
 import edc.utils.llm_utils as llm_utils
 from typing import List
 from transformers import AutoModelForCausalLM, AutoTokenizer

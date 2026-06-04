@@ -1,0 +1,1631 @@
+{
+    "type 1 diabetes mellitus": {
+        "cui": "C0011854",
+        "canonical": "Diabetes Mellitus, Insulin-Dependent",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 2.35,
+        "icd10_code": "E10",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin": {
+        "cui": "C0021641",
+        "canonical": "Insulin",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "destruction of the pancreatic beta-cells": {
+        "cui": "C3244301",
+        "canonical": "Pancreatic beta-cell destruction",
+        "semantic_type": "Finding (T033)",
+        "score": 10.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Pathological destruction of the insulin-producing pancreatic beta cells."
+    },
+    "inadequate insulin production": {
+        "cui": "NONE",
+        "canonical": "inadequate insulin production",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "ketoacidosis": {
+        "cui": "C0220982",
+        "canonical": "Ketoacidosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "type 2 diabetes": {
+        "cui": "C0011860",
+        "canonical": "Diabetes Mellitus, Non-Insulin-Dependent",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 2.6,
+        "icd10_code": "E11",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "basal-bolus dosing": {
+        "cui": "NONE",
+        "canonical": "basal-bolus dosing",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin replacement": {
+        "cui": "NONE",
+        "canonical": "insulin replacement",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "type 1 diabetes": {
+        "cui": "C0011854",
+        "canonical": "Diabetes Mellitus, Insulin-Dependent",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 2.6,
+        "icd10_code": "E10",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin pump": {
+        "cui": "NONE",
+        "canonical": "insulin pump",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "rapid- or short-acting insulin": {
+        "cui": "NONE",
+        "canonical": "rapid- or short-acting insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "high blood glucose level": {
+        "cui": "NONE",
+        "canonical": "high blood glucose level",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "additional boluses": {
+        "cui": "NONE",
+        "canonical": "additional boluses",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin lispro": {
+        "cui": "C0293359",
+        "canonical": "insulin lispro",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "86009",
+        "definition": ""
+    },
+    "rapid-acting insulins": {
+        "cui": "NONE",
+        "canonical": "rapid-acting insulins",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin aspart": {
+        "cui": "C1708521",
+        "canonical": "Insulin Aspart",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 14.59,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "postprandial glucose spikes": {
+        "cui": "NONE",
+        "canonical": "postprandial glucose spikes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "inhaled regular insulin": {
+        "cui": "NONE",
+        "canonical": "inhaled regular insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "rapid-acting insulin": {
+        "cui": "NONE",
+        "canonical": "rapid-acting insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin isophane": {
+        "cui": "C0021658",
+        "canonical": "insulin isophane",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1605101",
+        "definition": ""
+    },
+    "intermediate-acting insulin": {
+        "cui": "NONE",
+        "canonical": "intermediate-acting insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin glargine": {
+        "cui": "C0907402",
+        "canonical": "insulin glargine",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "274783",
+        "definition": ""
+    },
+    "long-acting insulin": {
+        "cui": "C0304870",
+        "canonical": "Insulin, Long-Acting",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin icodec": {
+        "cui": "C5434213",
+        "canonical": "insulin icodec",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "weekly insulin": {
+        "cui": "NONE",
+        "canonical": "weekly insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "mixing insulins": {
+        "cui": "NONE",
+        "canonical": "mixing insulins",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "variability of effect": {
+        "cui": "NONE",
+        "canonical": "variability of effect",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glycemic control less predictable": {
+        "cui": "NONE",
+        "canonical": "glycemic control less predictable",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "intensive treatment": {
+        "cui": "NONE",
+        "canonical": "intensive treatment",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "less frequent treatment": {
+        "cui": "NONE",
+        "canonical": "less frequent treatment",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "intensive therapy": {
+        "cui": "C0021643",
+        "canonical": "Intensive insulin therapy",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 10.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "An intensive treatment for diabetes mellitus consisting of frequent insulin injections or pump therapy guided by self-monitoring of blood glucose."
+    },
+    "hypoglycemia": {
+        "cui": "C0020615",
+        "canonical": "Hypoglycemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 14.6,
+        "icd10_code": "E16.2",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "weight gain": {
+        "cui": "C0043094",
+        "canonical": "Weight Gain",
+        "semantic_type": "Finding (T033)",
+        "score": 16.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "1800 rule": {
+        "cui": "NONE",
+        "canonical": "1800 rule",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "regular insulin": {
+        "cui": "C0021641",
+        "canonical": "Insulin",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 3.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "1500 rule": {
+        "cui": "NONE",
+        "canonical": "1500 rule",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin resistance": {
+        "cui": "C0021655",
+        "canonical": "Insulin Resistance",
+        "semantic_type": "Finding (T033)",
+        "score": 10.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Diminished effectiveness of insulin in lowering blood sugar levels; a characteristic feature of type 2 diabetes that can also occur in type 1 diabetes. [MeSH: D007333]"
+    },
+    "variability in glucose levels": {
+        "cui": "NONE",
+        "canonical": "variability in glucose levels",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "continuous subcutaneous insulin infusion pumps": {
+        "cui": "NONE",
+        "canonical": "continuous subcutaneous insulin infusion pumps",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin deficiency": {
+        "cui": "NONE",
+        "canonical": "insulin deficiency",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "reduction in loss of glucose in urine": {
+        "cui": "NONE",
+        "canonical": "reduction in loss of glucose in urine",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "moderate hypoglycemia": {
+        "cui": "C0020615",
+        "canonical": "Hypoglycemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 7.0,
+        "icd10_code": "E16.0",
+        "rxnorm_id": "NONE",
+        "definition": "A moderate episode of hypoglycemia with symptoms severe enough to require assistance from another person. [ADA Standards of Medical Care]"
+    },
+    "palpitations": {
+        "cui": "C0030252",
+        "canonical": "Palpitations",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "R00.2",
+        "rxnorm_id": "NONE",
+        "definition": "A sensation that the heart is pounding or racing, which is a non-specific sign but may be a manifestation of arrhythmia. [https://orcid.org/0000-0002-0736-9199]"
+    },
+    "mild hypoglycemia": {
+        "cui": "C0020615",
+        "canonical": "Hypoglycemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 7.0,
+        "icd10_code": "E16.0",
+        "rxnorm_id": "NONE",
+        "definition": "A mild episode of hypoglycemia in which the patient is symptomatic but can self-treat by consuming carbohydrates. [ADA Standards of Medical Care]"
+    },
+    "light-headedness": {
+        "cui": "C0012833",
+        "canonical": "Dizziness",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 8.0,
+        "icd10_code": "R42",
+        "rxnorm_id": "NONE",
+        "definition": "A sensation of lightheadedness, unsteadiness, or giddiness often associated with hypoglycemia or orthostatic changes. [NCI]"
+    },
+    "blurred vision": {
+        "cui": "C0344232",
+        "canonical": "Blurred vision",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Lack of sharpness of vision resulting in the inability to see fine detail. [https://orcid.org/0000-0002-0736-9199]"
+    },
+    "agitation": {
+        "cui": "C0085631",
+        "canonical": "Agitation",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "A state of restlessness associated with unpleasant feelings of irritability and tension. Causes include pain, stress, fever, alcohol and nicotine withdrawal, cocaine and hallucinogenic drugs use, depression, bipolar disorders, and schizophrenia."
+    },
+    "confusion": {
+        "cui": "C0009676",
+        "canonical": "Confusion",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 10.0,
+        "icd10_code": "R41.3",
+        "rxnorm_id": "NONE",
+        "definition": "A mental state characterized by bewilderment, emotional disturbance, lack of clear thinking, and perceptual disorientation. [NCI]"
+    },
+    "seizures": {
+        "cui": "C0036572",
+        "canonical": "Seizures",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "stroke": {
+        "cui": "C0038454",
+        "canonical": "Stroke",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "I63",
+        "rxnorm_id": "NONE",
+        "definition": "A sudden loss of neurological function secondary to an ischemic or hemorrhagic intracranial vascular event. [NCIT:C3390]"
+    },
+    "myocardial infarction": {
+        "cui": "C0027051",
+        "canonical": "Myocardial Infarction",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "I21",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sulfonylureas": {
+        "cui": "C0038654",
+        "canonical": "Sulfonylurea Compounds",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 10.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "A class of antidiabetic agents that stimulate insulin secretion from pancreatic beta cells by blocking ATP-sensitive potassium channels. Includes glyburide, glipizide, and glimepiride. [NCI]"
+    },
+    "symptoms of hypoglycemia": {
+        "cui": "NONE",
+        "canonical": "symptoms of hypoglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sugar": {
+        "cui": "C0242209",
+        "canonical": "Sugars",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 2.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Short chain carbohydrate molecules that have hydroxyl groups attached to each carbon atom unit with the exception of one carbon that has a doubly-bond aldehyde or ketone oxygen. Cyclical sugar molecules are formed when the aldehyde or ketone groups respectively form a hemiacetal or hemiketal bond with one of the hydroxyl carbons. The three dimensional structure of the sugar molecule occurs in a vast array of biological and synthetic classes of specialized compounds including AMINO SUGARS; CARBASUGARS; DEOXY SUGARS; SUGAR ACIDS; SUGAR ALCOHOLS; and SUGAR PHOSPHATES."
+    },
+    "oral glucose": {
+        "cui": "C0017765",
+        "canonical": "Glucose",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 8.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "4126",
+        "definition": "Glucose administered orally to treat mild to moderate hypoglycemia. Preferred form: 15-20g fast-acting carbohydrates. [ADA Standards 2024]"
+    },
+    "sucrose": {
+        "cui": "C0038636",
+        "canonical": "sucrose",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "10159",
+        "definition": ""
+    },
+    "dextrose": {
+        "cui": "C0017725",
+        "canonical": "glucose",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "4850",
+        "definition": "aldohexose occurring as the D form and found as a free monosaccharide in fruits and other parts of plants and in the normal blood of all animals; the end product of carbohydrate metabolism and the chief source of energy for most living organisms."
+    },
+    "glucagon": {
+        "cui": "C0017687",
+        "canonical": "glucagon",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "4832",
+        "definition": ""
+    },
+    "dasiglucagon": {
+        "cui": "C5139868",
+        "canonical": "dasiglucagon",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "2535233",
+        "definition": ""
+    },
+    "counter-regulatory response": {
+        "cui": "NONE",
+        "canonical": "counter-regulatory response",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "morning hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "morning hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "intracellular shifts of potassium": {
+        "cui": "NONE",
+        "canonical": "intracellular shifts of potassium",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hypokalemia": {
+        "cui": "C0020621",
+        "canonical": "Hypokalemia",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "E87.6",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin injections": {
+        "cui": "NONE",
+        "canonical": "insulin injections",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "local allergic reactions": {
+        "cui": "NONE",
+        "canonical": "local allergic reactions",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "latex allergy": {
+        "cui": "C0879626",
+        "canonical": "Latex Hypersensitivity",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "Z91.040",
+        "rxnorm_id": "NONE",
+        "definition": "An allergic reaction to natural rubber latex (NRL) proteins. Manifestations range from contact urticaria to anaphylaxis. [NCI]"
+    },
+    "human insulins": {
+        "cui": "NONE",
+        "canonical": "human insulins",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "generalized allergic reaction": {
+        "cui": "NONE",
+        "canonical": "generalized allergic reaction",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "desensitization": {
+        "cui": "C0178702",
+        "canonical": "hypersensitivity desensitization",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 6.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "prevention or reduction of hypersensitivity reactions by administration of graded doses of allergen."
+    },
+    "lipohypertrophy": {
+        "cui": "C0334388",
+        "canonical": "Lipohypertrophy",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "E88.2",
+        "rxnorm_id": "NONE",
+        "definition": "An abnormal accumulation of fat beneath the skin at insulin injection sites, resulting in a firm rubbery lump. [NCI]"
+    },
+    "rotating injection sites": {
+        "cui": "NONE",
+        "canonical": "rotating injection sites",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "circulating anti-insulin antibodies": {
+        "cui": "NONE",
+        "canonical": "circulating anti-insulin antibodies",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "changing insulin preparations": {
+        "cui": "NONE",
+        "canonical": "changing insulin preparations",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "switching from animal to human insulin": {
+        "cui": "NONE",
+        "canonical": "switching from animal to human insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucocorticoids": {
+        "cui": "C0017710",
+        "canonical": "Glucocorticoids",
+        "semantic_type": "Steroid (T110), Hormone (T125), Pharmacologic Substance (T121)",
+        "score": 10.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "A class of steroid hormones produced in the adrenal cortex that regulate glucose metabolism and suppress inflammation. Also used therapeutically as immunosuppressants. [MeSH: D005938]"
+    },
+    "immunosuppressants": {
+        "cui": "C0021081",
+        "canonical": "Immunosuppressive Agents",
+        "semantic_type": "Pharmacologic Substance (T121)",
+        "score": 10.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Agents that suppress immune function by one of several mechanisms of action. Classical immunosuppressants act by inhibiting either the generation or the effector function of T lymphocytes. [MeSH: D007166]"
+    },
+    "type 2 diabetes mellitus": {
+        "cui": "C0011860",
+        "canonical": "Diabetes Mellitus, Non-Insulin-Dependent",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 2.35,
+        "icd10_code": "E11",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "oral antihyperglycemic medications": {
+        "cui": "NONE",
+        "canonical": "oral antihyperglycemic medications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glyburide": {
+        "cui": "C0017628",
+        "canonical": "glyburide",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "4815",
+        "definition": ""
+    },
+    "glipizide": {
+        "cui": "C0017642",
+        "canonical": "glipizide",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "4821",
+        "definition": "1-cyclohexyl-3-(p-(2-(5-methyl pyrazinecarboxamido) ethyl) phenyl) sulfonylurea; a typical member of the sulfonylurea family of type II (NIDDM) antidiabetic drugs."
+    },
+    "glimepiride": {
+        "cui": "C0061323",
+        "canonical": "glimepiride",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "25789",
+        "definition": "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C29073\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C29073\" NCI Thesaurus)"
+    },
+    "insulin secretagogues": {
+        "cui": "C5690720",
+        "canonical": "Insulin Secretagogues",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hyperinsulinemia": {
+        "cui": "C0020459",
+        "canonical": "Hyperinsulinism",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 9.0,
+        "icd10_code": "E16.1",
+        "rxnorm_id": "NONE",
+        "definition": "A condition characterized by abnormally elevated levels of insulin in the blood. [MeSH: D006946]"
+    },
+    "long-acting medications": {
+        "cui": "NONE",
+        "canonical": "long-acting medications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "permanent neurologic disability": {
+        "cui": "NONE",
+        "canonical": "permanent neurologic disability",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "death": {
+        "cui": "NONE",
+        "canonical": "death",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "chlorpropamide": {
+        "cui": "C0008287",
+        "canonical": "chlorpropamide",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "2404",
+        "definition": ""
+    },
+    "syndrome of inappropriate adh secretion": {
+        "cui": "C0021141",
+        "canonical": "Inappropriate ADH Syndrome",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.9,
+        "icd10_code": "E22.2",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "diabetes mellitus": {
+        "cui": "C0011849",
+        "canonical": "Diabetes Mellitus",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 14.6,
+        "icd10_code": "E08-E13",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "worsening of insulin secretion": {
+        "cui": "NONE",
+        "canonical": "worsening of insulin secretion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hepatic glucose production": {
+        "cui": "NONE",
+        "canonical": "hepatic glucose production",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "biguanides (metformin)": {
+        "cui": "C0005382",
+        "canonical": "Biguanides",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 9.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "A class of oral antihyperglycemic agents that includes metformin. Biguanides reduce hepatic glucose production and improve peripheral insulin sensitivity. [NCI]"
+    },
+    "lipid levels": {
+        "cui": "NONE",
+        "canonical": "lipid levels",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "biguanides": {
+        "cui": "C0005382",
+        "canonical": "Biguanides",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "metformin": {
+        "cui": "C0025598",
+        "canonical": "metformin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "6809",
+        "definition": ""
+    },
+    "biguanide": {
+        "cui": "C4317165",
+        "canonical": "biguanide",
+        "semantic_type": "Organic Chemical (T109)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1918319",
+        "definition": "Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract."
+    },
+    "diarrhea": {
+        "cui": "C0011991",
+        "canonical": "Diarrhea",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R19.7",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "gastrointestinal adverse effects": {
+        "cui": "C0521901",
+        "canonical": "Gastrointestinal side effects",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 10.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Adverse drug reactions or side effects that affect the gastrointestinal tract."
+    },
+    "vitamin b12 malabsorption": {
+        "cui": "NONE",
+        "canonical": "vitamin b12 malabsorption",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "lactic acidosis": {
+        "cui": "C0001125",
+        "canonical": "Acidosis, Lactic",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.6,
+        "icd10_code": "E87.20",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "patients at risk of acidemia": {
+        "cui": "NONE",
+        "canonical": "patients at risk of acidemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "kidney disease": {
+        "cui": "C0022658",
+        "canonical": "Kidney Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 5.1,
+        "icd10_code": "N08",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "acidemia": {
+        "cui": "C0220981",
+        "canonical": "Acidemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "E87.2",
+        "rxnorm_id": "NONE",
+        "definition": "An abnormal decrease in the pH of the blood. This is a decrease in the hydrogen ion concentration of the blood. [NCI]"
+    },
+    "hypoxia": {
+        "cui": "C0242429",
+        "canonical": "Hypoxia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "R09.02",
+        "rxnorm_id": "NONE",
+        "definition": "A condition in which there is a deficiency of oxygen reaching the tissues of the body. [MeSH: D000860]"
+    },
+    "severe respiratory disease": {
+        "cui": "C5203670",
+        "canonical": "COVID-19 Virus Disease",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 1.06,
+        "icd10_code": "U07.1",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "alcohol use disorder": {
+        "cui": "C0001956",
+        "canonical": "Alcohol Use Disorder",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "F10.1",
+        "rxnorm_id": "NONE",
+        "definition": "A maladaptive pattern of alcohol use leading to clinically significant impairment or distress. [DSM-5]"
+    },
+    "metabolic acidosis": {
+        "cui": "C0001125",
+        "canonical": "Acidosis, Metabolic",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 9.0,
+        "icd10_code": "E87.2",
+        "rxnorm_id": "NONE",
+        "definition": "A disorder characterized by a decrease in blood pH due to accumulation of acid or depletion of alkaline reserves. [NCI]"
+    },
+    "dehydration": {
+        "cui": "C0011175",
+        "canonical": "Dehydration",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "E86.0",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "troglitazone": {
+        "cui": "C0245514",
+        "canonical": "troglitazone",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "72610",
+        "definition": "An orally-active thiazolidinedione with antidiabetic and hepatotoxic properties and potential antineoplastic activity. Troglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C1522\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C1522\" NCI Thesaurus)"
+    },
+    "acute liver failure": {
+        "cui": "C0162557",
+        "canonical": "Liver Failure, Acute",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 3.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "rosiglitazone": {
+        "cui": "C0289313",
+        "canonical": "rosiglitazone",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "84108",
+        "definition": ""
+    },
+    "heart failure": {
+        "cui": "C0018801",
+        "canonical": "Heart failure",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 14.6,
+        "icd10_code": "I50",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "pioglitazone": {
+        "cui": "C0071097",
+        "canonical": "pioglitazone",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "33738",
+        "definition": ""
+    },
+    "bladder cancer": {
+        "cui": "NONE",
+        "canonical": "bladder cancer",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "fractures": {
+        "cui": "NONE",
+        "canonical": "fractures",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "alpha-glucosidase inhibitors": {
+        "cui": "C1299007",
+        "canonical": "alpha-Glucosidase Inhibitors",
+        "semantic_type": "Pharmacologic Substance (T121)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dyspepsia": {
+        "cui": "C0013395",
+        "canonical": "Dyspepsia",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R10.13",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "flatulence": {
+        "cui": "C0016204",
+        "canonical": "Flatulence",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R14.3",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "alogliptin": {
+        "cui": "C1958126",
+        "canonical": "alogliptin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1368001",
+        "definition": "A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C76906\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C76906\" NCI Thesaurus)"
+    },
+    "dipeptidyl peptidase-4 inhibitor": {
+        "cui": "C1827106",
+        "canonical": "Dipeptidyl-Peptidase IV Inhibitors",
+        "semantic_type": "Pharmacologic Substance (T121)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "linagliptin": {
+        "cui": "C2746078",
+        "canonical": "linagliptin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1100699",
+        "definition": "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C83887\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C83887\" NCI Thesaurus)"
+    },
+    "saxagliptin": {
+        "cui": "C1611934",
+        "canonical": "saxagliptin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "857974",
+        "definition": "A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite."
+    },
+    "sitagliptin": {
+        "cui": "C1565750",
+        "canonical": "sitagliptin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "593411",
+        "definition": "An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis."
+    },
+    "hemoglobin hemoglobin a1c": {
+        "cui": "C0474680",
+        "canonical": "Hemoglobin A1c measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "<p>A1C is a blood test for <a href=\"https://medlineplus.gov/diabetestype2.html\">type 2 diabetes</a> and <a href=\"https://medlineplus.gov/prediabetes.html\">prediabetes</a>. It measures your average blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, level over the past 3 months. Doctors may use the A1C alone or in combination with other diabetes tests to make a diagnosis. They also use the A1C to see how well you are managing your diabetes. This test is different from the blood sugar checks that people with diabetes do every day.</p> <p>Your A1C test result is given in percentages. The higher the percentage, the higher your blood sugar levels have been:</p> <ul> <li>A normal A1C level is below 5.7%</li> <li>Prediabetes is between 5.7 to 6.4%. Having prediabetes is a risk factor for getting type 2 diabetes. People with prediabetes may need retests every year.</li> <li>Type 2 diabetes is above 6.5%</li> <li>If you have diabetes, you should have the A1C test at least twice a year. The A1C goal for many people with diabetes is below 7. It may be different for you. Ask what your goal should be. If your A1C result is too high, you may need to change your diabetes care plan.</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>"
+    },
+    "dipeptidyl peptidase-4 inhibitors": {
+        "cui": "C1827106",
+        "canonical": "Dipeptidyl-Peptidase IV Inhibitors",
+        "semantic_type": "Pharmacologic Substance (T121)",
+        "score": 2.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "plasma glucose": {
+        "cui": "C0202042",
+        "canonical": "Plasma Glucose Measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 8.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Glucose Plasma Concentration (GPC) measurement is an essential diagnostic modality for different types of carbohydrate metabolism derangements including diabetes mellitus. The disordered carbohydrate metabolism that underlies diabetes manifests as hyperglycemia. Plasma glucose concentrations in healthy individuals vary with age. Normal fasting plasma glucose intervals (in the morning after an overnight fast) in children are 3.3 - 5.6 mmol/L (60-100 mg/dL); adult range - 4.1- 5.9 mmol/L (74-106 mg/dL). GPCs are approximately 11% higher than whole blood if the hematocrit is normal. Glucose concentrations in heparinized plasma are reported to be 5% lower than in serum."
+    },
+    "inhibitors": {
+        "cui": "NONE",
+        "canonical": "inhibitors",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria": {
+        "cui": "NONE",
+        "canonical": "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sodium-glucose cotransporter-2 inhibitors": {
+        "cui": "NONE",
+        "canonical": "sodium-glucose cotransporter-2 inhibitors",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "diabetic ketoacidosis (dka)": {
+        "cui": "C0011880",
+        "canonical": "Diabetic Ketoacidosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 3.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "euglycemic diabetic ketoacidosis": {
+        "cui": "C4230761",
+        "canonical": "Euglycemic diabetic ketoacidosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "E10.1",
+        "rxnorm_id": "NONE",
+        "definition": "A rare but life-threatening complication of diabetes characterized by diabetic ketoacidosis in the presence of normal or near-normal blood glucose levels."
+    },
+    "canagliflozin": {
+        "cui": "C2974540",
+        "canonical": "canagliflozin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1373458",
+        "definition": ""
+    },
+    "lower limb amputation": {
+        "cui": "C0337308",
+        "canonical": "Amputation of lower limb",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 1.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "pramlintide": {
+        "cui": "C0537551",
+        "canonical": "pramlintide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "139953",
+        "definition": "A peptide analogue of human amylin with 3 proline substitutions at positions 25, 28 and 29, with antihyperglycemic activity. By mimicking amylin, pramlintide slows gastric emptying, inhibits digestive secretions (gastric acid, pancreatic enzymes, and bile), reduces glucagon secretion, and increases satiety; all of these actions are mediated mostly by glucose-sensitive areas in the brain stem. The overall result is a decrease in blood glucose levels. The use of pramlintide may cause an increased risk of insulin-induced hypoglycemia."
+    },
+    "amylin analog": {
+        "cui": "C1562561",
+        "canonical": "Amylin Analog",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "injectable antihyperglycemic medication": {
+        "cui": "NONE",
+        "canonical": "injectable antihyperglycemic medication",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucagon-like peptide-1 agonists": {
+        "cui": "C1562104",
+        "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 4.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "subcutaneous injections": {
+        "cui": "C0021499",
+        "canonical": "Subcutaneous Injections",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Forceful administration under the skin of liquid medication, nutrient, or other fluid through a hollow needle piercing the skin."
+    },
+    "semaglutide": {
+        "cui": "C3885068",
+        "canonical": "semaglutide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1991302",
+        "definition": ""
+    },
+    "oral form": {
+        "cui": "C0205080",
+        "canonical": "Oral Administration",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 10.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Administration of a drug through the mouth."
+    },
+    "nausea": {
+        "cui": "C0027497",
+        "canonical": "Nausea",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R11.0",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "vomiting": {
+        "cui": "C0042963",
+        "canonical": "Vomiting",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R11.1",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "pancreatitis": {
+        "cui": "C0030305",
+        "canonical": "Pancreatitis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "K85.9",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "tirzepatide": {
+        "cui": "C5139934",
+        "canonical": "tirzepatide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "2601723",
+        "definition": ""
+    },
+    "gip/glp-1 receptor agonist": {
+        "cui": "NONE",
+        "canonical": "gip/glp-1 receptor agonist",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "obesity": {
+        "cui": "C0028754",
+        "canonical": "Obesity",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "E66.9",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "metabolic dysfunction-associated steatotic liver disease": {
+        "cui": "C0400966",
+        "canonical": "Non-alcoholic Fatty Liver Disease",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 2.8000000000000003,
+        "icd10_code": "K76.0",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "tirzepatide in combination with pioglitazone": {
+        "cui": "NONE",
+        "canonical": "tirzepatide in combination with pioglitazone",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "postprandial glucagon secretion": {
+        "cui": "NONE",
+        "canonical": "postprandial glucagon secretion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "type 1 stage 2 diabetes": {
+        "cui": "C5847615",
+        "canonical": "Diabetes mellitus type 1 stage 2",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 4.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Includes individuals with two or more islet autoantibodies but whose disease has now progressed to the development of glucose intolerance, or dysglycemia, from loss of functional β-cell mass."
+    },
+    "dysglycemia": {
+        "cui": "C1960636",
+        "canonical": "Dysglycemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "cytokine release syndrome": {
+        "cui": "C0948245",
+        "canonical": "Cytokine Release Syndrome",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 16.1,
+        "icd10_code": "D89.83",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "fever": {
+        "cui": "C0015967",
+        "canonical": "Fever",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R50.9",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "fatigue": {
+        "cui": "C0015672",
+        "canonical": "Fatigue",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R53.83",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "headache": {
+        "cui": "C0018681",
+        "canonical": "Headache",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R51",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "myalgia": {
+        "cui": "C0231528",
+        "canonical": "Myalgia",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "M79.1",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "arthralgia": {
+        "cui": "C0003862",
+        "canonical": "Arthralgia",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "M25.5",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "elevated liver enzymes": {
+        "cui": "NONE",
+        "canonical": "elevated liver enzymes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "long-term complications of diabetes mellitus": {
+        "cui": "C0271676",
+        "canonical": "Long-term complications of diabetes mellitus",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "E11.9",
+        "rxnorm_id": "NONE",
+        "definition": "Chronic complications arising from long-term poorly controlled diabetes mellitus."
+    },
+    "arbs": {
+        "cui": "NONE",
+        "canonical": "arbs",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "chronic kidney disease": {
+        "cui": "C1561643",
+        "canonical": "Chronic Kidney Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 7.1,
+        "icd10_code": "N18",
+        "rxnorm_id": "NONE",
+        "definition": "<p>You have two kidneys, each about the size of your fist. Their main job is to filter your blood. They remove wastes and extra water, which become urine. They also keep the body's chemicals balanced, help control blood pressure, and make hormones.</p> <p>Chronic kidney disease (CKD) means that your kidneys are damaged and can't filter blood as they should. This damage can cause wastes to build up in your body. It can also cause other problems that can harm your health. Diabetes and high blood pressure are the most common causes of CKD.</p> <p>The kidney damage occurs slowly over many years. Many people don't have any symptoms until their kidney disease is very advanced. <a href=\"https://medlineplus.gov/kidneytests.html\">Blood and urine tests</a> are the only way to know if you have kidney disease.</p> <p>Treatments cannot cure kidney disease, but they may slow kidney disease. They include <a href=\"https://medlineplus.gov/bloodpressuremedicines.html\">medicines to lower blood pressure</a>, control <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, and lower <a href=\"https://medlineplus.gov/cholesterol.html\">cholesterol</a>. CKD may still get worse over time. Sometimes it can lead to <a href=\"https://medlineplus.gov/kidneyfailure.html\">kidney failure</a>. If your kidneys fail, you will need <a href=\"https://medlineplus.gov/dialysis.html\">dialysis</a> or a <a href=\"https://medlineplus.gov/kidneytransplantation.html\">kidney transplantation</a>.</p> <p>You can take steps to keep your kidneys healthier longer:</p> <ul> <li>Choose foods with less <a href=\"https://medlineplus.gov/sodium.html\">salt</a> (sodium)</li> <li><a href=\"https://medlineplus.gov/howtopreventhighbloodpressure.html\">Control your blood pressure</a>; your health care provider can tell you what your blood pressure should be</li> <li>Keep your blood sugar in the target range, if you have <a href=\"https://medlineplus.gov/diabetes.html\">diabetes</a></li> <li>Limit the amount of alcohol you drink</li> <li>Choose foods that are healthy for your heart: fruits, vegetables, whole grains, and low-fat dairy foods</li> <li>Lose weight if you are overweight</li> <li>Be physically active</li> <li>Don't smoke</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>"
+    },
+    "decreased glomerular filtration rate": {
+        "cui": "NONE",
+        "canonical": "decreased glomerular filtration rate",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "finerenone": {
+        "cui": "C4045511",
+        "canonical": "finerenone",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "2562811",
+        "definition": ""
+    },
+    "persistent albuminuria": {
+        "cui": "NONE",
+        "canonical": "persistent albuminuria",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "cardiovascular disease": {
+        "cui": "C0007222",
+        "canonical": "Cardiovascular Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 3.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucagon-like peptide-1 receptor agonists": {
+        "cui": "C1562104",
+        "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 16.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "diabetes": {
+        "cui": "C0011849",
+        "canonical": "Diabetes Mellitus",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 8.1,
+        "icd10_code": "E08-E13",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sglt2-inhibitors": {
+        "cui": "NONE",
+        "canonical": "sglt2-inhibitors",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "ascvd": {
+        "cui": "NONE",
+        "canonical": "ascvd",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "aspirin": {
+        "cui": "C0004057",
+        "canonical": "aspirin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1191",
+        "definition": ""
+    },
+    "atorvastatin": {
+        "cui": "C0286651",
+        "canonical": "atorvastatin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "83367",
+        "definition": "a synthetic lipid-lowering agent; an inhibitor of 3-hydroxy-3-methylglutaryl-coenzyme A (HMG-CoA) reductase that catalyzes the conversion of HMG-CoA to mevalonate, an early and rate-limiting step in cholesterol biosynthesis."
+    },
+    "high-intensity statin": {
+        "cui": "NONE",
+        "canonical": "high-intensity statin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "rosuvastatin": {
+        "cui": "C0965129",
+        "canonical": "rosuvastatin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "301542",
+        "definition": "A statin with antilipidemic and potential antineoplastic activities. Rosuvastatin selectively and competitively binds to and inhibits hepatic hydroxymethyl-glutaryl coenzyme A (HMG-CoA) reductase, the enzyme which catalyzes the conversion of HMG-CoA to mevalonate, a precursor of cholesterol. This leads to a decrease in hepatic cholesterol levels and increase in uptake of LDL cholesterol. In addition, rosuvastatin, like other statins, exhibits pro-apoptotic, growth inhibitory, and pro-differentiation activities in a variety of tumor cell types; these antineoplastic activities may be due, in part, to inhibition of the isoprenylation of Ras and Rho GTPases and related signaling cascades."
+    },
+    "low-density lipoprotein (ldl) cholesterol level": {
+        "cui": "C0202117",
+        "canonical": "Low density lipoprotein cholesterol measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 5.3,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "The determination of the amount of low-density lipoprotein cholesterol present in a sample."
+    },
+    "maximally tolerated statin": {
+        "cui": "NONE",
+        "canonical": "maximally tolerated statin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "ezetimibe": {
+        "cui": "C1142985",
+        "canonical": "ezetimibe",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "341248",
+        "definition": "An azetidinone derivative and a cholesterol absorption inhibitor with lipid-lowering activity. Ezetimibe appears to interact physically with cholesterol transporters at the brush border of the small intestine and inhibits the intestinal absorption of cholesterol and related phytosterols. As a result, ezetimibe causes a decrease in the level of blood cholesterol or an increase in the clearance of cholesterol from the bloodstream. Overall, the following effects observed are a reduction of hepatic cholesterol stores and a reduction of total cholesterol, LDL cholesterol, and other triglycerides in the blood. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C47529\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C47529\" NCI Thesaurus)"
+    },
+    "proprotein convertase subtilisin/kexin type 9 (pcsk-9) inhibitor": {
+        "cui": "NONE",
+        "canonical": "proprotein convertase subtilisin/kexin type 9 (pcsk-9) inhibitor",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "small, dense ldl cholesterol cholesterol": {
+        "cui": "NONE",
+        "canonical": "small, dense ldl cholesterol cholesterol",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "iv dextrose": {
+        "cui": "C0017765",
+        "canonical": "Glucose",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 8.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "4126",
+        "definition": "Intravenous dextrose (glucose) solution used to treat severe hypoglycemia when the patient is unconscious or unable to take oral carbohydrates. [NCI]"
+    },
+    "ckd": {
+        "cui": "C1561643",
+        "canonical": "Chronic Kidney Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "N18.9",
+        "rxnorm_id": "NONE",
+        "definition": "A condition characterized by gradual loss of kidney function over time."
+    },
+    "euglycemic dka": {
+        "cui": "C4230761",
+        "canonical": "Euglycemic diabetic ketoacidosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 10.0,
+        "icd10_code": "E10.1",
+        "rxnorm_id": "NONE",
+        "definition": "A rare but life-threatening complication of diabetes characterized by diabetic ketoacidosis in the presence of normal or near-normal blood glucose levels."
+    }
+}
