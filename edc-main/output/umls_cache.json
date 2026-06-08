@@ -1,4 +1,5 @@
 {
+    "__version__": "2.0",
     "stroke": {
         "cui": "C0038454",
         "canonical": "Stroke",
@@ -3733,5 +3734,1175 @@
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
         "definition": "The determination of the amount of brain natriuretic peptide present in a sample."
+    },
+    "sodium-glucose cotransporter-2 inhibitors": {
+        "cui": "NONE",
+        "canonical": "sodium-glucose cotransporter-2 inhibitors",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucagon-like peptide-1 agonists": {
+        "cui": "C1562104",
+        "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 3.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Sloučeniny, které stimulují aktivitu receptoru pro peptid podobný glukagonu-1. Agonisté receptoru pro peptid podobný glukagonu-1 se používají k léčbě diabetu 2. typu a obezity."
+    },
+    "ace inhibitors": {
+        "cui": "NONE",
+        "canonical": "ace inhibitors",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "small, dense ldl cholesterol cholesterol": {
+        "cui": "NONE",
+        "canonical": "small, dense ldl cholesterol cholesterol",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "iv insulin infusion": {
+        "cui": "NONE",
+        "canonical": "iv insulin infusion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "patients with type 1 diabetes mellitus younger than 30 years": {
+        "cui": "NONE",
+        "canonical": "patients with type 1 diabetes mellitus younger than 30 years",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "t cell-mediated immune response": {
+        "cui": "NONE",
+        "canonical": "t cell-mediated immune response",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulitis": {
+        "cui": "NONE",
+        "canonical": "insulitis",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "coxsackievirus": {
+        "cui": "NONE",
+        "canonical": "coxsackievirus",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "rubella": {
+        "cui": "C0035920",
+        "canonical": "Rubella",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "B06.9",
+        "rxnorm_id": "NONE",
+        "definition": "Nakažlivé virové onemocnění s inkubační dobou okolo dvou týdnů. Patří mezi exantémové infekce. Projevuje se celkovými příznaky podobnými chřipce, zduřením mízních uzlin a vyrážkou. Nebezpečné je onemocnění matky v době těhotenství (první tři měsíce), protože virus může těžce poškodit plod (srdeční vady, hluchota, katarakta). Onemocnění zanechává imunitu a existuje proti němu očkování. (cit. Velký lékařský slovník online, 2015 http://lekarske.slovniky.cz)"
+    },
+    "beta cells": {
+        "cui": "NONE",
+        "canonical": "beta cells",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "weakness in patients with type 1 diabetes mellitus": {
+        "cui": "NONE",
+        "canonical": "weakness in patients with type 1 diabetes mellitus",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "fatigue in patients with type 1 diabetes mellitus": {
+        "cui": "NONE",
+        "canonical": "fatigue in patients with type 1 diabetes mellitus",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "mental status changes in patients with type 1 diabetes mellitus": {
+        "cui": "NONE",
+        "canonical": "mental status changes in patients with type 1 diabetes mellitus",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "weight loss": {
+        "cui": "C1262477",
+        "canonical": "Weight Loss",
+        "semantic_type": "Finding (T033)",
+        "score": 13.09,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Snížení tělesné hmotnosti během časového intervalu."
+    },
+    "honeymoon phase": {
+        "cui": "NONE",
+        "canonical": "honeymoon phase",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glycosylated hemoglobin": {
+        "cui": "NONE",
+        "canonical": "glycosylated hemoglobin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "c-peptide": {
+        "cui": "NONE",
+        "canonical": "c-peptide",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "random glucose": {
+        "cui": "C0583512",
+        "canonical": "Plasma random glucose measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 5.08,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "symptoms": {
+        "cui": "NONE",
+        "canonical": "symptoms",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "younger age at presentation": {
+        "cui": "NONE",
+        "canonical": "younger age at presentation",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucose control": {
+        "cui": "C5392125",
+        "canonical": "Glycemic Control",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 3.08,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Strategie pro regulaci hladiny krevní glukózy. Patří sem podávání inzulinu, dietoterapie a cvičení."
+    },
+    "longer-acting insulin": {
+        "cui": "NONE",
+        "canonical": "longer-acting insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "continuous subcutaneous infusion of rapid-acting insulin": {
+        "cui": "NONE",
+        "canonical": "continuous subcutaneous infusion of rapid-acting insulin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "patients with diabetes who take multiple daily injections": {
+        "cui": "NONE",
+        "canonical": "patients with diabetes who take multiple daily injections",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hypoglycemia unawareness": {
+        "cui": "NONE",
+        "canonical": "hypoglycemia unawareness",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "amylin analogue": {
+        "cui": "NONE",
+        "canonical": "amylin analogue",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hypertension": {
+        "cui": "NONE",
+        "canonical": "hypertension",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "education": {
+        "cui": "NONE",
+        "canonical": "education",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "individualized medical nutrition therapy": {
+        "cui": "NONE",
+        "canonical": "individualized medical nutrition therapy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "physician counseling": {
+        "cui": "NONE",
+        "canonical": "physician counseling",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "overall glycemic control": {
+        "cui": "NONE",
+        "canonical": "overall glycemic control",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "strength training": {
+        "cui": "C0872279",
+        "canonical": "Resistance Training",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 3.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Druh cvičebního programu na budování síly, který vyžaduje, aby sval vyvíjel sílu proti nějaké formě odporu, jako je hmotnost, napínací pásky, voda nebo nepohyblivé předměty. Odporové cvičení je kombinací statických a dynamických kontrakcí zahrnujících zkrácení a prodloužení kosterních svalů."
+    },
+    "calluses": {
+        "cui": "NONE",
+        "canonical": "calluses",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "podiatric care": {
+        "cui": "NONE",
+        "canonical": "podiatric care",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dry, scaly skin": {
+        "cui": "NONE",
+        "canonical": "dry, scaly skin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "bunion": {
+        "cui": "NONE",
+        "canonical": "bunion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "foot deformity": {
+        "cui": "NONE",
+        "canonical": "foot deformity",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "short leg braces": {
+        "cui": "NONE",
+        "canonical": "short leg braces",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "molded shoes": {
+        "cui": "NONE",
+        "canonical": "molded shoes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sponge-rubber arch supports": {
+        "cui": "NONE",
+        "canonical": "sponge-rubber arch supports",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "prostheses": {
+        "cui": "NONE",
+        "canonical": "prostheses",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin delivery": {
+        "cui": "NONE",
+        "canonical": "insulin delivery",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "pancreatic islet cell transplantation": {
+        "cui": "NONE",
+        "canonical": "pancreatic islet cell transplantation",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "type 1 diabetes treatment": {
+        "cui": "NONE",
+        "canonical": "type 1 diabetes treatment",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "symptoms of diabetes mellitus": {
+        "cui": "NONE",
+        "canonical": "symptoms of diabetes mellitus",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "continuous glucose monitoring": {
+        "cui": "NONE",
+        "canonical": "continuous glucose monitoring",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "medications that induce hypoglycemia": {
+        "cui": "NONE",
+        "canonical": "medications that induce hypoglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "tighter glycemic control": {
+        "cui": "NONE",
+        "canonical": "tighter glycemic control",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucose levels": {
+        "cui": "NONE",
+        "canonical": "glucose levels",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "medications": {
+        "cui": "NONE",
+        "canonical": "medications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "blood glucose level testing": {
+        "cui": "NONE",
+        "canonical": "blood glucose level testing",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "self-monitoring of blood glucose levels": {
+        "cui": "NONE",
+        "canonical": "self-monitoring of blood glucose levels",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "continuous glucose monitors": {
+        "cui": "NONE",
+        "canonical": "continuous glucose monitors",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hemoglobin hemoglobin a1c (hba1c) levels": {
+        "cui": "C0474680",
+        "canonical": "Hemoglobin A1c measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 3.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "<p>A1C is a blood test for <a href=\"https://medlineplus.gov/diabetestype2.html\">type 2 diabetes</a> and <a href=\"https://medlineplus.gov/prediabetes.html\">prediabetes</a>. It measures your average blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, level over the past 3 months. Doctors may use the A1C alone or in combination with other diabetes tests to make a diagnosis. They also use the A1C to see how well you are managing your diabetes. This test is different from the blood sugar checks that people with diabetes do every day.</p> <p>Your A1C test result is given in percentages. The higher the percentage, the higher your blood sugar levels have been:</p> <ul> <li>A normal A1C level is below 5.7%</li> <li>Prediabetes is between 5.7 to 6.4%. Having prediabetes is a risk factor for getting type 2 diabetes. People with prediabetes may need retests every year.</li> <li>Type 2 diabetes is above 6.5%</li> <li>If you have diabetes, you should have the A1C test at least twice a year. The A1C goal for many people with diabetes is below 7. It may be different for you. Ask what your goal should be. If your A1C result is too high, you may need to change your diabetes care plan.</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>"
+    },
+    "hemoglobin hemoglobin a1c (hba1c)": {
+        "cui": "C0474680",
+        "canonical": "Hemoglobin A1c measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 3.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "<p>A1C is a blood test for <a href=\"https://medlineplus.gov/diabetestype2.html\">type 2 diabetes</a> and <a href=\"https://medlineplus.gov/prediabetes.html\">prediabetes</a>. It measures your average blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, level over the past 3 months. Doctors may use the A1C alone or in combination with other diabetes tests to make a diagnosis. They also use the A1C to see how well you are managing your diabetes. This test is different from the blood sugar checks that people with diabetes do every day.</p> <p>Your A1C test result is given in percentages. The higher the percentage, the higher your blood sugar levels have been:</p> <ul> <li>A normal A1C level is below 5.7%</li> <li>Prediabetes is between 5.7 to 6.4%. Having prediabetes is a risk factor for getting type 2 diabetes. People with prediabetes may need retests every year.</li> <li>Type 2 diabetes is above 6.5%</li> <li>If you have diabetes, you should have the A1C test at least twice a year. The A1C goal for many people with diabetes is below 7. It may be different for you. Ask what your goal should be. If your A1C result is too high, you may need to change your diabetes care plan.</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>"
+    },
+    "vitamin b12 deficiency anemia": {
+        "cui": "C2004521",
+        "canonical": "Vitamin B12 deficiency anemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "D51",
+        "rxnorm_id": "NONE",
+        "definition": "Evidence of vitamin B12 deficiency anemia."
+    },
+    "hemolytic anemias": {
+        "cui": "NONE",
+        "canonical": "hemolytic anemias",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hbc disease": {
+        "cui": "NONE",
+        "canonical": "hbc disease",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hemoglobinopathy": {
+        "cui": "NONE",
+        "canonical": "hemoglobinopathy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "deficiency anemias": {
+        "cui": "C0041782",
+        "canonical": "Deficiency anemias",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "fructosamine": {
+        "cui": "C0060765",
+        "canonical": "Fructosamine",
+        "semantic_type": "Organic Chemical (T109)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "An amino sugar formed when glucose non-enzymatically reacts with the N-terminal amino group of proteins. The fructose moiety is derived from glucose by the classical Amadori rearrangement."
+    },
+    "other glycosylated proteins": {
+        "cui": "NONE",
+        "canonical": "other glycosylated proteins",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "abdominal pain": {
+        "cui": "C0000737",
+        "canonical": "Abdominal Pain",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R10.9",
+        "rxnorm_id": "NONE",
+        "definition": "Pocit nevolnosti, obtíží nebo bolesti v břišní oblasti; obvykle při funkčních poruchách, tkáňových poraněních nebo nemocech."
+    },
+    "cold or flu-like symptoms": {
+        "cui": "NONE",
+        "canonical": "cold or flu-like symptoms",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "autoimmune comorbidities specific to type 1 diabetes": {
+        "cui": "NONE",
+        "canonical": "autoimmune comorbidities specific to type 1 diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "autoimmune diseases": {
+        "cui": "C0004364",
+        "canonical": "Autoimmune Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 14.6,
+        "icd10_code": "M30-M36",
+        "rxnorm_id": "NONE",
+        "definition": "Poruchy charakterizované tvorbou protilátek, které reagují s hostitelskými tkáněmi nebo s imunitními efektorovými buňkami, které jsou autoreaktivní k endogenním peptidům."
+    },
+    "dilated and comprehensive eye examination": {
+        "cui": "NONE",
+        "canonical": "dilated and comprehensive eye examination",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "foot examination with pulses, reflexes, temperature, pinprick sensation, vibration, and monofilament testing": {
+        "cui": "NONE",
+        "canonical": "foot examination with pulses, reflexes, temperature, pinprick sensation, vibration, and monofilament testing",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "spot urine albumin-to-creatinine ratio": {
+        "cui": "NONE",
+        "canonical": "spot urine albumin-to-creatinine ratio",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "estimated glomerular filtration rate (egfr)": {
+        "cui": "NONE",
+        "canonical": "estimated glomerular filtration rate (egfr)",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "measurement of a natriuretic peptide": {
+        "cui": "C1446047",
+        "canonical": "Plasma B natriuretic peptide measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 3.3899999999999997,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "screening": {
+        "cui": "C0220908",
+        "canonical": "Screening procedure",
+        "semantic_type": "Diagnostic Procedure (T060)",
+        "score": 6.58,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Evaluation strategies used to identify risk for conditions, diagnose disease early, and monitor change/progression over time."
+    },
+    "non-insulin injectable medications": {
+        "cui": "NONE",
+        "canonical": "non-insulin injectable medications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "childhood obesity": {
+        "cui": "NONE",
+        "canonical": "childhood obesity",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "environmental determinants": {
+        "cui": "NONE",
+        "canonical": "environmental determinants",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "genetic determinants": {
+        "cui": "NONE",
+        "canonical": "genetic determinants",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "beta cell dysfunction": {
+        "cui": "NONE",
+        "canonical": "beta cell dysfunction",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "impaired insulin secretion": {
+        "cui": "NONE",
+        "canonical": "impaired insulin secretion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dyslipidemia": {
+        "cui": "NONE",
+        "canonical": "dyslipidemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "elevated plasma glucose": {
+        "cui": "NONE",
+        "canonical": "elevated plasma glucose",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "oral glucose tolerance testing": {
+        "cui": "C0029161",
+        "canonical": "Oral Glucose Tolerance Test",
+        "semantic_type": "Diagnostic Procedure (T060)",
+        "score": 6.35,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "liraglutide": {
+        "cui": "C1456408",
+        "canonical": "liraglutide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "475968",
+        "definition": "Analogon glucagon-like peptidu s dlouhým účinkem. Používá se jako antidiabetikum k léčbě diabetu 2. typu. Je rezistentní k DPP4. Vede k uvolnění glukosy jen při dosažení vyšších glykemií. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "glucagon-like peptide-1 receptor agonist": {
+        "cui": "C1562104",
+        "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 5.85,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Sloučeniny, které stimulují aktivitu receptoru pro peptid podobný glukagonu-1. Agonisté receptoru pro peptid podobný glukagonu-1 se používají k léčbě diabetu 2. typu a obezity."
+    },
+    "early diabetes": {
+        "cui": "NONE",
+        "canonical": "early diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "mild hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "mild hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "acanthosis nigricans": {
+        "cui": "C0000889",
+        "canonical": "Acanthosis Nigricans",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "L83",
+        "rxnorm_id": "NONE",
+        "definition": "Kožní změny charakterizované zdrsněním a ztluštěním kůže, tmavou pigmentací a bradavičnatými výrůstky aj. Je buď projevem některých dědičných poruch, nebo průvodním jevem některých nádorů (paraneoplastický projev). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "axillae": {
+        "cui": "NONE",
+        "canonical": "axillae",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "nape of the neck": {
+        "cui": "NONE",
+        "canonical": "nape of the neck",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "symptoms of hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "symptoms of hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "overweight": {
+        "cui": "C0497406",
+        "canonical": "Overweight",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "E66.3",
+        "rxnorm_id": "NONE",
+        "definition": "Nadváha je předstupeň obezity, někdy bývá označována jako první stádium obezity. Přináší zvýšené riziko zdravotních komplikací. Pro evropskou populaci je podle kritérií Světové zdravotnické organizace (WHO) definována indexem tělesné hmotnosti (body-mass index, BMI) v rozmezí 25 až 30. Pro asijskou a pacifickou populaci je nadváha definována rozmezím BMI 23 až 25, někdy 23 až 27. (cit. Wikipedie 2016 http://www.cs.wikipedia.org/)"
+    },
+    "skin tags": {
+        "cui": "NONE",
+        "canonical": "skin tags",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "relative inadequacy of insulin secretion": {
+        "cui": "NONE",
+        "canonical": "relative inadequacy of insulin secretion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "improved glycemic control": {
+        "cui": "NONE",
+        "canonical": "improved glycemic control",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucagon-like peptide-1 receptor agonists (glp-1 ras)": {
+        "cui": "NONE",
+        "canonical": "glucagon-like peptide-1 receptor agonists (glp-1 ras)",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "plasma glucose levels": {
+        "cui": "C0583513",
+        "canonical": "Plasma fasting glucose measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 3.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucose level fluctuations": {
+        "cui": "NONE",
+        "canonical": "glucose level fluctuations",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "adjusting diet": {
+        "cui": "NONE",
+        "canonical": "adjusting diet",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glycemic control in type 2 diabetes": {
+        "cui": "NONE",
+        "canonical": "glycemic control in type 2 diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "aerobic exercise": {
+        "cui": "NONE",
+        "canonical": "aerobic exercise",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "resistance exercise": {
+        "cui": "NONE",
+        "canonical": "resistance exercise",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "combination of resistance and aerobic exercise": {
+        "cui": "NONE",
+        "canonical": "combination of resistance and aerobic exercise",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "implanted gastric balloons": {
+        "cui": "NONE",
+        "canonical": "implanted gastric balloons",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "medical weight-loss device": {
+        "cui": "NONE",
+        "canonical": "medical weight-loss device",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "gastric aspiration therapy": {
+        "cui": "NONE",
+        "canonical": "gastric aspiration therapy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "metabolic surgery": {
+        "cui": "NONE",
+        "canonical": "metabolic surgery",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "more significant hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "more significant hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hemoglobin a1c levels above target": {
+        "cui": "NONE",
+        "canonical": "hemoglobin a1c levels above target",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dual gip/glp-1 receptor agonist": {
+        "cui": "NONE",
+        "canonical": "dual gip/glp-1 receptor agonist",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucose elevations at diagnosis": {
+        "cui": "NONE",
+        "canonical": "glucose elevations at diagnosis",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sodium-glucose cotransporter-2 inhibitor": {
+        "cui": "NONE",
+        "canonical": "sodium-glucose cotransporter-2 inhibitor",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "vildagliptin and metformin combination therapy": {
+        "cui": "NONE",
+        "canonical": "vildagliptin and metformin combination therapy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "stepwise approach to adding diabetes pharmacotherapy": {
+        "cui": "NONE",
+        "canonical": "stepwise approach to adding diabetes pharmacotherapy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "major adverse cardiovascular events": {
+        "cui": "NONE",
+        "canonical": "major adverse cardiovascular events",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "family history": {
+        "cui": "NONE",
+        "canonical": "family history",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "metabolic dysfunction-associated steatohepatitis": {
+        "cui": "NONE",
+        "canonical": "metabolic dysfunction-associated steatohepatitis",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dual gip/glp-1 receptor agonists": {
+        "cui": "NONE",
+        "canonical": "dual gip/glp-1 receptor agonists",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "deformed foot": {
+        "cui": "NONE",
+        "canonical": "deformed foot",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "special shoes": {
+        "cui": "NONE",
+        "canonical": "special shoes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hammer toe": {
+        "cui": "NONE",
+        "canonical": "hammer toe",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "crutches": {
+        "cui": "NONE",
+        "canonical": "crutches",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "patients with type 2 diabetes": {
+        "cui": "NONE",
+        "canonical": "patients with type 2 diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "treatment of type 1 diabetes": {
+        "cui": "NONE",
+        "canonical": "treatment of type 1 diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "complication": {
+        "cui": "NONE",
+        "canonical": "complication",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "toxic effects of hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "toxic effects of hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "nerves": {
+        "cui": "NONE",
+        "canonical": "nerves",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "angina pectoris": {
+        "cui": "C0002962",
+        "canonical": "Angina Pectoris",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "I20",
+        "rxnorm_id": "NONE",
+        "definition": "Algická (bolestivá) forma ischemické choroby srdeční, projevující se bolestí na hrudi (stenokardií), která někdy vyzařuje do ramen nebo čelistí. U klasické neboli námahové AP je bolest vyvolána fyzickou námahou (rychlá chůze, chůze do schodů, pohlavní styk) či rozrušením; negativní roli hraje chlad. Podstatou AP je nejč. aterosklerotické zúžení koronárních tepen srdce a nedostatek kyslíku v srdci při námaze. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)"
+    },
+    "peripheral artery disease": {
+        "cui": "NONE",
+        "canonical": "peripheral artery disease",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "cirrhosis": {
+        "cui": "C1623038",
+        "canonical": "Cirrhosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.09,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "blood pressure measurement": {
+        "cui": "NONE",
+        "canonical": "blood pressure measurement",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
     }
 }

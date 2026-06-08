@@ -1,0 +1,3299 @@
+{
+  "nodes": [
+    {
+      "id": "Diabetes Mellitus, Insulin-Dependent",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011854",
+        "umls_canonical": "Diabetes Mellitus, Insulin-Dependent",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E10",
+        "description": "UMLS Standard Term: Diabetes Mellitus, Insulin-Dependent",
+        "aliases": [
+          "type 1 diabetes",
+          "type 1 diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "Insulin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0021641",
+        "umls_canonical": "Insulin",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "UMLS Standard Term: Insulin",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "U500 insulin",
+          "insulin",
+          "regular insulin"
+        ]
+      }
+    },
+    {
+      "id": "Pancreatic beta-cell destruction",
+      "labels": [
+        "Risk Factor"
+      ],
+      "properties": {
+        "umls_cui": "C3244301",
+        "umls_canonical": "Pancreatic beta-cell destruction",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "Pathological destruction of the insulin-producing pancreatic beta cells.",
+        "aliases": [
+          "destruction of the pancreatic beta-cells"
+        ]
+      }
+    },
+    {
+      "id": "inadequate insulin production",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "inadequate insulin production",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Ketoacidosis",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0220982",
+        "umls_canonical": "Ketoacidosis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Ketoacidosis",
+        "icd10_code": "NONE",
+        "aliases": [
+          "ketoacidosis"
+        ]
+      }
+    },
+    {
+      "id": "Diabetes Mellitus, Non-Insulin-Dependent",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011860",
+        "umls_canonical": "Diabetes Mellitus, Non-Insulin-Dependent",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E11",
+        "description": "UMLS Standard Term: Diabetes Mellitus, Non-Insulin-Dependent",
+        "aliases": [
+          "type 2 diabetes",
+          "type 2 diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "basal-bolus dosing",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "basal-bolus dosing",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin replacement",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "insulin replacement",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin pump",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "insulin pump",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "rapid- or short-acting insulin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "rapid- or short-acting insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "Rapid-acting insulins",
+          "rapid-acting insulin"
+        ]
+      }
+    },
+    {
+      "id": "high blood glucose level",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "high blood glucose level",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "additional boluses",
+      "labels": [
+        "Dosage Value"
+      ],
+      "properties": {
+        "umls_canonical": "additional boluses",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin lispro",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0293359",
+        "umls_canonical": "insulin lispro",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "86009",
+        "description": "UMLS Standard Term: insulin lispro",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Insulin Aspart",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1708521",
+        "umls_canonical": "Insulin Aspart",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "UMLS Standard Term: Insulin Aspart",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "insulin aspart"
+        ]
+      }
+    },
+    {
+      "id": "postprandial glucose spikes",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "postprandial glucose spikes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Inhaled regular insulin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "Inhaled regular insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin isophane",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0021658",
+        "umls_canonical": "insulin isophane",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "1605101",
+        "description": "UMLS Standard Term: insulin isophane",
+        "aliases": []
+      }
+    },
+    {
+      "id": "intermediate-acting insulin",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "intermediate-acting insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin glargine",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0907402",
+        "umls_canonical": "insulin glargine",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "274783",
+        "description": "UMLS Standard Term: insulin glargine",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Insulin, Long-Acting",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0304870",
+        "umls_canonical": "Insulin, Long-Acting",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "UMLS Standard Term: Insulin, Long-Acting",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "long-acting insulin"
+        ]
+      }
+    },
+    {
+      "id": "insulin icodec",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C5434213",
+        "umls_canonical": "insulin icodec",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "UMLS Standard Term: insulin icodec",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "Insulin icodec"
+        ]
+      }
+    },
+    {
+      "id": "weekly insulin",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "weekly insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "mixing insulins",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "mixing insulins",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "variability of effect",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "variability of effect",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "glycemic control less predictable",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "glycemic control less predictable",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "intensive treatment",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "intensive treatment",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "less frequent treatment",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "less frequent treatment",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Intensive insulin therapy",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0021643",
+        "umls_canonical": "Intensive insulin therapy",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "An intensive treatment for diabetes mellitus consisting of frequent insulin injections or pump therapy guided by self-monitoring of blood glucose.",
+        "aliases": [
+          "intensive therapy"
+        ]
+      }
+    },
+    {
+      "id": "Hypoglycemia",
+      "labels": [
+        "Disease",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0020615",
+        "umls_canonical": "Hypoglycemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E16.2",
+        "description": "UMLS Standard Term: Hypoglycemia",
+        "aliases": [
+          "hypoglycemia",
+          "mild hypoglycemia",
+          "moderate hypoglycemia"
+        ]
+      }
+    },
+    {
+      "id": "Weight Gain",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0043094",
+        "umls_canonical": "Weight Gain",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "UMLS Standard Term: Weight Gain",
+        "aliases": [
+          "weight gain"
+        ]
+      }
+    },
+    {
+      "id": "1800 rule",
+      "labels": [
+        "Clinical Rule"
+      ],
+      "properties": {
+        "umls_canonical": "1800 rule",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "1500 rule",
+      "labels": [
+        "Clinical Rule"
+      ],
+      "properties": {
+        "umls_canonical": "1500 rule",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Insulin Resistance",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0021655",
+        "umls_canonical": "Insulin Resistance",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "Diminished effectiveness of insulin in lowering blood sugar levels; a characteristic feature of type 2 diabetes that can also occur in type 1 diabetes. [MeSH: D007333]",
+        "aliases": [
+          "insulin resistance"
+        ]
+      }
+    },
+    {
+      "id": "variability in glucose levels",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "variability in glucose levels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Continuous subcutaneous insulin infusion pumps",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Continuous subcutaneous insulin infusion pumps",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin deficiency",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "insulin deficiency",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "reduction in loss of glucose in urine",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "reduction in loss of glucose in urine",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Palpitations",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0030252",
+        "umls_canonical": "Palpitations",
+        "umls_semantic_type": "Finding (T033)",
+        "icd10_code": "R00.2",
+        "description": "A sensation that the heart is pounding or racing, which is a non-specific sign but may be a manifestation of arrhythmia. [https://orcid.org/0000-0002-0736-9199]",
+        "aliases": [
+          "palpitations"
+        ]
+      }
+    },
+    {
+      "id": "Dizziness",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0012833",
+        "umls_canonical": "Dizziness",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R42",
+        "description": "A sensation of lightheadedness, unsteadiness, or giddiness often associated with hypoglycemia or orthostatic changes. [NCI]",
+        "aliases": [
+          "light-headedness"
+        ]
+      }
+    },
+    {
+      "id": "Blurred vision",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0344232",
+        "umls_canonical": "Blurred vision",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "Lack of sharpness of vision resulting in the inability to see fine detail. [https://orcid.org/0000-0002-0736-9199]",
+        "aliases": [
+          "blurred vision"
+        ]
+      }
+    },
+    {
+      "id": "Agitation",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0085631",
+        "umls_canonical": "Agitation",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "description": "A state of restlessness associated with unpleasant feelings of irritability and tension. Causes include pain, stress, fever, alcohol and nicotine withdrawal, cocaine and hallucinogenic drugs use, depression, bipolar disorders, and schizophrenia.",
+        "aliases": [
+          "agitation"
+        ]
+      }
+    },
+    {
+      "id": "Confusion",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0009676",
+        "umls_canonical": "Confusion",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R41.3",
+        "description": "A mental state characterized by bewilderment, emotional disturbance, lack of clear thinking, and perceptual disorientation. [NCI]",
+        "aliases": [
+          "confusion"
+        ]
+      }
+    },
+    {
+      "id": "Seizures",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0036572",
+        "umls_canonical": "Seizures",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "description": "UMLS Standard Term: Seizures",
+        "aliases": [
+          "seizures"
+        ]
+      }
+    },
+    {
+      "id": "Stroke",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0038454",
+        "umls_canonical": "Stroke",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "I63",
+        "description": "A sudden loss of neurological function secondary to an ischemic or hemorrhagic intracranial vascular event. [NCIT:C3390]",
+        "aliases": [
+          "stroke"
+        ]
+      }
+    },
+    {
+      "id": "Myocardial Infarction",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0027051",
+        "umls_canonical": "Myocardial Infarction",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "I21",
+        "description": "UMLS Standard Term: Myocardial Infarction",
+        "aliases": [
+          "myocardial infarction"
+        ]
+      }
+    },
+    {
+      "id": "Sulfonylurea Compounds",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0038654",
+        "umls_canonical": "Sulfonylurea Compounds",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "A class of antidiabetic agents that stimulate insulin secretion from pancreatic beta cells by blocking ATP-sensitive potassium channels. Includes glyburide, glipizide, and glimepiride. [NCI]",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "sulfonylureas"
+        ]
+      }
+    },
+    {
+      "id": "symptoms of hypoglycemia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "symptoms of hypoglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Sugars",
+      "labels": [
+        "Nutrient"
+      ],
+      "properties": {
+        "umls_cui": "C0242209",
+        "umls_canonical": "Sugars",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "Short chain carbohydrate molecules that have hydroxyl groups attached to each carbon atom unit with the exception of one carbon that has a doubly-bond aldehyde or ketone oxygen. Cyclical sugar molecules are formed when the aldehyde or ketone groups respectively form a hemiacetal or hemiketal bond with one of the hydroxyl carbons. The three dimensional structure of the sugar molecule occurs in a vast array of biological and synthetic classes of specialized compounds including AMINO SUGARS; CARBASUGARS; DEOXY SUGARS; SUGAR ACIDS; SUGAR ALCOHOLS; and SUGAR PHOSPHATES.",
+        "aliases": [
+          "sugar"
+        ]
+      }
+    },
+    {
+      "id": "Glucose",
+      "labels": [
+        "Drug",
+        "Nutrient"
+      ],
+      "properties": {
+        "umls_cui": "C0017765",
+        "umls_canonical": "Glucose",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "4126",
+        "description": "Glucose administered orally to treat mild to moderate hypoglycemia. Preferred form: 15-20g fast-acting carbohydrates. [ADA Standards 2024]",
+        "aliases": [
+          "IV dextrose",
+          "oral glucose"
+        ]
+      }
+    },
+    {
+      "id": "sucrose",
+      "labels": [
+        "Nutrient"
+      ],
+      "properties": {
+        "umls_cui": "C0038636",
+        "umls_canonical": "sucrose",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "rxnorm_id": "10159",
+        "description": "UMLS Standard Term: sucrose",
+        "aliases": []
+      }
+    },
+    {
+      "id": "glucagon",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0017687",
+        "umls_canonical": "glucagon",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "4832",
+        "description": "UMLS Standard Term: glucagon",
+        "aliases": []
+      }
+    },
+    {
+      "id": "dasiglucagon",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C5139868",
+        "umls_canonical": "dasiglucagon",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "2535233",
+        "description": "UMLS Standard Term: dasiglucagon",
+        "aliases": []
+      }
+    },
+    {
+      "id": "counter-regulatory response",
+      "labels": [
+        "Clinical Rule"
+      ],
+      "properties": {
+        "umls_canonical": "counter-regulatory response",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "morning hyperglycemia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "morning hyperglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "intracellular shifts of potassium",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "intracellular shifts of potassium",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Hypokalemia",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0020621",
+        "umls_canonical": "Hypokalemia",
+        "umls_semantic_type": "Finding (T033)",
+        "icd10_code": "E87.6",
+        "description": "UMLS Standard Term: Hypokalemia",
+        "aliases": [
+          "hypokalemia"
+        ]
+      }
+    },
+    {
+      "id": "Insulin injections",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Insulin injections",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Local allergic reactions",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "Local allergic reactions",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Latex Hypersensitivity",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0879626",
+        "umls_canonical": "Latex Hypersensitivity",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "Z91.040",
+        "description": "An allergic reaction to natural rubber latex (NRL) proteins. Manifestations range from contact urticaria to anaphylaxis. [NCI]",
+        "aliases": [
+          "latex allergy"
+        ]
+      }
+    },
+    {
+      "id": "human insulins",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "human insulins",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "generalized allergic reaction",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "generalized allergic reaction",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hypersensitivity desensitization",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0178702",
+        "umls_canonical": "hypersensitivity desensitization",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "prevention or reduction of hypersensitivity reactions by administration of graded doses of allergen.",
+        "aliases": [
+          "desensitization"
+        ]
+      }
+    },
+    {
+      "id": "Lipohypertrophy",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0334388",
+        "umls_canonical": "Lipohypertrophy",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E88.2",
+        "description": "An abnormal accumulation of fat beneath the skin at insulin injection sites, resulting in a firm rubbery lump. [NCI]",
+        "aliases": []
+      }
+    },
+    {
+      "id": "rotating injection sites",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "rotating injection sites",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "circulating anti-insulin antibodies",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "circulating anti-insulin antibodies",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "changing insulin preparations",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "changing insulin preparations",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "switching from animal to human insulin",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "switching from animal to human insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Glucocorticoids",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0017710",
+        "umls_canonical": "Glucocorticoids",
+        "umls_semantic_type": "Steroid (T110), Hormone (T125), Pharmacologic Substance (T121)",
+        "description": "A class of steroid hormones produced in the adrenal cortex that regulate glucose metabolism and suppress inflammation. Also used therapeutically as immunosuppressants. [MeSH: D005938]",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "glucocorticoids"
+        ]
+      }
+    },
+    {
+      "id": "Immunosuppressive Agents",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0021081",
+        "umls_canonical": "Immunosuppressive Agents",
+        "umls_semantic_type": "Pharmacologic Substance (T121)",
+        "description": "Agents that suppress immune function by one of several mechanisms of action. Classical immunosuppressants act by inhibiting either the generation or the effector function of T lymphocytes. [MeSH: D007166]",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "immunosuppressants"
+        ]
+      }
+    },
+    {
+      "id": "Oral antihyperglycemic medications",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "Oral antihyperglycemic medications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "glyburide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0017628",
+        "umls_canonical": "glyburide",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "4815",
+        "description": "UMLS Standard Term: glyburide",
+        "aliases": []
+      }
+    },
+    {
+      "id": "glipizide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0017642",
+        "umls_canonical": "glipizide",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "4821",
+        "description": "1-cyclohexyl-3-(p-(2-(5-methyl pyrazinecarboxamido) ethyl) phenyl) sulfonylurea; a typical member of the sulfonylurea family of type II (NIDDM) antidiabetic drugs.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "glimepiride",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0061323",
+        "umls_canonical": "glimepiride",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "25789",
+        "description": "A long-acting, third-generation sulfonylurea with hypoglycemic activity. Compared to other generations of sulfonylurea compounds, glimepiride is very potent and has a longer duration of action. This agent is metabolized by CYP2C9 and shows peroxisome proliferator-activated receptor gamma (PPARgamma) agonistic activity. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C29073\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C29073\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Insulin Secretagogues",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C5690720",
+        "umls_canonical": "Insulin Secretagogues",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "UMLS Standard Term: Insulin Secretagogues",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "insulin secretagogues"
+        ]
+      }
+    },
+    {
+      "id": "Hyperinsulinism",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0020459",
+        "umls_canonical": "Hyperinsulinism",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E16.1",
+        "description": "A condition characterized by abnormally elevated levels of insulin in the blood. [MeSH: D006946]",
+        "aliases": [
+          "hyperinsulinemia"
+        ]
+      }
+    },
+    {
+      "id": "long-acting medications",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "long-acting medications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "permanent neurologic disability",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "permanent neurologic disability",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "death",
+      "labels": [
+        "Risk Factor"
+      ],
+      "properties": {
+        "umls_canonical": "death",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "chlorpropamide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0008287",
+        "umls_canonical": "chlorpropamide",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "2404",
+        "description": "UMLS Standard Term: chlorpropamide",
+        "aliases": [
+          "Chlorpropamide"
+        ]
+      }
+    },
+    {
+      "id": "Inappropriate ADH Syndrome",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0021141",
+        "umls_canonical": "Inappropriate ADH Syndrome",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E22.2",
+        "description": "UMLS Standard Term: Inappropriate ADH Syndrome",
+        "aliases": [
+          "syndrome of inappropriate ADH secretion"
+        ]
+      }
+    },
+    {
+      "id": "Diabetes Mellitus",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011849",
+        "umls_canonical": "Diabetes Mellitus",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E08-E13",
+        "description": "UMLS Standard Term: Diabetes Mellitus",
+        "aliases": [
+          "diabetes",
+          "diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "worsening of insulin secretion",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "worsening of insulin secretion",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hepatic glucose production",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "hepatic glucose production",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Biguanides",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0005382",
+        "umls_canonical": "Biguanides",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "description": "A class of oral antihyperglycemic agents that includes metformin. Biguanides reduce hepatic glucose production and improve peripheral insulin sensitivity. [NCI]",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "Biguanides (metformin)"
+        ]
+      }
+    },
+    {
+      "id": "lipid levels",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "lipid levels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "metformin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0025598",
+        "umls_canonical": "metformin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "6809",
+        "description": "UMLS Standard Term: metformin",
+        "aliases": [
+          "Metformin"
+        ]
+      }
+    },
+    {
+      "id": "biguanide",
+      "labels": [
+        "Drug Class"
+      ],
+      "properties": {
+        "umls_cui": "C4317165",
+        "umls_canonical": "biguanide",
+        "umls_semantic_type": "Organic Chemical (T109)",
+        "rxnorm_id": "1918319",
+        "description": "Any antidiabetic agent with the biguanide base structure or phenformin derivatives with antihyperglycemic activity. Biguanide antidiabetic agents activate AMP-activated protein kinase (AMPK) resulting in decreased glucose production in the liver, increased peripheral glucose uptake and improved utilization of glucose. Biguanide-based antidiabetic agents do not cause hypoglycemia. In addition, biguanide antidiabetics decrease absorption of glucose from the gastrointestinal tract.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diarrhea",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0011991",
+        "umls_canonical": "Diarrhea",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R19.7",
+        "description": "UMLS Standard Term: Diarrhea",
+        "aliases": [
+          "diarrhea"
+        ]
+      }
+    },
+    {
+      "id": "Gastrointestinal side effects",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0521901",
+        "umls_canonical": "Gastrointestinal side effects",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "description": "Adverse drug reactions or side effects that affect the gastrointestinal tract.",
+        "aliases": [
+          "gastrointestinal adverse effects"
+        ]
+      }
+    },
+    {
+      "id": "vitamin B12 malabsorption",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "vitamin B12 malabsorption",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Acidosis, Lactic",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0001125",
+        "umls_canonical": "Acidosis, Lactic",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E87.20",
+        "description": "UMLS Standard Term: Acidosis, Lactic",
+        "aliases": [
+          "lactic acidosis",
+          "metabolic acidosis"
+        ]
+      }
+    },
+    {
+      "id": "patients at risk of acidemia",
+      "labels": [
+        "Clinical Rule"
+      ],
+      "properties": {
+        "umls_canonical": "patients at risk of acidemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Kidney Diseases",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0022658",
+        "umls_canonical": "Kidney Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "N08",
+        "description": "UMLS Standard Term: Kidney Diseases",
+        "aliases": [
+          "kidney disease"
+        ]
+      }
+    },
+    {
+      "id": "Acidemia",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0220981",
+        "umls_canonical": "Acidemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E87.2",
+        "description": "An abnormal decrease in the pH of the blood. This is a decrease in the hydrogen ion concentration of the blood. [NCI]",
+        "aliases": [
+          "acidemia"
+        ]
+      }
+    },
+    {
+      "id": "Hypoxia",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0242429",
+        "umls_canonical": "Hypoxia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "R09.02",
+        "description": "A condition in which there is a deficiency of oxygen reaching the tissues of the body. [MeSH: D000860]",
+        "aliases": [
+          "hypoxia"
+        ]
+      }
+    },
+    {
+      "id": "COVID-19 Virus Disease",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C5203670",
+        "umls_canonical": "COVID-19 Virus Disease",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "U07.1",
+        "description": "UMLS Standard Term: COVID-19 Virus Disease",
+        "aliases": [
+          "severe respiratory disease"
+        ]
+      }
+    },
+    {
+      "id": "Alcohol Use Disorder",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0001956",
+        "umls_canonical": "Alcohol Use Disorder",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "F10.1",
+        "description": "A maladaptive pattern of alcohol use leading to clinically significant impairment or distress. [DSM-5]",
+        "aliases": [
+          "alcohol use disorder"
+        ]
+      }
+    },
+    {
+      "id": "Dehydration",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011175",
+        "umls_canonical": "Dehydration",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E86.0",
+        "description": "UMLS Standard Term: Dehydration",
+        "aliases": [
+          "dehydration"
+        ]
+      }
+    },
+    {
+      "id": "troglitazone",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0245514",
+        "umls_canonical": "troglitazone",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "72610",
+        "description": "An orally-active thiazolidinedione with antidiabetic and hepatotoxic properties and potential antineoplastic activity. Troglitazone activates peroxisome proliferator-activated receptor gamma (PPAR-gamma), a ligand-activated transcription factor, thereby inducing cell differentiation and inhibiting cell growth and angiogenesis. This agent also modulates the transcription of insulin-responsive genes, inhibits macrophage and monocyte activation, and stimulates adipocyte differentiation. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C1522\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C1522\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Liver Failure, Acute",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0162557",
+        "umls_canonical": "Liver Failure, Acute",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Liver Failure, Acute",
+        "aliases": [
+          "acute liver failure"
+        ]
+      }
+    },
+    {
+      "id": "rosiglitazone",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0289313",
+        "umls_canonical": "rosiglitazone",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "84108",
+        "description": "UMLS Standard Term: rosiglitazone",
+        "aliases": [
+          "Rosiglitazone"
+        ]
+      }
+    },
+    {
+      "id": "Heart failure",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0018801",
+        "umls_canonical": "Heart failure",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "I50",
+        "description": "UMLS Standard Term: Heart failure",
+        "aliases": [
+          "heart failure"
+        ]
+      }
+    },
+    {
+      "id": "pioglitazone",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0071097",
+        "umls_canonical": "pioglitazone",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "33738",
+        "description": "UMLS Standard Term: pioglitazone",
+        "aliases": [
+          "Pioglitazone"
+        ]
+      }
+    },
+    {
+      "id": "bladder cancer",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "bladder cancer",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "fractures",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "fractures",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "alpha-Glucosidase Inhibitors",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1299007",
+        "umls_canonical": "alpha-Glucosidase Inhibitors",
+        "umls_semantic_type": "Pharmacologic Substance (T121)",
+        "description": "UMLS Standard Term: alpha-Glucosidase Inhibitors",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "Alpha-glucosidase inhibitors"
+        ]
+      }
+    },
+    {
+      "id": "Dyspepsia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0013395",
+        "umls_canonical": "Dyspepsia",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R10.13",
+        "description": "UMLS Standard Term: Dyspepsia",
+        "aliases": [
+          "dyspepsia"
+        ]
+      }
+    },
+    {
+      "id": "Flatulence",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0016204",
+        "umls_canonical": "Flatulence",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R14.3",
+        "description": "UMLS Standard Term: Flatulence",
+        "aliases": [
+          "flatulence"
+        ]
+      }
+    },
+    {
+      "id": "alogliptin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1958126",
+        "umls_canonical": "alogliptin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "1368001",
+        "description": "A selective, orally bioavailable, pyrimidinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. In addition to its effect on glucose levels, alogliptin may inhibit inflammatory responses by preventing the toll-like receptor 4 (TLR-4)-mediated formation of proinflammatory cytokines. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C76906\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C76906\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Dipeptidyl-Peptidase IV Inhibitors",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1827106",
+        "umls_canonical": "Dipeptidyl-Peptidase IV Inhibitors",
+        "umls_semantic_type": "Pharmacologic Substance (T121)",
+        "description": "UMLS Standard Term: Dipeptidyl-Peptidase IV Inhibitors",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "DPP-4 inhibitors",
+          "Dipeptidyl peptidase-4 inhibitor"
+        ]
+      }
+    },
+    {
+      "id": "linagliptin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C2746078",
+        "umls_canonical": "linagliptin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "1100699",
+        "description": "A potent, orally bioavailable dihydropurinedione-based inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. The inhibition of DPP-4 by linagliptin appears to be longer lasting than that by some other DPP-4 inhibitors tested. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C83887\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C83887\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "saxagliptin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1611934",
+        "umls_canonical": "saxagliptin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "857974",
+        "description": "A potent, selective and competitive, cyanopyrrolidine-based, orally bioavailable inhibitor of dipeptidyl peptidase 4 (DPP-4), with hypoglycemic activity. Saxagliptin is metabolized into an, although less potent, active mono-hydroxy metabolite.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "sitagliptin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1565750",
+        "umls_canonical": "sitagliptin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "593411",
+        "description": "An orally available, competitive, beta-amino acid-derived inhibitor of dipeptidyl peptidase 4 (DDP-4) with hypoglycemic activity. Sitagliptin may cause an increased risk in the development of pancreatitis.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Hemoglobin A1c measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0474680",
+        "umls_canonical": "Hemoglobin A1c measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "<p>A1C is a blood test for <a href=\"https://medlineplus.gov/diabetestype2.html\">type 2 diabetes</a> and <a href=\"https://medlineplus.gov/prediabetes.html\">prediabetes</a>. It measures your average blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, level over the past 3 months. Doctors may use the A1C alone or in combination with other diabetes tests to make a diagnosis. They also use the A1C to see how well you are managing your diabetes. This test is different from the blood sugar checks that people with diabetes do every day.</p> <p>Your A1C test result is given in percentages. The higher the percentage, the higher your blood sugar levels have been:</p> <ul> <li>A normal A1C level is below 5.7%</li> <li>Prediabetes is between 5.7 to 6.4%. Having prediabetes is a risk factor for getting type 2 diabetes. People with prediabetes may need retests every year.</li> <li>Type 2 diabetes is above 6.5%</li> <li>If you have diabetes, you should have the A1C test at least twice a year. The A1C goal for many people with diabetes is below 7. It may be different for you. Ask what your goal should be. If your A1C result is too high, you may need to change your diabetes care plan.</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+        "aliases": [
+          "hemoglobin A1C"
+        ]
+      }
+    },
+    {
+      "id": "Plasma Glucose Measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0202042",
+        "umls_canonical": "Plasma Glucose Measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "Glucose Plasma Concentration (GPC) measurement is an essential diagnostic modality for different types of carbohydrate metabolism derangements including diabetes mellitus. The disordered carbohydrate metabolism that underlies diabetes manifests as hyperglycemia. Plasma glucose concentrations in healthy individuals vary with age. Normal fasting plasma glucose intervals (in the morning after an overnight fast) in children are 3.3 - 5.6 mmol/L (60-100 mg/dL); adult range - 4.1- 5.9 mmol/L (74-106 mg/dL). GPCs are approximately 11% higher than whole blood if the hematocrit is normal. Glucose concentrations in heparinized plasma are reported to be 5% lower than in serum.",
+        "aliases": [
+          "plasma glucose"
+        ]
+      }
+    },
+    {
+      "id": "SGLT2 inhibitors",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "SGLT2 inhibitors",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "SGLT2-inhibitors"
+        ]
+      }
+    },
+    {
+      "id": "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "SGLT-2 inhibitors",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "SGLT-2 inhibitors",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diabetic Ketoacidosis",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011880",
+        "umls_canonical": "Diabetic Ketoacidosis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Diabetic Ketoacidosis",
+        "icd10_code": "NONE",
+        "aliases": [
+          "diabetic ketoacidosis (DKA)"
+        ]
+      }
+    },
+    {
+      "id": "Euglycemic diabetic ketoacidosis",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C4230761",
+        "umls_canonical": "Euglycemic diabetic ketoacidosis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E10.1",
+        "description": "A rare but life-threatening complication of diabetes characterized by diabetic ketoacidosis in the presence of normal or near-normal blood glucose levels.",
+        "aliases": [
+          "euglycemic DKA"
+        ]
+      }
+    },
+    {
+      "id": "canagliflozin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C2974540",
+        "umls_canonical": "canagliflozin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "1373458",
+        "description": "UMLS Standard Term: canagliflozin",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Amputation of lower limb",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0337308",
+        "umls_canonical": "Amputation of lower limb",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "UMLS Standard Term: Amputation of lower limb",
+        "aliases": [
+          "lower limb amputation"
+        ]
+      }
+    },
+    {
+      "id": "pramlintide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0537551",
+        "umls_canonical": "pramlintide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "139953",
+        "description": "A peptide analogue of human amylin with 3 proline substitutions at positions 25, 28 and 29, with antihyperglycemic activity. By mimicking amylin, pramlintide slows gastric emptying, inhibits digestive secretions (gastric acid, pancreatic enzymes, and bile), reduces glucagon secretion, and increases satiety; all of these actions are mediated mostly by glucose-sensitive areas in the brain stem. The overall result is a decrease in blood glucose levels. The use of pramlintide may cause an increased risk of insulin-induced hypoglycemia.",
+        "aliases": [
+          "Pramlintide"
+        ]
+      }
+    },
+    {
+      "id": "Amylin Analog",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1562561",
+        "umls_canonical": "Amylin Analog",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "UMLS Standard Term: Amylin Analog",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "amylin analog"
+        ]
+      }
+    },
+    {
+      "id": "injectable antihyperglycemic medication",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "injectable antihyperglycemic medication",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1562104",
+        "umls_canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "umls_semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "UMLS Standard Term: Glucagon-Like Peptide-1 Receptor Agonists",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "GLP-1 agonists",
+          "GLP-1 receptor agonists"
+        ]
+      }
+    },
+    {
+      "id": "Subcutaneous Injections",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0021499",
+        "umls_canonical": "Subcutaneous Injections",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "Forceful administration under the skin of liquid medication, nutrient, or other fluid through a hollow needle piercing the skin.",
+        "aliases": [
+          "subcutaneous injections"
+        ]
+      }
+    },
+    {
+      "id": "semaglutide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C3885068",
+        "umls_canonical": "semaglutide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "rxnorm_id": "1991302",
+        "description": "UMLS Standard Term: semaglutide",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Oral Administration",
+      "labels": [
+        "Dosage Value"
+      ],
+      "properties": {
+        "umls_cui": "C0205080",
+        "umls_canonical": "Oral Administration",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "Administration of a drug through the mouth.",
+        "aliases": [
+          "oral form"
+        ]
+      }
+    },
+    {
+      "id": "Nausea",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0027497",
+        "umls_canonical": "Nausea",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R11.0",
+        "description": "UMLS Standard Term: Nausea",
+        "aliases": [
+          "nausea"
+        ]
+      }
+    },
+    {
+      "id": "Vomiting",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0042963",
+        "umls_canonical": "Vomiting",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R11.1",
+        "description": "UMLS Standard Term: Vomiting",
+        "aliases": [
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "id": "Pancreatitis",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0030305",
+        "umls_canonical": "Pancreatitis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "K85.9",
+        "description": "UMLS Standard Term: Pancreatitis",
+        "aliases": [
+          "pancreatitis"
+        ]
+      }
+    },
+    {
+      "id": "tirzepatide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C5139934",
+        "umls_canonical": "tirzepatide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121)",
+        "rxnorm_id": "2601723",
+        "description": "UMLS Standard Term: tirzepatide",
+        "aliases": [
+          "Tirzepatide"
+        ]
+      }
+    },
+    {
+      "id": "GIP/GLP-1 receptor agonist",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "GIP/GLP-1 receptor agonist",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Obesity",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0028754",
+        "umls_canonical": "Obesity",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E66.9",
+        "description": "UMLS Standard Term: Obesity",
+        "aliases": [
+          "obesity"
+        ]
+      }
+    },
+    {
+      "id": "Non-alcoholic Fatty Liver Disease",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0400966",
+        "umls_canonical": "Non-alcoholic Fatty Liver Disease",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "K76.0",
+        "description": "UMLS Standard Term: Non-alcoholic Fatty Liver Disease",
+        "aliases": [
+          "metabolic dysfunction-associated steatotic liver disease"
+        ]
+      }
+    },
+    {
+      "id": "Tirzepatide in combination with pioglitazone",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Tirzepatide in combination with pioglitazone",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "postprandial glucagon secretion",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "postprandial glucagon secretion",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diabetes mellitus type 1 stage 2",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C5847615",
+        "umls_canonical": "Diabetes mellitus type 1 stage 2",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Includes individuals with two or more islet autoantibodies but whose disease has now progressed to the development of glucose intolerance, or dysglycemia, from loss of functional β-cell mass.",
+        "icd10_code": "NONE",
+        "aliases": [
+          "type 1 stage 2 diabetes"
+        ]
+      }
+    },
+    {
+      "id": "Dysglycemia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C1960636",
+        "umls_canonical": "Dysglycemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Dysglycemia",
+        "aliases": [
+          "dysglycemia"
+        ]
+      }
+    },
+    {
+      "id": "Cytokine Release Syndrome",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0948245",
+        "umls_canonical": "Cytokine Release Syndrome",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "D89.83",
+        "description": "UMLS Standard Term: Cytokine Release Syndrome",
+        "aliases": [
+          "cytokine release syndrome"
+        ]
+      }
+    },
+    {
+      "id": "Fever",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0015967",
+        "umls_canonical": "Fever",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R50.9",
+        "description": "UMLS Standard Term: Fever",
+        "aliases": [
+          "fever"
+        ]
+      }
+    },
+    {
+      "id": "Fatigue",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0015672",
+        "umls_canonical": "Fatigue",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R53.83",
+        "description": "UMLS Standard Term: Fatigue",
+        "aliases": [
+          "fatigue"
+        ]
+      }
+    },
+    {
+      "id": "Headache",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0018681",
+        "umls_canonical": "Headache",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R51",
+        "description": "UMLS Standard Term: Headache",
+        "aliases": [
+          "headache"
+        ]
+      }
+    },
+    {
+      "id": "Myalgia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0231528",
+        "umls_canonical": "Myalgia",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "M79.1",
+        "description": "UMLS Standard Term: Myalgia",
+        "aliases": [
+          "myalgia"
+        ]
+      }
+    },
+    {
+      "id": "Arthralgia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0003862",
+        "umls_canonical": "Arthralgia",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "M25.5",
+        "description": "UMLS Standard Term: Arthralgia",
+        "aliases": [
+          "arthralgia"
+        ]
+      }
+    },
+    {
+      "id": "elevated liver enzymes",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "elevated liver enzymes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Long-term complications of diabetes mellitus",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0271676",
+        "umls_canonical": "Long-term complications of diabetes mellitus",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E11.9",
+        "description": "Chronic complications arising from long-term poorly controlled diabetes mellitus.",
+        "aliases": [
+          "long-term complications of diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "ACE inhibitors",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "ACE inhibitors",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "ARBs",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "ARBs",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Chronic Kidney Diseases",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C1561643",
+        "umls_canonical": "Chronic Kidney Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "N18",
+        "description": "<p>You have two kidneys, each about the size of your fist. Their main job is to filter your blood. They remove wastes and extra water, which become urine. They also keep the body's chemicals balanced, help control blood pressure, and make hormones.</p> <p>Chronic kidney disease (CKD) means that your kidneys are damaged and can't filter blood as they should. This damage can cause wastes to build up in your body. It can also cause other problems that can harm your health. Diabetes and high blood pressure are the most common causes of CKD.</p> <p>The kidney damage occurs slowly over many years. Many people don't have any symptoms until their kidney disease is very advanced. <a href=\"https://medlineplus.gov/kidneytests.html\">Blood and urine tests</a> are the only way to know if you have kidney disease.</p> <p>Treatments cannot cure kidney disease, but they may slow kidney disease. They include <a href=\"https://medlineplus.gov/bloodpressuremedicines.html\">medicines to lower blood pressure</a>, control <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, and lower <a href=\"https://medlineplus.gov/cholesterol.html\">cholesterol</a>. CKD may still get worse over time. Sometimes it can lead to <a href=\"https://medlineplus.gov/kidneyfailure.html\">kidney failure</a>. If your kidneys fail, you will need <a href=\"https://medlineplus.gov/dialysis.html\">dialysis</a> or a <a href=\"https://medlineplus.gov/kidneytransplantation.html\">kidney transplantation</a>.</p> <p>You can take steps to keep your kidneys healthier longer:</p> <ul> <li>Choose foods with less <a href=\"https://medlineplus.gov/sodium.html\">salt</a> (sodium)</li> <li><a href=\"https://medlineplus.gov/howtopreventhighbloodpressure.html\">Control your blood pressure</a>; your health care provider can tell you what your blood pressure should be</li> <li>Keep your blood sugar in the target range, if you have <a href=\"https://medlineplus.gov/diabetes.html\">diabetes</a></li> <li>Limit the amount of alcohol you drink</li> <li>Choose foods that are healthy for your heart: fruits, vegetables, whole grains, and low-fat dairy foods</li> <li>Lose weight if you are overweight</li> <li>Be physically active</li> <li>Don't smoke</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+        "aliases": [
+          "CKD",
+          "chronic kidney disease"
+        ]
+      }
+    },
+    {
+      "id": "decreased glomerular filtration rate",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "decreased glomerular filtration rate",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "finerenone",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C4045511",
+        "umls_canonical": "finerenone",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "2562811",
+        "description": "UMLS Standard Term: finerenone",
+        "aliases": []
+      }
+    },
+    {
+      "id": "persistent albuminuria",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "persistent albuminuria",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Cardiovascular Diseases",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0007222",
+        "umls_canonical": "Cardiovascular Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Cardiovascular Diseases",
+        "icd10_code": "NONE",
+        "aliases": [
+          "cardiovascular disease"
+        ]
+      }
+    },
+    {
+      "id": "ASCVD",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "ASCVD",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "aspirin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0004057",
+        "umls_canonical": "aspirin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "1191",
+        "description": "UMLS Standard Term: aspirin",
+        "aliases": [
+          "Aspirin"
+        ]
+      }
+    },
+    {
+      "id": "atorvastatin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0286651",
+        "umls_canonical": "atorvastatin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "83367",
+        "description": "a synthetic lipid-lowering agent; an inhibitor of 3-hydroxy-3-methylglutaryl-coenzyme A (HMG-CoA) reductase that catalyzes the conversion of HMG-CoA to mevalonate, an early and rate-limiting step in cholesterol biosynthesis.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "high-intensity statin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "high-intensity statin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "rosuvastatin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0965129",
+        "umls_canonical": "rosuvastatin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "301542",
+        "description": "A statin with antilipidemic and potential antineoplastic activities. Rosuvastatin selectively and competitively binds to and inhibits hepatic hydroxymethyl-glutaryl coenzyme A (HMG-CoA) reductase, the enzyme which catalyzes the conversion of HMG-CoA to mevalonate, a precursor of cholesterol. This leads to a decrease in hepatic cholesterol levels and increase in uptake of LDL cholesterol. In addition, rosuvastatin, like other statins, exhibits pro-apoptotic, growth inhibitory, and pro-differentiation activities in a variety of tumor cell types; these antineoplastic activities may be due, in part, to inhibition of the isoprenylation of Ras and Rho GTPases and related signaling cascades.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Low density lipoprotein cholesterol measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0202117",
+        "umls_canonical": "Low density lipoprotein cholesterol measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "The determination of the amount of low-density lipoprotein cholesterol present in a sample.",
+        "aliases": [
+          "low-density lipoprotein (LDL) cholesterol level"
+        ]
+      }
+    },
+    {
+      "id": "maximally tolerated statin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "maximally tolerated statin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "ezetimibe",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1142985",
+        "umls_canonical": "ezetimibe",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "341248",
+        "description": "An azetidinone derivative and a cholesterol absorption inhibitor with lipid-lowering activity. Ezetimibe appears to interact physically with cholesterol transporters at the brush border of the small intestine and inhibits the intestinal absorption of cholesterol and related phytosterols. As a result, ezetimibe causes a decrease in the level of blood cholesterol or an increase in the clearance of cholesterol from the bloodstream. Overall, the following effects observed are a reduction of hepatic cholesterol stores and a reduction of total cholesterol, LDL cholesterol, and other triglycerides in the blood. Check for \"https://www.cancer.gov/about-cancer/treatment/clinical-trials/intervention/C47529\" active clinical trials using this agent. (\"http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&code=C47529\" NCI Thesaurus)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "proprotein convertase subtilisin/kexin type 9 (PCSK-9) inhibitor",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "proprotein convertase subtilisin/kexin type 9 (PCSK-9) inhibitor",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "small, dense LDL cholesterol",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "small, dense LDL cholesterol",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Insulin",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Pancreatic beta-cell destruction",
+      "end": "Diabetes Mellitus, Insulin-Dependent",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "inadequate insulin production",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Ketoacidosis",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus, Non-Insulin-Dependent",
+      "end": "Insulin",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "basal-bolus dosing",
+      "end": "insulin replacement",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "insulin replacement",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "insulin pump",
+      "end": "rapid- or short-acting insulin",
+      "type": "dispenses",
+      "properties": {}
+    },
+    {
+      "start": "insulin pump",
+      "end": "Insulin",
+      "type": "dispenses",
+      "properties": {}
+    },
+    {
+      "start": "high blood glucose level",
+      "end": "additional boluses",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "insulin lispro",
+      "end": "rapid- or short-acting insulin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Insulin Aspart",
+      "end": "rapid- or short-acting insulin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Insulin",
+      "end": "postprandial glucose spikes",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "Inhaled regular insulin",
+      "end": "rapid- or short-acting insulin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "insulin isophane",
+      "end": "intermediate-acting insulin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "insulin glargine",
+      "end": "Insulin, Long-Acting",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "insulin icodec",
+      "end": "weekly insulin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "mixing insulins",
+      "end": "variability of effect",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "mixing insulins",
+      "end": "glycemic control less predictable",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "intensive treatment",
+      "end": "less frequent treatment",
+      "type": "preferred_over",
+      "properties": {}
+    },
+    {
+      "start": "Intensive insulin therapy",
+      "end": "Hypoglycemia",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Intensive insulin therapy",
+      "end": "Weight Gain",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "rapid- or short-acting insulin",
+      "end": "1800 rule",
+      "type": "has_titration_rule",
+      "properties": {}
+    },
+    {
+      "start": "Insulin",
+      "end": "1500 rule",
+      "type": "has_titration_rule",
+      "properties": {}
+    },
+    {
+      "start": "insulin lispro",
+      "end": "insulin pump",
+      "type": "administered_via",
+      "properties": {}
+    },
+    {
+      "start": "Insulin Aspart",
+      "end": "insulin pump",
+      "type": "administered_via",
+      "properties": {}
+    },
+    {
+      "start": "Insulin Resistance",
+      "end": "Insulin",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "variability in glucose levels",
+      "end": "Continuous subcutaneous insulin infusion pumps",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "insulin deficiency",
+      "end": "Insulin",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus, Non-Insulin-Dependent",
+      "end": "Insulin Resistance",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "reduction in loss of glucose in urine",
+      "end": "Weight Gain",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "Palpitations",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "Dizziness",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "Blurred vision",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "Agitation",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "Confusion",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "Seizures",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "Stroke",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "Myocardial Infarction",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "Insulin",
+      "end": "Hypoglycemia",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Sulfonylurea Compounds",
+      "end": "Hypoglycemia",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "symptoms of hypoglycemia",
+      "end": "Sugars",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "Glucose",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "sucrose",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "glucagon",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "dasiglucagon",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "counter-regulatory response",
+      "end": "morning hyperglycemia",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "intracellular shifts of potassium",
+      "end": "Hypokalemia",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "Insulin injections",
+      "end": "Local allergic reactions",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Local allergic reactions",
+      "end": "Latex Hypersensitivity",
+      "type": "co_occurs_with",
+      "properties": {}
+    },
+    {
+      "start": "human insulins",
+      "end": "generalized allergic reaction",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "generalized allergic reaction",
+      "end": "hypersensitivity desensitization",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Lipohypertrophy",
+      "end": "rotating injection sites",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "circulating anti-insulin antibodies",
+      "end": "Insulin Resistance",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "Insulin Resistance",
+      "end": "changing insulin preparations",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "switching from animal to human insulin",
+      "end": "changing insulin preparations",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Insulin Resistance",
+      "end": "Glucocorticoids",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Insulin Resistance",
+      "end": "Immunosuppressive Agents",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus, Non-Insulin-Dependent",
+      "end": "Oral antihyperglycemic medications",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "glyburide",
+      "end": "Sulfonylurea Compounds",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "glipizide",
+      "end": "Sulfonylurea Compounds",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "glimepiride",
+      "end": "Sulfonylurea Compounds",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Sulfonylurea Compounds",
+      "end": "Insulin Secretagogues",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Sulfonylurea Compounds",
+      "end": "Hyperinsulinism",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Sulfonylurea Compounds",
+      "end": "Weight Gain",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Hyperinsulinism",
+      "end": "Insulin Resistance",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "long-acting medications",
+      "end": "Hypoglycemia",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "permanent neurologic disability",
+      "type": "cause_of",
+      "properties": {}
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "death",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "chlorpropamide",
+      "end": "Inappropriate ADH Syndrome",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "worsening of insulin secretion",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Insulin Resistance",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Biguanides",
+      "end": "hepatic glucose production",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "Biguanides",
+      "end": "lipid levels",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "metformin",
+      "end": "biguanide",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Diarrhea",
+      "end": "Gastrointestinal side effects",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "metformin",
+      "end": "vitamin B12 malabsorption",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "metformin",
+      "end": "Acidosis, Lactic",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "metformin",
+      "end": "patients at risk of acidemia",
+      "type": "contraindicated_with",
+      "properties": {}
+    },
+    {
+      "start": "Kidney Diseases",
+      "end": "Acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "Hypoxia",
+      "end": "Acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "COVID-19 Virus Disease",
+      "end": "Acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "Alcohol Use Disorder",
+      "end": "Acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "Acidosis, Lactic",
+      "end": "Acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "Dehydration",
+      "end": "Acidemia",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "troglitazone",
+      "end": "Liver Failure, Acute",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "rosiglitazone",
+      "end": "Heart failure",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "rosiglitazone",
+      "end": "Myocardial Infarction",
+      "type": "increases_risk_of",
+      "properties": {}
+    },
+    {
+      "start": "pioglitazone",
+      "end": "bladder cancer",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "pioglitazone",
+      "end": "Heart failure",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "pioglitazone",
+      "end": "fractures",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "alpha-Glucosidase Inhibitors",
+      "end": "Dyspepsia",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "alpha-Glucosidase Inhibitors",
+      "end": "Flatulence",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "alpha-Glucosidase Inhibitors",
+      "end": "Diarrhea",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "alogliptin",
+      "end": "Dipeptidyl-Peptidase IV Inhibitors",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "linagliptin",
+      "end": "Dipeptidyl-Peptidase IV Inhibitors",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "saxagliptin",
+      "end": "Dipeptidyl-Peptidase IV Inhibitors",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "sitagliptin",
+      "end": "Dipeptidyl-Peptidase IV Inhibitors",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Dipeptidyl-Peptidase IV Inhibitors",
+      "end": "Hemoglobin A1c measurement",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "SGLT2 inhibitors",
+      "end": "Plasma Glucose Measurement",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "chronic kidney disease in patients with diabetes and reduced glomerular filtration rate or albuminuria",
+      "end": "SGLT-2 inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "SGLT-2 inhibitors",
+      "end": "Diabetic Ketoacidosis",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Diabetic Ketoacidosis",
+      "end": "Diabetes Mellitus, Non-Insulin-Dependent",
+      "type": "co_occurs_with",
+      "properties": {}
+    },
+    {
+      "start": "SGLT-2 inhibitors",
+      "end": "Euglycemic diabetic ketoacidosis",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "canagliflozin",
+      "end": "Amputation of lower limb",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "pramlintide",
+      "end": "Amylin Analog",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "pramlintide",
+      "end": "injectable antihyperglycemic medication",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "end": "Subcutaneous Injections",
+      "type": "administered_via",
+      "properties": {}
+    },
+    {
+      "start": "semaglutide",
+      "end": "Oral Administration",
+      "type": "administered_via",
+      "properties": {}
+    },
+    {
+      "start": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "end": "Gastrointestinal side effects",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "Nausea",
+      "end": "Gastrointestinal side effects",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Vomiting",
+      "end": "Gastrointestinal side effects",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "end": "Pancreatitis",
+      "type": "has_adverse_effect",
+      "properties": {}
+    },
+    {
+      "start": "tirzepatide",
+      "end": "GIP/GLP-1 receptor agonist",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus, Non-Insulin-Dependent",
+      "end": "tirzepatide",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Obesity",
+      "end": "tirzepatide",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Non-alcoholic Fatty Liver Disease",
+      "end": "Tirzepatide in combination with pioglitazone",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "pramlintide",
+      "end": "postprandial glucagon secretion",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes mellitus type 1 stage 2",
+      "end": "Dysglycemia",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Cytokine Release Syndrome",
+      "end": "Fever",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Cytokine Release Syndrome",
+      "end": "Nausea",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Cytokine Release Syndrome",
+      "end": "Fatigue",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Cytokine Release Syndrome",
+      "end": "Headache",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Cytokine Release Syndrome",
+      "end": "Myalgia",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Cytokine Release Syndrome",
+      "end": "Arthralgia",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Cytokine Release Syndrome",
+      "end": "elevated liver enzymes",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Long-term complications of diabetes mellitus",
+      "end": "ACE inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Long-term complications of diabetes mellitus",
+      "end": "ARBs",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Chronic Kidney Diseases",
+      "end": "ACE inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Chronic Kidney Diseases",
+      "end": "ARBs",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Chronic Kidney Diseases",
+      "end": "decreased glomerular filtration rate",
+      "type": "has_finding",
+      "properties": {}
+    },
+    {
+      "start": "Chronic Kidney Diseases",
+      "end": "finerenone",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "finerenone",
+      "end": "persistent albuminuria",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "Cardiovascular Diseases",
+      "end": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "SGLT2 inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Chronic Kidney Diseases",
+      "end": "SGLT2 inhibitors",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "ASCVD",
+      "end": "aspirin",
+      "type": "treated_by",
+      "properties": {}
+    },
+    {
+      "start": "atorvastatin",
+      "end": "high-intensity statin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "rosuvastatin",
+      "end": "high-intensity statin",
+      "type": "is_a",
+      "properties": {}
+    },
+    {
+      "start": "maximally tolerated statin",
+      "end": "Low density lipoprotein cholesterol measurement",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "ezetimibe",
+      "end": "Low density lipoprotein cholesterol measurement",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "proprotein convertase subtilisin/kexin type 9 (PCSK-9) inhibitor",
+      "end": "Low density lipoprotein cholesterol measurement",
+      "type": "decreases",
+      "properties": {}
+    },
+    {
+      "start": "Diabetes Mellitus, Non-Insulin-Dependent",
+      "end": "small, dense LDL cholesterol",
+      "type": "has_biomarker",
+      "properties": {}
+    }
+  ]
+}

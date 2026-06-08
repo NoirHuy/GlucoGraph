@@ -1,0 +1,39 @@
+{
+  "matched_entities": [
+    "Weight Loss",
+    "Palpitations"
+  ],
+  "alert": {
+    "active": false,
+    "title": "⚠️ KHÔNG CÓ DỮ LIỆU ĐỒ THỊ",
+    "rule": "Bệnh lý/thuốc 'Tremors, Tachycardia' chưa được nạp vào cơ sở dữ liệu Neo4j."
+  },
+  "differential_diagnosis": {
+    "condition_a": "Không có dữ liệu",
+    "condition_b": "Không có dữ liệu",
+    "prose_a": "Hệ thống CDSS hiện tại chưa có dữ liệu đồ thị tri thức về bệnh lý 'Tremors, Tachycardia' trong ca lâm sàng này. Vui lòng nạp thêm dữ liệu y văn.",
+    "prose_b": "Hệ thống CDSS hiện tại chưa có dữ liệu đồ thị tri thức về bệnh lý 'Tremors, Tachycardia' trong ca lâm sàng này. Vui lòng nạp thêm dữ liệu y văn.",
+    "distinguishing_factor": "Không có dữ liệu đối chiếu trong đồ thị tri thức hiện tại."
+  },
+  "graph_path": [],
+  "evidence_triples": [],
+  "recommendations": [
+    {
+      "type": "recommend",
+      "title": "Cập nhật dữ liệu đồ thị Neo4j",
+      "desc": "Vui lòng chuẩn hóa và nạp thêm dữ liệu y văn liên quan đến 'Tremors, Tachycardia' thông qua neo4j_uploader.py.",
+      "relation": "SYSTEM_ACTION"
+    }
+  ],
+  "logs": [
+    "[09:45:03 INFO] Stage 1: Fetching all KG nodes from Neo4j...",
+    "[09:45:03 INFO] Stage 1: 493 nodes fetched. Running chunked LLM entity matching...",
+    "[09:45:03 INFO] Stage 1 complete: matched 2 entities → ['Weight Loss', 'Palpitations']",
+    "[09:45:03 INFO] Stage 2: BFS 2-hop traversal from seed nodes...",
+    "[09:45:03 INFO] Stage 2 complete: 30 triples. No contraindication edges.",
+    "[09:45:03 INFO] Stage 3: Scoring and pruning triples (max 40)...",
+    "[09:45:03 INFO] Stage 3 complete: 30 triples in context.",
+    "[09:45:03 INFO] Stage 4: Calling LLM with graph-grounded context...",
+    "[09:45:03 WARNING] Trình chặn ảo giác phát hiện LLM bịa thực thể: Path connection 'Hyperglycemia -[TREATED_BY]-> donislecel' not in graph, Connection 'Hyperglycemia -[TREATED_BY]-> donislecel' not in graph. Bỏ qua kết quả để đảm bảo an toàn lâm sàng."
+  ]
+}

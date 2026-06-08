@@ -11,6 +11,7 @@ Improvements:
 
 import re
 import os
+import json
 import logging
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -22,6 +23,13 @@ except ImportError:
     pass
 
 logger = logging.getLogger(__name__)
+
+# Import shared constants from single source of truth
+from post_processing.constants import (
+    LOCAL_MEDICAL_ABBREVIATIONS,
+    MEDICAL_STOPWORDS as _MEDICAL_STOPWORDS,
+    STEM_PROTECTED_TERMS,
+)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Regex patterns for clinical value extraction
@@ -39,68 +47,8 @@ _PAT_PERCENT_ADJUST = re.compile(
     re.IGNORECASE
 )
 
-# ─────────────────────────────────────────────────────────────────────────────
-# B2 — Medical Abbreviation Expansion Table
-# Maps common clinical abbreviations / aliases → canonical lowercase form.
-# Used in normalize_entity_for_dedup() to collapse variants before comparison.
-# ─────────────────────────────────────────────────────────────────────────────
-LOCAL_MEDICAL_ABBREVIATIONS: Dict[str, str] = {
-    # Diabetes diseases
-    "t2dm": "type 2 diabetes mellitus",
-    "t1dm": "type 1 diabetes mellitus",
-    "dm": "diabetes mellitus",
-    "dm2": "type 2 diabetes mellitus",
-    "dm1": "type 1 diabetes mellitus",
-    "niddm": "type 2 diabetes mellitus",
-    "iddm": "type 1 diabetes mellitus",
-    "dka": "diabetic ketoacidosis",
-    "hhs": "hyperosmolar hyperglycemic state",
-    # Biomarkers & labs
-    "hba1c": "hemoglobin a1c",
-    "a1c": "hemoglobin a1c",
-    "fbg": "fasting blood glucose",
-    "fpg": "fasting plasma glucose",
-    "bg": "blood glucose",
-    "ppg": "postprandial glucose",
-    "ogtt": "oral glucose tolerance test",
-    "ldl": "ldl cholesterol",
-    "hdl": "hdl cholesterol",
-    "tg": "triglycerides",
-    "egfr": "estimated glomerular filtration rate",
-    "gfr": "glomerular filtration rate",
-    "bmi": "body mass index",
-    "sbp": "systolic blood pressure",
-    "dbp": "diastolic blood pressure",
-    "bp": "blood pressure",
-    # Drugs
-    "metformin hcl": "metformin",
-    "glp-1": "glucagon-like peptide-1",
-    "glp1": "glucagon-like peptide-1",
-    "dpp-4": "dipeptidyl peptidase-4",
-    "dpp4": "dipeptidyl peptidase-4",
-    "sglt-2": "sodium-glucose cotransporter-2",
-    "sglt2": "sodium-glucose cotransporter-2",
-    "ace inhibitor": "angiotensin converting enzyme inhibitor",
-    "ace-i": "angiotensin converting enzyme inhibitor",
-    "arb": "angiotensin receptor blocker",
-    # Anatomy
-    "cns": "central nervous system",
-    "cvd": "cardiovascular disease",
-    "ckd": "chronic kidney disease",
-    "esrd": "end stage renal disease",
-    # Procedures
-    "cabg": "coronary artery bypass grafting",
-    "pci": "percutaneous coronary intervention",
-}
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Medical stopwords — removed before canonical comparison to reduce false negatives
-# ─────────────────────────────────────────────────────────────────────────────
-_MEDICAL_STOPWORDS = frozenset({
-    "the", "a", "an", "of", "with", "in", "and", "or", "to", "for",
-    "mellitus", "syndrome", "disease", "disorder", "condition",
-    "associated", "related", "induced", "dependent", "independent",
-})
+# _MEDICAL_STOPWORDS is now imported from constants.py
 
 
 def normalize_entity_for_dedup(term: str) -> str:
@@ -110,7 +58,9 @@ def normalize_entity_for_dedup(term: str) -> str:
       Layer 0 — OR-pattern collapsing: 'rapid- or short-acting' → 'rapid-acting'
       Layer 1 — Abbreviation expansion: e.g. 'T2DM' → 'type 2 diabetes mellitus'
       Layer 2 — Canonical form: lowercase, remove punctuation/hyphens, remove medical stopwords
-      Layer 3 — Stemming: strip common English/medical suffixes (-s, -ic, -al, -tion, -ity)
+      Layer 3 — Protected stemming: strip common English/medical suffixes (-s, -ic, -al, -tion, -ity)
+               but skip words in STEM_PROTECTED_TERMS to avoid destroying meaning
+               (e.g. 'glucose' is NOT stemmed to 'glucoe')
 
     Returns a normalized string for equality comparison (NOT for display).
     """
@@ -147,11 +97,15 @@ def normalize_entity_for_dedup(term: str) -> str:
     words = [w for w in words if w not in _MEDICAL_STOPWORDS]
     clean = " ".join(words)
 
-    # Layer 3: Light stemming — strip common suffixes
+    # Layer 3: Protected stemming — strip common suffixes but skip protected terms
     stemmed = []
     for w in clean.split():
+        # Skip stemming for known medical terms that would be corrupted
+        if w in STEM_PROTECTED_TERMS:
+            stemmed.append(w)
+            continue
         # Order matters: longer suffixes before shorter
-        for suffix in ("tion", "ity", "ous", "ical", "ic", "al", "ing", "s"):
+        for suffix in ("tion", "ity", "ous", "ical", "ic", "al", "ing", "es", "s"):
             if w.endswith(suffix) and len(w) - len(suffix) >= 4:
                 w = w[: -len(suffix)]
                 break
@@ -334,7 +288,8 @@ def pack_properties(
     records: List[dict],
     umls_api_key: Optional[str] = None,
     umls_cache_path: Optional[str] = None,
-    normalizer: Optional[Any] = None
+    normalizer: Optional[Any] = None,
+    debate_log_path: Optional[str] = None
 ) -> Dict[str, Any]:
     """Iterate through OIE records, resolve, and pack clinical values and ontology metadata.
 
@@ -345,9 +300,29 @@ def pack_properties(
         umls_api_key: Optional UMLS API key. Falls back to UMLS_API_KEY env var.
         umls_cache_path: Optional path for persistent UMLS query cache.
         normalizer: Pre-initialized UMLSNormalizer instance (takes precedence).
+        debate_log_path: Path to debate_log_all.json containing FCS scores.
     """
     nodes: Dict[str, dict] = {}
     relationships: List[dict] = []
+
+    # Load debate scores if debate log is provided
+    debate_scores: Dict[Tuple[str, str, str], float] = {}
+    if debate_log_path and os.path.exists(debate_log_path):
+        try:
+            with open(debate_log_path, "r", encoding="utf-8") as f:
+                debate_data = json.load(f)
+            for res in debate_data.get("results", []):
+                t = res.get("triple")
+                if isinstance(t, list) and len(t) >= 3:
+                    key = (
+                        normalize_entity_for_dedup(t[0]),
+                        t[1].lower().replace(" ", "_").strip(),
+                        normalize_entity_for_dedup(t[2])
+                    )
+                    debate_scores[key] = float(res.get("fcs_score", 100.0))
+            logger.info(f"Loaded {len(debate_scores)} debate scores from audit log: {debate_log_path}")
+        except Exception as e:
+            logger.warning(f"Failed to load debate log for FCS scores: {e}")
 
     # Automatically extract document-level clinical context keywords
     context_words = set()
@@ -387,7 +362,7 @@ def pack_properties(
         if not triplets:
             continue
 
-        # Build local entity name -> type mapping from schema_definition._entries
+        # Build local entity name -> type mapping from schema_definition._entries (case-insensitive & stripped)
         entity_types: Dict[str, str] = {}
         sd_entries = record.get("schema_definition", {}).get("_entries", [])
         for entry in sd_entries:
@@ -397,9 +372,9 @@ def pack_properties(
                 s_type = entry.get("subject_type_canon") or entry.get("subject_type")
                 o_type = entry.get("object_type_canon") or entry.get("object_type")
                 if s and s_type:
-                    entity_types[s] = normalize_entity_type(s_type)
+                    entity_types[s.strip().lower()] = normalize_entity_type(s_type)
                 if o and o_type:
-                    entity_types[o] = normalize_entity_type(o_type)
+                    entity_types[o.strip().lower()] = normalize_entity_type(o_type)
 
         # Maps to store values extracted during this document record
         thresholds_map: Dict[str, str] = {}   # ClinicalMetric -> cleaned_threshold
@@ -432,7 +407,7 @@ def pack_properties(
         for s, r, o in concept_triples:
             for entity in [s, o]:
                 if entity not in nodes:
-                    e_type = entity_types.get(entity, "Unknown")
+                    e_type = entity_types.get(entity.strip().lower(), "Unknown")
                     labels = ["Concept"]
                     if e_type != "Unknown":
                         labels.append(e_type)
@@ -440,6 +415,58 @@ def pack_properties(
                     # Enrich node with UMLS/RxNorm/ICD-10 clinical metadata
                     props = enrich_ontology_metadata(entity, labels, normalizer=normalizer)
                     nodes[entity] = {"id": entity, "labels": labels, "properties": props}
+
+        # Step 2.5: Ontology validation pass to revert incorrect UMLS mappings
+        for s, r, o in concept_triples:
+            rel_upper = r.upper().strip().replace(" ", "_")
+            if rel_upper in {"TREATED_BY", "CONTRAINDICATED_WITH"}:
+                s_node = nodes.get(s)
+                if s_node:
+                    s_props = s_node.get("properties", {})
+                    s_sem_type = s_props.get("umls_semantic_type", "")
+                    s_cui = s_props.get("umls_cui", "NONE")
+                    s_tuis = re.findall(r'T\d{3}', s_sem_type)
+                    s_labels = s_node.get("labels", [])
+
+                    # 1. A laboratory or diagnostic procedure (T059, T060) cannot be treated or contraindicated
+                    is_procedure = (
+                        any(t in {"T059", "T060"} for t in s_tuis) or
+                        s_cui in {"C0474680", "C0202042", "C0583513"} or
+                        "Clinical Metric" in s_labels or
+                        "Treatment Procedure" in s_labels
+                    )
+                    # Exclude things that are clearly pathological states like Disease or Symptom
+                    if is_procedure and not any(l in s_labels for l in ["Disease", "Symptom"]):
+                        logger.warning(
+                            f"[PropertyPacker] Ontology violation: Subject '{s}' mapped to procedure "
+                            f"'{s_props.get('umls_canonical')}' ({s_sem_type}) but has relation '{r}'. Reverting mapping to raw."
+                        )
+                        s_node["properties"]["umls_cui"] = "NONE"
+                        s_node["properties"]["umls_canonical"] = s
+                        s_node["properties"]["umls_semantic_type"] = "Unknown"
+                        s_node["properties"]["description"] = f"Raw uncanonicalized concept: {s} (Fallback due to ontology mismatch)"
+                        if "icd10_code" in s_node["properties"]:
+                            s_node["properties"]["icd10_code"] = "NONE"
+                        if "rxnorm_id" in s_node["properties"]:
+                            s_node["properties"]["rxnorm_id"] = "NONE"
+
+                    # 2. A drug cannot be treated by something (subject of TREATED_BY is usually a disease or symptom)
+                    elif rel_upper == "TREATED_BY" and (
+                        any(t in {"T121", "T200", "T116", "T125", "T109", "T123"} for t in s_tuis) or
+                        "Drug" in s_labels
+                    ):
+                        logger.warning(
+                            f"[PropertyPacker] Ontology violation: Subject '{s}' mapped to drug "
+                            f"'{s_props.get('umls_canonical')}' ({s_sem_type}) but has relation '{r}'. Reverting mapping to raw."
+                        )
+                        s_node["properties"]["umls_cui"] = "NONE"
+                        s_node["properties"]["umls_canonical"] = s
+                        s_node["properties"]["umls_semantic_type"] = "Unknown"
+                        s_node["properties"]["description"] = f"Raw uncanonicalized concept: {s} (Fallback due to ontology mismatch)"
+                        if "icd10_code" in s_node["properties"]:
+                            s_node["properties"]["icd10_code"] = "NONE"
+                        if "rxnorm_id" in s_node["properties"]:
+                            s_node["properties"]["rxnorm_id"] = "NONE"
 
         # Step 3: Process concept-to-concept relationships and pack merged properties
         processed_relations = set()
@@ -494,7 +521,7 @@ def pack_properties(
             if not is_packed_on_edge:
                 # Pack directly onto the concept node
                 if s not in nodes:
-                    s_type = entity_types.get(s, "Unknown")
+                    s_type = entity_types.get(s.strip().lower(), "Unknown")
                     labels = ["Concept"]
                     if s_type != "Unknown":
                         labels.append(s_type)
@@ -524,9 +551,12 @@ def pack_properties(
     for raw_id, node in nodes.items():
         cui = node["properties"].get("umls_cui", "NONE")
         if cui != "NONE":
-            # CUI-based canonical ID — most reliable
-            node_id_mapping[raw_id] = cui
-            dedup_key_to_canon[cui] = cui
+            if cui in dedup_key_to_canon:
+                node_id_mapping[raw_id] = dedup_key_to_canon[cui]
+            else:
+                canon_name = node["properties"].get("umls_canonical", raw_id)
+                node_id_mapping[raw_id] = canon_name
+                dedup_key_to_canon[cui] = canon_name
         else:
             # Compute normalized dedup key for alias-aware comparison
             dedup_key = normalize_entity_for_dedup(raw_id)
@@ -779,11 +809,23 @@ def pack_properties(
 
         if rel_key not in seen_relations:
             seen_relations.add(rel_key)
+            
+            # Look up FCS score from debate log
+            lookup_key = (
+                normalize_entity_for_dedup(old_start),
+                rel_type.lower().replace(" ", "_").strip(),
+                normalize_entity_for_dedup(old_end)
+            )
+            confidence = debate_scores.get(lookup_key, 100.0)
+            
+            props = dict(rel.get("properties", {}))
+            props["confidence"] = confidence
+
             deduped_relationships.append({
                 "start": new_start,
                 "end": new_end,
                 "type": rel_type,
-                "properties": rel.get("properties", {})
+                "properties": props
             })
 
     # Return formatted Neo4j structure with deduped nodes and edges

@@ -1,0 +1,1083 @@
+{
+    "__version__": "2.0",
+    "type 2 diabetes mellitus": {
+        "cui": "NONE",
+        "canonical": "type 2 diabetes mellitus",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "oral antihyperglycemic medications": {
+        "cui": "NONE",
+        "canonical": "oral antihyperglycemic medications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "non-insulin injectable medications": {
+        "cui": "NONE",
+        "canonical": "non-insulin injectable medications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucose levels": {
+        "cui": "NONE",
+        "canonical": "glucose levels",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin": {
+        "cui": "C0021641",
+        "canonical": "Insulin",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Hormon slinivky břišní tvořený v beta-buňkách Langerhansových ostrůvků. Peptid tvořený dvěma řetězci (A, B) spojenými C-peptidem. Je důležitý pro regulaci glykemie a pro metabolismus sacharidů, ovlivňuje však i metabolismus bílkovin a lipidů. Působí anabolicky, tlumí lipolýzu. Jeho vylučování stoupá po jídle jako odpověď na vzestup glukosy v krvi (jeho vylučování ovlivňují i některé další hormony a nervové vlivy, regulace souvisí s funkcí membránových přenašečů a iontových kanálů na beta-buňce, ovlivňuje jej např. kalemie), umožňuje její vstup do buněk a její další využití (zisk energie, uložení do zásoby). Na i. je závislý glukosový transportér GLUT4. V cílových tkáních (zejm. svalová a tuková tkáň, játra) působí přes specifický receptor, který má charakter tyrosinkinázy (v tom i v některých dalších vlastnostech se podobá růstovým faktorům, což mj. souvisí s vlivem hyperinzulinemie na proces aterogeneze). Při jeho absolutním nedostatku nebo nedostatečném účinku (inzulinové rezistenci) vzniká diabetes mellitus (typu 1, resp. 2). I. existuje i jako lék. V minulosti se používaly purifikované i. vepřové a hovězí, nověji se používá humánní i., vyrobený metodami genového inženýrství. I. k léčebnému použití se dělí podle rychlosti nástupu účinku a doby působení a liší se způsobem podání. Rizikem léčby i. je předávkování s hypoglykemií, zejm. u starších inzulinů existovalo riziko alergizace a vzniku protilátek. I. také zvyšuje vstup kalia do buněk a lze jej spolu s glukosou použít k léčbě hyperkalemie. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "diabetes mellitus": {
+        "cui": "C0011849",
+        "canonical": "Diabetes Mellitus",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 14.6,
+        "icd10_code": "E08-E13",
+        "rxnorm_id": "NONE",
+        "definition": "Heterogenní skupina chronických metabolických chorob, jejichž základním projevem je hyperglykemie a porušená glukózová tolerance. Vzniká v důsledku nedostatku inzulinu, jeho nedostatečného účinku (někdy se mluví o relativním nedostatku) nebo kombinací obojího. (cit. Wikiskripta 2017 http://www.wikiskripta.eu/)"
+    },
+    "cardiovascular disease": {
+        "cui": "C0007222",
+        "canonical": "Cardiovascular Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 5.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Onemocnění kardiovaskulárního systému, včetně srdce, krevních cév a perikardia."
+    },
+    "metformin": {
+        "cui": "C0025598",
+        "canonical": "metformin",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 14.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "6809",
+        "definition": "Hypoglykemikum ze skupiny biguanidů. Používá se k léčbě diabetes mellitus 2. typu. Metformin zlepšuje senzitivitu k inzulinu a snižuje absorpci glukózy ve střevech. Tím příznivě ovlivňuje kontrolu glykemie."
+    },
+    "childhood obesity": {
+        "cui": "C2362324",
+        "canonical": "Pediatric Obesity",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 3.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Obezita dětí a mladistvých, jejichž BMI je vysoko nad doporučenou mezní hodnotou pro daný věk a pohlaví. Pro kojence do dvou let se obezita hodnotí na základě poměru hmotnosti k délce pomocí růstových (percentilových) grafů."
+    },
+    "type 2 diabetes": {
+        "cui": "NONE",
+        "canonical": "type 2 diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "environmental determinants": {
+        "cui": "NONE",
+        "canonical": "environmental determinants",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "genetic determinants": {
+        "cui": "NONE",
+        "canonical": "genetic determinants",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "insulin resistance": {
+        "cui": "NONE",
+        "canonical": "insulin resistance",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "beta cell dysfunction": {
+        "cui": "NONE",
+        "canonical": "beta cell dysfunction",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "impaired insulin secretion": {
+        "cui": "NONE",
+        "canonical": "impaired insulin secretion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dyslipidemia": {
+        "cui": "NONE",
+        "canonical": "dyslipidemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "prediabetes": {
+        "cui": "C0362046",
+        "canonical": "Prediabetes syndrome",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 8.1,
+        "icd10_code": "R73.03",
+        "rxnorm_id": "NONE",
+        "definition": "Stav, kdy jedinec mívá zvýšenou hladinu glukosy, avšak ještě nesplňuje kritéria pro diagnózu diabetu. Pojem prediabetes zahrnuje dvě již delší dobu zavedené kategorie, a to (a) poruchu glukosové tolerance a (b) hraniční glukosu nalačno. Patofyziologickým podkladem prediabetu je inzulinová rezistence. Většina jedinců postižených prediabetem nemá žádné klinické příznaky, při pečlivě odebrané anamnéze však můžeme zjistit mírnou nebo občasnou polyurii (event. též polakisurii, která je pro pacienta nápadnější) s následným zvýšeným příjmem tekutin, může být i častější pocit hladu, (event. projevy postprandiální hypoglykemie) a občasné poruchy vidění (kolísání osmolarity tkáňového moku). Stav je velmi často spojen s obezitou či nadváhou, U většiny jedinců s p. se později vyvine diabetes typu 2 (DM2), čemuž však lze předejít preventivními opatřeními. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz/)"
+    },
+    "elevated plasma glucose": {
+        "cui": "NONE",
+        "canonical": "elevated plasma glucose",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hemoglobin hemoglobin a1c": {
+        "cui": "NONE",
+        "canonical": "hemoglobin hemoglobin a1c",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "oral glucose tolerance testing": {
+        "cui": "C0029161",
+        "canonical": "Oral Glucose Tolerance Test",
+        "semantic_type": "Diagnostic Procedure (T060)",
+        "score": 5.35,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "liraglutide": {
+        "cui": "C1456408",
+        "canonical": "liraglutide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "475968",
+        "definition": "Analogon glucagon-like peptidu s dlouhým účinkem. Používá se jako antidiabetikum k léčbě diabetu 2. typu. Je rezistentní k DPP4. Vede k uvolnění glukosy jen při dosažení vyšších glykemií. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "glucagon-like peptide-1 receptor agonist": {
+        "cui": "C1562104",
+        "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 7.35,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Sloučeniny, které stimulují aktivitu receptoru pro peptid podobný glukagonu-1. Agonisté receptoru pro peptid podobný glukagonu-1 se používají k léčbě diabetu 2. typu a obezity."
+    },
+    "semaglutide": {
+        "cui": "C3885068",
+        "canonical": "semaglutide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "1991302",
+        "definition": "Glukagonový peptid a agonista GLP-1 používaný ke zlepšení glykemické kontroly u diabetes mellitus 2. typu a k léčbě obezity."
+    },
+    "tirzepatide": {
+        "cui": "C5139934",
+        "canonical": "tirzepatide",
+        "semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "2601723",
+        "definition": "Agonista receptoru pro na glukóze závislý inzulinotropní polypeptid (GIP) a receptoru pro glukóze podobný peptid-1 (GLP-1), který je indikován jako doplněk diety se sníženým obsahem kalorií a zvýšenou fyzickou aktivitou pro chronickou regulaci hmotnosti u dospělých s určitým BMI."
+    },
+    "early diabetes": {
+        "cui": "NONE",
+        "canonical": "early diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "mild hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "mild hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hyperglycemia": {
+        "cui": "C0020456",
+        "canonical": "Hyperglycemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 14.6,
+        "icd10_code": "R73.9",
+        "rxnorm_id": "NONE",
+        "definition": "Abnormálně vysoká hladina glukózy v krvi."
+    },
+    "polyphagia": {
+        "cui": "NONE",
+        "canonical": "polyphagia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "weight loss": {
+        "cui": "C1262477",
+        "canonical": "Weight Loss",
+        "semantic_type": "Finding (T033)",
+        "score": 16.09,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Snížení tělesné hmotnosti během časového intervalu."
+    },
+    "nausea": {
+        "cui": "C0027497",
+        "canonical": "Nausea",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R11.0",
+        "rxnorm_id": "NONE",
+        "definition": "Nevolnost, pocit na zvracení. Objevuje se při mořské nemoci a jiných kinetózách, zažívacích obtížích různého původu, metabolických poruchách, na počátku těhotenství, při závrati aj. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)"
+    },
+    "vomiting": {
+        "cui": "C0042963",
+        "canonical": "Vomiting",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R11.1",
+        "rxnorm_id": "NONE",
+        "definition": "Reflexní vyprázdnění žaludečního obsahu. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)"
+    },
+    "blurred vision": {
+        "cui": "C0344232",
+        "canonical": "Blurred vision",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Lack of sharpness of vision resulting in the inability to see fine detail. [https://orcid.org/0000-0002-0736-9199]"
+    },
+    "bacterial infections": {
+        "cui": "C0004623",
+        "canonical": "Bacterial Infections",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "A49.9",
+        "rxnorm_id": "NONE",
+        "definition": "Infekce způsobené bakteriemi (obecné a nespecifikované infekce)."
+    },
+    "fungal infections": {
+        "cui": "NONE",
+        "canonical": "fungal infections",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "acanthosis nigricans": {
+        "cui": "C0000889",
+        "canonical": "Acanthosis Nigricans",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 16.1,
+        "icd10_code": "L83",
+        "rxnorm_id": "NONE",
+        "definition": "Kožní změny charakterizované zdrsněním a ztluštěním kůže, tmavou pigmentací a bradavičnatými výrůstky aj. Je buď projevem některých dědičných poruch, nebo průvodním jevem některých nádorů (paraneoplastický projev). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "axillae": {
+        "cui": "NONE",
+        "canonical": "axillae",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "nape of the neck": {
+        "cui": "NONE",
+        "canonical": "nape of the neck",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "symptoms of hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "symptoms of hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "overweight": {
+        "cui": "C0497406",
+        "canonical": "Overweight",
+        "semantic_type": "Finding (T033)",
+        "score": 13.1,
+        "icd10_code": "E66.3",
+        "rxnorm_id": "NONE",
+        "definition": "Nadváha je předstupeň obezity, někdy bývá označována jako první stádium obezity. Přináší zvýšené riziko zdravotních komplikací. Pro evropskou populaci je podle kritérií Světové zdravotnické organizace (WHO) definována indexem tělesné hmotnosti (body-mass index, BMI) v rozmezí 25 až 30. Pro asijskou a pacifickou populaci je nadváha definována rozmezím BMI 23 až 25, někdy 23 až 27. (cit. Wikipedie 2016 http://www.cs.wikipedia.org/)"
+    },
+    "obesity": {
+        "cui": "C0028754",
+        "canonical": "Obesity",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 14.6,
+        "icd10_code": "E66.9",
+        "rxnorm_id": "NONE",
+        "definition": "Stav, kdy tělesná hmotnost výrazně převyšuje doporučené hodnoty, obvykle díky akumulaci tuku v těle. Normy se mohou lišit podle věku, pohlaví, podle genetického nebo kulturního pozadí. BMI větší než 30 kg/m2 se hodnotí jako obezita, BMI větší než 40 kg/m2 se hodnotí jako morbidní obezita."
+    },
+    "skin tags": {
+        "cui": "NONE",
+        "canonical": "skin tags",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "fasting plasma glucose": {
+        "cui": "C0583513",
+        "canonical": "Plasma fasting glucose measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 4.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glycosylated hemoglobin": {
+        "cui": "NONE",
+        "canonical": "glycosylated hemoglobin",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "oral glucose tolerance test": {
+        "cui": "C0029161",
+        "canonical": "Oral Glucose Tolerance Test",
+        "semantic_type": "Diagnostic Procedure (T060)",
+        "score": 16.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "relative inadequacy of insulin secretion": {
+        "cui": "NONE",
+        "canonical": "relative inadequacy of insulin secretion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "diabetes": {
+        "cui": "C0011849",
+        "canonical": "Diabetes Mellitus",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 8.1,
+        "icd10_code": "E08-E13",
+        "rxnorm_id": "NONE",
+        "definition": "Heterogenní skupina chronických metabolických chorob, jejichž základním projevem je hyperglykemie a porušená glukózová tolerance. Vzniká v důsledku nedostatku inzulinu, jeho nedostatečného účinku (někdy se mluví o relativním nedostatku) nebo kombinací obojího. (cit. Wikiskripta 2017 http://www.wikiskripta.eu/)"
+    },
+    "peripheral neuropathy": {
+        "cui": "NONE",
+        "canonical": "peripheral neuropathy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "chronic kidney disease": {
+        "cui": "C1561643",
+        "canonical": "Chronic Kidney Diseases",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 5.6,
+        "icd10_code": "N18",
+        "rxnorm_id": "NONE",
+        "definition": "<p>You have two kidneys, each about the size of your fist. Their main job is to filter your blood. They remove wastes and extra water, which become urine. They also keep the body's chemicals balanced, help control blood pressure, and make hormones.</p> <p>Chronic kidney disease (CKD) means that your kidneys are damaged and can't filter blood as they should. This damage can cause wastes to build up in your body. It can also cause other problems that can harm your health. Diabetes and high blood pressure are the most common causes of CKD.</p> <p>The kidney damage occurs slowly over many years. Many people don't have any symptoms until their kidney disease is very advanced. <a href=\"https://medlineplus.gov/kidneytests.html\">Blood and urine tests</a> are the only way to know if you have kidney disease.</p> <p>Treatments cannot cure kidney disease, but they may slow kidney disease. They include <a href=\"https://medlineplus.gov/bloodpressuremedicines.html\">medicines to lower blood pressure</a>, control <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, and lower <a href=\"https://medlineplus.gov/cholesterol.html\">cholesterol</a>. CKD may still get worse over time. Sometimes it can lead to <a href=\"https://medlineplus.gov/kidneyfailure.html\">kidney failure</a>. If your kidneys fail, you will need <a href=\"https://medlineplus.gov/dialysis.html\">dialysis</a> or a <a href=\"https://medlineplus.gov/kidneytransplantation.html\">kidney transplantation</a>.</p> <p>You can take steps to keep your kidneys healthier longer:</p> <ul> <li>Choose foods with less <a href=\"https://medlineplus.gov/sodium.html\">salt</a> (sodium)</li> <li><a href=\"https://medlineplus.gov/howtopreventhighbloodpressure.html\">Control your blood pressure</a>; your health care provider can tell you what your blood pressure should be</li> <li>Keep your blood sugar in the target range, if you have <a href=\"https://medlineplus.gov/diabetes.html\">diabetes</a></li> <li>Limit the amount of alcohol you drink</li> <li>Choose foods that are healthy for your heart: fruits, vegetables, whole grains, and low-fat dairy foods</li> <li>Lose weight if you are overweight</li> <li>Be physically active</li> <li>Don't smoke</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>"
+    },
+    "improved glycemic control": {
+        "cui": "NONE",
+        "canonical": "improved glycemic control",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucagon-like peptide-1 receptor agonists (glp-1 ras)": {
+        "cui": "NONE",
+        "canonical": "glucagon-like peptide-1 receptor agonists (glp-1 ras)",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "plasma glucose levels": {
+        "cui": "C0583513",
+        "canonical": "Plasma fasting glucose measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 3.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "diet": {
+        "cui": "NONE",
+        "canonical": "diet",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "exercise": {
+        "cui": "NONE",
+        "canonical": "exercise",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucose level fluctuations": {
+        "cui": "NONE",
+        "canonical": "glucose level fluctuations",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "adjusting diet": {
+        "cui": "NONE",
+        "canonical": "adjusting diet",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glycemic control in type 2 diabetes": {
+        "cui": "NONE",
+        "canonical": "glycemic control in type 2 diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "aerobic exercise": {
+        "cui": "C0001701",
+        "canonical": "Exercise, Aerobic",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 3.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Sustained exercise that places an increased oxygen demand on the cardiovascular system and promotes an increased efficiency of the body's use of oxygen."
+    },
+    "resistance exercise": {
+        "cui": "C0203991",
+        "canonical": "Resistive exercise",
+        "semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "score": 3.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "combination of resistance and aerobic exercise": {
+        "cui": "NONE",
+        "canonical": "combination of resistance and aerobic exercise",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "blood glucose": {
+        "cui": "NONE",
+        "canonical": "blood glucose",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "implanted gastric balloons": {
+        "cui": "NONE",
+        "canonical": "implanted gastric balloons",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "medical weight-loss device": {
+        "cui": "NONE",
+        "canonical": "medical weight-loss device",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "gastric aspiration therapy": {
+        "cui": "NONE",
+        "canonical": "gastric aspiration therapy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "metabolic surgery": {
+        "cui": "NONE",
+        "canonical": "metabolic surgery",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "more significant hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "more significant hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "pharmacologic therapy": {
+        "cui": "NONE",
+        "canonical": "pharmacologic therapy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hemoglobin a1c levels above target": {
+        "cui": "NONE",
+        "canonical": "hemoglobin a1c levels above target",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dual gip/glp-1 receptor agonist": {
+        "cui": "NONE",
+        "canonical": "dual gip/glp-1 receptor agonist",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucose elevations at diagnosis": {
+        "cui": "NONE",
+        "canonical": "glucose elevations at diagnosis",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sodium-glucose cotransporter-2 inhibitor": {
+        "cui": "NONE",
+        "canonical": "sodium-glucose cotransporter-2 inhibitor",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "vildagliptin and metformin combination therapy": {
+        "cui": "NONE",
+        "canonical": "vildagliptin and metformin combination therapy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "stepwise approach to adding diabetes pharmacotherapy": {
+        "cui": "NONE",
+        "canonical": "stepwise approach to adding diabetes pharmacotherapy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "major adverse cardiovascular events": {
+        "cui": "NONE",
+        "canonical": "major adverse cardiovascular events",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "family history": {
+        "cui": "NONE",
+        "canonical": "family history",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "ascvd": {
+        "cui": "NONE",
+        "canonical": "ascvd",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "metabolic dysfunction-associated steatohepatitis": {
+        "cui": "NONE",
+        "canonical": "metabolic dysfunction-associated steatohepatitis",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "glucagon-like peptide-1 receptor agonists": {
+        "cui": "C1562104",
+        "canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "score": 16.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Sloučeniny, které stimulují aktivitu receptoru pro peptid podobný glukagonu-1. Agonisté receptoru pro peptid podobný glukagonu-1 se používají k léčbě diabetu 2. typu a obezity."
+    },
+    "metabolic dysfunction-associated steatotic liver disease": {
+        "cui": "NONE",
+        "canonical": "metabolic dysfunction-associated steatotic liver disease",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "dual gip/glp-1 receptor agonists": {
+        "cui": "NONE",
+        "canonical": "dual gip/glp-1 receptor agonists",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "pioglitazone": {
+        "cui": "C0071097",
+        "canonical": "pioglitazone",
+        "semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "33738",
+        "definition": "Thiazolidindion a agonista PPAR-gama, užívá se v léčbě diabetes mellitus 2. typu (tzv. inzulinový senzitizér)."
+    },
+    "polyuria": {
+        "cui": "C0032617",
+        "canonical": "Polyuria",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "R35",
+        "rxnorm_id": "NONE",
+        "definition": "Časté a vydatné močení, za polyurii se obvykle považuje diuréza větší než 2500 ml/24 h. Vzniká v důsledku nízkého koncentrování moči při osmotické či vodní diuréze. Kromě velkého příjmu tekutin provází ledvinné nemoci (porucha koncentrační schopnosti při intersticiálních nefritidách či v polyurické fázi renálního selhání), diabetes mellitus, diabetes insipidus, hyperkalcemii, tyreotoxikózu aj. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )"
+    },
+    "hyperosmolar hyperglycemic state": {
+        "cui": "C3888846",
+        "canonical": "Hyperosmolar Hyperglycemic State",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "diabetic ketoacidosis": {
+        "cui": "C0011880",
+        "canonical": "Diabetic Ketoacidosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "Druh metabolické acidózy způsobené nadměrným vznikem ketolátek (acetoctová kyselina, beta-hydroxymáselná kyselina, aceton). Tyto látky vznikají při nadměrném štěpení tuků, které jsou využívány k zisku energie místo glukosy. Tento stav nastává při hladovění, závažný je pak především jako akutní komplikace diabetu 1. typu (nedostatek inzulinu snižuje využití glukosy a chybí i jeho antilipolytický účinek). Nápadným příznakem bývá zrychlené hluboké Kussmaulovo dýchání (respirační kompenzace acidózy) a zápach acetonu v dechu, v těžkých případech hrozí až kóma. Ketolátky bývají i v moči (ketonurie). Diabetická k. vyžaduje intenzivní léčbu opatrnou alkalizaci, podávání inzulinu, péči o vnitřní prostředí. Ketóza souvisí úzce s acidózou vzhledem ke klíčovému postavení acetoctové kyseliny - ta je v rovnováze s beta-hydroxymáselnou kyselinou která vzniká oxidací ketoskupiny (acetoctové kyseliny) a má hlavní význam pro vznik acidózy, dekarboxylací acetoctové kyseliny vzniká aceton. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+    },
+    "deformed foot": {
+        "cui": "NONE",
+        "canonical": "deformed foot",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "special shoes": {
+        "cui": "NONE",
+        "canonical": "special shoes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hammer toe": {
+        "cui": "NONE",
+        "canonical": "hammer toe",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "foot deformity": {
+        "cui": "NONE",
+        "canonical": "foot deformity",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "bunion": {
+        "cui": "NONE",
+        "canonical": "bunion",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "neuropathic joint": {
+        "cui": "NONE",
+        "canonical": "neuropathic joint",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "orthopedic devices": {
+        "cui": "NONE",
+        "canonical": "orthopedic devices",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "short leg braces": {
+        "cui": "NONE",
+        "canonical": "short leg braces",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "molded shoes": {
+        "cui": "NONE",
+        "canonical": "molded shoes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "sponge-rubber arch supports": {
+        "cui": "NONE",
+        "canonical": "sponge-rubber arch supports",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "crutches": {
+        "cui": "NONE",
+        "canonical": "crutches",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "patients with type 2 diabetes": {
+        "cui": "NONE",
+        "canonical": "patients with type 2 diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hemoglobin a1c": {
+        "cui": "C0474680",
+        "canonical": "Hemoglobin A1c measurement",
+        "semantic_type": "Laboratory Procedure (T059)",
+        "score": 6.6,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": "<p>A1C is a blood test for <a href=\"https://medlineplus.gov/diabetestype2.html\">type 2 diabetes</a> and <a href=\"https://medlineplus.gov/prediabetes.html\">prediabetes</a>. It measures your average blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, level over the past 3 months. Doctors may use the A1C alone or in combination with other diabetes tests to make a diagnosis. They also use the A1C to see how well you are managing your diabetes. This test is different from the blood sugar checks that people with diabetes do every day.</p> <p>Your A1C test result is given in percentages. The higher the percentage, the higher your blood sugar levels have been:</p> <ul> <li>A normal A1C level is below 5.7%</li> <li>Prediabetes is between 5.7 to 6.4%. Having prediabetes is a risk factor for getting type 2 diabetes. People with prediabetes may need retests every year.</li> <li>Type 2 diabetes is above 6.5%</li> <li>If you have diabetes, you should have the A1C test at least twice a year. The A1C goal for many people with diabetes is below 7. It may be different for you. Ask what your goal should be. If your A1C result is too high, you may need to change your diabetes care plan.</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>"
+    },
+    "treatment of type 1 diabetes": {
+        "cui": "NONE",
+        "canonical": "treatment of type 1 diabetes",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hypoglycemia": {
+        "cui": "C0020615",
+        "canonical": "Hypoglycemia",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "E16.2",
+        "rxnorm_id": "NONE",
+        "definition": "Nízká koncentrace krevního cukru (glukosy). Vede k závažným poruchám činnosti mozku, který je na přívodu cukru krví závislý. K příznakům patří slabost, hlad, třes, studený pot, zmatenost až bezvědomí (hypoglykemické kóma), někdy i s křečemi (kombinují se důsledky nedostatku glukosy v CNS a aktivace sympatiku). Nejč. k h. dochází při léčbě cukrovky předávkováním inzulinu nebo perorálních antidiabetik (roli může mít např. snížený příjem potravy, zvracení, výrazná fyzická námaha aj.). První pomocí i léčbou, která zlepší stav takřka okamžitě, je podání glukosy, ev. glukagonu i.m. K h. může dojít i při vytrvalostním sportu, po požití velkého množství alkoholu, u vzácného nádoru slinivky produkujícího velká množství inzulinu (inzulinom). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "chronic hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "chronic hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "microvascular complications": {
+        "cui": "NONE",
+        "canonical": "microvascular complications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "macrovascular complications": {
+        "cui": "NONE",
+        "canonical": "macrovascular complications",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "large vessels": {
+        "cui": "NONE",
+        "canonical": "large vessels",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "nephropathy": {
+        "cui": "NONE",
+        "canonical": "nephropathy",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "neuropathy": {
+        "cui": "C0442874",
+        "canonical": "Neuropathy",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "G62.9",
+        "rxnorm_id": "NONE",
+        "definition": "A disorder affecting the cranial nerves or the peripheral nervous system. It manifests with pain, tingling, numbness, and muscle weakness. It may be the result of physical injury, toxic substances, viral diseases, diabetes, renal failure, cancer, and drugs."
+    },
+    "complication": {
+        "cui": "NONE",
+        "canonical": "complication",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "toxic effects of hyperglycemia": {
+        "cui": "NONE",
+        "canonical": "toxic effects of hyperglycemia",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "nerves": {
+        "cui": "NONE",
+        "canonical": "nerves",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "atherosclerosis of large vessels": {
+        "cui": "NONE",
+        "canonical": "atherosclerosis of large vessels",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "angina pectoris": {
+        "cui": "C0002962",
+        "canonical": "Angina Pectoris",
+        "semantic_type": "Sign or Symptom (T184)",
+        "score": 13.1,
+        "icd10_code": "I20",
+        "rxnorm_id": "NONE",
+        "definition": "Algická (bolestivá) forma ischemické choroby srdeční, projevující se bolestí na hrudi (stenokardií), která někdy vyzařuje do ramen nebo čelistí. U klasické neboli námahové AP je bolest vyvolána fyzickou námahou (rychlá chůze, chůze do schodů, pohlavní styk) či rozrušením; negativní roli hraje chlad. Podstatou AP je nejč. aterosklerotické zúžení koronárních tepen srdce a nedostatek kyslíku v srdci při námaze. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)"
+    },
+    "myocardial infarction": {
+        "cui": "C0027051",
+        "canonical": "Myocardial Infarction",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "I21",
+        "rxnorm_id": "NONE",
+        "definition": "Odumření části myokardu vzniklé přerušením krevního zásobení. Příčinou bývá uzávěr některého úseku koronární tepny, nejč. při její ateroskleróze, s následnou těžkou ischemií příslušného okrsku tkáně. Rizikové faktory IM jsou v podstatě shodné s rizikovými faktory aterosklerózy. Onemocnění se klasicky projevuje silnou bolestí na hrudi, úzkostí, pocením. Někdy mohou nastat zažívací obtíže, projevem může být rovněž srdeční selhání. V důsledku elektrické nestability mohou vznikat arytmie, nejzávažnější je vznik fibrilace komor. Při diagnóze infarktu se uplatňuje EKG, laboratorní vyšetření, echokardiografie, rtg, scintigrafie aj. Podle EKG lze odhadnout lokalizaci i stáří infarktu. Kromě rozsahu IM je důležitá též jeho lokalizace (související s postiženou koronární tepnou) a hloubka. Nejč. lokalizacemi jsou IM spodní stěny (tzv. diafragmatický) při postižení a. coronaria dextra a IM přední (anteroseptální) stěny při postižení r. interventricularis anterior nebo IM postranní (anterolaterální) stěny při postižení r. circumflexus. Včasná léčba zabrání rozvoji nekrózy či zmenší ložisko infarktu. I později je vhodné řešení stavu koronárních tepen (angioplastika, bypass). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "transient ischemic attacks": {
+        "cui": "NONE",
+        "canonical": "transient ischemic attacks",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "peripheral artery disease": {
+        "cui": "NONE",
+        "canonical": "peripheral artery disease",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "immune dysfunction": {
+        "cui": "NONE",
+        "canonical": "immune dysfunction",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "cirrhosis": {
+        "cui": "C1623038",
+        "canonical": "Cirrhosis",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.09,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "spot urine albumin-to-creatinine ratio": {
+        "cui": "NONE",
+        "canonical": "spot urine albumin-to-creatinine ratio",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "estimated glomerular filtration rate (egfr)": {
+        "cui": "NONE",
+        "canonical": "estimated glomerular filtration rate (egfr)",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "hypertension": {
+        "cui": "NONE",
+        "canonical": "hypertension",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "blood pressure measurement": {
+        "cui": "NONE",
+        "canonical": "blood pressure measurement",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    },
+    "heart failure": {
+        "cui": "C0018801",
+        "canonical": "Heart failure",
+        "semantic_type": "Disease or Syndrome (T047)",
+        "score": 13.1,
+        "icd10_code": "I50",
+        "rxnorm_id": "NONE",
+        "definition": "Stav, kdy srdce není schopno plnit svou funkci (tj. přečerpávat, \"\"pumpovat\"\" krev) v množství přiměřeném nárokům organismu. K příčinám se řadí porucha myokardu (zejm. ischemie), objemové a tlakové přetěžování srdce (např. chlopenní vady, hypertenze). Nikoliv vzácné je s. oboustranné s kombinací příznaků. S. s. může být akutní nebo chronické s různě dramatickými příznaky a s různě zapojenými kompenzačními mechanismy. K nim patří zejm. zvyšování preloadu (dilatace komory), retence tekutin a solí v důsledku silné aktivace systému renin-angiotenzin-aldosteron, tachykardie a aktivace sympatoadrenálního systému (vazokonstrikce). S. s. je považováno za systémový stav se změnami nejen hemodynamickými, ale změnami v hormonální a cytokinové produkci, ve vnitřním prostředí apod. Některé změny se vyvíjejí rychle (např. tachykardie), jiné po delší dobu (retence tekutin), rozvoj některých trvá i měsíce (hypertrofie a strukturální změny myokardu). Kompenzační mechanismy samy o sobě mohou z dlouhodobého hlediska srdce poškozovat (tachykardie zvyšuje potřebu kyslíku, zhoršuje prokrvení, vazokonstrikce vede k zvýšení afterloadu atp.). Patofyziologicky se rozlišuje selhání backward, forward. Na nedostatečnosti se podílí systolická dysfunkce (špatná kontraktilní schopnost) i dysfunkce diastolická (snížená poddajnost komory v diastole se vzestupem enddiastolického tlaku). Důležitá je rovněž správná životospráva, omezení solení, dostatek fyzického i psychického odpočinku. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+    },
+    "natriuretic peptide": {
+        "cui": "NONE",
+        "canonical": "natriuretic peptide",
+        "semantic_type": "Unknown",
+        "score": 0.0,
+        "icd10_code": "NONE",
+        "rxnorm_id": "NONE",
+        "definition": ""
+    }
+}

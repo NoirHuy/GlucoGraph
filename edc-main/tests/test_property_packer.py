@@ -349,19 +349,21 @@ def test_cui_primary_key_redirection_and_deduplication():
     normalizer = MockNormalizer()
     packed = pack_properties(mock_records, normalizer=normalizer)
     
-    # Assert CUI redirection
+    # Assert canonical name redirection
     nodes_map = {n["id"]: n for n in packed["nodes"]}
     
-    # There should only be CUI-based nodes!
-    assert "C0025598" in nodes_map
-    assert "C0011860" in nodes_map
+    # There should only be canonical name-based nodes!
+    assert "Metformin" in nodes_map
+    assert "Diabetes Mellitus, Non-Insulin-Dependent" in nodes_map
+    assert "C0025598" not in nodes_map
+    assert "C0011860" not in nodes_map
     assert "Glucophage" not in nodes_map
     assert "metformin" not in nodes_map
     assert "type 2 diabetes" not in nodes_map
     assert "T2DM" not in nodes_map
 
     # Assert aliases & properties merging
-    metformin_node = nodes_map["C0025598"]
+    metformin_node = nodes_map["Metformin"]
     assert metformin_node["properties"]["umls_cui"] == "C0025598"
     assert metformin_node["properties"]["umls_canonical"] == "Metformin"
     assert metformin_node["properties"]["rxnorm_id"] == "6809"
@@ -376,8 +378,8 @@ def test_cui_primary_key_redirection_and_deduplication():
     rels = packed["relationships"]
     assert len(rels) == 1  # The duplicate was merged!
     rel = rels[0]
-    assert rel["start"] == "C0025598"
-    assert rel["end"] == "C0011860"
+    assert rel["start"] == "Metformin"
+    assert rel["end"] == "Diabetes Mellitus, Non-Insulin-Dependent"
     assert rel["type"] == "treated_by"
     
     logger.info("✅ test_cui_primary_key_redirection_and_deduplication PASSED")
@@ -514,11 +516,11 @@ def test_safe_tuis_coverage():
     packed = pack_properties(mock_records, normalizer=normalizer)
     nodes_map = {n["id"]: n for n in packed["nodes"]}
 
-    # Insulin should be mapped to CUI C0021641
-    assert "C0021641" in nodes_map, (
-        f"Expected node with id 'C0021641' (insulin CUI). Got nodes: {list(nodes_map.keys())}"
+    # Insulin should be mapped to canonical name "Insulin"
+    assert "Insulin" in nodes_map, (
+        f"Expected node with id 'Insulin' (insulin canonical name). Got nodes: {list(nodes_map.keys())}"
     )
-    insulin_node = nodes_map["C0021641"]
+    insulin_node = nodes_map["Insulin"]
     assert insulin_node["properties"]["umls_cui"] == "C0021641"
     assert insulin_node["properties"]["rxnorm_id"] == "5856"
     assert insulin_node["properties"]["umls_canonical"] == "Insulin"

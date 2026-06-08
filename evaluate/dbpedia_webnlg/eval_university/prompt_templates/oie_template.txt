@@ -1,0 +1,18 @@
+Your task is to extract relationship knowledge as a semantic graph from the text. Output a list of triples in the format: [Entity1, Relationship, Entity2].
+
+STRICT RULES:
+1. Keep entities short and atomic. Subjects and objects should be clean, short named concepts, not long descriptive phrases or prepositional phrases.
+2. Output a valid python list of lists of strings, e.g. [['Entity1', 'Relation', 'Entity2'], ['Entity3', 'Relation2', 'Entity4']].
+3. Do not include markdown code fences or other text.
+4. Only extract triples directly supported by the text.
+
+════════════════════════════════════════════════
+FEW-SHOT EXAMPLES
+════════════════════════════════════════════════
+{few_shot_examples}
+
+════════════════════════════════════════════════
+TARGET TEXT FOR EXTRACTION
+════════════════════════════════════════════════
+Text: {input_text}
+Triplets:

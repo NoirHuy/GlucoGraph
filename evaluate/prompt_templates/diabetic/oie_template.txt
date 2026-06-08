@@ -1,0 +1,87 @@
+Your task is to extract biomedical relationship knowledge as a semantic graph from scientific/biomedical text. Output a list of triples in the format: [Entity1, Relationship, Entity2].
+
+════════════════════════════════════════════════
+PART 1: ALLOWED ENTITY TYPES
+════════════════════════════════════════════════
+Entities MUST ONLY belong to one of these biomedical categories:
+  - [DiseaseOrPhenotypicFeature] e.g., Nephrogenic Diabetes Insipidus, polyuria, hypercalciuria, diabetes, cancer
+  - [ChemicalEntity]             e.g., lithium, calcium, sodium, potassium, cAMP, metformin, glucose
+  - [SequenceVariant]            e.g., AQP2 mutation, alleles, codons, sequence changes
+  - [GeneOrGeneProduct]          e.g., UT-A1, PKCa, AQP2, insulin, receptor, enzyme, protein, DNA, RNA
+  - [CellLine]                   e.g., HEK293, primary inner medullary collecting duct cells, HeLa
+  - [OrganismTaxon]              e.g., rat, mouse, human, patients, species
+
+════════════════════════════════════════════════
+PART 2: STRICT IGNORE LIST — DO NOT EXTRACT
+════════════════════════════════════════════════
+NEVER create a triple involving any of the following:
+  - Author names, researcher/physician credentials (MD, PhD, FACE)
+  - Universities, departments, hospitals, journals, writing panels
+  - Publication years, dates, copyright notices, rights reserved
+  - Standalone abbreviations or acronyms — UNLESS they appear as a subject or object with clear biomedical meaning
+  - BARE ADJECTIVES or COMPARATIVES without clinical/biomedical meaning
+  - BARE VERBS, GENERIC ACTION NOUNS, or DIRECTIONAL WORDS (e.g., 'increase', 'decrease', 'elevated', 'reduced', 'inhibition', 'activation', 'elevation') — these are NOT entities. They must be mapped into the Relationship, NOT the subject or object.
+  - VAGUE PRONOUNS (e.g., 'it', 'they', 'this', 'these') — ALWAYS resolve them to their active entity.
+
+════════════════════════════════════════════════
+PART 3: BIOMEDICAL EXTRACTION & ONTOLOGY RULES
+════════════════════════════════════════════════
+
+RULE 1 — USE ONLY TARGET RELATION VOCABULARY:
+  You MUST classify and extract the relation using ONLY one of the following 8 canonical BioRED relation types. DO NOT output free-form verbs.
+  
+  - [Positive_Correlation] : Represents a positive correlation, upregulation, activation, enhancement, or positive causal association between two entities.
+                             * Use this when one entity increases, upregulates, activates, or promotes the other.
+                             * Use this when a drug/chemical causes, induces, or increases the severity/risk of a disease or symptom (e.g., "lithium causes polyuria").
+                             * Use this when a genetic variant increases disease risk or susceptibility (e.g., "rs13266634 variant increases T2DM risk").
+                             
+  - [Negative_Correlation] : Represents a negative correlation, downregulation, inhibition, suppression, protection, or negative causal association between two entities.
+                             * Use this when one entity decreases, inhibits, suppresses, or downregulates the other.
+                             * Use this when a drug/treatment treats, prevents, reduces, or protects against a disease/symptom (e.g., "metformin treats diabetes").
+                             
+  - [Association]          : Represents a general, neutral, or non-specific association, linkage, or relationship where the direction of correlation is unspecified.
+                             * Use this when a whole gene/protein (not a variant) is associated with or linked to a disease generally (e.g., "SLC30A8 gene associated with T2DM").
+                             * Use this for general non-specific correlations or physiological measurements/findings (e.g., "glucose associated with insulin").
+                             
+  - [Bind]                 : Represents physical binding, direct molecular interaction, or receptor-ligand complex formation.
+  
+  - [Drug_Interaction]     : Represents a pharmacological or physiological interaction between two drugs/chemicals.
+  
+  - [Cotreatment]          : Represents co-administration or combined use of multiple chemical substances or treatments.
+  
+  - [Comparison]           : Represents a comparison, differential effect, or comparative analysis between two entities.
+  
+  - [Conversion]           : Represents chemical or biological conversion, transformation, or synthesis of one substance into another.
+
+RULE 2 — ONE ENTITY PER SLOT, NO COMPOUND STRINGS:
+  Do NOT group multiple independent genes, chemicals, or diseases into a single entity string. Split them into separate triples.
+  ✗ WRONG: ['lithium', 'Negative_Correlation', 'UT-A1 and AQP2']
+  ✓ CORRECT: ['lithium', 'Negative_Correlation', 'UT-A1']
+             ['lithium', 'Negative_Correlation', 'AQP2']
+
+RULE 3 — ATOMICITY & ENTITY SIMPLIFICATION:
+  Keep entities short and atomic. Subjects and objects should be clean, short, named concepts (e.g. 'sodium', 'potassium', 'polyuria', 'type 2 diabetes'), not long descriptive phrases, action clauses, or prepositional phrases.
+  Always prefer specific named concepts (e.g. extract 'rs11708067' instead of 'rs11708067-A risk allele', 'glucose' instead of 'plasma glucose levels').
+  ✗ WRONG: ['PKCa', 'Positive_Correlation', 'elevation of urinary sodium']
+  ✓ CORRECT: ['PKCa', 'Positive_Correlation', 'urinary sodium']
+
+RULE 4 — NO HALLUCINATION: Only extract triples directly supported by the sentence.
+
+RULE 5 — METADATA EXCLUSION: Skip sentences containing only authors, copyright, or publisher info. Output []
+
+RULE 6 — COMBINATORIAL EXPANSION FOR LISTS:
+  When a sentence contains a list of entities that all share a relationship with another entity, you MUST extract a separate individual triple for EVERY SINGLE entity in the list. Do NOT group them, and do NOT skip any item.
+  ✓ CORRECT: ['type 2 diabetes', 'Association', 'SLC30A8']
+             ['type 2 diabetes', 'Association', 'HHEX']
+             ['type 2 diabetes', 'Association', 'KCNQ1']
+
+════════════════════════════════════════════════
+PART 4: FEW-SHOT EXAMPLES
+════════════════════════════════════════════════
+{few_shot_examples}
+
+════════════════════════════════════════════════
+PART 5: TARGET BIOMEDICAL TEXT FOR EXTRACTION
+════════════════════════════════════════════════
+Text: {input_text}
+Triplets:

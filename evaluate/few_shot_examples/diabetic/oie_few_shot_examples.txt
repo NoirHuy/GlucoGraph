@@ -1,0 +1,55 @@
+Example 1 (Drug/chemical causing symptoms maps to Positive_Correlation):
+Text: Lithium treatment is known to cause nephrogenic diabetes insipidus (NDI) and severe polyuria in patients.
+Triplets: [['lithium', 'Positive_Correlation', 'nephrogenic diabetes insipidus'], ['lithium', 'Positive_Correlation', 'polyuria']]
+
+Example 2 (Inhibition or downregulation maps to Negative_Correlation):
+Text: In collecting duct cells, lithium inhibits UT-A1 urea transporters and decreases AQP2 water channels.
+Triplets: [['lithium', 'Negative_Correlation', 'UT-A1'], ['lithium', 'Negative_Correlation', 'AQP2']]
+
+Example 3 (Metadata Exclusion - Author and Committee titles are ignored):
+Text: Susan L. Samson, MD, PhD, FACE is the Chair of the Task Force for the American Association of Clinical Endocrinology.
+Triplets: []
+Explanation: This sentence contains only academic titles, professional roles, and administrative organizations. It does not contain any biomedical facts.
+
+Example 4 (Double negative reasoning resolved as Positive_Correlation):
+Text: Activation of PKCa suppresses AQP2 expression and stimulates NDI development.
+Triplets: [['PKCa', 'Negative_Correlation', 'AQP2'], ['PKCa', 'Positive_Correlation', 'NDI']]
+
+Example 5 (Complication correlation maps to Positive_Correlation):
+Text: Lithium-induced NDI is accompanied by hypercalciuria and altered calcium excretion.
+Triplets: [['lithium-induced NDI', 'Positive_Correlation', 'hypercalciuria'], ['lithium-induced NDI', 'Positive_Correlation', 'calcium excretion']]
+
+Example 6 (Metadata Exclusion - Publisher, Journal, and Year are ignored):
+Text: All rights reserved. Published in the Journal of Clinical Practice, May 2025. Copyright © 2025 by American Diabetes Association.
+Triplets: []
+
+Example 7 (General physiological association maps to Association):
+Text: Protein kinase C (PKC) activity plays a role in regulating sodium and potassium levels in rats.
+Triplets: [['Protein kinase C', 'Association', 'sodium'], ['Protein kinase C', 'Association', 'potassium']]
+
+Example 8 (Genetic mutation causing disease maps to Positive_Correlation):
+Text: AQP2 mutations lead to congenital nephrogenic diabetes insipidus in human subjects.
+Triplets: [['AQP2', 'Positive_Correlation', 'congenital nephrogenic diabetes insipidus']]
+Explanation: Simplify "AQP2 mutations" to the core entity "AQP2" and map the causal relation to "Positive_Correlation".
+
+Example 9 (Metadata Exclusion - University and Academic Institution names are ignored):
+Text: Harvard Medical School and the Department of Endocrinology, Boston, MA, USA, contributed to this writing panel.
+Triplets: []
+
+Example 10 (Cell Line environment):
+Text: Experiments in HEK293 cell line showed that lithium reduces cAMP accumulation.
+Triplets: [['HEK293', 'Association', 'lithium'], ['lithium', 'Negative_Correlation', 'cAMP']]
+
+Example 11 (Causal Direction):
+Text: Loss of UT-A1 urea transporters causes defective urine concentration.
+Triplets: [['UT-A1', 'Negative_Correlation', 'urine concentration']]
+
+Example 12 (Atomicity & Entity Simplification):
+Text: Treatment with lithium-induced polyuria is controlled by PKC-mediated pathways.
+Triplets: [['lithium', 'Positive_Correlation', 'polyuria'], ['PKC', 'Association', 'polyuria']]
+Explanation: Keep entities short and atomic, e.g. 'lithium', 'polyuria', 'PKC'. Never extract long phrases.
+
+Example 13 (Conjunctive List Combinatorial Expansion):
+Text: Association between polymorphisms in SLC30A8, HHEX, CDKAL1 and risk of type 2 diabetes.
+Triplets: [['type 2 diabetes', 'Association', 'SLC30A8'], ['type 2 diabetes', 'Association', 'HHEX'], ['type 2 diabetes', 'Association', 'CDKAL1']]
+Explanation: Separate the list of genes into individual triples and map general genetic associations to "Association".

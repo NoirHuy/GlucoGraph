@@ -1,0 +1,7 @@
+entity_type,definition
+DiseaseOrPhenotypicFeature,"Diseases, symptoms, syndromes, phenotypic features, signs, disorders, or pathological conditions in organisms."
+ChemicalEntity,"Chemical compounds, drugs, small molecules, elements, therapeutic substances, toxins, or chemical groups."
+SequenceVariant,"Genetic variants, mutations, polymorphisms, alleles, codons, or sequence changes in DNA/RNA."
+GeneOrGeneProduct,"Genes, proteins, glycoproteins, transcripts, RNA, DNA sequences, or gene products."
+CellLine,"Established cell lines, primary cell cultures, or biological cell preparations used in research."
+OrganismTaxon,"Organisms, species, strains, animal models, human subjects, or specific taxonomic groups."

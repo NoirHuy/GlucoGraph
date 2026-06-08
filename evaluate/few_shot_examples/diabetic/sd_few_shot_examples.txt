@@ -1,0 +1,38 @@
+Example 1:
+Text: Metformin is the first-line pharmacological treatment recommended for type 2 diabetes mellitus and helps lower HbA1c levels.
+Triplets: [['type 2 diabetes mellitus', 'may be treated by', 'Metformin'], ['Metformin', 'lowers', 'HbA1c']]
+Relations: ['may be treated by', 'lowers']
+Answer:
+may be treated by: The disease or condition (subject) can be managed or treated using the drug, procedure, or intervention (object).
+lowers: The drug or treatment (subject) reduces the value or level of the clinical metric or condition (object).
+
+Example 2:
+Text: SGLT2 inhibitors are contraindicated in patients with severe chronic kidney disease due to reduced renal function.
+Triplets: [['chronic kidney disease', 'has contraindicated drug', 'SGLT2 inhibitors']]
+Relations: ['has contraindicated drug']
+Answer:
+has contraindicated drug: The disease or condition (subject) is a state in which the specified drug (object) should not be used because it may cause harm.
+
+Example 3:
+Text: Hypertension is a common comorbidity in patients with type 2 diabetes and increases the risk of atherosclerotic cardiovascular disease.
+Triplets: [['hypertension', 'associated condition of', 'type 2 diabetes mellitus'], ['hypertension', 'increases risk of', 'atherosclerotic cardiovascular disease']]
+Relations: ['associated condition of', 'increases risk of']
+Answer:
+associated condition of: The disease (subject) is a condition that commonly co-occurs with or is closely linked to another disease (object).
+increases risk of: The disease or factor (subject) elevates the likelihood of developing another disease or adverse outcome (object).
+
+Example 4:
+Text: Diabetic nephropathy is a microvascular complication of diabetes mellitus and is associated with kidney damage.
+Triplets: [['diabetic nephropathy', 'manifestation of', 'diabetes mellitus'], ['diabetic nephropathy', 'has finding site', 'kidney']]
+Relations: ['manifestation of', 'has finding site']
+Answer:
+manifestation of: The clinical sign, complication, or secondary condition (subject) is a direct presentation or consequence of the primary disease (object).
+has finding site: The disease or condition (subject) has its primary pathological lesion or finding located at the anatomical site (object).
+
+Example 5:
+Text: Hyperglycemia is a characteristic finding of diabetes mellitus and can be monitored using fasting blood glucose tests.
+Triplets: [['hyperglycemia', 'may be finding of disease', 'diabetes mellitus'], ['diabetes mellitus', 'has evaluation', 'fasting blood glucose']]
+Relations: ['may be finding of disease', 'has evaluation']
+Answer:
+may be finding of disease: The clinical or laboratory finding (subject) may be observed as a characteristic indicator in patients diagnosed with the disease (object).
+has evaluation: The disease or condition (subject) is assessed or monitored using the clinical test, biomarker, or measurement (object).

@@ -2,6 +2,7 @@ from edc.extract import Extractor
 from edc.schema_definition import SchemaDefiner
 from edc.schema_canonicalization import SchemaCanonicalizer
 from edc.entity_type_canonicalization import EntityTypeCanonicalizer
+from edc.semantic_validator import SemanticValidator
 from post_processing.umls_normalizer import UMLSNormalizer
 import edc.utils.llm_utils as llm_utils
 from typing import List
@@ -97,13 +98,15 @@ class OpenRouterEmbedder:
         import requests
         self.model_name = model_name
         self.api_url = "https://openrouter.ai/api/v1/embeddings"
-        self.api_key = os.environ.get("OPENROUTER_KEY", os.environ.get("OPENROUTER_API_KEY", ""))
         self.prompts = {}  
-        if not self.api_key:
-            raise ValueError("OPENROUTER_KEY environment variable is not set. Please set it before using OpenRouter embeddings.")
+        
+        # Check if we have keys in pool or in environment
+        has_keys = len(llm_utils.global_key_pool.keys) > 0 or os.environ.get("OPENROUTER_KEY") or os.environ.get("OPENROUTER_API_KEY")
+        if not has_keys:
+            raise ValueError("No OpenRouter API keys found in pool or environment variables.")
 
     def encode(self, texts, prompt_name=None, prompt=None, **kwargs):
-        """Encode texts using OpenRouter Embeddings API."""
+        """Encode texts using OpenRouter Embeddings API with API key rotation support."""
         import requests
         import numpy as np
         import time
@@ -111,10 +114,6 @@ class OpenRouterEmbedder:
         if single:
             texts = [texts]
 
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json",
-        }
         payload = {
             "model": self.model_name,
             "input": texts,
@@ -124,13 +123,36 @@ class OpenRouterEmbedder:
         retry_delay = 5
         
         for attempt in range(max_retries):
+            # Dynamically fetch the active key
+            active_key = llm_utils.global_key_pool.get_active_key()
+            if not active_key:
+                active_key = os.environ.get("OPENROUTER_KEY", os.environ.get("OPENROUTER_API_KEY", ""))
+
+            headers = {
+                "Authorization": f"Bearer {active_key}",
+                "Content-Type": "application/json",
+            }
+            
             try:
                 response = requests.post(self.api_url, headers=headers, json=payload)
+                
+                # Check for 402 Client Error (Payment Required)
+                if response.status_code == 402:
+                    logger.warning(f"[OpenRouter Embeddings] API key failed with 402 Payment Required. Rotating key...")
+                    llm_utils.global_key_pool.report_failure(active_key)
+                    continue
+
                 response.raise_for_status()
                 data = response.json()
                 
                 if "error" in data:
                     err_msg = data["error"].get("message", str(data["error"]))
+                    err_code = data["error"].get("code", 0)
+                    if err_code == 402 or "credit" in err_msg.lower() or "balance" in err_msg.lower():
+                        logger.warning(f"[OpenRouter Embeddings] API key failed with credit error. Rotating key...")
+                        llm_utils.global_key_pool.report_failure(active_key)
+                        continue
+                    
                     logger.warning(f"[OpenRouter Embeddings] API returned error on attempt {attempt+1}/{max_retries}: {err_msg}. Retrying in {retry_delay}s...")
                     time.sleep(retry_delay)
                     continue
@@ -144,6 +166,13 @@ class OpenRouterEmbedder:
                 return embeddings[0] if single else embeddings
                 
             except Exception as e:
+                err_msg = str(e).lower()
+                is_quota_or_rate = any(x in err_msg for x in ["rate limit", "429", "quota", "balance", "insufficient", "unauthorized", "401", "invalid api key", "credit", "402"])
+                if is_quota_or_rate:
+                    logger.warning(f"[OpenRouter Embeddings] Request failed on API key issue: {e}. Rotating key...")
+                    llm_utils.global_key_pool.report_failure(active_key)
+                    continue
+                
                 logger.warning(f"[OpenRouter Embeddings] Request failed on attempt {attempt+1}/{max_retries}: {e}. Retrying in {retry_delay}s...")
                 time.sleep(retry_delay)
                 
@@ -643,8 +672,18 @@ class EDC:
             previous_extracted_triplets_list=None,
         )
 
-        # ── Phase 1.5: Post-OIE Semantic Validation [DELETED] ─────────────
-        oie_raw_list = [list(triples) for triples in oie_triplets_list]
+        # ── Phase 1.5: Post-OIE Semantic Validation ──────────────────────
+        # Auto-correct directionality, discard non-entities, remove tautologies
+        sc_embedder = self.load_model(self.sc_embedder_name, "sts")
+        validator = SemanticValidator(
+            relation_schema=self.schema,
+            entity_type_schema=self.entity_type_schema,
+            embedder=sc_embedder,
+            oie_few_shot_file_path=self.oie_few_shot_example_file_path,
+            sd_few_shot_file_path=self._sd_few_shot_with_entities,
+        )
+        oie_raw_list = [list(triples) for triples in oie_triplets_list]  # preserve original for logging
+        oie_triplets_list = validator.validate_batch(oie_triplets_list, input_texts=input_text_list)
 
         # ── Phase 2: Schema Definition ────────────────────────────────────
         del required_model_dict_current["sd"]
@@ -653,6 +692,44 @@ class EDC:
             oie_triplets_list,
             free_model=self.sd_llm_name not in required_model_dict_current.values(),
         )
+
+        # ── Phase 2.5: Type-based Direction Auto-Correction ──────────────────────
+        # Now that we have Entity Types from Phase 2, we can perform reliable 
+        # directionality auto-correction based on the Schema before Phase 3.
+        for idx in range(len(oie_triplets_list)):
+            oie_trips = oie_triplets_list[idx]
+            sd_dict = sd_dict_list[idx]
+            if not isinstance(sd_dict, dict) or "_entries" not in sd_dict:
+                continue
+            sd_entries = sd_dict["_entries"]
+            
+            # Create a map for quick lookup by tuple to handle potential LLM reordering
+            entry_map = {}
+            for entry in sd_entries:
+                key = (entry.get("subject", ""), entry.get("relation", ""), entry.get("object", ""))
+                entry_map[key] = entry
+            
+            for i in range(len(oie_trips)):
+                trip = oie_trips[i]
+                if len(trip) != 3: continue
+                key = (trip[0], trip[1], trip[2])
+                if key in entry_map:
+                    entry = entry_map[key]
+                    subj_type = entry.get("subject_type", "")
+                    obj_type = entry.get("object_type", "")
+                    
+                    corrected_trip, c_subj, c_obj = validator.try_auto_correct_direction_by_type(
+                        trip, subj_type, obj_type
+                    )
+                    if corrected_trip is None:
+                        oie_trips[i] = None
+                        continue
+                    if corrected_trip != trip:
+                        oie_trips[i] = corrected_trip
+                        # Update the sd_entry so Phase 3b Canonicalization sees the swapped types
+                        entry["subject"], entry["object"] = entry["object"], entry["subject"]
+                        entry["subject_type"], entry["object_type"] = entry["object_type"], entry["subject_type"]
+            oie_triplets_list[idx] = [t for t in oie_trips if t is not None]
 
         # ── Phase 3a & 3b: Schema & Entity Type Canonicalization ──────────
         del required_model_dict_current["sc_embed"]

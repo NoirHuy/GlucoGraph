@@ -1,4 +1,5 @@
 import os
+import re
 import ast
 import json
 import time
@@ -6,93 +7,17 @@ import logging
 import requests
 from typing import List, Dict, Any, Tuple
 
+# Import shared constants from single source of truth
+from post_processing.constants import (
+    MEDICAL_SAFE_TUIS,
+    MEDICAL_STOPWORDS as _MEDICAL_STOPWORDS,
+    LOCAL_MEDICAL_ABBREVIATIONS,
+    CACHE_VERSION,
+)
+
 logger = logging.getLogger(__name__)
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Semantic Types: Danh sách TUI hợp lệ cho miền y khoa lâm sàng
-# Được mở rộng từ 4 lên 17 loại để bao phủ đầy đủ:
-#   thuốc (T121, T200, T116, T125, T109, T123),
-#   bệnh/triệu chứng (T047, T184, T033, T037),
-#   thủ thuật/xét nghiệm (T061, T059, T060),
-#   giải phẫu (T023, T029),
-#   chỉ số lâm sàng (T034, T081)
-# ─────────────────────────────────────────────────────────────────────────────
-MEDICAL_SAFE_TUIS: frozenset = frozenset({
-    # Bệnh lý & triệu chứng
-    "T047",  # Disease or Syndrome
-    "T184",  # Sign or Symptom
-    "T033",  # Finding
-    "T037",  # Injury or Poisoning
-    # Thuốc & hoạt chất
-    "T121",  # Pharmacologic Substance (metformin, glipizide...)
-    "T200",  # Clinical Drug — biệt dược thương mại (Lantus, Januvia...)
-    "T116",  # Amino Acid, Peptide, or Protein (insulin là một protein)
-    "T125",  # Hormone (glucagon, insulin thuộc nhóm hormone)
-    "T109",  # Organic Chemical (nhiều thuốc tổng hợp hữu cơ)
-    "T123",  # Biologically Active Substance
-    # Thủ thuật & xét nghiệm
-    "T061",  # Therapeutic or Preventive Procedure
-    "T059",  # Laboratory Procedure (HbA1c test, fasting glucose)
-    "T060",  # Diagnostic Procedure
-    # Giải phẫu
-    "T023",  # Body Part, Organ, or Organ Component (pancreas, kidney...)
-    "T029",  # Body Location or Region
-    # Chỉ số & kết quả lâm sàng
-    "T034",  # Laboratory or Test Result
-    "T081",  # Quantitative Concept (HbA1c threshold value)
-})
-
-# Stopwords for context word extraction and reranking
-_MEDICAL_STOPWORDS = frozenset({
-    "the", "a", "an", "of", "with", "in", "and", "or", "to", "for",
-    "mellitus", "syndrome", "disease", "disorder", "condition",
-    "associated", "related", "induced", "dependent", "independent",
-})
-
-# Abbreviation table for pre-lookup acronym expansion
-LOCAL_MEDICAL_ABBREVIATIONS: Dict[str, str] = {
-    "t2dm": "type 2 diabetes mellitus",
-    "t1dm": "type 1 diabetes mellitus",
-    "dm": "diabetes mellitus",
-    "dm2": "type 2 diabetes mellitus",
-    "dm1": "type 1 diabetes mellitus",
-    "niddm": "type 2 diabetes mellitus",
-    "iddm": "type 1 diabetes mellitus",
-    "dka": "diabetic ketoacidosis",
-    "hhs": "hyperosmolar hyperglycemic state",
-    "hba1c": "hemoglobin a1c",
-    "a1c": "hemoglobin a1c",
-    "fbg": "fasting blood glucose",
-    "fpg": "fasting plasma glucose",
-    "bg": "blood glucose",
-    "ppg": "postprandial glucose",
-    "ogtt": "oral glucose tolerance test",
-    "ldl": "ldl cholesterol",
-    "hdl": "hdl cholesterol",
-    "tg": "triglycerides",
-    "egfr": "estimated glomerular filtration rate",
-    "gfr": "glomerular filtration rate",
-    "bmi": "body mass index",
-    "sbp": "systolic blood pressure",
-    "dbp": "diastolic blood pressure",
-    "bp": "blood pressure",
-    "metformin hcl": "metformin",
-    "glp-1": "glucagon-like peptide-1",
-    "glp1": "glucagon-like peptide-1",
-    "dpp-4": "dipeptidyl peptidase-4",
-    "dpp4": "dipeptidyl peptidase-4",
-    "sglt-2": "sodium-glucose cotransporter-2",
-    "sglt2": "sodium-glucose cotransporter-2",
-    "ace inhibitor": "angiotensin converting enzyme inhibitor",
-    "ace-i": "angiotensin converting enzyme inhibitor",
-    "arb": "angiotensin receptor blocker",
-    "cns": "central nervous system",
-    "cvd": "cardiovascular disease",
-    "ckd": "chronic kidney disease",
-    "esrd": "end stage renal disease",
-    "cabg": "coronary artery bypass grafting",
-    "pci": "percutaneous coronary intervention",
-}
+# LOCAL_MEDICAL_ABBREVIATIONS is now imported from constants.py
 
 
 class UMLSNormalizer:
@@ -105,10 +30,15 @@ class UMLSNormalizer:
     - Thread-safe requests.Session with connection pooling
     - Exponential backoff on HTTP 429/503 (up to 4 retries, max 16s wait)
     - Rate-limiter: min 50ms between consecutive HTTP requests
+    - Deferred cache saving: save every N queries instead of per-query (reduces I/O)
+    - Cache versioning: auto-invalidates stale caches when schema changes
     """
 
     # Minimum interval between consecutive HTTP requests (seconds)
     _MIN_REQUEST_INTERVAL: float = 0.05  # 50ms → max 20 req/s
+
+    # Deferred save interval — cache is saved to disk every N new queries
+    _SAVE_INTERVAL: int = 10
 
     def __init__(self, api_key: str = None, cache_path: str = None):
         self.api_key = api_key or os.environ.get("UMLS_API_KEY", "")
@@ -117,6 +47,8 @@ class UMLSNormalizer:
         self.cache_path = cache_path or "./output/umls_cache.json"
         self.cache = {}
         self.context_words = set()
+        # Counter for deferred cache saving
+        self._queries_since_save: int = 0
 
         # HTTP session for connection pooling (reuse TCP connections)
         self._session = requests.Session()
@@ -142,26 +74,53 @@ class UMLSNormalizer:
     # ─────────────────────────────────────────────────────────────────────────
 
     def load_cache(self):
-        """Loads persistent cache of UMLS term mappings from disk."""
+        """Loads persistent cache of UMLS term mappings from disk.
+        Automatically invalidates caches with a different CACHE_VERSION."""
         if os.path.exists(self.cache_path):
             try:
                 with open(self.cache_path, "r", encoding="utf-8") as f:
-                    self.cache = json.load(f)
+                    raw = json.load(f)
+
+                # Cache versioning: if the cache has a __version__ key that
+                # differs from the current CACHE_VERSION, invalidate it.
+                cached_version = raw.pop("__version__", None) if isinstance(raw, dict) else None
+                if cached_version is not None and cached_version != CACHE_VERSION:
+                    logger.warning(
+                        f"[UMLSNormalizer] Cache version mismatch ({cached_version} != {CACHE_VERSION}). "
+                        f"Invalidating stale cache and starting fresh."
+                    )
+                    self.cache = {}
+                    return
+
+                self.cache = raw if isinstance(raw, dict) else {}
                 logger.info(f"[UMLSNormalizer] Loaded {len(self.cache)} entries from cache: {self.cache_path}")
             except Exception as e:
                 logger.warning(f"[UMLSNormalizer] Failed to load cache file: {e}. Starting fresh.")
                 self.cache = {}
 
-    def save_cache(self):
-        """Saves persistent cache of UMLS term mappings to disk."""
+    def save_cache(self, force: bool = False):
+        """Saves persistent cache of UMLS term mappings to disk.
+        Uses deferred saving: only writes every _SAVE_INTERVAL queries unless force=True."""
+        if not force:
+            self._queries_since_save += 1
+            if self._queries_since_save < self._SAVE_INTERVAL:
+                return  # Skip — will save later or on flush
+
+        self._queries_since_save = 0
         cache_dir = os.path.dirname(os.path.abspath(self.cache_path))
         os.makedirs(cache_dir, exist_ok=True)
         try:
+            # Stamp cache version for future invalidation
+            out = {"__version__": CACHE_VERSION, **self.cache}
             with open(self.cache_path, "w", encoding="utf-8") as f:
-                json.dump(self.cache, f, indent=4, ensure_ascii=False)
+                json.dump(out, f, indent=4, ensure_ascii=False)
             logger.debug(f"[UMLSNormalizer] Saved {len(self.cache)} entries to cache.")
         except Exception as e:
             logger.warning(f"[UMLSNormalizer] Failed to save cache file: {e}")
+
+    def flush_cache(self):
+        """Force-saves the cache to disk. Call this at the end of a batch run."""
+        self.save_cache(force=True)
 
     # ─────────────────────────────────────────────────────────────────────────
     # HTTP helper with rate-limiting and exponential backoff
@@ -213,7 +172,6 @@ class UMLSNormalizer:
 
     def _strip_ontology_noise(self, term: str) -> str:
         """Removes common ontology noise prefixes (e.g. 'RNAx ', 'MESH:', '[RNAx] ') from entities."""
-        import re
         term_clean = term.strip()
 
         # Pattern 1: Matches brackets prefix like [RNAx] or [Code] at the beginning
@@ -225,8 +183,11 @@ class UMLSNormalizer:
             '', term_clean, flags=re.IGNORECASE
         )
 
-        # Pattern 3: Matches single short uppercase code prefix like 'A1 ', 'R1 ' or similar y-axis tags at the very beginning
-        term_clean = re.sub(r'^[A-Z]+[0-9]*\s+', '', term_clean)
+        # Pattern 3: Matches ONLY known ontology-code prefixes (1-2 uppercase letters + digits)
+        # that are followed by a space and then the actual term.
+        # Restricted to max 4 characters to avoid stripping valid clinical terms
+        # like 'HbA1c', 'LDL Cholesterol', 'BMI Category'.
+        term_clean = re.sub(r'^[A-Z]{1,2}[0-9]{1,3}\s+', '', term_clean)
 
         return term_clean.strip()
 
@@ -552,16 +513,49 @@ class UMLSNormalizer:
             self.save_cache()
             return res
 
+    def _fallback_to_raw(self, term_res: dict, raw_term: str) -> dict:
+        """Helper to revert a mapped node back to its raw original term when an ontology check fails."""
+        return {
+            "cui": "NONE",
+            "canonical": raw_term,
+            "semantic_type": "Unknown",
+            "score": 0.0,
+            "icd10_code": "NONE",
+            "rxnorm_id": "NONE",
+            "definition": f"Raw uncanonicalized concept: {raw_term} (Fallback due to ontology mismatch)"
+        }
+
     # ─────────────────────────────────────────────────────────────────────────
     # Batch normalization
     # ─────────────────────────────────────────────────────────────────────────
 
     def normalize_triplets(self, triplets: List[List[str]]) -> Tuple[List[Dict[str, Any]], List[List[str]]]:
         """Maps a list of raw triplets to UMLS.
+
+        Uses batch pre-collection: extracts all unique terms first, resolves them
+        in a single pass (leveraging cache), then assembles the output.
+        Flushes the cache once at the end instead of per-query.
+
         Returns:
             - A list of detailed dictionary mappings (with CUIs and semantic types).
             - A list of clean [UMLS_Preferred_Subject, relation, UMLS_Preferred_Object] lists.
         """
+        # ── Batch pre-collection: gather all unique terms ─────────────────────
+        unique_terms = set()
+        for triplet in triplets:
+            if len(triplet) == 3:
+                unique_terms.add(triplet[0])
+                unique_terms.add(triplet[2])
+
+        # Pre-resolve all unique terms (cache will absorb duplicates)
+        term_results: Dict[str, Dict[str, Any]] = {}
+        for term in unique_terms:
+            term_results[term] = self.query_term(term)
+
+        # Flush cache once after batch resolution
+        self.flush_cache()
+
+        # ── Assemble output ───────────────────────────────────────────────────
         mapped_triplets = []
         plain_triplets = []
 
@@ -581,8 +575,30 @@ class UMLSNormalizer:
                 continue
 
             sub, rel, obj = triplet
-            sub_res = self.query_term(sub)
-            obj_res = self.query_term(obj)
+            sub_res = term_results[sub].copy()
+            obj_res = term_results[obj].copy()
+
+            # Ontology check to catch semantic errors during mapping
+            rel_upper = rel.upper().strip()
+            sub_tuis = re.findall(r'T\d{3}', sub_res.get("semantic_type", ""))
+            obj_tuis = re.findall(r'T\d{3}', obj_res.get("semantic_type", ""))
+
+            if rel_upper in {"TREATED_BY", "CONTRAINDICATED_WITH"}:
+                # 1. A laboratory or diagnostic procedure (T059, T060) cannot be treated or contraindicated
+                if any(tui in {"T059", "T060"} for tui in sub_tuis):
+                    logger.warning(
+                        f"[UMLSNormalizer] Ontology violation detected: Subject '{sub}' resolved to procedure "
+                        f"'{sub_res['canonical']}' ({sub_res['semantic_type']}) but has relation '{rel}'. Falling back to raw term."
+                    )
+                    sub_res = self._fallback_to_raw(sub_res, sub)
+
+                # 2. A drug cannot be treated by something (subject of TREATED_BY is usually a disease or symptom)
+                if rel_upper == "TREATED_BY" and any(tui in {"T121", "T200", "T116", "T125", "T109", "T123"} for tui in sub_tuis):
+                    logger.warning(
+                        f"[UMLSNormalizer] Ontology violation detected: Subject '{sub}' resolved to drug "
+                        f"'{sub_res['canonical']}' ({sub_res['semantic_type']}) but has relation '{rel}'. Falling back to raw term."
+                    )
+                    sub_res = self._fallback_to_raw(sub_res, sub)
 
             mapped_triplets.append({
                 "subject": {
@@ -609,6 +625,7 @@ class UMLSNormalizer:
             })
 
             plain_triplets.append([sub_res["canonical"], rel, obj_res["canonical"]])
+
 
         return mapped_triplets, plain_triplets
 

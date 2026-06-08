@@ -1,0 +1,530 @@
+<benchmark>
+	<entries>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Engineering College | location | Kuttikkattoor</gtriple>
+				<gtriple>Engineering College | state | Kerala</gtriple>
+				<gtriple>Engineering College | academicStaffSize | 250</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Engineering College | established | 2001</gtriple>
+				<gtriple>Engineering College | country | India</gtriple>
+				<gtriple>Engineering College | academicStaffSize | 250</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Engineering College | established | 2001</gtriple>
+				<gtriple>Engineering College | location | Kuttikkattoor</gtriple>
+				<gtriple>Engineering College | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Engineering College | location | Kerala</gtriple>
+				<gtriple>Kerala | location | India</gtriple>
+				<gtriple>Kerala | neighboringMunicipality | Mahe</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Engineering College | state | Kerala</gtriple>
+				<gtriple>Engineering College | academicStaffSize | 250</gtriple>
+				<gtriple>Engineering College | established | 2001</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | academicStaffSize | 500</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+				<gtriple>Acharya Institute of Technology | motto | Nurturing Excellence</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | state | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Visvesvaraya Technological University | location | Belgaum</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+				<gtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | location | India</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+				<gtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | location | India</gtriple>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of technology | country | India</gtriple>
+				<gtriple>Acharya Institute of technology | sportsOffered | tennis</gtriple>
+				<gtriple>tennis | sportGoverningBody | International Tennis Federation</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | founder | Kempe Gowda</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Bangalore | founder | Kempe Gowda</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | president | M Reddy</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Karnataka</gtriple>
+				<gtriple>Arabian Sea | location | Karnataka</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Engineering College | location | Kerala</gtriple>
+				<gtriple>Engineering College | academicStaffSize | 250</gtriple>
+				<gtriple>Kerala | leader | Kochi</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Engineering College | location | Kuttikkattoor</gtriple>
+				<gtriple>Engineering College | state | Kerala</gtriple>
+				<gtriple>Kerala | headquarter | Kochi</gtriple>
+				<gtriple>Kerala, ledBy, Kochi | isPartOf | Engineering College, location, Kuttikkattoor</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Visvesvaraya Technological University | city | Belgaum</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</gtriple>
+				<gtriple>Visvesvaraya Technological University | city | Belgaum</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | sportsOffered | Tennis</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | sportsOffered | tennis</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Visvesvaraya Technological University | president | B.M. Reddy</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | president | B. M. Reddy</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>The Acharya Institute of Technology | president | B. M. Reddy</gtriple>
+				<gtriple>The Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>The Acharya Institute of Technology | country | India</gtriple>
+				<gtriple>The Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Bangalore | founder | Kempe Gowda I</gtriple>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Bangalore | founder | Kempe Gowda I</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Acharya Dr. Sarvapalli Radhakrishnan Road</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Hessarghatta Main Road</gtriple>
+				<gtriple>Acharya Institute of Technology | postalCode | 560090</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | director | Dr.G. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Visvesvaraya Technological University | location | Belgaum</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+				<gtriple>Acharya Institute of Technology | state | Technical Campus</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | state | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G.P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Technical Campus</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | state | Technical Campus</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | location | India</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | motto | Nurturing Excellence</gtriple>
+				<gtriple>Acharya Institute of Technology | academicStaffSize | 500</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G.P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Acharya Dr. Sarvapalli Radhakrishnan Road</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | academicStaffSize | 500</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G.P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | state | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | president | B. M. Reddy</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Bangalore | founder | Kempe Gowda I</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | founder | Kempe Gowda I</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | sportsOffered | Tennis</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Visvesvaraya Technological University | city | Belgaum</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | state | Technical Campus</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | state | Karnataka</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | location | India</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Technical Campus</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Bangalore | state | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G.P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | director | G.P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Technical Campus</gtriple>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | state | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | state | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | campus | Technical Campus</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Bangalore | founder | Kempe Gowda I</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Technical Campus</gtriple>
+				<gtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G.P. Prabhukumar</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | state | Technical Campus</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | location | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | state | Karnataka</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | location | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</gtriple>
+				<gtriple>Acharya Institute of Technology | location | Soldevanahalli</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Visvesvaraya Technological University | location | Soldevanahalli</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</gtriple>
+				<gtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+				<gtriple>Acharya Institute of Technology | motto | Nurturing Excellence</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | president | B.M. Reddy</gtriple>
+				<gtriple>Acharya Institute of Technology | city | Bangalore</gtriple>
+				<gtriple>Acharya Institute of Technology | country | India</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Acharya Institute of Technology | sportsOffered | tennis</gtriple>
+				<gtriple>Acharya Institute of Technology | established | 2000</gtriple>
+				<gtriple>tennis | sportGoverningBody | International Tennis Federation</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>Engineering College | country | India</gtriple>
+				<gtriple>Ganges | location | India</gtriple>
+				<gtriple>Mumbai | nickname | largest city</gtriple>
+				<gtriple>Engineering College | country | India</gtriple>
+				<gtriple>Ganges | location | India</gtriple>
+				<gtriple>India | largestCity | Mumbai</gtriple>
+			</generatedtripleset>
+		</entry>
+	</entries>
+</benchmark>

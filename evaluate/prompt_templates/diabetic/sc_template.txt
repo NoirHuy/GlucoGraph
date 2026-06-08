@@ -1,0 +1,86 @@
+Given the following biomedical text and a relational triplet extracted from it:
+
+Text: {input_text}
+Triplet: {query_triplet}
+Subject Type: {subject_type}
+Object Type: {object_type}
+
+The relation '{query_relation}' in the triplet is currently defined as: '{query_relation_definition}'
+
+Your task: Select the BEST matching relation from the BioRED schema choices below, or choose "None of the above" if no choice is a good semantic match.
+
+--- BioRED RELATION SELECTION GUIDE ---
+
+Use 'Association' ONLY when:
+  - The relationship between two entities is mentioned but the direction of effect is completely neutral, unclear, or not specified.
+  - A whole Gene/GeneProduct is associated with or linked to a disease without a specific active causal mechanism (e.g., "SLC30A8, HHEX, KCNQ1 confer a risk of T2DM" -> Association).
+  - General non-specific associations where no causal or treatment direction is stated or implied.
+
+Use 'Positive_Correlation' when:
+  - One entity CLEARLY increases, upregulates, activates, promotes, or enhances the other.
+  - A chemical or drug causes, induces, triggers, or increases the risk/severity of a disease, symptom, complication, or adverse effect (e.g., "cocaine-induced stroke", "lithium causes polyuria", "alcohol increases risk of breast cancer", "drug causes arrhythmia").
+  - A specific genetic variant, mutation, allele, codon, or polymorphism increases susceptibility to or risk of a disease (e.g., "rs13266634 polymorphism increases susceptibility to T2DM" -> Positive_Correlation).
+  - A Gene/GeneProduct has an active, causal pathway described where its presence/activation directly promotes the disease or its absence/ablation prevents the disease (e.g., "Absence of PKCa prevents NDI development" -> PKCa has Positive_Correlation with NDI).
+  - A gene/protein activates or upregulates a downstream target.
+
+Use 'Negative_Correlation' when:
+  - One entity CLEARLY decreases, inhibits, suppresses, downregulates, or protects against the other.
+  - A chemical or drug treats, prevents, cures, reduces, or protects against a disease, symptom, complication, or adverse effect (e.g., "metformin treats diabetes", "aspirin reduces risk of heart attack", "lifestyle changes prevent prediabetes").
+  - A genetic variant, mutation, or polymorphism decreases susceptibility to or protects against a disease.
+  - A drug/chemical reduces protein expression or lowers biomarker levels.
+
+Use 'Drug_Interaction' ONLY when:
+  - Two DRUGS or CHEMICALS interact with each other pharmacologically.
+  - Both Subject AND Object are drugs/chemicals, not a drug and a biological entity/symptom.
+
+Use 'Bind' ONLY when:
+  - There is direct physical binding, receptor-ligand interaction, or molecular complex formation.
+
+--- FEW-SHOT EXAMPLES ---
+
+Example 1:
+  Text: "Lithium treatment led to elevated serum sodium levels in patients."
+  Triplet: (lithium, "is associated with elevated", sodium)
+  → CORRECT answer: Positive_Correlation (lithium increases sodium levels)
+
+Example 2:
+  Text: "Lithium caused an increase in urinary potassium excretion."
+  Triplet: (lithium, "causes increase in", potassium)
+  → CORRECT answer: Positive_Correlation (lithium increases potassium excretion)
+
+Example 3:
+  Text: "Cocaine abuse is a known risk factor for transient cardiac arrhythmia."
+  Triplet: (cocaine, "causes", cardiac arrhythmia)
+  → CORRECT answer: Positive_Correlation (chemical causing/inducing symptom = Positive_Correlation in BioRED)
+
+Example 4:
+  Text: "PKCa phosphorylation promotes NDI development."
+  Triplet: (PKCa, "promotes", NDI)
+  → CORRECT answer: Positive_Correlation
+
+Example 5:
+  Text: "The rs13266634 polymorphism increases susceptibility to T2DM."
+  Triplet: (rs13266634, "increases susceptibility to", T2DM)
+  → CORRECT answer: Positive_Correlation (variant increasing disease risk = Positive_Correlation)
+
+Example 6:
+  Text: "AQP2 expression was suppressed by lithium treatment."
+  Triplet: (lithium, "suppresses", AQP2)
+  → CORRECT answer: Negative_Correlation
+
+Example 7:
+  Text: "The protective allele rs11708067 reduces the risk of type 2 diabetes."
+  Triplet: (rs11708067, "reduces risk of", type 2 diabetes)
+  → CORRECT answer: Negative_Correlation
+
+Example 8:
+  Text: "Metformin is recommended for the management of type 2 diabetes."
+  Triplet: (Metformin, "treats", type 2 diabetes)
+  → CORRECT answer: Negative_Correlation (drug treating/preventing disease = Negative_Correlation)
+
+--- END OF GUIDE ---
+
+IMPORTANT: Your answer must be a SINGLE LETTER ONLY (e.g., A, B, C...). Do not output any words, explanation, or punctuation — just the letter.
+
+Choices:
+{choices}

@@ -1,0 +1,9 @@
+relation,definition
+Bind,"Represents physical binding, chemical interaction, or direct molecular association between two entities, such as protein-protein interactions, ligand-receptor binding, or chemical-protein complex formation."
+Drug_Interaction,"Represents a pharmacological or physiological interaction between two drugs or chemical substances, which may alter their therapeutic effects or cause adverse outcomes."
+Positive_Correlation,"Represents a positive correlation, upregulation, activation, enhancement, or positive causal association between two entities (e.g., a gene mutation increasing disease susceptibility, a chemical increasing expression of a gene product, or a disease correlating positively with a marker)."
+Association,"Represents a general, neutral, or non-specific association, linkage, or relationship between two entities where the direction of correlation or interaction type is unspecified."
+Cotreatment,"Represents co-administration, combination therapy, or combined use of multiple chemical substances, drugs, or treatments for a disease or condition."
+Comparison,"Represents a comparison, differential effect, or comparative analysis between two entities (e.g., comparing the efficacy or side effects of two different drugs)."
+Negative_Correlation,"Represents a negative correlation, downregulation, inhibition, suppression, protection, or negative causal association between two entities (e.g., a drug suppressing a protein, a gene variant decreasing susceptibility to a disease, or a substance inhibiting a pathway)."
+Conversion,"Represents the chemical or biological conversion, transformation, metabolism, or synthesis of one substance or entity into another (e.g., metabolic conversion of a prodrug to its active form)."

@@ -69,6 +69,11 @@ def main():
             "Shared cache across runs drastically reduces redundant API calls."
         )
     )
+    parser.add_argument(
+        "--debate_log_path",
+        default=None,
+        help="Path to the multi-agent debate gate log file (debate_log_all.json)."
+    )
 
     args = parser.parse_args()
 
@@ -99,6 +104,15 @@ def main():
             "to enable CUI/ICD-10/RxNorm node enrichment."
         )
 
+    # Resolve debate log path — default to same dir as input_json_path / debate_log_all.json
+    debate_log_path = args.debate_log_path
+    if not debate_log_path:
+        debate_log_path = os.path.join(os.path.dirname(input_path), "debate_log_all.json")
+    if os.path.exists(debate_log_path):
+        logger.info(f"Found debate gate log for FCS extraction: {debate_log_path}")
+    else:
+        logger.warning(f"Debate gate log not found at: {debate_log_path}. Relationships will default to 100% confidence.")
+
     # 1. Load records
     with open(input_path, "r", encoding="utf-8") as f:
         records = json.load(f)
@@ -114,11 +128,12 @@ def main():
                 pre_nodes.add(t[2])
                 pre_triples_count += 1
 
-    # 2. Run Property Packing (with unified UMLS enrichment)
+    # 2. Run Property Packing (with unified UMLS enrichment & FCS debate score mapping)
     packed_graph = pack_properties(
         records,
         umls_api_key=umls_api_key or None,
         umls_cache_path=umls_cache_path,
+        debate_log_path=debate_log_path,
     )
 
     # 3. Write Output JSON

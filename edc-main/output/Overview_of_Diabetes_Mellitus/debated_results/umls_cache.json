@@ -15,7 +15,7 @@
         "score": 14.6,
         "icd10_code": "E08-E13",
         "rxnorm_id": "NONE",
-        "definition": "Heterogenní skupina chronických metabolických chorob, jejichž základním projevem je hyperglykemie a porušená glukózová tolerance. Vzniká v důsledku nedostatku inzulinu, jeho nedostatečného účinku (někdy se mluví o relativním nedostatku) nebo kombinací obojího. (cit. Wikiskripta 2017 http://www.wikiskripta.eu/)"
+        "definition": ""
     },
     "insulin resistance": {
         "cui": "NONE",
@@ -51,7 +51,7 @@
         "score": 9.58,
         "icd10_code": "O24.4",
         "rxnorm_id": "NONE",
-        "definition": "Cukrovka (diabetes mellitus) vznikající v době těhotenství. Vzniká obv. po 20. týdnu těhotenství, vliv má působení hormonů, které v této době vznikají ve větším množství a působí proti inzulinu. Po těhotenství obv. mizí; existuje vyšší riziko vzniku diabetu 2. typu po mnoha letech. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz/)"
+        "definition": ""
     },
     "gestational diabetes": {
         "cui": "C0085207",
@@ -60,7 +60,7 @@
         "score": 16.1,
         "icd10_code": "O24.4",
         "rxnorm_id": "NONE",
-        "definition": "Cukrovka (diabetes mellitus) vznikající v době těhotenství. Vzniká obv. po 20. týdnu těhotenství, vliv má působení hormonů, které v této době vznikají ve větším množství a působí proti inzulinu. Po těhotenství obv. mizí; existuje vyšší riziko vzniku diabetu 2. typu po mnoha letech. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz/)"
+        "definition": ""
     },
     "monogenic diabetes": {
         "cui": "NONE",
@@ -78,7 +78,7 @@
         "score": 16.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Autoimunitní diabetes dospělých s pomalu progredujícím poškozením pankreatických beta-buněk a přítomností cirkulujících autoprotilátek proti antigenům Langerhansových ostrůvků."
+        "definition": ""
     },
     "cystic fibrosis-related diabetes": {
         "cui": "NONE",
@@ -114,7 +114,7 @@
         "score": 13.1,
         "icd10_code": "E83.11",
         "rxnorm_id": "NONE",
-        "definition": "Porucha metabolismu železa charakterizovaná triádou: hemosideróza, jaterní cirhóza a diabetes mellitus. Je způsobená nadměrnou resorpcí železa a následně jeho masivním hromaděním v buňkách parenchymu."
+        "definition": ""
     },
     "pancreas": {
         "cui": "C0030274",
@@ -123,7 +123,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Uzlinový břišní orgán, který obsahuje směsici endokrinních a exokrinních žláz. Malá část endrokrinních žláz sestává z Langerhansových ostrůvků, které vylučují hormony do krevního řečiště. Rozsáhlejší exokrinní část pankreatu je tvořena acinárními buňkami, které vylučují některé trávicí enzymy do pankreatického duktálního systému, jenž ústí do duodena."
+        "definition": ""
     },
     "malnutrition-related diabetes": {
         "cui": "C0348930",
@@ -141,7 +141,7 @@
         "score": 13.1,
         "icd10_code": "E24",
         "rxnorm_id": "NONE",
-        "definition": "Endokrinní porucha způsobená vysokou hladinou kortizolu v krvi. Syndrom může být způsoben příjmem glukokortikoidů nebo nádory produkujícími kortizol či adrenokortikotropním hormonem (ACTH). Příčinou onemocnění může být adenom hypofýzy, která produkuje velké množství ACTH, které následně způsobí nadprodukci kortizolu v nadledvinách. Mezi projevy nemoci patří zvýšená chuť k jídlu, obezita, únava, změny nálad, deprese, zvýšení krevního tlaku (hypertenze) a diabetes mellitus, zvýšení krevního cukru (hyperglykémie), snížení hustoty kostní hmoty (osteoporóza), snížení sexuálního pudu či poruchy menstruace. (cit. Wikipedie 2017 http://www.cs.wikipedia.org/)"
+        "definition": ""
     },
     "endocrinopathy": {
         "cui": "NONE",
@@ -159,7 +159,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Onemocnění způsobené nadbytkem růstového hormonu (STH) v dospělosti, kdy již není možný růst dlouhých kostí, a proto ani celkový vzrůst. Zvětšují se proto jen okrajové (akrální) části těla, jako je obličej, jazyk, brada, prsty apod. Příčinou bývá adenom hypofýzy. Onemocnění se vyvíjí pomalu, po mnoho let. Častější bývá rovněž vznik diabetu, hypertenze, popisuje se i častější výskyt kolorektálního karcinomu. Operace se provádí obv. přístupem transsfenoidálním (pro pacienta šetrnějším), ev. transfrontálním. V některých případech je rovněž zvýšena koncentrace prolaktinu. Farmakologická léčba spočívá v podávání dopaminergních agonistů, v těžkých případech somatostatinu. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+        "definition": ""
     },
     "pregnancy": {
         "cui": "NONE",
@@ -195,7 +195,7 @@
         "score": 8.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Autoimunitní diabetes dospělých s pomalu progredujícím poškozením pankreatických beta-buněk a přítomností cirkulujících autoprotilátek proti antigenům Langerhansových ostrůvků."
+        "definition": ""
     },
     "dysglycemia": {
         "cui": "C1960636",
@@ -258,7 +258,7 @@
         "score": 9.6,
         "icd10_code": "R73.03",
         "rxnorm_id": "NONE",
-        "definition": "Hraniční nález mezi jednoznačným diabetem a normálním stavem, zjištěný zejm. při orálním glukosovém tolerančním testu (zvýšená glykemie ve 120. minutě), častěji u obézních osob s dalšími znaky plurimetabolického syndromu. Vyžaduje dietu a další sledování, u části pacientů se vyvine zřetelný diabetes 2. typu. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "oral glucose tolerance test (ogtt)": {
         "cui": "C0017741",
@@ -267,7 +267,7 @@
         "score": 5.8999999999999995,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Orální glukosový toleranční test, zkr. oGTT - vyšetření, které se provádí při podezření na cukrovku diabetes mellitus. Pacient vypije nalačno sladký nápoj se známým množstvím glukosy a po jedné a po dvou hodinách se mu odebírá krev na stanovení koncentrace cukru (glykemie). Podle maximálních hodnot se stav hodnotí jako diabetes, tzv. porušená glukosová tolerance nebo normální nález. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+        "definition": ""
     },
     "hemoglobin hemoglobin a1c": {
         "cui": "C0474680",
@@ -312,7 +312,7 @@
         "score": 6.6,
         "icd10_code": "R73.03",
         "rxnorm_id": "NONE",
-        "definition": "Stav, kdy jedinec mívá zvýšenou hladinu glukosy, avšak ještě nesplňuje kritéria pro diagnózu diabetu. Pojem prediabetes zahrnuje dvě již delší dobu zavedené kategorie, a to (a) poruchu glukosové tolerance a (b) hraniční glukosu nalačno. Patofyziologickým podkladem prediabetu je inzulinová rezistence. Většina jedinců postižených prediabetem nemá žádné klinické příznaky, při pečlivě odebrané anamnéze však můžeme zjistit mírnou nebo občasnou polyurii (event. též polakisurii, která je pro pacienta nápadnější) s následným zvýšeným příjmem tekutin, může být i častější pocit hladu, (event. projevy postprandiální hypoglykemie) a občasné poruchy vidění (kolísání osmolarity tkáňového moku). Stav je velmi často spojen s obezitou či nadváhou, U většiny jedinců s p. se později vyvine diabetes typu 2 (DM2), čemuž však lze předejít preventivními opatřeními. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz/)"
+        "definition": ""
     },
     "hyperosmolar hyperglycemic state": {
         "cui": "C3888846",
@@ -402,7 +402,7 @@
         "score": 3.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "ANGINA PECTORIS nebo angina jako bolest na hrudi s normálním koronárním arteriogramem a pozitivním NÁMAHOVÝM TESTEM. Příčina tohoto syndromu je neznámá. I když má rozpoznání syndromu klinickou důležitost, jeho prognóza je výborná. Syndrom se liší od METABOLICKého SYNDROMu X, který je charakteristický rezistencí na insulin (INSULIN - REZISTENCE) a hyperinsulinémií, která zvyšuje riziko kardiovaskulárních nemocí."
+        "definition": ""
     },
     "nephropathy": {
         "cui": "NONE",
@@ -429,7 +429,7 @@
         "score": 16.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Stavy nebo patologické procesy spojené s diabetem. Porucha řízení hladiny glukózy v krvi způsobuje poškození mnoha tkání a orgánů, včetně očí, ledvin, krevních cév a nervové tkáně."
+        "definition": ""
     },
     "intensive control of plasma glucose": {
         "cui": "NONE",
@@ -465,7 +465,7 @@
         "score": 13.1,
         "icd10_code": "I21",
         "rxnorm_id": "NONE",
-        "definition": "Odumření části myokardu vzniklé přerušením krevního zásobení. Příčinou bývá uzávěr některého úseku koronární tepny, nejč. při její ateroskleróze, s následnou těžkou ischemií příslušného okrsku tkáně. Rizikové faktory IM jsou v podstatě shodné s rizikovými faktory aterosklerózy. Onemocnění se klasicky projevuje silnou bolestí na hrudi, úzkostí, pocením. Někdy mohou nastat zažívací obtíže, projevem může být rovněž srdeční selhání. V důsledku elektrické nestability mohou vznikat arytmie, nejzávažnější je vznik fibrilace komor. Při diagnóze infarktu se uplatňuje EKG, laboratorní vyšetření, echokardiografie, rtg, scintigrafie aj. Podle EKG lze odhadnout lokalizaci i stáří infarktu. Kromě rozsahu IM je důležitá též jeho lokalizace (související s postiženou koronární tepnou) a hloubka. Nejč. lokalizacemi jsou IM spodní stěny (tzv. diafragmatický) při postižení a. coronaria dextra a IM přední (anteroseptální) stěny při postižení r. interventricularis anterior nebo IM postranní (anterolaterální) stěny při postižení r. circumflexus. Včasná léčba zabrání rozvoji nekrózy či zmenší ložisko infarktu. I později je vhodné řešení stavu koronárních tepen (angioplastika, bypass). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "transient ischemic attacks": {
         "cui": "NONE",
@@ -483,7 +483,7 @@
         "score": 14.6,
         "icd10_code": "I70",
         "rxnorm_id": "NONE",
-        "definition": "Onemocnění tepen, při němž se v jejich stěnách ukládají tukové látky (viz aterom) a druhotně vápník, čímž je tepna poškozována, ztrácí pružnost a dochází k jejímu postupnému zužování (až obliteraci) s následnou ischemií příslušné části organismu, popř. k její ruptuře či vzniku aneurysmatu. Nejnápadnější bývají tyto změny na koronárních tepnách srdce (ICHS), tepnách dolních končetin (ICHDK), mozku, ledvin atd. Onemocnění vzniká působením řady klinicky patrných rizikových faktorů, k nimž patří zejm. vysoká hladina krevních tuků (zvýšený LDL cholesterol a naopak nízký HDL cholesterol), hypertenze, kouření, obezita, diabetes, zvýšená hladina homocysteinu v krvi (není všeobecně uznáváno), stres, nedostatek pohybu. V patogenezi (v časné fázi) se výrazně uplatňuje endotelová dysfunkce. Roli mají zánětové děje, růstové faktory a jiné cytokiny. Pro vývoj komplikací je důležitá stabilita aterosklerotického plátu, jehož ruptura může vést k vzniku nasedající trombózy a provalení ateromových hmot. Léčba a. je dosud zaměřena především proti komplikacím či naopak rizikovým faktorům, zejm. ovlivnění lipidového metabolismu. U žen se výskyt a. zvyšuje po menopauze. K odstranění již existujících zúžení se užívá např. angioplastika či stent. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "strokes": {
         "cui": "NONE",
@@ -519,7 +519,7 @@
         "score": 13.1,
         "icd10_code": "A49.9",
         "rxnorm_id": "NONE",
-        "definition": "Infekce způsobené bakteriemi (obecné a nespecifikované infekce)."
+        "definition": ""
     },
     "fungal infections": {
         "cui": "NONE",
@@ -573,7 +573,7 @@
         "score": 13.1,
         "icd10_code": "K31.84",
         "rxnorm_id": "NONE",
-        "definition": "Porucha vyprazdňování žaludku, jeho \"\"ochrnutí\"\". Vzniká při poruše nervového řízení, např. při diabetické neuropatii (gastroparesis diabeticorum). Potrava může v žaludku stagnovat až několik dnů, což narušuje i její vstřebání; při diabetu zhoršuje kompenzaci (srov. bezoár). (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+        "definition": ""
     },
     "erratic absorption of dietary carbohydrates": {
         "cui": "NONE",
@@ -609,7 +609,7 @@
         "score": 4.06,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Orální glukosový toleranční test, zkr. oGTT - vyšetření, které se provádí při podezření na cukrovku diabetes mellitus. Pacient vypije nalačno sladký nápoj se známým množstvím glukosy a po jedné a po dvou hodinách se mu odebírá krev na stanovení koncentrace cukru (glykemie). Podle maximálních hodnot se stav hodnotí jako diabetes, tzv. porušená glukosová tolerance nebo normální nález. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+        "definition": ""
     },
     "more intensive insulin regimen": {
         "cui": "NONE",
@@ -645,7 +645,7 @@
         "score": 13.1,
         "icd10_code": "I50",
         "rxnorm_id": "NONE",
-        "definition": "Stav, kdy srdce není schopno plnit svou funkci (tj. přečerpávat, \"\"pumpovat\"\" krev) v množství přiměřeném nárokům organismu. K příčinám se řadí porucha myokardu (zejm. ischemie), objemové a tlakové přetěžování srdce (např. chlopenní vady, hypertenze). Nikoliv vzácné je s. oboustranné s kombinací příznaků. S. s. může být akutní nebo chronické s různě dramatickými příznaky a s různě zapojenými kompenzačními mechanismy. K nim patří zejm. zvyšování preloadu (dilatace komory), retence tekutin a solí v důsledku silné aktivace systému renin-angiotenzin-aldosteron, tachykardie a aktivace sympatoadrenálního systému (vazokonstrikce). S. s. je považováno za systémový stav se změnami nejen hemodynamickými, ale změnami v hormonální a cytokinové produkci, ve vnitřním prostředí apod. Některé změny se vyvíjejí rychle (např. tachykardie), jiné po delší dobu (retence tekutin), rozvoj některých trvá i měsíce (hypertrofie a strukturální změny myokardu). Kompenzační mechanismy samy o sobě mohou z dlouhodobého hlediska srdce poškozovat (tachykardie zvyšuje potřebu kyslíku, zhoršuje prokrvení, vazokonstrikce vede k zvýšení afterloadu atp.). Patofyziologicky se rozlišuje selhání backward, forward. Na nedostatečnosti se podílí systolická dysfunkce (špatná kontraktilní schopnost) i dysfunkce diastolická (snížená poddajnost komory v diastole se vzestupem enddiastolického tlaku). Důležitá je rovněž správná životospráva, omezení solení, dostatek fyzického i psychického odpočinku. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "sodium glucose cotransporter 2 inhibitors": {
         "cui": "NONE",
@@ -672,7 +672,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "33738",
-        "definition": "Thiazolidindion a agonista PPAR-gama, užívá se v léčbě diabetes mellitus 2. typu (tzv. inzulinový senzitizér)."
+        "definition": ""
     },
     "sulfonylureas": {
         "cui": "NONE",
@@ -690,7 +690,7 @@
         "score": 14.6,
         "icd10_code": "E16.2",
         "rxnorm_id": "NONE",
-        "definition": "Nízká koncentrace krevního cukru (glukosy). Vede k závažným poruchám činnosti mozku, který je na přívodu cukru krví závislý. K příznakům patří slabost, hlad, třes, studený pot, zmatenost až bezvědomí (hypoglykemické kóma), někdy i s křečemi (kombinují se důsledky nedostatku glukosy v CNS a aktivace sympatiku). Nejč. k h. dochází při léčbě cukrovky předávkováním inzulinu nebo perorálních antidiabetik (roli může mít např. snížený příjem potravy, zvracení, výrazná fyzická námaha aj.). První pomocí i léčbou, která zlepší stav takřka okamžitě, je podání glukosy, ev. glukagonu i.m. K h. může dojít i při vytrvalostním sportu, po požití velkého množství alkoholu, u vzácného nádoru slinivky produkujícího velká množství inzulinu (inzulinom). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "acute worsening of diabetic complications": {
         "cui": "NONE",
@@ -843,7 +843,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Nemoc nebo stav, kdy začínají selhávat základní životní funkce. Může skončit smrtí."
+        "definition": ""
     },
     "delay in resuming insulin regimen": {
         "cui": "NONE",
@@ -915,7 +915,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "6809",
-        "definition": "Hypoglykemikum ze skupiny biguanidů. Používá se k léčbě diabetes mellitus 2. typu. Metformin zlepšuje senzitivitu k inzulinu a snižuje absorpci glukózy ve střevech. Tím příznivě ovlivňuje kontrolu glykemie."
+        "definition": ""
     },
     "lactic acidosis": {
         "cui": "NONE",
@@ -933,7 +933,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Sloučeniny, které stimulují aktivitu receptoru pro peptid podobný glukagonu-1. Agonisté receptoru pro peptid podobný glukagonu-1 se používají k léčbě diabetu 2. typu a obezity."
+        "definition": ""
     },
     "aspiration in patients undergoing general anesthesia": {
         "cui": "NONE",
@@ -969,7 +969,7 @@
         "score": 13.09,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Akutní selhání ledvin je charakterizováno jako náhlé snížení schopnosti ledvin vylučovat z organismu zplodiny metabolismu (dusíkaté a kyselé katabolity), jehož následkem vzniká hyperazotemie s poruchou vnitřního prostředí, někdy dokonce s uremickým syndromem. Uremický syndrom charakterizuje anorexie, nauzea, zvracení, průjmy, známky hemoragické diatézy, polyneuritida, psychické změny až uremické kóma. (upraveno podle Wikiskripta 2018 http://www.wikiskripta.eu/)"
+        "definition": ""
     },
     "stroke": {
         "cui": "NONE",
@@ -1005,7 +1005,7 @@
         "score": 13.1,
         "icd10_code": "R63.1",
         "rxnorm_id": "NONE",
-        "definition": "Nadměrná žízeň. Často jeden z úvodních příznaků cukrovky, při níž stoupá hladina cukru v krvi i jeho ztráty v moči. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "polyphagia": {
         "cui": "NONE",
@@ -1023,7 +1023,7 @@
         "score": 13.1,
         "icd10_code": "R35",
         "rxnorm_id": "NONE",
-        "definition": "Časté a vydatné močení, za polyurii se obvykle považuje diuréza větší než 2500 ml/24 h. Vzniká v důsledku nízkého koncentrování moči při osmotické či vodní diuréze. Kromě velkého příjmu tekutin provází ledvinné nemoci (porucha koncentrační schopnosti při intersticiálních nefritidách či v polyurické fázi renálního selhání), diabetes mellitus, diabetes insipidus, hyperkalcemii, tyreotoxikózu aj. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )"
+        "definition": ""
     },
     "blurred vision": {
         "cui": "C0344232",
@@ -1041,7 +1041,7 @@
         "score": 14.6,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Hormon slinivky břišní tvořený v beta-buňkách Langerhansových ostrůvků. Peptid tvořený dvěma řetězci (A, B) spojenými C-peptidem. Je důležitý pro regulaci glykemie a pro metabolismus sacharidů, ovlivňuje však i metabolismus bílkovin a lipidů. Působí anabolicky, tlumí lipolýzu. Jeho vylučování stoupá po jídle jako odpověď na vzestup glukosy v krvi (jeho vylučování ovlivňují i některé další hormony a nervové vlivy, regulace souvisí s funkcí membránových přenašečů a iontových kanálů na beta-buňce, ovlivňuje jej např. kalemie), umožňuje její vstup do buněk a její další využití (zisk energie, uložení do zásoby). Na i. je závislý glukosový transportér GLUT4. V cílových tkáních (zejm. svalová a tuková tkáň, játra) působí přes specifický receptor, který má charakter tyrosinkinázy (v tom i v některých dalších vlastnostech se podobá růstovým faktorům, což mj. souvisí s vlivem hyperinzulinemie na proces aterogeneze). Při jeho absolutním nedostatku nebo nedostatečném účinku (inzulinové rezistenci) vzniká diabetes mellitus (typu 1, resp. 2). I. existuje i jako lék. V minulosti se používaly purifikované i. vepřové a hovězí, nověji se používá humánní i., vyrobený metodami genového inženýrství. I. k léčebnému použití se dělí podle rychlosti nástupu účinku a doby působení a liší se způsobem podání. Rizikem léčby i. je předávkování s hypoglykemií, zejm. u starších inzulinů existovalo riziko alergizace a vzniku protilátek. I. také zvyšuje vstup kalia do buněk a lze jej spolu s glukosou použít k léčbě hyperkalemie. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "glucose monitoring": {
         "cui": "C3669205",
@@ -1059,7 +1059,7 @@
         "score": 3.6,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Onemocnění kardiovaskulárního systému, včetně srdce, krevních cév a perikardia."
+        "definition": ""
     },
     "autoimmune pancreatic beta-cell destruction": {
         "cui": "NONE",
@@ -1203,7 +1203,7 @@
         "score": 14.6,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Protilátky (imunoglobuliny), které reagují s antigeny vlastního organismu (autoantigeny). Autoprotilátky lze detekovat v krevním séru a v dalších tělesných tekutinách."
+        "definition": ""
     },
     "islet cell autoantibodies": {
         "cui": "NONE",
@@ -1239,7 +1239,7 @@
         "score": 3.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Protilátky produkované jedním klonem buněk."
+        "definition": ""
     },
     "autoimmune response": {
         "cui": "NONE",
@@ -1365,7 +1365,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Druh metabolické acidózy způsobené nadměrným vznikem ketolátek (acetoctová kyselina, beta-hydroxymáselná kyselina, aceton). Tyto látky vznikají při nadměrném štěpení tuků, které jsou využívány k zisku energie místo glukosy. Tento stav nastává při hladovění, závažný je pak především jako akutní komplikace diabetu 1. typu (nedostatek inzulinu snižuje využití glukosy a chybí i jeho antilipolytický účinek). Nápadným příznakem bývá zrychlené hluboké Kussmaulovo dýchání (respirační kompenzace acidózy) a zápach acetonu v dechu, v těžkých případech hrozí až kóma. Ketolátky bývají i v moči (ketonurie). Diabetická k. vyžaduje intenzivní léčbu opatrnou alkalizaci, podávání inzulinu, péči o vnitřní prostředí. Ketóza souvisí úzce s acidózou vzhledem ke klíčovému postavení acetoctové kyseliny - ta je v rovnováze s beta-hydroxymáselnou kyselinou která vzniká oxidací ketoskupiny (acetoctové kyseliny) a má hlavní význam pro vznik acidózy, dekarboxylací acetoctové kyseliny vzniká aceton. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+        "definition": ""
     },
     "typical symptoms": {
         "cui": "NONE",
@@ -1716,7 +1716,7 @@
         "score": 14.6,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Strategie pro regulaci hladiny krevní glukózy. Patří sem podávání inzulinu, dietoterapie a cvičení."
+        "definition": ""
     },
     "physical activity": {
         "cui": "NONE",
@@ -1779,7 +1779,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Třída organických sloučenin složených z uhlíku, vodíku a kyslíku v poměru Cn(H2O)n. Největší třída organických sloučenin, zahrnující škroby, glykogen, celulózu, polysacharidy a jednoduché monosacharidy."
+        "definition": ""
     },
     "carbohydrate ingestion": {
         "cui": "NONE",
@@ -1878,7 +1878,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "6227",
-        "definition": "Žlutý tuk získaný z ovčí vlny. Chemicky je lanolin vosk, je směsí esterů mastných kyselin s alkoholy o velké molární hmotnosti. Používá se jako změkčovadlo v kosmetice i průmyslu a ve farmakologii - je antibakteriální a hypoalergenní, podporuje hojení drobných popálenin."
+        "definition": ""
     },
     "lubricant": {
         "cui": "NONE",
@@ -1923,7 +1923,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Chirurgické vyčištění rány, součást toalety rány. Spočívá v odstranění nekrotických částí a tkání, které nemají šanci na zhojení (devitalizovaných, s porušeným krevním zásobením aj.). Nověji se někdy k d. užívají i enzymy, které odstraňují fibrin a nekrotické tkáně. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+        "definition": ""
     },
     "antibiotics": {
         "cui": "NONE",
@@ -1941,7 +1941,7 @@
         "score": 13.1,
         "icd10_code": "M86",
         "rxnorm_id": "NONE",
-        "definition": "Zánět kostní dřeně způsobený bakteriemi. Etiologicky se uplatňují např. stafylokoky, pseudomonády, gramnegativní bakterie (nozokomiální infekce). Vzniká endogenně (hematogenním rozsevem z hnisavých ložisek) nebo exogenně (traumaticky, ale i iatrogenně). Akutní průběh je charakterizován vysokou horečkou, celkovou schváceností a bolestmi v postižené kosti. Zánět se může kostí šířit a postihnout i sousední kloub nebo se provalit na povrch. Chronická o. probíhá dlouhodobě, příznaky nejsou tak bouřlivé, přetrvávající zánět v kosti však poškozuje nejen samu kost, ale má neblahé účinky na celý organismus. (cit. Velký lékařský slovník online, 2018 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "neuropathic joint": {
         "cui": "NONE",
@@ -1968,7 +1968,7 @@
         "score": 13.1,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Přenos slinivky břišní z jednoho člověka nebo zvířete na druhého."
+        "definition": ""
     },
     "pancreatic islet cells transplantation": {
         "cui": "NONE",
@@ -2040,7 +2040,7 @@
         "score": 6.6,
         "icd10_code": "NONE",
         "rxnorm_id": "NONE",
-        "definition": "Mohutný žilní kmen, který sbírá krev z kapilár většiny břišních orgánů (žaludku, střeva, sleziny) a odvádí ji do jater. Vzniká soutokem v. lienalis a v. mesenterica superior. Do jater vstupuje v porta hepatis (probíhá v lig. hepatoduodenale). V játrech se znovu dělí na menší cévy až do portálních polí. Do jaterních sinusoidů pak ústí společně s a. hepatica, která přivádí arteriální krev. Krev v p. ž. je značně bohatá na kyslík a přivádí až 80 % krve přitékající do jater. Sinusoidy ústí do centrální žíly v centru jaterního lalůčku. Krev z jater odtéká jaterními žilami (vv. hepaticae), které ústí do dolní duté žíly. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "plasma fructosamine": {
         "cui": "NONE",
@@ -2157,7 +2157,7 @@
         "score": 13.1,
         "icd10_code": "D58.2",
         "rxnorm_id": "NONE",
-        "definition": "Nemoc, jejíž podstatou je tvorba vadného krevního barviva (hemoglobinu) v důsledku mutace v některém z hemoglobinových řetězců. Vadný hemoglobin hůře přenáší kyslík nebo mění vlastnosti červených krvinek. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )"
+        "definition": ""
     },
     "hemoglobin a1c values": {
         "cui": "NONE",
@@ -2247,7 +2247,7 @@
         "score": 3.6,
         "icd10_code": "E07.9",
         "rxnorm_id": "NONE",
-        "definition": "Patologické procesy štítné žlázy."
+        "definition": ""
     },
     "celiac disease": {
         "cui": "C0007570",
@@ -2256,7 +2256,7 @@
         "score": 13.1,
         "icd10_code": "K90.0",
         "rxnorm_id": "NONE",
-        "definition": "Onemocnění způsobující poruchu střevního vstřebávání (primární malabsorpční syndrom). Jeho podstatou je nesnášenlivost glutenu, resp. jeho složky gliadinu na imunologickém podkladě, vyvolávající zánětlivé postižení v oblasti tenkého střeva (zejm. jejuna). Histopatologicky je atrofie klků, lymfoplasmocytární infiltrace, poruchy enzymů. Onemocnění začíná častěji v dětství, ale výskyt v dospělosti není vůbec neobvyklý a uplatňují se u něj dědičné vlivy (některé HLA antigeny - zejm. HLA-DQ2). Příznaky malabsorpce (průjmy, nedostatek živin z porušeného vstřebávání, anemie, kostní změny, neuropatie, hubnutí aj.) se objevují po požití potravin obsahujících lepek a mizí po jeho vyloučení ze stravy. Časté a mnohdy převládající však jsou příznaky extraintestinální, zejm. kloubní, kožní (Duhringova herpetitformní dermatitida). V diagnóze je důležitá enterobiopsie (atrofie sliznice, zánětlivá infiltrace, enzymatické změny), vyšetření některých protilátek (proti gliadinu, endomyosinu, tkáňové transglutamináze) a vyšetření malabsorpce (např. xylosový test). Základem léčby je dieta s vyloučením lepku (tj. zákaz potravin z pšeničné a žitné mouky), jejíž dodržování výrazně zlepšuje prognózu. Je možné jej nahradit moukou kukuřičnou, sójou, rýží, bramborami. Karence se léčí substitucí, v těžších případech se podávají přechodně kortikoidy. Průběh choroby je kolísavý a různě těžký, obv. chronický s možnými relapsy i po expozici malému množství glutenu. Některé formy onemocnění mohou mít lehčí průběh a unikat diagnóze. U části pacientů se objevují i některé další poruchy imunitního systému (diabetes mellitus 1. typu, SLE, autoimunitní tyroiditida aj.); je častější výskyt malignit (lymfomy střeva i karcinomy) (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)"
+        "definition": ""
     },
     "pernicious anemia": {
         "cui": "NONE",

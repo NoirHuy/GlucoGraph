@@ -182,7 +182,7 @@ async def run_standalone_debate(args):
         f"║  Total Triples Pre-Debate:  {total_triples_pre:>5}                        ║\n"
         f"║  Total Triples Post-Debate: {total_triples_post:>5} ✅                     ║\n"
         f"║  Total Triples Filtered:    {total_triples_pre - total_triples_post:>5} ❌                     ║\n"
-        f"║  Accepted Ratio:            {total_triples_post / total_triples_pre * 100:>5.1f}%                        ║\n"
+        f"║  Accepted Ratio:            {(total_triples_post / total_triples_pre * 100) if total_triples_pre > 0 else 0.0:>5.1f}%                        ║\n"
         f"╚══════════════════════════════════════════════════════════╝"
     )
 
@@ -230,9 +230,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--debate_gate_fcs_threshold",
-        default=80.0,
+        default=65.0,
         type=float,
-        help="Final Consensus Score (FCS) threshold for triple acceptance (default: 80.0)."
+        help="Final Consensus Score (FCS) threshold for triple acceptance (default: 65.0)."
     )
     parser.add_argument(
         "--debate_gate_veto_threshold",

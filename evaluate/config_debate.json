@@ -1,0 +1,9 @@
+{
+  "oie_llm": "meta-llama/llama-3.3-70b-instruct",
+  "sd_llm": "meta-llama/llama-3.1-8b-instruct",
+  "sc_llm": "google/gemma-3-27b-it",
+  "sc_embedder": "qwen/qwen3-embedding-8b",
+  "num_docs": 9,
+  "output_dir": "evaluate/outputs_debate",
+  "input_json_path": "evaluate/outputs_raw/result_at_each_stage.json"
+}

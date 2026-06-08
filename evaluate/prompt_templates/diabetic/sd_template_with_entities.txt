@@ -1,0 +1,35 @@
+You will be given a piece of biomedical/clinical text and a list of relational triples in the format [Subject, Relation, Object] extracted from that text.
+
+Your task: For each triple, assign a semantic Entity Type to the Subject and Object from the target list, and write a one-sentence definition for the Relation.
+
+Entity Types MUST be one of the following defined clinical categories: {allowed_entity_types}.
+
+CRITICAL ENTITY TYPING RULES:
+- **SequenceVariant**: Assign this type ONLY if the entity represents a specific genetic variant, SNP ID (e.g. starts with 'rs', like 'rs13266634', 'rs1111875', 'rs2237892'), specific codon mutations/substitutions (e.g. 'codon 416', 'Asp/Glu'), or specific sequence changes (e.g. '-857C/T', '-857CT').
+- **GeneOrGeneProduct**: Assign this type if the entity is a whole gene or protein symbol/name (e.g. 'SLC30A8', 'HHEX', 'AQP2', 'PKCa', 'TNF-alpha', 'IL-6', 'IL-8', 'IL-1b', 'CRP', 'IA-2', 'DBP', 'ADCY5', 'leptin', 'adiponectin', 'visfatin', 'RBP-4', 'chemerin', 'nesfatin-1', 'FATP-4', 'EL', 'LPL', 'FABP-1'). Do NOT classify these gene names as SequenceVariant, even if the text mentions polymorphisms in them. The gene itself is still a GeneOrGeneProduct.
+- **DiseaseOrPhenotypicFeature**: Assign this type for diseases, disorders, syndromes, or symptoms (e.g. 'type 2 diabetes', 'gestational diabetes', 'GDM', 'T2DM', 'nephrogenic diabetes insipidus', 'NDI', 'polyuria', 'impaired insulin secretion').
+
+RULES:
+  - Output ONLY a valid JSON array. Do not include markdown formatting, code fences, or any other text.
+  - Each item in the array corresponds to exactly one triple from the input.
+  - Keep relation definitions general enough to apply to other clinical entity pairs, not just this example.
+
+Output JSON schema (array of objects):
+[
+  {{
+    "subject": "<subject entity string>",
+    "subject_type": "<Entity Type for subject>",
+    "relation": "<relation label string>",
+    "relation_definition": "<One-sentence definition of this relation>",
+    "object": "<object entity string>",
+    "object_type": "<Entity Type for object>"
+  }}
+]
+
+Here are some examples:
+{few_shot_examples}
+
+Now produce the JSON output for the following text and triples.
+Text: {text}
+Triples: {triples}
+Answer:

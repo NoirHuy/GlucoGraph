@@ -1,0 +1,14 @@
+Given the following text and an entity extracted from it:
+
+Text: "{input_text}"
+Entity: "{entity}"
+Predicted Entity Type: "{predicted_type}"
+Definition of Predicted Type: "{predicted_definition}"
+
+Your task: Select the BEST matching Entity Type from the standardized Target Schema choices below.
+Choose "None of the above" if no candidate is a correct semantic match.
+
+IMPORTANT: Your answer must be a SINGLE LETTER ONLY (e.g., A, B, C...). Do not output any words, explanation, or punctuation — just the letter.
+
+Choices:
+{choices}

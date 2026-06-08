@@ -214,7 +214,13 @@ def parse_raw_triplets(raw_triplets: str):
                     if all(e != "" and e != "_" and e != "..." for e in cleaned_triple):
                         collected_triples.append(cleaned_triple)
         except Exception as e:
-            pass
+            # Fallback for unquoted triplets, e.g. [Lithium, induces, Nephrogenic Diabetes Insipidus]
+            content = bracketed_str[1:-1].strip()
+            parts = [p.strip() for p in content.split(',')]
+            parts = [p.strip("'\" ") for p in parts]
+            if len(parts) == 3:
+                if all(e != "" and e != "_" and e != "..." for e in parts):
+                    collected_triples.append(parts)
     logger.debug(f"Triplets {raw_triplets} parsed as {collected_triples}")
     return collected_triples
 
@@ -346,8 +352,15 @@ def openrouter_chat_completion(model, system_prompt, history, temperature=0, max
             )
             
         try:
+            extra_params = {}
+            if "/" in model or not groq_key:
+                extra_params["extra_body"] = {
+                    "provider": {
+                        "ignore": ["Lepton"]
+                    }
+                }
             response = client.chat.completions.create(
-                model=model, messages=messages, temperature=temperature, max_tokens=max_tokens
+                model=model, messages=messages, temperature=temperature, max_tokens=max_tokens, **extra_params
             )
         except Exception as e:
             err_msg = str(e).lower()

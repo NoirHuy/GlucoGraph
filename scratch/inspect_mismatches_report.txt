@@ -1,0 +1,522 @@
+Loaded 9 gold docs.
+Loaded 9 debated docs.
+Loaded 9 raw docs.
+
+=========================================
+DOCUMENT 1
+=========================================
+Gold standard triples (12):
+  - ('calcium', 'association', 'lithium')
+  - ('ut-a1', 'negative_correlation', 'lithium')
+  - ('polyuria', 'association', 'pkca')
+  - ('aqp2', 'negative_correlation', 'pkca')
+  - ('lithium', 'association', 'potassium')
+  - ('lithium', 'association', 'sodium')
+  - ('lithium', 'positive_correlation', 'polyuria')
+  - ('lithium', 'negative_correlation', 'aqp2')
+  - ('lithium', 'positive_correlation', 'ndi')
+  - ('pkca', 'negative_correlation', 'ut-a1')
+  - ('pkca', 'positive_correlation', 'lithium')
+  - ('pkca', 'positive_correlation', 'ndi')
+
+Predicted triples (15):
+  - ('pkca', 'negative_correlation', 'ndi')
+  - ('lithium', 'positive_correlation', 'ndi')
+  - ('lithium', 'negative_correlation', 'camp')
+  - ('lithium', 'negative_correlation', 'ut-a1')
+  - ('lithium', 'negative_correlation', 'aqp2')
+  - ('pkca', 'negative_correlation', 'polyuria')
+  - ('lithium', 'association', 'urine output')
+  - ('lithium', 'negative_correlation', 'urine osmolality')
+  - ('pkca', 'negative_correlation', 'ut-a1')
+  - ('lithium', 'positive_correlation', 'sodium')
+  - ('lithium', 'positive_correlation', 'potassium')
+  - ('lithium', 'positive_correlation', 'calcium')
+  - ('pkca', 'negative_correlation', 'sodium')
+  - ('pkca', 'negative_correlation', 'potassium')
+  - ('pkca', 'negative_correlation', 'calcium')
+
+[+] EXACT MATCHES (3):
+  - ('lithium', 'positive_correlation', 'ndi')
+  - ('lithium', 'negative_correlation', 'aqp2')
+  - ('pkca', 'negative_correlation', 'ut-a1')
+
+[~] RELATION MISMATCHES (6):
+  - Predicted: ('pkca', 'negative_correlation', 'ndi') vs Gold: ('pkca', 'positive_correlation', 'ndi')
+  - Predicted: ('lithium', 'negative_correlation', 'ut-a1') vs Gold: ('ut-a1', 'negative_correlation', 'lithium')
+  - Predicted: ('pkca', 'negative_correlation', 'polyuria') vs Gold: ('polyuria', 'association', 'pkca')
+  - Predicted: ('lithium', 'positive_correlation', 'sodium') vs Gold: ('lithium', 'association', 'sodium')
+  - Predicted: ('lithium', 'positive_correlation', 'potassium') vs Gold: ('lithium', 'association', 'potassium')
+  - Predicted: ('lithium', 'positive_correlation', 'calcium') vs Gold: ('calcium', 'association', 'lithium')
+
+[-] MISSED GOLD (3):
+  - ('aqp2', 'negative_correlation', 'pkca')
+  - ('lithium', 'positive_correlation', 'polyuria')
+  - ('pkca', 'positive_correlation', 'lithium')
+
+[!] SPURIOUS PREDICTIONS (6):
+  - ('lithium', 'negative_correlation', 'camp')
+  - ('lithium', 'association', 'urine output')
+  - ('lithium', 'negative_correlation', 'urine osmolality')
+  - ('pkca', 'negative_correlation', 'sodium')
+  - ('pkca', 'negative_correlation', 'potassium')
+  - ('pkca', 'negative_correlation', 'calcium')
+
+=========================================
+DOCUMENT 2
+=========================================
+Gold standard triples (13):
+  - ('alcohol', 'positive_correlation', 'atgl')
+  - ('alcohol', 'positive_correlation', 'lc3b-i and -ii')
+  - ('alcohol', 'positive_correlation', 'ulk1')
+  - ('alcohol', 'positive_correlation', 'atg12-5')
+  - ('alcohol', 'positive_correlation', 'eif4b')
+  - ('alcohol', 'positive_correlation', 's6')
+  - ('alcohol', 'positive_correlation', 'il-1beta')
+  - ('alcohol', 'positive_correlation', 'il-6')
+  - ('alcohol', 'positive_correlation', 'tnf-alpha')
+  - ('alcohol', 'negative_correlation', 'c/ebpalpha')
+  - ('alcohol', 'negative_correlation', 'ppargamma')
+  - ('alcohol', 'positive_correlation', 'hsl')
+  - ('alcohol', 'association', 's6k1')
+
+Predicted triples (16):
+  - ('alcohol', 'negative_correlation', 'loss of white adipose')
+  - ('alcohol', 'negative_correlation', 'whole-body fat mass')
+  - ('alcohol', 'positive_correlation', 'autophagy')
+  - ('alcohol', 'positive_correlation', 's6k1')
+  - ('s6k1', 'positive_correlation', 'protein synthesis')
+  - ('alcohol', 'positive_correlation', 'phosphorylation of eef2k')
+  - ('alcohol', 'negative_correlation', 'phosphorylation of eef2')
+  - ('alcohol', 'positive_correlation', 'atg12-5')
+  - ('alcohol', 'positive_correlation', 'lc3b-i and -ii')
+  - ('alcohol', 'positive_correlation', 's555 phosphorylation')
+  - ('alcohol', 'positive_correlation', 'lipolytic enzymes')
+  - ('alcohol', 'negative_correlation', 'lipogenic regulators')
+  - ('alcohol', 'positive_correlation', 'tnf-alpha')
+  - ('alcohol', 'association', 'il-6')
+  - ('alcohol', 'positive_correlation', 'il-1beta')
+  - ('alcohol', 'association', 'phosphorylation')
+
+[+] EXACT MATCHES (4):
+  - ('alcohol', 'positive_correlation', 'atg12-5')
+  - ('alcohol', 'positive_correlation', 'lc3b-i and -ii')
+  - ('alcohol', 'positive_correlation', 'tnf-alpha')
+  - ('alcohol', 'positive_correlation', 'il-1beta')
+
+[~] RELATION MISMATCHES (2):
+  - Predicted: ('alcohol', 'positive_correlation', 's6k1') vs Gold: ('alcohol', 'association', 's6k1')
+  - Predicted: ('alcohol', 'association', 'il-6') vs Gold: ('alcohol', 'positive_correlation', 'il-6')
+
+[-] MISSED GOLD (7):
+  - ('alcohol', 'positive_correlation', 'atgl')
+  - ('alcohol', 'positive_correlation', 'ulk1')
+  - ('alcohol', 'positive_correlation', 'eif4b')
+  - ('alcohol', 'positive_correlation', 's6')
+  - ('alcohol', 'negative_correlation', 'c/ebpalpha')
+  - ('alcohol', 'negative_correlation', 'ppargamma')
+  - ('alcohol', 'positive_correlation', 'hsl')
+
+[!] SPURIOUS PREDICTIONS (10):
+  - ('alcohol', 'negative_correlation', 'loss of white adipose')
+  - ('alcohol', 'negative_correlation', 'whole-body fat mass')
+  - ('alcohol', 'positive_correlation', 'autophagy')
+  - ('s6k1', 'positive_correlation', 'protein synthesis')
+  - ('alcohol', 'positive_correlation', 'phosphorylation of eef2k')
+  - ('alcohol', 'negative_correlation', 'phosphorylation of eef2')
+  - ('alcohol', 'positive_correlation', 's555 phosphorylation')
+  - ('alcohol', 'positive_correlation', 'lipolytic enzymes')
+  - ('alcohol', 'negative_correlation', 'lipogenic regulators')
+  - ('alcohol', 'association', 'phosphorylation')
+
+=========================================
+DOCUMENT 3
+=========================================
+Gold standard triples (10):
+  - ('rs13266634', 'positive_correlation', 't2dm')
+  - ('rs2237892', 'positive_correlation', 't2dm')
+  - ('rs10811661', 'positive_correlation', 't2dm')
+  - ('rs1111875', 'positive_correlation', 't2dm')
+  - ('t2dm', 'association', 'slc30a8')
+  - ('t2dm', 'association', 'kcnq1')
+  - ('t2dm', 'association', 'cdkal1')
+  - ('t2dm', 'association', 'cdkn2a/b')
+  - ('t2dm', 'association', 'hhex')
+  - ('rs7754840', 'positive_correlation', 't2dm')
+
+Predicted triples (15):
+  - ('slc30a8', 'positive_correlation', 't2dm')
+  - ('hhex', 'positive_correlation', 't2dm')
+  - ('cdkn2a/b', 'positive_correlation', 't2dm')
+  - ('cdkal1', 'positive_correlation', 't2dm')
+  - ('kcnq1', 'positive_correlation', 't2dm')
+  - ('rs13266634', 'positive_correlation', 't2dm')
+  - ('rs1111875', 'positive_correlation', 't2dm')
+  - ('rs10811661', 'positive_correlation', 't2dm')
+  - ('rs2237892', 'positive_correlation', 't2dm')
+  - ('rs7754840', 'positive_correlation', 't2dm')
+  - ('korean population', 'association', 'slc30a8')
+  - ('korean population', 'association', 'hhex')
+  - ('korean population', 'association', 'cdkn2a/b')
+  - ('korean population', 'association', 'cdkal1')
+  - ('korean population', 'association', 'kcnq1')
+
+[+] EXACT MATCHES (5):
+  - ('rs13266634', 'positive_correlation', 't2dm')
+  - ('rs1111875', 'positive_correlation', 't2dm')
+  - ('rs10811661', 'positive_correlation', 't2dm')
+  - ('rs2237892', 'positive_correlation', 't2dm')
+  - ('rs7754840', 'positive_correlation', 't2dm')
+
+[~] RELATION MISMATCHES (5):
+  - Predicted: ('slc30a8', 'positive_correlation', 't2dm') vs Gold: ('t2dm', 'association', 'slc30a8')
+  - Predicted: ('hhex', 'positive_correlation', 't2dm') vs Gold: ('t2dm', 'association', 'hhex')
+  - Predicted: ('cdkn2a/b', 'positive_correlation', 't2dm') vs Gold: ('t2dm', 'association', 'cdkn2a/b')
+  - Predicted: ('cdkal1', 'positive_correlation', 't2dm') vs Gold: ('t2dm', 'association', 'cdkal1')
+  - Predicted: ('kcnq1', 'positive_correlation', 't2dm') vs Gold: ('t2dm', 'association', 'kcnq1')
+
+[-] MISSED GOLD (0):
+
+[!] SPURIOUS PREDICTIONS (5):
+  - ('korean population', 'association', 'slc30a8')
+  - ('korean population', 'association', 'hhex')
+  - ('korean population', 'association', 'cdkn2a/b')
+  - ('korean population', 'association', 'cdkal1')
+  - ('korean population', 'association', 'kcnq1')
+
+=========================================
+DOCUMENT 4
+=========================================
+Gold standard triples (37):
+  - ('nf-kappab', 'association', 'gdm')
+  - ('il-10', 'association', 'disordered lipid and glucose metabolisms')
+  - ('il-10', 'association', 'gdm')
+  - ('il-8', 'association', 'disordered lipid and glucose metabolisms')
+  - ('il-8', 'association', 'gdm')
+  - ('il-6', 'association', 'disordered lipid and glucose metabolisms')
+  - ('il-6', 'association', 'gdm')
+  - ('crp', 'association', 'disordered lipid and glucose metabolisms')
+  - ('crp', 'association', 'gdm')
+  - ('inflammatory', 'association', 'il-1b')
+  - ('inflammatory', 'association', 'nf-kappab')
+  - ('inflammatory', 'association', 'il-10')
+  - ('inflammatory', 'association', 'il-8')
+  - ('inflammatory', 'association', 'il-6')
+  - ('inflammatory', 'association', 'crp')
+  - ('inflammatory', 'association', 'tnf-alpha')
+  - ('-857c/t', 'association', 'inflammatory')
+  - ('-857c/t', 'association', 'disordered lipid and glucose metabolisms')
+  - ('-857c/t', 'positive_correlation', 'gdm')
+  - ('tnf-alpha', 'association', 'disordered lipid and glucose metabolisms')
+  - ('tnf-alpha', 'association', 'gdm')
+  - ('gdm', 'association', 'chemerin')
+  - ('gdm', 'association', 'rbp-4')
+  - ('gdm', 'association', 'visfatin')
+  - ('gdm', 'association', 'adipokines')
+  - ('gdm', 'association', 'leptin')
+  - ('gdm', 'association', 'irs-2')
+  - ('gdm', 'association', 'irs-1')
+  - ('gdm', 'association', 'il-1b')
+  - ('gdm', 'association', 'fabp-5')
+  - ('gdm', 'association', 'fabp-4')
+  - ('gdm', 'association', 'fabp-3')
+  - ('gdm', 'association', 'fabp-1')
+  - ('gdm', 'association', 'lpl')
+  - ('gdm', 'association', 'el')
+  - ('gdm', 'association', 'fatp-4')
+  - ('gdm', 'association', 'nesfatin-1')
+
+Predicted triples (16):
+  - ('tnf-alpha', 'positive_correlation', 'gdm')
+  - ('il-6', 'association', 'gdm')
+  - ('crp', 'association', 'gdm')
+  - ('il-8', 'association', 'gdm')
+  - ('il-10', 'association', 'gdm')
+  - ('tnf-alpha', 'positive_correlation', 'inflammatory')
+  - ('gdm', 'association', 'inflammatory')
+  - ('gdm', 'association', 'disordered lipid metabolism')
+  - ('gdm', 'association', 'disordered glucose metabolism')
+  - ('il-6', 'association', 'inflammation')
+  - ('tnf-alpha', 'association', 'inflammation')
+  - ('il-6', 'association', 'inflammatory')
+  - ('tnf-alpha', 'association', 'inflammatory')
+  - ('gdm', 'association', 'older maternal age')
+  - ('gdm', 'association', 't2dm history')
+  - ('gdm', 'association', 'history')
+
+[+] EXACT MATCHES (4):
+  - ('il-6', 'association', 'gdm')
+  - ('crp', 'association', 'gdm')
+  - ('il-8', 'association', 'gdm')
+  - ('il-10', 'association', 'gdm')
+
+[~] RELATION MISMATCHES (4):
+  - Predicted: ('tnf-alpha', 'positive_correlation', 'gdm') vs Gold: ('tnf-alpha', 'association', 'gdm')
+  - Predicted: ('tnf-alpha', 'positive_correlation', 'inflammatory') vs Gold: ('inflammatory', 'association', 'tnf-alpha')
+  - Predicted: ('il-6', 'association', 'inflammatory') vs Gold: ('inflammatory', 'association', 'il-6')
+  - Predicted: ('tnf-alpha', 'association', 'inflammatory') vs Gold: ('inflammatory', 'association', 'tnf-alpha')
+
+[-] MISSED GOLD (30):
+  - ('nf-kappab', 'association', 'gdm')
+  - ('il-10', 'association', 'disordered lipid and glucose metabolisms')
+  - ('il-8', 'association', 'disordered lipid and glucose metabolisms')
+  - ('il-6', 'association', 'disordered lipid and glucose metabolisms')
+  - ('crp', 'association', 'disordered lipid and glucose metabolisms')
+  - ('inflammatory', 'association', 'il-1b')
+  - ('inflammatory', 'association', 'nf-kappab')
+  - ('inflammatory', 'association', 'il-10')
+  - ('inflammatory', 'association', 'il-8')
+  - ('inflammatory', 'association', 'crp')
+  - ('-857c/t', 'association', 'inflammatory')
+  - ('-857c/t', 'association', 'disordered lipid and glucose metabolisms')
+  - ('-857c/t', 'positive_correlation', 'gdm')
+  - ('tnf-alpha', 'association', 'disordered lipid and glucose metabolisms')
+  - ('gdm', 'association', 'chemerin')
+  - ('gdm', 'association', 'rbp-4')
+  - ('gdm', 'association', 'visfatin')
+  - ('gdm', 'association', 'adipokines')
+  - ('gdm', 'association', 'leptin')
+  - ('gdm', 'association', 'irs-2')
+  - ('gdm', 'association', 'irs-1')
+  - ('gdm', 'association', 'il-1b')
+  - ('gdm', 'association', 'fabp-5')
+  - ('gdm', 'association', 'fabp-4')
+  - ('gdm', 'association', 'fabp-3')
+  - ('gdm', 'association', 'fabp-1')
+  - ('gdm', 'association', 'lpl')
+  - ('gdm', 'association', 'el')
+  - ('gdm', 'association', 'fatp-4')
+  - ('gdm', 'association', 'nesfatin-1')
+
+[!] SPURIOUS PREDICTIONS (8):
+  - ('gdm', 'association', 'inflammatory')
+  - ('gdm', 'association', 'disordered lipid metabolism')
+  - ('gdm', 'association', 'disordered glucose metabolism')
+  - ('il-6', 'association', 'inflammation')
+  - ('tnf-alpha', 'association', 'inflammation')
+  - ('gdm', 'association', 'older maternal age')
+  - ('gdm', 'association', 't2dm history')
+  - ('gdm', 'association', 'history')
+
+=========================================
+DOCUMENT 5
+=========================================
+Gold standard triples (12):
+  - ('alcohol', 'positive_correlation', 'cerebral hypoperfusion')
+  - ('alcohol', 'positive_correlation', 'respiratory dysfunction')
+  - ('alcohol', 'positive_correlation', 'cardiac arrhythmia')
+  - ('alcohol', 'positive_correlation', 'basal ganglia infarcts')
+  - ('alcohol', 'positive_correlation', 'haemorrhagic infarction of the globus pallidus')
+  - ('basal ganglia infarcts', 'positive_correlation', 'heroin')
+  - ('cocaine', 'positive_correlation', 'ischemic and haemorrhagic stroke')
+  - ('cocaine', 'positive_correlation', 'cerebral hypoperfusion')
+  - ('cocaine', 'positive_correlation', 'respiratory dysfunction')
+  - ('cocaine', 'positive_correlation', 'cardiac arrhythmia')
+  - ('cocaine', 'positive_correlation', 'basal ganglia infarcts')
+  - ('cocaine', 'positive_correlation', 'haemorrhagic infarction of the globus pallidus')
+
+Predicted triples (10):
+  - ('cocaine', 'positive_correlation', 'ischemic stroke')
+  - ('cocaine', 'positive_correlation', 'haemorrhagic stroke')
+  - ('alcohol', 'association', 'cerebral hypoperfusion')
+  - ('cocaine', 'positive_correlation', 'cerebral hypoperfusion')
+  - ('ethanol', 'association', 'respiratory dysfunction')
+  - ('cocaine', 'association', 'respiratory dysfunction')
+  - ('alcohol', 'association', 'cardiac arrhythmia')
+  - ('cardiac arrhythmia', 'positive_correlation', 'cerebral hypoperfusion')
+  - ('respiratory dysfunction', 'positive_correlation', 'cerebral hypoperfusion')
+  - ('heroin', 'association', 'drug-related globus pallidus infarctions')
+
+[+] EXACT MATCHES (1):
+  - ('cocaine', 'positive_correlation', 'cerebral hypoperfusion')
+
+[~] RELATION MISMATCHES (3):
+  - Predicted: ('alcohol', 'association', 'cerebral hypoperfusion') vs Gold: ('alcohol', 'positive_correlation', 'cerebral hypoperfusion')
+  - Predicted: ('cocaine', 'association', 'respiratory dysfunction') vs Gold: ('cocaine', 'positive_correlation', 'respiratory dysfunction')
+  - Predicted: ('alcohol', 'association', 'cardiac arrhythmia') vs Gold: ('alcohol', 'positive_correlation', 'cardiac arrhythmia')
+
+[-] MISSED GOLD (8):
+  - ('alcohol', 'positive_correlation', 'respiratory dysfunction')
+  - ('alcohol', 'positive_correlation', 'basal ganglia infarcts')
+  - ('alcohol', 'positive_correlation', 'haemorrhagic infarction of the globus pallidus')
+  - ('basal ganglia infarcts', 'positive_correlation', 'heroin')
+  - ('cocaine', 'positive_correlation', 'ischemic and haemorrhagic stroke')
+  - ('cocaine', 'positive_correlation', 'cardiac arrhythmia')
+  - ('cocaine', 'positive_correlation', 'basal ganglia infarcts')
+  - ('cocaine', 'positive_correlation', 'haemorrhagic infarction of the globus pallidus')
+
+[!] SPURIOUS PREDICTIONS (6):
+  - ('cocaine', 'positive_correlation', 'ischemic stroke')
+  - ('cocaine', 'positive_correlation', 'haemorrhagic stroke')
+  - ('ethanol', 'association', 'respiratory dysfunction')
+  - ('cardiac arrhythmia', 'positive_correlation', 'cerebral hypoperfusion')
+  - ('respiratory dysfunction', 'positive_correlation', 'cerebral hypoperfusion')
+  - ('heroin', 'association', 'drug-related globus pallidus infarctions')
+
+=========================================
+DOCUMENT 6
+=========================================
+Gold standard triples (4):
+  - ('10034c>t', 'association', 'myocardial infarction')
+  - ('10034c>t', 'association', 'deep venous thrombosis')
+  - ('fgg', 'association', 'myocardial infarction')
+  - ('fgg', 'association', 'deep venous thrombosis')
+
+Predicted triples (4):
+  - ('fibrinogen', 'association', 'stabilization of the fibrin clot')
+  - ('10034c>t', 'positive_correlation', 'deep venous thrombosis')
+  - ('10034c>t', 'positive_correlation', 'myocardial infarction')
+  - ('genotype', 'association', 'exonuclease assays')
+
+[+] EXACT MATCHES (0):
+
+[~] RELATION MISMATCHES (2):
+  - Predicted: ('10034c>t', 'positive_correlation', 'deep venous thrombosis') vs Gold: ('10034c>t', 'association', 'deep venous thrombosis')
+  - Predicted: ('10034c>t', 'positive_correlation', 'myocardial infarction') vs Gold: ('10034c>t', 'association', 'myocardial infarction')
+
+[-] MISSED GOLD (2):
+  - ('fgg', 'association', 'myocardial infarction')
+  - ('fgg', 'association', 'deep venous thrombosis')
+
+[!] SPURIOUS PREDICTIONS (2):
+  - ('fibrinogen', 'association', 'stabilization of the fibrin clot')
+  - ('genotype', 'association', 'exonuclease assays')
+
+=========================================
+DOCUMENT 7
+=========================================
+Gold standard triples (9):
+  - ('threonine for lysine', 'association', '1.25(oh)2d3')
+  - ('acg-->aag substitution in codon 420', 'association', '1.25(oh)2d3')
+  - ('gat-->gag substitution replaces aspartic acid by glutamic acid in codon 416', 'association', '1.25(oh)2d3')
+  - ('vitamin d', 'association', 'type 1 diabetes')
+  - ('ia-2', 'association', 'diabetic')
+  - ('ia-2', 'association', 'type 1 diabetes')
+  - ('dbp', 'association', '1.25(oh)2d3')
+  - ('dbp', 'association', 'type 1 diabetes')
+  - ('dbp', 'association', 'ia-2')
+
+Predicted triples (5):
+  - ('variants', 'positive_correlation', 'amino acid variants')
+  - ('acg-->aag substitution', 'association', 'threonine for lysine')
+  - ('alleles', 'association', 'type 1 diabetes')
+  - ('asp/glu genotype', 'positive_correlation', 'diabetic')
+  - ('glu/glu genotype', 'positive_correlation', 'diabetic')
+
+[+] EXACT MATCHES (0):
+
+[~] RELATION MISMATCHES (0):
+
+[-] MISSED GOLD (9):
+  - ('threonine for lysine', 'association', '1.25(oh)2d3')
+  - ('acg-->aag substitution in codon 420', 'association', '1.25(oh)2d3')
+  - ('gat-->gag substitution replaces aspartic acid by glutamic acid in codon 416', 'association', '1.25(oh)2d3')
+  - ('vitamin d', 'association', 'type 1 diabetes')
+  - ('ia-2', 'association', 'diabetic')
+  - ('ia-2', 'association', 'type 1 diabetes')
+  - ('dbp', 'association', '1.25(oh)2d3')
+  - ('dbp', 'association', 'type 1 diabetes')
+  - ('dbp', 'association', 'ia-2')
+
+[!] SPURIOUS PREDICTIONS (5):
+  - ('variants', 'positive_correlation', 'amino acid variants')
+  - ('acg-->aag substitution', 'association', 'threonine for lysine')
+  - ('alleles', 'association', 'type 1 diabetes')
+  - ('asp/glu genotype', 'positive_correlation', 'diabetic')
+  - ('glu/glu genotype', 'positive_correlation', 'diabetic')
+
+=========================================
+DOCUMENT 8
+=========================================
+Gold standard triples (8):
+  - ('glucose', 'association', 'adcy5')
+  - ('rs11708067', 'positive_correlation', 'impaired insulin secretion')
+  - ('cyclic amp', 'association', 'insulin')
+  - ('adcy5', 'association', 'impaired insulin secretion')
+  - ('adcy5', 'positive_correlation', 'cyclic amp')
+  - ('type 2 diabetes', 'association', 'glucose')
+  - ('type 2 diabetes', 'positive_correlation', 'rs11708067')
+  - ('type 2 diabetes', 'negative_correlation', 'adcy5')
+
+Predicted triples (10):
+  - ('adcy5', 'negative_correlation', 't2dm')
+  - ('adcy5', 'positive_correlation', 'cyclic amp')
+  - ('camp', 'association', 'cell')
+  - ('camp', 'association', 'insulin')
+  - ('t2dm', 'negative_correlation', 'adcy5')
+  - ('rs11708067', 'negative_correlation', 'adcy5')
+  - ('rs11708067', 'negative_correlation', 'islet enhancer')
+  - ('islet enhancer disruption', 'negative_correlation', 'adcy5')
+  - ('adcy5', 'negative_correlation', 'insulin')
+  - ('rs11708067', 'positive_correlation', 't2dm')
+
+[+] EXACT MATCHES (1):
+  - ('adcy5', 'positive_correlation', 'cyclic amp')
+
+[~] RELATION MISMATCHES (0):
+
+[-] MISSED GOLD (7):
+  - ('glucose', 'association', 'adcy5')
+  - ('rs11708067', 'positive_correlation', 'impaired insulin secretion')
+  - ('cyclic amp', 'association', 'insulin')
+  - ('adcy5', 'association', 'impaired insulin secretion')
+  - ('type 2 diabetes', 'association', 'glucose')
+  - ('type 2 diabetes', 'positive_correlation', 'rs11708067')
+  - ('type 2 diabetes', 'negative_correlation', 'adcy5')
+
+[!] SPURIOUS PREDICTIONS (9):
+  - ('adcy5', 'negative_correlation', 't2dm')
+  - ('camp', 'association', 'cell')
+  - ('camp', 'association', 'insulin')
+  - ('t2dm', 'negative_correlation', 'adcy5')
+  - ('rs11708067', 'negative_correlation', 'adcy5')
+  - ('rs11708067', 'negative_correlation', 'islet enhancer')
+  - ('islet enhancer disruption', 'negative_correlation', 'adcy5')
+  - ('adcy5', 'negative_correlation', 'insulin')
+  - ('rs11708067', 'positive_correlation', 't2dm')
+
+=========================================
+DOCUMENT 9
+=========================================
+Gold standard triples (6):
+  - ('iodixanol', 'positive_correlation', 'nephropathy')
+  - ('iopamidol', 'comparison', 'iodixanol')
+  - ('iopamidol', 'positive_correlation', 'nephropathy')
+  - ('scr', 'positive_correlation', 'iodixanol')
+  - ('scr', 'positive_correlation', 'iopamidol')
+  - ('contrast', 'positive_correlation', 'nephropathy')
+
+Predicted triples (11):
+  - ('iopamidol', 'association', 'nephropathy')
+  - ('iodixanol', 'association', 'nephropathy')
+  - ('iopamidol', 'association', 'creatinine')
+  - ('iodixanol', 'association', 'creatinine')
+  - ('diabetes mellitus', 'association', 'creatinine')
+  - ('n-acetylcysteine', 'association', 'creatinine')
+  - ('iopamidol', 'comparison', 'iodixanol')
+  - ('kidney disease', 'association', 'glomerular filtration rate')
+  - ('iopamidol', 'association', 'glomerular filtration rate')
+  - ('iodixanol', 'association', 'glomerular filtration rate')
+  - ('diabetes mellitus', 'positive_correlation', 'nephropathy')
+
+[+] EXACT MATCHES (1):
+  - ('iopamidol', 'comparison', 'iodixanol')
+
+[~] RELATION MISMATCHES (2):
+  - Predicted: ('iopamidol', 'association', 'nephropathy') vs Gold: ('iopamidol', 'positive_correlation', 'nephropathy')
+  - Predicted: ('iodixanol', 'association', 'nephropathy') vs Gold: ('iodixanol', 'positive_correlation', 'nephropathy')
+
+[-] MISSED GOLD (3):
+  - ('scr', 'positive_correlation', 'iodixanol')
+  - ('scr', 'positive_correlation', 'iopamidol')
+  - ('contrast', 'positive_correlation', 'nephropathy')
+
+[!] SPURIOUS PREDICTIONS (8):
+  - ('iopamidol', 'association', 'creatinine')
+  - ('iodixanol', 'association', 'creatinine')
+  - ('diabetes mellitus', 'association', 'creatinine')
+  - ('n-acetylcysteine', 'association', 'creatinine')
+  - ('kidney disease', 'association', 'glomerular filtration rate')
+  - ('iopamidol', 'association', 'glomerular filtration rate')
+  - ('iodixanol', 'association', 'glomerular filtration rate')
+  - ('diabetes mellitus', 'positive_correlation', 'nephropathy')

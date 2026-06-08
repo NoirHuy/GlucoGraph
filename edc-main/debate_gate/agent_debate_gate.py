@@ -9,7 +9,7 @@ This module verifies (Subject, Relation, Object) triples through a structured
 multi-agent debate before they are loaded into Neo4j.
 
 Architecture:
-    - 3 LLM Agents with adaptive weighted personas
+    - 3 LLM Agents with equal voting weights (unweighted consensus)
     - 2 Phases: Initialization (Round 1) + Extended Debate (Rounds 2-3)
     - Final Consensus Score (FCS) >= 80 threshold
     - Veto power: any agent concluding [SAI] with confidence > 70 triggers rejection
@@ -490,25 +490,25 @@ class AgentLLMDebateGate:
             valid_relations_str
         )
         
-        # Initialize the 3 weighted agent personas with dedicated or fallback models
+        # Initialize the 3 agents with equal voting weights (unweighted consensus)
         self.agents: List[AgentPersona] = [
             AgentPersona(
                 name="Clinical_Specialist",
-                weight=0.4,
+                weight=1.0,
                 system_prompt=_SYSTEM_PROMPT_CLINICAL_SPECIALIST,
                 temperature=temperature,
                 model_name=clinical_specialist_model or model_name,
             ),
             AgentPersona(
                 name="Ontology_Inspector",
-                weight=0.3,
+                weight=1.0,
                 system_prompt=ontology_system_prompt,
                 temperature=temperature,
                 model_name=ontology_inspector_model or model_name,
             ),
             AgentPersona(
                 name="Medical_Skeptic",
-                weight=0.3,
+                weight=1.0,
                 system_prompt=_SYSTEM_PROMPT_MEDICAL_SKEPTIC,
                 temperature=temperature + 0.1,  # Slightly higher for creative skepticism
                 model_name=medical_skeptic_model or model_name,
@@ -735,9 +735,9 @@ class AgentLLMDebateGate:
         return None
 
     def _calculate_fcs(self, all_responses: List[AgentResponse]) -> float:
-        """Calculate Final Consensus Score (FCS) from all rounds.
+        """Calculate Final Consensus Score (FCS) from all rounds using equal agent voting weights (unweighted consensus).
         
-        FCS = Σ(weight_i × confidence_i × direction_i) for the LAST round
+        FCS = Σ(confidence_i × direction_i) / 3 for the LAST round
         
         Where direction_i:
             +1 if ĐÚNG

@@ -139,9 +139,9 @@ def test_fcs_all_correct():
     gate = AgentLLMDebateGate(model_name="test-model", schema=schema)
     
     responses = [
-        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 90, "", "", 0.4),
-        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 85, "", "", 0.3),
-        AgentResponse("Medical_Skeptic", 1, Verdict.CORRECT, 80, "", "", 0.3),
+        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 90, "", "", 1.0),
+        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 85, "", "", 1.0),
+        AgentResponse("Medical_Skeptic", 1, Verdict.CORRECT, 80, "", "", 1.0),
     ]
     
     fcs = gate._calculate_fcs(responses)
@@ -155,9 +155,9 @@ def test_fcs_all_incorrect():
     gate = AgentLLMDebateGate(model_name="test-model", schema=schema)
     
     responses = [
-        AgentResponse("Clinical_Specialist", 1, Verdict.INCORRECT, 90, "", "", 0.4),
-        AgentResponse("Ontology_Inspector", 1, Verdict.INCORRECT, 85, "", "", 0.3),
-        AgentResponse("Medical_Skeptic", 1, Verdict.INCORRECT, 80, "", "", 0.3),
+        AgentResponse("Clinical_Specialist", 1, Verdict.INCORRECT, 90, "", "", 1.0),
+        AgentResponse("Ontology_Inspector", 1, Verdict.INCORRECT, 85, "", "", 1.0),
+        AgentResponse("Medical_Skeptic", 1, Verdict.INCORRECT, 80, "", "", 1.0),
     ]
     
     fcs = gate._calculate_fcs(responses)
@@ -171,9 +171,9 @@ def test_fcs_mixed_verdict():
     gate = AgentLLMDebateGate(model_name="test-model", schema=schema)
     
     responses = [
-        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 90, "", "", 0.4),
-        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 70, "", "", 0.3),
-        AgentResponse("Medical_Skeptic", 1, Verdict.INCORRECT, 60, "", "", 0.3),
+        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 90, "", "", 1.0),
+        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 70, "", "", 1.0),
+        AgentResponse("Medical_Skeptic", 1, Verdict.INCORRECT, 60, "", "", 1.0),
     ]
     
     fcs = gate._calculate_fcs(responses)
@@ -192,9 +192,9 @@ def test_veto_triggered():
     gate = AgentLLMDebateGate(model_name="test-model", schema=schema, veto_confidence_threshold=70)
     
     responses = [
-        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 90, "", "", 0.4),
-        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 85, "", "", 0.3),
-        AgentResponse("Medical_Skeptic", 1, Verdict.INCORRECT, 75, "", "", 0.3),
+        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 90, "", "", 1.0),
+        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 85, "", "", 1.0),
+        AgentResponse("Medical_Skeptic", 1, Verdict.INCORRECT, 75, "", "", 1.0),
     ]
     
     veto_agent = gate._check_veto(responses)
@@ -208,9 +208,9 @@ def test_veto_not_triggered():
     gate = AgentLLMDebateGate(model_name="test-model", schema=schema, veto_confidence_threshold=70)
     
     responses = [
-        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 90, "", "", 0.4),
-        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 85, "", "", 0.3),
-        AgentResponse("Medical_Skeptic", 1, Verdict.INCORRECT, 60, "", "", 0.3),
+        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 90, "", "", 1.0),
+        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 85, "", "", 1.0),
+        AgentResponse("Medical_Skeptic", 1, Verdict.INCORRECT, 60, "", "", 1.0),
     ]
     
     veto_agent = gate._check_veto(responses)
@@ -224,9 +224,9 @@ def test_veto_correct_does_not_trigger():
     gate = AgentLLMDebateGate(model_name="test-model", schema=schema, veto_confidence_threshold=70)
     
     responses = [
-        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 95, "", "", 0.4),
-        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 99, "", "", 0.3),
-        AgentResponse("Medical_Skeptic", 1, Verdict.CORRECT, 99, "", "", 0.3),
+        AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 95, "", "", 1.0),
+        AgentResponse("Ontology_Inspector", 1, Verdict.CORRECT, 99, "", "", 1.0),
+        AgentResponse("Medical_Skeptic", 1, Verdict.CORRECT, 99, "", "", 1.0),
     ]
     
     veto_agent = gate._check_veto(responses)
@@ -244,9 +244,9 @@ def test_consensus_all_agree():
     gate = AgentLLMDebateGate(model_name="test-model", schema=schema)
     
     responses = [
-        AgentResponse("A", 1, Verdict.CORRECT, 90, "", "", 0.4),
-        AgentResponse("B", 1, Verdict.CORRECT, 85, "", "", 0.3),
-        AgentResponse("C", 1, Verdict.CORRECT, 80, "", "", 0.3),
+        AgentResponse("A", 1, Verdict.CORRECT, 90, "", "", 1.0),
+        AgentResponse("B", 1, Verdict.CORRECT, 85, "", "", 1.0),
+        AgentResponse("C", 1, Verdict.CORRECT, 80, "", "", 1.0),
     ]
     
     assert gate._check_consensus(responses) is True
@@ -259,9 +259,9 @@ def test_consensus_disagree():
     gate = AgentLLMDebateGate(model_name="test-model", schema=schema)
     
     responses = [
-        AgentResponse("A", 1, Verdict.CORRECT, 90, "", "", 0.4),
-        AgentResponse("B", 1, Verdict.INCORRECT, 85, "", "", 0.3),
-        AgentResponse("C", 1, Verdict.CORRECT, 80, "", "", 0.3),
+        AgentResponse("A", 1, Verdict.CORRECT, 90, "", "", 1.0),
+        AgentResponse("B", 1, Verdict.INCORRECT, 85, "", "", 1.0),
+        AgentResponse("C", 1, Verdict.CORRECT, 80, "", "", 1.0),
     ]
     
     assert gate._check_consensus(responses) is False
@@ -362,9 +362,9 @@ def test_debate_prompt_contains_other_responses():
     
     prev_responses = [
         AgentResponse("Clinical_Specialist", 1, Verdict.CORRECT, 90, 
-                      "Clinically validated by ADA guidelines.", "", 0.4),
+                      "Clinically validated by ADA guidelines.", "", 1.0),
         AgentResponse("Medical_Skeptic", 1, Verdict.INCORRECT, 75,
-                      "Direction might be reversed.", "", 0.3),
+                      "Direction might be reversed.", "", 1.0),
     ]
     
     prompt = gate._build_debate_prompt(
@@ -398,7 +398,7 @@ def test_debate_result_to_dict():
         rounds_completed=2,
         consensus_reached=True,
         agent_responses=[
-            AgentResponse("A", 1, Verdict.CORRECT, 90, "Reasoning text", "raw", 0.4),
+            AgentResponse("A", 1, Verdict.CORRECT, 90, "Reasoning text", "raw", 1.0),
         ],
         elapsed_seconds=2.5,
     )

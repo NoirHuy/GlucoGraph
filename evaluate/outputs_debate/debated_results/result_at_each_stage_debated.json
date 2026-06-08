@@ -1,0 +1,3166 @@
+[
+    {
+        "index": 0,
+        "input_text": "Absence of PKC-alpha attenuates lithium-induced nephrogenic diabetes insipidus. Lithium, an effective antipsychotic, induces nephrogenic diabetes insipidus (NDI) in 40% of patients. The decreased capacity to concentrate urine is likely due to lithium acutely disrupting the cAMP pathway and chronically reducing urea transporter (UT-A1) and water channel (AQP2) expression in the inner medulla. Targeting an alternative signaling pathway, such as PKC-mediated signaling, may be an effective method of treating lithium-induced polyuria. PKC-alpha null mice (PKCa KO) and strain-matched wild type (WT) controls were treated with lithium for 0, 3 or 5 days. WT mice had increased urine output and lowered urine osmolality after 3 and 5 days of treatment whereas PKCa KO mice had no change in urine output or concentration. Western blot analysis revealed that AQP2 expression in medullary tissues was lowered after 3 and 5 days in WT mice; however, AQP2 was unchanged in PKCa KO. Similar results were observed with UT-A1 expression. Animals were also treated with lithium for 6 weeks. Lithium-treated WT mice had 19-fold increased urine output whereas treated PKCa KO animals had a 4-fold increase in output. AQP2 and UT-A1 expression was lowered in 6 week lithium-treated WT animals whereas in treated PKCa KO mice, AQP2 was only reduced by 2-fold and UT-A1 expression was unaffected. Urinary sodium, potassium and calcium were elevated in lithium-fed WT but not in lithium-fed PKCa KO mice. Our data show that ablation of PKCa preserves AQP2 and UT-A1 protein expression and localization in lithium-induced NDI, and prevents the development of the severe polyuria associated with lithium therapy.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "lithium",
+                "Positive_Correlation",
+                "nephrogenic diabetes insipidus"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "polyuria"
+            ],
+            [
+                "PKC-alpha",
+                "Association",
+                "lithium-induced nephrogenic diabetes insipidus"
+            ],
+            [
+                "lithium",
+                "Negative_Correlation",
+                "cAMP pathway"
+            ],
+            [
+                "lithium",
+                "Negative_Correlation",
+                "UT-A1"
+            ],
+            [
+                "lithium",
+                "Negative_Correlation",
+                "AQP2"
+            ],
+            [
+                "PKC-alpha",
+                "Association",
+                "UT-A1"
+            ],
+            [
+                "PKC-alpha",
+                "Association",
+                "AQP2"
+            ],
+            [
+                "PKC-alpha null mice",
+                "Association",
+                "lithium"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "urine output"
+            ],
+            [
+                "lithium",
+                "Negative_Correlation",
+                "urine osmolality"
+            ],
+            [
+                "AQP2",
+                "Association",
+                "urine output"
+            ],
+            [
+                "UT-A1",
+                "Association",
+                "urine output"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "urinary sodium"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "urinary potassium"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "urinary calcium"
+            ],
+            [
+                "PKC-alpha",
+                "Negative_Correlation",
+                "lithium-induced polyuria"
+            ],
+            [
+                "ablation of PKCa",
+                "Negative_Correlation",
+                "lithium-induced polyuria"
+            ],
+            [
+                "PKC-alpha",
+                "Positive_Correlation",
+                "AQP2 preservation"
+            ],
+            [
+                "PKC-alpha",
+                "Positive_Correlation",
+                "UT-A1 preservation"
+            ]
+        ],
+        "oie": [
+            [
+                "lithium",
+                "Positive_Correlation",
+                "NDI"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "polyuria"
+            ],
+            [
+                "PKCa",
+                "Association",
+                "NDI"
+            ],
+            [
+                "lithium",
+                "Negative_Correlation",
+                "cAMP"
+            ],
+            [
+                "lithium",
+                "Negative_Correlation",
+                "UT-A1"
+            ],
+            [
+                "lithium",
+                "Negative_Correlation",
+                "AQP2"
+            ],
+            [
+                "PKCa",
+                "Association",
+                "UT-A1"
+            ],
+            [
+                "PKCa",
+                "Association",
+                "AQP2"
+            ],
+            [
+                "PKCa",
+                "Association",
+                "lithium"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "urine output"
+            ],
+            [
+                "lithium",
+                "Negative_Correlation",
+                "urine osmolality"
+            ],
+            [
+                "AQP2",
+                "Association",
+                "urine output"
+            ],
+            [
+                "UT-A1",
+                "Association",
+                "urine output"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "sodium"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "potassium"
+            ],
+            [
+                "lithium",
+                "Positive_Correlation",
+                "calcium"
+            ],
+            [
+                "PKCa",
+                "Negative_Correlation",
+                "polyuria"
+            ],
+            [
+                "PKCa",
+                "Negative_Correlation",
+                "polyuria"
+            ],
+            [
+                "PKCa",
+                "Positive_Correlation",
+                "preservation"
+            ]
+        ],
+        "schema_definition": {
+            "Positive_Correlation": "The presence or activity of the subject gene or gene product is positively correlated with or associated with an increased incidence or severity of the object.",
+            "Association": "The subject gene or gene product is associated with or linked to the object.",
+            "Negative_Correlation": "The presence or activity of the subject gene or gene product is negatively correlated with or associated with a decreased incidence or severity of the object disease or phenotype.",
+            "_entries": [
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject chemical is positively correlated with or associated with an increased incidence or severity of the object disease or phenotype.",
+                    "object": "NDI",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject chemical is positively correlated with or associated with an increased incidence or severity of the object disease or phenotype.",
+                    "object": "polyuria",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "PKCa",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is associated with or linked to the object disease or phenotype.",
+                    "object": "NDI",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject chemical is negatively correlated with or associated with a decreased incidence or severity of the object gene or protein.",
+                    "object": "cAMP",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject chemical is negatively correlated with or associated with a decreased incidence or severity of the object gene or protein.",
+                    "object": "UT-A1",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject chemical is negatively correlated with or associated with a decreased incidence or severity of the object gene or protein.",
+                    "object": "AQP2",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "PKCa",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is associated with or linked to the object gene or protein.",
+                    "object": "UT-A1",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "PKCa",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is associated with or linked to the object gene or protein.",
+                    "object": "AQP2",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "PKCa",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is associated with or linked to the object chemical.",
+                    "object": "lithium",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject chemical is positively correlated with or associated with an increased incidence or severity of the object.",
+                    "object": "urine output",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject chemical is negatively correlated with or associated with a decreased incidence or severity of the object.",
+                    "object": "urine osmolality",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "AQP2",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is associated with or linked to the object.",
+                    "object": "urine output",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "UT-A1",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is associated with or linked to the object.",
+                    "object": "urine output",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject chemical is positively correlated with or associated with an increased incidence or severity of the object.",
+                    "object": "sodium",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject chemical is positively correlated with or associated with an increased incidence or severity of the object.",
+                    "object": "potassium",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "lithium",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject chemical is positively correlated with or associated with an increased incidence or severity of the object.",
+                    "object": "calcium",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "PKCa",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The presence or activity of the subject gene or gene product is negatively correlated with or associated with a decreased incidence or severity of the object disease or phenotype.",
+                    "object": "polyuria",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "PKCa",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The presence or activity of the subject gene or gene product is negatively correlated with or associated with a decreased incidence or severity of the object disease or phenotype.",
+                    "object": "polyuria",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "PKCa",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The presence or activity of the subject gene or gene product is positively correlated with or associated with an increased incidence or severity of the object.",
+                    "object": "preservation",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "lithium",
+                "Positive_Correlation",
+                "nephrogenic diabetes insipidus"
+            ],
+            [
+                "protein kinase c alpha",
+                "Association",
+                "nephrogenic diabetes insipidus"
+            ]
+        ]
+    },
+    {
+        "index": 1,
+        "input_text": "Decreased Whole-Body Fat Mass Produced by Chronic Alcohol Consumption is Associated with Activation of S6K1-Mediated Protein Synthesis and Increased Autophagy in Epididymal White Adipose Tissue. BACKGROUND: Chronic alcohol consumption leads to a loss of white adipose tissue (WAT) but the underlying mechanisms for this lipodystrophy are not fully elucidated. This study tested the hypothesis that the reduction in WAT mass in chronic alcohol-fed mice is associated with a decreased protein synthesis specifically related to impaired function of mammalian target of rapamycin (mTOR). METHODS: Adult male mice were provided an alcohol-containing liquid diet for 24 weeks or an isonitrogenous isocaloric control diet. In vivo protein synthesis was determined at this time and thereafter epididymal WAT (eWAT) was excised for analysis of signal transduction pathways central to controling protein synthesis and degradation. RESULTS: While chronic alcohol feeding decreased whole-body and eWAT mass, this was associated with a discordant increase in protein synthesis in eWAT. This increase was not associated with a change in mTOR, 4E-BP1, Akt, or PRAS40 phosphorylation. Instead, a selective increase in phosphorylation of S6K1 and its downstream substrates, S6 and eIF4B was detected in alcohol-fed mice. Alcohol also increased eEF2K phosphorylation and decreased eEF2 phosphorylation consistent with increased translation elongation. Alcohol increased Atg12-5, LC3B-I and -II, and ULK1 S555 phosphorylation, suggesting increased autophagy, while markers of apoptosis (cleaved caspase-3 and -9, and PARP) were unchanged. Lipolytic enzymes (ATGL and HSL phosphorylation) were increased and lipogenic regulators (PPARgamma and C/EBPalpha) were decreased in eWAT by alcohol. Although alcohol increased TNF-alpha, IL-6, and IL-1beta mRNA, no change in key components of the NLRP3 inflammasome (NLRP3, ACS, and cleaved caspase-1) was detected suggesting alcohol did not increase pyroptosis. Plasma insulin did not differ between groups. CONCLUSIONS: These results demonstrate that the alcohol-induced decrease in whole-body fat mass resulted in part from activation of autophagy in eWAT as protein synthesis was increased and mediated by the specific increase in the activity of S6K1.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "chronic alcohol consumption",
+                "Positive_Correlation",
+                "autophagy"
+            ],
+            [
+                "chronic alcohol consumption",
+                "Negative_Correlation",
+                "whole-body fat mass"
+            ],
+            [
+                "chronic alcohol consumption",
+                "Negative_Correlation",
+                "epididymal white adipose tissue mass"
+            ],
+            [
+                "S6K1",
+                "Association",
+                "protein synthesis"
+            ],
+            [
+                "S6K1",
+                "Positive_Correlation",
+                "autophagy"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "S6K1 phosphorylation"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "eEF2K phosphorylation"
+            ],
+            [
+                "alcohol",
+                "Negative_Correlation",
+                "eEF2 phosphorylation"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "Atg12-5"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "LC3B-I"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "LC3B-II"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "ULK1 S555 phosphorylation"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "lipolytic enzymes"
+            ],
+            [
+                "alcohol",
+                "Negative_Correlation",
+                "lipogenic regulators"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "TNF-alpha"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "IL-6"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "IL-1beta"
+            ],
+            [
+                "chronic alcohol consumption",
+                "Association",
+                "epididymal white adipose tissue"
+            ]
+        ],
+        "oie": [
+            [
+                "alcohol consumption",
+                "Positive_Correlation",
+                "autophagy"
+            ],
+            [
+                "alcohol consumption",
+                "Negative_Correlation",
+                "whole-body fat mass"
+            ],
+            [
+                "alcohol consumption",
+                "Negative_Correlation",
+                "epididymal white adipose tissue mass"
+            ],
+            [
+                "S6K1",
+                "Association",
+                "protein synthesis"
+            ],
+            [
+                "S6K1",
+                "Positive_Correlation",
+                "autophagy"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "S6K1 phosphorylation"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "eEF2K phosphorylation"
+            ],
+            [
+                "alcohol",
+                "Negative_Correlation",
+                "eEF2 phosphorylation"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "Atg12-5"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "LC3B-I"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "LC3B-II"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "S555 phosphorylation"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "lipolytic enzymes"
+            ],
+            [
+                "alcohol",
+                "Negative_Correlation",
+                "lipogenic regulators"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "TNF-alpha"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "IL-6"
+            ],
+            [
+                "alcohol",
+                "Positive_Correlation",
+                "IL-1beta"
+            ],
+            [
+                "alcohol consumption",
+                "Association",
+                "epididymal white adipose"
+            ]
+        ],
+        "schema_definition": {
+            "Positive_Correlation": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+            "Negative_Correlation": "The subject agent or factor is negatively associated with or decreases the quantity or activity of the object.",
+            "Association": "The subject gene or gene product is directly involved in or is associated with the object process or function.",
+            "_entries": [
+                {
+                    "subject": "alcohol consumption",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "autophagy",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "alcohol consumption",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject agent or factor is negatively associated with or decreases the quantity or activity of the object.",
+                    "object": "whole-body fat mass",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "alcohol consumption",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject agent or factor is negatively associated with or decreases the quantity or activity of the object.",
+                    "object": "epididymal white adipose tissue mass",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "S6K1",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is directly involved in or is associated with the object process or function.",
+                    "object": "protein synthesis",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "S6K1",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject gene or gene product is positively associated with or increases the quantity or activity of the object.",
+                    "object": "autophagy",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "S6K1 phosphorylation",
+                    "object_type": "SequenceVariant",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "SequenceVariant"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "eEF2K phosphorylation",
+                    "object_type": "SequenceVariant",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "SequenceVariant"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject agent or factor is negatively associated with or decreases the quantity or activity of the object.",
+                    "object": "eEF2 phosphorylation",
+                    "object_type": "SequenceVariant",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "SequenceVariant"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "Atg12-5",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "LC3B-I",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "LC3B-II",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "S555 phosphorylation",
+                    "object_type": "SequenceVariant",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "SequenceVariant"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "lipolytic enzymes",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject agent or factor is negatively associated with or decreases the quantity or activity of the object.",
+                    "object": "lipogenic regulators",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "TNF-alpha",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "IL-6",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent or factor is positively associated with or increases the quantity or activity of the object.",
+                    "object": "IL-1beta",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "alcohol consumption",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is directly involved in or is associated with the object process or function.",
+                    "object": "epididymal white adipose",
+                    "object_type": "CellLine",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "CellLine"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 2,
+        "input_text": "Association between polymorphisms in SLC30A8, HHEX, CDKN2A/B, IGF2BP2, FTO, WFS1, CDKAL1, KCNQ1 and type 2 diabetes in the Korean population. According to recent genome-wide association studies, a number of single nucleotide polymorphisms (SNPs) are reported to be associated with type 2 diabetes mellitus (T2DM). The aim of the present study was to investigate the association among the polymorphisms of SLC30A8, HHEX, CDKN2A/B, IGF2BP2, FTO, WFS1, CDKAL1 and KCNQ1 and the risk of T2DM in the Korean population. This study was based on a multicenter case-control study, including 908 patients with T2DM and 502 non-diabetic controls. We genotyped rs13266634, rs1111875, rs10811661, rs4402960, rs8050136, rs734312, rs7754840 and rs2237892 and measured the body weight, body mass index and fasting plasma glucose in all patients and controls. The strongest association was found in a variant of CDKAL1 [rs7754840, odds ratio (OR) = 1.77, 95% CI = 1.50-2.10, p = 5.0 x 10(-11)]. The G allele of rs1111875 (OR = 1.43, 95% CI = 1.18-1.72, p = 1.8 x 10(-4)) in HHEX), the T allele of rs10811661 (OR = 1.47, 95% CI = 1.23-1.75, p = 2.1 x 10(-5)) in CDKN2A/B) and the C allele of rs2237892 (OR = 1.31, 95% CI = 1.10-1.56, p = 0.003) in KCNQ1 showed significant associations with T2DM. Rs13266634 (OR = 1.19, 95% CI = 1.00-1.42, p = 0.045) in SLC30A8 showed a nominal association with the risk of T2DM, whereas SNPs in IGF2BP2, FTO and WFS1 were not associated. In conclusion, we have shown that SNPs in HHEX, CDKN2A/B, CDKAL1, KCNQ1 and SLC30A8 confer a risk of T2DM in the Korean population.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "type 2 diabetes",
+                "Association",
+                "SLC30A8"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "HHEX"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "CDKN2A/B"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "IGF2BP2"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "FTO"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "WFS1"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "CDKAL1"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "KCNQ1"
+            ],
+            [
+                "rs13266634",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ],
+            [
+                "rs1111875",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ],
+            [
+                "rs10811661",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ],
+            [
+                "rs2237892",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ],
+            [
+                "rs7754840",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ]
+        ],
+        "oie": [
+            [
+                "T2DM",
+                "Association",
+                "SLC30A8"
+            ],
+            [
+                "T2DM",
+                "Association",
+                "HHEX"
+            ],
+            [
+                "T2DM",
+                "Association",
+                "CDKN2A/B"
+            ],
+            [
+                "T2DM",
+                "Association",
+                "IGF2BP2"
+            ],
+            [
+                "T2DM",
+                "Association",
+                "FTO"
+            ],
+            [
+                "T2DM",
+                "Association",
+                "WFS1"
+            ],
+            [
+                "T2DM",
+                "Association",
+                "CDKAL1"
+            ],
+            [
+                "T2DM",
+                "Association",
+                "KCNQ1"
+            ],
+            [
+                "rs13266634",
+                "Positive_Correlation",
+                "T2DM"
+            ],
+            [
+                "rs1111875",
+                "Positive_Correlation",
+                "T2DM"
+            ],
+            [
+                "rs10811661",
+                "Positive_Correlation",
+                "T2DM"
+            ],
+            [
+                "rs2237892",
+                "Positive_Correlation",
+                "T2DM"
+            ],
+            [
+                "rs7754840",
+                "Positive_Correlation",
+                "T2DM"
+            ]
+        ],
+        "schema_definition": {
+            "Association": "The subject disease or phenotype is associated with or linked to the object genetic variant.",
+            "Positive_Correlation": "The subject genetic variant is positively correlated with or associated with an increased risk of the object disease.",
+            "_entries": [
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object genetic variant.",
+                    "object": "SLC30A8",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object genetic variant.",
+                    "object": "HHEX",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object genetic variant.",
+                    "object": "CDKN2A/B",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object genetic variant.",
+                    "object": "IGF2BP2",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object genetic variant.",
+                    "object": "FTO",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object genetic variant.",
+                    "object": "WFS1",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object genetic variant.",
+                    "object": "CDKAL1",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object genetic variant.",
+                    "object": "KCNQ1",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "rs13266634",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject genetic variant is positively correlated with or associated with an increased risk of the object disease.",
+                    "object": "T2DM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "rs1111875",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject genetic variant is positively correlated with or associated with an increased risk of the object disease.",
+                    "object": "T2DM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "rs10811661",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject genetic variant is positively correlated with or associated with an increased risk of the object disease.",
+                    "object": "T2DM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "rs2237892",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject genetic variant is positively correlated with or associated with an increased risk of the object disease.",
+                    "object": "T2DM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "rs7754840",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject genetic variant is positively correlated with or associated with an increased risk of the object disease.",
+                    "object": "T2DM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 2 diabetes",
+                "Association",
+                "slc30a8"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "hhex"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "cdkn2a/b"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "cdkal1"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "kcnq1"
+            ],
+            [
+                "rs13266634",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ],
+            [
+                "rs1111875",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ],
+            [
+                "rs10811661",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ],
+            [
+                "rs2237892",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ],
+            [
+                "rs7754840",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ]
+        ]
+    },
+    {
+        "index": 3,
+        "input_text": "Interleukin 6 (IL-6) and Tumor Necrosis Factor alpha (TNF-alpha) Single Nucleotide Polymorphisms (SNPs), Inflammation and Metabolism in Gestational Diabetes Mellitus in Inner Mongolia. BACKGROUND Gestational diabetes mellitus (GDM) is common all over the world. GDM women are with inflammatory and metabolisms abnormalities. However, few studies have focused on the association of IL-65-72C/G and TNF-alpha -857C/T single nucleotide polymorphisms (SNPs), inflammatory biomarkers, and metabolic indexes in women with GDM, especially in the Inner Mongolia population. The aim of this study was to investigate the associations of IL-65-72C/G and TNF-alpha -857C/T SNPs, and inflammation and metabolic biomarkers in women with GDM pregnancies. MATERIAL AND METHODS Blood samples and placentas from 140 women with GDM and 140 women with healthy pregnancies were collected. Matrix-assisted laser desorption ionization time of flight mass spectrometry (MALDI-TOF-MS) and MassARRAY-IPLEX were performed to analyze IL-65-72C/G and TNF-alpha -857C/T SNPs. Enzyme linked immunosorbent assay (ELISA) was performed to analyze inflammatory biomarkers and adipokines. RESULTS Distribution frequency of TNF-alpha -857CT (OR=3.316, 95% CI=1.092-8.304, p=0.025) in women with GDM pregnancies were obviously higher than that in women with healthy pregnancies. Women with GDM were of older maternal age, had higher BMI, were more nulliparous, and had T2DM and GDM history, compared to women with healthy pregnancies (p <0.05). Inflammatory biomarkers in serum (hs-CRP, IL-6, IL-8, IL-6/IL-10 ratio) and placental (NF-kappaB, IL-6, IL-8, IL-6/IL-10 ratio, IL-1b, TNF-alpha) were significantly different (p <0.05) between women with GDM and women with healthy pregnancies. Differences were found for serum FBG, FINS, HOMA-IR, and HOMA-beta, and placental IRS-1, IRS-2, leptin, adiponectin, visfatin, RBP-4, chemerin, nesfatin-1, FATP-4, EL, LPL, FABP-1, FABP-3, FABP-4, and FABP-5. CONCLUSIONS TNF-alpha -857C/T SNP, hs-CRP, IL-6, IL-8, and IL-6/IL-10 were associated with GDM in women from Inner Mongolia, as was serious inflammation and disordered lipid and glucose metabolisms.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "TNF-alpha -857C/T SNP",
+                "Positive_Correlation",
+                "GDM"
+            ],
+            [
+                "IL-6",
+                "Association",
+                "GDM"
+            ],
+            [
+                "hs-CRP",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IL-8",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IL-6/IL-10 ratio",
+                "Association",
+                "GDM"
+            ],
+            [
+                "NF-kappaB",
+                "Association",
+                "GDM"
+            ],
+            [
+                "TNF-alpha",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IL-1b",
+                "Association",
+                "GDM"
+            ],
+            [
+                "GDM",
+                "Positive_Correlation",
+                "inflammation"
+            ],
+            [
+                "GDM",
+                "Positive_Correlation",
+                "disordered lipid metabolism"
+            ],
+            [
+                "GDM",
+                "Positive_Correlation",
+                "disordered glucose metabolism"
+            ],
+            [
+                "FBG",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FINS",
+                "Association",
+                "GDM"
+            ],
+            [
+                "HOMA-IR",
+                "Association",
+                "GDM"
+            ],
+            [
+                "HOMA-beta",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IRS-1",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IRS-2",
+                "Association",
+                "GDM"
+            ],
+            [
+                "leptin",
+                "Association",
+                "GDM"
+            ],
+            [
+                "adiponectin",
+                "Association",
+                "GDM"
+            ],
+            [
+                "visfatin",
+                "Association",
+                "GDM"
+            ],
+            [
+                "RBP-4",
+                "Association",
+                "GDM"
+            ],
+            [
+                "chemerin",
+                "Association",
+                "GDM"
+            ],
+            [
+                "nesfatin-1",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FATP-4",
+                "Association",
+                "GDM"
+            ],
+            [
+                "EL",
+                "Association",
+                "GDM"
+            ],
+            [
+                "LPL",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FABP-1",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FABP-3",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FABP-4",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FABP-5",
+                "Association",
+                "GDM"
+            ]
+        ],
+        "oie": [
+            [
+                "TNF-alpha -857C/T SNP",
+                "Positive_Correlation",
+                "GDM"
+            ],
+            [
+                "IL-6",
+                "Association",
+                "GDM"
+            ],
+            [
+                "CRP",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IL-8",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IL-6/IL-10 ratio",
+                "Association",
+                "GDM"
+            ],
+            [
+                "NF-kappaB",
+                "Association",
+                "GDM"
+            ],
+            [
+                "TNF-alpha",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IL-1b",
+                "Association",
+                "GDM"
+            ],
+            [
+                "GDM",
+                "Positive_Correlation",
+                "inflammation"
+            ],
+            [
+                "GDM",
+                "Positive_Correlation",
+                "disordered lipid metabolism"
+            ],
+            [
+                "GDM",
+                "Positive_Correlation",
+                "disordered glucose metabolism"
+            ],
+            [
+                "FBG",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FINS",
+                "Association",
+                "GDM"
+            ],
+            [
+                "HOMA-IR",
+                "Association",
+                "GDM"
+            ],
+            [
+                "HOMA-beta",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IRS-1",
+                "Association",
+                "GDM"
+            ],
+            [
+                "IRS-2",
+                "Association",
+                "GDM"
+            ],
+            [
+                "leptin",
+                "Association",
+                "GDM"
+            ],
+            [
+                "adiponectin",
+                "Association",
+                "GDM"
+            ],
+            [
+                "visfatin",
+                "Association",
+                "GDM"
+            ],
+            [
+                "RBP-4",
+                "Association",
+                "GDM"
+            ],
+            [
+                "chemerin",
+                "Association",
+                "GDM"
+            ],
+            [
+                "nesfatin-1",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FATP-4",
+                "Association",
+                "GDM"
+            ],
+            [
+                "EL",
+                "Association",
+                "GDM"
+            ],
+            [
+                "LPL",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FABP-1",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FABP-3",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FABP-4",
+                "Association",
+                "GDM"
+            ],
+            [
+                "FABP-5",
+                "Association",
+                "GDM"
+            ]
+        ],
+        "schema_definition": {
+            "Positive_Correlation": "The subject disease or condition is positively correlated with or associated with an increased risk of the object factor.",
+            "Association": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+            "_entries": [
+                {
+                    "subject": "TNF-alpha -857C/T SNP",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject genetic variant is positively correlated with or associated with an increased risk of the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "IL-6",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "CRP",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "IL-8",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "IL-6/IL-10 ratio",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "NF-kappaB",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "TNF-alpha",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "IL-1b",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "GDM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject disease or condition is positively correlated with or associated with an increased risk of the object factor.",
+                    "object": "inflammation",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "GDM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject disease or condition is positively correlated with or associated with an increased risk of the object factor.",
+                    "object": "disordered lipid metabolism",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "GDM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject disease or condition is positively correlated with or associated with an increased risk of the object factor.",
+                    "object": "disordered glucose metabolism",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "FBG",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "FINS",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "HOMA-IR",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "HOMA-beta",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "IRS-1",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "IRS-2",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "leptin",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "adiponectin",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "visfatin",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "RBP-4",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "chemerin",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "nesfatin-1",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "FATP-4",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "EL",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "LPL",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "FABP-1",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "FABP-3",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "FABP-4",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "FABP-5",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical or gene is associated with or linked to the object disease or condition.",
+                    "object": "GDM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "tnf-alpha",
+                "Positive_Correlation",
+                "gestational diabetes"
+            ],
+            [
+                "il-6",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "crp",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "il-8",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "il-10",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "nf-kappab",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "tnf-alpha",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "il-1b"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "inflammation"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "disordered lipid metabolism"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "disordered glucose metabolism"
+            ],
+            [
+                "fbg",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "fins",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "homa-ir",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "homa-beta",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "irs-1"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "irs-2"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "leptin"
+            ],
+            [
+                "adiponectin",
+                "Association",
+                "gestational diabetes"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "visfatin"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "rbp-4"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "chemerin"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "nesfatin-1"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "fatp-4"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "lpl"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "fabp-1"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "fabp-3"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "fabp-4"
+            ],
+            [
+                "gestational diabetes",
+                "Association",
+                "fabp-5"
+            ]
+        ]
+    },
+    {
+        "index": 4,
+        "input_text": "Bilateral haemorrhagic infarction of the globus pallidus after cocaine and alcohol intoxication. Cocaine is a risk factor for both ischemic and haemorrhagic stroke. We present the case of a 31-year-old man with bilateral ischemia of the globus pallidus after excessive alcohol and intranasal cocaine use. Drug-related globus pallidus infarctions are most often associated with heroin. Bilateral basal ganglia infarcts after the use of cocaine, without concurrent heroin use, have never been reported. In our patient, transient cardiac arrhythmia or respiratory dysfunction related to cocaine and/or ethanol use were the most likely causes of cerebral hypoperfusion.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "cocaine",
+                "Positive_Correlation",
+                "ischemic stroke"
+            ],
+            [
+                "cocaine",
+                "Positive_Correlation",
+                "haemorrhagic stroke"
+            ],
+            [
+                "cocaine",
+                "Association",
+                "globus pallidus infarction"
+            ],
+            [
+                "alcohol",
+                "Association",
+                "globus pallidus infarction"
+            ],
+            [
+                "heroin",
+                "Association",
+                "globus pallidus infarction"
+            ],
+            [
+                "cocaine",
+                "Positive_Correlation",
+                "cerebral hypoperfusion"
+            ],
+            [
+                "ethanol",
+                "Positive_Correlation",
+                "cerebral hypoperfusion"
+            ],
+            [
+                "cocaine",
+                "Association",
+                "cardiac arrhythmia"
+            ],
+            [
+                "ethanol",
+                "Association",
+                "cardiac arrhythmia"
+            ],
+            [
+                "cocaine",
+                "Association",
+                "respiratory dysfunction"
+            ],
+            [
+                "ethanol",
+                "Association",
+                "respiratory dysfunction"
+            ]
+        ],
+        "oie": [
+            [
+                "cocaine",
+                "Positive_Correlation",
+                "ischemic stroke"
+            ],
+            [
+                "cocaine",
+                "Positive_Correlation",
+                "haemorrhagic stroke"
+            ],
+            [
+                "cocaine",
+                "Association",
+                "globus pallidus infarction"
+            ],
+            [
+                "alcohol",
+                "Association",
+                "globus pallidus infarction"
+            ],
+            [
+                "heroin",
+                "Association",
+                "globus pallidus infarction"
+            ],
+            [
+                "cocaine",
+                "Positive_Correlation",
+                "cerebral hypoperfusion"
+            ],
+            [
+                "ethanol",
+                "Positive_Correlation",
+                "cerebral hypoperfusion"
+            ],
+            [
+                "cocaine",
+                "Association",
+                "cardiac arrhythmia"
+            ],
+            [
+                "ethanol",
+                "Association",
+                "cardiac arrhythmia"
+            ],
+            [
+                "cocaine",
+                "Association",
+                "respiratory dysfunction"
+            ],
+            [
+                "ethanol",
+                "Association",
+                "respiratory dysfunction"
+            ]
+        ],
+        "schema_definition": {
+            "Positive_Correlation": "The subject agent is associated with an increased risk or likelihood of the object disease or condition.",
+            "Association": "The subject agent is linked or connected to the object disease or condition, but the nature of the relationship is not specified.",
+            "_entries": [
+                {
+                    "subject": "cocaine",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent is associated with an increased risk or likelihood of the object disease or condition.",
+                    "object": "ischemic stroke",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "cocaine",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent is associated with an increased risk or likelihood of the object disease or condition.",
+                    "object": "haemorrhagic stroke",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "cocaine",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject agent is linked or connected to the object disease or condition, but the nature of the relationship is not specified.",
+                    "object": "globus pallidus infarction",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "alcohol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject agent is linked or connected to the object disease or condition, but the nature of the relationship is not specified.",
+                    "object": "globus pallidus infarction",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "heroin",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject agent is linked or connected to the object disease or condition, but the nature of the relationship is not specified.",
+                    "object": "globus pallidus infarction",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "cocaine",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent is associated with an increased risk or likelihood of the object disease or condition.",
+                    "object": "cerebral hypoperfusion",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "ethanol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject agent is associated with an increased risk or likelihood of the object disease or condition.",
+                    "object": "cerebral hypoperfusion",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "cocaine",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject agent is linked or connected to the object disease or condition, but the nature of the relationship is not specified.",
+                    "object": "cardiac arrhythmia",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "ethanol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject agent is linked or connected to the object disease or condition, but the nature of the relationship is not specified.",
+                    "object": "cardiac arrhythmia",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "cocaine",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject agent is linked or connected to the object disease or condition, but the nature of the relationship is not specified.",
+                    "object": "respiratory dysfunction",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "ethanol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject agent is linked or connected to the object disease or condition, but the nature of the relationship is not specified.",
+                    "object": "respiratory dysfunction",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": []
+    },
+    {
+        "index": 5,
+        "input_text": "The fibrinogen gamma 10034C>T polymorphism is not associated with Peripheral Arterial Disease. Conversion of fibrinogen to fibrin plays an essential role in hemostasis and results in stabilization of the fibrin clot. Fibrinogen consists of three pairs of non-identical polypeptide chains, encoded by different genes (fibrinogen alpha [FGA], fibrinogen beta [FGB] and fibrinogen gamma [FGG]). A functional single nucleotide polymorphism (SNP) in the 3' untranslated region of the FGG gene (FGG 10034C>T, rs2066865) has been associated with deep venous thrombosis and myocardial infarction. Aim of the present study was to analyze the role of this polymorphism in peripheral arterial disease (PAD). The study was designed as case-control study including 891 patients with documented PAD and 777 control subjects. FGG genotypes were determined by exonuclease (TaqMan) assays. FGG genotype frequencies were not significantly different between PAD patients (CC: 57.3%, CT: 36.7%, TT: 5.8%) and control subjects (CC: 60.9%, CT: 33.5%, TT 5.6%; p=0.35). In a multivariate logistic regression analysis including age, sex, smoking, diabetes, arterial hypertension and hypercholesterolemia, the FGG 10034 T variant was not significantly associated with the presence of PAD (Odds ratio 1.07, 95% confidence interval 0.84 - 1.37; p = 0.60). The FGG 10034C>T polymorphism was furthermore not associated with age at onset of PAD. We conclude that the thrombophilic FGG 10034 T gene variant does not contribute to the genetic susceptibility to PAD.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "FGG 10034C>T polymorphism",
+                "Negative_Correlation",
+                "Peripheral Arterial Disease"
+            ],
+            [
+                "fibrinogen",
+                "Conversion",
+                "fibrin"
+            ],
+            [
+                "fibrinogen",
+                "Association",
+                "hemostasis"
+            ],
+            [
+                "fibrinogen",
+                "Association",
+                "fibrin clot"
+            ],
+            [
+                "FGA",
+                "Association",
+                "fibrinogen"
+            ],
+            [
+                "FGB",
+                "Association",
+                "fibrinogen"
+            ],
+            [
+                "FGG",
+                "Association",
+                "fibrinogen"
+            ],
+            [
+                "FGG 10034C>T polymorphism",
+                "Association",
+                "deep venous thrombosis"
+            ],
+            [
+                "FGG 10034C>T polymorphism",
+                "Association",
+                "myocardial infarction"
+            ],
+            [
+                "FGG 10034C>T polymorphism",
+                "Negative_Correlation",
+                "PAD"
+            ],
+            [
+                "diabetes",
+                "Association",
+                "Peripheral Arterial Disease"
+            ],
+            [
+                "arterial hypertension",
+                "Association",
+                "Peripheral Arterial Disease"
+            ],
+            [
+                "hypercholesterolemia",
+                "Association",
+                "Peripheral Arterial Disease"
+            ],
+            [
+                "smoking",
+                "Association",
+                "Peripheral Arterial Disease"
+            ]
+        ],
+        "oie": [
+            [
+                "10034C>T polymorphism",
+                "Negative_Correlation",
+                "Peripheral Arterial Disease"
+            ],
+            [
+                "fibrinogen",
+                "Association",
+                "hemostasis"
+            ],
+            [
+                "fibrinogen",
+                "Association",
+                "fibrin clot"
+            ],
+            [
+                "FGA",
+                "Association",
+                "fibrinogen"
+            ],
+            [
+                "FGB",
+                "Association",
+                "fibrinogen"
+            ],
+            [
+                "FGG",
+                "Association",
+                "fibrinogen"
+            ],
+            [
+                "10034C>T polymorphism",
+                "Association",
+                "deep venous thrombosis"
+            ],
+            [
+                "10034C>T polymorphism",
+                "Association",
+                "myocardial infarction"
+            ],
+            [
+                "10034C>T polymorphism",
+                "Negative_Correlation",
+                "PAD"
+            ],
+            [
+                "diabetes",
+                "Association",
+                "Peripheral Arterial Disease"
+            ],
+            [
+                "arterial hypertension",
+                "Association",
+                "Peripheral Arterial Disease"
+            ],
+            [
+                "hypercholesterolemia",
+                "Association",
+                "Peripheral Arterial Disease"
+            ],
+            [
+                "smoking",
+                "Association",
+                "Peripheral Arterial Disease"
+            ]
+        ],
+        "schema_definition": {
+            "Negative_Correlation": "The subject genetic variant is inversely related to or has a decreased association with the object disease or condition.",
+            "Association": "The subject disease or condition is related to or has a connection with the object disease or condition.",
+            "_entries": [
+                {
+                    "subject": "10034C>T polymorphism",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject genetic variant is inversely related to or has a decreased association with the object disease or condition.",
+                    "object": "Peripheral Arterial Disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "fibrinogen",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical is related to or has a connection with the object process or condition.",
+                    "object": "hemostasis",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "fibrinogen",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical is related to or has a connection with the object process or condition.",
+                    "object": "fibrin clot",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "FGA",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is related to or has a connection with the object chemical.",
+                    "object": "fibrinogen",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "FGB",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is related to or has a connection with the object chemical.",
+                    "object": "fibrinogen",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "FGG",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is related to or has a connection with the object chemical.",
+                    "object": "fibrinogen",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "10034C>T polymorphism",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Association",
+                    "relation_definition": "The subject genetic variant is related to or has a connection with the object disease or condition.",
+                    "object": "deep venous thrombosis",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "10034C>T polymorphism",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Association",
+                    "relation_definition": "The subject genetic variant is related to or has a connection with the object disease or condition.",
+                    "object": "myocardial infarction",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "10034C>T polymorphism",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject genetic variant is inversely related to or has a decreased association with the object disease or condition.",
+                    "object": "Peripheral Arterial Disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "diabetes",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or condition is related to or has a connection with the object disease or condition.",
+                    "object": "Peripheral Arterial Disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "arterial hypertension",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or condition is related to or has a connection with the object disease or condition.",
+                    "object": "Peripheral Arterial Disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "hypercholesterolemia",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or condition is related to or has a connection with the object disease or condition.",
+                    "object": "Peripheral Arterial Disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "smoking",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or condition is related to or has a connection with the object disease or condition.",
+                    "object": "Peripheral Arterial Disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes",
+                "Association",
+                "peripheral arterial disease"
+            ]
+        ]
+    },
+    {
+        "index": 6,
+        "input_text": "Vitamin D-binding protein gene polymorphism association with IA-2 autoantibodies in type 1 diabetes. BACKGROUND: Vitamin D-binding protein (DBP) is the main systemic transporter of 1.25(OH)2D3 and is essential for its cellular endocytosis. There are two known polymorphisms in exon 11 of the DBP gene resulting in amino acid variants: GAT-->GAG substitution replaces aspartic acid by glutamic acid in codon 416; and ACG-->AAG substitution in codon 420 leads to an exchange of threonine for lysine. These DBP variants lead to differences in the affinity for 1.25(OH)2D3. Correlations between DBP alleles and type 1 diabetes have been described in different populations. Therefore, we investigated the polymorphism in codon 416 of the DBP gene for an association with autoimmune markers of type 1 diabetes. DESIGN AND METHODS: The present analysis was a case control study. 110 patients, 68 controls, and 115 first-degree relatives were genotyped for the DBP polymorphism in codon 416. DNA typing of DBP locus was performed by the PCR-restriction fragment length polymorphism method (RFLP). RESULTS: The frequencies of the Asp/Glu and Glu/Glu were significantly increased in diabetic subjects with detectable IA-2 antibodies (P < 0.01). On the contrary, the DBP Glu-containing genotype was not accompanied by differences in the prevalence of GAD65 antibodies. These finding supports a role of the vitamin D endocrine system in the autoimmune process of type 1 diabetes.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Vitamin D-binding protein",
+                "Association",
+                "1.25(OH)2D3"
+            ],
+            [
+                "Vitamin D-binding protein gene",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "DBP polymorphism",
+                "Association",
+                "IA-2 autoantibodies"
+            ],
+            [
+                "DBP alleles",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "Asp/Glu genotype",
+                "Positive_Correlation",
+                "IA-2 antibodies"
+            ],
+            [
+                "Glu/Glu genotype",
+                "Positive_Correlation",
+                "IA-2 antibodies"
+            ],
+            [
+                "Vitamin D endocrine system",
+                "Association",
+                "autoimmune process of type 1 diabetes"
+            ],
+            [
+                "DBP gene",
+                "Association",
+                "GAD65 antibodies"
+            ],
+            [
+                "Vitamin D-binding protein",
+                "Association",
+                "1.25(OH)2D3"
+            ],
+            [
+                "Vitamin D-binding protein gene",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "DBP polymorphism",
+                "Association",
+                "IA-2 autoantibodies"
+            ],
+            [
+                "DBP alleles",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "Asp/Glu genotype",
+                "Positive_Correlation",
+                "IA-2 antibodies"
+            ],
+            [
+                "Glu/Glu genotype",
+                "Positive_Correlation",
+                "IA-2 antibodies"
+            ],
+            [
+                "Vitamin D endocrine system",
+                "Association",
+                "autoimmune process of type 1 diabetes"
+            ],
+            [
+                "DBP gene",
+                "Association",
+                "GAD65 antibodies"
+            ]
+        ],
+        "oie": [
+            [
+                "Vitamin D-binding",
+                "Association",
+                "OH"
+            ],
+            [
+                "Vitamin D-binding protein gene",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "polymorphism",
+                "Association",
+                "IA-2"
+            ],
+            [
+                "alleles",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "Asp/Glu genotype",
+                "Positive_Correlation",
+                "IA-2"
+            ],
+            [
+                "Glu/Glu genotype",
+                "Positive_Correlation",
+                "IA-2"
+            ],
+            [
+                "gene",
+                "Association",
+                "antibodies"
+            ],
+            [
+                "Vitamin D-binding",
+                "Association",
+                "OH"
+            ],
+            [
+                "Vitamin D-binding protein gene",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "polymorphism",
+                "Association",
+                "IA-2"
+            ],
+            [
+                "alleles",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "Asp/Glu genotype",
+                "Positive_Correlation",
+                "IA-2"
+            ],
+            [
+                "Glu/Glu genotype",
+                "Positive_Correlation",
+                "IA-2"
+            ],
+            [
+                "gene",
+                "Association",
+                "antibodies"
+            ]
+        ],
+        "schema_definition": {
+            "Association": "The subject entity is related to or has a connection with the object entity.",
+            "Positive_Correlation": "The subject entity is positively correlated with or has a direct relationship with the object entity.",
+            "_entries": [
+                {
+                    "subject": "Vitamin D-binding",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "OH",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "Vitamin D-binding protein gene",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "type 1 diabetes",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "polymorphism",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "IA-2",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "alleles",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "type 1 diabetes",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "Asp/Glu genotype",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject entity is positively correlated with or has a direct relationship with the object entity.",
+                    "object": "IA-2",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "Glu/Glu genotype",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject entity is positively correlated with or has a direct relationship with the object entity.",
+                    "object": "IA-2",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "gene",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "antibodies",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "Vitamin D-binding",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "OH",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "Vitamin D-binding protein gene",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "type 1 diabetes",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "polymorphism",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "IA-2",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "alleles",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "type 1 diabetes",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "Asp/Glu genotype",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject entity is positively correlated with or has a direct relationship with the object entity.",
+                    "object": "IA-2",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "Glu/Glu genotype",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject entity is positively correlated with or has a direct relationship with the object entity.",
+                    "object": "IA-2",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "gene",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "antibodies",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "dbp",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "alleles",
+                "Positive_Correlation",
+                "type 1 diabetes"
+            ],
+            [
+                "dbp",
+                "Association",
+                "type 1 diabetes"
+            ],
+            [
+                "alleles",
+                "Positive_Correlation",
+                "type 1 diabetes"
+            ]
+        ]
+    },
+    {
+        "index": 7,
+        "input_text": "A Type 2 Diabetes-Associated Functional Regulatory Variant in a Pancreatic Islet Enhancer at the ADCY5 Locus. Molecular mechanisms remain unknown for most type 2 diabetes genome-wide association study identified loci. Variants associated with type 2 diabetes and fasting glucose levels reside in introns of ADCY5, a gene that encodes adenylate cyclase 5. Adenylate cyclase 5 catalyzes the production of cyclic AMP, which is a second messenger molecule involved in cell signaling and pancreatic b-cell insulin secretion. We demonstrated that type 2 diabetes risk alleles are associated with decreased ADCY5 expression in human islets and examined candidate variants for regulatory function. rs11708067 overlaps a predicted enhancer region in pancreatic islets. The type 2 diabetes risk rs11708067-A allele showed fewer H3K27ac ChIP-seq reads in human islets, lower transcriptional activity in reporter assays in rodent b-cells (rat 832/13 and mouse MIN6), and increased nuclear protein binding compared with the rs11708067-G allele. Homozygous deletion of the orthologous enhancer region in 832/13 cells resulted in a 64% reduction in expression level of Adcy5, but not adjacent gene Sec22a, and a 39% reduction in insulin secretion. Together, these data suggest that rs11708067-A risk allele contributes to type 2 diabetes by disrupting an islet enhancer, which results in reduced ADCY5 expression and impaired insulin secretion.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "type 2 diabetes",
+                "Association",
+                "ADCY5"
+            ],
+            [
+                "type 2 diabetes",
+                "Association",
+                "rs11708067"
+            ],
+            [
+                "rs11708067-A",
+                "Positive_Correlation",
+                "type 2 diabetes"
+            ],
+            [
+                "ADCY5",
+                "Association",
+                "cyclic AMP"
+            ],
+            [
+                "cyclic AMP",
+                "Association",
+                "insulin secretion"
+            ],
+            [
+                "rs11708067-A",
+                "Negative_Correlation",
+                "ADCY5 expression"
+            ],
+            [
+                "rs11708067-A",
+                "Negative_Correlation",
+                "insulin secretion"
+            ]
+        ],
+        "oie": [
+            [
+                "T2DM",
+                "Association",
+                "ADCY5"
+            ],
+            [
+                "T2DM",
+                "Association",
+                "rs11708067"
+            ],
+            [
+                "rs11708067-A",
+                "Positive_Correlation",
+                "T2DM"
+            ],
+            [
+                "ADCY5",
+                "Association",
+                "cyclic AMP"
+            ],
+            [
+                "cyclic AMP",
+                "Association",
+                "insulin"
+            ],
+            [
+                "rs11708067-A",
+                "Negative_Correlation",
+                "insulin"
+            ]
+        ],
+        "schema_definition": {
+            "Association": "The subject chemical is associated with or linked to the object.",
+            "Positive_Correlation": "The subject genetic variant is positively correlated with or increases the risk of the object disease.",
+            "Negative_Correlation": "The subject genetic variant is negatively correlated with or decreases the levels or activity of the object.",
+            "_entries": [
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object.",
+                    "object": "ADCY5",
+                    "object_type": "GeneOrGeneProduct",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "GeneOrGeneProduct"
+                },
+                {
+                    "subject": "T2DM",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject disease or phenotype is associated with or linked to the object.",
+                    "object": "rs11708067",
+                    "object_type": "SequenceVariant",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "SequenceVariant"
+                },
+                {
+                    "subject": "rs11708067-A",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject genetic variant is positively correlated with or increases the risk of the object disease.",
+                    "object": "T2DM",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "ADCY5",
+                    "subject_type": "GeneOrGeneProduct",
+                    "relation": "Association",
+                    "relation_definition": "The subject gene or gene product is associated with or linked to the object.",
+                    "object": "cyclic AMP",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "GeneOrGeneProduct",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "cyclic AMP",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject chemical is associated with or linked to the object.",
+                    "object": "insulin",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "rs11708067-A",
+                    "subject_type": "SequenceVariant",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject genetic variant is negatively correlated with or decreases the levels or activity of the object.",
+                    "object": "insulin",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "SequenceVariant",
+                    "object_type_canon": "ChemicalEntity"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "type 2 diabetes",
+                "Negative_Correlation",
+                "adcy5"
+            ],
+            [
+                "type 2 diabetes",
+                "Positive_Correlation",
+                "rs11708067"
+            ],
+            [
+                "type 2 diabetes",
+                "Positive_Correlation",
+                "rs11708067"
+            ],
+            [
+                "cyclic amp",
+                "Association",
+                "insulin"
+            ],
+            [
+                "rs11708067",
+                "Negative_Correlation",
+                "insulin"
+            ]
+        ]
+    },
+    {
+        "index": 8,
+        "input_text": "Cardiac Angiography in Renally Impaired Patients (CARE) study: a randomized double-blind trial of contrast-induced nephropathy in patients with chronic kidney disease. BACKGROUND: No direct comparisons exist of the renal tolerability of the low-osmolality contrast medium iopamidol with that of the iso-osmolality contrast medium iodixanol in high-risk patients. METHODS AND RESULTS: The present study is a multicenter, randomized, double-blind comparison of iopamidol and iodixanol in patients with chronic kidney disease (estimated glomerular filtration rate, 20 to 59 mL/min) who underwent cardiac angiography or percutaneous coronary interventions. Serum creatinine (SCr) levels and estimated glomerular filtration rate were assessed at baseline and 2 to 5 days after receiving medications. The primary outcome was a postdose SCr increase > or = 0.5 mg/dL (44.2 micromol/L) over baseline. Secondary outcomes were a postdose SCr increase > or = 25%, a postdose estimated glomerular filtration rate decrease of > or = 25%, and the mean peak change in SCr. In 414 patients, contrast volume, presence of diabetes mellitus, use of N-acetylcysteine, mean baseline SCr, and estimated glomerular filtration rate were comparable in the 2 groups. SCr increases > or = 0.5 mg/dL occurred in 4.4% (9 of 204 patients) after iopamidol and 6.7% (14 of 210 patients) after iodixanol (P=0.39), whereas rates of SCr increases > or = 25% were 9.8% and 12.4%, respectively (P=0.44). In patients with diabetes, SCr increases > or = 0.5 mg/dL were 5.1% (4 of 78 patients) with iopamidol and 13.0% (12 of 92 patients) with iodixanol (P=0.11), whereas SCr increases > or = 25% were 10.3% and 15.2%, respectively (P=0.37). Mean post-SCr increases were significantly less with iopamidol (all patients: 0.07 versus 0.12 mg/dL, 6.2 versus 10.6 micromol/L, P=0.03; patients with diabetes: 0.07 versus 0.16 mg/dL, 6.2 versus 14.1 micromol/L, P=0.01). CONCLUSIONS: The rate of contrast-induced nephropathy, defined by multiple end points, is not statistically different after the intraarterial administration of iopamidol or iodixanol to high-risk patients, with or without diabetes mellitus. Any true difference between the agents is small and not likely to be clinically significant.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "iopamidol",
+                "Association",
+                "chronic kidney disease"
+            ],
+            [
+                "iodixanol",
+                "Association",
+                "chronic kidney disease"
+            ],
+            [
+                "iopamidol",
+                "Negative_Correlation",
+                "serum creatinine"
+            ],
+            [
+                "iodixanol",
+                "Negative_Correlation",
+                "serum creatinine"
+            ],
+            [
+                "diabetes mellitus",
+                "Association",
+                "chronic kidney disease"
+            ],
+            [
+                "N-acetylcysteine",
+                "Association",
+                "chronic kidney disease"
+            ],
+            [
+                "iopamidol",
+                "Comparison",
+                "iodixanol"
+            ],
+            [
+                "iopamidol",
+                "Positive_Correlation",
+                "contrast-induced nephropathy"
+            ],
+            [
+                "iodixanol",
+                "Positive_Correlation",
+                "contrast-induced nephropathy"
+            ],
+            [
+                "diabetes mellitus",
+                "Positive_Correlation",
+                "contrast-induced nephropathy"
+            ],
+            [
+                "chronic kidney disease",
+                "Positive_Correlation",
+                "contrast-induced nephropathy"
+            ]
+        ],
+        "oie": [
+            [
+                "iopamidol",
+                "Association",
+                "kidney disease"
+            ],
+            [
+                "iodixanol",
+                "Association",
+                "kidney disease"
+            ],
+            [
+                "iopamidol",
+                "Negative_Correlation",
+                "creatinine"
+            ],
+            [
+                "iodixanol",
+                "Negative_Correlation",
+                "creatinine"
+            ],
+            [
+                "diabetes mellitus",
+                "Association",
+                "kidney disease"
+            ],
+            [
+                "N-acetylcysteine",
+                "Association",
+                "kidney disease"
+            ],
+            [
+                "iopamidol",
+                "Comparison",
+                "iodixanol"
+            ],
+            [
+                "iopamidol",
+                "Positive_Correlation",
+                "nephropathy"
+            ],
+            [
+                "iodixanol",
+                "Positive_Correlation",
+                "nephropathy"
+            ],
+            [
+                "diabetes mellitus",
+                "Positive_Correlation",
+                "nephropathy"
+            ],
+            [
+                "kidney disease",
+                "Positive_Correlation",
+                "nephropathy"
+            ]
+        ],
+        "schema_definition": {
+            "Association": "The subject entity is related to or has a connection with the object entity.",
+            "Negative_Correlation": "The subject entity is inversely related to or has a negative correlation with the object entity.",
+            "Comparison": "The subject entity is compared or contrasted with the object entity.",
+            "Positive_Correlation": "The subject entity is directly related to or has a positive correlation with the object entity.",
+            "_entries": [
+                {
+                    "subject": "iopamidol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "kidney disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "iodixanol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "kidney disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "iopamidol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject entity is inversely related to or has a negative correlation with the object entity.",
+                    "object": "creatinine",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "iodixanol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Negative_Correlation",
+                    "relation_definition": "The subject entity is inversely related to or has a negative correlation with the object entity.",
+                    "object": "creatinine",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "diabetes mellitus",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "kidney disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "N-acetylcysteine",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Association",
+                    "relation_definition": "The subject entity is related to or has a connection with the object entity.",
+                    "object": "kidney disease",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "iopamidol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Comparison",
+                    "relation_definition": "The subject entity is compared or contrasted with the object entity.",
+                    "object": "iodixanol",
+                    "object_type": "ChemicalEntity",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "ChemicalEntity"
+                },
+                {
+                    "subject": "iopamidol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject entity is directly related to or has a positive correlation with the object entity.",
+                    "object": "nephropathy",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "iodixanol",
+                    "subject_type": "ChemicalEntity",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject entity is directly related to or has a positive correlation with the object entity.",
+                    "object": "nephropathy",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "ChemicalEntity",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "diabetes mellitus",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject entity is directly related to or has a positive correlation with the object entity.",
+                    "object": "nephropathy",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                },
+                {
+                    "subject": "kidney disease",
+                    "subject_type": "DiseaseOrPhenotypicFeature",
+                    "relation": "Positive_Correlation",
+                    "relation_definition": "The subject entity is directly related to or has a positive correlation with the object entity.",
+                    "object": "nephropathy",
+                    "object_type": "DiseaseOrPhenotypicFeature",
+                    "subject_type_canon": "DiseaseOrPhenotypicFeature",
+                    "object_type_canon": "DiseaseOrPhenotypicFeature"
+                }
+            ]
+        },
+        "canonicalization_candidates": "[{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]",
+        "schema_canonicalizaiton": [
+            [
+                "diabetes mellitus",
+                "Positive_Correlation",
+                "kidney disease"
+            ],
+            [
+                "diabetes mellitus",
+                "Positive_Correlation",
+                "nephropathy"
+            ]
+        ]
+    }
+]

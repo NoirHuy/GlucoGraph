@@ -1,0 +1,21 @@
+
+======================================================================
+       EVALUATION RESULTS (RAW / UNNORMALIZED): DBpedia WebNLG (1_university)
+======================================================================
+Text2Bench Evaluation Metrics (Macro-Average across 71 docs):
+  Precision:              70.40%
+  Recall:                 51.98%
+  F1-Score:               57.96%
+  Ontology Conformance:   100.00%
+  Relation Hallucination: 0.00%
+======================================================================
+          BASELINE METRICS COMPARISON (1_university)
+======================================================================
+Alpaca-LoRA-13B baseline:
+  Precision: 29.0% | Recall: 16.0% | F1-Score: 20.0%
+  Rel Hallucination: 11.0%
+----------------------------------------------------------------------
+Vicuna-13B baseline:
+  Precision: 31.0% | Recall: 19.0% | F1-Score: 23.0%
+  Rel Hallucination: 8.0%
+======================================================================

@@ -1,0 +1,88 @@
+<benchmark>
+	<entries>
+		<entry>
+			<generatedtripleset>
+				<gtriple>lithium | Positive_Correlation | nephrogenic diabetes insipidus</gtriple>
+				<gtriple>protein kinase c alpha | Association | nephrogenic diabetes insipidus</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>type 2 diabetes | Association | slc30a8</gtriple>
+				<gtriple>type 2 diabetes | Association | hhex</gtriple>
+				<gtriple>type 2 diabetes | Association | cdkn2a/b</gtriple>
+				<gtriple>type 2 diabetes | Association | cdkal1</gtriple>
+				<gtriple>type 2 diabetes | Association | kcnq1</gtriple>
+				<gtriple>rs13266634 | Positive_Correlation | type 2 diabetes</gtriple>
+				<gtriple>rs1111875 | Positive_Correlation | type 2 diabetes</gtriple>
+				<gtriple>rs10811661 | Positive_Correlation | type 2 diabetes</gtriple>
+				<gtriple>rs2237892 | Positive_Correlation | type 2 diabetes</gtriple>
+				<gtriple>rs7754840 | Positive_Correlation | type 2 diabetes</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>tnf-alpha | Positive_Correlation | gestational diabetes</gtriple>
+				<gtriple>il-6 | Association | gestational diabetes</gtriple>
+				<gtriple>crp | Association | gestational diabetes</gtriple>
+				<gtriple>il-8 | Association | gestational diabetes</gtriple>
+				<gtriple>il-10 | Association | gestational diabetes</gtriple>
+				<gtriple>nf-kappab | Association | gestational diabetes</gtriple>
+				<gtriple>tnf-alpha | Association | gestational diabetes</gtriple>
+				<gtriple>gestational diabetes | Association | il-1b</gtriple>
+				<gtriple>gestational diabetes | Association | inflammation</gtriple>
+				<gtriple>gestational diabetes | Association | disordered lipid metabolism</gtriple>
+				<gtriple>gestational diabetes | Association | disordered glucose metabolism</gtriple>
+				<gtriple>fbg | Association | gestational diabetes</gtriple>
+				<gtriple>fins | Association | gestational diabetes</gtriple>
+				<gtriple>homa-ir | Association | gestational diabetes</gtriple>
+				<gtriple>homa-beta | Association | gestational diabetes</gtriple>
+				<gtriple>gestational diabetes | Association | irs-1</gtriple>
+				<gtriple>gestational diabetes | Association | irs-2</gtriple>
+				<gtriple>gestational diabetes | Association | leptin</gtriple>
+				<gtriple>adiponectin | Association | gestational diabetes</gtriple>
+				<gtriple>gestational diabetes | Association | visfatin</gtriple>
+				<gtriple>gestational diabetes | Association | rbp-4</gtriple>
+				<gtriple>gestational diabetes | Association | chemerin</gtriple>
+				<gtriple>gestational diabetes | Association | nesfatin-1</gtriple>
+				<gtriple>gestational diabetes | Association | fatp-4</gtriple>
+				<gtriple>gestational diabetes | Association | lpl</gtriple>
+				<gtriple>gestational diabetes | Association | fabp-1</gtriple>
+				<gtriple>gestational diabetes | Association | fabp-3</gtriple>
+				<gtriple>gestational diabetes | Association | fabp-4</gtriple>
+				<gtriple>gestational diabetes | Association | fabp-5</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset />
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>diabetes | Association | peripheral arterial disease</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>dbp | Association | type 1 diabetes</gtriple>
+				<gtriple>alleles | Positive_Correlation | type 1 diabetes</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>type 2 diabetes | Negative_Correlation | adcy5</gtriple>
+				<gtriple>type 2 diabetes | Positive_Correlation | rs11708067</gtriple>
+				<gtriple>cyclic amp | Association | insulin</gtriple>
+				<gtriple>rs11708067 | Negative_Correlation | insulin</gtriple>
+			</generatedtripleset>
+		</entry>
+		<entry>
+			<generatedtripleset>
+				<gtriple>diabetes mellitus | Positive_Correlation | kidney disease</gtriple>
+				<gtriple>diabetes mellitus | Positive_Correlation | nephropathy</gtriple>
+			</generatedtripleset>
+		</entry>
+	</entries>
+</benchmark>

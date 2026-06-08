@@ -1,0 +1,88 @@
+<benchmark>
+	<entries>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>lithium | Positive_Correlation | nephrogenic diabetes insipidus</mtriple>
+				<mtriple>protein kinase c alpha | Positive_Correlation | nephrogenic diabetes insipidus</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset />
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>rs13266634 | Positive_Correlation | type 2 diabetes</mtriple>
+				<mtriple>rs2237892 | Positive_Correlation | type 2 diabetes</mtriple>
+				<mtriple>rs10811661 | Positive_Correlation | type 2 diabetes</mtriple>
+				<mtriple>rs1111875 | Positive_Correlation | type 2 diabetes</mtriple>
+				<mtriple>type 2 diabetes | Association | SLC30A8</mtriple>
+				<mtriple>type 2 diabetes | Association | KCNQ1</mtriple>
+				<mtriple>type 2 diabetes | Association | CDKAL1</mtriple>
+				<mtriple>type 2 diabetes | Association | CDKN2A/B</mtriple>
+				<mtriple>type 2 diabetes | Association | HHEX</mtriple>
+				<mtriple>rs7754840 | Positive_Correlation | type 2 diabetes</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>NF-kappaB | Association | gestational diabetes</mtriple>
+				<mtriple>IL-10 | Association | disordered lipid and glucose metabolisms</mtriple>
+				<mtriple>IL-10 | Association | gestational diabetes</mtriple>
+				<mtriple>IL-8 | Association | disordered lipid and glucose metabolisms</mtriple>
+				<mtriple>IL-8 | Association | gestational diabetes</mtriple>
+				<mtriple>IL-6 | Association | disordered lipid and glucose metabolisms</mtriple>
+				<mtriple>IL-6 | Association | gestational diabetes</mtriple>
+				<mtriple>CRP | Association | disordered lipid and glucose metabolisms</mtriple>
+				<mtriple>CRP | Association | gestational diabetes</mtriple>
+				<mtriple>-857C/T | Association | disordered lipid and glucose metabolisms</mtriple>
+				<mtriple>-857C/T | Positive_Correlation | gestational diabetes</mtriple>
+				<mtriple>TNF-alpha | Association | disordered lipid and glucose metabolisms</mtriple>
+				<mtriple>TNF-alpha | Association | gestational diabetes</mtriple>
+				<mtriple>gestational diabetes | Association | chemerin</mtriple>
+				<mtriple>gestational diabetes | Association | RBP-4</mtriple>
+				<mtriple>gestational diabetes | Association | visfatin</mtriple>
+				<mtriple>gestational diabetes | Association | adipokines</mtriple>
+				<mtriple>gestational diabetes | Association | leptin</mtriple>
+				<mtriple>gestational diabetes | Association | IRS-2</mtriple>
+				<mtriple>gestational diabetes | Association | IRS-1</mtriple>
+				<mtriple>gestational diabetes | Association | IL-1b</mtriple>
+				<mtriple>gestational diabetes | Association | FABP-5</mtriple>
+				<mtriple>gestational diabetes | Association | FABP-4</mtriple>
+				<mtriple>gestational diabetes | Association | FABP-3</mtriple>
+				<mtriple>gestational diabetes | Association | FABP-1</mtriple>
+				<mtriple>gestational diabetes | Association | LPL</mtriple>
+				<mtriple>gestational diabetes | Association | EL</mtriple>
+				<mtriple>gestational diabetes | Association | FATP-4</mtriple>
+				<mtriple>gestational diabetes | Association | nesfatin-1</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset />
+		</entry>
+		<entry>
+			<modifiedtripleset />
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>vitamin D | Association | type 1 diabetes</mtriple>
+				<mtriple>IA-2 | Association | diabetic</mtriple>
+				<mtriple>IA-2 | Association | type 1 diabetes</mtriple>
+				<mtriple>DBP | Association | type 1 diabetes</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>glucose | Association | ADCY5</mtriple>
+				<mtriple>rs11708067 | Positive_Correlation | impaired insulin secretion</mtriple>
+				<mtriple>cyclic AMP | Association | insulin</mtriple>
+				<mtriple>ADCY5 | Association | impaired insulin secretion</mtriple>
+				<mtriple>type 2 diabetes | Association | glucose</mtriple>
+				<mtriple>type 2 diabetes | Positive_Correlation | rs11708067</mtriple>
+				<mtriple>type 2 diabetes | Negative_Correlation | ADCY5</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset />
+		</entry>
+	</entries>
+</benchmark>

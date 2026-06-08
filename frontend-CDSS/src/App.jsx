@@ -46,8 +46,7 @@ function App() {
 
   // Initial load
   useEffect(() => {
-    // Automatically trigger initial analysis on load
-    handleAnalyze(patientDetails.robert.input, "robert");
+    // Keep text area initialized but do not auto-trigger analysis
   }, []);
 
   // Sync scroll for logs
@@ -79,7 +78,6 @@ function App() {
   const handlePatientChange = (key) => {
     setPatientId(key);
     setClinicalText(patientDetails[key].input);
-    handleAnalyze(patientDetails[key].input, key);
   };
 
   const handleAnalyze = async (text, pId = patientId) => {
@@ -93,15 +91,14 @@ function App() {
     setLogs([]);
 
     const logLines = [
-      `[10:30:00 INFO] Khởi chạy EDC Pipeline trên dòng văn bản nhập vào...`,
-      `[10:30:01 INFO] Giai đoạn 1: Trích xuất OIE (Open Information Extraction) sử dụng model xiaomi/mimo-v2.5-pro...`,
-      `[10:30:01 INFO] Phân tách thành công các bộ ba (Subject, Relation, Object) từ câu văn.`,
-      `[10:30:02 INFO] Giai đoạn 2: Định nghĩa Schema (SD) thực thể sử dụng model meta-llama/Llama-3.1-8B-Instruct...`,
-      `[10:30:02 INFO] Tải cấu hình max_tokens = 2048 thành công. Mảng thực thể y khoa an toàn không bị cắt cụt.`,
-      `[10:30:03 INFO] Giai đoạn 3: Chuẩn hóa Schema (SC) qua mô hình trắc nghiệm verifier...`,
-      `[10:30:03 INFO] Thực hiện truy vấn thực thể chuẩn chéo từ CSDL Đồ thị Neo4j...`,
-      `[10:30:04 WARNING] CẢNH BÁO AN TOÀN: Kiểm tra ngắt mạch chống chỉ định thuốc điều trị...`,
-      `[10:30:04 SUCCESS] Hoàn thành phân tích Decision Support & Cập nhật đồ thị tri thức!`
+      `[CDSS Engine] Khởi chạy hệ hỗ trợ ra quyết định lâm sàng CDSS...`,
+      `[Stage 1] Truy xuất toàn bộ thực thể từ CSDL Đồ thị Neo4j...`,
+      `[Stage 1] Khởi chạy trích xuất và đối chiếu hai giai đoạn (Two-Stage Entity Linking)...`,
+      `[Stage 2] Đang duyệt đồ thị BFS đa bước (Multi-hop Graph Traversal)...`,
+      `[Stage 3] Đang tính điểm ưu tiên quan hệ và cắt tỉa tối ưu 40 bộ ba...`,
+      `[Stage 4] Kích hoạt ngắt mạch an toàn lâm sàng (Clinical Circuit Breaker)...`,
+      `[Stage 4] Đang gọi LLM lập luận lâm sàng có căn cứ đồ thị...`,
+      `[CDSS Engine] Hoàn tất chẩn đoán hỗ trợ quyết định y khoa!`
     ];
 
     // Print logs progressively
@@ -190,7 +187,7 @@ function App() {
 
   // Canvas drawing for interactive graph explorer
   const drawInteractiveGraph = () => {
-    canvas = canvasRef.current;
+    const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
 
@@ -275,8 +272,9 @@ function App() {
     // Handle Click
     canvas.onclick = (e) => {
       const rect = canvas.getBoundingClientRect();
-      const mouseX = e.clientX - rect.left;
-      const mouseY = e.clientY - rect.top;
+      // Account for CSS scaling of the canvas
+      const mouseX = (e.clientX - rect.left) * (canvas.width / rect.width);
+      const mouseY = (e.clientY - rect.top) * (canvas.height / rect.height);
 
       let clickedNode = null;
       graphNodes.forEach(node => {
@@ -287,8 +285,6 @@ function App() {
       });
 
       if (clickedNode) {
-        setSelectedNode(clickedNode);
-        
         // Find linked nodes
         const linkedTriples = graphLinks.filter(l => l.source === clickedNode.id || l.target === clickedNode.id).map(link => {
           const s = graphNodes.find(n => n.id === link.source);
@@ -297,6 +293,7 @@ function App() {
         });
         
         clickedNode.triples = linkedTriples;
+        setSelectedNode(clickedNode);
       }
     };
   };
@@ -311,7 +308,7 @@ function App() {
         <button onClick={() => setMobileSidebar(true)} className="p-sm text-primary dark:text-inverse-primary">
           <span className="material-symbols-outlined text-3xl">menu</span>
         </button>
-        <h1 class="font-extrabold text-lg text-primary dark:text-emerald-400">GlucoLogic AI</h1>
+        <h1 className="font-extrabold text-lg text-primary dark:text-emerald-400">GlucoLogic AI</h1>
         <div className="w-8"></div>
       </div>
 
@@ -407,7 +404,7 @@ function App() {
               <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
                 <div className="flex justify-between items-center mb-md">
                   <h2 className="font-semibold text-lg text-on-surface dark:text-white flex items-center">
-                    <span class="material-symbols-outlined mr-sm text-primary dark:text-emerald-400">edit_document</span>
+                    <span className="material-symbols-outlined mr-sm text-primary dark:text-emerald-400">edit_document</span>
                     Nhập tình huống lâm sàng CDSS
                   </h2>
                   <div className="flex items-center gap-xs">
@@ -468,73 +465,187 @@ function App() {
                     </div>
                   )}
 
+                  {/* Matched Entities from Neo4j */}
+                  {result.matched_entities && result.matched_entities.length > 0 && (
+                    <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl px-lg py-md flex flex-wrap items-center gap-2">
+                      <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mr-1 flex items-center gap-1">
+                        <span className="material-symbols-outlined text-sm text-emerald-500">hub</span>
+                        Thực thể Neo4j đã khớp:
+                      </span>
+                      {result.matched_entities.map((entity, eIdx) => (
+                        <span key={eIdx} className="inline-flex items-center gap-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-full">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
+                          {entity}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
                   <div className="grid grid-cols-1 xl:grid-cols-12 gap-gutter">
                     
                     {/* Diagnostic Table & Graph View */}
                     <div className="xl:col-span-8 space-y-gutter">
                       
-                      {/* Differential Diagnosis Table */}
+                      {/* Differential Diagnosis — Prose Cards */}
                       {result.differential_diagnosis && (
                         <div className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
                           <h3 className="font-semibold text-lg text-on-surface dark:text-white mb-md flex items-center">
                             <span className="material-symbols-outlined mr-sm text-emerald-500">compare</span>
                             Chẩn đoán phân biệt
                           </h3>
-                          <div className="overflow-x-auto rounded-lg border border-gray-100 dark:border-slate-700">
-                            <table className="w-full text-left font-body-md border-collapse">
-                              <thead>
-                                <tr className="bg-slate-100 dark:bg-slate-700 border-b border-gray-200 dark:border-slate-600 text-slate-700 dark:text-slate-200">
-                                  <th className="p-3 font-semibold w-1/3">Đặc điểm</th>
-                                  <th className="p-3 font-semibold w-1/3 border-l border-gray-200 dark:border-slate-600">{result.differential_diagnosis.condition_a}</th>
-                                  <th className="p-3 font-semibold w-1/3 border-l border-gray-200 dark:border-slate-600 bg-primary/5 dark:bg-emerald-950/20">{result.differential_diagnosis.condition_b} <span class="material-symbols-outlined text-xs align-middle text-primary" style={{fontVariationSettings: "'FILL' 1"}}>check_circle</span></th>
-                                </tr>
-                              </thead>
-                              <tbody className="divide-y divide-gray-100 dark:divide-slate-700 text-slate-600 dark:text-slate-300">
-                                {result.differential_diagnosis.features.map((feature, fIdx) => (
-                                  <tr key={fIdx} className="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
-                                    <td className="p-3 font-semibold text-slate-800 dark:text-white">{feature.characteristic}</td>
-                                    <td className="p-3 border-l border-gray-100 dark:border-slate-700">
-                                      {feature.val_a}
-                                      {feature.relation_a && <span className="inline-block bg-slate-200 dark:bg-slate-700 px-1 py-0.5 rounded text-[9px] text-gray-500 ml-1 font-mono">{feature.relation_a}</span>}
-                                    </td>
-                                    <td className="p-3 border-l border-gray-100 dark:border-slate-700 bg-primary/5 dark:bg-emerald-950/20">
-                                      {feature.val_b}
-                                      {feature.relation_b && <span className="inline-block bg-slate-200 dark:bg-slate-700 px-1 py-0.5 rounded text-[9px] text-gray-500 ml-1 font-mono">{feature.relation_b}</span>}
-                                    </td>
-                                  </tr>
-                                ))}
-                              </tbody>
-                            </table>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
+                            {/* Card A */}
+                            <div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 p-md flex flex-col gap-sm">
+                              <div className="flex items-center gap-2">
+                                <span className="w-3 h-3 rounded-full bg-rose-400 flex-shrink-0"></span>
+                                <span className="font-bold text-slate-800 dark:text-white text-sm">{result.differential_diagnosis.condition_a}</span>
+                              </div>
+                              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                {result.differential_diagnosis.prose_a ||
+                                  (result.differential_diagnosis.features && result.differential_diagnosis.features.map(f => f.val_a).join('. '))}
+                              </p>
+                            </div>
+                            {/* Card B */}
+                            <div className="rounded-xl border-2 border-emerald-300 dark:border-emerald-700 bg-emerald-50/50 dark:bg-emerald-950/20 p-md flex flex-col gap-sm">
+                              <div className="flex items-center gap-2">
+                                <span className="w-3 h-3 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                                <span className="font-bold text-emerald-800 dark:text-emerald-300 text-sm">
+                                  {result.differential_diagnosis.condition_b}
+                                  <span className="material-symbols-outlined text-xs align-middle ml-1 text-emerald-500" style={{fontVariationSettings: "'FILL' 1"}}>check_circle</span>
+                                </span>
+                              </div>
+                              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                {result.differential_diagnosis.prose_b ||
+                                  (result.differential_diagnosis.features && result.differential_diagnosis.features.map(f => f.val_b).join('. '))}
+                              </p>
+                            </div>
                           </div>
+                          {/* Distinguishing Factor */}
+                          {result.differential_diagnosis.distinguishing_factor && (
+                            <div className="mt-md flex items-start gap-2 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg px-md py-sm">
+                              <span className="material-symbols-outlined text-amber-500 text-lg flex-shrink-0 mt-0.5">lightbulb</span>
+                              <p className="text-sm text-amber-800 dark:text-amber-200 font-medium leading-relaxed">
+                                <span className="font-bold">Yếu tố phân biệt:</span> {result.differential_diagnosis.distinguishing_factor}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       )}
 
-                      {/* Reasoning Path (SVG / Nodes) */}
+                      {/* Reasoning Path — Linear Chain + Evidence Triples Grid */}
                       {result.graph_path && (
                         <div className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
                           <h3 className="font-semibold text-lg text-on-surface dark:text-white mb-md flex items-center">
                             <span className="material-symbols-outlined mr-sm text-primary dark:text-emerald-400">account_tree</span>
                             Luồng tư duy AI (GraphRAG Path)
                           </h3>
-                          <div className="relative bg-slate-50 dark:bg-slate-900 p-lg rounded-xl border border-gray-100 dark:border-slate-800 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 overflow-x-auto min-h-[140px]">
-                            {result.graph_path.map((node, nIdx) => (
-                              node.edge ? (
-                                <div key={nIdx} className="flex flex-col items-center">
-                                  <span className="text-[10px] px-2 py-0.5 text-slate-600 dark:text-emerald-300 bg-white dark:bg-slate-950 rounded-full border border-slate-200 dark:border-slate-800 font-mono font-bold">{node.edge}</span>
+
+                          {/* Linear reasoning chain */}
+                          <div className="relative bg-slate-50 dark:bg-slate-900 p-md rounded-xl border border-gray-100 dark:border-slate-800 flex flex-row items-center flex-wrap justify-center gap-2 overflow-x-auto min-h-[80px] mb-md">
+                            {result.graph_path.map((node, nIdx) => {
+                              const nodeTypeColors = {
+                                'Disease':  'border-rose-400 bg-rose-50 dark:bg-rose-950/30',
+                                'Drug':     'border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30',
+                                'Symptom':  'border-amber-400 bg-amber-50 dark:bg-amber-950/30',
+                                'Finding':  'border-amber-400 bg-amber-50 dark:bg-amber-950/30',
+                                'Anatomy':  'border-purple-400 bg-purple-50 dark:bg-purple-950/30',
+                                'BodyPart': 'border-purple-400 bg-purple-50 dark:bg-purple-950/30',
+                                'Concept':  'border-slate-400 bg-slate-50 dark:bg-slate-800',
+                              };
+                              const nodeTypeDot = {
+                                'Disease':  'bg-rose-500', 'Drug': 'bg-emerald-500',
+                                'Symptom':  'bg-amber-500', 'Finding': 'bg-amber-500',
+                                'Anatomy':  'bg-purple-500', 'BodyPart': 'bg-purple-500',
+                                'Concept':  'bg-slate-400',
+                              };
+                              const hopLabel = node.hop === 0 ? 'Seed' : node.hop === 1 ? 'Hop 1' : node.hop === 2 ? 'Hop 2' : null;
+                              const colorClass = nodeTypeColors[node.node_type] || 'border-blue-400 bg-blue-50 dark:bg-blue-950/30';
+                              const dotClass = nodeTypeDot[node.node_type] || 'bg-blue-500';
+                              return node.edge ? (
+                                <div key={nIdx} className="flex flex-col items-center flex-shrink-0">
+                                  <span className="text-[9px] px-2 py-0.5 text-slate-600 dark:text-emerald-300 bg-white dark:bg-slate-950 rounded-full border border-slate-200 dark:border-slate-800 font-mono font-bold whitespace-nowrap flex items-center gap-1">
+                                    {node.edge}
+                                    {node.confidence !== undefined && (
+                                      <span className={`text-[8px] font-extrabold px-1 rounded-full ${node.confidence >= 90 ? 'text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50' : node.confidence >= 70 ? 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/50' : 'text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50'}`}>
+                                        {node.confidence.toFixed(0)}%
+                                      </span>
+                                    )}
+                                  </span>
                                   <div className="flex items-center mt-1">
-                                    <div className="h-[2px] w-12 bg-blue-300 dark:bg-slate-700"></div>
+                                    <div className="h-[2px] w-8 bg-blue-300 dark:bg-slate-600"></div>
                                     <span className="material-symbols-outlined text-sm -ml-2 text-blue-400 dark:text-slate-500">arrow_forward</span>
                                   </div>
                                 </div>
                               ) : (
-                                <div key={nIdx} className="border border-primary bg-white dark:bg-slate-800 px-md py-sm rounded-xl flex items-center shadow-sm whitespace-nowrap gap-2">
-                                  <span className="w-2.5 h-2.5 rounded-full bg-primary relative animate-ping"></span>
-                                  <span className="text-primary dark:text-emerald-400 font-semibold text-sm">{node.title}</span>
+                                <div key={nIdx} className={`border-2 ${colorClass} px-3 py-1.5 rounded-xl flex flex-col items-start shadow-sm flex-shrink-0 max-w-[160px]`}>
+                                  <div className="flex items-center gap-1.5">
+                                    <span className={`w-2 h-2 rounded-full ${dotClass} flex-shrink-0`}></span>
+                                    <span className="font-semibold text-xs text-slate-800 dark:text-white leading-tight">{node.title}</span>
+                                  </div>
+                                  <div className="flex gap-1 flex-wrap mt-1">
+                                    {node.node_type && <span className="text-[8px] font-bold uppercase bg-white/70 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 px-1 py-0.5 rounded">{node.node_type}</span>}
+                                    {hopLabel && <span className="text-[8px] font-bold uppercase bg-blue-100 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 px-1 py-0.5 rounded">{hopLabel}</span>}
+                                  </div>
                                 </div>
-                              )
-                            ))}
+                              );
+                            })}
                           </div>
-                          <p class="text-xs text-gray-500 dark:text-gray-400 mt-sm px-xs">* Các nút thể hiện thực thể lâm sàng trích xuất thành công và kết nối qua quan hệ chuẩn Neo4j.</p>
+
+                          {/* Evidence Triples Grid */}
+                          {result.evidence_triples && result.evidence_triples.length > 0 && (() => {
+                            const diagTriples = result.evidence_triples.filter(t => t.group === 'diagnosis');
+                            const treatTriples = result.evidence_triples.filter(t => t.group === 'treatment');
+                            const nodeTypeDot = {
+                              'Disease': 'bg-rose-400', 'Drug': 'bg-emerald-400',
+                              'Symptom': 'bg-amber-400', 'Finding': 'bg-amber-400',
+                              'Anatomy': 'bg-purple-400', 'Concept': 'bg-slate-400',
+                            };
+                            const TripleRow = ({ t, idx }) => (
+                              <div key={idx} className="flex flex-wrap items-center justify-between bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-lg px-2.5 py-1.5 text-xs font-mono shadow-sm w-full gap-2">
+                                <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
+                                  <span className={`w-2 h-2 rounded-full flex-shrink-0 ${nodeTypeDot[t.subject_type] || 'bg-slate-400'}`}></span>
+                                  <span className="text-slate-700 dark:text-slate-200 font-medium" title={t.subject}>{t.subject}</span>
+                                  <span className="text-blue-500 dark:text-blue-400 font-bold whitespace-nowrap shrink-0">→ {t.relation} →</span>
+                                  <span className={`w-2 h-2 rounded-full flex-shrink-0 ${nodeTypeDot[t.object_type] || 'bg-slate-400'}`}></span>
+                                  <span className="text-slate-700 dark:text-slate-200 font-medium" title={t.object}>{t.object}</span>
+                                </div>
+                                {t.confidence !== undefined && (
+                                  <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-0.5 shrink-0 ${t.confidence >= 90 ? 'bg-emerald-100 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/50' : t.confidence >= 70 ? 'bg-amber-100 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800/50' : 'bg-rose-100 dark:bg-rose-950/50 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800/50'}`} title="Độ tin cậy y văn (FCS) từ Multi-Agent Debate">
+                                    <span className="material-symbols-outlined text-[10px] shrink-0">shield</span>
+                                    {t.confidence.toFixed(1) === '100.0' ? '100' : t.confidence.toFixed(1)}%
+                                  </span>
+                                )}
+                              </div>
+                            );
+                            return (
+                              <div className="grid grid-cols-1 lg:grid-cols-2 gap-md">
+                                {diagTriples.length > 0 && (
+                                  <div>
+                                    <div className="flex items-center gap-1.5 mb-sm">
+                                      <span className="material-symbols-outlined text-sm text-rose-500">biotech</span>
+                                      <span className="text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">Bộ ba chẩn đoán</span>
+                                    </div>
+                                    <div className="space-y-1.5">
+                                      {diagTriples.map((t, idx) => <TripleRow key={idx} t={t} idx={idx} />)}
+                                    </div>
+                                  </div>
+                                )}
+                                {treatTriples.length > 0 && (
+                                  <div>
+                                    <div className="flex items-center gap-1.5 mb-sm">
+                                      <span className="material-symbols-outlined text-sm text-emerald-500">medication</span>
+                                      <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Bộ ba điều trị</span>
+                                    </div>
+                                    <div className="space-y-1.5">
+                                      {treatTriples.map((t, idx) => <TripleRow key={idx} t={t} idx={idx} />)}
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })()}
+
+                          <p className="text-xs text-gray-500 dark:text-gray-400 mt-md px-xs">* Các bộ ba trích xuất trực tiếp từ Neo4j Knowledge Graph — tất cả quan hệ đều có bằng chứng trong đồ thị.</p>
                         </div>
                       )}
 
@@ -545,7 +656,7 @@ function App() {
                       <div className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm h-full flex flex-col justify-between">
                         <div>
                           <h3 className="font-semibold text-lg text-on-surface dark:text-white mb-lg flex items-center border-b border-gray-100 dark:border-slate-700 pb-sm">
-                            <span class="material-symbols-outlined mr-sm text-primary dark:text-emerald-400">medication</span>
+                            <span className="material-symbols-outlined mr-sm text-primary dark:text-emerald-400">medication</span>
                             Khuyến nghị điều trị
                           </h3>
                           <div className="space-y-md">
@@ -582,50 +693,50 @@ function App() {
               <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
                 <div className="flex justify-between items-center mb-md border-b border-gray-100 dark:border-slate-700 pb-sm">
                   <div>
-                    <h2 class="font-semibold text-xl text-primary dark:text-emerald-400 flex items-center gap-2">
-                      <span class="material-symbols-outlined">hub</span>
+                    <h2 className="font-semibold text-xl text-primary dark:text-emerald-400 flex items-center gap-2">
+                      <span className="material-symbols-outlined">hub</span>
                       Interactive Medical Knowledge Graph Explorer
                     </h2>
-                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Click vào các nút thực thể lâm sàng để hiển thị quan hệ chuẩn từ Neo4j</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Click vào các nút thực thể lâm sàng để hiển thị quan hệ chuẩn từ Neo4j</p>
                   </div>
-                  <div class="flex items-center gap-2">
-                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-400">12 Quan hệ Chuẩn</span>
-                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-teal-100 dark:bg-teal-950 text-teal-800 dark:text-teal-400">32 Thực thể</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-400">12 Quan hệ Chuẩn</span>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded bg-teal-100 dark:bg-teal-950 text-teal-800 dark:text-teal-400">32 Thực thể</span>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-md">
                   <div className="lg:col-span-8 bg-slate-950 rounded-xl border border-slate-800 h-[500px] relative overflow-hidden shadow-inner">
-                    <canvas ref={canvasRef} width="700" height="500" class="absolute inset-0 w-full h-full cursor-pointer" />
+                    <canvas ref={canvasRef} width="700" height="500" className="absolute inset-0 w-full h-full cursor-pointer" />
                     
-                    <div class="absolute bottom-4 left-4 bg-slate-900/90 text-white border border-slate-800 p-sm rounded-lg text-xs space-y-1 glass-panel">
-                      <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span> Disease (Bệnh lý)</div>
-                      <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span> Drug (Dược phẩm)</div>
-                      <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span> Symptom (Triệu chứng)</div>
-                      <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-purple-500 inline-block"></span> Anatomy (Giải phẫu)</div>
+                    <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white border border-slate-800 p-sm rounded-lg text-xs space-y-1 glass-panel">
+                      <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-rose-500 inline-block"></span> Disease (Bệnh lý)</div>
+                      <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span> Drug (Dược phẩm)</div>
+                      <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-amber-500 inline-block"></span> Symptom (Triệu chứng)</div>
+                      <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-purple-500 inline-block"></span> Anatomy (Giải phẫu)</div>
                     </div>
                   </div>
 
                   <div className="lg:col-span-4 bg-slate-50 dark:bg-slate-900 border border-outline-variant dark:border-slate-800 rounded-xl p-md flex flex-col justify-between h-[500px]">
                     <div>
-                      <h3 class="font-bold text-md text-on-surface dark:text-white border-b border-gray-200 dark:border-slate-800 pb-xs mb-sm">Bộ đọc thực thể GraphRAG</h3>
+                      <h3 className="font-bold text-md text-on-surface dark:text-white border-b border-gray-200 dark:border-slate-800 pb-xs mb-sm">Bộ đọc thực thể GraphRAG</h3>
                       {selectedNode ? (
                         <div className="space-y-sm text-sm animate-fade-in">
                           <div>
-                            <span class="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-800">{selectedNode.type}</span>
-                            <h4 class="text-xl font-bold text-slate-800 dark:text-white mt-xs">{selectedNode.label}</h4>
+                            <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-800">{selectedNode.type}</span>
+                            <h4 className="text-xl font-bold text-slate-800 dark:text-white mt-xs">{selectedNode.label}</h4>
                           </div>
                           <div>
-                            <span class="text-xs text-gray-400 font-bold block uppercase">Định nghĩa lâm sàng</span>
-                            <p class="text-slate-600 dark:text-gray-300 text-xs mt-xs">{selectedNode.def}</p>
+                            <span className="text-xs text-gray-400 font-bold block uppercase">Định nghĩa lâm sàng</span>
+                            <p className="text-slate-600 dark:text-gray-300 text-xs mt-xs">{selectedNode.def}</p>
                           </div>
                           <div>
-                            <span class="text-xs text-gray-400 font-bold block uppercase">Bộ ba liên kết (Triples)</span>
-                            <div class="space-y-xs mt-xs">
+                            <span className="text-xs text-gray-400 font-bold block uppercase">Bộ ba liên kết (Triples)</span>
+                            <div className="space-y-xs mt-xs">
                               {selectedNode.triples && selectedNode.triples.map((t, idx) => (
-                                <div key={idx} class="p-1 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded font-mono text-[10px] flex justify-between">
+                                <div key={idx} className="p-1 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded font-mono text-[10px] flex justify-between">
                                   <span>{t.s}</span>
-                                  <span class="text-blue-500 font-bold">{t.rel}</span>
+                                  <span className="text-blue-500 font-bold">{t.rel}</span>
                                   <span>{t.t}</span>
                                 </div>
                               ))}
@@ -633,8 +744,8 @@ function App() {
                           </div>
                         </div>
                       ) : (
-                        <div class="text-center py-12 text-gray-400">
-                          <span class="material-symbols-outlined text-4xl block mb-2">touch_app</span>
+                        <div className="text-center py-12 text-gray-400">
+                          <span className="material-symbols-outlined text-4xl block mb-2">touch_app</span>
                           Click vào một thực thể trong đồ thị để truy vấn
                         </div>
                       )}
@@ -649,8 +760,8 @@ function App() {
           {activeTab === "medication" && (
             <div className="max-w-7xl mx-auto space-y-gutter animate-fade-in">
               <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
-                <h2 class="font-semibold text-xl text-primary dark:text-emerald-400 mb-lg border-b border-gray-100 dark:border-slate-700 pb-sm flex items-center gap-2">
-                  <span class="material-symbols-outlined">history</span>
+                <h2 className="font-semibold text-xl text-primary dark:text-emerald-400 mb-lg border-b border-gray-100 dark:border-slate-700 pb-sm flex items-center gap-2">
+                  <span className="material-symbols-outlined">history</span>
                   Lịch sử sử dụng thuốc & Đánh giá tuân thủ
                 </h2>
 
@@ -695,8 +806,8 @@ function App() {
           {activeTab === "labs" && (
             <div className="max-w-7xl mx-auto space-y-gutter animate-fade-in">
               <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
-                <h2 class="font-semibold text-xl text-primary dark:text-emerald-400 mb-lg border-b border-gray-100 dark:border-slate-700 pb-sm flex items-center gap-2">
-                  <span class="material-symbols-outlined">monitoring</span>
+                <h2 className="font-semibold text-xl text-primary dark:text-emerald-400 mb-lg border-b border-gray-100 dark:border-slate-700 pb-sm flex items-center gap-2">
+                  <span className="material-symbols-outlined">monitoring</span>
                   Các chỉ số Xét nghiệm lâm sàng chính
                 </h2>
 
@@ -752,17 +863,17 @@ function App() {
           {activeTab === "rules" && (
             <div className="max-w-7xl mx-auto space-y-gutter animate-fade-in">
               <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
-                <h2 class="font-semibold text-xl text-primary dark:text-emerald-400 mb-md border-b border-gray-100 dark:border-slate-700 pb-sm flex items-center gap-2">
-                  <span class="material-symbols-outlined">terminal</span>
+                <h2 className="font-semibold text-xl text-primary dark:text-emerald-400 mb-md border-b border-gray-100 dark:border-slate-700 pb-sm flex items-center gap-2">
+                  <span className="material-symbols-outlined">terminal</span>
                   Cơ sở suy luận CDSS Pipeline & Decision Logs
                 </h2>
 
                 <div className="space-y-md text-sm">
                   <div className="bg-slate-950 text-gray-300 p-lg rounded-xl font-mono space-y-sm overflow-x-auto">
-                    <p className="text-cyan-400"># PIPELINE PROFILE: EDC Core Extraction Mode</p>
-                    <p className="text-emerald-400">[OIE Phase] Model: xiaomi/mimo-v2.5-pro | MaxTokens: 4096 (Robust reasoning CoT)</p>
-                    <p className="text-emerald-400">[SD Phase] Model: meta-llama/Llama-3.1-8B-Instruct | MaxTokens: 2048 (Đã nâng để tránh truncation)</p>
-                    <p className="text-emerald-400">[SC Phase] Model: xiaomi/mimo-v2.5-pro | MaxTokens: 256 (Robust verifier)</p>
+                    <p className="text-cyan-400"># PIPELINE PROFILE: CDSS GraphRAG Engine</p>
+                    <p className="text-emerald-400">[Stage 1] Two-Stage Entity Matching | Model: Llama-3.1-8B-Instant + Python Filtering</p>
+                    <p className="text-emerald-400">[Stage 2 & 3] BFS Traversal & Pruning | Neo4j Cypher + Priority Router</p>
+                    <p className="text-emerald-400">[Stage 4] Grounded Inference | Model: Llama-3.3-70B-Versatile</p>
                     <hr className="border-slate-800 my-md" />
                     <p className="text-yellow-400"># CURRENT RUN SUITE DECISION LOGS:</p>
                     {result && result.logs && result.logs.map((log, idx) => (

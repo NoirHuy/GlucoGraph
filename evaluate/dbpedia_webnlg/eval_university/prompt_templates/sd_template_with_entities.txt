@@ -1,0 +1,30 @@
+You will be given a piece of text and a list of relational triples in the format [Subject, Relation, Object] extracted from that text.
+
+Your task: For each triple, assign a semantic Entity Type to the Subject and Object from the target list, and write a one-sentence definition for the Relation.
+
+Entity Types MUST be one of the following defined categories: {allowed_entity_types}.
+
+RULES:
+- Output ONLY a valid JSON array. Do not include markdown formatting, code fences, or any other text.
+- Each item in the array corresponds to exactly one triple from the input.
+- Keep relation definitions general enough to apply to other entity pairs, not just this example.
+
+Output JSON schema (array of objects):
+[
+  {{
+    "subject": "<subject entity string>",
+    "subject_type": "<Entity Type for subject>",
+    "relation": "<relation label string>",
+    "relation_definition": "<One-sentence definition of this relation>",
+    "object": "<object entity string>",
+    "object_type": "<Entity Type for object>"
+  }}
+]
+
+Here are some examples:
+{few_shot_examples}
+
+Now produce the JSON output for the following text and triples.
+Text: {text}
+Triples: {triples}
+Answer:

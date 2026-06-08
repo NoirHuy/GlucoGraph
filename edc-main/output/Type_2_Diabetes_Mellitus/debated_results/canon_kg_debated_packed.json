@@ -1,0 +1,2436 @@
+{
+  "nodes": [
+    {
+      "id": "Type 2 diabetes mellitus",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "Type 2 diabetes mellitus",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Type 2 diabetes",
+          "type 2 diabetes",
+          "type 2 diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "oral antihyperglycemic medications",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "oral antihyperglycemic medications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "non-insulin injectable medications",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "non-insulin injectable medications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "glucose levels",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "glucose levels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Insulin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0021641",
+        "umls_canonical": "Insulin",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "Hormon slinivky břišní tvořený v beta-buňkách Langerhansových ostrůvků. Peptid tvořený dvěma řetězci (A, B) spojenými C-peptidem. Je důležitý pro regulaci glykemie a pro metabolismus sacharidů, ovlivňuje však i metabolismus bílkovin a lipidů. Působí anabolicky, tlumí lipolýzu. Jeho vylučování stoupá po jídle jako odpověď na vzestup glukosy v krvi (jeho vylučování ovlivňují i některé další hormony a nervové vlivy, regulace souvisí s funkcí membránových přenašečů a iontových kanálů na beta-buňce, ovlivňuje jej např. kalemie), umožňuje její vstup do buněk a její další využití (zisk energie, uložení do zásoby). Na i. je závislý glukosový transportér GLUT4. V cílových tkáních (zejm. svalová a tuková tkáň, játra) působí přes specifický receptor, který má charakter tyrosinkinázy (v tom i v některých dalších vlastnostech se podobá růstovým faktorům, což mj. souvisí s vlivem hyperinzulinemie na proces aterogeneze). Při jeho absolutním nedostatku nebo nedostatečném účinku (inzulinové rezistenci) vzniká diabetes mellitus (typu 1, resp. 2). I. existuje i jako lék. V minulosti se používaly purifikované i. vepřové a hovězí, nověji se používá humánní i., vyrobený metodami genového inženýrství. I. k léčebnému použití se dělí podle rychlosti nástupu účinku a doby působení a liší se způsobem podání. Rizikem léčby i. je předávkování s hypoglykemií, zejm. u starších inzulinů existovalo riziko alergizace a vzniku protilátek. I. také zvyšuje vstup kalia do buněk a lze jej spolu s glukosou použít k léčbě hyperkalemie. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "insulin"
+        ]
+      }
+    },
+    {
+      "id": "Diabetes Mellitus",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011849",
+        "umls_canonical": "Diabetes Mellitus",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E08-E13",
+        "description": "Heterogenní skupina chronických metabolických chorob, jejichž základním projevem je hyperglykemie a porušená glukózová tolerance. Vzniká v důsledku nedostatku inzulinu, jeho nedostatečného účinku (někdy se mluví o relativním nedostatku) nebo kombinací obojího. (cit. Wikiskripta 2017 http://www.wikiskripta.eu/)",
+        "aliases": [
+          "diabetes",
+          "diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "Cardiovascular Diseases",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0007222",
+        "umls_canonical": "Cardiovascular Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Onemocnění kardiovaskulárního systému, včetně srdce, krevních cév a perikardia.",
+        "icd10_code": "NONE",
+        "aliases": [
+          "cardiovascular disease"
+        ]
+      }
+    },
+    {
+      "id": "metformin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0025598",
+        "umls_canonical": "metformin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "6809",
+        "description": "Hypoglykemikum ze skupiny biguanidů. Používá se k léčbě diabetes mellitus 2. typu. Metformin zlepšuje senzitivitu k inzulinu a snižuje absorpci glukózy ve střevech. Tím příznivě ovlivňuje kontrolu glykemie.",
+        "aliases": [
+          "Metformin"
+        ]
+      }
+    },
+    {
+      "id": "Pediatric Obesity",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C2362324",
+        "umls_canonical": "Pediatric Obesity",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Obezita dětí a mladistvých, jejichž BMI je vysoko nad doporučenou mezní hodnotou pro daný věk a pohlaví. Pro kojence do dvou let se obezita hodnotí na základě poměru hmotnosti k délce pomocí růstových (percentilových) grafů.",
+        "icd10_code": "NONE",
+        "aliases": [
+          "childhood obesity"
+        ]
+      }
+    },
+    {
+      "id": "environmental determinants",
+      "labels": [
+        "Risk Factor"
+      ],
+      "properties": {
+        "umls_canonical": "environmental determinants",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "genetic determinants",
+      "labels": [
+        "Risk Factor"
+      ],
+      "properties": {
+        "umls_canonical": "genetic determinants",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin resistance",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "insulin resistance",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "beta cell dysfunction",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "beta cell dysfunction",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "impaired insulin secretion",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "impaired insulin secretion",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Dyslipidemia",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "Dyslipidemia",
+        "dosage_value": ">250",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Prediabetes syndrome",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0362046",
+        "umls_canonical": "Prediabetes syndrome",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "R73.03",
+        "description": "Stav, kdy jedinec mívá zvýšenou hladinu glukosy, avšak ještě nesplňuje kritéria pro diagnózu diabetu. Pojem prediabetes zahrnuje dvě již delší dobu zavedené kategorie, a to (a) poruchu glukosové tolerance a (b) hraniční glukosu nalačno. Patofyziologickým podkladem prediabetu je inzulinová rezistence. Většina jedinců postižených prediabetem nemá žádné klinické příznaky, při pečlivě odebrané anamnéze však můžeme zjistit mírnou nebo občasnou polyurii (event. též polakisurii, která je pro pacienta nápadnější) s následným zvýšeným příjmem tekutin, může být i častější pocit hladu, (event. projevy postprandiální hypoglykemie) a občasné poruchy vidění (kolísání osmolarity tkáňového moku). Stav je velmi často spojen s obezitou či nadváhou, U většiny jedinců s p. se později vyvine diabetes typu 2 (DM2), čemuž však lze předejít preventivními opatřeními. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz/)",
+        "aliases": [
+          "prediabetes"
+        ]
+      }
+    },
+    {
+      "id": "elevated plasma glucose",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "elevated plasma glucose",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Oral Glucose Tolerance Test",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0029161",
+        "umls_canonical": "Oral Glucose Tolerance Test",
+        "umls_semantic_type": "Diagnostic Procedure (T060)",
+        "description": "UMLS Standard Term: Oral Glucose Tolerance Test",
+        "aliases": [
+          "oral glucose tolerance test",
+          "oral glucose tolerance testing"
+        ]
+      }
+    },
+    {
+      "id": "liraglutide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1456408",
+        "umls_canonical": "liraglutide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "475968",
+        "description": "Analogon glucagon-like peptidu s dlouhým účinkem. Používá se jako antidiabetikum k léčbě diabetu 2. typu. Je rezistentní k DPP4. Vede k uvolnění glukosy jen při dosažení vyšších glykemií. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C1562104",
+        "umls_canonical": "Glucagon-Like Peptide-1 Receptor Agonists",
+        "umls_semantic_type": "Pharmacologic Substance (T121), Hormone (T125)",
+        "description": "Sloučeniny, které stimulují aktivitu receptoru pro peptid podobný glukagonu-1. Agonisté receptoru pro peptid podobný glukagonu-1 se používají k léčbě diabetu 2. typu a obezity.",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "GLP-1 receptor agonist",
+          "GLP-1 receptor agonists"
+        ]
+      }
+    },
+    {
+      "id": "semaglutide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C3885068",
+        "umls_canonical": "semaglutide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Biologically Active Substance (T123)",
+        "rxnorm_id": "1991302",
+        "description": "Glukagonový peptid a agonista GLP-1 používaný ke zlepšení glykemické kontroly u diabetes mellitus 2. typu a k léčbě obezity.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "tirzepatide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C5139934",
+        "umls_canonical": "tirzepatide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121)",
+        "rxnorm_id": "2601723",
+        "description": "Agonista receptoru pro na glukóze závislý inzulinotropní polypeptid (GIP) a receptoru pro glukóze podobný peptid-1 (GLP-1), který je indikován jako doplněk diety se sníženým obsahem kalorií a zvýšenou fyzickou aktivitou pro chronickou regulaci hmotnosti u dospělých s určitým BMI.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "early diabetes",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "early diabetes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "mild hyperglycemia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "mild hyperglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Hyperglycemia",
+      "labels": [
+        "Disease",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0020456",
+        "umls_canonical": "Hyperglycemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "R73.9",
+        "description": "Abnormálně vysoká hladina glukózy v krvi.",
+        "aliases": [
+          "hyperglycemia"
+        ]
+      }
+    },
+    {
+      "id": "Polyphagia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "Polyphagia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Weight Loss",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C1262477",
+        "umls_canonical": "Weight Loss",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "Snížení tělesné hmotnosti během časového intervalu.",
+        "aliases": [
+          "weight loss"
+        ]
+      }
+    },
+    {
+      "id": "Nausea",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0027497",
+        "umls_canonical": "Nausea",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R11.0",
+        "description": "Nevolnost, pocit na zvracení. Objevuje se při mořské nemoci a jiných kinetózách, zažívacích obtížích různého původu, metabolických poruchách, na počátku těhotenství, při závrati aj. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)",
+        "aliases": [
+          "nausea"
+        ]
+      }
+    },
+    {
+      "id": "Vomiting",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0042963",
+        "umls_canonical": "Vomiting",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R11.1",
+        "description": "Reflexní vyprázdnění žaludečního obsahu. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)",
+        "aliases": [
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "id": "Blurred vision",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0344232",
+        "umls_canonical": "Blurred vision",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "Lack of sharpness of vision resulting in the inability to see fine detail. [https://orcid.org/0000-0002-0736-9199]",
+        "aliases": [
+          "blurred vision"
+        ]
+      }
+    },
+    {
+      "id": "Bacterial Infections",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0004623",
+        "umls_canonical": "Bacterial Infections",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "A49.9",
+        "description": "Infekce způsobené bakteriemi (obecné a nespecifikované infekce).",
+        "aliases": [
+          "bacterial infections"
+        ]
+      }
+    },
+    {
+      "id": "fungal infections",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "fungal infections",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Acanthosis Nigricans",
+      "labels": [
+        "Disease",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0000889",
+        "umls_canonical": "Acanthosis Nigricans",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "L83",
+        "description": "Kožní změny charakterizované zdrsněním a ztluštěním kůže, tmavou pigmentací a bradavičnatými výrůstky aj. Je buď projevem některých dědičných poruch, nebo průvodním jevem některých nádorů (paraneoplastický projev). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "aliases": [
+          "Acanthosis nigricans",
+          "acanthosis nigricans"
+        ]
+      }
+    },
+    {
+      "id": "axillae",
+      "labels": [
+        "Anatomical Site"
+      ],
+      "properties": {
+        "umls_canonical": "axillae",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "nape of the neck",
+      "labels": [
+        "Anatomical Site"
+      ],
+      "properties": {
+        "umls_canonical": "nape of the neck",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "symptoms of hyperglycemia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "symptoms of hyperglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Overweight",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0497406",
+        "umls_canonical": "Overweight",
+        "umls_semantic_type": "Finding (T033)",
+        "icd10_code": "E66.3",
+        "description": "Nadváha je předstupeň obezity, někdy bývá označována jako první stádium obezity. Přináší zvýšené riziko zdravotních komplikací. Pro evropskou populaci je podle kritérií Světové zdravotnické organizace (WHO) definována indexem tělesné hmotnosti (body-mass index, BMI) v rozmezí 25 až 30. Pro asijskou a pacifickou populaci je nadváha definována rozmezím BMI 23 až 25, někdy 23 až 27. (cit. Wikipedie 2016 http://www.cs.wikipedia.org/)",
+        "aliases": [
+          "overweight"
+        ]
+      }
+    },
+    {
+      "id": "Obesity",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0028754",
+        "umls_canonical": "Obesity",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E66.9",
+        "description": "Stav, kdy tělesná hmotnost výrazně převyšuje doporučené hodnoty, obvykle díky akumulaci tuku v těle. Normy se mohou lišit podle věku, pohlaví, podle genetického nebo kulturního pozadí. BMI větší než 30 kg/m2 se hodnotí jako obezita, BMI větší než 40 kg/m2 se hodnotí jako morbidní obezita.",
+        "aliases": [
+          "obesity"
+        ]
+      }
+    },
+    {
+      "id": "skin tags",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "skin tags",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Plasma fasting glucose measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0583513",
+        "umls_canonical": "Plasma fasting glucose measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "UMLS Standard Term: Plasma fasting glucose measurement",
+        "aliases": [
+          "fasting plasma glucose",
+          "plasma glucose levels"
+        ]
+      }
+    },
+    {
+      "id": "glycosylated hemoglobin",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "glycosylated hemoglobin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "relative inadequacy of insulin secretion",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "relative inadequacy of insulin secretion",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "peripheral neuropathy",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "peripheral neuropathy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Chronic Kidney Diseases",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C1561643",
+        "umls_canonical": "Chronic Kidney Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "N18",
+        "description": "<p>You have two kidneys, each about the size of your fist. Their main job is to filter your blood. They remove wastes and extra water, which become urine. They also keep the body's chemicals balanced, help control blood pressure, and make hormones.</p> <p>Chronic kidney disease (CKD) means that your kidneys are damaged and can't filter blood as they should. This damage can cause wastes to build up in your body. It can also cause other problems that can harm your health. Diabetes and high blood pressure are the most common causes of CKD.</p> <p>The kidney damage occurs slowly over many years. Many people don't have any symptoms until their kidney disease is very advanced. <a href=\"https://medlineplus.gov/kidneytests.html\">Blood and urine tests</a> are the only way to know if you have kidney disease.</p> <p>Treatments cannot cure kidney disease, but they may slow kidney disease. They include <a href=\"https://medlineplus.gov/bloodpressuremedicines.html\">medicines to lower blood pressure</a>, control <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, and lower <a href=\"https://medlineplus.gov/cholesterol.html\">cholesterol</a>. CKD may still get worse over time. Sometimes it can lead to <a href=\"https://medlineplus.gov/kidneyfailure.html\">kidney failure</a>. If your kidneys fail, you will need <a href=\"https://medlineplus.gov/dialysis.html\">dialysis</a> or a <a href=\"https://medlineplus.gov/kidneytransplantation.html\">kidney transplantation</a>.</p> <p>You can take steps to keep your kidneys healthier longer:</p> <ul> <li>Choose foods with less <a href=\"https://medlineplus.gov/sodium.html\">salt</a> (sodium)</li> <li><a href=\"https://medlineplus.gov/howtopreventhighbloodpressure.html\">Control your blood pressure</a>; your health care provider can tell you what your blood pressure should be</li> <li>Keep your blood sugar in the target range, if you have <a href=\"https://medlineplus.gov/diabetes.html\">diabetes</a></li> <li>Limit the amount of alcohol you drink</li> <li>Choose foods that are healthy for your heart: fruits, vegetables, whole grains, and low-fat dairy foods</li> <li>Lose weight if you are overweight</li> <li>Be physically active</li> <li>Don't smoke</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+        "aliases": [
+          "chronic kidney disease"
+        ]
+      }
+    },
+    {
+      "id": "improved glycemic control",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "improved glycemic control",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Glucagon-like peptide-1 receptor agonists (GLP-1 RAs)",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "Glucagon-like peptide-1 receptor agonists (GLP-1 RAs)",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "diet",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "diet",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "exercise",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "exercise",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": [
+          "Exercise"
+        ]
+      }
+    },
+    {
+      "id": "glucose level fluctuations",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "glucose level fluctuations",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "adjusting diet",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "adjusting diet",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "glycemic control in type 2 diabetes",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "glycemic control in type 2 diabetes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Exercise, Aerobic",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0001701",
+        "umls_canonical": "Exercise, Aerobic",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "Sustained exercise that places an increased oxygen demand on the cardiovascular system and promotes an increased efficiency of the body's use of oxygen.",
+        "aliases": [
+          "aerobic exercise"
+        ]
+      }
+    },
+    {
+      "id": "Resistive exercise",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0203991",
+        "umls_canonical": "Resistive exercise",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "UMLS Standard Term: Resistive exercise",
+        "aliases": [
+          "resistance exercise"
+        ]
+      }
+    },
+    {
+      "id": "combination of resistance and aerobic exercise",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "combination of resistance and aerobic exercise",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "blood glucose",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "blood glucose",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "implanted gastric balloons",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "implanted gastric balloons",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Medical weight-loss device",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Medical weight-loss device",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "gastric aspiration therapy",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "gastric aspiration therapy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "metabolic surgery",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "metabolic surgery",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "more significant hyperglycemia",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "more significant hyperglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "pharmacologic therapy",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "pharmacologic therapy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "HbA1C levels above target",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "HbA1C levels above target",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "dual GIP/GLP-1 receptor agonist",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "dual GIP/GLP-1 receptor agonist",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "dual GIP/GLP-1 receptor agonists"
+        ]
+      }
+    },
+    {
+      "id": "glucose elevations at diagnosis",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "glucose elevations at diagnosis",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "SGLT2 inhibitor",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "SGLT2 inhibitor",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "vildagliptin and metformin combination therapy",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "vildagliptin and metformin combination therapy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "stepwise approach to adding diabetes pharmacotherapy",
+      "labels": [
+        "Clinical Rule"
+      ],
+      "properties": {
+        "umls_canonical": "stepwise approach to adding diabetes pharmacotherapy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "major adverse cardiovascular events",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "major adverse cardiovascular events",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Family history",
+      "labels": [
+        "Risk Factor"
+      ],
+      "properties": {
+        "umls_canonical": "Family history",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "ASCVD",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "ASCVD",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "metabolic dysfunction-associated steatohepatitis",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "metabolic dysfunction-associated steatohepatitis",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "metabolic dysfunction-associated steatotic liver disease",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "metabolic dysfunction-associated steatotic liver disease",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "pioglitazone",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0071097",
+        "umls_canonical": "pioglitazone",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "33738",
+        "description": "Thiazolidindion a agonista PPAR-gama, užívá se v léčbě diabetes mellitus 2. typu (tzv. inzulinový senzitizér).",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Polyuria",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0032617",
+        "umls_canonical": "Polyuria",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R35",
+        "description": "Časté a vydatné močení, za polyurii se obvykle považuje diuréza větší než 2500 ml/24 h. Vzniká v důsledku nízkého koncentrování moči při osmotické či vodní diuréze. Kromě velkého příjmu tekutin provází ledvinné nemoci (porucha koncentrační schopnosti při intersticiálních nefritidách či v polyurické fázi renálního selhání), diabetes mellitus, diabetes insipidus, hyperkalcemii, tyreotoxikózu aj. (cit. Velký lékařský slovník online, 2012 http://lekarske.slovniky.cz/ )",
+        "aliases": [
+          "polyuria"
+        ]
+      }
+    },
+    {
+      "id": "Hyperosmolar Hyperglycemic State",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C3888846",
+        "umls_canonical": "Hyperosmolar Hyperglycemic State",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Hyperosmolar Hyperglycemic State",
+        "icd10_code": "NONE",
+        "aliases": [
+          "hyperosmolar hyperglycemic state"
+        ]
+      }
+    },
+    {
+      "id": "Diabetic Ketoacidosis",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011880",
+        "umls_canonical": "Diabetic Ketoacidosis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Druh metabolické acidózy způsobené nadměrným vznikem ketolátek (acetoctová kyselina, beta-hydroxymáselná kyselina, aceton). Tyto látky vznikají při nadměrném štěpení tuků, které jsou využívány k zisku energie místo glukosy. Tento stav nastává při hladovění, závažný je pak především jako akutní komplikace diabetu 1. typu (nedostatek inzulinu snižuje využití glukosy a chybí i jeho antilipolytický účinek). Nápadným příznakem bývá zrychlené hluboké Kussmaulovo dýchání (respirační kompenzace acidózy) a zápach acetonu v dechu, v těžkých případech hrozí až kóma. Ketolátky bývají i v moči (ketonurie). Diabetická k. vyžaduje intenzivní léčbu opatrnou alkalizaci, podávání inzulinu, péči o vnitřní prostředí. Ketóza souvisí úzce s acidózou vzhledem ke klíčovému postavení acetoctové kyseliny - ta je v rovnováze s beta-hydroxymáselnou kyselinou která vzniká oxidací ketoskupiny (acetoctové kyseliny) a má hlavní význam pro vznik acidózy, dekarboxylací acetoctové kyseliny vzniká aceton. (cit. Velký lékařský slovník online, 2013 http://lekarske.slovniky.cz/ )",
+        "icd10_code": "NONE",
+        "aliases": [
+          "diabetic ketoacidosis"
+        ]
+      }
+    },
+    {
+      "id": "deformed foot",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "deformed foot",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "special shoes",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "special shoes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hammer toe",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "hammer toe",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "foot deformity",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "foot deformity",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "bunion",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "bunion",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "neuropathic joint",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "neuropathic joint",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "orthopedic devices",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "orthopedic devices",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "short leg braces",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "short leg braces",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "molded shoes",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "molded shoes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "sponge-rubber arch supports",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "sponge-rubber arch supports",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "crutches",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "crutches",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "patients with type 2 diabetes",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "patients with type 2 diabetes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Hemoglobin A1c measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0474680",
+        "umls_canonical": "Hemoglobin A1c measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "<p>A1C is a blood test for <a href=\"https://medlineplus.gov/diabetestype2.html\">type 2 diabetes</a> and <a href=\"https://medlineplus.gov/prediabetes.html\">prediabetes</a>. It measures your average blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, level over the past 3 months. Doctors may use the A1C alone or in combination with other diabetes tests to make a diagnosis. They also use the A1C to see how well you are managing your diabetes. This test is different from the blood sugar checks that people with diabetes do every day.</p> <p>Your A1C test result is given in percentages. The higher the percentage, the higher your blood sugar levels have been:</p> <ul> <li>A normal A1C level is below 5.7%</li> <li>Prediabetes is between 5.7 to 6.4%. Having prediabetes is a risk factor for getting type 2 diabetes. People with prediabetes may need retests every year.</li> <li>Type 2 diabetes is above 6.5%</li> <li>If you have diabetes, you should have the A1C test at least twice a year. The A1C goal for many people with diabetes is below 7. It may be different for you. Ask what your goal should be. If your A1C result is too high, you may need to change your diabetes care plan.</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+        "aliases": [
+          "HbA1C",
+          "hemoglobin A1c"
+        ]
+      }
+    },
+    {
+      "id": "treatment of type 1 diabetes",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "treatment of type 1 diabetes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Hypoglycemia",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0020615",
+        "umls_canonical": "Hypoglycemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E16.2",
+        "description": "Nízká koncentrace krevního cukru (glukosy). Vede k závažným poruchám činnosti mozku, který je na přívodu cukru krví závislý. K příznakům patří slabost, hlad, třes, studený pot, zmatenost až bezvědomí (hypoglykemické kóma), někdy i s křečemi (kombinují se důsledky nedostatku glukosy v CNS a aktivace sympatiku). Nejč. k h. dochází při léčbě cukrovky předávkováním inzulinu nebo perorálních antidiabetik (roli může mít např. snížený příjem potravy, zvracení, výrazná fyzická námaha aj.). První pomocí i léčbou, která zlepší stav takřka okamžitě, je podání glukosy, ev. glukagonu i.m. K h. může dojít i při vytrvalostním sportu, po požití velkého množství alkoholu, u vzácného nádoru slinivky produkujícího velká množství inzulinu (inzulinom). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "aliases": [
+          "hypoglycemia"
+        ]
+      }
+    },
+    {
+      "id": "Chronic hyperglycemia",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "Chronic hyperglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "microvascular complications",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "microvascular complications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Microvascular complications"
+        ]
+      }
+    },
+    {
+      "id": "macrovascular complications",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "macrovascular complications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Macrovascular complications"
+        ]
+      }
+    },
+    {
+      "id": "large vessels",
+      "labels": [
+        "Anatomical Site"
+      ],
+      "properties": {
+        "umls_canonical": "large vessels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "nephropathy",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "nephropathy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Nephropathy"
+        ]
+      }
+    },
+    {
+      "id": "Neuropathy",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0442874",
+        "umls_canonical": "Neuropathy",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "G62.9",
+        "description": "A disorder affecting the cranial nerves or the peripheral nervous system. It manifests with pain, tingling, numbness, and muscle weakness. It may be the result of physical injury, toxic substances, viral diseases, diabetes, renal failure, cancer, and drugs.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "complication",
+      "labels": [
+        "Clinical Rule"
+      ],
+      "properties": {
+        "umls_canonical": "complication",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "toxic effects of hyperglycemia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "toxic effects of hyperglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "nerves",
+      "labels": [
+        "Anatomical Site"
+      ],
+      "properties": {
+        "umls_canonical": "nerves",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "atherosclerosis of large vessels",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "atherosclerosis of large vessels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Angina Pectoris",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0002962",
+        "umls_canonical": "Angina Pectoris",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "I20",
+        "description": "Algická (bolestivá) forma ischemické choroby srdeční, projevující se bolestí na hrudi (stenokardií), která někdy vyzařuje do ramen nebo čelistí. U klasické neboli námahové AP je bolest vyvolána fyzickou námahou (rychlá chůze, chůze do schodů, pohlavní styk) či rozrušením; negativní roli hraje chlad. Podstatou AP je nejč. aterosklerotické zúžení koronárních tepen srdce a nedostatek kyslíku v srdci při námaze. (cit. Velký lékařský slovník online, 2016 http://lekarske.slovniky.cz/)",
+        "aliases": [
+          "angina pectoris"
+        ]
+      }
+    },
+    {
+      "id": "Myocardial Infarction",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0027051",
+        "umls_canonical": "Myocardial Infarction",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "I21",
+        "description": "Odumření části myokardu vzniklé přerušením krevního zásobení. Příčinou bývá uzávěr některého úseku koronární tepny, nejč. při její ateroskleróze, s následnou těžkou ischemií příslušného okrsku tkáně. Rizikové faktory IM jsou v podstatě shodné s rizikovými faktory aterosklerózy. Onemocnění se klasicky projevuje silnou bolestí na hrudi, úzkostí, pocením. Někdy mohou nastat zažívací obtíže, projevem může být rovněž srdeční selhání. V důsledku elektrické nestability mohou vznikat arytmie, nejzávažnější je vznik fibrilace komor. Při diagnóze infarktu se uplatňuje EKG, laboratorní vyšetření, echokardiografie, rtg, scintigrafie aj. Podle EKG lze odhadnout lokalizaci i stáří infarktu. Kromě rozsahu IM je důležitá též jeho lokalizace (související s postiženou koronární tepnou) a hloubka. Nejč. lokalizacemi jsou IM spodní stěny (tzv. diafragmatický) při postižení a. coronaria dextra a IM přední (anteroseptální) stěny při postižení r. interventricularis anterior nebo IM postranní (anterolaterální) stěny při postižení r. circumflexus. Včasná léčba zabrání rozvoji nekrózy či zmenší ložisko infarktu. I později je vhodné řešení stavu koronárních tepen (angioplastika, bypass). (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "aliases": [
+          "myocardial infarction"
+        ]
+      }
+    },
+    {
+      "id": "transient ischemic attacks",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "transient ischemic attacks",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "peripheral artery disease",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "peripheral artery disease",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "immune dysfunction",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "immune dysfunction",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Cirrhosis",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C1623038",
+        "umls_canonical": "Cirrhosis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Cirrhosis",
+        "icd10_code": "NONE",
+        "aliases": [
+          "cirrhosis"
+        ]
+      }
+    },
+    {
+      "id": "Spot urine albumin-to-creatinine ratio",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "Spot urine albumin-to-creatinine ratio",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "estimated glomerular filtration rate (eGFR)",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "estimated glomerular filtration rate (eGFR)",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Hypertension",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "Hypertension",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Blood pressure measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "Blood pressure measurement",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Heart failure",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0018801",
+        "umls_canonical": "Heart failure",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "I50",
+        "description": "Stav, kdy srdce není schopno plnit svou funkci (tj. přečerpávat, \"\"pumpovat\"\" krev) v množství přiměřeném nárokům organismu. K příčinám se řadí porucha myokardu (zejm. ischemie), objemové a tlakové přetěžování srdce (např. chlopenní vady, hypertenze). Nikoliv vzácné je s. oboustranné s kombinací příznaků. S. s. může být akutní nebo chronické s různě dramatickými příznaky a s různě zapojenými kompenzačními mechanismy. K nim patří zejm. zvyšování preloadu (dilatace komory), retence tekutin a solí v důsledku silné aktivace systému renin-angiotenzin-aldosteron, tachykardie a aktivace sympatoadrenálního systému (vazokonstrikce). S. s. je považováno za systémový stav se změnami nejen hemodynamickými, ale změnami v hormonální a cytokinové produkci, ve vnitřním prostředí apod. Některé změny se vyvíjejí rychle (např. tachykardie), jiné po delší dobu (retence tekutin), rozvoj některých trvá i měsíce (hypertrofie a strukturální změny myokardu). Kompenzační mechanismy samy o sobě mohou z dlouhodobého hlediska srdce poškozovat (tachykardie zvyšuje potřebu kyslíku, zhoršuje prokrvení, vazokonstrikce vede k zvýšení afterloadu atp.). Patofyziologicky se rozlišuje selhání backward, forward. Na nedostatečnosti se podílí systolická dysfunkce (špatná kontraktilní schopnost) i dysfunkce diastolická (snížená poddajnost komory v diastole se vzestupem enddiastolického tlaku). Důležitá je rovněž správná životospráva, omezení solení, dostatek fyzického i psychického odpočinku. (cit. Velký lékařský slovník online, 2017 http://lekarske.slovniky.cz)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "natriuretic peptide",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "natriuretic peptide",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "oral antihyperglycemic medications",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 97.35
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "non-insulin injectable medications",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 97.05
+      }
+    },
+    {
+      "start": "Insulin",
+      "end": "glucose levels",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "oral antihyperglycemic medications",
+      "end": "glucose levels",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "non-insulin injectable medications",
+      "end": "glucose levels",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Cardiovascular Diseases",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "metformin",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 50.3
+      }
+    },
+    {
+      "start": "Pediatric Obesity",
+      "end": "Type 2 diabetes mellitus",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "environmental determinants",
+      "end": "Type 2 diabetes mellitus",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 82.9
+      }
+    },
+    {
+      "start": "genetic determinants",
+      "end": "Type 2 diabetes mellitus",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 92.8
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "insulin resistance",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "beta cell dysfunction",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "impaired insulin secretion",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Prediabetes syndrome",
+      "end": "Type 2 diabetes mellitus",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 98.55
+      }
+    },
+    {
+      "start": "Prediabetes syndrome",
+      "end": "elevated plasma glucose",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Prediabetes syndrome",
+      "end": "Hemoglobin A1c measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Prediabetes syndrome",
+      "end": "Oral Glucose Tolerance Test",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "liraglutide",
+      "end": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "type": "is_a",
+      "properties": {
+        "confidence": 98.55
+      }
+    },
+    {
+      "start": "semaglutide",
+      "end": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "type": "is_a",
+      "properties": {
+        "confidence": 98.55
+      }
+    },
+    {
+      "start": "tirzepatide",
+      "end": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "early diabetes",
+      "end": "mild hyperglycemia",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Hyperglycemia",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 98.1
+      }
+    },
+    {
+      "start": "Polyphagia",
+      "end": "Hyperglycemia",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 91.2
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "Weight Loss",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 92.05
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "Nausea",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 83.9
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "Vomiting",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 91.0
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "Blurred vision",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 95.25
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "Bacterial Infections",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "fungal infections",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Acanthosis Nigricans",
+      "end": "axillae",
+      "type": "has_anatomic_site",
+      "properties": {
+        "confidence": 97.95
+      }
+    },
+    {
+      "start": "Acanthosis Nigricans",
+      "end": "nape of the neck",
+      "type": "has_anatomic_site",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "symptoms of hyperglycemia",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 93.95
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "Overweight",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 93.1
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "Obesity",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "insulin resistance",
+      "end": "Acanthosis Nigricans",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "insulin resistance",
+      "end": "skin tags",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 90.85
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Plasma fasting glucose measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 93.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "glycosylated hemoglobin",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 97.2
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Oral Glucose Tolerance Test",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "relative inadequacy of insulin secretion",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.3
+      }
+    },
+    {
+      "start": "Prediabetes syndrome",
+      "end": "Diabetes Mellitus",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 97.05
+      }
+    },
+    {
+      "start": "Prediabetes syndrome",
+      "end": "Cardiovascular Diseases",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "Prediabetes syndrome",
+      "end": "peripheral neuropathy",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 91.3
+      }
+    },
+    {
+      "start": "Prediabetes syndrome",
+      "end": "Chronic Kidney Diseases",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 95.75
+      }
+    },
+    {
+      "start": "Glucagon-like peptide-1 receptor agonists (GLP-1 RAs)",
+      "end": "improved glycemic control",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "Plasma fasting glucose measurement",
+      "end": "diet",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Plasma fasting glucose measurement",
+      "end": "exercise",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "glucose level fluctuations",
+      "end": "adjusting diet",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.1
+      }
+    },
+    {
+      "start": "glycemic control in type 2 diabetes",
+      "end": "Exercise, Aerobic",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "glycemic control in type 2 diabetes",
+      "end": "Resistive exercise",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.25
+      }
+    },
+    {
+      "start": "combination of resistance and aerobic exercise",
+      "end": "Exercise, Aerobic",
+      "type": "preferred_over",
+      "properties": {
+        "confidence": 93.05
+      }
+    },
+    {
+      "start": "combination of resistance and aerobic exercise",
+      "end": "Resistive exercise",
+      "type": "preferred_over",
+      "properties": {
+        "confidence": 95.0
+      }
+    },
+    {
+      "start": "blood glucose",
+      "end": "exercise",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 91.95
+      }
+    },
+    {
+      "start": "implanted gastric balloons",
+      "end": "Medical weight-loss device",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.2
+      }
+    },
+    {
+      "start": "gastric aspiration therapy",
+      "end": "Medical weight-loss device",
+      "type": "is_a",
+      "properties": {
+        "confidence": 92.25
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "metabolic surgery",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.9
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "diet",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 83.4
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "exercise",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 47.75
+      }
+    },
+    {
+      "start": "more significant hyperglycemia",
+      "end": "pharmacologic therapy",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "pharmacologic therapy",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "dual GIP/GLP-1 receptor agonist",
+      "end": "HbA1C levels above target",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "SGLT2 inhibitor",
+      "end": "glucose elevations at diagnosis",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "vildagliptin and metformin combination therapy",
+      "end": "stepwise approach to adding diabetes pharmacotherapy",
+      "type": "preferred_over",
+      "properties": {
+        "confidence": 95.75
+      }
+    },
+    {
+      "start": "SGLT2 inhibitor",
+      "end": "major adverse cardiovascular events",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "end": "major adverse cardiovascular events",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "Family history",
+      "end": "ASCVD",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 94.55
+      }
+    },
+    {
+      "start": "metabolic dysfunction-associated steatohepatitis",
+      "end": "Glucagon-Like Peptide-1 Receptor Agonists",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.75
+      }
+    },
+    {
+      "start": "metabolic dysfunction-associated steatotic liver disease",
+      "end": "dual GIP/GLP-1 receptor agonist",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "metabolic dysfunction-associated steatohepatitis",
+      "end": "dual GIP/GLP-1 receptor agonist",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.25
+      }
+    },
+    {
+      "start": "metabolic dysfunction-associated steatotic liver disease",
+      "end": "pioglitazone",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.25
+      }
+    },
+    {
+      "start": "metabolic dysfunction-associated steatohepatitis",
+      "end": "pioglitazone",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.0
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "Polyuria",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Hyperosmolar Hyperglycemic State",
+      "end": "Insulin",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.75
+      }
+    },
+    {
+      "start": "Diabetic Ketoacidosis",
+      "end": "Insulin",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.6
+      }
+    },
+    {
+      "start": "deformed foot",
+      "end": "special shoes",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.55
+      }
+    },
+    {
+      "start": "hammer toe",
+      "end": "foot deformity",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "bunion",
+      "end": "foot deformity",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "neuropathic joint",
+      "end": "orthopedic devices",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 92.2
+      }
+    },
+    {
+      "start": "short leg braces",
+      "end": "orthopedic devices",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "molded shoes",
+      "end": "orthopedic devices",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "sponge-rubber arch supports",
+      "end": "orthopedic devices",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.95
+      }
+    },
+    {
+      "start": "crutches",
+      "end": "orthopedic devices",
+      "type": "is_a",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "patients with type 2 diabetes",
+      "end": "Hemoglobin A1c measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "treatment of type 1 diabetes",
+      "end": "Hypoglycemia",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "Chronic hyperglycemia",
+      "end": "microvascular complications",
+      "type": "cause_of",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Chronic hyperglycemia",
+      "end": "macrovascular complications",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 93.75
+      }
+    },
+    {
+      "start": "macrovascular complications",
+      "end": "large vessels",
+      "type": "has_anatomic_site",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "nephropathy",
+      "end": "microvascular complications",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.5
+      }
+    },
+    {
+      "start": "Neuropathy",
+      "end": "complication",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "toxic effects of hyperglycemia",
+      "end": "nerves",
+      "type": "has_anatomic_site",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "atherosclerosis of large vessels",
+      "end": "macrovascular complications",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.5
+      }
+    },
+    {
+      "start": "atherosclerosis of large vessels",
+      "end": "Angina Pectoris",
+      "type": "cause_of",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "atherosclerosis of large vessels",
+      "end": "Myocardial Infarction",
+      "type": "cause_of",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "transient ischemic attacks",
+      "end": "macrovascular complications",
+      "type": "is_a",
+      "properties": {
+        "confidence": 93.45
+      }
+    },
+    {
+      "start": "peripheral artery disease",
+      "end": "macrovascular complications",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "immune dysfunction",
+      "end": "complication",
+      "type": "is_a",
+      "properties": {
+        "confidence": 93.0
+      }
+    },
+    {
+      "start": "Type 2 diabetes mellitus",
+      "end": "metabolic dysfunction-associated steatotic liver disease",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 82.99
+      }
+    },
+    {
+      "start": "metabolic dysfunction-associated steatotic liver disease",
+      "end": "metabolic dysfunction-associated steatohepatitis",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "metabolic dysfunction-associated steatotic liver disease",
+      "end": "Cirrhosis",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "nephropathy",
+      "end": "Spot urine albumin-to-creatinine ratio",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 97.2
+      }
+    },
+    {
+      "start": "nephropathy",
+      "end": "estimated glomerular filtration rate (eGFR)",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "Hypertension",
+      "end": "Blood pressure measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Heart failure",
+      "end": "natriuretic peptide",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.0
+      }
+    }
+  ]
+}

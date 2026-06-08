@@ -1,0 +1,571 @@
+<benchmark>
+	<entries>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>AWH Engineering College | academicStaffSize | 250</mtriple>
+				<mtriple>AWH Engineering College | state | Kerala</mtriple>
+				<mtriple>AWH Engineering College | city | Kuttikkattoor</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>AWH Engineering College | country | India</mtriple>
+				<mtriple>AWH Engineering College | established | 2001</mtriple>
+				<mtriple>AWH Engineering College | academicStaffSize | 250</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>AWH Engineering College | country | India</mtriple>
+				<mtriple>AWH Engineering College | established | 2001</mtriple>
+				<mtriple>AWH Engineering College | city | Kuttikkattoor</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>AWH Engineering College | country | India</mtriple>
+				<mtriple>AWH Engineering College | state | Kerala</mtriple>
+				<mtriple>Kerala | hasToItsNorthwest | Mah&#258;&#169;, India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>AWH Engineering College | established | 2001</mtriple>
+				<mtriple>AWH Engineering College | academicStaffSize | 250</mtriple>
+				<mtriple>AWH Engineering College | state | Kerala</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | academicStaffSize | ~500</mtriple>
+				<mtriple>Acharya Institute of Technology | motto | Nurturing Excellence</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Visvesvaraya Technological University | city | Belgaum</mtriple>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+				<mtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</mtriple>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | sportsOffered | Tennis</mtriple>
+				<mtriple>Tennis | sportGoverningBody | International Tennis Federation</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Bangalore | founder | Kempe Gowda I</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Bangalore | founder | Kempe Gowda I</mtriple>
+				<mtriple>Acharya Institute of Technology | president | B.M. Reddy</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Karnataka | hasToItsNortheast | Telangana</mtriple>
+				<mtriple>Karnataka | hasToItsWest | Arabian Sea</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Kerala | leader | Kochi</mtriple>
+				<mtriple>AWH Engineering College | academicStaffSize | 250</mtriple>
+				<mtriple>AWH Engineering College | state | Kerala</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Kerala | leader | Kochi</mtriple>
+				<mtriple>AWH Engineering College | state | Kerala</mtriple>
+				<mtriple>AWH Engineering College | city | Kuttikkattoor</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Visvesvaraya Technological University | city | Belgaum</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Visvesvaraya Technological University | city | Belgaum</mtriple>
+				<mtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | sportsOffered | Tennis</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | sportsOffered | Tennis</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | president | B.M. Reddy</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | president | B.M. Reddy</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | president | B.M. Reddy</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Bangalore | founder | Kempe Gowda I</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Bangalore | founder | Kempe Gowda I</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Visvesvaraya Technological University | city | Belgaum</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+				<mtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | academicStaffSize | ~500</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | motto | Nurturing Excellence</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | academicStaffSize | ~500</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Visvesvaraya Technological University | city | Belgaum</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | president | B.M. Reddy</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Bangalore | founder | Kempe Gowda I</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Bangalore | founder | Kempe Gowda I</mtriple>
+				<mtriple>Acharya Institute of Technology | sportsOffered | Tennis</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Visvesvaraya Technological University | city | Belgaum</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Bangalore | founder | Kempe Gowda I</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Bangalore | founder | Kempe Gowda I</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+				<mtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+				<mtriple>Acharya Institute of Technology | numberOfPostgraduateStudents | 700</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | campus | In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore &#226;&#8364;&#8220; 560090.</mtriple>
+				<mtriple>All India Council for Technical Education | location | Mumbai</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | wasGivenTheTechnicalCampusStatusBy | All India Council for Technical Education</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | director | Dr. G. P. Prabhukumar</mtriple>
+				<mtriple>Acharya Institute of Technology | affiliation | Visvesvaraya Technological University</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | motto | Nurturing Excellence</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | president | B.M. Reddy</mtriple>
+				<mtriple>Acharya Institute of Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya Institute of Technology | country | India</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>Acharya Institute of Technology | sportsOffered | Tennis</mtriple>
+				<mtriple>Acharya Institute of Technology | established | 2000</mtriple>
+				<mtriple>Tennis | sportGoverningBody | International Tennis Federation</mtriple>
+			</modifiedtripleset>
+		</entry>
+		<entry>
+			<modifiedtripleset>
+				<mtriple>India | largestCity | Mumbai</mtriple>
+				<mtriple>AWH Engineering College | country | India</mtriple>
+				<mtriple>India | river | Ganges</mtriple>
+			</modifiedtripleset>
+		</entry>
+	</entries>
+</benchmark>

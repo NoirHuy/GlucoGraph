@@ -1,0 +1,28 @@
+{
+  "total": 7,
+  "true_positives": 7,
+  "false_negatives": 0,
+  "rejection_rate": 1.0,
+  "per_type": {
+    "Semantic Inversion": {
+      "tp": 2,
+      "fn": 0,
+      "total": 2
+    },
+    "Ontology Violation": {
+      "tp": 2,
+      "fn": 0,
+      "total": 2
+    },
+    "Entity Boundary Flaw": {
+      "tp": 1,
+      "fn": 0,
+      "total": 1
+    },
+    "Out-of-Schema Hallucination": {
+      "tp": 2,
+      "fn": 0,
+      "total": 2
+    }
+  }
+}

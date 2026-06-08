@@ -137,8 +137,9 @@ class Neo4jUploader:
                 # (Safe because label_key is constructed strictly from sorted alphanumeric inputs)
                 query = (
                     f"UNWIND $batch AS row "
-                    f"MERGE (n:{label_key} {{id: row.id}}) "
-                    f"SET n += row.properties"
+                    f"MERGE (n {{id: row.id}}) "
+                    f"SET n += row.properties "
+                    f"SET n:{label_key}"
                 )
                 
                 # Sub-batching

@@ -1,0 +1,129 @@
+Example 1:
+Text: Lithium treatment is known to cause nephrogenic diabetes insipidus (NDI) and severe polyuria in patients.
+Triples: [['nephrogenic diabetes insipidus', 'caused by', 'lithium'], ['polyuria', 'caused by', 'lithium']]
+Answer:
+[
+  {
+    "subject": "nephrogenic diabetes insipidus",
+    "subject_type": "DiseaseOrPhenotypicFeature",
+    "relation": "caused by",
+    "relation_definition": "The subject disease or phenotype is triggered or induced by the object agent.",
+    "object": "lithium",
+    "object_type": "ChemicalEntity"
+  },
+  {
+    "subject": "polyuria",
+    "subject_type": "DiseaseOrPhenotypicFeature",
+    "relation": "caused by",
+    "relation_definition": "The subject disease or phenotype is triggered or induced by the object agent.",
+    "object": "lithium",
+    "object_type": "ChemicalEntity"
+  }
+]
+
+Example 2:
+Text: In collecting duct cells, lithium inhibits UT-A1 urea transporters and decreases AQP2 water channels.
+Triples: [['lithium', 'inhibits', 'UT-A1'], ['lithium', 'decreases', 'AQP2']]
+Answer:
+[
+  {
+    "subject": "lithium",
+    "subject_type": "ChemicalEntity",
+    "relation": "inhibits",
+    "relation_definition": "The subject chemical decreases the activity, expression, or function of the object gene or protein.",
+    "object": "UT-A1",
+    "object_type": "GeneOrGeneProduct"
+  },
+  {
+    "subject": "lithium",
+    "subject_type": "ChemicalEntity",
+    "relation": "decreases",
+    "relation_definition": "The subject chemical decreases the quantity, expression, or activity of the object gene or protein.",
+    "object": "AQP2",
+    "object_type": "GeneOrGeneProduct"
+  }
+]
+
+Example 3:
+Text: Activation of PKCa suppresses AQP2 expression and stimulates NDI development.
+Triples: [['AQP2', 'suppressed by', 'PKCa'], ['NDI', 'stimulated by', 'PKCa']]
+Answer:
+[
+  {
+    "subject": "AQP2",
+    "subject_type": "GeneOrGeneProduct",
+    "relation": "suppressed by",
+    "relation_definition": "The expression or activity of the subject gene or gene product is decreased by the object.",
+    "object": "PKCa",
+    "object_type": "GeneOrGeneProduct"
+  },
+  {
+    "subject": "NDI",
+    "subject_type": "DiseaseOrPhenotypicFeature",
+    "relation": "stimulated by",
+    "relation_definition": "The development or progression of the subject disease is enhanced or promoted by the object.",
+    "object": "PKCa",
+    "object_type": "GeneOrGeneProduct"
+  }
+]
+
+Example 4:
+Text: AQP2 mutations lead to congenital nephrogenic diabetes insipidus in human subjects.
+Triples: [['AQP2 mutations', 'cause', 'congenital nephrogenic diabetes insipidus']]
+Answer:
+[
+  {
+    "subject": "AQP2 mutations",
+    "subject_type": "SequenceVariant",
+    "relation": "cause",
+    "relation_definition": "The subject genetic variant directly leads to or is the root cause of the object disease.",
+    "object": "congenital nephrogenic diabetes insipidus",
+    "object_type": "DiseaseOrPhenotypicFeature"
+  }
+]
+
+Example 5:
+Text: Experiments in HEK293 cell line showed that lithium reduces cAMP accumulation.
+Triples: [['HEK293', 'used to study', 'lithium'], ['cAMP', 'reduced by', 'lithium']]
+Answer:
+[
+  {
+    "subject": "HEK293",
+    "subject_type": "CellLine",
+    "relation": "used to study",
+    "relation_definition": "The subject cell line is the biological host or environment used to investigate the object.",
+    "object": "lithium",
+    "object_type": "ChemicalEntity"
+  },
+  {
+    "subject": "cAMP",
+    "subject_type": "ChemicalEntity",
+    "relation": "reduced by",
+    "relation_definition": "The concentration, accumulation, or activity of the subject chemical is decreased by the object.",
+    "object": "lithium",
+    "object_type": "ChemicalEntity"
+  }
+]
+
+Example 6:
+Text: Protein kinase C (PKC) activity plays a role in regulating sodium and potassium levels in rats.
+Triples: [['Protein kinase C', 'regulates', 'sodium'], ['Protein kinase C', 'regulates', 'potassium']]
+Answer:
+[
+  {
+    "subject": "Protein kinase C",
+    "subject_type": "GeneOrGeneProduct",
+    "relation": "regulates",
+    "relation_definition": "The subject gene or gene product regulates, controls, or modulates the levels, expression, or transport of the object.",
+    "object": "sodium",
+    "object_type": "ChemicalEntity"
+  },
+  {
+    "subject": "Protein kinase C",
+    "subject_type": "GeneOrGeneProduct",
+    "relation": "regulates",
+    "relation_definition": "The subject gene or gene product regulates, controls, or modulates the levels, expression, or transport of the object.",
+    "object": "potassium",
+    "object_type": "ChemicalEntity"
+  }
+]

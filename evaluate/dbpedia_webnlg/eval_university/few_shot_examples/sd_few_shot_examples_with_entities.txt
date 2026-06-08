@@ -1,0 +1,37 @@
+Example 1:
+Text: The Accademia di Architettura di Mendrisio is in Mendrisio. It has 600 students and an academic staff of 100.
+Triples: [['Accademia di Architettura di Mendrisio', 'city', 'Mendrisio'], ['Accademia di Architettura di Mendrisio', 'numberOfStudents', '600']]
+Answer:
+[
+  {
+    "subject": "Accademia di Architettura di Mendrisio",
+    "subject_type": "University",
+    "relation": "city",
+    "relation_definition": "The subject university is located in the object city.",
+    "object": "Mendrisio",
+    "object_type": "City"
+  },
+  {
+    "subject": "Accademia di Architettura di Mendrisio",
+    "subject_type": "University",
+    "relation": "numberOfStudents",
+    "relation_definition": "The subject university has the object number of students enrolled.",
+    "object": "600",
+    "object_type": "number"
+  }
+]
+
+Example 2:
+Text: The University of Burgundy is in France.
+Triples: [['University of Burgundy', 'country', 'France']]
+Answer:
+[
+  {
+    "subject": "University of Burgundy",
+    "subject_type": "University",
+    "relation": "country",
+    "relation_definition": "The subject university is located in the object country.",
+    "object": "France",
+    "object_type": "Country"
+  }
+]
