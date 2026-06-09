@@ -1,0 +1,1422 @@
+[
+    {
+        "index": 0,
+        "input_text": "Type 2 Diabetes is a chronic metabolic disease characterized by high blood sugar (hyperglycemia) and insulin resistance. It is treated by metformin, which has adverse effects like diarrhea, but is preferred over sulfonylureas. Insulin is administered via subcutaneous injection.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "is a",
+                "chronic metabolic disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "has finding",
+                "hyperglycemia"
+            ],
+            [
+                "Type 2 Diabetes",
+                "treated by",
+                "metformin"
+            ],
+            [
+                "metformin",
+                "has adverse effect",
+                "diarrhea"
+            ],
+            [
+                "metformin",
+                "preferred over",
+                "sulfonylureas"
+            ],
+            [
+                "Insulin",
+                "administered via",
+                "subcutaneous injection"
+            ],
+            [
+                "hyperglycemia",
+                "treated by",
+                "high-fructose corn syrup"
+            ],
+            [
+                "metformin",
+                "contraindicated with",
+                "human endocrine system"
+            ],
+            [
+                "Type 2 Diabetes",
+                "cause of",
+                "metformin"
+            ],
+            [
+                "diarrhea",
+                "treated by",
+                "metformin"
+            ]
+        ],
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "is a",
+                "chronic metabolic disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "has finding",
+                "hyperglycemia"
+            ],
+            [
+                "Type 2 Diabetes",
+                "treated by",
+                "metformin"
+            ],
+            [
+                "metformin",
+                "has adverse effect",
+                "diarrhea"
+            ],
+            [
+                "metformin",
+                "preferred over",
+                "sulfonylureas"
+            ],
+            [
+                "Insulin",
+                "administered via",
+                "subcutaneous injection"
+            ],
+            [
+                "hyperglycemia",
+                "treated by",
+                "high-fructose corn syrup"
+            ],
+            [
+                "metformin",
+                "contraindicated with",
+                "human endocrine system"
+            ],
+            [
+                "Type 2 Diabetes",
+                "cause of",
+                "metformin"
+            ],
+            [
+                "diarrhea",
+                "treated by",
+                "metformin"
+            ]
+        ],
+        "schema_definition": {
+            "is a": "Indicates subclass hierarchy.",
+            "has finding": "Indicates clinical finding of a disease.",
+            "treated by": "Indicates therapeutic management.",
+            "has adverse effect": "Indicates negative side effects.",
+            "preferred over": "Indicates preferred drug comparison.",
+            "administered via": "Indicates route of administration.",
+            "contraindicated with": "Indicates medical contraindication.",
+            "cause of": "Indicates causal relationship.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "is a",
+                "chronic metabolic disease"
+            ],
+            [
+                "Type 2 Diabetes",
+                "has finding",
+                "hyperglycemia"
+            ],
+            [
+                "Type 2 Diabetes",
+                "treated by",
+                "metformin"
+            ],
+            [
+                "metformin",
+                "has adverse effect",
+                "diarrhea"
+            ],
+            [
+                "metformin",
+                "preferred over",
+                "sulfonylureas"
+            ],
+            [
+                "Insulin",
+                "administered via",
+                "subcutaneous injection"
+            ]
+        ]
+    },
+    {
+        "index": 1,
+        "input_text": "Type 1 Diabetes is caused by autoimmune pancreatic beta-cell destruction, which has anatomic site pancreas. Patients require insulin, which is dispensed by an insulin pump. A common evaluation is HbA1c test.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 1 Diabetes",
+                "has anatomic site",
+                "pancreas"
+            ],
+            [
+                "autoimmune pancreatic beta-cell destruction",
+                "cause of",
+                "Type 1 Diabetes"
+            ],
+            [
+                "insulin pump",
+                "dispenses",
+                "insulin"
+            ],
+            [
+                "Type 1 Diabetes",
+                "has evaluation",
+                "HbA1c test"
+            ],
+            [
+                "insulin",
+                "cause of",
+                "autoimmune pancreatic beta-cell destruction"
+            ],
+            [
+                "pancreas",
+                "dispenses",
+                "insulin pump"
+            ],
+            [
+                "HbA1c test",
+                "treated by",
+                "insulin"
+            ],
+            [
+                "Type 1 Diabetes",
+                "preferred over",
+                "Type 2 Diabetes"
+            ],
+            [
+                "fasting plasma glucose concentration in venous blood samples",
+                "has anatomic site",
+                "clinical setting"
+            ],
+            [
+                "autoimmune pancreatic beta-cell destruction",
+                "dispenses",
+                "insulin"
+            ]
+        ],
+        "oie": [
+            [
+                "Type 1 Diabetes",
+                "has anatomic site",
+                "pancreas"
+            ],
+            [
+                "autoimmune pancreatic beta-cell destruction",
+                "cause of",
+                "Type 1 Diabetes"
+            ],
+            [
+                "insulin pump",
+                "dispenses",
+                "insulin"
+            ],
+            [
+                "Type 1 Diabetes",
+                "has evaluation",
+                "HbA1c test"
+            ],
+            [
+                "insulin",
+                "cause of",
+                "autoimmune pancreatic beta-cell destruction"
+            ],
+            [
+                "pancreas",
+                "dispenses",
+                "insulin pump"
+            ],
+            [
+                "HbA1c test",
+                "treated by",
+                "insulin"
+            ],
+            [
+                "Type 1 Diabetes",
+                "preferred over",
+                "Type 2 Diabetes"
+            ],
+            [
+                "fasting plasma glucose concentration in venous blood samples",
+                "has anatomic site",
+                "clinical setting"
+            ],
+            [
+                "autoimmune pancreatic beta-cell destruction",
+                "dispenses",
+                "insulin"
+            ]
+        ],
+        "schema_definition": {
+            "has anatomic site": "Indicates anatomical location.",
+            "cause of": "Indicates causal agent.",
+            "dispenses": "Indicates delivery device agent.",
+            "has evaluation": "Indicates diagnostic evaluation.",
+            "preferred over": "Indicates preference comparison.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 1 Diabetes",
+                "has anatomic site",
+                "pancreas"
+            ],
+            [
+                "autoimmune pancreatic beta-cell destruction",
+                "cause of",
+                "Type 1 Diabetes"
+            ],
+            [
+                "insulin pump",
+                "dispenses",
+                "insulin"
+            ],
+            [
+                "Type 1 Diabetes",
+                "has evaluation",
+                "HbA1c test"
+            ]
+        ]
+    },
+    {
+        "index": 2,
+        "input_text": "Obesity increases risk of Type 2 Diabetes. Elevated C-peptide is a biomarker for insulin resistance. High HbA1c is a finding in uncontrolled diabetes. Diabetic retinopathy occurs with nephropathy.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Obesity",
+                "increases risk of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "insulin resistance",
+                "has biomarker",
+                "C-peptide"
+            ],
+            [
+                "uncontrolled diabetes",
+                "has finding",
+                "High HbA1c"
+            ],
+            [
+                "Diabetic retinopathy",
+                "co occurs with",
+                "diabetic nephropathy"
+            ],
+            [
+                "Type 2 Diabetes",
+                "increases risk of",
+                "Obesity"
+            ],
+            [
+                "C-peptide",
+                "cause of",
+                "insulin resistance"
+            ],
+            [
+                "High HbA1c",
+                "treated by",
+                "Obesity"
+            ],
+            [
+                "Diabetic retinopathy",
+                "treated by",
+                "diabetic nephropathy"
+            ],
+            [
+                "Obesity",
+                "has titration rule",
+                "Type 2 Diabetes"
+            ],
+            [
+                "C-peptide",
+                "administered via",
+                "insulin resistance"
+            ]
+        ],
+        "oie": [
+            [
+                "Obesity",
+                "increases risk of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "insulin resistance",
+                "has biomarker",
+                "C-peptide"
+            ],
+            [
+                "uncontrolled diabetes",
+                "has finding",
+                "High HbA1c"
+            ],
+            [
+                "Diabetic retinopathy",
+                "co occurs with",
+                "diabetic nephropathy"
+            ],
+            [
+                "Type 2 Diabetes",
+                "increases risk of",
+                "Obesity"
+            ],
+            [
+                "C-peptide",
+                "cause of",
+                "insulin resistance"
+            ],
+            [
+                "High HbA1c",
+                "treated by",
+                "Obesity"
+            ],
+            [
+                "Diabetic retinopathy",
+                "treated by",
+                "diabetic nephropathy"
+            ],
+            [
+                "Obesity",
+                "has titration rule",
+                "Type 2 Diabetes"
+            ],
+            [
+                "C-peptide",
+                "administered via",
+                "insulin resistance"
+            ]
+        ],
+        "schema_definition": {
+            "increases risk of": "Indicates probability elevation.",
+            "has biomarker": "Indicates biomarker association.",
+            "has finding": "Indicates diagnostic finding.",
+            "co occurs with": "Indicates temporal concurrence.",
+            "cause of": "Indicates causality.",
+            "treated by": "Indicates therapeutic management.",
+            "has titration rule": "Indicates titration rule constraints.",
+            "administered via": "Indicates route of delivery.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Obesity",
+                "increases risk of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "insulin resistance",
+                "has biomarker",
+                "C-peptide"
+            ],
+            [
+                "uncontrolled diabetes",
+                "has finding",
+                "High HbA1c"
+            ],
+            [
+                "Diabetic retinopathy",
+                "co occurs with",
+                "diabetic nephropathy"
+            ]
+        ]
+    },
+    {
+        "index": 3,
+        "input_text": "Daily glucose monitoring is evaluated by glucometer. Insulin therapy has titration rule based on blood glucose levels. Metformin is contraindicated with severe renal impairment. Sitagliptin is a DPP-4 inhibitor.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Daily glucose monitoring",
+                "has evaluation",
+                "glucometer"
+            ],
+            [
+                "Insulin therapy",
+                "has titration rule",
+                "blood glucose levels"
+            ],
+            [
+                "Metformin",
+                "contraindicated with",
+                "severe renal impairment"
+            ],
+            [
+                "severe renal impairment",
+                "increases risk of",
+                "metformin toxicity"
+            ],
+            [
+                "glucometer",
+                "treated by",
+                "Daily glucose monitoring"
+            ],
+            [
+                "blood glucose levels",
+                "has titration rule",
+                "Insulin therapy"
+            ],
+            [
+                "severe renal impairment",
+                "preferred over",
+                "Metformin"
+            ],
+            [
+                "Metformin",
+                "dispenses",
+                "severe renal impairment"
+            ],
+            [
+                "severe renal impairment",
+                "has anatomic site",
+                "severe renal impairment"
+            ],
+            [
+                "Daily glucose monitoring",
+                "contraindicated with",
+                "glucometer"
+            ]
+        ],
+        "oie": [
+            [
+                "Daily glucose monitoring",
+                "has evaluation",
+                "glucometer"
+            ],
+            [
+                "Insulin therapy",
+                "has titration rule",
+                "blood glucose levels"
+            ],
+            [
+                "Metformin",
+                "contraindicated with",
+                "severe renal impairment"
+            ],
+            [
+                "severe renal impairment",
+                "increases risk of",
+                "metformin toxicity"
+            ],
+            [
+                "glucometer",
+                "treated by",
+                "Daily glucose monitoring"
+            ],
+            [
+                "blood glucose levels",
+                "has titration rule",
+                "Insulin therapy"
+            ],
+            [
+                "severe renal impairment",
+                "preferred over",
+                "Metformin"
+            ],
+            [
+                "Metformin",
+                "dispenses",
+                "severe renal impairment"
+            ],
+            [
+                "severe renal impairment",
+                "has anatomic site",
+                "severe renal impairment"
+            ],
+            [
+                "Daily glucose monitoring",
+                "contraindicated with",
+                "glucometer"
+            ]
+        ],
+        "schema_definition": {
+            "has evaluation": "Indicates diagnostic test.",
+            "has titration rule": "Indicates drug titration.",
+            "contraindicated with": "Indicates contraindication.",
+            "increases risk of": "Indicates risk factor elevation.",
+            "treated by": "Indicates medical treatment.",
+            "preferred over": "Indicates drug preference.",
+            "dispenses": "Indicates device delivery.",
+            "has anatomic site": "Indicates anatomical location.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Daily glucose monitoring",
+                "has evaluation",
+                "glucometer"
+            ],
+            [
+                "Insulin therapy",
+                "has titration rule",
+                "blood glucose levels"
+            ],
+            [
+                "Metformin",
+                "contraindicated with",
+                "severe renal impairment"
+            ]
+        ]
+    },
+    {
+        "index": 4,
+        "input_text": "Gestational diabetes is associated with HLA-DR3. TCF7L2 gene variant is a biomarker for Type 2 Diabetes. BRCA1 mutation is NOT related to diabetes, but causes breast cancer.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Gestational diabetes",
+                "co occurs with",
+                "HLA-DR3"
+            ],
+            [
+                "Type 2 Diabetes",
+                "has biomarker",
+                "TCF7L2 gene variant"
+            ],
+            [
+                "BRCA1 mutation",
+                "increases risk of",
+                "breast cancer"
+            ],
+            [
+                "BRCA1 mutation",
+                "increases risk of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "Type 2 Diabetes",
+                "increases risk of",
+                "BRCA1 mutation"
+            ],
+            [
+                "BRCA1 mutation",
+                "has finding",
+                "breast cancer"
+            ],
+            [
+                "HLA-DR3",
+                "cause of",
+                "Gestational diabetes"
+            ],
+            [
+                "TCF7L2 gene variant",
+                "treated by",
+                "Type 2 Diabetes"
+            ],
+            [
+                "breast cancer",
+                "treated by",
+                "BRCA1 mutation"
+            ],
+            [
+                "Gestational diabetes",
+                "dispenses",
+                "HLA-DR3"
+            ]
+        ],
+        "oie": [
+            [
+                "Gestational diabetes",
+                "co occurs with",
+                "HLA-DR3"
+            ],
+            [
+                "Type 2 Diabetes",
+                "has biomarker",
+                "TCF7L2 gene variant"
+            ],
+            [
+                "BRCA1 mutation",
+                "increases risk of",
+                "breast cancer"
+            ],
+            [
+                "BRCA1 mutation",
+                "increases risk of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "Type 2 Diabetes",
+                "increases risk of",
+                "BRCA1 mutation"
+            ],
+            [
+                "BRCA1 mutation",
+                "has finding",
+                "breast cancer"
+            ],
+            [
+                "HLA-DR3",
+                "cause of",
+                "Gestational diabetes"
+            ],
+            [
+                "TCF7L2 gene variant",
+                "treated by",
+                "Type 2 Diabetes"
+            ],
+            [
+                "breast cancer",
+                "treated by",
+                "BRCA1 mutation"
+            ],
+            [
+                "Gestational diabetes",
+                "dispenses",
+                "HLA-DR3"
+            ]
+        ],
+        "schema_definition": {
+            "co occurs with": "Indicates association co-occurrence.",
+            "has biomarker": "Indicates biomarker association.",
+            "increases risk of": "Indicates risk factor elevation.",
+            "has finding": "Indicates clinical finding.",
+            "cause of": "Indicates causal relation.",
+            "treated by": "Indicates medical treatment.",
+            "dispenses": "Indicates device delivery.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Gestational diabetes",
+                "co occurs with",
+                "HLA-DR3"
+            ],
+            [
+                "Type 2 Diabetes",
+                "has biomarker",
+                "TCF7L2 gene variant"
+            ]
+        ]
+    },
+    {
+        "index": 5,
+        "input_text": "Diabetic Ketoacidosis (DKA) is a life-threatening complication of diabetes. It is characterized by severe hyperglycemia, metabolic acidosis, and high ketones. DKA has finding Kussmaul breathing. Treatment is intravenous insulin therapy.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Diabetic Ketoacidosis",
+                "is a",
+                "life-threatening complication of diabetes"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "severe hyperglycemia"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "metabolism acidosis"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "high ketones"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "Kussmaul breathing"
+            ],
+            [
+                "intravenous insulin therapy",
+                "treated by",
+                "Diabetic Ketoacidosis"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "treated by",
+                "intravenous insulin therapy"
+            ],
+            [
+                "Kussmaul breathing",
+                "cause of",
+                "Diabetic Ketoacidosis"
+            ],
+            [
+                "severe hyperglycemia",
+                "administered via",
+                "intravenous insulin therapy"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "contraindicated with",
+                "intravenous insulin therapy"
+            ]
+        ],
+        "oie": [
+            [
+                "Diabetic Ketoacidosis",
+                "is a",
+                "life-threatening complication of diabetes"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "severe hyperglycemia"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "metabolism acidosis"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "high ketones"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "Kussmaul breathing"
+            ],
+            [
+                "intravenous insulin therapy",
+                "treated by",
+                "Diabetic Ketoacidosis"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "treated by",
+                "intravenous insulin therapy"
+            ],
+            [
+                "Kussmaul breathing",
+                "cause of",
+                "Diabetic Ketoacidosis"
+            ],
+            [
+                "severe hyperglycemia",
+                "administered via",
+                "intravenous insulin therapy"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "contraindicated with",
+                "intravenous insulin therapy"
+            ]
+        ],
+        "schema_definition": {
+            "is a": "Indicates subclass relationship.",
+            "has finding": "Indicates clinical manifestations.",
+            "treated by": "Indicates therapy control.",
+            "cause of": "Indicates causality.",
+            "administered via": "Indicates delivery mechanism.",
+            "contraindicated with": "Indicates contraindication.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Diabetic Ketoacidosis",
+                "is a",
+                "life-threatening complication of diabetes"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "severe hyperglycemia"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "high ketones"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "has finding",
+                "Kussmaul breathing"
+            ],
+            [
+                "intravenous insulin therapy",
+                "treated by",
+                "Diabetic Ketoacidosis"
+            ],
+            [
+                "Diabetic Ketoacidosis",
+                "treated by",
+                "intravenous insulin therapy"
+            ]
+        ]
+    },
+    {
+        "index": 6,
+        "input_text": "Diabetic neuropathy has anatomic site peripheral nerves. It causes symptoms like burning pain and numbness. Pregabalin is a drug preferred over gabapentin for neuropathic pain. Capsaicin cream is administered via topical application.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Diabetic neuropathy",
+                "has anatomic site",
+                "peripheral nerves"
+            ],
+            [
+                "Diabetic neuropathy",
+                "has finding",
+                "burning pain"
+            ],
+            [
+                "Diabetic neuropathy",
+                "has finding",
+                "numbness"
+            ],
+            [
+                "Pregabalin",
+                "preferred over",
+                "gabapentin"
+            ],
+            [
+                "Capsaicin cream",
+                "administered via",
+                "topical application"
+            ],
+            [
+                "peripheral nerves",
+                "cause of",
+                "Diabetic neuropathy"
+            ],
+            [
+                "burning pain",
+                "treated by",
+                "numbness"
+            ],
+            [
+                "gabapentin",
+                "preferred over",
+                "Pregabalin"
+            ],
+            [
+                "topical application",
+                "dispenses",
+                "Capsaicin cream"
+            ],
+            [
+                "Diabetic neuropathy",
+                "contraindicated with",
+                "Pregabalin"
+            ]
+        ],
+        "oie": [
+            [
+                "Diabetic neuropathy",
+                "has anatomic site",
+                "peripheral nerves"
+            ],
+            [
+                "Diabetic neuropathy",
+                "has finding",
+                "burning pain"
+            ],
+            [
+                "Diabetic neuropathy",
+                "has finding",
+                "numbness"
+            ],
+            [
+                "Pregabalin",
+                "preferred over",
+                "gabapentin"
+            ],
+            [
+                "Capsaicin cream",
+                "administered via",
+                "topical application"
+            ],
+            [
+                "peripheral nerves",
+                "cause of",
+                "Diabetic neuropathy"
+            ],
+            [
+                "burning pain",
+                "treated by",
+                "numbness"
+            ],
+            [
+                "gabapentin",
+                "preferred over",
+                "Pregabalin"
+            ],
+            [
+                "topical application",
+                "dispenses",
+                "Capsaicin cream"
+            ],
+            [
+                "Diabetic neuropathy",
+                "contraindicated with",
+                "Pregabalin"
+            ]
+        ],
+        "schema_definition": {
+            "has anatomic site": "Indicates anatomical location.",
+            "has finding": "Indicates symptoms or findings.",
+            "preferred over": "Indicates therapeutic drug preference.",
+            "administered via": "Indicates drug administration route.",
+            "cause of": "Indicates causality.",
+            "treated by": "Indicates treatment.",
+            "dispenses": "Indicates device delivery.",
+            "contraindicated with": "Indicates medical contraindication.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Diabetic neuropathy",
+                "has anatomic site",
+                "peripheral nerves"
+            ],
+            [
+                "Diabetic neuropathy",
+                "has finding",
+                "burning pain"
+            ],
+            [
+                "Diabetic neuropathy",
+                "has finding",
+                "numbness"
+            ],
+            [
+                "Capsaicin cream",
+                "administered via",
+                "topical application"
+            ]
+        ]
+    },
+    {
+        "index": 7,
+        "input_text": "Fasting blood glucose is a clinical metric for diagnosing diabetes. Oral glucose tolerance test is an evaluation for gestational diabetes. Glycated albumin is a biomarker for short-term glycemic control.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Fasting blood glucose",
+                "is a",
+                "clinical metric"
+            ],
+            [
+                "gestational diabetes",
+                "has evaluation",
+                "Oral glucose tolerance test"
+            ],
+            [
+                "short-term glycemic control",
+                "has biomarker",
+                "Glycated albumin"
+            ],
+            [
+                "Fasting blood glucose",
+                "treated by",
+                "Oral glucose tolerance test"
+            ],
+            [
+                "Oral glucose tolerance test",
+                "increases risk of",
+                "gestational diabetes"
+            ],
+            [
+                "Glycated albumin",
+                "cause of",
+                "short-term glycemic control"
+            ],
+            [
+                "Fasting blood glucose",
+                "has titration rule",
+                "Glycated albumin"
+            ],
+            [
+                "Oral glucose tolerance test",
+                "dispenses",
+                "Fasting blood glucose"
+            ],
+            [
+                "gestational diabetes",
+                "contraindicated with",
+                "Oral glucose tolerance test"
+            ],
+            [
+                "Glycated albumin",
+                "administered via",
+                "short-term glycemic control"
+            ]
+        ],
+        "oie": [
+            [
+                "Fasting blood glucose",
+                "is a",
+                "clinical metric"
+            ],
+            [
+                "gestational diabetes",
+                "has evaluation",
+                "Oral glucose tolerance test"
+            ],
+            [
+                "short-term glycemic control",
+                "has biomarker",
+                "Glycated albumin"
+            ],
+            [
+                "Fasting blood glucose",
+                "treated by",
+                "Oral glucose tolerance test"
+            ],
+            [
+                "Oral glucose tolerance test",
+                "increases risk of",
+                "gestational diabetes"
+            ],
+            [
+                "Glycated albumin",
+                "cause of",
+                "short-term glycemic control"
+            ],
+            [
+                "Fasting blood glucose",
+                "has titration rule",
+                "Glycated albumin"
+            ],
+            [
+                "Oral glucose tolerance test",
+                "dispenses",
+                "Fasting blood glucose"
+            ],
+            [
+                "gestational diabetes",
+                "contraindicated with",
+                "Oral glucose tolerance test"
+            ],
+            [
+                "Glycated albumin",
+                "administered via",
+                "short-term glycemic control"
+            ]
+        ],
+        "schema_definition": {
+            "is a": "Indicates subclassing.",
+            "has evaluation": "Indicates diagnostic assessment.",
+            "has biomarker": "Indicates biomarker correlation.",
+            "treated by": "Indicates medical treatment.",
+            "increases risk of": "Indicates probability rise.",
+            "cause of": "Indicates causal link.",
+            "has titration rule": "Indicates titration constraint.",
+            "dispenses": "Indicates device delivery.",
+            "contraindicated with": "Indicates contraindication.",
+            "administered via": "Indicates drug administration route.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Fasting blood glucose",
+                "is a",
+                "clinical metric"
+            ],
+            [
+                "gestational diabetes",
+                "has evaluation",
+                "Oral glucose tolerance test"
+            ],
+            [
+                "short-term glycemic control",
+                "has biomarker",
+                "Glycated albumin"
+            ]
+        ]
+    },
+    {
+        "index": 8,
+        "input_text": "Type 2 Diabetes increases risk of cardiovascular disease. Hypertension co occurs with diabetes. Statins are preferred over fibrates for lipid control in diabetes. Dyslipidemia is a risk factor for myocardial infarction.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Type 2 Diabetes",
+                "increases risk of",
+                "cardiovascular disease"
+            ],
+            [
+                "Hypertension",
+                "co occurs with",
+                "Type 2 Diabetes"
+            ],
+            [
+                "Statins",
+                "preferred over",
+                "fibrates"
+            ],
+            [
+                "Dyslipidemia",
+                "increases risk of",
+                "myocardial infarction"
+            ],
+            [
+                "cardiovascular disease",
+                "increases risk of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "Type 2 Diabetes",
+                "cause of",
+                "Hypertension"
+            ],
+            [
+                "fibrates",
+                "preferred over",
+                "Statins"
+            ],
+            [
+                "myocardial infarction",
+                "cause of",
+                "Dyslipidemia"
+            ],
+            [
+                "Hypertension",
+                "administered via",
+                "Type 2 Diabetes"
+            ],
+            [
+                "Statins",
+                "contraindicated with",
+                "cardiovascular disease"
+            ]
+        ],
+        "oie": [
+            [
+                "Type 2 Diabetes",
+                "increases risk of",
+                "cardiovascular disease"
+            ],
+            [
+                "Hypertension",
+                "co occurs with",
+                "Type 2 Diabetes"
+            ],
+            [
+                "Statins",
+                "preferred over",
+                "fibrates"
+            ],
+            [
+                "Dyslipidemia",
+                "increases risk of",
+                "myocardial infarction"
+            ],
+            [
+                "cardiovascular disease",
+                "increases risk of",
+                "Type 2 Diabetes"
+            ],
+            [
+                "Type 2 Diabetes",
+                "cause of",
+                "Hypertension"
+            ],
+            [
+                "fibrates",
+                "preferred over",
+                "Statins"
+            ],
+            [
+                "myocardial infarction",
+                "cause of",
+                "Dyslipidemia"
+            ],
+            [
+                "Hypertension",
+                "administered via",
+                "Type 2 Diabetes"
+            ],
+            [
+                "Statins",
+                "contraindicated with",
+                "cardiovascular disease"
+            ]
+        ],
+        "schema_definition": {
+            "increases risk of": "Indicates probability rise.",
+            "co occurs with": "Indicates temporal concurrence.",
+            "preferred over": "Indicates therapeutic drug preference.",
+            "cause of": "Indicates causality.",
+            "administered via": "Indicates administration route.",
+            "contraindicated with": "Indicates contraindication.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Type 2 Diabetes",
+                "increases risk of",
+                "cardiovascular disease"
+            ],
+            [
+                "Hypertension",
+                "co occurs with",
+                "Type 2 Diabetes"
+            ],
+            [
+                "Statins",
+                "preferred over",
+                "fibrates"
+            ],
+            [
+                "Dyslipidemia",
+                "increases risk of",
+                "myocardial infarction"
+            ]
+        ]
+    },
+    {
+        "index": 9,
+        "input_text": "Dietary fiber intake decreases blood glucose spikes, which is a nutrient. Chromium supplementation has evaluation of fasting insulin. Physical exercise is a treatment procedure that increases insulin sensitivity.",
+        "entity_hint": "",
+        "relation_hint": "",
+        "oie_raw": [
+            [
+                "Dietary fiber",
+                "is a",
+                "nutrient"
+            ],
+            [
+                "Chromium supplementation",
+                "has evaluation",
+                "fasting insulin"
+            ],
+            [
+                "Physical exercise",
+                "is a",
+                "treatment procedure"
+            ],
+            [
+                "Physical exercise",
+                "increases risk of",
+                "insulin sensitivity"
+            ],
+            [
+                "nutrient",
+                "treated by",
+                "Dietary fiber"
+            ],
+            [
+                "fasting insulin",
+                "dispenses",
+                "Chromium supplementation"
+            ],
+            [
+                "Physical exercise",
+                "contraindicated with",
+                "insulin sensitivity"
+            ],
+            [
+                "Dietary fiber",
+                "has titration rule",
+                "fasting insulin"
+            ],
+            [
+                "Chromium supplementation",
+                "administered via",
+                "Physical exercise"
+            ],
+            [
+                "insulin sensitivity",
+                "has anatomic site",
+                "Physical exercise"
+            ]
+        ],
+        "oie": [
+            [
+                "Dietary fiber",
+                "is a",
+                "nutrient"
+            ],
+            [
+                "Chromium supplementation",
+                "has evaluation",
+                "fasting insulin"
+            ],
+            [
+                "Physical exercise",
+                "is a",
+                "treatment procedure"
+            ],
+            [
+                "Physical exercise",
+                "increases risk of",
+                "insulin sensitivity"
+            ],
+            [
+                "nutrient",
+                "treated by",
+                "Dietary fiber"
+            ],
+            [
+                "fasting insulin",
+                "dispenses",
+                "Chromium supplementation"
+            ],
+            [
+                "Physical exercise",
+                "contraindicated with",
+                "insulin sensitivity"
+            ],
+            [
+                "Dietary fiber",
+                "has titration rule",
+                "fasting insulin"
+            ],
+            [
+                "Chromium supplementation",
+                "administered via",
+                "Physical exercise"
+            ],
+            [
+                "insulin sensitivity",
+                "has anatomic site",
+                "Physical exercise"
+            ]
+        ],
+        "schema_definition": {
+            "is a": "Indicates subclassing.",
+            "has evaluation": "Indicates diagnostic test.",
+            "increases risk of": "Indicates probability rise.",
+            "treated by": "Indicates treatment.",
+            "dispenses": "Indicates device delivery.",
+            "contraindicated with": "Indicates contraindication.",
+            "has titration rule": "Indicates titration constraint.",
+            "administered via": "Indicates administration route.",
+            "has anatomic site": "Indicates anatomical location.",
+            "_entries": []
+        },
+        "canonicalization_candidates": "[]",
+        "schema_canonicalizaiton": [
+            [
+                "Physical exercise",
+                "is a",
+                "treatment procedure"
+            ]
+        ]
+    }
+]

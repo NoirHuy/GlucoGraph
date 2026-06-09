@@ -1,0 +1,525 @@
+{
+  "metrics": {
+    "accuracy": 0.93,
+    "false_negative_rate_percent": 1.7241379310344827,
+    "false_positive_rate_percent": 14.285714285714285,
+    "trap_rejection_rate_percent": 98.27586206896551
+  },
+  "counts": {
+    "total_cases": 100,
+    "true_positives": 36,
+    "true_negatives": 57,
+    "false_positives": 6,
+    "false_negatives": 1
+  },
+  "details": {
+    "true_positives_list": [
+      [
+        "Type 2 Diabetes",
+        "is a",
+        "chronic metabolic disease"
+      ],
+      [
+        "Type 2 Diabetes",
+        "has finding",
+        "hyperglycemia"
+      ],
+      [
+        "Type 2 Diabetes",
+        "treated by",
+        "metformin"
+      ],
+      [
+        "metformin",
+        "has adverse effect",
+        "diarrhea"
+      ],
+      [
+        "metformin",
+        "preferred over",
+        "sulfonylureas"
+      ],
+      [
+        "Insulin",
+        "administered via",
+        "subcutaneous injection"
+      ],
+      [
+        "Type 1 Diabetes",
+        "has anatomic site",
+        "pancreas"
+      ],
+      [
+        "autoimmune pancreatic beta-cell destruction",
+        "cause of",
+        "Type 1 Diabetes"
+      ],
+      [
+        "insulin pump",
+        "dispenses",
+        "insulin"
+      ],
+      [
+        "Type 1 Diabetes",
+        "has evaluation",
+        "HbA1c test"
+      ],
+      [
+        "Obesity",
+        "increases risk of",
+        "Type 2 Diabetes"
+      ],
+      [
+        "insulin resistance",
+        "has biomarker",
+        "C-peptide"
+      ],
+      [
+        "uncontrolled diabetes",
+        "has finding",
+        "High HbA1c"
+      ],
+      [
+        "Diabetic retinopathy",
+        "co occurs with",
+        "diabetic nephropathy"
+      ],
+      [
+        "Daily glucose monitoring",
+        "has evaluation",
+        "glucometer"
+      ],
+      [
+        "Insulin therapy",
+        "has titration rule",
+        "blood glucose levels"
+      ],
+      [
+        "Metformin",
+        "contraindicated with",
+        "severe renal impairment"
+      ],
+      [
+        "Gestational diabetes",
+        "co occurs with",
+        "HLA-DR3"
+      ],
+      [
+        "Type 2 Diabetes",
+        "has biomarker",
+        "TCF7L2 gene variant"
+      ],
+      [
+        "Diabetic Ketoacidosis",
+        "is a",
+        "life-threatening complication of diabetes"
+      ],
+      [
+        "Diabetic Ketoacidosis",
+        "has finding",
+        "severe hyperglycemia"
+      ],
+      [
+        "Diabetic Ketoacidosis",
+        "has finding",
+        "high ketones"
+      ],
+      [
+        "Diabetic Ketoacidosis",
+        "has finding",
+        "Kussmaul breathing"
+      ],
+      [
+        "Diabetic Ketoacidosis",
+        "treated by",
+        "intravenous insulin therapy"
+      ],
+      [
+        "Diabetic neuropathy",
+        "has anatomic site",
+        "peripheral nerves"
+      ],
+      [
+        "Diabetic neuropathy",
+        "has finding",
+        "burning pain"
+      ],
+      [
+        "Diabetic neuropathy",
+        "has finding",
+        "numbness"
+      ],
+      [
+        "Capsaicin cream",
+        "administered via",
+        "topical application"
+      ],
+      [
+        "Fasting blood glucose",
+        "is a",
+        "clinical metric"
+      ],
+      [
+        "gestational diabetes",
+        "has evaluation",
+        "Oral glucose tolerance test"
+      ],
+      [
+        "short-term glycemic control",
+        "has biomarker",
+        "Glycated albumin"
+      ],
+      [
+        "Type 2 Diabetes",
+        "increases risk of",
+        "cardiovascular disease"
+      ],
+      [
+        "Hypertension",
+        "co occurs with",
+        "Type 2 Diabetes"
+      ],
+      [
+        "Statins",
+        "preferred over",
+        "fibrates"
+      ],
+      [
+        "Dyslipidemia",
+        "increases risk of",
+        "myocardial infarction"
+      ],
+      [
+        "Physical exercise",
+        "is a",
+        "treatment procedure"
+      ]
+    ],
+    "true_negatives_list": [
+      [
+        "hyperglycemia",
+        "treated by",
+        "high-fructose corn syrup"
+      ],
+      [
+        "metformin",
+        "contraindicated with",
+        "human endocrine system"
+      ],
+      [
+        "Type 2 Diabetes",
+        "cause of",
+        "metformin"
+      ],
+      [
+        "diarrhea",
+        "treated by",
+        "metformin"
+      ],
+      [
+        "insulin",
+        "cause of",
+        "autoimmune pancreatic beta-cell destruction"
+      ],
+      [
+        "pancreas",
+        "dispenses",
+        "insulin pump"
+      ],
+      [
+        "HbA1c test",
+        "treated by",
+        "insulin"
+      ],
+      [
+        "Type 1 Diabetes",
+        "preferred over",
+        "Type 2 Diabetes"
+      ],
+      [
+        "fasting plasma glucose concentration in venous blood samples",
+        "has anatomic site",
+        "clinical setting"
+      ],
+      [
+        "autoimmune pancreatic beta-cell destruction",
+        "dispenses",
+        "insulin"
+      ],
+      [
+        "Type 2 Diabetes",
+        "increases risk of",
+        "Obesity"
+      ],
+      [
+        "C-peptide",
+        "cause of",
+        "insulin resistance"
+      ],
+      [
+        "High HbA1c",
+        "treated by",
+        "Obesity"
+      ],
+      [
+        "Diabetic retinopathy",
+        "treated by",
+        "diabetic nephropathy"
+      ],
+      [
+        "Obesity",
+        "has titration rule",
+        "Type 2 Diabetes"
+      ],
+      [
+        "C-peptide",
+        "administered via",
+        "insulin resistance"
+      ],
+      [
+        "glucometer",
+        "treated by",
+        "Daily glucose monitoring"
+      ],
+      [
+        "blood glucose levels",
+        "has titration rule",
+        "Insulin therapy"
+      ],
+      [
+        "severe renal impairment",
+        "preferred over",
+        "Metformin"
+      ],
+      [
+        "Metformin",
+        "dispenses",
+        "severe renal impairment"
+      ],
+      [
+        "severe renal impairment",
+        "has anatomic site",
+        "severe renal impairment"
+      ],
+      [
+        "Daily glucose monitoring",
+        "contraindicated with",
+        "glucometer"
+      ],
+      [
+        "BRCA1 mutation",
+        "increases risk of",
+        "Type 2 Diabetes"
+      ],
+      [
+        "Type 2 Diabetes",
+        "increases risk of",
+        "BRCA1 mutation"
+      ],
+      [
+        "BRCA1 mutation",
+        "has finding",
+        "breast cancer"
+      ],
+      [
+        "HLA-DR3",
+        "cause of",
+        "Gestational diabetes"
+      ],
+      [
+        "TCF7L2 gene variant",
+        "treated by",
+        "Type 2 Diabetes"
+      ],
+      [
+        "breast cancer",
+        "treated by",
+        "BRCA1 mutation"
+      ],
+      [
+        "Gestational diabetes",
+        "dispenses",
+        "HLA-DR3"
+      ],
+      [
+        "Kussmaul breathing",
+        "cause of",
+        "Diabetic Ketoacidosis"
+      ],
+      [
+        "severe hyperglycemia",
+        "administered via",
+        "intravenous insulin therapy"
+      ],
+      [
+        "Diabetic Ketoacidosis",
+        "contraindicated with",
+        "intravenous insulin therapy"
+      ],
+      [
+        "peripheral nerves",
+        "cause of",
+        "Diabetic neuropathy"
+      ],
+      [
+        "burning pain",
+        "treated by",
+        "numbness"
+      ],
+      [
+        "gabapentin",
+        "preferred over",
+        "Pregabalin"
+      ],
+      [
+        "topical application",
+        "dispenses",
+        "Capsaicin cream"
+      ],
+      [
+        "Diabetic neuropathy",
+        "contraindicated with",
+        "Pregabalin"
+      ],
+      [
+        "Fasting blood glucose",
+        "treated by",
+        "Oral glucose tolerance test"
+      ],
+      [
+        "Oral glucose tolerance test",
+        "increases risk of",
+        "gestational diabetes"
+      ],
+      [
+        "Glycated albumin",
+        "cause of",
+        "short-term glycemic control"
+      ],
+      [
+        "Fasting blood glucose",
+        "has titration rule",
+        "Glycated albumin"
+      ],
+      [
+        "Oral glucose tolerance test",
+        "dispenses",
+        "Fasting blood glucose"
+      ],
+      [
+        "gestational diabetes",
+        "contraindicated with",
+        "Oral glucose tolerance test"
+      ],
+      [
+        "Glycated albumin",
+        "administered via",
+        "short-term glycemic control"
+      ],
+      [
+        "cardiovascular disease",
+        "increases risk of",
+        "Type 2 Diabetes"
+      ],
+      [
+        "Type 2 Diabetes",
+        "cause of",
+        "Hypertension"
+      ],
+      [
+        "fibrates",
+        "preferred over",
+        "Statins"
+      ],
+      [
+        "myocardial infarction",
+        "cause of",
+        "Dyslipidemia"
+      ],
+      [
+        "Hypertension",
+        "administered via",
+        "Type 2 Diabetes"
+      ],
+      [
+        "Statins",
+        "contraindicated with",
+        "cardiovascular disease"
+      ],
+      [
+        "Physical exercise",
+        "increases risk of",
+        "insulin sensitivity"
+      ],
+      [
+        "nutrient",
+        "treated by",
+        "Dietary fiber"
+      ],
+      [
+        "fasting insulin",
+        "dispenses",
+        "Chromium supplementation"
+      ],
+      [
+        "Physical exercise",
+        "contraindicated with",
+        "insulin sensitivity"
+      ],
+      [
+        "Dietary fiber",
+        "has titration rule",
+        "fasting insulin"
+      ],
+      [
+        "Chromium supplementation",
+        "administered via",
+        "Physical exercise"
+      ],
+      [
+        "insulin sensitivity",
+        "has anatomic site",
+        "Physical exercise"
+      ]
+    ],
+    "false_positives_list": [
+      [
+        "severe renal impairment",
+        "increases risk of",
+        "metformin toxicity"
+      ],
+      [
+        "BRCA1 mutation",
+        "increases risk of",
+        "breast cancer"
+      ],
+      [
+        "Diabetic Ketoacidosis",
+        "has finding",
+        "metabolism acidosis"
+      ],
+      [
+        "Pregabalin",
+        "preferred over",
+        "gabapentin"
+      ],
+      [
+        "Dietary fiber",
+        "is a",
+        "nutrient"
+      ],
+      [
+        "Chromium supplementation",
+        "has evaluation",
+        "fasting insulin"
+      ]
+    ],
+    "false_negatives_list": [
+      [
+        "intravenous insulin therapy",
+        "treated by",
+        "Diabetic Ketoacidosis"
+      ]
+    ]
+  }
+}

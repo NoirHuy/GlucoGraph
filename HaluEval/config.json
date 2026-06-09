@@ -1,0 +1,12 @@
+{
+  "debate_gate_model": "openai/gpt-4o-mini",
+  "clinical_specialist_model": "meta-llama/llama-3.3-70b-instruct",
+  "ontology_inspector_model": "meta-llama/llama-3.1-8b-instruct",
+  "medical_skeptic_model": "google/gemma-3-27b-it",
+  "fcs_threshold": 80.0,
+  "veto_confidence_threshold": 70,
+  "max_rounds": 3,
+  "max_concurrent": 5,
+  "schema_path": "HaluEval/schemas/diabetes_schema.csv",
+  "entity_type_schema_path": "HaluEval/schemas/diabetes_entity_type_schema.csv"
+}

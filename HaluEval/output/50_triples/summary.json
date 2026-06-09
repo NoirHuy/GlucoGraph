@@ -1,0 +1,274 @@
+{
+  "metrics": {
+    "accuracy": 0.94,
+    "false_negative_rate_percent": 0.0,
+    "false_positive_rate_percent": 14.285714285714285,
+    "trap_rejection_rate_percent": 100.0
+  },
+  "counts": {
+    "total_cases": 50,
+    "true_positives": 18,
+    "true_negatives": 29,
+    "false_positives": 3,
+    "false_negatives": 0
+  },
+  "details": {
+    "true_positives_list": [
+      [
+        "Type 2 Diabetes",
+        "is a",
+        "chronic metabolic disease"
+      ],
+      [
+        "Type 2 Diabetes",
+        "has finding",
+        "hyperglycemia"
+      ],
+      [
+        "Type 2 Diabetes",
+        "treated by",
+        "metformin"
+      ],
+      [
+        "metformin",
+        "has adverse effect",
+        "diarrhea"
+      ],
+      [
+        "metformin",
+        "preferred over",
+        "sulfonylureas"
+      ],
+      [
+        "Insulin",
+        "administered via",
+        "subcutaneous injection"
+      ],
+      [
+        "Type 1 Diabetes",
+        "has anatomic site",
+        "pancreas"
+      ],
+      [
+        "autoimmune pancreatic beta-cell destruction",
+        "cause of",
+        "Type 1 Diabetes"
+      ],
+      [
+        "insulin pump",
+        "dispenses",
+        "insulin"
+      ],
+      [
+        "Type 1 Diabetes",
+        "has evaluation",
+        "HbA1c test"
+      ],
+      [
+        "Obesity",
+        "increases risk of",
+        "Type 2 Diabetes"
+      ],
+      [
+        "insulin resistance",
+        "has biomarker",
+        "C-peptide"
+      ],
+      [
+        "uncontrolled diabetes",
+        "has finding",
+        "High HbA1c"
+      ],
+      [
+        "Diabetic retinopathy",
+        "co occurs with",
+        "diabetic nephropathy"
+      ],
+      [
+        "Daily glucose monitoring",
+        "has evaluation",
+        "glucometer"
+      ],
+      [
+        "Insulin therapy",
+        "has titration rule",
+        "blood glucose levels"
+      ],
+      [
+        "Metformin",
+        "contraindicated with",
+        "severe renal impairment"
+      ],
+      [
+        "Type 2 Diabetes",
+        "has biomarker",
+        "TCF7L2 gene variant"
+      ]
+    ],
+    "true_negatives_list": [
+      [
+        "hyperglycemia",
+        "treated by",
+        "high-fructose corn syrup"
+      ],
+      [
+        "metformin",
+        "contraindicated with",
+        "human endocrine system"
+      ],
+      [
+        "Type 2 Diabetes",
+        "cause of",
+        "metformin"
+      ],
+      [
+        "diarrhea",
+        "treated by",
+        "metformin"
+      ],
+      [
+        "insulin",
+        "cause of",
+        "autoimmune pancreatic beta-cell destruction"
+      ],
+      [
+        "pancreas",
+        "dispenses",
+        "insulin pump"
+      ],
+      [
+        "HbA1c test",
+        "treated by",
+        "insulin"
+      ],
+      [
+        "Type 1 Diabetes",
+        "preferred over",
+        "Type 2 Diabetes"
+      ],
+      [
+        "fasting plasma glucose concentration in venous blood samples",
+        "has anatomic site",
+        "clinical setting"
+      ],
+      [
+        "autoimmune pancreatic beta-cell destruction",
+        "dispenses",
+        "insulin"
+      ],
+      [
+        "Type 2 Diabetes",
+        "increases risk of",
+        "Obesity"
+      ],
+      [
+        "C-peptide",
+        "cause of",
+        "insulin resistance"
+      ],
+      [
+        "High HbA1c",
+        "treated by",
+        "Obesity"
+      ],
+      [
+        "Diabetic retinopathy",
+        "treated by",
+        "diabetic nephropathy"
+      ],
+      [
+        "Obesity",
+        "has titration rule",
+        "Type 2 Diabetes"
+      ],
+      [
+        "C-peptide",
+        "administered via",
+        "insulin resistance"
+      ],
+      [
+        "glucometer",
+        "treated by",
+        "Daily glucose monitoring"
+      ],
+      [
+        "blood glucose levels",
+        "has titration rule",
+        "Insulin therapy"
+      ],
+      [
+        "severe renal impairment",
+        "preferred over",
+        "Metformin"
+      ],
+      [
+        "Metformin",
+        "dispenses",
+        "severe renal impairment"
+      ],
+      [
+        "severe renal impairment",
+        "has anatomic site",
+        "severe renal impairment"
+      ],
+      [
+        "Daily glucose monitoring",
+        "contraindicated with",
+        "glucometer"
+      ],
+      [
+        "BRCA1 mutation",
+        "increases risk of",
+        "Type 2 Diabetes"
+      ],
+      [
+        "Type 2 Diabetes",
+        "increases risk of",
+        "BRCA1 mutation"
+      ],
+      [
+        "BRCA1 mutation",
+        "has finding",
+        "breast cancer"
+      ],
+      [
+        "HLA-DR3",
+        "cause of",
+        "Gestational diabetes"
+      ],
+      [
+        "TCF7L2 gene variant",
+        "treated by",
+        "Type 2 Diabetes"
+      ],
+      [
+        "breast cancer",
+        "treated by",
+        "BRCA1 mutation"
+      ],
+      [
+        "Gestational diabetes",
+        "dispenses",
+        "HLA-DR3"
+      ]
+    ],
+    "false_positives_list": [
+      [
+        "severe renal impairment",
+        "increases risk of",
+        "metformin toxicity"
+      ],
+      [
+        "Gestational diabetes",
+        "co occurs with",
+        "HLA-DR3"
+      ],
+      [
+        "BRCA1 mutation",
+        "increases risk of",
+        "breast cancer"
+      ]
+    ],
+    "false_negatives_list": []
+  }
+}
