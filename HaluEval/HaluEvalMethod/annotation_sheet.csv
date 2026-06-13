@@ -1,0 +1,11 @@
+﻿triple_id,subject,relation,object,subject_type,object_type,annotator_label,notes
+1,TCF7L2,ASSOCIATED_WITH,Insulin resistance,GeneOrGeneProduct,DiseaseOrPhenotypicFeature,,
+2,TCF7L2,PROTECTS_AGAINST,Insulin resistance,GeneOrGeneProduct,DiseaseOrPhenotypicFeature,,
+3,Metformin,INCREASES_RISK_OF,type 2 diabetes mellitus,ChemicalEntity,DiseaseOrPhenotypicFeature,,
+4,Metformin,TREATS,Insulin resistance,ChemicalEntity,DiseaseOrPhenotypicFeature,,
+5,TCF7L2,ASSOCIATED_WITH,cimetidine,GeneOrGeneProduct,ChemicalEntity,,
+6,Metformin,TREATS,diabetic nephropathy,ChemicalEntity,DiseaseOrPhenotypicFeature,,
+7,Metformin,TREATS,type 2 diabetes mellitus,ChemicalEntity,DiseaseOrPhenotypicFeature,,
+8,Sulfonylurea,COADMINISTERED_WITH,metformin,ChemicalEntity,ChemicalEntity,,
+9,Metformin,INCREASES_RISK_OF,diabetic nephropathy,ChemicalEntity,DiseaseOrPhenotypicFeature,,
+10,metformin,INTERACTS_WITH,cimetidine,ChemicalEntity,ChemicalEntity,,

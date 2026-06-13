@@ -1,0 +1,163 @@
+GlucoGraph: Hallucination-Controlled Diabetes Knowledge Graph Construction via LLM Multi-Agent Debate
+Quang-Huy LE
+Faculty of Information Technology, Nam Can Tho University, Can Tho, Vietnam
+Email: lequanghuywmail@gmail.com
+
+Abstract—Knowledge hallucination in Large Language Models (LLMs) is a critical barrier to their clinical deployment, where accuracy is paramount. This paper proposes an end-to-end automated system for constructing a UMLS-standardized Knowledge Graph (KG) for diabetes mellitus, built upon an extended EDC (Extract–Define–Canonicalize) framework enhanced with a Peer-to-Peer Multi-Agent Debate Gate (P2P Debate Gate). Medical text is sourced from Merck Manuals Professional Version and processed through a four-phase pipeline — Extract, Define, Canonicalize, and Property Packing — before storage in Neo4j. A hybrid GraphRAG-powered Clinical Decision Support System (CDSS) is implemented to provide transparent, evidence-grounded diagnosis and treatment recommendations. Experiments on three benchmark datasets confirm the effectiveness of the proposed approach: Full-Triple F1 = 52.24% on BioRED Diabetes (+2.24% over the no-debate baseline); hallucination Trap Rejection Rate = 98.28% (Accuracy = 93.00%) on a 100-sample HaluEval set; and Fact-Extraction F1 = 78.69% on DBpedia-WebNLG with perfect Ontology Consistency (OC = 100%), significantly outperforming Vicuna-13B (23.00%) and Alpaca-LoRA-13B (20.00%).
+Index Terms—Knowledge graph, large language model, diabetes mellitus, EDC framework, Neo4j, UMLS, GraphRAG, multi-agent debate.
+
+I. Introduction
+Diabetes mellitus is among the most prevalent chronic diseases worldwide, affecting over 537 million adults as of 2021, with projections reaching 783 million by 2045 [1]. The volume of clinical literature on diabetes treatment is growing faster than any single clinician can assimilate, underscoring the urgent need for automated knowledge extraction and intelligent decision-support tools.
+Large Language Models (LLMs) have demonstrated remarkable natural language understanding, raising hopes for their clinical application. However, knowledge hallucination — the generation of factually incorrect or unsupported statements — poses a critical safety risk in medical settings [2]. A hallucinated drug interaction or misclassified clinical relationship could directly endanger patients.
+Knowledge Graphs (KGs) offer a complementary paradigm: explicit, structured representations of entities and relationships that support multi-hop reasoning and transparent provenance. Graph Retrieval-Augmented Generation (GraphRAG) [3] combines the fluency of LLMs with the factual grounding of KGs, but the construction quality of the underlying KG remains the bottleneck.
+This paper addresses that bottleneck. We present three principal contributions:
+An extended four-phase EDC pipeline (Extract–Define–Canonicalize–Property Packing) that maps free-form clinical triples to UMLS CUI-anchored ontology nodes, eliminating synonym ambiguity.
+A P2P Multi-Agent Debate Gate comprising three specialized AI agents (Clinical Specialist, Ontology Inspector, Medical Skeptic) with a consensus scoring mechanism (FCS ≥ 80) and a clinical Veto Rule, achieving a Trap Rejection Rate of 98.28%.
+A hybrid GraphRAG CDSS (FastAPI + ReactJS + Neo4j) that delivers evidence-grounded diagnostic reasoning with a real-time Clinical Circuit Breaker for contraindicated drug alerts.
+The remainder of the paper is organized as follows. Section II reviews related work. Section III describes the proposed system architecture. Section IV presents experimental results. Section V discusses findings, limitations, and future directions. Section VI concludes.
+II. Related Work
+A. Biomedical Knowledge Graphs and UMLS
+Biomedical KGs such as UMLS [4], SNOMED CT, and DrugBank encode standardized clinical terminologies and drug-disease relationships. UMLS integrates over 200 source vocabularies under a single Concept Unique Identifier (CUI) system, making it the de facto standard for entity normalization in clinical NLP. Prior KG construction approaches relied on manual curation or rule-based extraction, which do not scale to the rate of medical literature growth.
+B. LLM-Based Knowledge Extraction
+The EDC framework [5] pioneered a three-phase LLM-driven pipeline for open KG construction, demonstrating that iterative prompting can guide models to produce ontology-consistent triples. However, EDC's original formulation lacks biomedical identifier integration and quality gating. Khorashadizadeh et al. [6] benchmarked Vicuna-13B and Alpaca-LoRA-13B on DBpedia-WebNLG, reporting F1 scores of 23.00% and 20.00% respectively — baselines that our system substantially exceeds.
+C. Hallucination Detection and Multi-Agent Debate
+Ji et al. [2] provide a comprehensive survey of hallucination in NLG, classifying failure modes relevant to clinical contexts. The HaluEval benchmark [7] formalizes adversarial triple sets for evaluating detection robustness. Du et al. [8] showed that multi-agent debate improves LLM factual accuracy; we extend this insight by designing domain-specific agents with differentiated roles and a clinical veto mechanism absent from prior work.
+D. Clinical Decision Support Systems
+GraphRAG [3] enhances retrieval-augmented generation by traversing KG paths, providing multi-hop reasoning capabilities suited to differential diagnosis. Existing CDSS systems either rely on static knowledge bases [9] or lack integrated hallucination controls. Our work bridges these gaps by unifying dynamic KG construction, multi-agent quality control, and hybrid GraphRAG inference.
+III. Proposed System
+A. System Architecture Overview
+The proposed system follows a five-stage end-to-end pipeline, as depicted in Fig. 1: (1) Text Preprocessing, (2) EDC Pipeline, (3) Agent Debate Gate, (4) Post-processing and Neo4j Loading, and (5) CDSS Demo. Each stage is modular, enabling independent evaluation and replacement of components.
+[Fig. 1 — End-to-End Architecture: Text Preprocessing → EDC Pipeline → Agent Debate Gate → Neo4j → CDSS]
+Fig. 1. End-to-end clinical knowledge graph construction and CDSS architecture.
+B. Data Source and Preprocessing
+Clinical text is sourced from Merck Manuals Professional Version, diabetes mellitus section — a peer-reviewed clinical reference updated continuously by medical experts. Raw HTML content is scraped, stripped of formatting artifacts, and segmented into clinically coherent chunks of approximately 256 tokens using a sliding-window strategy with 32-token overlap to preserve cross-sentence context.
+C. Extended EDC Pipeline
+The EDC framework is extended from three to four phases:
+Phase 1 — Extract: A few-shot prompt instructs Llama-3.3-70B-Versatile to perform Open Information Extraction (Open IE), producing raw triples (Subject, Relation, Object) without schema constraints, maximizing recall.
+Phase 2 — Define: The LLM generates a contextual semantic definition for each entity and relation based on the source sentence. These definitions serve as disambiguation anchors and evidence for downstream canonicalization.
+Phase 3 — Canonicalize: Qwen-Embedding encodes entity and relation texts into dense vectors. Cosine similarity is computed against reference schema files (diabetes_entity_type_schema.csv, diabetes_schema.csv). Entities and relations are mapped to their closest canonical type if similarity exceeds threshold τ = 0.75; otherwise they are flagged for agent review.
+Phase 4 — Property Packing: A PropertyPacker module enriches each entity node with standardized medical identifiers: RxNorm codes for drugs, ICD-10 codes for diagnoses, and UMLS CUI for all entities. Entity resolution merges synonyms and abbreviations onto a single CUI-anchored node, producing deduplicated, publication-ready JSON graph files.
+D. P2P Multi-Agent Debate Gate
+Before any triple is written to Neo4j, it must pass a three-agent peer debate. The three agents and their mandates are:
+Clinical Specialist (Llama-3.3-70B): Evaluates clinical accuracy of the relation against current ADA/ICD-10 guidelines, assigning a score S₁ ∈ [0, 100].
+Ontology Inspector (Llama-3.1): Checks Domain/Range constraint compliance with the loaded ontology schema, assigning S₂ ∈ [0, 100].
+Medical Skeptic (Gemma-4): Independently audits for subject–object inversion, direction errors, and hallucination patterns, assigning S₃ ∈ [0, 100].
+The Final Consensus Score is computed as FCS = 0.4·S₁ + 0.3·S₂ + 0.3·S₃. A triple is approved only if FCS ≥ 80 and no agent triggers the Veto Rule (any Sᵢ < 20 constitutes a veto). Rejected triples are logged for post-hoc analysis. This conservative policy implements medical conservatism: it is preferable to exclude uncertain triples than to admit clinically harmful ones.
+E. Neo4j Storage and Cypher Import
+Approved triples are serialized to JSON and imported into Neo4j via Cypher MERGE statements, ensuring idempotent loading. Node labels correspond to UMLS semantic types (e.g., Pharmacologic Substance, Disease or Syndrome). Relationship types follow the canonical schema (TREATED_BY, HAS_FINDING, CO_OCCURS_WITH, CONTRAINDICATED_WITH).
+F. Hybrid GraphRAG CDSS
+The CDSS web application (FastAPI backend, ReactJS frontend) implements a hybrid retrieval strategy: (1) semantic vector search on entity embeddings to identify candidate seed nodes; (2) multi-hop Cypher traversal from seeds to retrieve diagnostic and treatment subgraphs; and (3) LLM synthesis of the retrieved subgraph into a structured clinical response with differential diagnoses, treatment recommendations, and confidence scores. A Clinical Circuit Breaker module scans retrieved paths for CONTRAINDICATED_WITH edges and triggers a red-alert banner if any contraindication is detected.
+IV. Experimental Results
+A. Experimental Setup
+All experiments were conducted on a lab environment connected via OpenRouter API (Llama-3.3-70B, Llama-3.1, Gemma-4) and a local Neo4j Community Edition instance. Three benchmark datasets were used: BioRED Diabetes (PubMed relation extraction, diabetes subset); a 100-sample adversarial HaluEval set constructed specifically for this study (42 valid triples, 58 injected trap triples); and DBpedia-WebNLG (1_university topic, 71 documents) for domain-generalization evaluation. Evaluation follows strict/exact match as per SemEval conventions.
+B. Triple Extraction Quality — BioRED Diabetes
+Table I compares the Raw system (no debate gate) against the full Debate system across five F1 metrics.
+TABLE I. Triple Extraction F1-Score Comparison — BioRED Diabetes Dataset
+
+Metric
+Raw (No Gate)
+Debate (With Gate)
+Δ
+Subject F1
+67.24%
+69.09%
++1.85%
+Predicate F1
+77.59%
+80.00%
++2.41%
+Object F1
+67.73%
+69.61%
++1.88%
+Exact Match F1
+70.66%
+72.70%
++2.04%
+Full Triple F1
+50.00%
+52.24%
++2.24%
+
+The Debate Gate consistently improves all metrics. The largest gain occurs on Predicate F1 (+2.41 pp), indicating that agent debate most effectively filters incorrect relation labels — the highest-risk component for downstream reasoning. Full Triple F1 improves by 2.24 pp, from 50.00% to 52.24%.
+C. Hallucination Detection — HaluEval
+Table II reports the confusion matrix and derived metrics from the 100-sample HaluEval experiment.
+TABLE II. HaluEval Confusion Matrix and Performance Metrics
+Triple Class
+Accepted
+Blocked
+Total
+Metric → Value
+Valid (Ground Truth +)
+36 (TP)
+6 (FP)
+42
+Accuracy = 93.00%
+Trap (Hallucination)
+1 (FN)
+57 (TN)
+58
+TRR = 98.28%
+
+
+
+
+FPR = 14.29%  |  FNR = 1.72%
+
+The system achieves a Trap Rejection Rate (TRR) of 98.28%, with only one trap triple evading detection: ["intravenous insulin therapy", TREATED_BY, "Diabetic Ketoacidosis"] — a subject–object inversion in a complex emergency scenario. The False Positive Rate of 14.29% (6 valid triples blocked) reflects intentional medical conservatism: triples involving complex genetics or unverifiable nutraceutical claims (e.g., Chromium supplementation) are withheld pending stronger evidence, consistent with clinical safety standards.
+D. Domain Generalization — DBpedia-WebNLG
+Table III evaluates knowledge extraction quality on a general-domain benchmark, comparing the proposed EDC framework against published baselines.
+TABLE III. Knowledge Extraction Performance — DBpedia-WebNLG (1_university, 71 docs)
+Model / Configuration
+Precision
+Recall
+F1
+OC
+Alpaca-LoRA-13B [6]
+29.00%
+16.00%
+20.00%
+89%
+Vicuna-13B [6]
+31.00%
+19.00%
+23.00%
+92%
+EDC (w/o post-processing)
+70.40%
+51.98%
+57.96%
+100%
+EDC + Post-processing (ours)
+86.03%
+74.44%
+78.69%
+100%
+
+OC = Ontology Consistency (proportion of triples conforming to reference ontology).
+
+EDC + Post-processing achieves F1 = 78.69% — 3.42× Vicuna-13B and 3.93× Alpaca-LoRA-13B. Both EDC variants attain OC = 100%, confirming that the Canonicalize phase enforces perfect ontological compliance, a property absent in unconstrained LLM-based extractors.
+V. Discussion
+A. Principal Findings
+Three findings stand out. First, the multi-agent Debate Gate improves extraction quality across all metrics while delivering near-perfect hallucination suppression (TRR = 98.28%). Second, the Property Packing phase — absent from the original EDC specification — proved essential in practice: real biomedical text contains dense synonym variation that cannot be resolved by canonicalization alone. Third, the EDC architecture generalizes well beyond the medical domain, suggesting broad applicability to structured knowledge extraction tasks.
+B. Strengths and Limitations
+The primary strength is the end-to-end measurability: every subsystem is evaluated on standard benchmarks with reproducible scripts, enabling direct comparison with future work. The integration of UMLS CUI anchoring provides semantic interoperability absent from general-purpose KG systems.
+Limitations include: (a) the single data source (Merck Manuals) limits coverage; multi-source integration with PubMed and WHO guidelines is needed for production deployment; (b) the FPR of 14.29% indicates that the current agent configuration is overly conservative on nuanced or indirect relations, which may reduce recall in downstream CDSS tasks; and (c) the CDSS has not undergone prospective clinical validation with practicing physicians, which is required before any real-world deployment.
+C. Comparison with Prior Work
+Unlike unconstrained LLM extractors [6] that treat KG construction as a single-pass generation task, our approach enforces structural constraints at every pipeline stage, yielding a 3.42× F1 improvement and perfect OC. Compared to static CDSS systems [9], our hybrid GraphRAG approach provides dynamic, evidence-traceable reasoning. The clinical Veto Rule distinguishes our hallucination control mechanism from general multi-agent debate setups [8], which lack domain-specific safety constraints.
+D. Future Work
+Immediate priorities are: (1) expanding the data pipeline to ingest PubMed abstracts and UpToDate content via automated ETL; (2) reducing FPR through agent fine-tuning on a curated diabetes triple dataset; (3) conducting a prospective clinical evaluation with endocrinologists to validate CDSS recommendations against physician judgment; and (4) exploring lightweight deployment of the Canonicalize and Debate modules using quantized smaller models suitable for on-premises hospital infrastructure.
+VI. Conclusion
+This paper presented an end-to-end system for constructing a UMLS-constrained diabetes Knowledge Graph using LLMs, validated on three benchmark datasets. The proposed extended EDC pipeline with P2P Multi-Agent Debate Gate achieves Full-Triple F1 = 52.24% (+2.24% over the no-debate baseline), hallucination Trap Rejection Rate = 98.28%, and general-domain Fact-Extraction F1 = 78.69% with perfect Ontology Consistency. These results demonstrate that structured pipeline design, ontology-constrained canonicalization, and domain-specialized multi-agent review collectively produce a knowledge graph suitable for safe clinical decision support. The integrated hybrid GraphRAG CDSS provides transparent, evidence-grounded reasoning with an automated Clinical Circuit Breaker, offering a reproducible architecture for future intelligent clinical informatics systems.
+. Acknowledgment
+The author thanks Assoc. Prof. Dang Manh Huy (Nam Can Tho University) for academic supervision and Mr. Tran Van Thien (MKS Corp.) for providing the internship environment and industrial mentorship. This work was conducted as part of the Software Engineering internship program, Faculty of Information Technology, Nam Can Tho University, Academic Year 2025–2026.
+. References
+[1] International Diabetes Federation, IDF Diabetes Atlas, 10th ed., Brussels: IDF, 2021. [Online]. Available: https://www.diabetesatlas.org
+[2] Z. Ji, N. Lee, R. Frieske, T. Yu, D. Su, Y. Xu, E. Ishii, Y. E. Bang, A. Madotto, and P. Fung, "Survey of hallucination in natural language generation," ACM Comput. Surv., vol. 55, no. 12, pp. 1–38, Mar. 2023.
+[3] D. Edge, H. Trinh, N. Cheng, J. Bradley, A. Chao, A. Mody, S. Truitt, and J. Larson, "From local to global: A graph RAG approach to query-focused summarization," arXiv:2404.16130, Apr. 2024.
+[4] O. Bodenreider, "The unified medical language system (UMLS): Integrating biomedical terminology," Nucleic Acids Res., vol. 32, no. D1, pp. D267–D270, Jan. 2004.
+[5] S. Carta, A. Giuliani, L. Piano, A. S. Podda, L. Pompianu, and G. Tiddia, "Iterative zero-shot LLM prompting for knowledge graph construction," arXiv:2307.01128, Jul. 2023.
+[6] H. Khorashadizadeh, N. Mihindukulasooriya, S. Tiwari, J. Groppe, and S. Groppe, "Exploring in-context learning capabilities of foundation models for generating knowledge graphs from text," arXiv:2306.11702, Jun. 2023.
+[7] J. Li, X. Cheng, W. X. Zhao, J.-Y. Nie, and J.-R. Wen, "HaluEval: A large-scale hallucination evaluation benchmark for large language models," in Proc. EMNLP, Singapore, Dec. 2023, pp. 6449–6464.
+[8] Y. Du, S. Li, A. Torralba, J. B. Tenenbaum, and I. Mordatch, "Improving factuality and reasoning in language models through multiagent debate," in Proc. ICML, Vienna, Jul. 2024.
+[9] American Diabetes Association, "Standards of care in diabetes—2024," Diabetes Care, vol. 47, Suppl. 1, pp. S1–S321, Jan. 2024.
