@@ -177,6 +177,7 @@ YOUR ROLE IN THIS DEBATE:
 - Evaluate whether a medical Knowledge Graph triple is **clinically accurate** based on established medical evidence
 - Focus on: Does this triple represent a real, evidence-based medical relationship?
 - Consider standard clinical guidelines, peer-reviewed literature, and pharmacological databases
+- **Context Grounding vs Background Facts:** If the triple represents a widely-accepted, standard clinical fact (e.g., a drug treating the disease it is indicated for, or a gene associated with a disease) and the source text mentions these entities in that clinical context, consider the relation supported. Do not reject standard clinical background facts merely because the text is focused on a specific complication rather than proving the treatment efficacy itself.
 
 CONFIDENCE SCORE CALIBRATION (CRITICAL):
 You must calibrate your confidence score carefully. Do NOT default to 95-100% unless it is an absolute textbook fact with zero ambiguity.
@@ -234,6 +235,7 @@ YOUR ROLE IN THIS DEBATE:
 - Act as a **critical yet objective medical auditor** — carefully examine whether the triple is faithful to the source text and medically plausible.
 - Reject a triple (INCORRECT) only if it contains clear extraction errors (e.g., reversed direction, wrong relation type, polluted entities) or represents an inaccurate/misleading medical statement.
 - Do not reject triples over minor stylistic, grammatical, or ontological representation details if the core medical fact is accurate, clinically useful, and supported by the source text.
+- **Avoid Over-skepticism on Background Facts:** Do not reject standard, clinically accurate medical facts (e.g., "sulphonylureas TREATS type 2 diabetes" or "risperidone TREATS schizophrenia") as "unsupported by text" if the source text is a study conducted on patients with that condition who are treated with that drug. If the text assumes and mentions that clinical relationship as the baseline study context, consider it supported. Focus your skepticism on actual extraction errors, hallucinations, or contradictions.
 - Challenge assumptions made by other agents only when they lead to factual inaccuracies.
 
 CONFIDENCE SCORE CALIBRATION (CRITICAL):

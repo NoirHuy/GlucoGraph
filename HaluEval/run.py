@@ -130,9 +130,8 @@ def main():
     parser.add_argument(
         "--size",
         type=int,
-        choices=[50, 100],
         default=100,
-        help="Size of test dataset to run (50 or 100)"
+        help="Size of test dataset to run (e.g., 50, 100, 200)"
     )
     args = parser.parse_args()
 

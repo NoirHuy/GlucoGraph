@@ -1,0 +1,1025 @@
+{
+  "metrics": {
+    "accuracy": 0.94,
+    "false_negative_rate_percent": 2.0,
+    "false_positive_rate_percent": 10.0,
+    "trap_rejection_rate_percent": 98.0
+  },
+  "counts": {
+    "total_cases": 200,
+    "true_positives": 90,
+    "true_negatives": 98,
+    "false_positives": 10,
+    "false_negatives": 2
+  },
+  "details": {
+    "true_positives_list": [
+      [
+        "SLC2A2",
+        "ASSOCIATED_WITH",
+        "obese"
+      ],
+      [
+        "PAI-1",
+        "ASSOCIATED_WITH",
+        "obese"
+      ],
+      [
+        "risperidone",
+        "TREATS",
+        "schizophrenia"
+      ],
+      [
+        "IRS2",
+        "ASSOCIATED_WITH",
+        "diabetes"
+      ],
+      [
+        "IFNAR1",
+        "ASSOCIATED_WITH",
+        "type 1 diabetes"
+      ],
+      [
+        "olanzapine",
+        "TREATS",
+        "schizophrenia"
+      ],
+      [
+        "olanzapine",
+        "TREATS",
+        "schizoaffective disorder"
+      ],
+      [
+        "glipizide",
+        "INCREASES_RISK_OF",
+        "CAD"
+      ],
+      [
+        "AMPK",
+        "PROTECTS_AGAINST",
+        "infarcted myocardium"
+      ],
+      [
+        "sulphonylureas",
+        "TREATS",
+        "type 2 diabetes"
+      ],
+      [
+        "IRE1a",
+        "ASSOCIATED_WITH",
+        "maternal diabetes"
+      ],
+      [
+        "IRS2",
+        "ASSOCIATED_WITH",
+        "obesity"
+      ],
+      [
+        "IFNAR1",
+        "ASSOCIATED_WITH",
+        "insulitis"
+      ],
+      [
+        "IFNAR",
+        "ASSOCIATED_WITH",
+        "diabetes"
+      ],
+      [
+        "STZ",
+        "INCREASES_RISK_OF",
+        "diabetic neuropathy"
+      ],
+      [
+        "PTPN22",
+        "ASSOCIATED_WITH",
+        "autoimmune conditions"
+      ],
+      [
+        "metformin",
+        "TREATS",
+        "inflammatory"
+      ],
+      [
+        "TNMD",
+        "ASSOCIATED_WITH",
+        "Diabetes"
+      ],
+      [
+        "WFS1",
+        "ASSOCIATED_WITH",
+        "WFS"
+      ],
+      [
+        "morphine",
+        "COADMINISTERED_WITH",
+        "CNSB002"
+      ],
+      [
+        "glucagon",
+        "ASSOCIATED_WITH",
+        "hypoglycemia"
+      ],
+      [
+        "ABCC8",
+        "ASSOCIATED_WITH",
+        "coronary heart disease"
+      ],
+      [
+        "SOD1",
+        "ASSOCIATED_WITH",
+        "maternal diabetes"
+      ],
+      [
+        "CHOP",
+        "ASSOCIATED_WITH",
+        "maternal diabetes"
+      ],
+      [
+        "TfR2",
+        "ASSOCIATED_WITH",
+        "skin pigmentation"
+      ],
+      [
+        "gliclazide",
+        "TREATS",
+        "type 2 diabetes"
+      ],
+      [
+        "poly I:C",
+        "INCREASES_RISK_OF",
+        "diabetes"
+      ],
+      [
+        "PERK",
+        "ASSOCIATED_WITH",
+        "maternal diabetes"
+      ],
+      [
+        "CNSB002",
+        "TREATS",
+        "inflammatory"
+      ],
+      [
+        "sulphonylureas",
+        "INCREASES_RISK_OF",
+        "CAD"
+      ],
+      [
+        "SOD1",
+        "ASSOCIATED_WITH",
+        "embryopathy"
+      ],
+      [
+        "Hp",
+        "ASSOCIATED_WITH",
+        "DM"
+      ],
+      [
+        "TfR2",
+        "ASSOCIATED_WITH",
+        "iron overload"
+      ],
+      [
+        "XBP1",
+        "ASSOCIATED_WITH",
+        "maternal diabetes"
+      ],
+      [
+        "olanzapine",
+        "INCREASES_RISK_OF",
+        "insulin resistance"
+      ],
+      [
+        "PPAR-gamma",
+        "ASSOCIATED_WITH",
+        "pancreatitis"
+      ],
+      [
+        "AMPK",
+        "PROTECTS_AGAINST",
+        "inflammatory"
+      ],
+      [
+        "glipizide",
+        "COMPARED_WITH",
+        "glimepiride"
+      ],
+      [
+        "clozapine",
+        "COMPARED_WITH",
+        "olanzapine"
+      ],
+      [
+        "glucose",
+        "INCREASES_RISK_OF",
+        "T2D"
+      ],
+      [
+        "glibenclamide",
+        "COMPARED_WITH",
+        "glimepiride"
+      ],
+      [
+        "glipizide",
+        "COMPARED_WITH",
+        "gliclazide"
+      ],
+      [
+        "clozapine",
+        "TREATS",
+        "schizophrenia"
+      ],
+      [
+        "glipizide",
+        "TREATS",
+        "type 2 diabetes"
+      ],
+      [
+        "ABCC8",
+        "ASSOCIATED_WITH",
+        "type 2 diabetes"
+      ],
+      [
+        "GcgRs",
+        "ASSOCIATED_WITH",
+        "type 1 diabetes"
+      ],
+      [
+        "glucose",
+        "ASSOCIATED_WITH",
+        "diabetes mellitus"
+      ],
+      [
+        "antipsychotic agent",
+        "INCREASES_RISK_OF",
+        "diabetes"
+      ],
+      [
+        "clozapine",
+        "TREATS",
+        "schizoaffective disorder"
+      ],
+      [
+        "PPAR-gamma",
+        "ASSOCIATED_WITH",
+        "insulin resistance"
+      ],
+      [
+        "CNSB002",
+        "TREATS",
+        "hyperalgesia"
+      ],
+      [
+        "antipsychotic agent",
+        "TREATS",
+        "schizophrenia"
+      ],
+      [
+        "metformin",
+        "TREATS",
+        "infarcted myocardium"
+      ],
+      [
+        "vitamin E",
+        "TREATS",
+        "myocardial infarct"
+      ],
+      [
+        "isoproterenol",
+        "INCREASES_RISK_OF",
+        "infarcted myocardium"
+      ],
+      [
+        "iron",
+        "ASSOCIATED_WITH",
+        "cirrhosis"
+      ],
+      [
+        "clozapine",
+        "INCREASES_RISK_OF",
+        "insulin resistance"
+      ],
+      [
+        "IFNAR",
+        "ASSOCIATED_WITH",
+        "type 1 diabetes"
+      ],
+      [
+        "sulfonylurea",
+        "TREATS",
+        "coronary heart disease"
+      ],
+      [
+        "glimepiride",
+        "TREATS",
+        "type 2 diabetes"
+      ],
+      [
+        "SOD1",
+        "ASSOCIATED_WITH",
+        "diabetes"
+      ],
+      [
+        "CNSB002",
+        "TREATS",
+        "neuropathic pain"
+      ],
+      [
+        "Hp",
+        "ASSOCIATED_WITH",
+        "cardiovascular death"
+      ],
+      [
+        "sulfonylurea",
+        "TREATS",
+        "type 2 diabetes"
+      ],
+      [
+        "streptozotocin",
+        "INCREASES_RISK_OF",
+        "hyperglycemia"
+      ],
+      [
+        "TfR2",
+        "ASSOCIATED_WITH",
+        "cirrhosis"
+      ],
+      [
+        "glibenclamide",
+        "INCREASES_RISK_OF",
+        "CAD"
+      ],
+      [
+        "TLR4",
+        "ASSOCIATED_WITH",
+        "cardiac dysfunction"
+      ],
+      [
+        "glibenclamide",
+        "TREATS",
+        "type 2 diabetes"
+      ],
+      [
+        "IFN",
+        "ASSOCIATED_WITH",
+        "diabetes"
+      ],
+      [
+        "TLR4",
+        "ASSOCIATED_WITH",
+        "infarcted myocardium"
+      ],
+      [
+        "PPAR-gamma",
+        "ASSOCIATED_WITH",
+        "hypertriglyceridemia"
+      ],
+      [
+        "type I interferon",
+        "ASSOCIATED_WITH",
+        "type 1 diabetes"
+      ],
+      [
+        "eIF2a",
+        "ASSOCIATED_WITH",
+        "maternal diabetes"
+      ],
+      [
+        "HNF-6",
+        "ASSOCIATED_WITH",
+        "Type II diabetes"
+      ],
+      [
+        "PTPN22",
+        "ASSOCIATED_WITH",
+        "type 1 diabetes"
+      ],
+      [
+        "olanzapine",
+        "COMPARED_WITH",
+        "risperidone"
+      ],
+      [
+        "morphine",
+        "TREATS",
+        "hyperalgesia"
+      ],
+      [
+        "glibenclamide",
+        "COMPARED_WITH",
+        "gliclazide"
+      ],
+      [
+        "IFNAR1",
+        "ASSOCIATED_WITH",
+        "diabetes"
+      ],
+      [
+        "PTPN22",
+        "ASSOCIATED_WITH",
+        "JIA"
+      ],
+      [
+        "insulin",
+        "ASSOCIATED_WITH",
+        "type 1 diabetes"
+      ],
+      [
+        "calnexin",
+        "ASSOCIATED_WITH",
+        "maternal diabetes"
+      ],
+      [
+        "clozapine",
+        "COMPARED_WITH",
+        "risperidone"
+      ],
+      [
+        "PTPN22",
+        "ASSOCIATED_WITH",
+        "T1D"
+      ],
+      [
+        "PPAR-gamma",
+        "ASSOCIATED_WITH",
+        "diabetes"
+      ],
+      [
+        "SLC2A2",
+        "ASSOCIATED_WITH",
+        "IGT"
+      ],
+      [
+        "SLC2A2",
+        "ASSOCIATED_WITH",
+        "diabetes"
+      ],
+      [
+        "TfR2",
+        "ASSOCIATED_WITH",
+        "hemochromatosis"
+      ],
+      [
+        "TNMD",
+        "ASSOCIATED_WITH",
+        "T2D"
+      ]
+    ],
+    "true_negatives_list": [
+      [
+        "HNF-6",
+        "PROTECTS_AGAINST",
+        "Type II diabetes"
+      ],
+      [
+        "streptozotocin",
+        "TREATS",
+        "hyperglycemia"
+      ],
+      [
+        "antipsychotic agent",
+        "TREATS",
+        "sulphonylureas"
+      ],
+      [
+        "metformin",
+        "TREATS",
+        "type 2 diabetes"
+      ],
+      [
+        "CNSB002",
+        "INCREASES_RISK_OF",
+        "hyperalgesia"
+      ],
+      [
+        "ghrelin",
+        "PROTECTS_AGAINST",
+        "schizoaffective disorder"
+      ],
+      [
+        "TNMD",
+        "PROTECTS_AGAINST",
+        "adiposity"
+      ],
+      [
+        "TfR2",
+        "ASSOCIATED_WITH",
+        "stroke"
+      ],
+      [
+        "HNF-6",
+        "ASSOCIATED_WITH",
+        "pancreatitis"
+      ],
+      [
+        "streptozotocin",
+        "INCREASES_RISK_OF",
+        "diabetes"
+      ],
+      [
+        "carrageenan",
+        "TREATS",
+        "inflammatory"
+      ],
+      [
+        "TfR2",
+        "PROTECTS_AGAINST",
+        "skin pigmentation"
+      ],
+      [
+        "PTPN22",
+        "ASSOCIATED_WITH",
+        "IFNAR1"
+      ],
+      [
+        "vitamin E",
+        "TREATS",
+        "IFNAR"
+      ],
+      [
+        "metformin",
+        "TREATS",
+        "JIA"
+      ],
+      [
+        "glibenclamide",
+        "COMPARED_WITH",
+        "WFS1"
+      ],
+      [
+        "antipsychotic agent",
+        "INCREASES_RISK_OF",
+        "schizophrenia"
+      ],
+      [
+        "SLC2A2",
+        "PROTECTS_AGAINST",
+        "IGT"
+      ],
+      [
+        "glucose",
+        "ASSOCIATED_WITH",
+        "IFNAR1"
+      ],
+      [
+        "CHOP",
+        "PROTECTS_AGAINST",
+        "maternal diabetes"
+      ],
+      [
+        "IRS2",
+        "PROTECTS_AGAINST",
+        "diabetes"
+      ],
+      [
+        "IFNAR1",
+        "PROTECTS_AGAINST",
+        "type 1 diabetes"
+      ],
+      [
+        "TNMD",
+        "ASSOCIATED_WITH",
+        "JIA"
+      ],
+      [
+        "metformin",
+        "INCREASES_RISK_OF",
+        "infarcted myocardium"
+      ],
+      [
+        "AMPK",
+        "ASSOCIATED_WITH",
+        "infarcted myocardium"
+      ],
+      [
+        "clozapine",
+        "COMPARED_WITH",
+        "insulin"
+      ],
+      [
+        "TfR2",
+        "ASSOCIATED_WITH",
+        "sulphonylureas"
+      ],
+      [
+        "glipizide",
+        "TREATS",
+        "vitamin E"
+      ],
+      [
+        "CNSB002",
+        "TREATS",
+        "stroke"
+      ],
+      [
+        "glucose",
+        "PROTECTS_AGAINST",
+        "Type II diabetes"
+      ],
+      [
+        "SLC2A2",
+        "PROTECTS_AGAINST",
+        "diabetes"
+      ],
+      [
+        "glipizide",
+        "INCREASES_RISK_OF",
+        "type 2 diabetes"
+      ],
+      [
+        "glipizide",
+        "TREATS",
+        "JIA"
+      ],
+      [
+        "olanzapine",
+        "INCREASES_RISK_OF",
+        "IRS2"
+      ],
+      [
+        "olanzapine",
+        "TREATS",
+        "maternal diabetes"
+      ],
+      [
+        "TfR2",
+        "PROTECTS_AGAINST",
+        "iron overload"
+      ],
+      [
+        "sulfonylurea",
+        "TREATS",
+        "IFNAR"
+      ],
+      [
+        "IRS2",
+        "ASSOCIATED_WITH",
+        "insulitis"
+      ],
+      [
+        "sulfonylurea",
+        "INCREASES_RISK_OF",
+        "coronary heart disease"
+      ],
+      [
+        "PPAR-gamma",
+        "ASSOCIATED_WITH",
+        "schizoaffective disorder"
+      ],
+      [
+        "glibenclamide",
+        "INCREASES_RISK_OF",
+        "type 2 diabetes"
+      ],
+      [
+        "IFN receptor",
+        "PROTECTS_AGAINST",
+        "type 1 diabetes"
+      ],
+      [
+        "XBP1",
+        "ASSOCIATED_WITH",
+        "IFNAR"
+      ],
+      [
+        "olanzapine",
+        "INCREASES_RISK_OF",
+        "CAD"
+      ],
+      [
+        "TLR4",
+        "ASSOCIATED_WITH",
+        "sulphonylureas"
+      ],
+      [
+        "IFNAR1",
+        "ASSOCIATED_WITH",
+        "isoproterenol"
+      ],
+      [
+        "PPAR-gamma",
+        "ASSOCIATED_WITH",
+        "insulitis"
+      ],
+      [
+        "morphine",
+        "TREATS",
+        "maternal diabetes"
+      ],
+      [
+        "IFNAR1",
+        "ASSOCIATED_WITH",
+        "myocardial infarct"
+      ],
+      [
+        "glimepiride",
+        "INCREASES_RISK_OF",
+        "type 2 diabetes"
+      ],
+      [
+        "clozapine",
+        "INCREASES_RISK_OF",
+        "schizophrenia"
+      ],
+      [
+        "PPAR-gamma",
+        "ASSOCIATED_WITH",
+        "FPLD3"
+      ],
+      [
+        "morphine",
+        "TREATS",
+        "stroke"
+      ],
+      [
+        "SLC2A2",
+        "ASSOCIATED_WITH",
+        "IFN"
+      ],
+      [
+        "IFN",
+        "ASSOCIATED_WITH",
+        "schizophrenia"
+      ],
+      [
+        "sulphonylureas",
+        "TREATS",
+        "FPLD3"
+      ],
+      [
+        "TLR4",
+        "ASSOCIATED_WITH",
+        "JIA"
+      ],
+      [
+        "glipizide",
+        "COMPARED_WITH",
+        "morphine"
+      ],
+      [
+        "sulphonylureas",
+        "INCREASES_RISK_OF",
+        "Type II diabetes"
+      ],
+      [
+        "SLC2A2",
+        "ASSOCIATED_WITH",
+        "IRS2"
+      ],
+      [
+        "glucose",
+        "ASSOCIATED_WITH",
+        "hypertriglyceridemia"
+      ],
+      [
+        "vitamin E",
+        "TREATS",
+        "gliclazide"
+      ],
+      [
+        "clozapine",
+        "TREATS",
+        "CAD"
+      ],
+      [
+        "olanzapine",
+        "INCREASES_RISK_OF",
+        "schizoaffective disorder"
+      ],
+      [
+        "TfR2",
+        "PROTECTS_AGAINST",
+        "diabetes mellitus"
+      ],
+      [
+        "glucose",
+        "INCREASES_RISK_OF",
+        "IRS2"
+      ],
+      [
+        "PTPN22",
+        "PROTECTS_AGAINST",
+        "JIA"
+      ],
+      [
+        "SOD1",
+        "ASSOCIATED_WITH",
+        "AMPK"
+      ],
+      [
+        "glibenclamide",
+        "INCREASES_RISK_OF",
+        "infarcted myocardium"
+      ],
+      [
+        "SLC2A2",
+        "PROTECTS_AGAINST",
+        "type 2 diabetes"
+      ],
+      [
+        "eIF2a",
+        "ASSOCIATED_WITH",
+        "CAD"
+      ],
+      [
+        "STZ",
+        "TREATS",
+        "diabetic neuropathy"
+      ],
+      [
+        "metformin",
+        "TREATS",
+        "ABCC8"
+      ],
+      [
+        "SOD1",
+        "PROTECTS_AGAINST",
+        "embryopathy"
+      ],
+      [
+        "TfR2",
+        "ASSOCIATED_WITH",
+        "AMPK"
+      ],
+      [
+        "IFNAR1",
+        "ASSOCIATED_WITH",
+        "obesity"
+      ],
+      [
+        "PAI-1",
+        "ASSOCIATED_WITH",
+        "IGT"
+      ],
+      [
+        "TLR4",
+        "ASSOCIATED_WITH",
+        "type I interferon"
+      ],
+      [
+        "morphine",
+        "TREATS",
+        "obese"
+      ],
+      [
+        "SLC2A2",
+        "ASSOCIATED_WITH",
+        "schizoaffective disorder"
+      ],
+      [
+        "TNMD",
+        "ASSOCIATED_WITH",
+        "embryopathy"
+      ],
+      [
+        "PPAR-gamma",
+        "ASSOCIATED_WITH",
+        "gliclazide"
+      ],
+      [
+        "sulfonylurea",
+        "INCREASES_RISK_OF",
+        "type 2 diabetes"
+      ],
+      [
+        "glibenclamide",
+        "TREATS",
+        "CAD"
+      ],
+      [
+        "morphine",
+        "COADMINISTERED_WITH",
+        "IRE1a"
+      ],
+      [
+        "glucose",
+        "ASSOCIATED_WITH",
+        "olanzapine"
+      ],
+      [
+        "ghrelin",
+        "PROTECTS_AGAINST",
+        "IRE1a"
+      ],
+      [
+        "glucagon",
+        "PROTECTS_AGAINST",
+        "hypoglycemia"
+      ],
+      [
+        "insulin",
+        "ASSOCIATED_WITH",
+        "antipsychotic agent"
+      ],
+      [
+        "clozapine",
+        "TREATS",
+        "diabetic neuropathy"
+      ],
+      [
+        "risperidone",
+        "INCREASES_RISK_OF",
+        "schizophrenia"
+      ],
+      [
+        "IRS2",
+        "ASSOCIATED_WITH",
+        "glibenclamide"
+      ],
+      [
+        "PTPN22",
+        "ASSOCIATED_WITH",
+        "CAD"
+      ],
+      [
+        "vitamin E",
+        "INCREASES_RISK_OF",
+        "myocardial infarct"
+      ],
+      [
+        "PTPN22",
+        "ASSOCIATED_WITH",
+        "PERK"
+      ],
+      [
+        "vitamin E",
+        "TREATS",
+        "ghrelin"
+      ],
+      [
+        "TfR2",
+        "ASSOCIATED_WITH",
+        "PPAR-gamma"
+      ],
+      [
+        "SLC2A2",
+        "ASSOCIATED_WITH",
+        "stroke"
+      ]
+    ],
+    "false_positives_list": [
+      [
+        "vitamin E",
+        "TREATS",
+        "cardiovascular death"
+      ],
+      [
+        "GcgRs",
+        "ASSOCIATED_WITH",
+        "hyperglycemia"
+      ],
+      [
+        "PPAR-gamma",
+        "PROTECTS_AGAINST",
+        "FPLD3"
+      ],
+      [
+        "carrageenan",
+        "INCREASES_RISK_OF",
+        "inflammatory"
+      ],
+      [
+        "insulin",
+        "PROTECTS_AGAINST",
+        "type 1 diabetes"
+      ],
+      [
+        "TfR2",
+        "ASSOCIATED_WITH",
+        "diabetes mellitus"
+      ],
+      [
+        "morphine",
+        "TREATS",
+        "inflammatory"
+      ],
+      [
+        "metformin",
+        "TREATS",
+        "cardiac dysfunction"
+      ],
+      [
+        "triglycerides",
+        "INCREASES_RISK_OF",
+        "obese"
+      ],
+      [
+        "vitamin E",
+        "TREATS",
+        "DM"
+      ]
+    ],
+    "false_negatives_list": [
+      [
+        "insulin",
+        "ASSOCIATED_WITH",
+        "Diabetes"
+      ],
+      [
+        "ABCC8",
+        "PROTECTS_AGAINST",
+        "coronary heart disease"
+      ]
+    ]
+  }
+}

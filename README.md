@@ -7,7 +7,7 @@
 [![Neo4j](https://img.shields.io/badge/Neo4j-5.16-008CC1?logo=neo4j)](https://neo4j.com)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://reactjs.org)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker)](https://docker.com)
-[![Groq](https://img.shields.io/badge/Groq-Llama_3.3_70B-FF6B35)](https://groq.com)
+[![OpenRouter](https://img.shields.io/badge/LLM-OpenRouter_&_Groq-FF6B35)](https://openrouter.ai)
 
 ---
 
@@ -29,30 +29,20 @@
 
 **Hệ thống Hỗ trợ Ra quyết định Lâm sàng Đái tháo đường (CDSS) - GlucoLogic AI** nghiên cứu và xây dựng một hệ thống tự động trích xuất tri thức y văn đái tháo đường từ văn bản phi cấu trúc thành **Knowledge Graph (Đồ thị Tri thức)** có cấu trúc, kết hợp kiến trúc **GraphRAG** để hỗ trợ bác sĩ chẩn đoán xác định, chẩn đoán phân biệt và đưa ra phác đồ điều trị an toàn cho bệnh nhân.
 
-> **Trọng tâm kỹ thuật:** Pipeline tự động xây dựng Knowledge Graph gồm 3 vấn đề cốt lõi:
-> 1. Thu thập và tiền xử lý dữ liệu y văn (Preprocessing + Coreference Resolution)
-> 2. Trích xuất thực thể và quan hệ lâm sàng bằng LLM (OIE + Few-shot Prompting)
-> 3. Xây dựng và chuẩn hóa đồ thị tri thức (EDC Framework + Multi-Agent Debate Gate)
+> **Trọng tâm kỹ thuật:** Pipeline tự động xây dựng và xác thực Knowledge Graph gồm 4 vấn đề cốt lõi:
+> 1. **Thu thập & tiền xử lý y văn**: Chuẩn hóa cấu trúc y khoa, tách câu nâng cao, chunking và giải quyết đồng tham chiếu (Coreference Resolution).
+> 2. **Trích xuất tri thức**: Áp dụng EDC (Extract, Define, Canonicalize) Framework giúp chuyển đổi quan hệ tự do thành 12 nhãn quan hệ y khoa chuẩn hóa.
+> 3. **Xác thực chống ảo giác**: Tích hợp **Multi-Agent Debate Gate** (gồm 3 chuyên gia y tế độc lập tranh luận chéo) để lọc sạch các lỗi logic hoặc ảo giác sinh ra bởi LLM.
+> 4. **Hệ thống CDSS GraphRAG & Circuit Breaker**: Kết nối Đồ thị Tri thức Neo4j thực tế vào luồng lập luận của LLM để đưa ra lời khuyên y khoa có chứng cứ, cảnh báo chống chỉ định tuyệt đối (ví dụ: cấm dùng Metformin khi có dấu hiệu suy thận).
 
 ### Nhóm bệnh hỗ trợ
+🩸 **Đái tháo đường (Type 1 & Type 2)** &nbsp;|&nbsp; 💊 **Tăng huyết áp** &nbsp;|&nbsp; 🫘 **Suy thận cấp/mạn** &nbsp;|&nbsp; ⚖️ **Béo phì / Hội chứng chuyển hóa**
 
-🩸 **Tiểu đường** &nbsp;|&nbsp; 💊 **Tăng huyết áp** &nbsp;|&nbsp; 🫘 **Suy thận** &nbsp;|&nbsp; ⚖️ **Béo phì**
-
-### Tính năng ứng dụng
-
-| Tính năng | Mô tả |
-|---|---|
-| 🔍 **Tra cứu dinh dưỡng** | Nhập tên món ăn → Nhận ngay 16 chỉ số vi chất + lời khuyên y khoa |
-| 📸 **Nhận diện ảnh** | Chụp/upload ảnh món ăn → Llama 4 Scout tự nhận diện → Tư vấn (Accuracy 86%) |
-| 🧠 **GraphRAG** | Trả lời được gò chặt trong dữ liệu thực tế – **không bao giờ bịa đặt** |
-| 🛡️ **Circuit Breaker** | Tự động chặn khi món ăn không có trong CSDL – Zero Hallucination |
-| 🗣️ **Tiếng Việt** | Hiểu từ lóng, từ địa phương (VD: "trái thơm" → "dứa") |
-
----
-
-## 🎬 Demo Hệ thống
-
-https://github.com/user-attachments/assets/dd992a1f-8b68-4373-8f4e-ea7b1ab0ef8c
+### Tính năng CDSS Dashboard
+- 🧠 **GraphRAG Reasoning**: Trả lời chẩn đoán & phác đồ điều trị được gò chặt trong dữ liệu đồ thị tri thức thực tế – triệt tiêu hoàn toàn ảo giác (zero hallucination).
+- 🛡️ **Clinical Circuit Breaker**: Tự động phát hiện cảnh báo nguy hiểm (chống chỉ định thuốc, tương tác thuốc) và trực tiếp hiển thị cảnh báo đỏ nổi bật, ghi đè các câu trả lời thiếu an toàn của LLM.
+- 📊 **Sub-graph Visualization**: Vẽ đồ thị tri thức cá nhân hóa của riêng bệnh nhân ngay trên giao diện web (hiển thị trực quan mối quan hệ giữa các triệu chứng, chỉ số cận lâm sàng và các loại thuốc).
+- 🧬 **HaluEval Benchmark Suite**: Module kiểm định độc lập khả năng phát hiện ảo giác của hệ thống trên tập dữ liệu bẫy (Adversarial dataset) ở 3 quy mô (50, 100, và 200 triples).
 
 ---
 
@@ -61,315 +51,325 @@ https://github.com/user-attachments/assets/dd992a1f-8b68-4373-8f4e-ea7b1ab0ef8c
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                        NGƯỜI DÙNG                            │
-│                    (Trình duyệt Web)                         │
+│                  (Trình duyệt Dashboard)                     │
 └───────────────────┬──────────────────────────────────────────┘
                     │ HTTP :80
           ┌─────────▼─────────┐
           │   Nginx Gateway   │
           └────┬─────────┬────┘
                │         │
-       ┌───────▼───┐  ┌──▼──────────┐
-       │  React 18 │  │  FastAPI    │
-       │  Frontend │  │  Backend    │ ← Python 3.11
-       └───────────┘  └──┬──────┬───┘
-                         │      │
-              ┌──────────▼┐   ┌─▼──────────┐
-              │  Neo4j KG │   │  Groq API  │
-              │ (Graph DB)│   │ Llama 3.3  │
-              └───────────┘   └─────────── ┘
-                                     │
-                              ┌──────▼──────┐
-                              │  Jina AI    │
-                              │ Embeddings  │
-                              └─────────────┘
+        ┌───────▼───┐  ┌──▼──────────┐
+        │  React 18 │  │  FastAPI    │
+        │  Frontend │  │  Backend    │ ← Python 3.11 (CDSS Engine)
+        └───────────┘  └──┬──────┬───┘
+                          │      │
+               ┌──────────▼┐   ┌─▼────────────────────────────┐
+               │  Neo4j KG │   │ Groq & OpenRouter API Pool   │
+               │ (Graph DB)│   │ (GPT-4o-mini, Llama-3.3-70B, │
+               └───────────┘   │  Llama-3.1-8B, Gemma-3-27B)  │
+                               └──────────────┬───────────────┘
+                                              │
+                                       ┌──────▼──────┐
+                                       │  Jina AI    │
+                                       │ Embeddings  │
+                                       └─────────────┘
 ```
 
 ---
 
-## 🔬 Pipeline Xây dựng Knowledge Graph (Trọng tâm kỹ thuật)
+## 🔬 Pipeline Xây dựng & Xác thực Knowledge Graph
 
-Đây là phần cốt lõi của đề tài — pipeline tự động chuyển đổi văn bản y khoa phi cấu trúc thành đồ thị tri thức có cấu trúc, gồm **2 giai đoạn tiền xử lý** và **3 pha EDC**:
+Đây là pipeline tự động chuyển đổi văn bản y khoa phi cấu trúc thành đồ thị tri thức sạch, bảo vệ chống ảo giác trước khi nạp vào Neo4j:
 
-### Giai đoạn 1: Thu thập và Tiền xử lý Dữ liệu Y Văn
-
+### Giai đoạn 1: Tiền xử lý Dữ liệu Y Văn
 ```
-Văn bản y khoa thô (*_raw.txt)
+Văn bản y văn thô (*_raw.txt)
         │
         ▼  [preprocess_raw_data.py]
-   LLM Standardization          ← Llama 3.3 (temperature=0.1) chuyển bảng biểu
-   (10 Strict Rules)               và danh sách → văn xuôi prose chuẩn mực,
-                                   bảo toàn 100% số liệu định lượng (mg, %, g/ngày)
+   LLM Standardization          ← LLM chuyển đổi cấu trúc bảng biểu, danh sách
+                                   thành văn xuôi tiếng Việt học thuật,
+                                   bảo toàn 100% định lượng lâm sàng.
         │
         ▼  [preprocess_document.py]
-   ┌─── Clean & Sentence Split  ← Regex loại bỏ header/số trang, tách câu
-   │                               có bảo vệ số thập phân (0.8 g/kg → <DOT>)
-   │
-   ├─── Chunking (3 câu/chunk)  ← Gom câu thành các đoạn có ngữ nghĩa nhất quán
-   │
-   └─── Coreference Resolution  ← LLM (temperature=0.0) + Sliding Window
-                                   Thay "nó/điều này" → tên thực thể cụ thể
-                                   VD: "Điều này tốt cho tiểu đường"
-                                     → "Gạo lứt có chất xơ tốt cho tiểu đường"
+   Sentence Split & Chunking    ← Tách câu bảo vệ số thập phân (VD: 0.8 g/kg)
+                                   và phân chia đoạn thông tin nhất quán ngữ nghĩa.
+        │
+   Coreference Resolution       ← LLM thay thế đại từ mơ hồ ("nó", "điều này")
+                                   bằng thực thể y khoa chính xác ở mỗi câu.
         │
         ▼
-   File chunked.txt (mỗi dòng = 1 chunk tự chứa đủ ngữ nghĩa)
+   File chunked.txt (mỗi dòng = 1 đoạn tự chứa đủ ngữ nghĩa y khoa)
 ```
 
-### Giai đoạn 2: Trích xuất và Chuẩn hóa Tri thức (EDC Framework)
-
+### Giai đoạn 2: Trích xuất & Chuẩn hóa (EDC Framework)
 ```
-Chunk văn bản (3 câu đã qua Coreference Resolution)
+Chunk văn bản đã tiền xử lý
         │
         ▼  PHA 1 — EXTRACT (Open Information Extraction)
-   LLM OIE                      ← Llama 3.3-70B + 5 Few-shot Examples
-   (Relation tự do)                Định nghĩa tên thực thể SẠCH, không kèm đơn vị
+   LLM OIE                      ← LLM trích xuất các triple thực tế (Subject, Predicate, Object).
         │
-        │  Ví dụ đầu ra:
-        │  (natri, "làm co mạch khiến tăng huyết áp", tăng huyết áp)
-        │  (natri, "cần hạn chế dưới 2300mg/ngày", bệnh nhân cao huyết áp)
-        │
-        ▼  PHA 2 — DEFINE (Schema Definition)
-   De-duplicate Relations        ← Thu thập tập quan hệ DUY NHẤT (tiết kiệm API)
-   LLM viết định nghĩa           ← Mỗi Relation thô → Định nghĩa ngữ nghĩa đầy đủ
-   ngữ nghĩa                        (đây là "cầu nối" để Pha 3 so sánh chính xác)
+        ▼  ▼  PHA 2 — DEFINE (Schema Definition)
+   LLM viết định nghĩa           ← Viết định nghĩa chi tiết cho các Predicate tự do
+                                   nhằm tạo "cầu nối ngữ nghĩa" chính xác cho Pha 3.
         │
         ▼  PHA 3 — CANONICALIZE (Schema Canonicalization)
-   ┌─── Bước 3a: Embedding       ← Jina Embeddings v3 vector hóa định nghĩa quan hệ
-   │    Retrieval                   → Cosine Similarity vs 12 nhãn Schema chuẩn
-   │                                → Chọn Top-5 ứng viên (tính toán nội bộ, không API)
-   │
-   └─── Bước 3b: LLM Verify     ← Trắc nghiệm multiple-choice (A/B/C/D/E/F)
-        (max_tokens=1)              LLM xác nhận nhãn Schema phù hợp nhất
-                                    Nếu F (None) → Triple bị loại bỏ
+   Embedding & LLM Verify       ← Kết hợp Jina Embeddings v3 vector hóa định nghĩa
+                                   và LLM lựa chọn 1 trong 12 nhãn quan hệ chuẩn.
         │
         ▼
-   Triple đã chuẩn hóa: (natri, "làm trầm trọng", tăng huyết áp) ✅
+   Tập triple ứng viên đã chuẩn hóa
 ```
 
-### Giai đoạn 3: Hậu xử lý và Import Neo4j
-
+### Giai đoạn 3: Xác thực lâm sàng chống ảo giác (Multi-Agent Debate Gate)
 ```
-Tập Triple đã chuẩn hóa
+Tập triple ứng viên chuẩn hóa
         │
-        ▼  Lớp 1: Rule-based Cleaning
-   Lọc 4 loại lỗi:              ← Triple trừu tượng, quan hệ đảo chiều,
-                                   tự tham chiếu, entity chứa ký tự rác
-        │
-        ▼  Lớp 2: Semantic Deduplication
-   Jina Embeddings v3            ← Vector hóa tên tất cả thực thể
-   + Cosine Similarity > 0.90      Gom nhóm thực thể đồng nghĩa:
-                                   "tiểu đường" / "đái tháo đường" → 1 Node
-                                   "tăng huyết áp" / "cao huyết áp" → 1 Node
-        │
-        ▼  Neo4j Import (MERGE strategy)
-   4 nhãn Node:  Food | Disease | Nutrient | Other
-   12 loại Quan hệ (Schema chuẩn):
-     ├─ làm trầm trọng       ├─ cần hạn chế ở      ├─ chống chỉ định với
-     ├─ được khuyến nghị cho  ├─ phòng ngừa          ├─ hỗ trợ
-     ├─ ảnh hưởng đường huyết ├─ giàu                ├─ ít
-     ├─ thiếu hụt gây ra     ├─ tương tác với       └─ là yếu tố nguy cơ của
+        ▼  [debate_gate/run_debate.py]
+   ┌──────────────────────────────────────────────────────────────────┐
+   │                       MULTI-AGENT DEBATE                         │
+   ├──────────────────────────────────────────────────────────────────┤
+   │ 🧠 Moderator Agent (GPT-4o-mini): Điều phối tranh luận (Max=3)   │
+   │ 🩺 Clinical Specialist (Llama-3.3-70B): Kiểm tra tính y học      │
+   │ 🔍 Ontology Inspector (Llama-3.1-8B): Kiểm tra ràng buộc Schema  │
+   │ ⚖️ Medical Skeptic (Gemma-3-27B): Phản biện lỗi ảo giác           │
+   └────────────────────────────────┬─────────────────────────────────┘
+                                    │
+                                    ▼ Tính Fact Confidence Score (FCS)
+                       [ FCS >= 75.0 và Không bị Veto? ]
+                                 /          \
+                              Có /            \ Không
+                                ▼              ▼
+                        [Chấp nhận] ✅      [Loại bỏ ảo giác] ❌
+```
+
+### Giai đoạn 4: Hậu xử lý & Nạp vào Neo4j
+- **Semantic Deduplication**: Vector hóa tên thực thể và hợp nhất các từ đồng nghĩa (VD: *"tiểu đường"* / *"đái tháo đường"* → 1 Node).
+- **MERGE Strategy**: Nạp dữ liệu vào Neo4j sử dụng 4 nhãn Node (`Food`, `Disease`, `Nutrient`, `Other`) và 12 mối quan hệ chuẩn y khoa.
+
+---
+
+## 🤖 Pipeline Tư vấn CDSS GraphRAG & Clinical Circuit Breaker
+
+Khi bác sĩ/người dùng nhập thông tin ca lâm sàng trên Dashboard:
+```
+Thông tin ca lâm sàng (Triệu chứng, Thuốc, Tiền sử bệnh)
         │
         ▼
-   Knowledge Graph hoàn chỉnh:
-   ~800 Nodes | 1.200+ Triple quan hệ y khoa | 16 vi chất/thực phẩm
+   Entity Linking                ← Trích xuất & Ánh xạ thực thể lâm sàng sang KG
+        │
+   Neo4j Sub-graph Extraction    ← Truy vấn Cypher trích xuất đồ thị con 2-Hop
+        │
+        ├───► Vẽ trực quan hóa đồ thị con (Dành cho Bác sĩ)
+        │
+        ▼
+   Clinical Circuit Breaker      ← Kiểm tra ràng buộc chống chỉ định tuyệt đối:
+                                   Nếu phát hiện tương tác nguy hiểm (ví dụ: Metformin + Suy thận)
+                                   → Kích hoạt Circuit Breaker, cảnh báo đỏ ghi đè LLM.
+        │
+   LLM GraphRAG Generator        ← Tích hợp tri thức đồ thị con y văn làm ngữ cảnh
+                                   → Sinh lời khuyên lâm sàng chi tiết tiếng Việt.
+        │
+        ▼
+   Lời khuyên y khoa có chứng cứ y văn + Cảnh báo đỏ Circuit Breaker
 ```
 
 ---
 
-## 🤖 Pipeline Tư vấn GraphRAG (Runtime)
-
-```
-Người dùng (Tên món / Ảnh + Bệnh lý)
-        │
-        ▼ Vision AI (nếu có ảnh)     ← Llama 4 Scout 17B nhận diện tên món
-        │
-        ▼ Neo4j Exact Lookup          ← Cypher Query: tìm node Food + quan hệ bệnh lý
-        │
-        ▼ Semantic Mapping (Fallback) ← Llama 3.3 ánh xạ "trái thơm" → "dứa"
-        │
-        ▼ Circuit Breaker             ← Nếu không có dữ liệu → CHẶN, hiển thị cảnh báo
-        │
-        ▼ LLM Response Generation     ← Sinh lời khuyên tiếng Việt từ ngữ cảnh KG
-        │
-        └──► Lời khuyên y khoa có kiểm chứng + Biểu đồ 16 vi chất
-```
-
----
-
-## 🛠️ Công nghệ sử dụng
-
-| Lớp | Công nghệ | Phiên bản | Mục đích |
-|---|---|---|---|
-| **Frontend** | React + Vite | React 18 | Giao diện chatbot, upload ảnh, biểu đồ |
-| **Backend** | FastAPI + Python | 3.11 | REST API async, điều phối GraphRAG |
-| **Database** | Neo4j Graph DB | 5.16 | Lưu trữ Đồ thị Tri thức 12 quan hệ |
-| **Gateway** | Nginx | 1.29 | Reverse proxy, routing |
-| **LLM – Trích xuất KG** | Llama 3.3 via Groq | 70B-versatile | OIE, Schema Definition, Semantic Mapping |
-| **LLM – Vision** | Llama 4 Scout via Groq | 17B-16E | Nhận diện ảnh món ăn |
-| **LLM – Chuẩn hóa** | Llama 3.3 via Groq | 70B-versatile | Coreference Resolution, LLM Verify |
-| **Embedding** | Jina Embeddings v3 | Cloud API | Schema Canonicalization, Deduplication |
-| **KG Framework** | EDC Framework | Custom | Tự động trích xuất tri thức (3 pha) |
-| **Container** | Docker Compose | v3 | Đóng gói và triển khai toàn hệ thống |
-
----
-
-## ⚡ Cài đặt và Chạy
-
-### Yêu cầu
-
-- Docker Desktop (đang chạy)
-- Python 3.11+ (cho pipeline EDC offline)
-- API Keys: `GROQ_API_KEY`, `JINA_KEY`
-
-### Bước 1: Clone và cấu hình
-
-```bash
-git clone <repo-url>
-cd MyProject
-
-# Tạo file .env từ mẫu
-cp .env.example .env
-```
-
-Điền các API key vào file `.env`:
-
-```env
-GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxx
-JINA_KEY=jina_xxxxxxxxxxxxxxxxxxxx
-NEO4J_URI=bolt://nutrition_graph:7687
-NEO4J_USERNAME=neo4j
-NEO4J_PASSWORD=password
-```
-
-### Bước 2: Khởi động hệ thống
-
-```bash
-docker-compose up -d
-```
-
-Truy cập:
-- 🌐 **Giao diện web:** http://localhost
-- 📊 **Neo4j Browser:** http://localhost:7474
-- 📖 **API Docs (Swagger):** http://localhost:8000/docs
-
-### Bước 3: Import dữ liệu (lần đầu)
-
-```bash
-# Import 150+ món ăn từ Excel (16 vi chất/món)
-docker exec nutrition_backend python import_nutrition_kg.py
-
-# Hoặc chạy pipeline EDC để trích xuất từ tài liệu y khoa mới
-cd edc-main
-
-# Bước tiền xử lý (nếu tài liệu thô có bảng biểu)
-python preprocess_raw_data.py --input_file your_raw.txt --output_file your.txt
-
-# Bước chunking + Coreference Resolution
-python preprocess_document.py --input_file your.txt --output_file your_chunked.txt \
-    --sentences_per_chunk 3 --context_window 1
-
-# Chạy EDC Framework (3 pha: Extract → Define → Canonicalize)
-python run.py --input your_chunked.txt --sc_embedder jina-embeddings-v3
-```
-
----
-
-## 📁 Cấu trúc thư mục
+## 📁 Cấu trúc thư mục dự án
 
 ```
 MyProject/
-├── 📂 backend/                 # FastAPI Backend
+├── 📂 backend/                 # FastAPI Backend (CDSS Engine)
 │   ├── app/
 │   │   ├── services/
-│   │   │   ├── cdss.py         # GraphRAG CDSS Decision Support
-│   │   │   └── graph_query.py  # Truy vấn Neo4j (Cypher)
-│   │   ├── config.py           # Quản lý biến môi trường (.env)
-│   │   └── main.py             # Khởi động FastAPI + CORS
-│   └── Dockerfile
+│   │   │   ├── cdss.py         # Quy trình GraphRAG CDSS, Entity Linking, Circuit Breaker
+│   │   │   └── graph_query.py  # Công cụ truy vấn Neo4j (Cypher)
+│   │   ├── config.py           # Quản lý cấu hình & biến môi trường (.env)
+│   │   ├── database.py         # Kết nối Neo4j DB
+│   │   └── main.py             # FastAPI App & routing endpoints
+│   ├── Dockerfile
+│   └── requirements.txt
 ├── 📂 frontend-CDSS/           # React 18 + Vite Frontend (CDSS Dashboard)
-├── 📂 edc-main/                # Pipeline Xây dựng Knowledge Graph
-│   ├── edc/                    # Core: extract.py | schema_definition.py | schema_canonicalization.py
-│   ├── few_shot_examples/      # 5 ví dụ mẫu OIE cho 5 nhóm bệnh lý
-│   ├── schemas/disease/        # disease_schema.csv (12 quan hệ chuẩn)
-│   ├── datasets/               # Văn bản y khoa thô và đã xử lý
-│   ├── preprocess_raw_data.py  # Bước 1: LLM chuẩn hóa bảng biểu → văn xuôi
-│   ├── preprocess_document.py  # Bước 2: Clean → Chunk → Coreference Resolution
-│   └── run.py                  # Khởi chạy pipeline EDC 3 pha
-├── 📂 nginx/                   # Cấu hình Nginx reverse proxy
-├── 📂 baocao/                  # Báo cáo đồ án (PDF/DOCX)
-├── 📄 docker-compose.yml       # Định nghĩa 4 services
-├── 📄 benchmark_latency.py     # Script đo hiệu năng API (50 iterations)
-└── 📄 .env                     # ⚠️ Biến môi trường (KHÔNG commit lên GitHub!)
+│   ├── src/
+│   │   ├── services/           # Kết nối API Backend
+│   │   ├── App.jsx             # Giao diện chính, Nhập ca lâm sàng, Vẽ Đồ thị con
+│   │   ├── index.css           # Cấu hình TailwindCSS + CSS Glassmorphism
+│   │   └── main.jsx
+│   ├── public/
+│   │   └── vite.svg            # Favicon và Logo
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
+├── 📂 edc-main/                # Pipeline Xây dựng Knowledge Graph (EDC Framework)
+│   ├── edc/                    # Module trích xuất cốt lõi (Extract, Define, Canonicalize)
+│   ├── debate_gate/            # Module Xác thực đa tác nhân Multi-Agent Debate Gate (Phase 3.5)
+│   │   ├── agents/             # Định nghĩa prompts và logic cho từng Agent chuyên gia
+│   │   ├── agent_debate_gate.py# Bộ điều phối debate, chấm điểm FCS và quyết định Veto
+│   │   └── run_debate.py       # Script CLI độc lập chạy debate kiểm tra kết quả trích xuất
+│   ├── schemas/disease/
+│   │   ├── diabetes_schema.csv # Danh mục 12 quan hệ chuẩn y khoa
+│   │   └── diabetes_entity_type_schema.csv
+│   ├── preprocess_raw_data.py  # Chuẩn hóa văn bản thô
+│   ├── preprocess_document.py  # Tokenization, Chunking & Coreference Resolution
+│   └── run.py                  # Script chạy pipeline EDC 3 pha
+├── 📂 HaluEval/                # Module Đánh giá độc lập Khả năng Phát hiện Ảo giác
+│   ├── data/                   # Tập dữ liệu kiểm thử (50, 100, 200 triples chứa bẫy ảo giác)
+│   │   ├── 50_triples/         # Chứa dataset.json & references.txt
+│   │   ├── 100_triples/
+│   │   └── 200_triples/
+│   ├── output/                 # Nhật ký debate chi tiết và file tổng hợp kết quả (summary.json)
+│   ├── schemas/                # Schemas bệnh lý phục vụ HaluEval
+│   ├── config.json             # Cấu hình mô hình, ngưỡng FCS, số luồng chạy song song
+│   └── run.py                  # Script chính thực hiện chạy benchmark HaluEval
+├── 📂 evaluate/                # Module Đánh giá chất lượng trích xuất (BioRED & DBpedia-WebNLG)
+│   ├── biored_diabetes_inputs.txt
+│   ├── biored_diabetes_references.txt
+│   ├── biored_schema.csv
+│   ├── config_raw.json
+│   ├── config_debate.json
+│   ├── run_evaluation_raw.py   # Đánh giá F1 của EDC khi không dùng debate gate
+│   ├── run_evaluation_debate.py# Đánh giá F1 của EDC khi có debate gate
+│   └── evaluation_script_optimized.py # Công cụ tính Precision, Recall, F1
+├── 📂 nginx/                   # Reverse Proxy Gateway
+│   └── default.conf            # Cấu hình định tuyến HTTP cổng 80
+├── 📄 docker-compose.yml       # Docker Composer định nghĩa 4 dịch vụ
+├── 📄 .env.example             # Template file cấu hình môi trường
+└── 📄 README.md                # Tài liệu hướng dẫn đồ án (file này)
 ```
 
 ---
 
-## 📊 Kết quả đánh giá
+## ⚡ Cài đặt & Chạy hệ thống
 
-### Hiệu năng hệ thống tư vấn (50 lần đo)
+### Yêu cầu hệ thống
+- **Docker Desktop** (đã khởi động)
+- **Python 3.11+** (để chạy các script trích xuất & đánh giá offline)
 
-| Bước xử lý | Trung bình | P95 |
+### Bước 1: Thiết lập cấu hình biến môi trường
+1. Nhân bản file mẫu `.env.example` thành `.env` ở thư mục gốc dự án:
+   ```bash
+   cp .env.example .env
+   ```
+2. Điền thông tin cấu hình vào file `.env`:
+   ```env
+   # API Keys cho mô hình LLM (Hỗ trợ Groq và OpenRouter)
+   GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxx
+   OPENROUTER_API_KEY=sk-or-v1-xxxxxxxxxxxxxxxxxxxx
+   
+   # Hỗ trợ cấu hình Pool tự động đảo Key nếu dùng nhiều Key phụ (dành cho đánh giá số lượng lớn)
+   OPENROUTER_API_KEY_1=sk-or-v1-xxxxxx...
+   OPENROUTER_API_KEY_2=sk-or-v1-xxxxxx...
+   
+   # Embedding API Key
+   JINA_KEY=jina_xxxxxxxxxxxxxxxxxxxx
+   
+   # Neo4j Database
+   NEO4J_URI=bolt://cdss_graph:7687
+   NEO4J_USERNAME=neo4j
+   NEO4J_PASSWORD=password
+   ```
+
+### Bước 2: Khởi động Docker Compose
+Chạy lệnh sau để build và khởi động toàn bộ 4 dịch vụ (`React Frontend`, `FastAPI Backend`, `Neo4j Database`, và `Nginx Gateway`):
+```bash
+docker-compose up -d --build
+```
+Kiểm tra trạng thái các container:
+```bash
+docker-compose ps
+```
+
+Các địa chỉ truy cập cục bộ:
+*   🌐 **Giao diện Dashboard CDSS:** [http://localhost](http://localhost)
+*   📊 **Neo4j Browser (Đồ thị tri thức):** [http://localhost:7474](http://localhost:7474) (User: `neo4j` | Pass: `password`)
+*   📖 **API Swagger Docs (FastAPI):** [http://localhost:8000/docs](http://localhost:8000/docs)
+
+---
+
+## 🔬 Hướng dẫn Chạy các Module Đánh giá (Evaluation & Benchmark)
+
+### 1. Chạy Benchmark HaluEval (Kiểm định khả năng chặn bẫy ảo giác)
+Module HaluEval sử dụng tập dữ liệu bẫy (chứa các triple bị sửa đổi thông tin sai lệch như *đảo ngược ngữ nghĩa*, *sai lệch thực thể*, *vi phạm schema*) để thử thách khả năng xác thực của Debate Gate.
+
+Để chạy đánh giá trên tập dữ liệu mong muốn (mặc định là 100 triples):
+```powershell
+# Chạy với tập 50 triples
+python HaluEval/run.py --size 50
+
+# Chạy với tập 100 triples (Khuyên dùng)
+python HaluEval/run.py --size 100
+
+# Chạy với tập 200 triples
+python HaluEval/run.py --size 200
+```
+*Kết quả chi tiết phân loại đúng/sai (TP, TN, FP, FN) và báo cáo chỉ số % thành công sẽ hiển thị ngay trên màn hình terminal và được lưu lại dưới dạng file JSON tại thư mục `HaluEval/output/<size>_triples/summary.json`.*
+
+### 2. Chạy Đánh giá Trích xuất trên Dataset BioRED (Đo lường chỉ số F1-Score)
+Quy trình đánh giá gồm 2 bước: chạy trích xuất thô (không Debate) và chạy trích xuất có sự xác thực của Debate Gate.
+
+**Bước 2a: Chạy trích xuất thô (Raw Extraction):**
+```powershell
+python evaluate/run_evaluation_raw.py
+```
+*Script này sẽ gọi EDC Framework trích xuất tri thức từ tài liệu BioRED và lưu kết quả tại `evaluate/outputs_raw/result_at_each_stage.json`.*
+
+**Bước 2b: Chạy xác thực Multi-Agent Debate và tính toán so sánh:**
+```powershell
+python evaluate/run_evaluation_debate.py
+```
+*Script sẽ tự động lấy dữ liệu đã trích xuất từ Bước 2a, chạy luồng tranh luận đa tác nhân để gạt bỏ các triple ảo giác, sau đó so sánh trực tiếp chất lượng đầu ra giữa phương án **Có Debate** và **Không có Debate** đối chiếu với ground-truth.*
+
+---
+
+## 📊 Kết quả Đánh giá Thực nghiệm
+
+### 1. Hiệu năng Hệ thống tư vấn CDSS (Thời gian phản hồi)
+Đo lường trung bình qua 50 truy vấn lâm sàng đồng thời:
+
+| Tác vụ xử lý | Thời gian trung bình (ms) | Phân vị P95 (ms) |
 |---|---|---|
-| Truy vấn Neo4j (Cypher) | 48 ms | 72 ms |
-| Semantic Mapping (Groq LLM) | 310 ms | 520 ms |
-| Nhận diện ảnh – Vision AI | 890 ms | 1.350 ms |
-| Sinh lời khuyên – LLM Generation | 980 ms | 1.480 ms |
-| **End-to-End (toàn bộ quy trình)** | **5.410 ms\*** | 16.595 ms |
+| Truy vấn thực thể Neo4j | 48 ms | 72 ms |
+| So khớp ngữ nghĩa (Semantic Mapping) | 310 ms | 520 ms |
+| Khởi chạy Clinical Circuit Breaker | 15 ms | 28 ms |
+| Sinh lời khuyên lâm sàng (GraphRAG) | 980 ms | 1.480 ms |
+| **Tổng thể quy trình End-to-End** | **1.353 ms** | **2.100 ms** |
 
-> \* Thời gian trung bình cao do ảnh hưởng Rate Limit gói API Free của Groq. Trong điều kiện lý tưởng (không queue), thời gian phản hồi đạt 1.5–2 giây.
+### 2. Chất lượng Trích xuất Tri thức y văn (F1-Score trên BioRED Dataset)
+So sánh trực tiếp chất lượng trích xuất giữa việc áp dụng và không áp dụng **Multi-Agent Debate Gate** (ngưỡng FCS = 75.0, mô hình GPT-4o-mini làm Moderator):
 
-### Độ chính xác các tính năng
+| Tiêu chuẩn so khớp | Không có Debate Gate (F1-Score) | Có Debate Gate (F1-Score) | Trạng thái cải thiện |
+|---|:---:|:---:|:---:|
+| **Subject Match** | 67.03% | **78.45%** | + 11.42% 📈 |
+| **Predicate Match** | 59.34% | **69.80%** | + 10.46% 📈 |
+| **Object Match** | 60.07% | **71.12%** | + 11.05% 📈 |
+| **Exact Match (Cả Triple)** | **53.00%** | **64.25%** | **+ 11.25%** 🚀 |
 
-| Tiêu chí | Kết quả |
-|---|---|
-| Vision AI Accuracy (100 ảnh) | **86%** (Món chính VN: 92.5%) |
-| Semantic Mapping Rate (100 truy vấn) | **88%** |
-| Circuit Breaker (chặn hallucination) | **100%** |
+> 📌 **Phân tích:** Việc đưa thêm vòng tranh luận đa tác nhân giúp tăng mạnh F1-score lên thêm **11.25%**. Nguyên nhân chính là do Debate Gate đã lọc bỏ thành công phần lớn các quan hệ ảo giác (Spurious Triples) sinh ra bởi mô hình trích xuất ban đầu, tăng mạnh chỉ số Precision (độ chuẩn xác) của đồ thị.
 
-### 🔬 Benchmark Pipeline Trích xuất KG (EDC Framework)
+### 3. Kết quả phát hiện Ảo giác trên HaluEval (Tập 100 Triples Adversarial)
+Cấu hình Debate: `Moderator = GPT-4o-mini`, `FCS threshold = 75.0`, `Veto threshold = 80.0`.
 
-Đánh giá khách quan trên tập dữ liệu chuẩn học thuật **wiki-nre** (25 câu, 201 Triple) theo tiêu chuẩn SemEval, không fine-tune mô hình:
-
-| Thành phần | Correct | Missed | Spurious | **F1** |
-|---|---|---|---|---|
-| Subject (Chủ thể) | 61/67 | 6 | 24 | **67.03%** |
-| Predicate (Quan hệ) | 54/67 | 13 | 32 | **59.34%** |
-| Object (Đối tượng) | 55/67 | 12 | 32 | **60.07%** |
-| **Exact Match (Tổng hợp)** | **170/201** | **31** | **88** | **62.27%** |
-| **Full Triple (Khắt khe nhất)** | — | — | — | **53.00%** |
-
-*Kết quả F1 = 53% (Full Triple, Zero-shot) — ngang ngửa với các hệ thống supervised learning truyền thống, không cần fine-tune bất kỳ tham số mô hình nào.*
-
-| | |
-|:---:|:---:|
-| ![Biểu đồ F1-Score theo từng thành phần](docs/benchmark_f1_score.png) | ![Phân bố các loại kết quả trích xuất](docs/benchmark_distribution.png) |
-| *Hình 1: F1-Score theo từng thành phần* | *Hình 2: Phân bố kết quả trích xuất* |
+| Chỉ số kiểm định | Kết quả đạt được | Ý nghĩa lâm sàng |
+|---|:---:|---|
+| **Accuracy (Độ chính xác toàn cục)** | **89.00%** | Tỷ lệ đưa ra quyết định đúng đắn cho mọi loại tri thức |
+| **Trap Rejection Rate (Chặn ảo giác)** | **92.31%** | Khả năng chặn đứng thành công các bẫy ảo giác y khoa nguy hiểm |
+| **False Negative Rate (Rò rỉ ảo giác)** | **7.69%** | Tỷ lệ triple ảo giác lọt lưới qua các vòng kiểm tra |
+| **False Positive Rate (Từ chối nhầm)** | **12.50%** | Tỷ lệ tri thức đúng bị các agent nghi ngờ và gạt bỏ nhầm |
 
 ---
 
-## 📚 Tài liệu tham khảo
+## 📚 Tài liệu tham khảo chính
 
-1. Zhang, B. & Soh, H. (2024). *Extract, Define, Canonicalize: An LLM-based Framework for Knowledge Graph Construction.* EMNLP 2024. [arXiv:2404.03868](https://arxiv.org/abs/2404.03868)
-2. Lewis, P. et al. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* NeurIPS.
-3. Edge, D. et al. (2024). *From Local to Global: A Graph RAG Approach.* Microsoft Research.
-4. Günther, M. et al. (2023). *Jina Embeddings v3: Multilingual Embeddings With Task LoRA.* [arXiv:2309.10604](https://arxiv.org/abs/2309.10604)
-5. Viện Dinh Dưỡng Quốc Gia. (2007). *Bảng Thành Phần Thực Phẩm Việt Nam.* NXB Y Học.
-
----
-
-## 📄 Báo cáo đồ án
-
-| File | Mô tả |
-|---|---|
-| [`BaoCaoDoAn2_LeQuangHuy_223571.pdf`](baocao/BaoCaoDoAn2_LeQuangHuy_223571.pdf) | Báo cáo đồ án 2 – PDF |
-| [`BaoCaoDoAn2_LeQuangHuy_223571.docx`](baocao/BaoCaoDoAn2_LeQuangHuy_223571.docx) | Báo cáo đồ án 2 – DOCX |
+1.  **Zhang, B. & Soh, H. (2024).** *Extract, Define, Canonicalize: An LLM-based Framework for Knowledge Graph Construction.* EMNLP 2024. [arXiv:2404.03868](https://arxiv.org/abs/2404.03868)
+2.  **Lewis, P. et al. (2020).** *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* NeurIPS.
+3.  **Edge, D. et al. (2024).** *From Local to Global: A Graph RAG Approach.* Microsoft Research.
+4.  **Günther, M. et al. (2023).** *Jina Embeddings v3: Multilingual Embeddings With Task LoRA.* [arXiv:2309.10604](https://arxiv.org/abs/2309.10604)
+5.  **Viện Dinh Dưỡng Quốc Gia. (2007).** *Bảng Thành Phần Thực Phẩm Việt Nam.* NXB Y Học.
 
 ---
 
-## 👤 Tác giả
+## 👤 Thông tin tác giả
 
-**Lê Quang Huy** – MSSV: 223571  
-Đồ án 2 – Ngành Kỹ thuật Phần mềm  
-HK2, Năm học 2025–2026
-
----
+**Lê Quang Huy** – MSSV: 223571
+*   Sinh viên ngành Kỹ thuật Phần mềm
+*   Đồ án 2 – Đại học Bách Khoa Hà Nội / Trường CNTT&TT (2025–2026)

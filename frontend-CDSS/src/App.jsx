@@ -301,97 +301,28 @@ function App() {
   const activePatient = patientDetails[patientId];
 
   return (
-    <div className="bg-surface-container-low dark:bg-slate-900 text-on-surface dark:text-slate-100 antialiased flex h-screen overflow-hidden transition-colors duration-200">
+    <div className="bg-surface-container-low dark:bg-slate-900 text-on-surface dark:text-slate-100 antialiased flex flex-col h-screen overflow-hidden transition-colors duration-200">
       
-      {/* Mobile Header */}
-      <div className="md:hidden fixed top-0 left-0 right-0 h-16 bg-white dark:bg-slate-800 border-b border-outline-variant dark:border-slate-700 flex items-center justify-between px-md z-50">
-        <button onClick={() => setMobileSidebar(true)} className="p-sm text-primary dark:text-inverse-primary">
-          <span className="material-symbols-outlined text-3xl">menu</span>
-        </button>
-        <h1 className="font-extrabold text-lg text-primary dark:text-emerald-400">GlucoLogic AI</h1>
-        <div className="w-8"></div>
-      </div>
-
-      {/* Sidebar */}
-      <aside className={`md:flex flex-col h-full py-md bg-[#111827] dark:bg-slate-950 text-white font-body-md text-body-md shadow-md fixed left-0 top-0 w-sidebar-width transition-all duration-300 ease-in-out z-50 ${mobileSidebar ? 'translate-x-0' : 'md:translate-x-0 -translate-x-full'}`}>
-        {/* Close Button Mobile */}
-        <button onClick={() => setMobileSidebar(false)} className="md:hidden absolute top-4 right-4 text-gray-400 hover:text-white">
-          <span className="material-symbols-outlined">close</span>
-        </button>
-
-        <div className="px-md pb-lg border-b border-gray-700/50 flex flex-col items-center">
-          <div className="relative w-full mb-md">
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-1 text-center">Bệnh nhân đang chọn</label>
-            <select 
-              value={patientId} 
-              onChange={(e) => handlePatientChange(e.target.value)} 
-              className="w-full text-sm bg-gray-800 border border-gray-700 rounded-lg text-white py-2 px-3 focus:ring-primary focus:border-primary"
-            >
-              <option value="robert">Robert Chen (65t - Nam)</option>
-              <option value="emily">Emily Watson (28t - Nữ)</option>
-              <option value="john">John Doe (45t - Nam)</option>
-            </select>
-          </div>
-
-          <div className="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center mb-sm overflow-hidden relative ring-2 ring-primary">
-            <span className="material-symbols-outlined text-3xl text-gray-300">person</span>
-          </div>
-          
-          <div className="text-center font-label-md text-label-md text-gray-400">
-            <h2 className="font-semibold text-white text-lg mb-xs text-center">{activePatient.name}</h2>
-            <p>{activePatient.ageSex}</p>
-            <p>{activePatient.bmiHb}</p>
-            <p className="text-rose-400 mt-xs font-semibold text-sm">{activePatient.complication}</p>
-          </div>
-        </div>
-
-        <nav className="flex-1 overflow-y-auto py-md">
-          <ul className="space-y-xs">
-            {[
-              { id: "overview", label: "Tổng quan CDSS", icon: "person" },
-              { id: "evidence", label: "Medical Graph Explorer", icon: "clinical_notes" },
-              { id: "medication", label: "Lịch sử dùng thuốc", icon: "medication" },
-              { id: "labs", label: "Kết quả Xét nghiệm", icon: "lab_research" },
-              { id: "rules", label: "Hệ Luật & GraphRAG Logs", icon: "psychology" }
-            ].map(tab => (
-              <li key={tab.id}>
-                <button 
-                  onClick={() => { setActiveTab(tab.id); setMobileSidebar(false); }} 
-                  className={`w-full flex items-center px-lg py-3 text-gray-400 hover:text-white hover:bg-gray-800 transition-all ${activeTab === tab.id ? 'border-l-4 border-primary bg-primary/10 text-white font-bold' : ''}`}
-                >
-                  <span className="material-symbols-outlined mr-md">{tab.icon}</span>
-                  {tab.label}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      {/* Top Header */}
+      <header className="flex justify-between items-center w-full px-lg h-16 bg-white dark:bg-slate-900 text-primary dark:text-inverse-primary border-b border-outline-variant dark:border-slate-800 z-40 transition-colors duration-200">
+        <h1 className="font-extrabold text-2xl text-primary dark:text-emerald-400 tracking-tight flex items-center gap-2">
+          <span className="material-symbols-outlined text-3xl">shield_moon</span>
+          GlucoGraph <span className="text-xs font-normal bg-blue-100 dark:bg-emerald-950 text-blue-800 dark:text-emerald-400 px-2 py-0.5 rounded-full border border-blue-200 dark:border-emerald-800">CDSS Engine</span>
+        </h1>
         
-        <div className="px-lg pt-md border-t border-gray-800 flex items-center justify-between">
-          <div className="text-xs text-gray-500">CDSS Engine v4.0</div>
-          <div className="font-black text-xl text-gray-600 tracking-wider">GL.AI</div>
+        <div className="flex items-center space-x-sm">
+          <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full text-on-surface-variant hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+            <span className="material-symbols-outlined">{darkMode ? 'light_mode' : 'dark_mode'}</span>
+          </button>
+          <div className="h-6 w-px bg-gray-200 dark:bg-slate-700"></div>
+          <button className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800"><span className="material-symbols-outlined">notifications</span></button>
+          <button className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800"><span className="material-symbols-outlined">settings</span></button>
         </div>
-      </aside>
+      </header>
 
       {/* Main Wrapper */}
-      <div className="flex-1 flex flex-col md:ml-sidebar-width h-full w-full mt-16 md:mt-0 transition-all duration-300">
-        
-        {/* Top Header */}
-        <header className="flex justify-between items-center w-full px-lg h-16 bg-white dark:bg-slate-900 text-primary dark:text-inverse-primary border-b border-outline-variant dark:border-slate-800 z-40 transition-colors duration-200">
-          <h1 className="font-extrabold text-2xl text-primary dark:text-emerald-400 tracking-tight flex items-center gap-2">
-            <span className="material-symbols-outlined text-3xl">shield_moon</span>
-            GlucoLogic AI <span className="text-xs font-normal bg-blue-100 dark:bg-emerald-950 text-blue-800 dark:text-emerald-400 px-2 py-0.5 rounded-full border border-blue-200 dark:border-emerald-800">CDSS Engine</span>
-          </h1>
-          
-          <div className="flex items-center space-x-sm">
-            <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full text-on-surface-variant hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-              <span className="material-symbols-outlined">{darkMode ? 'light_mode' : 'dark_mode'}</span>
-            </button>
-            <div className="h-6 w-px bg-gray-200 dark:bg-slate-700"></div>
-            <button className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800"><span className="material-symbols-outlined">notifications</span></button>
-            <button className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800"><span className="material-symbols-outlined">settings</span></button>
-          </div>
-        </header>
+      <div className="flex-1 flex flex-col h-full w-full overflow-hidden transition-all duration-300">
+
 
         {/* Dynamic content canvas */}
         <main className="flex-1 overflow-y-auto p-gutter bg-surface-container-low dark:bg-slate-900 transition-colors duration-200">
@@ -402,16 +333,28 @@ function App() {
               
               {/* Clinical input section */}
               <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
-                <div className="flex justify-between items-center mb-md">
-                  <h2 className="font-semibold text-lg text-on-surface dark:text-white flex items-center">
-                    <span className="material-symbols-outlined mr-sm text-primary dark:text-emerald-400">edit_document</span>
-                    Nhập tình huống lâm sàng CDSS
-                  </h2>
-                  <div className="flex items-center gap-xs">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-sm mb-md">
+                  <div>
+                    <h2 className="font-semibold text-lg text-on-surface dark:text-white flex items-center">
+                      <span className="material-symbols-outlined mr-sm text-primary dark:text-emerald-400">edit_document</span>
+                      Nhập tình huống lâm sàng CDSS
+                    </h2>
+                    {/* Active Patient Details Banner */}
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mt-1 text-xs text-gray-500 dark:text-gray-400">
+                      <span className="font-bold text-slate-700 dark:text-slate-200">{activePatient.name}</span>
+                      <span>•</span>
+                      <span>{activePatient.ageSex}</span>
+                      <span>•</span>
+                      <span>{activePatient.bmiHb}</span>
+                      <span>•</span>
+                      <span className="text-rose-500 font-semibold bg-rose-50 dark:bg-rose-950/30 px-2 py-0.5 rounded border border-rose-100 dark:border-rose-900/30">{activePatient.complication}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-xs self-start md:self-center">
                     <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">Thử nhanh các ca:</span>
-                    <button onClick={() => handlePatientChange('robert')} className="text-xs bg-slate-100 dark:bg-slate-700 hover:bg-primary hover:text-white dark:hover:bg-emerald-500 border border-gray-300 dark:border-slate-600 px-3 py-1 rounded-full font-medium transition-all">Robert</button>
-                    <button onClick={() => handlePatientChange('emily')} className="text-xs bg-slate-100 dark:bg-slate-700 hover:bg-primary hover:text-white dark:hover:bg-emerald-500 border border-gray-300 dark:border-slate-600 px-3 py-1 rounded-full font-medium transition-all">Emily</button>
-                    <button onClick={() => handlePatientChange('john')} className="text-xs bg-slate-100 dark:bg-slate-700 hover:bg-primary hover:text-white dark:hover:bg-emerald-500 border border-gray-300 dark:border-slate-600 px-3 py-1 rounded-full font-medium transition-all">John</button>
+                    <button onClick={() => handlePatientChange('robert')} className={`text-xs border px-3 py-1 rounded-full font-medium transition-all ${patientId === 'robert' ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 border-gray-300 dark:border-slate-600'}`}>Robert</button>
+                    <button onClick={() => handlePatientChange('emily')} className={`text-xs border px-3 py-1 rounded-full font-medium transition-all ${patientId === 'emily' ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 border-gray-300 dark:border-slate-600'}`}>Emily</button>
+                    <button onClick={() => handlePatientChange('john')} className={`text-xs border px-3 py-1 rounded-full font-medium transition-all ${patientId === 'john' ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 border-gray-300 dark:border-slate-600'}`}>John</button>
                   </div>
                 </div>
 
