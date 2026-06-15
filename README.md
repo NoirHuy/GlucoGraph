@@ -83,22 +83,23 @@
 
 ### Giai đoạn 1: Tiền xử lý Dữ liệu Y Văn
 ```
-Văn bản y văn thô (*_raw.txt)
+Văn bản y văn thô (*_raw.txt hoặc .md)
         │
-        ▼  [preprocess_raw_data.py]
+        ▼  [medical_preprocessing_pipeline/clean_prose.py]
    LLM Standardization          ← LLM chuyển đổi cấu trúc bảng biểu, danh sách
                                    thành văn xuôi tiếng Việt học thuật,
                                    bảo toàn 100% định lượng lâm sàng.
         │
-        ▼  [preprocess_document.py]
+        ▼  [medical_preprocessing_pipeline/main_pipeline.py]
    Sentence Split & Chunking    ← Tách câu bảo vệ số thập phân (VD: 0.8 g/kg)
                                    và phân chia đoạn thông tin nhất quán ngữ nghĩa.
         │
+   [medical_preprocessing_pipeline/sentence_rewriter.py]
    Coreference Resolution       ← LLM thay thế đại từ mơ hồ ("nó", "điều này")
                                    bằng thực thể y khoa chính xác ở mỗi câu.
         │
         ▼
-   File chunked.txt (mỗi dòng = 1 đoạn tự chứa đủ ngữ nghĩa y khoa)
+   File Output (mỗi dòng = 1 đoạn tự chứa đủ ngữ nghĩa y khoa)
 ```
 
 ### Giai đoạn 2: Trích xuất & Chuẩn hóa (EDC Framework)
@@ -188,11 +189,12 @@ MyProject/
 │   │   ├── database.py         # Kết nối Neo4j DB
 │   │   └── main.py             # FastAPI App & routing endpoints
 │   ├── Dockerfile
-│   └── requirements.txt
+│   ├── requirements.txt
+│   └── check_specific_nodes.py # Script kiểm tra Node cụ thể trên Neo4j
 ├── 📂 frontend-CDSS/           # React 18 + Vite Frontend (CDSS Dashboard)
 │   ├── src/
-│   │   ├── services/           # Kết nối API Backend
-│   │   ├── App.jsx             # Giao diện chính, Nhập ca lâm sàng, Vẽ Đồ thị con
+│   │   ├── App.css             # Style chung cho App
+│   │   ├── App.jsx             # Giao diện chính, nhập ca lâm sàng, vẽ Đồ thị con & gọi API
 │   │   ├── index.css           # Cấu hình TailwindCSS + CSS Glassmorphism
 │   │   └── main.jsx
 │   ├── public/
@@ -203,28 +205,34 @@ MyProject/
 ├── 📂 edc-main/                # Pipeline Xây dựng Knowledge Graph (EDC Framework)
 │   ├── edc/                    # Module trích xuất cốt lõi (Extract, Define, Canonicalize)
 │   ├── debate_gate/            # Module Xác thực đa tác nhân Multi-Agent Debate Gate (Phase 3.5)
-│   │   ├── agents/             # Định nghĩa prompts và logic cho từng Agent chuyên gia
-│   │   ├── agent_debate_gate.py# Bộ điều phối debate, chấm điểm FCS và quyết định Veto
+│   │   ├── agent_debate_gate.py# Bộ điều phối debate, định nghĩa các Agent, chấm điểm FCS và Veto
 │   │   └── run_debate.py       # Script CLI độc lập chạy debate kiểm tra kết quả trích xuất
+│   ├── medical_preprocessing_pipeline/ # Thư mục chứa pipeline tiền xử lý văn bản y văn thô
+│   │   ├── clean_prose.py      # Làm sạch văn bản thô
+│   │   ├── table_translator.py # Phân tích dịch thuật bảng biểu Markdown
+│   │   ├── sentence_rewriter.py# Giải quyết đồng tham chiếu (Coreference Resolution)
+│   │   └── main_pipeline.py    # Script chính điều phối quá trình tiền xử lý
 │   ├── schemas/disease/
 │   │   ├── diabetes_schema.csv # Danh mục 12 quan hệ chuẩn y khoa
 │   │   └── diabetes_entity_type_schema.csv
-│   ├── preprocess_raw_data.py  # Chuẩn hóa văn bản thô
-│   ├── preprocess_document.py  # Tokenization, Chunking & Coreference Resolution
 │   └── run.py                  # Script chạy pipeline EDC 3 pha
 ├── 📂 HaluEval/                # Module Đánh giá độc lập Khả năng Phát hiện Ảo giác
 │   ├── data/                   # Tập dữ liệu kiểm thử (50, 100, 200 triples chứa bẫy ảo giác)
 │   │   ├── 50_triples/         # Chứa dataset.json & references.txt
 │   │   ├── 100_triples/
 │   │   └── 200_triples/
+│   ├── HaluEvalMethod/         # Phương pháp tạo tập dữ liệu bẫy ảo giác
+│   │   └── HUONG_DAN_PHUONG_PHAP.md
 │   ├── output/                 # Nhật ký debate chi tiết và file tổng hợp kết quả (summary.json)
 │   ├── schemas/                # Schemas bệnh lý phục vụ HaluEval
 │   ├── config.json             # Cấu hình mô hình, ngưỡng FCS, số luồng chạy song song
 │   └── run.py                  # Script chính thực hiện chạy benchmark HaluEval
 ├── 📂 evaluate/                # Module Đánh giá chất lượng trích xuất (BioRED & DBpedia-WebNLG)
+│   ├── dbpedia_webnlg/         # Module đánh giá trên dataset DBpedia-WebNLG
 │   ├── biored_diabetes_inputs.txt
 │   ├── biored_diabetes_references.txt
 │   ├── biored_schema.csv
+│   ├── biored_entity_type_schema.csv
 │   ├── config_raw.json
 │   ├── config_debate.json
 │   ├── run_evaluation_raw.py   # Đánh giá F1 của EDC khi không dùng debate gate
