@@ -368,16 +368,9 @@ Cấu hình Debate: `Moderator = GPT-4o-mini`, `FCS threshold = 75.0`, `Veto thr
 
 ## 📚 Tài liệu tham khảo chính
 
-1.  **Zhang, B. & Soh, H. (2024).** *Extract, Define, Canonicalize: An LLM-based Framework for Knowledge Graph Construction.* EMNLP 2024. [arXiv:2404.03868](https://arxiv.org/abs/2404.03868)
-2.  **Lewis, P. et al. (2020).** *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* NeurIPS.
-3.  **Edge, D. et al. (2024).** *From Local to Global: A Graph RAG Approach.* Microsoft Research.
-4.  **Günther, M. et al. (2023).** *Jina Embeddings v3: Multilingual Embeddings With Task LoRA.* [arXiv:2309.10604](https://arxiv.org/abs/2309.10604)
-5.  **Viện Dinh Dưỡng Quốc Gia. (2007).** *Bảng Thành Phần Thực Phẩm Việt Nam.* NXB Y Học.
 
----
 
 ## 👤 Thông tin tác giả
 
 **Lê Quang Huy** – MSSV: 223571
 *   Sinh viên ngành Kỹ thuật Phần mềm
-*   Đồ án 2 – Đại học Bách Khoa Hà Nội / Trường CNTT&TT (2025–2026)
