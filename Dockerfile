@@ -1,5 +1,5 @@
 # Stage 1: Build React Frontend
-FROM node:18 AS builder
+FROM node:20 AS builder
 WORKDIR /app/frontend
 COPY frontend-CDSS/package*.json ./
 RUN npm install
