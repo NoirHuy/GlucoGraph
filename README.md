@@ -358,7 +358,7 @@ So sánh đối chiếu chất lượng trích xuất giữa hệ thống trích
 > 📊 **So sánh đối chiếu với các nghiên cứu trước:**
 > - **So với GPT-4 (Zero-shot) [10]:** Trong nghiên cứu của *Brokman và cộng sự*, mô hình GPT-4 chạy ở cấu hình end-to-end zero-shot chỉ đạt hiệu năng khoảng **~8–10% Full-Triple F1** trên toàn bộ tập dữ liệu BioRED. Hệ thống GlucoLogic của chúng tôi đạt **52.24% Full-Triple F1** trên tập BioRED Diabetes subset mà không cần qua bất kỳ bước fine-tuning chuyên biệt nào.
 > - **So với PubMedBERT (Fine-tuned) [22]:** Mô hình PubMedBERT được tinh chỉnh chuyên biệt trong cuộc thi *BioCreative VIII* đạt **51.93% F1** về nhận diện cặp thực thể (Entity Pair identification). Hiệu năng trích xuất toàn bộ bộ ba của GlucoLogic (**52.24%**) đạt mức tương đương mà vẫn kiểm soát được tính nhất quán lược đồ cấu trúc.
-> - **So với KARMA (NeurIPS 2025 Spotlight) [23]:** Hệ thống KARMA chuyên về KGC đa tác nhân đạt độ chính xác xác thực **83.1%** trên tóm tắt y văn PubMed. Hệ thống của chúng tôi vượt trội nhờ thiết lập cơ chế lọc ảo giác ở cấp độ bộ ba cấu trúc (triple-level) và neo giữ thực thể chuẩn hóa theo mã **UMLS CUI**.
+
 
 
 ### 3. Kết quả phát hiện Ảo giác trên HaluEval (Tập 200 Triples Adversarial)
