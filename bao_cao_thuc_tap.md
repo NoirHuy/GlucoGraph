@@ -683,32 +683,32 @@ _Bảng 5.1. Bảng so sánh chi tiết hiệu năng trích xuất bộ ba tri t
 
 ## 5.2. Đánh giá năng lực phát hiện ảo giác tri thức (HaluEval Agent Debate Gate)
 
-Để kiểm tra tính an toàn lâm sàng và khả năng phòng ngừa ảo giác y văn, nghiên cứu đã thiết lập một tập dữ liệu thử nghiệm nghịch cảnh HaluEval gồm 100 bộ ba tri thức. Tập dữ liệu này bao gồm 42 bộ ba đúng lâm sàng (Valid Triples) và 58 bộ ba bị tiêm bẫy ảo giác (Trap Triples - vi phạm thực tế lâm sàng, đảo ngược quan hệ y sinh hoặc sai lệch lược đồ bản thể học). Các bộ ba này được đưa qua cổng kiểm duyệt đa tác nhân (Multi-Agent Debate Gate) sử dụng mô hình các Agent độc lập.
+Để kiểm tra tính an toàn lâm sàng và khả năng phòng ngừa ảo giác y văn, nghiên cứu đã thiết lập một tập dữ liệu thử nghiệm nghịch cảnh HaluEval quy mô 200 bộ ba tri thức. Tập dữ liệu này bao gồm 100 bộ ba đúng thực tế (Valid Triples) và 100 bộ ba bị tiêm bẫy ảo giác (Trap Triples - vi phạm thực tế lâm sàng, đảo ngược quan hệ y sinh hoặc vi phạm schema lược đồ). Các bộ ba này được đưa qua cổng kiểm duyệt đa tác nhân (P2P Multi-Agent Debate Gate) sử dụng cơ chế đồng thuận điểm số và quyền phủ quyết (Veto) lâm sàng.
 
 | **_Bản chất bộ ba tri thức_** | **_Chấp nhận (Accepted)_** | **_Loại bỏ/Chặn (Blocked)_** | **_Ý nghĩa lâm sàng_**            |
 | ----------------------------- | -------------------------- | ---------------------------- | --------------------------------- |
-| Bộ ba Đúng thực tế (42)       | 36 (True Positive - TP)    | 6 (False Positive - FP)      | Thừa nhận đúng / Từ chối nhầm     |
-| Bộ ba Bị ảo giác/Bẫy (58)     | 1 (False Negative - FN)    | 57 (True Negative - TN)      | Để lọt lưới / Chặn bẫy thành công |
+| Bộ ba Đúng thực tế (100)      | 90 (True Positive - TP)    | 10 (False Negative - FN)     | Thừa nhận đúng / Từ chối nhầm     |
+| Bộ ba Bị ảo giác/Bẫy (100)    | 2 (False Positive - FP)    | 98 (True Negative - TN)      | Để lọt lưới / Chặn bẫy thành công |
 
-Bảng 5.. Bảng ma trận nhầm lẫn (Confusion Matrix) thu được từ thực nghiệm
+Bảng 5.2. Bảng ma trận nhầm lẫn (Confusion Matrix) thu được từ thực nghiệm HaluEval-200
 
-| **_Dataset_** | **_Model_**   | **_Variant_**      | **_Accuracy_** | **_FPR_** | **_FNR_** | **_TRR_** |
+| **_Dataset_** | **_Model_**   | **_Variant_**      | **_Accuracy_** | **_FPR (Lọt bẫy)_** | **_FNR (Từ chối nhầm)_** | **_TRR (Chặn bẫy)_** |
 | ------------- | ------------- | ------------------ | -------------- | --------- | --------- | --------- |
-| HaluEval-100  | EDC Framework | Multi-Agent Debate | 93.00%         | 14.29%    | 1.72%     | 98.28%    |
+| HaluEval-200  | EDC Framework | Multi-Agent Debate | 94.00%         | 2.00%     | 10.00%    | 98.00%    |
 
-Bảng 5.. Chỉ số đo lường độ tin cậy
+Bảng 5.3. Chỉ số đo lường độ tin cậy HaluEval
 
-_Ghi chú: FPR (False Positive Rate) là tỷ lệ từ chối nhầm bộ ba đúng; FNR (False Negative Rate) là tỷ lệ rò rỉ bẫy ảo giác; TRR (Trap Rejection Rate) là tỷ lệ chặn bẫy thành công._
+_Ghi chú: FPR (False Positive Rate) là tỷ lệ lọt lưới/rò rỉ bẫy ảo giác; FNR (False Negative Rate) là tỷ lệ từ chối nhầm bộ ba đúng thực tế; TRR (Trap Rejection Rate) là tỷ lệ chặn đứng bẫy ảo giác thành công._
 
-_Accuracy = (TP+TN)/(TP+TN+FP+FN) = 93/100%_
+_Accuracy = (TP+TN)/(TP+TN+FP+FN) = (90+98)/200 = 94.00%_
 
 **Phân tích kết quả thực nghiệm:**
 
-**Độ chính xác đạt 93.00%** và **Tỷ lệ chặn bẫy thành công đạt 98.28%** chứng minh cơ chế phân tích và phản biện đa tác nhân (clinical specialist, ontology inspector, medical skeptic) hoạt động vô cùng hiệu quả. Cổng kiểm duyệt có khả năng phát hiện nhanh các lỗi thực thể phi logic, chống chỉ định ẩn và lỗi quan hệ phi thực tế.
+**Độ chính xác đạt 94.00%** và **Tỷ lệ chặn bẫy thành công (TRR) đạt 98.00%** chứng minh cơ chế phân tích và phản biện đa tác nhân (Clinical Specialist, Ontology Inspector, Medical Skeptic) với ngưỡng FCS ≥ 80 và quyền phủ quyết Veto lâm sàng hoạt động cực kỳ hiệu quả và an toàn.
 
-**Hiện tượng rò rỉ bẫy cực thấp (FNR = 1.72%):** Chỉ có duy nhất một bộ ba ảo giác bị lọt qua là \["intravenous insulin therapy", "treated by", "Diabetic Ketoacidosis"\] (Đảo chiều chủ-khách trong mối quan hệ cấp cứu phức tạp).
+**Hiện tượng lọt lưới ảo giác cực thấp (FPR = 2.00%):** Chỉ có duy nhất 2 bộ ba bẫy ảo giác vượt qua được cổng phản biện (cả hai trường hợp đều liên quan đến các lỗi đảo ngược chủ thể-đối tượng trong các kịch bản cấp cứu lâm sàng phức tạp).
 
-**Hiện tượng từ chối nhầm (FPR = 14.29%):** Có 6 bộ ba thực tế là đúng nhưng bị các tác nhân chặn lại (ví dụ liên quan di truyền phức tạp hoặc chất bổ trợ Chromium khó kiểm chứng lâm sàng trực tiếp). Hành vi này thể hiện tính bảo thủ y tế (medical conservatism) cần thiết của hệ thống CDSS: thà từ chối các thông tin còn nghi ngờ hơn là chấp nhận thông tin sai lệch gây nguy hiểm cho bệnh nhân.
+**Hiện tượng từ chối nhầm bộ ba đúng (FNR = 10.00%):** Có 10 bộ ba thực tế là đúng nhưng bị các tác nhân chặn lại (các trường hợp này chủ yếu liên quan đến các thông tin di truyền học hoặc các tuyên bố thực phẩm bổ sung/dược liệu chưa có bằng chứng y văn chắc chắn như Chromium). Điều này phản ánh tư duy bảo thủ y học (medical conservatism) có chủ ý của hệ thống: thà chặn nhầm một số tri thức đúng còn hơn là để lọt các thông tin sai lệch gây nguy hiểm tính mạng bệnh nhân.
 
 ## 5.3. Đánh giá chất lượng trích xuất tri thức và tính nhất quán lược đồ trên DBpedia-WebNLG
 

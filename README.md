@@ -342,27 +342,43 @@ python evaluate/run_evaluation_debate.py
 | Sinh lời khuyên lâm sàng (GraphRAG) | 980 ms | 1.480 ms |
 | **Tổng thể quy trình End-to-End** | **1.353 ms** | **2.100 ms** |
 
-### 2. Chất lượng Trích xuất Tri thức y văn (F1-Score trên BioRED Dataset)
-So sánh trực tiếp chất lượng trích xuất giữa việc áp dụng và không áp dụng **Multi-Agent Debate Gate** (ngưỡng FCS = 75.0, mô hình GPT-4o-mini làm Moderator):
+### 2. Chất lượng Trích xuất Tri thức y văn (F1-Score trên BioRED Diabetes Dataset)
+So sánh đối chiếu chất lượng trích xuất giữa hệ thống trích xuất thô (**Raw - không qua phản biện**) và hệ thống có sự xác thực của cổng phản biện (**Debate - có phản biện P2P**). Cấu hình Debate gồm 3 Agent chuyên gia (Clinical Specialist, Ontology Inspector, Medical Skeptic) với ngưỡng điểm đồng thuận trung bình FCS ≥ 80 và Luật phủ quyết lâm sàng Veto (S_i < 30):
 
-| Tiêu chuẩn so khớp | Không có Debate Gate (F1-Score) | Có Debate Gate (F1-Score) | Trạng thái cải thiện |
+| Tiêu chuẩn so khớp (F1-Score) | Hệ thống Raw (Không phản biện) | Hệ thống Debate (Có phản biện P2P) | Trạng thái cải thiện (Δ) |
 |---|:---:|:---:|:---:|
-| **Subject Match** | 67.03% | **78.45%** | + 11.42% 📈 |
-| **Predicate Match** | 59.34% | **69.80%** | + 10.46% 📈 |
-| **Object Match** | 60.07% | **71.12%** | + 11.05% 📈 |
-| **Exact Match (Cả Triple)** | **53.00%** | **64.25%** | **+ 11.25%** 🚀 |
+| **Subject F1 (Chủ thể)** | 67.24% | **69.09%** | +1.85% 📈 |
+| **Predicate F1 (Quan hệ)** | 77.59% | **80.00%** | +2.41% 📈 |
+| **Object F1 (Đối tượng)** | 67.73% | **69.61%** | +1.88% 📈 |
+| **Exact Match F1 (Tổng hợp thực thể)** | 70.66% | **72.70%** | +2.04% 📈 |
+| **Full-Triple F1 (Toàn bộ bộ ba)** | **50.00%** | **52.24%** | **+2.24%** 🚀 |
 
-> 📌 **Phân tích:** Việc đưa thêm vòng tranh luận đa tác nhân giúp tăng mạnh F1-score lên thêm **11.25%**. Nguyên nhân chính là do Debate Gate đã lọc bỏ thành công phần lớn các quan hệ ảo giác (Spurious Triples) sinh ra bởi mô hình trích xuất ban đầu, tăng mạnh chỉ số Precision (độ chuẩn xác) của đồ thị.
+> 📌 **Phân tích:** Cơ chế Debate Gate giúp cải thiện chỉ số Full-Triple F1 thêm **2.24%** (từ 50.00% lên 52.24%). Mức cải thiện lớn nhất nằm ở Predicate F1 (+2.41%), chứng minh quá trình tranh luận đa tác nhân giúp chọn lọc và gắn nhãn quan hệ chuẩn xác nhất, loại bỏ đáng kể các bộ ba ảo giác hoặc phi logic về mặt y văn.
 
-### 3. Kết quả phát hiện Ảo giác trên HaluEval (Tập 100 Triples Adversarial)
-Cấu hình Debate: `Moderator = GPT-4o-mini`, `FCS threshold = 75.0`, `Veto threshold = 80.0`.
+### 3. Kết quả phát hiện Ảo giác trên HaluEval (Tập 200 Triples Adversarial)
+Đánh giá trên tập dữ liệu bẫy nghịch cảnh HaluEval quy mô 200 bộ ba (gồm 100 bộ ba đúng thực tế và 100 bộ ba bị tiêm bẫy ảo giác):
 
 | Chỉ số kiểm định | Kết quả đạt được | Ý nghĩa lâm sàng |
 |---|:---:|---|
-| **Accuracy (Độ chính xác toàn cục)** | **89.00%** | Tỷ lệ đưa ra quyết định đúng đắn cho mọi loại tri thức |
-| **Trap Rejection Rate (Chặn ảo giác)** | **92.31%** | Khả năng chặn đứng thành công các bẫy ảo giác y khoa nguy hiểm |
-| **False Negative Rate (Rò rỉ ảo giác)** | **7.69%** | Tỷ lệ triple ảo giác lọt lưới qua các vòng kiểm tra |
-| **False Positive Rate (Từ chối nhầm)** | **12.50%** | Tỷ lệ tri thức đúng bị các agent nghi ngờ và gạt bỏ nhầm |
+| **Accuracy (Độ chính xác toàn cục)** | **94.00%** | Tỷ lệ đưa ra quyết định đúng đắn trên toàn bộ dữ liệu kiểm thử |
+| **Trap Rejection Rate (Chặn ảo giác - TRR)** | **98.00%** | Khả năng phát hiện và chặn đứng thành công các bẫy ảo giác y khoa |
+| **False Negative Rate (Từ chối nhầm - FNR)** | **10.00%** | Tỷ lệ bộ ba đúng thực tế bị các agent nghi ngờ và chặn lại (bảo thủ y tế) |
+| **False Positive Rate (Lọt bẫy ảo giác - FPR)** | **2.00%** | Tỷ lệ bẫy ảo giác y khoa bị lọt lưới qua các vòng kiểm duyệt |
+
+> 📌 **Phân tích:** Đạt tỷ lệ chặn bẫy **98.00%** với chỉ **2.00%** lỗi lọt bẫy chứng tỏ sự hiệu quả cực cao của luật phủ quyết (Veto Rule). Tỷ lệ từ chối nhầm **10.00%** thể hiện tính bảo thủ y tế (medical conservatism) cần thiết: hệ thống sẵn sàng loại bỏ các tri thức thiếu bằng chứng rõ ràng (như Chromium) để đảm bảo an toàn tuyệt đối cho các quyết định CDSS phía sau.
+
+### 4. Đánh giá Khả năng Tổng quát hóa trên DBpedia-WebNLG (Domain Generalization)
+Đánh giá chất lượng trích xuất tri thức và độ nhất quán lược đồ trên tập dữ liệu đa miền DBpedia-WebNLG (chủ đề 1_university, gồm 71 tài liệu):
+
+| Mô hình / Cấu hình | Độ chính xác (Precision) | Độ bao phủ (Recall) | F1-Score | Độ nhất quán lược đồ (Ontology Consistency) |
+|---|:---:|:---:|:---:|:---:|
+| **Alpaca-LoRA-13B [6]** | 29.00% | 16.00% | 20.00% | 89.00% |
+| **Vicuna-13B [6]** | 31.00% | 19.00% | 23.00% | 92.00% |
+| **LLaMA-65B 2-shot [12]** | — | — | ~21.90% | — |
+| **EDC (Không có hậu xử lý)** | 70.40% | 51.98% | 57.96% | **100.00%** |
+| **EDC + Post-processing (Của chúng tôi)** | **86.03%** | **74.44%** | **78.69%** | **100.00%** |
+
+> 📌 **Phân tích:** Giải pháp EDC kết hợp Post-processing của chúng tôi đạt điểm F1-Score vượt trội là **78.69%** (tăng gấp 3.42 lần so với Vicuna-13B và 3.93 lần so với Alpaca-LoRA-13B), đồng thời đảm bảo độ nhất quán lược đồ tuyệt đối (100.00% OC). Điều này khẳng định quy trình chuẩn hóa định nghĩa và loại bỏ từ đồng nghĩa của hệ thống có khả năng tổng quát hóa rất tốt sang các lĩnh vực tổng quát.
 
 ---
 
