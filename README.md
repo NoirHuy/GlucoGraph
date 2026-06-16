@@ -17,8 +17,9 @@
 |---|---|---|
 | 🌐 **Web App (CDSS Dashboard)** | [glucologic.noirhuy.id.vn](http://glucologic.noirhuy.id.vn) | *(không cần đăng nhập)* |
 | 🤗 **Hugging Face Space (Dự phòng)** | [huggingface.co/spaces/NoirHuy/glucologic-cdss](https://huggingface.co/spaces/NoirHuy/glucologic-cdss) | *(không cần đăng nhập)* |
-| 🔬 **Neo4j Browser (CDSS Knowledge Graph)** | [glucologic.noirhuy.id.vn:7474](http://glucologic.noirhuy.id.vn:7474) | Username: `neo4j` / Password: `password` |
+| 🔬 **Neo4j Browser (CDSS Knowledge Graph)** | [browser.neo4j.io](https://browser.neo4j.io) | **Connection URI:** `neo4j+s://674a50fc.databases.neo4j.io`<br>**Username:** `674a50fc`<br>**Password:** `TLYArswrzV8jEKhQu_pDgvuTRD_cG0jOss7GnokGMDU` |
 | 💻 **IP trực tiếp (dự phòng)** | [103.82.27.129](http://103.82.27.129) | — |
+
 
 
 > 💡 **Hướng dẫn nhanh cho Hội đồng:** Vào link Web App → Nhập bệnh án tóm tắt hoặc chọn Bệnh án lâm sàng mẫu (VD: *Robert - Đái tháo đường Type 1 cấp tính*) → Nhấn **Analyze Case** để xem phân tích chẩn đoán, cảnh báo chống chỉ định tương tác thuốc, và luồng suy luận y khoa trực quan trên Đồ thị Tri thức.
