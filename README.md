@@ -24,7 +24,7 @@
 
 > 💡 **Hướng dẫn nhanh cho Hội đồng:** Vào link Web App → Nhập bệnh án tóm tắt hoặc chọn Bệnh án lâm sàng mẫu (VD: *Robert - Đái tháo đường Type 1 cấp tính*) → Nhấn **Analyze Case** để xem phân tích chẩn đoán, cảnh báo chống chỉ định tương tác thuốc, và luồng suy luận y khoa trực quan trên Đồ thị Tri thức.
 >
-> Để xem Đồ thị Tri thức trực quan, vào Neo4j Browser → chạy lệnh Cypher: `MATCH (n) RETURN n LIMIT 100`
+> Để xem Đồ thị Tri thức trực quan kèm các mối quan hệ, vào Neo4j Browser → chạy lệnh Cypher: `MATCH p=(s)-[r]->(o) RETURN p LIMIT 100`
 
 ---
 
