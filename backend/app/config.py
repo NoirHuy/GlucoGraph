@@ -15,4 +15,9 @@ class Settings(BaseSettings):
         env_file = ".env"
         extra = "ignore"
 
+    def __init__(self, **values):
+        super().__init__(**values)
+        if os.getenv("NEO4J_USERNAME"):
+            self.NEO4J_USER = os.getenv("NEO4J_USERNAME")
+
 settings = Settings()
