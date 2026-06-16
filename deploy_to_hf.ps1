@@ -1,4 +1,4 @@
-# Script tự động đóng gói và deploy GlucoLogic CDSS lên Hugging Face Spaces
+# Script tự động đóng gói và deploy GlucoGraph CDSS lên Hugging Face Spaces
 # Chạy script bằng PowerShell tại thư mục gốc của dự án
 
 $token = Read-Host -Prompt "Nhập Hugging Face Access Token của bạn (loại Write)"
@@ -30,7 +30,7 @@ __pycache__/
 # Tạo file README.md chứa YAML Metadata cấu hình Docker Space cho Hugging Face
 @'
 ---
-title: GlucoLogic CDSS
+title: GlucoGraph CDSS
 emoji: 🩺
 colorFrom: blue
 colorTo: red
@@ -39,7 +39,7 @@ app_port: 7860
 pinned: false
 ---
 
-# GlucoLogic AI - Clinical Decision Support System (CDSS)
+# GlucoGraph - Clinical Decision Support System (CDSS)
 Triển khai trực tuyến trên Hugging Face Spaces sử dụng Docker.
 '@ | Out-File -FilePath hf_deploy/README.md -Encoding utf8
 
@@ -48,7 +48,7 @@ Write-Host "3. Đang khởi tạo Git trong thư mục deploy..." -ForegroundCol
 cd hf_deploy
 git init -b main
 git add .
-git commit -m "Deploy GlucoLogic CDSS to Hugging Face Spaces"
+git commit -m "Deploy GlucoGraph CDSS to Hugging Face Spaces"
 
 Write-Host "4. Đang push code lên Hugging Face..." -ForegroundColor Green
 git remote add hf "https://NoirHuy:$token@huggingface.co/spaces/NoirHuy/glucologic-cdss"

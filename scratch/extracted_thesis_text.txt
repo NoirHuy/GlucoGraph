@@ -1,0 +1,356 @@
+
+TRƯỜNG ĐẠI HỌC NAM CẦN THƠ 
+KHOA CÔNG NGHỆ THÔNG TIN
+
+
+
+LÊ QUANG HUY
+
+
+
+ỨNG DỤNG LLM XÂY DỰNG ĐỒ THỊ TRI THỨC HỖ TRỢ CHẨN ĐOÁN BỆNH TIỂU ĐƯỜNG
+
+
+
+KHÓA LUẬN TỐT NGHIỆP ĐẠI HỌC
+Ngành: Kỹ Thuật Phần Mềm Mã số ngành: 7480103
+
+
+Tháng 6 năm 2026
+
+
+TRƯỜNG ĐẠI HỌC NAM CẦN THƠ KHOA CÔNG NGHỆ THÔNG TIN
+
+
+
+LÊ QUANG HUY       
+ MSSV: 223571
+
+ỨNG DỤNG LLM XÂY DỰNG ĐỒ THỊ TRI THỨC HỖ TRỢ CHẨN ĐOÁN BỆNH TIỂU ĐƯỜNG
+
+
+KHÓA LUẬN TỐT NGHIỆP ĐẠI HỌC
+Ngành: Kỹ Thuật Phần Mềm Mã số ngành: 7480103
+
+
+
+GIẢNG VIÊN HƯỚNG DẪN NCS. TRẦN VĂN THIỆN
+
+
+
+Tháng 6 năm 2026
+CHẤP THUẬN HỘI ĐỒNG
+Khóa luận “Ứng dụng LLM xây dựng Đồ thị tri thức hỗ trợ chẩn đoán bệnh tiểu đường (GlucoGraph)”, do sinh viên Lê Quang Huy thực hiện dưới sự hướng dẫn của Giảng viên NCS. Trần Văn Thiện. Khóa luận tốt nghiệp đã báo cáo và được Hội đồng chấm Khóa luận thông qua ngày … tháng … năm 2026.
+
+
+Ủy viên
+(Ký tên)
+
+
+
+
+
+……………………………………..
+Thư ký
+(Ký tên)
+
+
+
+
+
+……………………………………..
+
+Phản biện 1
+(Ký tên)
+
+
+
+
+
+……………………………………..
+
+Phản biện 2
+(Ký tên)
+
+
+
+
+
+……………………………………..
+
+Cán bộ hướng dẫn
+(Ký tên)
+
+
+
+
+
+
+
+……………………………………..
+
+Chủ tịch Hội đồng
+(Ký tên)
+
+
+
+
+
+
+
+……………………………………..
+
+LỜI CẢM TẠ
+Trước hết, em xin bày tỏ lòng biết ơn chân thành và sâu sắc đến trường Đại học Nam Cần Thơ – ngôi trường đã tạo điều kiện học tập, rèn luyện và cung cấp nền tảng kiến thức vững chắc để em hoàn thành chương trình học cũng như thực hiện luận văn tốt nghiệp này.
+Em xin gửi lời cảm ơn trân trọng đến Quý thầy cô Khoa Công nghệ thông tin, những người đã tận tình giảng dạy, truyền đạt kiến thức và kinh nghiệm quý báu trong suốt thời gian em theo học tại trường. Những bài học và sự hướng dẫn tận tâm của quý thầy cô chính là hành trang quý giá giúp em có được kết quả như ngày hôm nay.
+Đặc biệt, em xin bày tỏ lòng biết ơn sâu sắc đến Nghiên Cứu Sinh Trần Văn Thiện, người đã trực tiếp hướng dẫn, đồng hành cùng em trong suốt quá trình thực hiện luận văn. Thầy không chỉ tận tình định hướng, góp ý chuyên môn mà còn luôn động viên, khích lệ em vượt qua những khó khăn trong quá trình nghiên cứu. Sự tận tâm và nhiệt huyết của thầy là nguồn động lực to lớn giúp em hoàn thành tốt luận văn này.
+Dù luận văn vẫn còn những hạn chế nhất định, nhưng em đã cố gắng thực hiện với tinh thần nghiêm túc và nỗ lực cao nhất. Em kính mong nhận được sự góp ý của quý thầy cô để có thể hoàn thiện hơn về kiến thức và kỹ năng trong tương lai.
+Em xin chân thành cảm ơn!
+Cần Thơ, ngày   tháng 6 năm 2026
+Người thực hiện
+
+
+
+
+ Lê Quang Huy
+LỜI CAM ĐOAN
+Em xin cam kết Khóa luận này được hoàn thành dựa trên kết quả nghiên cứu của em và các kết quả này chưa được dùng cho bất cứ khóa luận cùng cấp nào khác.
+Cần Thơ, ngày   tháng 6 năm 2026
+Người thực hiện
+
+
+
+
+Lê Quang Huy
+
+
+TÓM TẮT
+Hiện tượng ảo giác tri thức (knowledge hallucination) trong các Mô hình Ngôn ngữ Lớn (LLM) là một rào cản nghiêm trọng đối với việc triển khai các mô hình này trong lĩnh vực y tế – nơi độ chính xác là yếu tố tiên quyết. Khóa luận này trình bày một hệ thống tự động hóa toàn diện nhằm xây dựng Đồ thị tri thức (Knowledge Graph – KG) chuẩn hóa theo UMLS cho bệnh Đái tháo đường (Diabetes Mellitus), được phát triển dựa trên khung EDC (Extract – Define – Canonicalize) mở rộng, kết hợp với cơ chế Cổng tranh luận đa tác tử ngang hàng (Peer-to-Peer Multi-Agent Debate Gate – P2P Debate Gate).
+Dữ liệu y khoa được thu thập từ Merck Manuals Professional Version và được xử lý qua một quy trình gồm bốn giai đoạn – Trích xuất (Extract), Định nghĩa (Define), Chuẩn hóa (Canonicalize) và Đóng gói thuộc tính (Property Packing) – trước khi được lưu trữ trong cơ sở dữ liệu đồ thị Neo4j. Một Hệ thống hỗ trợ quyết định lâm sàng (Clinical Decision Support System – CDSS) dựa trên kiến trúc GraphRAG lai (hybrid GraphRAG) cũng được xây dựng nhằm cung cấp các khuyến nghị chẩn đoán và điều trị minh bạch, có căn cứ dựa trên đồ thị tri thức.
+Kết quả thực nghiệm trên ba bộ dữ liệu chuẩn (benchmark) đã khẳng định hiệu quả của phương pháp đề xuất: chỉ số Full-Triple F1 đạt 52.24% trên bộ dữ liệu BioRED Diabetes (tăng 2.24% so với hệ thống không sử dụng cơ chế tranh luận); Tỷ lệ từ chối các bẫy ảo giác (Trap Rejection Rate – TRR) đạt 98.00% (độ chính xác Accuracy = 94.00%) trên bộ dữ liệu HaluEval gồm 200 mẫu; và chỉ số Fact-Extraction F1 đạt 78.69% trên bộ dữ liệu DBpedia-WebNLG, vượt trội đáng kể so với các mô hình Vicuna-13B (23.00%) và Alpaca-LoRA-13B (20.00%).
+Các kết quả này cho thấy rằng việc thiết kế quy trình có cấu trúc, chuẩn hóa theo bản thể học (ontology) và cơ chế đánh giá đa tác tử chuyên biệt theo lĩnh vực có thể cùng nhau tạo ra một đồ thị tri thức phù hợp cho việc hỗ trợ quyết định lâm sàng một cách an toàn, góp phần xây dựng kiến trúc tham khảo có thể tái lập cho các hệ thống tin học y tế thông minh trong tương lai.
+
+Từ khóa: Đồ thị  tri thức, mô hình ngôn ngữ lớn, bệnh đái tháo đường, khung EDC, Neo4j, GraphRAG, tranh luận đa tác nhân.
+MỤC LỤC
+DANH SÁCH BẢNG
+DANH SÁCH HÌNH
+DANH MỤC TỪ VIẾT TẮT
+CHƯƠNG 1:
+GIỚI THIỆU
+1.1. ĐẶT VẤN ĐỀ NGHIÊN CỨU
+Bệnh đái tháo đường (Diabetes Mellitus) là một trong những bệnh mạn tính phổ biến nhất trên thế giới, ảnh hưởng đến hơn 537 triệu người trưởng thành tính đến năm 2021 và dự báo sẽ tăng lên 783 triệu người vào năm 2045 [1]. Khối lượng tài liệu y văn về điều trị đái tháo đường đang gia tăng với tốc độ vượt xa khả năng tiếp thu của một cá nhân chuyên môn, đặt ra yêu cầu cấp thiết về các công cụ trích xuất tri thức tự động và hỗ trợ ra quyết định thông minh.
+Các Mô hình Ngôn ngữ Lớn (Large Language Models – LLM) đã thể hiện khả năng hiểu ngôn ngữ tự nhiên vượt trội, mở ra nhiều kỳ vọng về khả năng ứng dụng trong lĩnh vực y tế. Tuy nhiên, hiện tượng ảo giác tri thức (knowledge hallucination) – tức việc mô hình sinh ra các phát ngôn sai lệch hoặc không có cơ sở thực tế – lại đặt ra một rủi ro an toàn nghiêm trọng trong các bối cảnh y khoa [2]. Một tương tác thuốc bị “ảo giác” hoặc một mối quan hệ lâm sàng bị phân loại sai có thể trực tiếp gây nguy hại cho bệnh nhân.
+Đồ thị tri thức (Knowledge Graph – KG) là một hướng tiếp cận bổ trợ, cho phép biểu diễn tường minh, có cấu trúc các thực thể và quan hệ giữa chúng, hỗ trợ lập luận đa bước (multi-hop reasoning) và khả năng truy xuất nguồn gốc minh bạch. Kỹ thuật Sinh văn bản tăng cường truy xuất dựa trên đồ thị (Graph Retrieval-Augmented Generation – GraphRAG) [3] kết hợp khả năng diễn đạt tự nhiên của LLM với tính chính xác về dữ kiện của KG; tuy nhiên, chất lượng xây dựng đồ thị tri thức gốc vẫn là điểm nghẽn quyết định hiệu quả của toàn bộ hệ thống.
+Xuất phát từ thực tế đó, đề tài “Ứng dụng LLM xây dựng Đồ thị tri thức hỗ trợ chẩn đoán bệnh tiểu đường (GlucoGraph)” được thực hiện nhằm giải quyết điểm nghẽn nói trên, hướng đến xây dựng một hệ thống đầu – cuối (end-to-end) có khả năng tự động trích xuất, chuẩn hóa và kiểm soát chất lượng tri thức y khoa về bệnh đái tháo đường, làm nền tảng cho một hệ thống hỗ trợ quyết định lâm sàng đáng tin cậy.
+1.2. LÝ DO CHỌN ĐỀ TÀI
+Trong bối cảnh ứng dụng công nghệ thông tin ngày càng sâu rộng vào lĩnh vực y tế, việc xây dựng các hệ thống tri thức số hóa, có khả năng cập nhật và mở rộng trở thành một yêu cầu cấp thiết. Các phương pháp xây dựng đồ thị tri thức y khoa truyền thống chủ yếu dựa vào việc thu thập thủ công bởi chuyên gia hoặc các quy tắc trích xuất cố định (rule-based), vốn không thể đáp ứng được tốc độ phát triển của tài liệu y văn hiện nay.
+Các Mô hình Ngôn ngữ Lớn mở ra khả năng tự động hóa quá trình này, nhưng đi kèm với rủi ro ảo giác tri thức – một vấn đề đặc biệt nhạy cảm trong lĩnh vực y tế, nơi một tri thức sai lệch (ví dụ: một tương tác thuốc – bệnh không tồn tại, hoặc một quan hệ nhân quả bị đảo ngược) có thể dẫn đến hậu quả nghiêm trọng đối với người bệnh. Khung EDC (Extract – Define – Canonicalize) [5] là một hướng tiếp cận tiên phong cho việc xây dựng đồ thị tri thức bằng LLM, song công thức gốc của khung này chưa tích hợp các định danh y khoa chuẩn (như UMLS [4], RxNorm, ICD-10) và chưa có cơ chế kiểm soát chất lượng (quality gating) phù hợp với bối cảnh lâm sàng.
+Đề tài “GlucoGraph” được lựa chọn nhằm giải quyết khoảng trống đó, thông qua việc mở rộng khung EDC thành bốn giai đoạn và bổ sung một Cổng tranh luận đa tác tử ngang hàng (P2P Multi-Agent Debate Gate) gồm ba tác tử chuyên biệt (Chuyên gia lâm sàng, Thanh tra bản thể học, Người hoài nghi y khoa), cùng cơ chế tính điểm đồng thuận (Final Consensus Score – FCS) và quy tắc phủ quyết (Veto Rule) mang tính bảo toàn lâm sàng.
+Bên cạnh giá trị ứng dụng thực tiễn, việc thực hiện đề tài còn là cơ hội để sinh viên ngành Công nghệ thông tin vận dụng kiến thức về xử lý ngôn ngữ tự nhiên, cơ sở dữ liệu đồ thị (Neo4j), kỹ thuật GraphRAG và kiến trúc hệ thống đa tác tử vào việc giải quyết một bài toán có ý nghĩa khoa học và xã hội cao. Đây cũng là quá trình tiếp cận quy trình nghiên cứu khoa học hoàn chỉnh: từ khảo sát tài liệu, xây dựng giải pháp, thực nghiệm trên các bộ dữ liệu chuẩn, đến phân tích và đánh giá kết quả một cách định lượng.
+Từ những phân tích trên, có thể khẳng định việc nghiên cứu và xây dựng hệ thống GlucoGraph là phù hợp với yêu cầu thực tiễn của lĩnh vực tin học y tế hiện nay, đồng thời mang tính khả thi cao trong khuôn khổ một khóa luận tốt nghiệp đại học.
+1.3. MỤC TIÊU NGHIÊN CỨU
+1.3.1. Mục tiêu chung
+Mục tiêu tổng quát của đề tài là xây dựng một hệ thống tự động hóa đầu – cuối nhằm kiến tạo Đồ thị tri thức (Knowledge Graph) chuẩn hóa theo UMLS cho lĩnh vực bệnh đái tháo đường, trong đó tích hợp cơ chế tranh luận đa tác tử nhằm kiểm soát và hạn chế hiện tượng ảo giác tri thức của LLM trong suốt quy trình trích xuất. Trên cơ sở đồ thị tri thức thu được, đề tài hướng đến việc xây dựng một hệ thống hỗ trợ quyết định lâm sàng (CDSS) dựa trên kiến trúc GraphRAG lai, có khả năng đưa ra các khuyến nghị chẩn đoán và điều trị minh bạch, có căn cứ và an toàn.
+Hệ thống được kỳ vọng không chỉ giải quyết bài toán kỹ thuật về xây dựng đồ thị tri thức từ văn bản y khoa, mà còn đóng góp một kiến trúc tham khảo có thể tái sử dụng cho các bài toán xây dựng đồ thị tri thức có kiểm soát chất lượng trong các lĩnh vực chuyên biệt khác ngoài y tế.
+1.3.2. Mục tiêu cụ thể
+Để hiện thực hóa mục tiêu chung, đề tài tập trung giải quyết các nhiệm vụ cụ thể sau:
+Thứ nhất, nghiên cứu và xây dựng quy trình thu thập, tiền xử lý dữ liệu văn bản y khoa từ nguồn Merck Manuals Professional Version (chuyên mục đái tháo đường), bao gồm việc làm sạch dữ liệu HTML và phân đoạn văn bản thành các khối (chunk) có kích thước khoảng 256 token theo chiến lược cửa sổ trượt (sliding window) với độ chồng lấp 32 token, nhằm bảo toàn ngữ cảnh liên câu.
+Thứ hai, thiết kế và triển khai một quy trình EDC mở rộng gồm bốn giai đoạn: (1) Trích xuất thông tin mở (Open Information Extraction) bằng mô hình Llama-3.3-70B nhằm sinh ra các bộ ba (Subject, Relation, Object) thô với độ phủ (recall) cao; (2) Sinh định nghĩa ngữ nghĩa theo ngữ cảnh cho từng thực thể và quan hệ; (3) Chuẩn hóa bản thể học (canonicalization) bằng kỹ thuật biểu diễn vector nhúng (Qwen-Embedding) và độ tương đồng cosine với các tệp lược đồ tham chiếu; và (4) Đóng gói thuộc tính (Property Packing) nhằm gắn các mã định danh y khoa chuẩn (UMLS CUI, RxNorm, ICD-10) cho từng nút thực thể, đồng thời thực hiện hợp giải thực thể (entity resolution) để gộp các từ đồng nghĩa và viết tắt.
+Thứ ba, xây dựng cơ chế Cổng tranh luận đa tác tử ngang hàng (P2P Multi-Agent Debate Gate) [8] gồm ba tác tử chuyên biệt – Chuyên gia lâm sàng (Clinical Specialist), Thanh tra bản thể học (Ontology Inspector) và Người hoài nghi y khoa (Medical Skeptic) – mỗi tác tử độc lập đánh giá và cho điểm một bộ ba theo các tiêu chí chuyên môn riêng. Một bộ ba chỉ được chấp thuận khi điểm đồng thuận cuối cùng (Final Consensus Score – FCS) đạt ngưỡng tối thiểu 80 điểm và không có tác tử nào kích hoạt quy tắc phủ quyết (Veto Rule, Sᵢ < 30).
+Thứ tư, triển khai việc lưu trữ các bộ ba đã được chấp thuận vào cơ sở dữ liệu đồ thị Neo4j thông qua các lệnh Cypher MERGE, đảm bảo tính idempotent của quá trình nạp dữ liệu, với các nhãn nút (node label) tuân theo loại ngữ nghĩa UMLS và các loại quan hệ theo lược đồ chuẩn hóa (TREATED_BY, HAS_FINDING, CO_OCCURS_WITH, CONTRAINDICATED_WITH).
+Thứ năm, xây dựng một hệ thống hỗ trợ quyết định lâm sàng (CDSS) dạng ứng dụng web (FastAPI và ReactJS) dựa trên kiến trúc GraphRAG lai, kết hợp tìm kiếm theo vector ngữ nghĩa, duyệt đồ thị đa bước (multi-hop traversal) bằng Cypher và tổng hợp kết quả bằng LLM, đồng thời tích hợp mô-đun Ngắt mạch lâm sàng (Clinical Circuit Breaker) nhằm phát hiện và cảnh báo các cặp chống chỉ định thuốc – bệnh trong thời gian thực.
+Thứ sáu, thực nghiệm và đánh giá định lượng hiệu quả của hệ thống trên ba bộ dữ liệu chuẩn – BioRED Diabetes, một bộ dữ liệu HaluEval [7] gồm 200 mẫu được xây dựng riêng cho nghiên cứu này, và DBpedia-WebNLG [6] – theo các chỉ số F1, độ chính xác (Accuracy) và Tỷ lệ từ chối bẫy ảo giác (Trap Rejection Rate – TRR), từ đó đối chiếu với các phương pháp nền (baseline) đã được công bố.
+1.4. PHẠM VI NGHIÊN CỨU
+1.4.1. Không gian
+Đề tài được thực hiện trong khuôn khổ nghiên cứu khoa học của nhóm sinh viên ngành Công nghệ thông tin, Khoa Công nghệ thông tin, Trường Đại học Nam Cần Thơ, dưới sự hướng dẫn của giảng viên hướng dẫn. Phạm vi dữ liệu y khoa được giới hạn trong chuyên mục bệnh đái tháo đường (Diabetes Mellitus) của nguồn Merck Manuals Professional Version – một tài liệu tham khảo lâm sàng được bình duyệt (peer-reviewed) và cập nhật liên tục bởi các chuyên gia y tế.
+Toàn bộ hệ thống được xây dựng và thực nghiệm trong môi trường phòng thí nghiệm, sử dụng các mô hình LLM được truy cập thông qua nền tảng OpenRouter API (Llama-3.3-70B, Llama-3.1-7B, Gemma-3-27B) và một thực thể Neo4j Community Edition cài đặt cục bộ. Hệ thống CDSS được xây dựng theo kiến trúc client – server với FastAPI cho phần backend và ReactJS cho phần frontend, ở mức độ chứng minh khái niệm (proof-of-concept), chưa hướng đến triển khai sản xuất quy mô lớn.
+1.4.2. Thời gian
+Đề tài được thực hiện trong khoảng thời gian của học kỳ thực hiện khóa luận tốt nghiệp năm học 2025–2026, bắt đầu từ giai đoạn tiếp nhận đề tài và xây dựng đề cương nghiên cứu, đến giai đoạn triển khai xây dựng hệ thống, thực nghiệm trên các bộ dữ liệu chuẩn, viết báo cáo nghiên cứu khoa học và hoàn thiện báo cáo khóa luận tốt nghiệp.
+Quá trình triển khai được chia thành các giai đoạn chính: (1) khảo sát tài liệu và xây dựng đề cương; (2) thu thập, tiền xử lý dữ liệu và xây dựng các tệp lược đồ tham chiếu (diabetes_schema.csv, diabetes_entity_type_schema.csv); (3) phát triển quy trình EDC mở rộng bốn giai đoạn; (4) thiết kế và tích hợp Cổng tranh luận đa tác tử P2P; (5) xây dựng cơ sở dữ liệu đồ thị Neo4j và hệ thống CDSS dựa trên GraphRAG; (6) thực nghiệm, đánh giá định lượng trên ba bộ dữ liệu chuẩn; và (7) tổng hợp kết quả, viết và hoàn thiện báo cáo khóa luận.
+1.4.3. Đối tượng nghiên cứu
+Đối tượng nghiên cứu chính của đề tài là quy trình xây dựng đồ thị tri thức (Knowledge Graph) trong lĩnh vực y khoa bằng Mô hình Ngôn ngữ Lớn, với trọng tâm là cơ chế kiểm soát hiện tượng ảo giác tri thức thông qua tranh luận đa tác tử. Cụ thể, đề tài tập trung nghiên cứu: (1) quy trình EDC (Extract – Define – Canonicalize – Property Packing) mở rộng áp dụng cho văn bản y khoa về bệnh đái tháo đường; (2) cơ chế Cổng tranh luận đa tác tử ngang hàng (P2P Debate Gate) với ba vai trò tác tử chuyên biệt, cơ chế tính điểm đồng thuận FCS và quy tắc phủ quyết Veto Rule; (3) việc chuẩn hóa thực thể theo hệ thống định danh UMLS, RxNorm và ICD-10; và (4) kiến trúc hệ thống hỗ trợ quyết định lâm sàng (CDSS) dựa trên GraphRAG lai kết hợp với cơ sở dữ liệu đồ thị Neo4j.
+Bên cạnh khía cạnh kỹ thuật, đề tài còn xem xét các yếu tố đánh giá định lượng như chỉ số F1 ở các mức độ chi tiết khác nhau (Subject F1, Predicate F1, Object F1, Exact Match F1, Full-Triple F1), Tỷ lệ từ chối bẫy ảo giác (TRR), độ chính xác (Accuracy) và các chỉ số liên quan (FPR, FNR), nhằm đối chiếu hiệu quả của hệ thống đề xuất với hệ thống không sử dụng cơ chế tranh luận (Raw, No Gate) và với các phương pháp nền đã được công bố trong các nghiên cứu liên quan.
+1.5. BỐ CỤC CỦA LUẬN VĂN
+Báo cáo khóa luận được cấu trúc thành sáu chương, mỗi chương tập trung vào một nội dung cụ thể nhằm trình bày một cách hệ thống và logic về quá trình nghiên cứu, xây dựng và đánh giá hệ thống GlucoGraph.
+Chương 1 – Giới thiệu: Trình bày tổng quan về đề tài, nêu rõ bối cảnh, lý do lựa chọn nghiên cứu, mục tiêu và phạm vi nghiên cứu của khóa luận, đồng thời đề cập đến ý nghĩa khoa học và thực tiễn của đề tài.
+Chương 2 – Cơ sở lý luận và tổng quan nghiên cứu: Trình bày các khái niệm nền tảng liên quan đến đồ thị tri thức, hiện tượng ảo giác tri thức trong LLM, khung EDC, hệ thống định danh UMLS, kỹ thuật GraphRAG và cơ chế tranh luận đa tác tử, cùng với các nghiên cứu liên quan trong và ngoài nước.
+Chương 3 – Phương pháp nghiên cứu và thiết kế hệ thống: Mô tả chi tiết kiến trúc tổng thể của hệ thống GlucoGraph, quy trình EDC mở rộng bốn giai đoạn, thiết kế của Cổng tranh luận đa tác tử P2P, cơ chế lưu trữ trong Neo4j và kiến trúc hệ thống CDSS dựa trên GraphRAG lai.
+Chương 4 – Thực nghiệm: Trình bày môi trường thực nghiệm, các bộ dữ liệu chuẩn được sử dụng (BioRED Diabetes, HaluEval, DBpedia-WebNLG), quy trình thực nghiệm và các kịch bản đánh giá hệ thống.
+Chương 5 – Kết quả nghiên cứu và đánh giá hệ thống: Trình bày và phân tích các kết quả thực nghiệm thu được, bao gồm các chỉ số F1 trên bộ BioRED Diabetes, kết quả phát hiện ảo giác trên bộ HaluEval, kết quả tổng quát hóa miền trên DBpedia-WebNLG, đồng thời thảo luận về điểm mạnh, hạn chế của hệ thống và so sánh với các nghiên cứu liên quan.
+Chương 6 – Kết luận và hướng phát triển: Tóm tắt những kết quả chính đã đạt được, đánh giá mức độ hoàn thành mục tiêu đề ra, đồng thời đề xuất các hướng cải tiến và phát triển hệ thống trong tương lai, như mở rộng nguồn dữ liệu, giảm tỷ lệ từ chối nhầm (FNR) và triển khai thử nghiệm lâm sàng thực tế.
+1.6. Ý NGHĨA KHOA HỌC VÀ THỰC TIỄN CỦA ĐỀ TÀI
+Về mặt ý nghĩa khoa học, đề tài góp phần mở rộng khung EDC (Extract – Define – Canonicalize) nguyên bản từ ba giai đoạn lên bốn giai đoạn bằng việc bổ sung giai đoạn Đóng gói thuộc tính (Property Packing), đồng thời đề xuất một cơ chế kiểm soát ảo giác tri thức mới – Cổng tranh luận đa tác tử ngang hàng (P2P Debate Gate) – với các vai trò tác tử dị thể (heterogeneous specialist roles), cơ chế tính điểm đồng thuận FCS và quy tắc phủ quyết Veto Rule mang tính bảo toàn lâm sàng. Khác với các nghiên cứu tranh luận đa tác tử trước đây sử dụng các tác tử đồng nhất và không có điều kiện dừng theo lĩnh vực chuyên biệt, cơ chế đề xuất hoạt động ở cấp độ bộ ba có cấu trúc (structured triple level), cho phép tích hợp trực tiếp với lược đồ bản thể học và hệ thống định danh UMLS CUI. Đây là một đóng góp có thể được kế thừa và mở rộng trong các nghiên cứu tiếp theo về xây dựng đồ thị tri thức có kiểm soát chất lượng trong các lĩnh vực chuyên biệt khác ngoài y tế.
+Về mặt ý nghĩa thực tiễn, hệ thống GlucoGraph cung cấp một quy trình tự động hóa có khả năng đo lường (measurable) ở từng giai đoạn, với mã nguồn và tập lệnh đánh giá được công bố công khai, cho phép tái lập và đối chiếu trực tiếp với các nghiên cứu tương lai. Việc tích hợp các định danh y khoa chuẩn (UMLS CUI, RxNorm, ICD-10) mang lại khả năng liên thông ngữ nghĩa (semantic interoperability) mà các hệ thống đồ thị tri thức tổng quát thường không có. Hệ thống hỗ trợ quyết định lâm sàng (CDSS) dựa trên GraphRAG lai, với mô-đun Ngắt mạch lâm sàng (Clinical Circuit Breaker) tự động phát hiện các chống chỉ định thuốc – bệnh, mở ra khả năng ứng dụng làm công cụ hỗ trợ tham khảo cho nhân viên y tế trong việc tra cứu thông tin chẩn đoán và điều trị bệnh đái tháo đường một cách minh bạch, có căn cứ.
+Từ góc độ đào tạo, đề tài tạo điều kiện để sinh viên thực hành toàn bộ quy trình nghiên cứu khoa học – từ khảo sát tài liệu, thiết kế giải pháp, xây dựng hệ thống, đến thực nghiệm và đánh giá định lượng trên các bộ dữ liệu chuẩn quốc tế – qua đó góp phần nâng cao năng lực nghiên cứu và ứng dụng công nghệ trí tuệ nhân tạo trong lĩnh vực tin học y tế của sinh viên ngành Công nghệ thông tin.
+1.7. TỔNG KẾT CHƯƠNG
+Trong chương 1, khóa luận đã trình bày tổng quan về đề tài nghiên cứu “Ứng dụng LLM xây dựng Đồ thị tri thức hỗ trợ chẩn đoán bệnh tiểu đường (GlucoGraph)”, bao gồm bối cảnh và lý do chọn đề tài, mục tiêu nghiên cứu, phạm vi nghiên cứu, bố cục của luận văn cùng ý nghĩa khoa học và thực tiễn của đề tài.
+Bối cảnh nghiên cứu được làm rõ thông qua việc chỉ ra rủi ro của hiện tượng ảo giác tri thức trong LLM đối với các ứng dụng y tế, từ đó đề xuất hướng giải quyết bằng việc kết hợp khung EDC mở rộng với cơ chế tranh luận đa tác tử nhằm xây dựng một đồ thị tri thức bệnh đái tháo đường có độ tin cậy cao. Mục tiêu nghiên cứu xác định rõ các nhiệm vụ cụ thể từ thu thập, tiền xử lý dữ liệu, xây dựng quy trình EDC bốn giai đoạn, thiết kế Cổng tranh luận đa tác tử P2P, lưu trữ đồ thị tri thức trong Neo4j, đến xây dựng hệ thống CDSS dựa trên GraphRAG và thực nghiệm đánh giá trên các bộ dữ liệu chuẩn.
+Phạm vi nghiên cứu được giới hạn trong dữ liệu y khoa về bệnh đái tháo đường từ Merck Manuals Professional Version, được triển khai và thực nghiệm trong môi trường phòng thí nghiệm với các mô hình LLM truy cập qua OpenRouter API và cơ sở dữ liệu đồ thị Neo4j Community Edition. Những nội dung được giới thiệu trong chương này sẽ là nền tảng để các chương tiếp theo trình bày chi tiết về cơ sở lý luận, phương pháp nghiên cứu, thiết kế hệ thống, quy trình thực nghiệm cũng như kết quả và hướng phát triển của đề tài.
+
+CHƯƠNG 2: 
+CƠ SỞ LÝ LUẬN VÀ TỔNG QUAN NGHIÊN CỨU
+2.1 TỔNG QUAN VỀ BỆNH TIỂU ĐƯỜNG
+2.1.1 Tình hình bệnh tiểu đường trên thế giới và tại Việt Nam
+Bệnh tiểu đường (đái tháo đường) là một trong những bệnh mãn tính phổ biến nhất trên thế giới, với tốc độ gia tăng đáng báo động trong những thập kỷ gần đây. Theo số liệu của Liên đoàn Đái tháo đường Quốc tế (IDF), tính đến năm 2021 đã có hơn 537 triệu người trưởng thành mắc bệnh tiểu đường trên toàn cầu, và con số này được dự báo sẽ tăng lên đến 783 triệu người vào năm 2045 [1]. Sự bùng nổ của khối lượng tài liệu lâm sàng về điều trị tiểu đường đang diễn ra nhanh hơn khả năng tiếp thu của bất kỳ bác sĩ đơn lẻ nào, từ đó nhấn mạnh nhu cầu cấp thiết về các công cụ trích xuất tri thức tự động và hỗ trợ quyết định lâm sàng thông minh.
+Tại Việt Nam, tỷ lệ mắc bệnh tiểu đường cũng đang tăng theo xu hướng chung của thế giới, đặc biệt ở khu vực đô thị và người trung niên. Thực tế này đặt ra áp lực lớn cho hệ thống y tế, đòi hỏi phải có các giải pháp công nghệ hỗ trợ bác sĩ trong quá trình chẩn đoán và điều trị.
+2.1.2 Các loại bệnh tiểu đường và cơ chế bệnh sinh
+Bệnh tiểu đường được phân loại thành nhiều thể bệnh chính, trong đó phổ biến nhất là tiểu đường type 1, type 2 và tiểu đường thai kỳ. Nguồn dữ liệu lâm sàng trong đề tài này được khai thác từ Merck Manuals Professional Version, phần đái tháo đường — một tài liệu tham khảo lâm sàng được cập nhật liên tục bởi các chuyên gia y tế hàng đầu và được xem xét bởi đồng nghiệp (peer-reviewed). Đây là nguồn dữ liệu văn bản y khoa đáng tin cậy, có tính chuẩn xác cao, làm nền tảng cho việc xây dựng đồ thị tri thức trong nghiên cứu này.
+2.2 CÁC KHÁI NIỆM NỀN TẢNG
+2.2.1 Đồ thị Tri thức (Knowledge Graph)
+Đồ thị tri thức (Knowledge Graph – KG) là một cấu trúc biểu diễn tri thức dưới dạng rõ ràng, có tổ chức, trong đó các thực thể (entities) và mối quan hệ (relationships) giữa chúng được lưu trữ theo mô hình đồ thị. Khác với các mô hình ngôn ngữ lớn vốn lưu tri thức ẩn bên trong các tham số, đồ thị tri thức cho phép thực hiện suy luận đa bước (multi-hop reasoning) và truy xuất nguồn gốc thông tin một cách minh bạch. Trong lĩnh vực y sinh, các đồ thị tri thức nổi tiếng như UMLS [4], SNOMED CT và DrugBank đã mã hóa thuật ngữ lâm sàng chuẩn hóa cùng các mối quan hệ thuốc–bệnh.
+Cụ thể, Hệ thống Ngôn ngữ Y tế Thống nhất (Unified Medical Language System – UMLS) tích hợp hơn 200 từ vựng nguồn dưới một hệ thống Định danh Khái niệm Duy nhất (Concept Unique Identifier – CUI), trở thành tiêu chuẩn thực tế cho chuẩn hóa thực thể trong xử lý ngôn ngữ tự nhiên lâm sàng [4]. Các nghiên cứu trước đây chủ yếu dựa vào cách tiếp cận curating thủ công hoặc trích xuất dựa trên quy tắc, vốn không đáp ứng được tốc độ tăng trưởng của tài liệu y tế.
+2.2.2 Mô hình Ngôn ngữ Lớn (Large Language Models – LLMs)
+Mô hình ngôn ngữ lớn (LLM) là các hệ thống trí tuệ nhân tạo được huấn luyện trên lượng dữ liệu văn bản khổng lồ, có khả năng hiểu và sinh ra ngôn ngữ tự nhiên với chất lượng cao. Trong những năm gần đây, LLM đã thể hiện năng lực hiểu ngôn ngữ tự nhiên đáng kể, mở ra triển vọng ứng dụng trong y tế. Tuy nhiên, vấn đề ảo giác tri thức (knowledge hallucination) — hiện tượng mô hình sinh ra các phát biểu sai lệch về mặt thực tế hoặc không có cơ sở — đặt ra rủi ro an toàn nghiêm trọng trong môi trường y tế [2]. Một tương tác thuốc bị ảo giác hoặc một mối quan hệ lâm sàng bị phân loại sai có thể gây nguy hiểm trực tiếp cho bệnh nhân.
+Đây chính là khoảng cách mà nghiên cứu này hướng tới lấp đầy: kết hợp sức mạnh của LLM với tính chính xác và có thể kiểm chứng của đồ thị tri thức, đồng thời trang bị cơ chế kiểm soát ảo giác để đảm bảo an toàn triển khai lâm sàng.
+2.2.3 Ảo giác trong mô hình ngôn ngữ lớn
+Ảo giác (hallucination) trong các mô hình sinh ngôn ngữ tự nhiên là một vấn đề được nghiên cứu sâu rộng. Ji và cộng sự [2] đã cung cấp một khảo sát toàn diện về các dạng ảo giác trong NLG, phân loại các kiểu lỗi liên quan đến bối cảnh lâm sàng. Để đánh giá khả năng phát hiện ảo giác một cách chuẩn hóa, bộ dữ liệu chuẩn HaluEval [7] đã được xây dựng với các tập bộ ba (triple) đối nghịch nhằm đánh giá độ bền vững của hệ thống phát hiện ảo giác. Trong nghiên cứu này, hệ thống đề xuất được kiểm nghiệm trực tiếp trên 200 mẫu từ bộ dữ liệu HaluEval được xây dựng riêng cho lĩnh vực tiểu đường.
+2.3 CÁC CÔNG TRÌNH NGHIÊN CỨU LIÊN QUAN
+2.3.1 Đồ thị tri thức y sinh và chuẩn hóa UMLS
+Trong lĩnh vực xây dựng đồ thị tri thức y sinh, việc tích hợp LLM với đồ thị tri thức cho các tác vụ lâm sàng đã đạt được những kết quả đáng chú ý. Xu và cộng sự [14] đề xuất hệ thống medIKAL, tích hợp đồ thị tri thức như các trợ lý động của LLM trên hồ sơ bệnh án điện tử, mang lại cải thiện đáng kể trong độ chính xác chẩn đoán. Zheng và cộng sự [15] chỉ ra rằng việc xây dựng đồ thị tri thức y sinh tự động giúp cho phép suy luận khoa học có nhận thức ngữ cảnh ở quy mô lớn. Cả hai công trình đều củng cố sự cần thiết của việc xây dựng đồ thị tri thức chất lượng cao, có kiểm soát ảo giác — đúng với mục tiêu mà hệ thống GlucoGraph hướng tới.
+2.3.2 Trích xuất tri thức dựa trên LLM và khung EDC
+Khung EDC (Extract–Define–Canonicalize) [5] tiên phong trong việc xây dựng pipeline ba bước dựa trên LLM cho xây dựng đồ thị tri thức mở, chứng minh rằng việc nhắc nhở lặp lại có thể hướng dẫn mô hình tạo ra các bộ ba nhất quán với ontology, phù hợp với một schema tham chiếu [16]. Tuy nhiên, công thức gốc của EDC còn thiếu tích hợp định danh y sinh và cơ chế kiểm soát chất lượng. Khorashadizadeh và cộng sự [6] đã đánh giá chuẩn Vicuna-13B và Alpaca-LoRA-13B trên bộ dữ liệu DBpedia-WebNLG, báo cáo điểm F1 lần lượt là 23,00% và 20,00% — các đường cơ sở mà hệ thống đề xuất trong nghiên cứu này vượt qua đáng kể.
+2.3.3 Phát hiện ảo giác và tranh luận đa tác nhân (Multi-Agent Debate)
+Du và cộng sự [8] cho thấy rằng tranh luận đa tác nhân giúp cải thiện độ chính xác thực tế của LLM trong các bài toán lý luận miền tổng quát. Chan và cộng sự [17] mở rộng mô hình này sang đánh giá dựa trên LLM thông qua ChatEval, chứng minh rằng các vai trò tác nhân đa dạng tạo ra những phán xét chính xác hơn. Tuy nhiên, cả hai khung này đều sử dụng các tác nhân đồng nhất mà không có điều kiện dừng theo lĩnh vực cụ thể. Nghiên cứu GlucoGraph khác biệt ở ba điểm cụ thể: (1) các tác nhân được giao các vai trò chuyên gia không đồng nhất (Chuyên gia Lâm sàng, Thanh tra Ontology, Hoài nghi Y tế) thay vì người tranh luận tổng quát; (2) một Quy tắc Phủ quyết bất đối xứng thực thi tính bảo thủ lâm sàng; và (3) cổng vận hành ở cấp độ bộ ba cấu trúc thay vì sinh văn bản tự do.
+2.3.4 Hệ thống hỗ trợ quyết định lâm sàng (CDSS)
+GraphRAG [3] nâng cao khả năng sinh có bổ sung truy xuất (Retrieval-Augmented Generation) bằng cách duyệt qua các đường dẫn đồ thị tri thức, cung cấp khả năng suy luận đa bước phù hợp với chẩn đoán phân biệt. Các hệ thống CDSS hiện có hoặc dựa vào cơ sở tri thức tĩnh [9] hoặc thiếu kiểm soát ảo giác tích hợp. Trong lĩnh vực tiểu đường cụ thể, Evangelista và cộng sự [18] đã chứng minh một bằng chứng khái niệm sử dụng LLM cục bộ kích hoạt GraphRAG cho bệnh tiểu đường thai kỳ, trong khi Wang và cộng sự [19] phát triển hệ thống hỏi đáp tiểu đường thông minh tích hợp đồ thị tri thức với LLM. Wu và cộng sự [20] tiếp tục chứng minh rằng LLM y tế dựa trên bằng chứng, được xây dựng trên GraphRAG, vượt trội đáng kể so với các đường cơ sở không có cơ sở thực tế trong việc trả lời câu hỏi lâm sàng. Nghiên cứu GlucoGraph kết nối các khoảng trống này bằng cách thống nhất việc xây dựng đồ thị tri thức động, kiểm soát chất lượng đa tác nhân và suy luận GraphRAG lai vào một pipeline tái sản xuất được duy nhất.
+Ngoài ra, các nghiên cứu về đánh giá LLM trong các lĩnh vực chuyên biệt [24, 25] đã chỉ ra rằng các chỉ số đánh giá tiêu chuẩn là không đủ cho việc triển khai theo lĩnh vực cụ thể, điều này càng nhấn mạnh sự cần thiết của các cơ chế kiểm soát chất lượng chuyên biệt như được đề xuất trong nghiên cứu này.
+2.4 CÁC CÔNG NGHỆ VÀ PHƯƠNG PHÁP NỀN TẢNG
+2.4.1 Khung EDC Mở rộng (Extract – Define – Canonicalize – Property Packing)
+Khung EDC nguyên gốc [5] bao gồm ba pha: trích xuất thông tin mở (Open IE), định nghĩa ngữ nghĩa và chuẩn hóa schema. Trong nghiên cứu này, khung EDC được mở rộng lên bốn pha để phục vụ yêu cầu nghiêm ngặt của lĩnh vực y tế:
+Pha 1 – Trích xuất (Extract): Sử dụng nhắc nhở few-shot để hướng dẫn Llama-3.3-70B-Versatile thực hiện Trích xuất Thông tin Mở (Open IE), tạo ra các bộ ba thô (Chủ thể, Quan hệ, Đối tượng) không có ràng buộc schema, tối đa hóa độ thu hồi (recall).
+Pha 2 – Định nghĩa (Define): LLM tạo ra định nghĩa ngữ nghĩa theo ngữ cảnh cho từng thực thể và quan hệ dựa trên câu nguồn. Các định nghĩa này đóng vai trò neo định nghĩa để phân biệt nghĩa và bằng chứng cho quá trình chuẩn hóa xuôi dòng.
+Pha 3 – Chuẩn hóa (Canonicalize): Qwen-Embedding mã hóa văn bản thực thể và quan hệ thành các vector dày đặc. Độ tương đồng cosine được tính toán so với các file schema tham chiếu. Các thực thể và quan hệ được ánh xạ vào kiểu chuẩn gần nhất nếu độ tương đồng vượt ngưỡng τ = 0,75; nếu không, chúng được đánh dấu để tác nhân xem xét.
+Pha 4 – Đóng gói Thuộc tính (Property Packing): Đây là pha được bổ sung so với EDC nguyên gốc. Mô-đun PropertyPacker làm giàu mỗi nút thực thể với các định danh y tế chuẩn hóa: mã RxNorm cho thuốc, mã ICD-10 cho chẩn đoán, và UMLS CUI cho tất cả các thực thể [4]. Việc giải quyết thực thể hợp nhất các từ đồng nghĩa và chữ viết tắt vào một nút duy nhất được neo bởi CUI, tạo ra các file JSON đồ thị đã loại bỏ trùng lặp, sẵn sàng để xuất bản.
+2.4.2 Cơ chế Tranh luận Đa tác nhân Ngang hàng (P2P Multi-Agent Debate Gate)
+Trước khi bất kỳ bộ ba nào được ghi vào Neo4j, nó phải vượt qua một cuộc tranh luận ngang hàng ba tác nhân. Cơ chế này được thiết kế nhằm kiểm soát ảo giác một cách hệ thống ở cấp độ cấu trúc bộ ba [8]:
+Mỗi tác nhân i độc lập gán một điểm Sᵢ ∈ [0, 100] phản ánh độ tin cậy theo lĩnh vực của tác nhân đó về tính hợp lệ của bộ ba. Điểm Đồng thuận Cuối cùng được định nghĩa là FCS = (S₁ + S₂ + S₃) / 3. Một bộ ba chỉ được chấp nhận khi FCS ≥ 80 và không có điểm Sᵢ nào kích hoạt Quy tắc Phủ quyết (Sᵢ < 30).
+Ba tác nhân và nhiệm vụ của chúng bao gồm:
+Chuyên gia Lâm sàng (Llama-3.3-70B): Đánh giá độ chính xác lâm sàng của quan hệ theo các hướng dẫn ADA/ICD-10 hiện hành, gán điểm S₁ ∈ [0, 100]. 
+Thanh tra Ontology (Llama-3.1-7B): Kiểm tra sự tuân thủ ràng buộc Domain/Range với schema ontology đã tải, gán điểm S₂ ∈ [0, 100]. 
+Hoài nghi Y tế (Gemma-3-27B): Độc lập kiểm tra lỗi đảo ngược chủ thể-đối tượng, lỗi hướng và các mẫu ảo giác, gán điểm S₃ ∈ [0, 100].
+Chính sách bảo thủ này thực thi tính bảo thủ y tế: thà loại trừ các bộ ba không chắc chắn còn hơn chấp nhận những bộ ba có hại về mặt lâm sàng.
+2.4.3 GraphRAG và Hệ thống Hỗ trợ Quyết định Lâm sàng (CDSS)
+GraphRAG [3] là một phương pháp kết hợp tính trôi chảy của LLM với cơ sở thực tế của đồ thị tri thức. Ứng dụng CDSS trong nghiên cứu này (backend FastAPI, frontend ReactJS) triển khai chiến lược truy xuất lai: (1) tìm kiếm vector ngữ nghĩa trên các nhúng thực thể để xác định các nút hạt giống ứng viên; (2) duyệt Cypher đa bước từ các nút hạt giống để truy xuất các đồ thị con chẩn đoán và điều trị; (3) tổng hợp LLM từ đồ thị con được truy xuất thành một phản hồi lâm sàng có cấu trúc với chẩn đoán phân biệt, khuyến nghị điều trị và điểm tin cậy.
+Một mô-đun Ngắt mạch Lâm sàng (Clinical Circuit Breaker) quét các đường dẫn đã truy xuất để tìm các cạnh CONTRAINDICATED_WITH và kích hoạt biểu ngữ cảnh báo đỏ nếu phát hiện bất kỳ chống chỉ định nào — tính năng quan trọng đảm bảo an toàn bệnh nhân trong thực hành lâm sàng.
+2.4.4 Lưu trữ đồ thị với Neo4j
+Neo4j là hệ quản trị cơ sở dữ liệu đồ thị (Graph Database Management System) được sử dụng rộng rãi trong các ứng dụng y sinh nhờ khả năng mô hình hóa tự nhiên các mối quan hệ phức tạp giữa các thực thể. Các bộ ba được phê duyệt được tuần tự hóa thành JSON và nhập vào Neo4j thông qua các câu lệnh Cypher MERGE, đảm bảo việc tải idempotent (không trùng lặp). Nhãn nút tương ứng với các kiểu ngữ nghĩa UMLS (ví dụ: Pharmacologic Substance, Disease or Syndrome). Các kiểu quan hệ tuân theo schema chuẩn: TREATED_BY, HAS_FINDING, CO_OCCURS_WITH, CONTRAINDICATED_WITH.
+2.4.5 Chuẩn hóa Ontology – UMLS và ICD-10
+Hệ thống Ngôn ngữ Y tế Thống nhất UMLS [4] cung cấp một siêu từ vựng y sinh được thiết kế để tạo điều kiện phát triển các hệ thống và dịch vụ máy tính giúp cải thiện việc truy xuất thông tin y sinh liên quan. UMLS tích hợp hơn 200 từ vựng nguồn, bao gồm SNOMED CT, ICD-10, RxNorm và MeSH, dưới một hệ thống CUI thống nhất. Trong pipeline của nghiên cứu này, mã ICD-10 được dùng cho các chẩn đoán, mã RxNorm cho thuốc, và UMLS CUI cho tất cả các thực thể nhằm loại bỏ sự mơ hồ về từ đồng nghĩa và đảm bảo khả năng tương tác ngữ nghĩa [16].
+2.5 CÁC BỘ DỮ LIỆU ĐÁNH GIÁ
+2.5.1 BioRED Diabetes
+BioRED (Biomedical Relation Extraction Dataset) [21] là một bộ dữ liệu trích xuất quan hệ phong phú cho các khái niệm y sinh, bao gồm các cặp thực thể và quan hệ được gán nhãn thủ công từ tài liệu PubMed. Phiên bản tổng quan về BioCreative VIII track liên quan đến BioRED cũng đã được ghi nhận trong tài liệu tham khảo [22]. Trong nghiên cứu GlucoGraph, tập con tiểu đường của BioRED được sử dụng để đánh giá chất lượng trích xuất bộ ba, với các chỉ số đánh giá tuân theo quy ước đối sánh chính xác (strict/exact match) của SemEval.
+2.5.2 HaluEval
+HaluEval [7] là một bộ chuẩn đánh giá ảo giác quy mô lớn cho LLM. Trong nghiên cứu này, một bộ dữ liệu HaluEval dành riêng cho tiểu đường với 200 mẫu được xây dựng theo phương pháp thuật toán: 100 bộ ba hợp lệ lấy từ tập con tiểu đường của BioRED, và 100 bộ ba bẫy (trap triples) được tạo ra theo ba chiến lược: thay thế thực thể, đảo ngược quan hệ và vi phạm schema. Phương pháp tạo ground-truth dựa trên thuật toán này loại bỏ sai lệch gán nhãn chủ quan của con người.
+2.5.3 DBpedia-WebNLG
+Bộ dữ liệu DBpedia-WebNLG [6] được sử dụng để đánh giá khả năng tổng quát hóa miền (domain generalization) của hệ thống ngoài phạm vi y tế. Cụ thể, chủ đề 1_university với 71 tài liệu được sử dụng, cho phép so sánh trực tiếp với các đường cơ sở đã công bố của Khorashadizadeh và cộng sự [6].
+2.6 CÁC CÔNG TRÌNH ĐỐI CHIẾU VÀ SO SÁNH
+Để đặt kết quả của hệ thống vào bối cảnh rộng hơn, một số công trình đối chiếu quan trọng cần được xem xét:
+Brokman và cộng sự [10] báo cáo rằng GPT-4 trong cài đặt zero-shot đầu cuối chỉ đạt ~8–10% Full-Triple F1 trên toàn bộ corpus BioRED (bao gồm tất cả các loại quan hệ). Islamaj và cộng sự [22] ghi nhận PubMedBERT được tinh chỉnh trên thử thách BioCreative VIII đạt 51,93% Entity Pair identification F1 trên toàn bộ corpus. Lai và cộng sự [11] báo cáo GPT-4 zero-shot đạt 20,85% Relation Type F1 trên BioRED (bộ dữ liệu khác). Papaluca và cộng sự [12] báo cáo LLaMA-65B trong cài đặt 2-shot đạt ~21,9% F1 trên cùng bộ dữ liệu WebNLG.
+Một điểm đáng chú ý là hệ thống KARMA [23] — một hệ thống đa tác nhân LLM xây dựng đồ thị tri thức đồng thời được giới thiệu tại NeurIPS 2025 — đạt 83,1% độ chính xác được xác minh bởi LLM trên các tóm tắt y sinh PubMed. So với KARMA, hệ thống GlucoGraph có sự khác biệt nổi bật ở chỗ thực hiện gating ảo giác ở cấp độ bộ ba rõ ràng và neo UMLS CUI cho từng thực thể — những đặc điểm đặc thù quan trọng cho ứng dụng lâm sàng thực tế.
+2.7 NHẬN XÉT VÀ ĐỊNH HƯỚNG NGHIÊN CỨU
+Từ tổng quan các công trình liên quan, có thể rút ra một số nhận xét quan trọng:
+Thứ nhất, việc trích xuất tri thức y sinh bằng LLM đã có nhiều tiến bộ nhưng vẫn còn khoảng cách lớn về chất lượng và độ tin cậy so với yêu cầu lâm sàng. Các hệ thống chỉ dựa vào một lần sinh LLM (single-pass generation) thể hiện F1 thấp và tỷ lệ ảo giác cao [6, 10].
+Thứ hai, cơ chế tranh luận đa tác nhân [8, 17] đã chứng minh hiệu quả cải thiện độ chính xác thực tế của LLM, nhưng chưa được áp dụng đặc thù cho cấp độ bộ ba có cấu trúc trong đồ thị tri thức y tế.
+Thứ ba, việc tích hợp chuẩn UMLS [4] và các định danh chuẩn hóa (ICD-10, RxNorm) là cần thiết để đảm bảo khả năng tương tác ngữ nghĩa, nhưng hầu hết các hệ thống hiện có chưa thực hiện đầy đủ bước này.
+Thứ tư, các hệ thống CDSS hiện tại [9, 18, 19, 20] còn thiếu cơ chế kiểm soát ảo giác tích hợp và khả năng cảnh báo chống chỉ định tự động trong thời gian thực.
+Từ những nhận xét trên, nghiên cứu này đề xuất một hệ thống đầu cuối thống nhất — GlucoGraph — với ba đóng góp chính: (1) pipeline EDC bốn pha mở rộng với tích hợp UMLS CUI; (2) Cổng Tranh luận Đa tác nhân P2P với cơ chế đồng thuận và phủ quyết; (3) CDSS GraphRAG lai với Ngắt mạch Lâm sàng tự động. Các công nghệ và phương pháp nền tảng được trình bày trong chương này sẽ là cơ sở lý luận trực tiếp cho phần thiết kế hệ thống ở chương tiếp theo.
+
+CHƯƠNG 3:
+PHƯƠNG PHÁP NGHIÊN CỨU VÀ THIẾT KẾ HỆ THỐNG
+3.1 CÔNG CỤ VÀ CÔNG NGHỆ HỖ TRỢ NGHIÊN CỨU
+Đề tài "Ứng dụng LLM xây dựng đồ thị tri thức hỗ trợ chẩn đoán bệnh tiểu đường" được triển khai trên cơ sở kết hợp giữa các mô hình ngôn ngữ lớn (Large Language Model – LLM) mã nguồn mở, hệ quản trị cơ sở dữ liệu đồ thị Neo4j và kiến trúc truy xuất tăng cường dựa trên đồ thị tri thức (GraphRAG) [3]. Việc lựa chọn công cụ và công nghệ được căn cứ trên yêu cầu cốt lõi của một hệ thống hỗ trợ ra quyết định lâm sàng (Clinical Decision Support System – CDSS), trong đó khả năng kiểm soát hiện tượng "ảo giác tri thức" (knowledge hallucination) của LLM [2] là yếu tố quyết định đến tính an toàn khi triển khai trong môi trường y tế.
+Nguồn dữ liệu y khoa được sử dụng để xây dựng đồ thị tri thức là Merck Manuals Professional Version, phần Đái tháo đường – một tài liệu lâm sàng được bình duyệt và cập nhật liên tục bởi các chuyên gia y tế. Việc lựa chọn nguồn dữ liệu đáng tin cậy càng có ý nghĩa khi xét bối cảnh đái tháo đường là một trong những bệnh mạn tính phổ biến nhất thế giới, với hơn 537 triệu người mắc tính đến năm 2021 và dự báo tăng lên 783 triệu người vào năm 2045 [1], khiến khối lượng tài liệu y khoa liên quan tăng nhanh hơn khả năng tiếp nhận của các bác sĩ lâm sàng.
+Về mô hình ngôn ngữ lớn, đề tài sử dụng ba mô hình mã nguồn mở được truy cập qua OpenRouter API:
+Llama-3.3-70B-Versatile: thực hiện trích xuất thông tin mở (Open Information Extraction – OIE), đồng thời đảm nhận vai trò "Chuyên gia lâm sàng" (Clinical Specialist) trong cổng tranh luận đa tác tử.
+Llama-3.1-7B: đảm nhận vai trò "Thanh tra bản thể luận" (Ontology Inspector), kiểm tra ràng buộc Domain/Range của các bộ ba so với schema bản thể luận.
+Gemma-3-27B: đảm nhận vai trò "Người hoài nghi y khoa" (Medical Skeptic), độc lập kiểm tra hiện tượng đảo chiều chủ thể – đối tượng và các mẫu hình ảo giác.
+Bên cạnh đó, Qwen-Embedding được dùng để mã hóa văn bản thực thể/quan hệ thành vector nhúng dày đặc, làm cơ sở cho bước chuẩn hóa (canonicalization) dựa trên độ tương đồng cosine với ngưỡng τ = 0,75 so với các tập tin schema tham chiếu.
+Về hạ tầng lưu trữ, Neo4j Community Edition được chọn làm cơ sở dữ liệu đồ thị, lưu trữ tri thức theo chuẩn ngữ nghĩa UMLS (Unified Medical Language System) [4] – hệ thống tích hợp hơn 200 bộ từ vựng nguồn dưới một bộ định danh khái niệm duy nhất (CUI), là chuẩn de facto cho chuẩn hóa thực thể trong xử lý ngôn ngữ tự nhiên y khoa.
+Hệ thống CDSS được xây dựng theo kiến trúc GraphRAG lai [3], gồm backend FastAPI (Python) và frontend ReactJS, kết hợp tìm kiếm vector ngữ nghĩa và truy vấn Cypher đa chặng trên Neo4j. Toàn bộ mã nguồn và script đánh giá được công bố công khai để đảm bảo khả năng tái lập kết quả nghiên cứu [13].
+Bảng 3.1 Công cụ và công nghệ hỗ trợ nghiên cứu
+Thành phần / Môi trường
+Công cụ – Công nghệ sử dụng
+Trích xuất thông tin mở (OIE)
+Llama-3.3-70B-Versatile (qua OpenRouter API)
+Tác tử trong cổng tranh luận
+Llama-3.3-70B, Llama-3.1-7B, Gemma-3-27B
+Mã hóa vector (Embedding)
+Qwen-Embedding
+Cơ sở dữ liệu đồ thị
+Neo4j Community Edition
+Chuẩn hóa định danh y khoa
+UMLS CUI, RxNorm, ICD-10
+Backend hệ thống CDSS
+FastAPI (Python)
+Frontend hệ thống CDSS
+ReactJS
+Nguồn dữ liệu y khoa
+Merck Manuals Professional Version
+Bộ dữ liệu thực nghiệm
+BioRED Diabetes, HaluEval (200 mẫu), DBpedia-WebNLG
+3.2 PHÂN TÍCH YÊU CẦU HỆ THỐNG
+Việc phân tích yêu cầu hệ thống xuất phát từ hai vấn đề cốt lõi được xác định qua khảo sát tài liệu liên quan. Thứ nhất, các LLM hiện đại tuy có khả năng hiểu ngôn ngữ tự nhiên vượt trội nhưng vẫn tồn tại hiện tượng sinh ra các phát biểu sai lệch hoặc không có cơ sở (hallucination) [2]; điều này đặc biệt nguy hiểm trong y tế vì một mối quan hệ thuốc – bệnh bị sai có thể ảnh hưởng trực tiếp đến sức khỏe người bệnh. Thứ hai, các khung xây dựng đồ thị tri thức bằng LLM trước đây, điển hình là EDC (Extract – Define – Canonicalize) [5], chưa tích hợp định danh y khoa chuẩn (UMLS, RxNorm, ICD-10) và chưa có cơ chế kiểm soát chất lượng ở mức bộ ba tri thức.
+Bên cạnh đó, các công trình liên quan như medIKAL [14] và nghiên cứu của Zheng et al. [15] đã chứng minh lợi ích của việc tích hợp đồ thị tri thức như một "trợ lý động" cho LLM trong chẩn đoán trên hồ sơ bệnh án điện tử, qua đó khẳng định tính cần thiết của một quy trình xây dựng đồ thị tri thức có kiểm soát ảo giác ở mức cao trước khi đưa vào sử dụng cho CDSS.
+Từ các phân tích trên, yêu cầu hệ thống được xác lập xoay quanh việc xây dựng một quy trình tự động, đầu cuối (end-to-end), có khả năng: (1) trích xuất tri thức từ văn bản y khoa; (2) chuẩn hóa tri thức về một bản thể luận thống nhất; (3) kiểm soát chất lượng tri thức trước khi lưu trữ; và (4) cung cấp giao diện hỏi đáp lâm sàng dựa trên tri thức đã được xác thực.
+Bảng 3.2 Các nhóm chức năng của hệ thống
+STT
+Nhóm chức năng
+Mô tả chi tiết
+1
+Thu thập và tiền xử lý dữ liệu
+Thu thập văn bản từ Merck Manuals, loại bỏ định dạng HTML, phân đoạn thành các đoạn (chunk) ~256 token theo sliding-window, độ chồng lấp 32 token
+2
+Trích xuất thông tin mở (OIE)
+Dùng prompt few-shot với Llama-3.3-70B-Versatile sinh bộ ba (Chủ thể, Quan hệ, Đối tượng) thô, không ràng buộc schema
+3
+Định nghĩa ngữ nghĩa (Schema Definition)
+Sinh định nghĩa ngữ nghĩa theo ngữ cảnh cho từng thực thể/quan hệ, làm cơ sở giải nhập nhằng
+4
+Chuẩn hóa bản thể (Canonicalization)
+Mã hóa bằng Qwen-Embedding, so khớp với schema tham chiếu theo cosine similarity (τ = 0,75)
+5
+Đóng gói thuộc tính (Property Packing)
+Gán mã UMLS CUI, RxNorm, ICD-10 cho từng node; hợp nhất từ đồng nghĩa/viết tắt về một node
+6
+Cổng tranh luận đa tác tử (P2P Debate Gate)
+Ba tác tử LLM độc lập chấm điểm, tranh luận để chấp nhận/loại bỏ bộ ba trước khi lưu vào Neo4j
+7
+Lưu trữ và truy vấn đồ thị tri thức
+Nạp bộ ba đã phê duyệt vào Neo4j qua Cypher MERGE, đảm bảo idempotent
+8
+Hỗ trợ ra quyết định lâm sàng (CDSS)
+Giao diện hỏi đáp GraphRAG: chẩn đoán phân biệt, khuyến nghị điều trị, cảnh báo chống chỉ định
+Về yêu cầu phi chức năng, hệ thống cần đảm bảo nguyên tắc bảo toàn (conservatism) trong y khoa – ưu tiên loại bỏ bộ ba tri thức chưa chắc chắn hơn là chấp nhận bộ ba có khả năng gây hại – đồng thời đảm bảo khả năng tái lập thông qua việc công khai mã nguồn và script đánh giá [13], cùng khả năng mở rộng để tích hợp thêm các nguồn dữ liệu y khoa khác (PubMed, hướng dẫn WHO) trong tương lai.
+
+
+
+
+CHƯƠNG 4:
+TRIỂN KHAI VÀ KẾT QUẢ THỰC NGHIỆM
+CHƯƠNG 5: 
+KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+TÀI LIỆU THAM KHẢO
+[1] International Diabetes Federation, IDF Diabetes Atlas, 10th ed., Brussels: IDF, 2021.
+[2] Z. Ji et al., "Survey of hallucination in natural language generation," ACM Comput. Surv., vol. 55, no. 12, pp. 1–38, Mar. 2023.
+[3] D. Edge et al., "From local to global: A graph RAG approach to query-focused summarization," arXiv:2404.16130, Apr. 2024.
+[4] O. Bodenreider, "The unified medical language system (UMLS): Integrating biomedical terminology," Nucleic Acids Res., vol. 32, no. D1, pp. D267–D270, Jan. 2004.
+[5] E. Zhang and H. Soh, "Extract, define, canonicalize: An LLM-based framework for knowledge graph construction," in Proc. EMNLP, Miami, FL, Nov. 2024, pp. 9548–9562.
+[6] H. Khorashadizadeh et al., "Exploring in-context learning capabilities of foundation models for generating knowledge graphs from text," arXiv:2306.11702, Jun. 2023.
+[7] J. Li et al., "HaluEval: A large-scale hallucination evaluation benchmark for large language models," in Proc. EMNLP, Singapore, Dec. 2023, pp. 6449–6464.
+[8] Y. Du et al., "Improving factuality and reasoning in language models through multiagent debate," in Proc. ICLR, May 2024.
+[9] American Diabetes Association, "Standards of care in diabetes—2024," Diabetes Care, vol. 47, Suppl. 1, pp. S1–S321, Jan. 2024.
+[10] J. Brokman et al., "A benchmark for end-to-end zero-shot biomedical relation extraction with LLMs: Experiments with OpenAI models," arXiv:2504.04083, Apr. 2025.
+[11] Y. Lai et al., "Enhancing biomedical relation extraction with directionality," Bioinformatics, Oxford Academic, 2025.
+[12] A. Papaluca et al., "Zero- and few-shots knowledge graph triplet extraction with large language models," in Proc. ACL KALLM Workshop, 2024.
+[14] H. Xu et al., "medIKAL: Integrating knowledge graphs as assistants of LLMs for enhanced clinical diagnosis on EMRs," in Proc. COLING, Jan. 2025.
+[15] Y. Zheng et al., "Automating biomedical knowledge graph construction for context-aware scientific inference," bioRxiv, Jan. 2026.
+[16] N. F. Noy and D. L. McGuinness, "Ontology development 101: A guide to creating your first ontology," Stanford KSL Tech. Rep. KSL-01-05, Stanford Univ., 2001.
+[17] C.-M. Chan et al., "ChatEval: Towards better LLM-based evaluators through multi-agent debate," in Proc. ICLR, May 2024, Art. no. 412.
+[18] E. Evangelista et al., "GraphRAG-enabled local large language model for gestational diabetes mellitus: Development of a proof-of-concept," JMIR Diabetes, vol. 11, e76454, Jan. 2026.
+[19] X. Wang et al., "Building an intelligent diabetes Q&A system with knowledge graphs and large language models," Front. Public Health, vol. 13, 2025.
+[20] J. Wu et al., "Evidence-based medical large language model via graph retrieval-augmented generation," in Proc. ACL, 2025, pp. 28443–28467.
+[21] L. Luo et al., "BioRED: A rich relation extraction dataset for biomedical concepts," Briefings Bioinformatics, vol. 23, no. 5, bbac282, Sep. 2022.
+[22] R. Islamaj et al., "Overview of the BioRED track at BioCreative VIII," Database, vol. 2024, baae069, Aug. 2024.
+[23] Y. Lu et al., "KARMA: Leveraging multi-agent LLMs for automated knowledge graph enrichment," in Proc. NeurIPS 2025 (Spotlight), Dec. 2025.
+[24] K.-H.-A. Ngo et al., "NEM: A numerical exact match subtype-aware metric family for explainable numerical accuracy in specialized chatbots," in Proc. IEA/AIE 2026, 2026.
+[25] A. K. Ngo-Ho et al., "Evaluation of large language models for the Vietnamese language in generative Vietnamese economy chatbots (GVEC)," in Proc. ICESP 2024, Springer, 2025.

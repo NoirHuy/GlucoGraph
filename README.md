@@ -1,4 +1,4 @@
-# 🩺 GlucoLogic AI — Clinical Decision Support System (CDSS) cho Đái tháo đường
+# 🩺 GlucoGraph — Clinical Decision Support System (CDSS) cho Đái tháo đường
 
 > **Đồ án 2 – HK2 (2025–2026)** | Tác giả: Lê Quang Huy – MSSV: 223571
 
@@ -30,7 +30,7 @@
 
 ## 📋 Giới thiệu
 
-**Hệ thống Hỗ trợ Ra quyết định Lâm sàng Đái tháo đường (CDSS) - GlucoLogic AI** nghiên cứu và xây dựng một hệ thống tự động trích xuất tri thức y văn đái tháo đường từ văn bản phi cấu trúc thành **Knowledge Graph (Đồ thị Tri thức)** có cấu trúc, kết hợp kiến trúc **GraphRAG** để hỗ trợ bác sĩ chẩn đoán xác định, chẩn đoán phân biệt và đưa ra phác đồ điều trị an toàn cho bệnh nhân.
+**Hệ thống Hỗ trợ Ra quyết định Lâm sàng Đái tháo đường (CDSS) - GlucoGraph** nghiên cứu và xây dựng một hệ thống tự động trích xuất tri thức y văn đái tháo đường từ văn bản phi cấu trúc thành **Knowledge Graph (Đồ thị Tri thức)** có cấu trúc, kết hợp kiến trúc **GraphRAG** để hỗ trợ bác sĩ chẩn đoán xác định, chẩn đoán phân biệt và đưa ra phác đồ điều trị an toàn cho bệnh nhân.
 
 > **Trọng tâm kỹ thuật:** Pipeline tự động xây dựng và xác thực Knowledge Graph gồm 4 vấn đề cốt lõi:
 > 1. **Thu thập & tiền xử lý y văn**: Chuẩn hóa cấu trúc y khoa, tách câu nâng cao, chunking và giải quyết đồng tham chiếu (Coreference Resolution).
@@ -359,8 +359,8 @@ So sánh đối chiếu chất lượng trích xuất giữa hệ thống trích
 > 📌 **Phân tích:** Cơ chế Debate Gate giúp cải thiện chỉ số Full-Triple F1 thêm **2.24%** (từ 50.00% lên 52.24%). Mức cải thiện lớn nhất nằm ở Predicate F1 (+2.41%), chứng minh quá trình tranh luận đa tác nhân giúp chọn lọc và gắn nhãn quan hệ chuẩn xác nhất, loại bỏ đáng kể các bộ ba ảo giác hoặc phi logic về mặt y văn.
 >
 > 📊 **So sánh đối chiếu với các nghiên cứu trước:**
-> - **So với GPT-4 (Zero-shot) [10]:** Trong nghiên cứu của *Brokman và cộng sự*, mô hình GPT-4 chạy ở cấu hình end-to-end zero-shot chỉ đạt hiệu năng khoảng **~8–10% Full-Triple F1** trên toàn bộ tập dữ liệu BioRED. Hệ thống GlucoLogic của chúng tôi đạt **52.24% Full-Triple F1** trên tập BioRED Diabetes subset mà không cần qua bất kỳ bước fine-tuning chuyên biệt nào.
-> - **So với PubMedBERT (Fine-tuned) [22]:** Mô hình PubMedBERT được tinh chỉnh chuyên biệt trong cuộc thi *BioCreative VIII* đạt **51.93% F1** về nhận diện cặp thực thể (Entity Pair identification). Hiệu năng trích xuất toàn bộ bộ ba của GlucoLogic (**52.24%**) đạt mức tương đương mà vẫn kiểm soát được tính nhất quán lược đồ cấu trúc.
+> - **So với GPT-4 (Zero-shot) [10]:** Trong nghiên cứu của *Brokman và cộng sự*, mô hình GPT-4 chạy ở cấu hình end-to-end zero-shot chỉ đạt hiệu năng khoảng **~8–10% Full-Triple F1** trên toàn bộ tập dữ liệu BioRED. Hệ thống GlucoGraph của chúng tôi đạt **52.24% Full-Triple F1** trên tập BioRED Diabetes subset mà không cần qua bất kỳ bước fine-tuning chuyên biệt nào.
+> - **So với PubMedBERT (Fine-tuned) [22]:** Mô hình PubMedBERT được tinh chỉnh chuyên biệt trong cuộc thi *BioCreative VIII* đạt **51.93% F1** về nhận diện cặp thực thể (Entity Pair identification). Hiệu năng trích xuất toàn bộ bộ ba của GlucoGraph (**52.24%**) đạt mức tương đương mà vẫn kiểm soát được tính nhất quán lược đồ cấu trúc.
 
 
 

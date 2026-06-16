@@ -33,4 +33,4 @@ if os.path.exists("dist"):
 else:
     @app.get("/")
     def read_root():
-        return {"status": "GlucoLogic AI CDSS Backend Ready"}
+        return {"status": "GlucoGraph CDSS Backend Ready"}

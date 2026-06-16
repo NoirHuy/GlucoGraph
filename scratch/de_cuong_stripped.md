@@ -11,7 +11,7 @@
 - _Họ tên: Lê Quang Huy_
 - _Lớp: DH22KPM01_
 - _Khóa: 10_
-- _GV hướng dẫn: ThS. Đặng Mạnh Huy_
+- _GV hướng dẫn: NCS. Trần Văn Thiện_
 
 - **Đơn vị chủ quản**
 

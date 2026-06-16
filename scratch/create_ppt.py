@@ -226,7 +226,7 @@ p_members.font.color.rgb = WHITE
 p_members.space_after = Pt(8)
 
 p_adv = tf_title.add_paragraph()
-p_adv.text = "Giảng viên hướng dẫn: ThS. Đặng Mạnh Huy"
+p_adv.text = "Giảng viên hướng dẫn: NCS. Trần Văn Thiện"
 p_adv.font.name = FONT_FAMILY
 p_adv.font.size = Pt(15)
 p_adv.font.bold = True
