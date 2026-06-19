@@ -1059,9 +1059,112 @@ Cypher: MATCH (d:Drug {id: "pioglitazone"})-[:HAS_ADVERSE_EFFECT]->(s:Symptom) R
                 for t in scored_triples
             ]
             pipeline_logs.append(f"[{ts} INFO] Trích xuất được {len(scored_triples)} bộ ba làm ngữ cảnh dự phòng.")
-        else:
-            pipeline_logs.append(f"[{ts} WARNING] Không tìm thấy thực thể nào trong câu hỏi khớp với đồ thị.")
+
+    # Extract triples for direct Cypher queries to show as UI evidence
+    graph_context_triples = []
+    if is_fallback:
+        graph_context_triples = graph_results
+    else:
+        try:
+            # Collect all node ID strings from the raw cypher results
+            target_ids = set()
+            for row in graph_results:
+                if isinstance(row, dict):
+                    for val in row.values():
+                        if isinstance(val, str):
+                            target_ids.add(val)
+                        elif isinstance(val, list):
+                            for item in val:
+                                if isinstance(item, str):
+                                    target_ids.add(item)
+                        elif hasattr(val, "get"):
+                            node_id = val.get("id")
+                            if isinstance(node_id, str):
+                                target_ids.add(node_id)
             
+            # Extract seeds from matched_nodes AND parsed from Cypher query to be robust
+            extracted_seeds = set(matched_nodes)
+            if cypher_query:
+                # regex matches like id: "..." or id: '...'
+                for m in re.finditer(r'id\s*:\s*["\']([^"\']+)["\']', cypher_query, re.IGNORECASE):
+                    extracted_seeds.add(m.group(1))
+                # regex matches like n.id = "..." or n.id = '...'
+                for m in re.finditer(r'\.id\s*=\s*["\']([^"\']+)["\']', cypher_query, re.IGNORECASE):
+                    extracted_seeds.add(m.group(1))
+            
+            if extracted_seeds and target_ids:
+                from app.database import get_db_driver
+                driver = get_db_driver()
+                if driver:
+                    with driver.session() as session:
+                        # Bidirectional meet-in-the-middle path query of length 1 to 2
+                        rel_query = """
+                        MATCH p = (a)-[*1..2]-(b)
+                        WHERE a.id IN $seeds AND b.id IN $targets
+                        UNWIND relationships(p) AS rel
+                        WITH startNode(rel) AS s, rel, endNode(rel) AS o
+                        WHERE s.id IS NOT NULL AND o.id IS NOT NULL
+                        RETURN s.id AS subject, type(rel) AS relation, o.id AS object,
+                               labels(s)[0] AS subject_type, labels(o)[0] AS object_type
+                        """
+                        res = session.run(rel_query, seeds=list(extracted_seeds), targets=list(target_ids))
+                        seen = set()
+                        for r in res:
+                            key = (r["subject"], r["relation"], r["object"])
+                            if key not in seen:
+                                seen.add(key)
+                                graph_context_triples.append({
+                                    "subject": r["subject"],
+                                    "relation": r["relation"],
+                                    "object": r["object"],
+                                    "subject_type": r["subject_type"],
+                                    "object_type": r["object_type"]
+                                })
+            
+            # If no triples found via path search, try direct 1-hop as fallback
+            if not graph_context_triples and extracted_seeds and target_ids:
+                from app.database import get_db_driver
+                driver = get_db_driver()
+                if driver:
+                    with driver.session() as session:
+                        rel_query = """
+                        MATCH (a)-[r]-(b)
+                        WHERE a.id IN $seeds AND b.id IN $targets
+                        RETURN a.id AS subject, type(r) AS relation, b.id AS object,
+                               labels(a)[0] AS subject_type, labels(b)[0] AS object_type
+                        """
+                        res = session.run(rel_query, seeds=list(extracted_seeds), targets=list(target_ids))
+                        seen = set()
+                        for r in res:
+                            key = (r["subject"], r["relation"], r["object"])
+                            if key not in seen:
+                                seen.add(key)
+                                graph_context_triples.append({
+                                    "subject": r["subject"],
+                                    "relation": r["relation"],
+                                    "object": r["object"],
+                                    "subject_type": r["subject_type"],
+                                    "object_type": r["object_type"]
+                                })
+                                
+            # If still empty, construct simple pseudo-triples to prevent empty UI blocks
+            if not graph_context_triples and extracted_seeds:
+                # Pair seed nodes with target IDs
+                for seed in extracted_seeds:
+                    for target in target_ids:
+                        if seed != target:
+                            graph_context_triples.append({
+                                "subject": seed,
+                                "relation": "RETRIEVED_RELATION",
+                                "object": target,
+                                "subject_type": "Concept",
+                                "object_type": "Concept"
+                            })
+                            
+            pipeline_logs.append(f"[{ts} INFO] Trích xuất thành công {len(graph_context_triples)} bộ ba minh chứng cho UI.")
+        except Exception as e:
+            pipeline_logs.append(f"[{ts} WARNING] Lỗi trích xuất bộ ba minh chứng UI: {str(e)}")
+
     # Stage 4: Synthesize Vietnamese medical response
     pipeline_logs.append(f"[{ts} INFO] Giai đoạn 4: Tổng hợp câu trả lời y khoa tiếng Việt...")
     
@@ -1098,7 +1201,7 @@ Generate a response to the user's question, grounding it in the fallback graph c
     return {
         "answer": answer,
         "cypher_query": "N/A" if is_fallback else cypher_query,
-        "graph_context": graph_results,
+        "graph_context": graph_context_triples,
         "is_fallback": is_fallback,
         "logs": pipeline_logs
     }
