@@ -263,3 +263,20 @@ def get_node_relations(node_name: str) -> list[dict]:
     except Exception as e:
         print(f"⚠️ Neo4j error in get_node_relations: {e}")
         return []
+
+
+def execute_raw_cypher(query: str) -> list[dict]:
+    """Execute a raw Cypher query safely on the active Neo4j session and return the results.
+    Raises exception on syntax error or failure to let caller fall back.
+    """
+    driver = get_db_driver()
+    if not driver:
+        return []
+    try:
+        with driver.session() as session:
+            results = session.run(query)
+            return [dict(record) for record in results]
+    except Exception as e:
+        print(f"⚠️ Neo4j error in execute_raw_cypher: {e}")
+        raise e
+

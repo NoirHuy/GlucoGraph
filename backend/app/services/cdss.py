@@ -891,3 +891,215 @@ def get_mock_fallback(
         ],
         "logs": pipeline_logs or ["[ERROR] Không thể kết nối LLM API."],
     }
+
+
+def consult_diabetes_graph(query_text: str) -> dict:
+    """
+    Diabetes QA Chatbot service using AMG-RAG Text-to-Cypher:
+    Stage 1: Translate natural language query to Cypher using Llama-3.3-70B.
+    Stage 2: Validate the Cypher query (guardrails for relations, labels, and safety).
+    Stage 3: Execute on Neo4j. If fails, trigger fallback.
+    Stage 4: Synthesize Vietnamese medical response using LLM.
+    """
+    import datetime
+    ts = datetime.datetime.now().strftime("%H:%M:%S")
+    pipeline_logs = [
+        f"[{ts} INFO] Nhận câu hỏi tư vấn: '{query_text}'",
+    ]
+
+    # Target metadata for validation
+    VALID_RELATIONS = {
+        "IS_A", "HAS_ANATOMIC_SITE", "CAUSE_OF", "HAS_FINDING", "HAS_BIOMARKER",
+        "CO_OCCURS_WITH", "TREATED_BY", "HAS_ADVERSE_EFFECT", "CONTRAINDICATED_WITH",
+        "PREFERRED_OVER", "HAS_EVALUATION", "HAS_TITRATION_RULE", "INCREASES_RISK_OF",
+        "ADMINISTERED_VIA", "DISPENSES", "DECREASES", "RELATION"
+    }
+    
+    CYPHER_GENERATION_SYSTEM_PROMPT = """You are a Cypher query generator for a Neo4j Knowledge Graph about diabetes.
+The graph has nodes representing clinical concepts and relationships between them.
+
+Target Node Labels (Note: Node labels in the database do NOT contain spaces):
+- Disease (e.g. "Diabetes Mellitus", "Diabetes Mellitus, Non-Insulin-Dependent", "Diabetic Retinopathy", "Diabetic Nephropathy", "Obesity", "Renal Impairment", "Heart failure")
+- Symptom (e.g. "Polyuria", "Polydipsia", "Paresthesia", "Weight Loss", "fractures")
+- Drug (e.g. "metformin", "liraglutide", "pioglitazone", "Thiazolidinediones", "insulin", "tirzepatide")
+- Nutrient (e.g. "Carbohydrates", "Dietary Fiber", "Vitamin B12")
+- Biomarker (e.g. "C-peptide", "GAD65 autoantibodies")
+- Concept (e.g. "dietary management", "Subcutaneous injection of insulin")
+- Finding (e.g. "Low-carbohydrate diet plan")
+- Device
+
+Target Relationship Types (MUST BE UPPERCASE, e.g. [:TREATED_BY]):
+- IS_A
+- HAS_ANATOMIC_SITE
+- CAUSE_OF
+- HAS_FINDING
+- HAS_BIOMARKER
+- CO_OCCURS_WITH
+- TREATED_BY
+- HAS_ADVERSE_EFFECT
+- CONTRAINDICATED_WITH
+- PREFERRED_OVER
+- HAS_EVALUATION
+- HAS_TITRATION_RULE
+- INCREASES_RISK_OF
+- ADMINISTERED_VIA
+- DISPENSES
+- DECREASES
+- RELATION
+
+All nodes have an 'id' property representing their canonical English name (e.g. n.id = "Diabetes Mellitus, Non-Insulin-Dependent" or n.id = "pioglitazone").
+
+CRITICAL CASING RULE:
+You MUST write the node ID property exactly as listed in the "Matched entities in the Knowledge Graph for this question" context if present. Do NOT change its casing (e.g. if the context says - Node ID: "pioglitazone", you must write `id: "pioglitazone"` (lowercase), not `"Pioglitazone"`).
+
+Few-Shot Examples:
+Question: "Thuốc nào chống chỉ định với bệnh suy tim?"
+Cypher: MATCH (d:Drug)-[:CONTRAINDICATED_WITH]->(dis:Disease {id: "Heart failure"}) RETURN d.id AS Drug
+
+Question: "Bệnh béo phì có quan hệ đồng mắc với những bệnh nào?"
+Cypher: MATCH (d1:Disease {id: "Obesity"})-[:CO_OCCURS_WITH]-(d2:Disease) RETURN d2.id AS CoOccurringDisease
+
+Question: "Biến chứng của tiểu đường tuýp 2 là gì?"
+Cypher: MATCH (d:Disease {id: "Diabetes Mellitus, Non-Insulin-Dependent"})-[:CO_OCCURS_WITH]-(c:Disease) RETURN c.id AS Complication
+
+Question: "Thuốc pioglitazone có tác dụng phụ gì?"
+Cypher: MATCH (d:Drug {id: "pioglitazone"})-[:HAS_ADVERSE_EFFECT]->(s:Symptom) RETURN s.id AS AdverseEffect
+"""
+
+    # Stage 0: Entity Matching to provide exact ID hints to the LLM
+    pipeline_logs.append(f"[{ts} INFO] Giai đoạn 0: Nhận diện thực thể làm chỉ dẫn cho bộ dịch Cypher...")
+    matched_nodes = []
+    try:
+        kg_nodes = get_all_cdss_nodes()
+        matched_nodes, extracted_terms = chunk_match_entities(query_text, kg_nodes, chunk_size=100)
+        pipeline_logs.append(f"[{ts} INFO] Các thực thể khớp được: {matched_nodes}")
+    except Exception as e:
+        pipeline_logs.append(f"[{ts} WARNING] Không thể đối sánh thực thể ban đầu: {str(e)}")
+
+    matched_entities_info = ""
+    if matched_nodes:
+        matched_entities_info = "Matched entities in the Knowledge Graph for this question (MUST use these exact node IDs in the query):\n"
+        for node_id in matched_nodes:
+            matched_entities_info += f"- Node ID: \"{node_id}\"\n"
+
+    prompt = f"Question: \"{query_text}\"\n"
+    if matched_entities_info:
+        prompt += f"{matched_entities_info}\n"
+    prompt += "Cypher:"
+    cypher_query = ""
+    is_fallback = False
+    graph_results = []
+    
+    pipeline_logs.append(f"[{ts} INFO] Giai đoạn 1: Biên dịch câu hỏi sang câu lệnh Cypher...")
+    try:
+        raw_cypher = call_llm_api(prompt, system_prompt=CYPHER_GENERATION_SYSTEM_PROMPT, model_size="70b")
+        cypher_query = raw_cypher.strip().replace("```cypher", "").replace("```", "").strip()
+        pipeline_logs.append(f"[{ts} INFO] Câu lệnh Cypher được sinh ra: {cypher_query}")
+        
+        # Stage 2: Guardrails & Validation
+        pipeline_logs.append(f"[{ts} INFO] Giai đoạn 2: Kiểm duyệt bảo mật câu lệnh Cypher...")
+        
+        # Block write/destructive keywords
+        blocked_keywords = ["CREATE", "MERGE", "DELETE", "REMOVE", "SET", "DROP", "APOC", "CALL", "LOAD", "CSV", "WRITE"]
+        has_blocked = any(kw in cypher_query.upper() for kw in blocked_keywords)
+        
+        # Extract relations and validate
+        extracted_rels = re.findall(r'\[:([A-Z_]+)\]', cypher_query)
+        invalid_rels = [rel for rel in extracted_rels if rel not in VALID_RELATIONS]
+        
+        if has_blocked:
+            pipeline_logs.append(f"[{ts} WARNING] Phát hiện từ khóa bị cấm trong câu lệnh Cypher. Kích hoạt chế độ dự phòng (fallback).")
+            is_fallback = True
+        elif invalid_rels:
+            pipeline_logs.append(f"[{ts} WARNING] Phát hiện quan hệ không hợp lệ: {invalid_rels}. Kích hoạt chế độ dự phòng (fallback).")
+            is_fallback = True
+        else:
+            pipeline_logs.append(f"[{ts} INFO] Giai đoạn 2 thành công: Câu lệnh hợp lệ. Thực thi trên Neo4j...")
+            
+            # Stage 3: Neo4j Execution
+            from app.services.graph_query import execute_raw_cypher
+            graph_results = execute_raw_cypher(cypher_query)
+            pipeline_logs.append(f"[{ts} INFO] Giai đoạn 3 thành công: Đã lấy được {len(graph_results)} kết quả từ Neo4j.")
+            
+            if not graph_results:
+                pipeline_logs.append(f"[{ts} INFO] Câu lệnh Cypher chạy thành công nhưng không trả về kết quả. Kích hoạt chế độ dự phòng.")
+                is_fallback = True
+                
+    except Exception as e:
+        pipeline_logs.append(f"[{ts} ERROR] Lỗi khi xử lý hoặc thực thi Cypher: {str(e)}. Kích hoạt chế độ dự phòng.")
+        is_fallback = True
+
+    # Fallback Mechanism: standard GraphRAG using semantic vector search
+    fallback_context_str = ""
+    if is_fallback:
+        pipeline_logs.append(f"[{ts} INFO] Chế độ dự phòng: Sử dụng đối sánh thực thể...")
+        if not matched_nodes:
+            try:
+                kg_nodes = get_all_cdss_nodes()
+                matched_nodes, extracted_terms = chunk_match_entities(query_text, kg_nodes, chunk_size=100)
+            except Exception as e:
+                pipeline_logs.append(f"[{ts} WARNING] Lỗi đối sánh thực thể dự phòng: {str(e)}")
+        
+        pipeline_logs.append(f"[{ts} INFO] Các thực thể đối sánh được: {matched_nodes}")
+        
+        if matched_nodes:
+            all_triples = bfs_multi_hop_traversal(matched_nodes)
+            scored_triples = score_and_prune_triples(all_triples, max_triples=20)
+            fallback_context_str = build_rich_graph_context(scored_triples, matched_nodes)
+            
+            # Pack scored triples as graph results for the frontend view
+            graph_results = [
+                {
+                    "subject": t["subject"],
+                    "relation": t["relation"],
+                    "object": t["object"],
+                    "subject_type": t.get("subject_type", "Concept"),
+                    "object_type": t.get("object_type", "Concept")
+                }
+                for t in scored_triples
+            ]
+            pipeline_logs.append(f"[{ts} INFO] Trích xuất được {len(scored_triples)} bộ ba làm ngữ cảnh dự phòng.")
+        else:
+            pipeline_logs.append(f"[{ts} WARNING] Không tìm thấy thực thể nào trong câu hỏi khớp với đồ thị.")
+            
+    # Stage 4: Synthesize Vietnamese medical response
+    pipeline_logs.append(f"[{ts} INFO] Giai đoạn 4: Tổng hợp câu trả lời y khoa tiếng Việt...")
+    
+    SYNTHESIS_SYSTEM_PROMPT = """You are a Clinical Decision Support System (CDSS) assistant specialized in diabetes.
+Your task is to answer the user's clinical or general question about diabetes.
+
+You must base your answer on the provided Neo4j Graph Database query results.
+If the query results are empty or not present, you should use the fallback graph context or general medical knowledge, but inform the user about the facts retrieved from the graph.
+
+You must translate all English concept names (e.g. "Type 2 Diabetes Mellitus" -> "Đái tháo đường tuýp 2") to standard Vietnamese medical terms.
+Always output a clear, structured, and clinically sound response in Vietnamese.
+"""
+
+    synthesis_prompt = f"""User Question: "{query_text}"
+
+"""
+    if not is_fallback:
+        synthesis_prompt += f"""Neo4j Cypher Query Results: {json.dumps(graph_results, ensure_ascii=False)}
+
+Generate a response explaining these facts to the user clearly. Translate all clinical terms to Vietnamese."""
+    else:
+        synthesis_prompt += f"""Neo4j Fallback Graph Context:
+{fallback_context_str if fallback_context_str else "No matching facts found in database."}
+
+Generate a response to the user's question, grounding it in the fallback graph context above if possible. If no facts are matched, explain what is missing but give a helpful answer based on general medical knowledge while advising them."""
+
+    try:
+        answer = call_llm_api(synthesis_prompt, system_prompt=SYNTHESIS_SYSTEM_PROMPT, model_size="70b")
+        pipeline_logs.append(f"[{ts} INFO] Tổng hợp câu trả lời hoàn tất.")
+    except Exception as e:
+        pipeline_logs.append(f"[{ts} ERROR] Lỗi khi gọi LLM để tổng hợp câu trả lời: {str(e)}")
+        answer = "Xin lỗi, hệ thống gặp lỗi khi kết nối với LLM để tổng hợp câu trả lời. Vui lòng thử lại sau."
+
+    return {
+        "answer": answer,
+        "cypher_query": "N/A" if is_fallback else cypher_query,
+        "graph_context": graph_results,
+        "is_fallback": is_fallback,
+        "logs": pipeline_logs
+    }
+

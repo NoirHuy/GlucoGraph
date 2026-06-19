@@ -44,6 +44,74 @@ function App() {
   const canvasRef = useRef(null);
   const logsEndRef = useRef(null);
 
+  // CDSS QA Chatbot state
+  const [qaQuery, setQaQuery] = useState("");
+  const [qaHistory, setQaHistory] = useState([
+    {
+      sender: "bot",
+      text: "Xin chào! Tôi là trợ lý tư vấn y khoa thông minh CDSS. Bạn có thể hỏi tôi bất kỳ câu hỏi nào về bệnh Đái tháo đường, các thuốc điều trị, biến chứng hoặc chống chỉ định lâm sàng. Hệ thống sẽ truy vấn trực tiếp Đồ thị Tri thức Neo4j để trả lời chính xác nhất.",
+    }
+  ]);
+  const [qaLoading, setQaLoading] = useState(false);
+  const [qaLogs, setQaLogs] = useState([]);
+  const [showQaLogs, setShowQaLogs] = useState(false);
+
+  const handleQaSubmit = async (e) => {
+    if (e) e.preventDefault();
+    if (!qaQuery.trim() || qaLoading) return;
+
+    const userMsg = qaQuery.trim();
+    setQaQuery("");
+    setQaLoading(true);
+    setShowQaLogs(true);
+    setQaLogs([`[QA Engine] Nhận câu hỏi tư vấn: "${userMsg}"`]);
+
+    setQaHistory(prev => [...prev, { sender: "user", text: userMsg }]);
+
+    const logLines = [
+      `[Stage 0] Đang đối sánh thực thể lâm sàng trong đồ thị...`,
+      `[Stage 1] Đang gọi bộ dịch Llama-3.3-70B biên dịch sang câu lệnh Cypher...`,
+      `[Stage 2] Đang kiểm tra an toàn & kiểm duyệt câu lệnh Cypher...`,
+      `[Stage 3] Thực thi truy vấn trên cơ sở dữ liệu đồ thị Neo4j AuraDB...`,
+      `[Stage 4] Đang gọi LLM tổng hợp câu trả lời y khoa tiếng Việt...`,
+      `[QA Engine] Hoàn tất xử lý câu hỏi tư vấn!`
+    ];
+
+    let logIdx = 0;
+    const logInterval = setInterval(() => {
+      if (logIdx < logLines.length) {
+        setQaLogs(prev => [...prev, logLines[logIdx]]);
+        logIdx++;
+      } else {
+        clearInterval(logInterval);
+      }
+    }, 150);
+
+    try {
+      const res = await axios.post('/api/cdss/qa', {
+        query_text: userMsg
+      });
+      
+      setQaHistory(prev => [...prev, {
+        sender: "bot",
+        text: res.data.answer,
+        cypher: res.data.cypher_query,
+        graphContext: res.data.graph_context,
+        isFallback: res.data.is_fallback,
+        logs: res.data.logs
+      }]);
+    } catch (err) {
+      console.error("QA API Error:", err);
+      setQaHistory(prev => [...prev, {
+        sender: "bot",
+        text: "Xin lỗi, hệ thống gặp lỗi kết nối với máy chủ CDSS. Vui lòng thử lại sau.",
+        isFallback: true
+      }]);
+    } finally {
+      setQaLoading(false);
+    }
+  };
+
   // Initial load
   useEffect(() => {
     // Keep text area initialized but do not auto-trigger analysis
@@ -56,12 +124,7 @@ function App() {
     }
   }, [logs]);
 
-  // Redraw Knowledge Graph when tab is active or dark mode changes
-  useEffect(() => {
-    if (activeTab === "evidence") {
-      drawInteractiveGraph();
-    }
-  }, [activeTab, darkMode, selectedNode]);
+
 
   // Dark mode side effect
   useEffect(() => {
@@ -185,118 +248,7 @@ function App() {
     }
   };
 
-  // Canvas drawing for interactive graph explorer
-  const drawInteractiveGraph = () => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
 
-    const graphNodes = [
-      { id: 1, label: "Đái tháo nhạt", type: "disease", x: 200, y: 150, r: 25, def: "Rối loạn cân bằng nước do thiếu hụt hoặc kháng hoóc-môn chống bài niệu ADH." },
-      { id: 2, label: "Desmopressin", type: "drug", x: 120, y: 280, r: 22, def: "Dược chất tổng hợp thay thế ADH, dùng điều trị đái tháo nhạt trung ương." },
-      { id: 3, label: "Khát nhiều", type: "symptom", x: 380, y: 100, r: 20, def: "Biểu hiện khát nước quá mức do mất nước liên tục qua nước tiểu." },
-      { id: 4, label: "Tuyến yên", type: "anatomy", x: 200, y: 50, r: 22, def: "Tuyến nội tiết ở sàn não, nơi thùy sau giải phóng ADH vào máu." },
-      { id: 5, label: "Suy thận mạn", type: "disease", x: 450, y: 250, r: 25, def: "Suy giảm chức năng lọc cầu thận mạn tính kéo dài trên 3 tháng." },
-      { id: 6, label: "Metformin", type: "drug", x: 600, y: 200, r: 22, def: "Thuốc đầu tay điều trị ĐTĐ type 2, chống chỉ định khi eGFR < 30." },
-      { id: 7, label: "Đái tháo đường", type: "disease", x: 350, y: 350, r: 25, def: "Bệnh rối loạn chuyển hóa carbonhydrat đặc trưng bởi tăng đường huyết đói." },
-      { id: 8, label: "Cơn Gout cấp", type: "disease", x: 550, y: 400, r: 25, def: "Viêm khớp cấp tính do lắng đọng tinh thể muối urat tại ổ khớp." }
-    ];
-
-    const graphLinks = [
-      { source: 1, target: 2, rel: "treated_by" },
-      { source: 3, target: 1, rel: "manifestation_of" },
-      { source: 1, target: 4, rel: "anatomical_site" },
-      { source: 5, target: 6, rel: "has_contraindicated_drug" },
-      { source: 7, target: 6, rel: "treated_by" },
-      { source: 3, target: 7, rel: "manifestation_of" },
-      { source: 5, target: 7, rel: "associated_with" },
-      { source: 8, target: 5, rel: "associated_with" }
-    ];
-
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Draw Links
-    graphLinks.forEach(link => {
-      const src = graphNodes.find(n => n.id === link.source);
-      const tgt = graphNodes.find(n => n.id === link.target);
-      if (!src || !tgt) return;
-
-      ctx.beginPath();
-      ctx.moveTo(src.x, src.y);
-      ctx.lineTo(tgt.x, tgt.y);
-      ctx.strokeStyle = darkMode ? '#475569' : '#cbd5e1';
-      ctx.lineWidth = 1.5;
-      ctx.stroke();
-
-      const midX = (src.x + tgt.x) / 2;
-      const midY = (src.y + tgt.y) / 2;
-      ctx.fillStyle = darkMode ? '#94a3b8' : '#64748b';
-      ctx.font = 'bold 9px monospace';
-      ctx.textAlign = 'center';
-      ctx.fillText(link.rel, midX, midY - 4);
-    });
-
-    // Draw Nodes
-    graphNodes.forEach(node => {
-      ctx.beginPath();
-      ctx.arc(node.x, node.y, node.r, 0, 2 * Math.PI);
-      
-      let color = '#ef4444'; // disease
-      if (node.type === 'drug') color = '#10b981';
-      if (node.type === 'symptom') color = '#f59e0b';
-      if (node.type === 'anatomy') color = '#8b5cf6';
-
-      ctx.fillStyle = color;
-      ctx.fill();
-
-      if (selectedNode && selectedNode.id === node.id) {
-        ctx.lineWidth = 4;
-        ctx.strokeStyle = darkMode ? '#ffffff' : '#0f172a';
-        ctx.stroke();
-      }
-
-      ctx.fillStyle = '#ffffff';
-      ctx.font = 'bold 9px Inter';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      
-      const words = node.label.split(" ");
-      if (words.length > 1) {
-        ctx.fillText(words[0], node.x, node.y - 5);
-        ctx.fillText(words.slice(1).join(" "), node.x, node.y + 5);
-      } else {
-        ctx.fillText(node.label, node.x, node.y);
-      }
-    });
-
-    // Handle Click
-    canvas.onclick = (e) => {
-      const rect = canvas.getBoundingClientRect();
-      // Account for CSS scaling of the canvas
-      const mouseX = (e.clientX - rect.left) * (canvas.width / rect.width);
-      const mouseY = (e.clientY - rect.top) * (canvas.height / rect.height);
-
-      let clickedNode = null;
-      graphNodes.forEach(node => {
-        const dist = Math.sqrt((mouseX - node.x)**2 + (mouseY - node.y)**2);
-        if (dist <= node.r) {
-          clickedNode = node;
-        }
-      });
-
-      if (clickedNode) {
-        // Find linked nodes
-        const linkedTriples = graphLinks.filter(l => l.source === clickedNode.id || l.target === clickedNode.id).map(link => {
-          const s = graphNodes.find(n => n.id === link.source);
-          const t = graphNodes.find(n => n.id === link.target);
-          return { s: s.label, rel: link.rel, t: t.label };
-        });
-        
-        clickedNode.triples = linkedTriples;
-        setSelectedNode(clickedNode);
-      }
-    };
-  };
 
   const activePatient = patientDetails[patientId];
 
@@ -321,8 +273,30 @@ function App() {
       </header>
 
       {/* Main Wrapper */}
-      <div className="flex-1 flex flex-col h-full w-full overflow-hidden transition-all duration-300">
+      <div className="flex-1 flex flex-row h-full w-full overflow-hidden transition-all duration-300">
 
+        {/* Sidebar Navigation */}
+        <aside className="w-64 bg-white dark:bg-slate-950 border-r border-outline-variant dark:border-slate-800 flex flex-col justify-between z-30 transition-colors duration-200 shrink-0">
+          <div className="p-md space-y-xs">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 px-sm mb-xs">Menu chính</div>
+            
+            <button 
+              onClick={() => setActiveTab("overview")} 
+              className={`w-full flex items-center gap-sm px-md py-sm rounded-lg text-sm font-semibold transition-all ${activeTab === 'overview' ? 'bg-primary/10 dark:bg-emerald-500/10 text-primary dark:text-emerald-400 font-bold' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900'}`}
+            >
+              <span className="material-symbols-outlined text-lg">dashboard</span>
+              Phân tích CDSS
+            </button>
+
+            <button 
+              onClick={() => setActiveTab("qa")} 
+              className={`w-full flex items-center gap-sm px-md py-sm rounded-lg text-sm font-semibold transition-all ${activeTab === 'qa' ? 'bg-primary/10 dark:bg-emerald-500/10 text-primary dark:text-emerald-400 font-bold' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900'}`}
+            >
+              <span className="material-symbols-outlined text-lg">chat</span>
+              Tư vấn Đái tháo đường
+            </button>
+          </div>
+        </aside>
 
         {/* Dynamic content canvas */}
         <main className="flex-1 overflow-y-auto p-gutter bg-surface-container-low dark:bg-slate-900 transition-colors duration-200">
@@ -630,201 +604,153 @@ function App() {
             </div>
           )}
 
-          {/* TAB: MEDICAL GRAPH EXPLORER */}
-          {activeTab === "evidence" && (
-            <div className="max-w-7xl mx-auto space-y-gutter animate-fade-in">
-              <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
-                <div className="flex justify-between items-center mb-md border-b border-gray-100 dark:border-slate-700 pb-sm">
-                  <div>
-                    <h2 className="font-semibold text-xl text-primary dark:text-emerald-400 flex items-center gap-2">
-                      <span className="material-symbols-outlined">hub</span>
-                      Interactive Medical Knowledge Graph Explorer
-                    </h2>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Click vào các nút thực thể lâm sàng để hiển thị quan hệ chuẩn từ Neo4j</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-400">12 Quan hệ Chuẩn</span>
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded bg-teal-100 dark:bg-teal-950 text-teal-800 dark:text-teal-400">32 Thực thể</span>
-                  </div>
+
+
+          {/* TAB: MEDICAL QA CONSULTATION */}
+          {activeTab === "qa" && (
+            <div className="max-w-5xl mx-auto space-y-gutter animate-fade-in flex flex-col h-[calc(100vh-8rem)]">
+              
+              {/* QA Header */}
+              <div className="bg-white dark:bg-slate-800 rounded-t-xl border-x border-t border-outline-variant dark:border-slate-700 p-lg shadow-sm flex justify-between items-center shrink-0">
+                <div>
+                  <h2 className="font-bold text-xl text-primary dark:text-emerald-400 flex items-center gap-2">
+                    <span className="material-symbols-outlined">chat</span>
+                    Tư vấn Hỏi đáp Y khoa Đái tháo đường
+                  </h2>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+                    Hỏi đáp trực tiếp bằng tiếng Việt. Câu hỏi được dịch sang Cypher và xác thực dựa trên Đồ thị Tri thức Neo4j (AMG-RAG).
+                  </p>
                 </div>
+                <div className="flex gap-2">
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-400 flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+                    Neo4j Graph Active
+                  </span>
+                </div>
+              </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-md">
-                  <div className="lg:col-span-8 bg-slate-950 rounded-xl border border-slate-800 h-[500px] relative overflow-hidden shadow-inner">
-                    <canvas ref={canvasRef} width="700" height="500" className="absolute inset-0 w-full h-full cursor-pointer" />
-                    
-                    <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white border border-slate-800 p-sm rounded-lg text-xs space-y-1 glass-panel">
-                      <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-rose-500 inline-block"></span> Disease (Bệnh lý)</div>
-                      <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span> Drug (Dược phẩm)</div>
-                      <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-amber-500 inline-block"></span> Symptom (Triệu chứng)</div>
-                      <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-purple-500 inline-block"></span> Anatomy (Giải phẫu)</div>
-                    </div>
-                  </div>
-
-                  <div className="lg:col-span-4 bg-slate-50 dark:bg-slate-900 border border-outline-variant dark:border-slate-800 rounded-xl p-md flex flex-col justify-between h-[500px]">
-                    <div>
-                      <h3 className="font-bold text-md text-on-surface dark:text-white border-b border-gray-200 dark:border-slate-800 pb-xs mb-sm">Bộ đọc thực thể GraphRAG</h3>
-                      {selectedNode ? (
-                        <div className="space-y-sm text-sm animate-fade-in">
-                          <div>
-                            <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-800">{selectedNode.type}</span>
-                            <h4 className="text-xl font-bold text-slate-800 dark:text-white mt-xs">{selectedNode.label}</h4>
+              {/* Chat Container */}
+              <div className="flex-1 flex flex-col md:flex-row border-x border-b border-outline-variant dark:border-slate-700 bg-white dark:bg-slate-800 rounded-b-xl overflow-hidden shadow-sm min-h-0">
+                
+                {/* Message area */}
+                <div className="flex-1 flex flex-col min-h-0 bg-slate-50 dark:bg-slate-900">
+                  <div className="flex-1 overflow-y-auto p-lg space-y-md">
+                    {qaHistory.map((msg, idx) => (
+                      <div key={idx} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'} animate-fade-in`}>
+                        <div className={`max-w-[85%] rounded-xl p-md shadow-sm border ${
+                          msg.sender === 'user' 
+                            ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' 
+                            : 'bg-white dark:bg-slate-800 text-on-surface dark:text-slate-100 border-slate-200 dark:border-slate-700'
+                        }`}>
+                          <div className="text-xs font-bold opacity-75 mb-xs uppercase tracking-wider flex items-center gap-1">
+                            <span className="material-symbols-outlined text-xs">
+                              {msg.sender === 'user' ? 'person' : 'clinical_decision_support'}
+                            </span>
+                            {msg.sender === 'user' ? 'Bác sĩ' : 'Hệ thống CDSS (AMG-RAG)'}
                           </div>
-                          <div>
-                            <span className="text-xs text-gray-400 font-bold block uppercase">Định nghĩa lâm sàng</span>
-                            <p className="text-slate-600 dark:text-gray-300 text-xs mt-xs">{selectedNode.def}</p>
-                          </div>
-                          <div>
-                            <span className="text-xs text-gray-400 font-bold block uppercase">Bộ ba liên kết (Triples)</span>
-                            <div className="space-y-xs mt-xs">
-                              {selectedNode.triples && selectedNode.triples.map((t, idx) => (
-                                <div key={idx} className="p-1 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded font-mono text-[10px] flex justify-between">
-                                  <span>{t.s}</span>
-                                  <span className="text-blue-500 font-bold">{t.rel}</span>
-                                  <span>{t.t}</span>
+                          
+                          <p className="text-sm leading-relaxed whitespace-pre-wrap font-medium">{msg.text}</p>
+                          
+                          {/* Metadata box for bot responses */}
+                          {msg.sender === 'bot' && (msg.cypher || (msg.graphContext && msg.graphContext.length > 0)) && (
+                            <div className="mt-md pt-md border-t border-slate-100 dark:border-slate-700 space-y-md">
+                              
+                              {/* Cypher Box */}
+                              {msg.cypher && msg.cypher !== "N/A" && (
+                                <div>
+                                  <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider block mb-1 flex items-center gap-1">
+                                    <span className="material-symbols-outlined text-[12px] text-blue-500">terminal</span>
+                                    Truy vấn Cypher đã chạy trên Neo4j:
+                                  </span>
+                                  <pre className="text-xs bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-emerald-400 p-md rounded-lg overflow-x-auto border border-slate-200 dark:border-slate-800 font-mono whitespace-pre-wrap">
+                                    {msg.cypher}
+                                  </pre>
                                 </div>
-                              ))}
+                              )}
+
+                              {/* Mode Label */}
+                              <div className="flex items-center gap-2">
+                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                                  msg.isFallback 
+                                    ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-400 border border-amber-200 dark:border-amber-800/40' 
+                                    : 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/40'
+                                }`}>
+                                  {msg.isFallback ? 'Chế độ: GraphRAG Fallback (Semantic BFS)' : 'Chế độ: Text-to-Cypher Direct'}
+                                </span>
+                              </div>
+
+                              {/* Graph Context */}
+                              {msg.graphContext && msg.graphContext.length > 0 && (
+                                <div>
+                                  <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider block mb-1 flex items-center gap-1">
+                                    <span className="material-symbols-outlined text-[12px] text-emerald-500">hub</span>
+                                    Minh chứng đồ thị làm căn cứ (Triples):
+                                  </span>
+                                  <div className="max-h-36 overflow-y-auto space-y-1 pr-xs">
+                                    {msg.graphContext.map((t, tIdx) => (
+                                      <div key={tIdx} className="bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded px-2 py-1 text-[10px] font-mono flex items-center gap-1 text-slate-600 dark:text-slate-300">
+                                        <span className="font-bold text-slate-800 dark:text-slate-200">{t.subject || t.subject_type}</span>
+                                        <span className="text-blue-500 dark:text-blue-400">-{t.relation}-&gt;</span>
+                                        <span className="font-bold text-slate-800 dark:text-slate-200">{t.object || t.object_type}</span>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
+                              
                             </div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                    {qaLoading && (
+                      <div className="flex justify-start animate-pulse">
+                        <div className="bg-white dark:bg-slate-800 rounded-xl p-md border border-slate-200 dark:border-slate-700 max-w-[80%]">
+                          <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm">
+                            <span className="inline-block w-2.5 h-2.5 rounded-full bg-yellow-500 animate-ping"></span>
+                            Hệ thống đang suy luận và truy vấn Neo4j...
                           </div>
                         </div>
-                      ) : (
-                        <div className="text-center py-12 text-gray-400">
-                          <span className="material-symbols-outlined text-4xl block mb-2">touch_app</span>
-                          Click vào một thực thể trong đồ thị để truy vấn
-                        </div>
-                      )}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Input Form */}
+                  <form onSubmit={handleQaSubmit} className="p-md border-t border-outline-variant dark:border-slate-700 bg-white dark:bg-slate-800 flex gap-sm shrink-0">
+                    <input 
+                      type="text" 
+                      value={qaQuery}
+                      onChange={(e) => setQaQuery(e.target.value)}
+                      disabled={qaLoading}
+                      placeholder="Nhập câu hỏi tư vấn về đái tháo đường, thuốc điều trị, biến chứng..."
+                      className="flex-1 rounded-lg border border-outline-variant dark:border-slate-600 focus:border-primary-container focus:ring focus:ring-primary-container/30 bg-surface dark:bg-slate-900 text-on-surface dark:text-white px-md py-sm text-sm"
+                    />
+                    <button 
+                      type="submit"
+                      disabled={qaLoading || !qaQuery.trim()}
+                      className="bg-primary hover:bg-blue-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white font-semibold px-lg py-sm rounded-lg flex items-center transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                    >
+                      <span className="material-symbols-outlined text-lg mr-xs">send</span> Gửi
+                    </button>
+                  </form>
+                </div>
+
+                {/* Right side logs panel */}
+                {showQaLogs && (
+                  <div className="w-full md:w-80 border-t md:border-t-0 md:border-l border-outline-variant dark:border-slate-700 bg-slate-950 text-emerald-400 font-mono text-xs flex flex-col h-48 md:h-auto shrink-0 animate-fade-in">
+                    <div className="p-xs bg-slate-900 border-b border-slate-800 text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 px-md flex justify-between items-center">
+                      <span>Nhật ký truy vấn QA</span>
+                      <button type="button" onClick={() => setShowQaLogs(false)} className="text-slate-500 hover:text-white"><span className="material-symbols-outlined text-sm">close</span></button>
+                    </div>
+                    <div className="flex-1 overflow-y-auto p-md space-y-1">
+                      {qaLogs.map((log, idx) => (
+                        <div key={idx} className="py-0.5 leading-relaxed">{log}</div>
+                      ))}
                     </div>
                   </div>
-                </div>
-              </section>
-            </div>
-          )}
-
-          {/* TAB: MEDICATION HISTORY */}
-          {activeTab === "medication" && (
-            <div className="max-w-7xl mx-auto space-y-gutter animate-fade-in">
-              <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
-                <h2 className="font-semibold text-xl text-primary dark:text-emerald-400 mb-lg border-b border-gray-100 dark:border-slate-700 pb-sm flex items-center gap-2">
-                  <span className="material-symbols-outlined">history</span>
-                  Lịch sử sử dụng thuốc & Đánh giá tuân thủ
-                </h2>
-
-                <div className="relative border-l-2 border-primary/20 dark:border-emerald-500/20 ml-4 space-y-lg">
-                  {patientId === "robert" && (
-                    <>
-                      <div className="relative pl-8 mb-8">
-                        <span className="absolute left-[-9px] top-1 flex items-center justify-center w-4 h-4 bg-emerald-500 rounded-full ring-4 ring-emerald-100 dark:ring-emerald-950"></span>
-                        <h3 className="font-semibold text-md text-slate-800 dark:text-white">Hiện tại (Hôm nay)</h3>
-                        <p className="text-sm text-rose-500 font-bold">🛑 ĐÃ NGỪNG Metformin (Do suy thận tiến triển độ 3)</p>
-                        <p className="text-sm text-emerald-600 dark:text-emerald-400 font-semibold mt-xs">Khởi trị: Desmopressin 0.1 mg x 2 lần/ngày (Xịt mũi) + Basal Insulin 12 Units mỗi tối</p>
-                      </div>
-                      <div className="relative pl-8 mb-8">
-                        <span className="absolute left-[-5px] top-1 flex items-center justify-center w-2.5 h-2.5 bg-gray-300 rounded-full ring-4 ring-gray-100 dark:ring-gray-800"></span>
-                        <h3 className="font-semibold text-md text-gray-500">1 tháng trước</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Duy trì Metformin 1000mg x 2 viên/ngày</p>
-                      </div>
-                    </>
-                  )}
-                  {patientId === "emily" && (
-                    <div className="relative pl-8 mb-8">
-                      <span className="absolute left-[-9px] top-1 flex items-center justify-center w-4 h-4 bg-emerald-500 rounded-full ring-4 ring-emerald-100 dark:ring-emerald-950"></span>
-                      <h3 className="font-semibold text-md text-slate-800 dark:text-white">Hiện tại</h3>
-                      <p className="text-sm text-rose-500 font-bold">🛑 ĐÃ HUỶ chỉ định Methimazole do có thai quý 1</p>
-                      <p className="text-sm text-emerald-600 dark:text-emerald-400 font-semibold mt-xs">Kê đơn thay thế: Propylthiouracil (PTU) 50mg x 2 lần/ngày</p>
-                    </div>
-                  )}
-                  {patientId === "john" && (
-                    <div className="relative pl-8 mb-8">
-                      <span className="absolute left-[-9px] top-1 flex items-center justify-center w-4 h-4 bg-emerald-500 rounded-full ring-4 ring-emerald-100 dark:ring-emerald-950"></span>
-                      <h3 className="font-semibold text-md text-slate-800 dark:text-white">Hiện tại</h3>
-                      <p className="text-sm text-rose-500 font-bold">🛑 ĐÃ HUỶ chỉ định dùng thuốc NSAIDs liều cao</p>
-                      <p className="text-sm text-emerald-600 dark:text-emerald-400 font-semibold mt-xs">Chỉ định thay thế: Colchicine 1mg + Hỗ trợ dạ dày Esomeprazole 40mg (PPI)</p>
-                    </div>
-                  )}
-                </div>
-              </section>
-            </div>
-          )}
-
-          {/* TAB: LAB RESULTS */}
-          {activeTab === "labs" && (
-            <div className="max-w-7xl mx-auto space-y-gutter animate-fade-in">
-              <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
-                <h2 className="font-semibold text-xl text-primary dark:text-emerald-400 mb-lg border-b border-gray-100 dark:border-slate-700 pb-sm flex items-center gap-2">
-                  <span className="material-symbols-outlined">monitoring</span>
-                  Các chỉ số Xét nghiệm lâm sàng chính
-                </h2>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
-                  {patientId === "robert" && (
-                    <>
-                      <div className="bg-slate-50 dark:bg-slate-850 rounded-xl p-md border border-gray-100 dark:border-slate-700">
-                        <span className="text-xs text-gray-500 uppercase tracking-wider font-semibold">eGFR (Mức lọc cầu thận)</span>
-                        <div className="text-3xl font-extrabold text-rose-500 my-xs">42 mL/min</div>
-                        <div className="text-xs bg-white dark:bg-slate-900 border p-1 rounded mt-1 text-gray-600 dark:text-gray-300">Giảm mạnh (Suy thận độ 3) - Chống chỉ định dùng Metformin</div>
-                      </div>
-                      <div className="bg-slate-50 dark:bg-slate-850 rounded-xl p-md border border-gray-100 dark:border-slate-700">
-                        <span className="text-xs text-gray-500 uppercase tracking-wider font-semibold">Độ thẩm thấu nước tiểu</span>
-                        <div className="text-3xl font-extrabold text-rose-500 my-xs">150 mOsm</div>
-                        <div className="text-xs bg-white dark:bg-slate-900 border p-1 rounded mt-1 text-gray-600 dark:text-gray-300">Nhạt cực độ (Bình thường: &gt; 300) - Chỉ thị Đái tháo nhạt</div>
-                      </div>
-                      <div className="bg-slate-50 dark:bg-slate-850 rounded-xl p-md border border-gray-100 dark:border-slate-700">
-                        <span className="text-xs text-gray-500 uppercase tracking-wider font-semibold">HbA1c</span>
-                        <div className="text-3xl font-extrabold text-amber-500 my-xs">8.4 %</div>
-                        <div className="text-xs bg-white dark:bg-slate-900 border p-1 rounded mt-1 text-gray-600 dark:text-gray-300">Đường huyết kiểm soát kém (Mục tiêu: &lt; 7.0%)</div>
-                      </div>
-                    </>
-                  )}
-                  {patientId === "emily" && (
-                    <>
-                      <div className="bg-slate-50 dark:bg-slate-850 rounded-xl p-md border border-gray-100 dark:border-slate-700">
-                        <span className="text-xs text-gray-500 uppercase tracking-wider font-semibold">Free T4 (FT4)</span>
-                        <div className="text-3xl font-extrabold text-rose-500 my-xs">2.4 ng/dL</div>
-                        <div className="text-xs bg-white dark:bg-slate-900 border p-1 rounded mt-1 text-gray-600 dark:text-gray-300">Tăng mạnh (Bình thường: 0.8 - 1.8)</div>
-                      </div>
-                      <div className="bg-slate-50 dark:bg-slate-850 rounded-xl p-md border border-gray-100 dark:border-slate-700">
-                        <span className="text-xs text-gray-500 uppercase tracking-wider font-semibold">TSH</span>
-                        <div className="text-3xl font-extrabold text-rose-500 my-xs">0.01 uIU/mL</div>
-                        <div className="text-xs bg-white dark:bg-slate-900 border p-1 rounded mt-1 text-gray-600 dark:text-gray-300">Giảm sâu (Cường giáp trạng)</div>
-                      </div>
-                    </>
-                  )}
-                  {patientId === "john" && (
-                    <>
-                      <div className="bg-slate-50 dark:bg-slate-850 rounded-xl p-md border border-gray-100 dark:border-slate-700">
-                        <span className="text-xs text-gray-500 uppercase tracking-wider font-semibold">Acid Uric huyết thanh</span>
-                        <div className="text-3xl font-extrabold text-rose-500 my-xs">520 umol/L</div>
-                        <div className="text-xs bg-white dark:bg-slate-900 border p-1 rounded mt-1 text-gray-600 dark:text-gray-300">Tăng cực cao vượt ngưỡng (Mục tiêu: &lt; 420 umol/L)</div>
-                      </div>
-                    </>
-                  )}
-                </div>
-              </section>
-            </div>
-          )}
-
-          {/* TAB: RULES & LOGS */}
-          {activeTab === "rules" && (
-            <div className="max-w-7xl mx-auto space-y-gutter animate-fade-in">
-              <section className="bg-white dark:bg-slate-800 rounded-xl border border-outline-variant dark:border-slate-700 p-lg shadow-sm">
-                <h2 className="font-semibold text-xl text-primary dark:text-emerald-400 mb-md border-b border-gray-100 dark:border-slate-700 pb-sm flex items-center gap-2">
-                  <span className="material-symbols-outlined">terminal</span>
-                  Cơ sở suy luận CDSS Pipeline & Decision Logs
-                </h2>
-
-                <div className="space-y-md text-sm">
-                  <div className="bg-slate-950 text-gray-300 p-lg rounded-xl font-mono space-y-sm overflow-x-auto">
-                    <p className="text-cyan-400"># PIPELINE PROFILE: CDSS GraphRAG Engine</p>
-                    <p className="text-emerald-400">[Stage 1] Two-Stage Entity Matching | Model: Llama-3.1-8B-Instant + Python Filtering</p>
-                    <p className="text-emerald-400">[Stage 2 & 3] BFS Traversal & Pruning | Neo4j Cypher + Priority Router</p>
-                    <p className="text-emerald-400">[Stage 4] Grounded Inference | Model: Llama-3.3-70B-Versatile</p>
-                    <hr className="border-slate-800 my-md" />
-                    <p className="text-yellow-400"># CURRENT RUN SUITE DECISION LOGS:</p>
-                    {result && result.logs && result.logs.map((log, idx) => (
-                      <p key={idx} className="text-gray-300">{log}</p>
-                    ))}
-                  </div>
-                </div>
-              </section>
+                )}
+                
+              </div>
             </div>
           )}
 
