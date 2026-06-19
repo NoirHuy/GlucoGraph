@@ -642,12 +642,13 @@ function App() {
                             ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' 
                             : 'bg-white dark:bg-slate-800 text-on-surface dark:text-slate-100 border-slate-200 dark:border-slate-700'
                         }`}>
-                          <div className="text-xs font-bold opacity-75 mb-xs uppercase tracking-wider flex items-center gap-1">
-                            <span className="material-symbols-outlined text-xs">
-                              {msg.sender === 'user' ? 'person' : 'clinical_decision_support'}
-                            </span>
-                            {msg.sender === 'user' ? 'Bác sĩ' : 'Hệ thống CDSS (AMG-RAG)'}
-                          </div>
+                          {msg.sender === 'user' && (
+                            <div className="text-xs font-bold opacity-75 mb-xs uppercase tracking-wider flex items-center gap-1">
+                              <span className="material-symbols-outlined text-xs">person</span>
+                              Bác sĩ
+                            </div>
+                          )}
+
                           
                           <p className="text-sm leading-relaxed whitespace-pre-wrap font-medium">{msg.text}</p>
                           
@@ -668,16 +669,7 @@ function App() {
                                 </div>
                               )}
 
-                              {/* Mode Label */}
-                              <div className="flex items-center gap-2">
-                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                                  msg.isFallback 
-                                    ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-400 border border-amber-200 dark:border-amber-800/40' 
-                                    : 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/40'
-                                }`}>
-                                  {msg.isFallback ? 'Chế độ: GraphRAG Fallback (Semantic BFS)' : 'Chế độ: Text-to-Cypher Direct'}
-                                </span>
-                              </div>
+
 
                               {/* Graph Context */}
                               {msg.graphContext && msg.graphContext.length > 0 && (
