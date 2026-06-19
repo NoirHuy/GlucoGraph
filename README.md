@@ -15,10 +15,8 @@
 
 | Dịch vụ | Đường link | Thông tin đăng nhập |
 |---|---|---|
-| 🌐 **Web App (CDSS Dashboard)** | [glucologic.noirhuy.id.vn](http://glucologic.noirhuy.id.vn) | *(không cần đăng nhập)* |
-| 🤗 **Hugging Face Space (Dự phòng)** | [huggingface.co/spaces/NoirHuy/glucologic-cdss](https://huggingface.co/spaces/NoirHuy/glucologic-cdss) | *(không cần đăng nhập)* |
+| 🌐 **Hugging Face Space (Demo App)** | [huggingface.co/spaces/NoirHuy/glucologic-cdss](https://huggingface.co/spaces/NoirHuy/glucologic-cdss) | *(không cần đăng nhập)* |
 | 🔬 **Neo4j Browser (CDSS Knowledge Graph)** | [browser.neo4j.io](https://browser.neo4j.io) | **Connection URI:** `neo4j+s://674a50fc.databases.neo4j.io`<br>**Username:** `674a50fc`<br>**Password:** `TLYArswrzV8jEKhQu_pDgvuTRD_cG0jOss7GnokGMDU` |
-| 💻 **IP trực tiếp (dự phòng)** | [103.82.27.129](http://103.82.27.129) | — |
 
 
 
