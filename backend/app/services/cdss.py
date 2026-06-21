@@ -912,7 +912,7 @@ def consult_diabetes_graph(query_text: str) -> dict:
         "IS_A", "HAS_ANATOMIC_SITE", "CAUSE_OF", "HAS_FINDING", "HAS_BIOMARKER",
         "CO_OCCURS_WITH", "TREATED_BY", "HAS_ADVERSE_EFFECT", "CONTRAINDICATED_WITH",
         "PREFERRED_OVER", "HAS_EVALUATION", "HAS_TITRATION_RULE", "INCREASES_RISK_OF",
-        "ADMINISTERED_VIA", "DISPENSES", "DECREASES", "RELATION"
+        "ADMINISTERED_VIA", "DISPENSES"
     }
     
     CYPHER_GENERATION_SYSTEM_PROMPT = """You are a Cypher query generator for a Neo4j Knowledge Graph about diabetes.
@@ -924,9 +924,12 @@ Target Node Labels (Note: Node labels in the database do NOT contain spaces):
 - Drug (e.g. "metformin", "liraglutide", "pioglitazone", "Thiazolidinediones", "insulin", "tirzepatide")
 - Nutrient (e.g. "Carbohydrates", "Dietary Fiber", "Vitamin B12")
 - Biomarker (e.g. "C-peptide", "GAD65 autoantibodies")
-- Concept (e.g. "dietary management", "Subcutaneous injection of insulin")
-- Finding (e.g. "Low-carbohydrate diet plan")
-- Device
+- Treatment_Procedure (e.g. "dietary management", "Subcutaneous injection of insulin")
+- Dosage_Value (e.g. "500 mg")
+- Clinical_Metric (e.g. "HbA1c", "eGFR")
+- Clinical_Rule
+- Risk_Factor (e.g. "Obesity", "Sedentary Lifestyle")
+- Anatomical_Site (e.g. "Pancreatic Islet Cells")
 
 Target Relationship Types (MUST BE UPPERCASE, e.g. [:TREATED_BY]):
 - IS_A
@@ -944,8 +947,6 @@ Target Relationship Types (MUST BE UPPERCASE, e.g. [:TREATED_BY]):
 - INCREASES_RISK_OF
 - ADMINISTERED_VIA
 - DISPENSES
-- DECREASES
-- RELATION
 
 All nodes have an 'id' property representing their canonical English name (e.g. n.id = "Diabetes Mellitus, Non-Insulin-Dependent" or n.id = "pioglitazone").
 
