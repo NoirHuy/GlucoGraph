@@ -1108,7 +1108,7 @@ Bảng 4.7 so sánh hiệu năng trích xuất tri thức trên bộ dữ liệu
 
 Bảng 4.7 Hiệu năng trích xuất tri thức - DBpedia-WebNLG (1_university, 71 văn bản)
 
-_Ghi chú: F1 của LLaMA-65B 2-shot lấy từ Papaluca et al. \[12\]; (-) chỉ số không được công bố._
+_Ghi chú: F1 của LLaMA-65B 2-shot lấy từ Papaluca et al. \[12\]; (-) chỉ số không được công bố. Giá trị F1 của EDC được tính bằng trung bình cộng điểm F1 trên từng câu (Macro Instance-level F1) theo kịch bản đánh giá chuẩn của WebNLG thay vì tính trực tiếp từ Precision và Recall trung bình gộp (corpus-level), nhằm phản ánh chính xác hiệu năng đồng đều trên từng mẫu văn bản._
 
 Pipeline EDC với hậu xử lý đạt F1 = 78,69%, vượt Vicuna-13B 3,42 lần và Alpaca-LoRA-13B 3,93 lần trong cùng điều kiện đánh giá \[6\]. Precision đạt 86,03% - cao hơn đáng kể so với chế độ không có hậu xử lý ở mức 70,40% - cho thấy bước gán định danh UMLS CUI và khử trùng lặp tại Giai đoạn 4 đóng góp trực tiếp vào việc loại bỏ thực thể trùng và nâng cao độ chính xác của bộ ba cuối cùng. Recall tăng từ 51,98% lên 74,44% nhờ quá trình hợp nhất từ đồng nghĩa và viết tắt về một CUI duy nhất giúp hệ thống nhận diện thêm các thực thể vốn bị bỏ sót do biến thể bề mặt.
 
