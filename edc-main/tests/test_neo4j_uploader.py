@@ -62,15 +62,15 @@ class TestNeo4jUploader(unittest.TestCase):
         mock_driver.session.return_value.__enter__.return_value = mock_session
         
         nodes = [
-            {"id": "N1", "labels": ["Concept", "Disease"], "properties": {"name": "T2DM"}},
-            {"id": "N2", "labels": ["Concept", "Drug"], "properties": {"name": "Metformin"}},
-            {"id": "N3", "labels": ["Concept", "Disease"], "properties": {"name": "T1DM"}},
+            {"id": "N1", "labels": ["Disease"], "properties": {"name": "T2DM"}},
+            {"id": "N2", "labels": ["Drug"], "properties": {"name": "Metformin"}},
+            {"id": "N3", "labels": ["Disease"], "properties": {"name": "T1DM"}},
         ]
         
         self.uploader.driver = mock_driver
         self.uploader.upload_nodes(nodes)
         
-        # Should call session.run twice (one for :Concept:Disease, one for :Concept:Drug)
+        # Should call session.run twice (one for :Disease, one for :Drug)
         self.assertEqual(mock_session.run.call_count, 2)
         
         # Verify the queries were structured correctly
@@ -78,8 +78,8 @@ class TestNeo4jUploader(unittest.TestCase):
         queries = [call[0][0] for call in calls]
         
         # Check label combinations
-        self.assertTrue(any("Concept:Disease" in q for q in queries))
-        self.assertTrue(any("Concept:Drug" in q for q in queries))
+        self.assertTrue(any("n:Disease" in q for q in queries))
+        self.assertTrue(any("n:Drug" in q for q in queries))
 
     @patch("post_processing.neo4j_uploader.GraphDatabase")
     def test_upload_relationships_grouping(self, mock_graph_db):
@@ -91,21 +91,21 @@ class TestNeo4jUploader(unittest.TestCase):
         
         relationships = [
             {"start": "N1", "end": "N2", "type": "treated_by", "properties": {"confidence": 0.9}},
-            {"start": "N2", "end": "N3", "type": "decreases", "properties": {"confidence": 0.85}},
+            {"start": "N2", "end": "N3", "type": "increases_risk_of", "properties": {"confidence": 0.85}},
             {"start": "N3", "end": "N4", "type": "treated_by", "properties": {}},
         ]
         
         self.uploader.driver = mock_driver
         self.uploader.upload_relationships(relationships)
         
-        # Should call session.run twice (one for treated_by, one for decreases)
+        # Should call session.run twice (one for treated_by, one for increases_risk_of)
         self.assertEqual(mock_session.run.call_count, 2)
         
         calls = mock_session.run.call_args_list
         queries = [call[0][0] for call in calls]
         
         self.assertTrue(any("[r:TREATED_BY]" in q or "[r:treated_by]" in q.lower() for q in queries))
-        self.assertTrue(any("[r:DECREASES]" in q or "[r:decreases]" in q.lower() for q in queries))
+        self.assertTrue(any("[r:INCREASES_RISK_OF]" in q or "[r:increases_risk_of]" in q.lower() for q in queries))
 
 
 if __name__ == "__main__":

@@ -86,8 +86,9 @@ class Neo4jUploader:
         """Creates unique constraints and indexes to optimize matching performance."""
         logger.info("Creating unique constraints and indexes on specific node labels...")
         labels_to_index = [
-            "Concept", "Disease", "Drug", "Symptom", 
-            "Anatomical_Site", "Clinical_Metric", "Treatment_Procedure"
+            "Disease", "Symptom", "Drug", "Treatment_Procedure", "Dosage_Value", 
+            "Clinical_Metric", "Biomarker", "Nutrient", "Clinical_Rule", "Risk_Factor", 
+            "Anatomical_Site"
         ]
         with self.driver.session(database=self.database) as session:
             for label in labels_to_index:
@@ -106,20 +107,44 @@ class Neo4jUploader:
         logger.info(f"Importing {len(nodes)} nodes...")
         start_time = time.monotonic()
         
+        # Valid labels matching Bảng 3.3
+        VALID_LABELS = {
+            "Disease", "Symptom", "Drug", "Treatment_Procedure", "Dosage_Value", 
+            "Clinical_Metric", "Biomarker", "Nutrient", "Clinical_Rule", "Risk_Factor", 
+            "Anatomical_Site"
+        }
+        
         # Group nodes by their labels set to batch them with specific Cypher MERGE queries
         grouped_nodes: Dict[str, List[Dict[str, Any]]] = {}
+        skipped_count = 0
+        
         for node in nodes:
             node_id = node.get("id")
-            labels = sorted(node.get("labels", ["Concept"]))
+            labels = node.get("labels", [])
             properties = node.get("properties", {})
             
-            # Form clean label string (e.g. :Concept:Disease)
-            # Filter labels to ensure they are safe alphanumeric strings
-            clean_labels = [l.replace(" ", "_") for l in labels if l.replace(" ", "_").isalnum()]
-            if not clean_labels:
-                clean_labels.append("Concept")
+            # Normalize labels (replace space/dash with underscore and match)
+            normalized_labels = []
+            for l in labels:
+                normalized = l.strip().replace(" ", "_").replace("-", "_")
+                # Normalize capitalization to match VALID_LABELS
+                matched_label = None
+                for val in VALID_LABELS:
+                    if val.lower() == normalized.lower():
+                        matched_label = val
+                        break
+                if matched_label:
+                    normalized_labels.append(matched_label)
             
-            group_key = ":".join(sorted(clean_labels))
+            # Filter labels to only include valid ones
+            clean_labels = sorted(list(set(normalized_labels)))
+            
+            # If no valid labels, skip the node
+            if not clean_labels:
+                skipped_count += 1
+                continue
+            
+            group_key = ":".join(clean_labels)
             if group_key not in grouped_nodes:
                 grouped_nodes[group_key] = []
                 
@@ -127,6 +152,9 @@ class Neo4jUploader:
                 "id": node_id,
                 "properties": properties
             })
+
+        if skipped_count > 0:
+            logger.info(f"Skipped {skipped_count} nodes because they did not contain any valid labels from Table 3.3 (Concept, Device, Finding, etc. are filtered out).")
 
         total_imported = 0
         with self.driver.session(database=self.database) as session:
@@ -155,13 +183,25 @@ class Neo4jUploader:
         logger.info(f"Importing {len(relationships)} relationships...")
         start_time = time.monotonic()
 
+        # Valid relationship types matching Bảng 3.4
+        VALID_REL_TYPES = {
+            "IS_A", "HAS_ANATOMIC_SITE", "CAUSE_OF", "HAS_FINDING", "HAS_BIOMARKER",
+            "CO_OCCURS_WITH", "TREATED_BY", "HAS_ADVERSE_EFFECT", "CONTRAINDICATED_WITH",
+            "PREFERRED_OVER", "HAS_EVALUATION", "HAS_TITRATION_RULE", "INCREASES_RISK_OF",
+            "ADMINISTERED_VIA", "DISPENSES"
+        }
+
         # Group relationships by their relationship type
         grouped_rels: Dict[str, List[Dict[str, Any]]] = {}
+        skipped_count = 0
+        
         for rel in relationships:
             rel_type = rel.get("type", "RELATED_TO").upper().strip().replace(" ", "_")
-            # Ensure type is safe alphanumeric
-            if not rel_type.replace("_", "").isalnum():
-                rel_type = "RELATED_TO"
+            
+            # Filter relationship types to only include valid ones
+            if rel_type not in VALID_REL_TYPES:
+                skipped_count += 1
+                continue
                 
             if rel_type not in grouped_rels:
                 grouped_rels[rel_type] = []
@@ -171,6 +211,9 @@ class Neo4jUploader:
                 "end": rel.get("end"),
                 "properties": rel.get("properties", {})
             })
+
+        if skipped_count > 0:
+            logger.info(f"Skipped {skipped_count} relationships because they were not in the 15 types of Table 3.4 (DECREASES, RELATION, etc. are filtered out).")
 
         total_imported = 0
         with self.driver.session(database=self.database) as session:
