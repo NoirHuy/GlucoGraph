@@ -1,0 +1,3643 @@
+{
+  "nodes": [
+    {
+      "id": "autoimmune pancreatic beta-cell destruction",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "autoimmune pancreatic beta-cell destruction",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diabetes Mellitus",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011849",
+        "umls_canonical": "Diabetes Mellitus",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E08-E13",
+        "description": "UMLS Standard Term: Diabetes Mellitus",
+        "aliases": [
+          "Diabetes mellitus",
+          "diabetes",
+          "diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "absent or severely deficient insulin production",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "absent or severely deficient insulin production",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "patients with type 1 diabetes mellitus younger than 30 years",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "patients with type 1 diabetes mellitus younger than 30 years",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "DR3-DQ2.5 haplotype",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "DR3-DQ2.5 haplotype",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "T cell-mediated immune response",
+      "labels": [
+        "Clinical Rule"
+      ],
+      "properties": {
+        "umls_canonical": "T cell-mediated immune response",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "beta-cell destruction",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "beta-cell destruction",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulitis",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "insulitis",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Coxsackievirus",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "Coxsackievirus",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diabetes Mellitus, Insulin-Dependent",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0011854",
+        "umls_canonical": "Diabetes Mellitus, Insulin-Dependent",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E10",
+        "description": "UMLS Standard Term: Diabetes Mellitus, Insulin-Dependent",
+        "aliases": [
+          "Type 1 Diabetes",
+          "Type 1 diabetes",
+          "Type 1 diabetes mellitus",
+          "type 1 diabetes",
+          "type 1 diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "Rubella",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0035920",
+        "umls_canonical": "Rubella",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "B06.9",
+        "description": "Nakažlivé virové onemocnění s inkubační dobou okolo dvou týdnů. Patří mezi exantémové infekce. Projevuje se celkovými příznaky podobnými chřipce, zduřením mízních uzlin a vyrážkou. Nebezpečné je onemocnění matky v době těhotenství (první tři měsíce), protože virus může těžce poškodit plod (srdeční vady, hluchota, katarakta). Onemocnění zanechává imunitu a existuje proti němu očkování. (cit. Velký lékařský slovník online, 2015 http://lekarske.slovniky.cz)",
+        "aliases": []
+      }
+    },
+    {
+      "id": "beta cells",
+      "labels": [
+        "Anatomical Site"
+      ],
+      "properties": {
+        "umls_canonical": "beta cells",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "latent autoimmune diabetes of adulthood",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "latent autoimmune diabetes of adulthood",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diabetes, Autoimmune",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0205734",
+        "umls_canonical": "Diabetes, Autoimmune",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Diabetes, Autoimmune",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Autoimmune diabetes"
+        ]
+      }
+    },
+    {
+      "id": "Insulin dependent diabetes mellitus type 1B",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0271637",
+        "umls_canonical": "Insulin dependent diabetes mellitus type 1B",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Insulin dependent diabetes mellitus type 1B",
+        "icd10_code": "NONE",
+        "aliases": [
+          "idiopathic type 1 diabetes"
+        ]
+      }
+    },
+    {
+      "id": "islet cell autoantibodies",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "islet cell autoantibodies",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin autoantibodies",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "insulin autoantibodies",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "teplizumab",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C2743673",
+        "umls_canonical": "teplizumab",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Immunologic Factor (T129)",
+        "rxnorm_id": "2621880",
+        "description": "UMLS Standard Term: teplizumab",
+        "aliases": [
+          "Teplizumab"
+        ]
+      }
+    },
+    {
+      "id": "Monoclonal Antibodies",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0003250",
+        "umls_canonical": "Monoclonal Antibodies",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Immunologic Factor (T129)",
+        "description": "UMLS Standard Term: Monoclonal Antibodies",
+        "rxnorm_id": "NONE",
+        "aliases": [
+          "monoclonal antibody"
+        ]
+      }
+    },
+    {
+      "id": "autoimmune response",
+      "labels": [
+        "Clinical Rule"
+      ],
+      "properties": {
+        "umls_canonical": "autoimmune response",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diabetes mellitus type 1 stage 1",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C5847614",
+        "umls_canonical": "Diabetes mellitus type 1 stage 1",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Represents individuals who have developed two or more type 1 diabetes-associated islet autoantibodies but are normoglycemic.",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Stage 1 of type 1 diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "≥ 2 islet autoantibodies",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "≥ 2 islet autoantibodies",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diabetes mellitus type 1 stage 2",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C5847615",
+        "umls_canonical": "Diabetes mellitus type 1 stage 2",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Includes individuals with two or more islet autoantibodies but whose disease has now progressed to the development of glucose intolerance, or dysglycemia, from loss of functional β-cell mass.",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Stage 2 of type 1 diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "Impaired glucose tolerance (disorder)",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0271650",
+        "umls_canonical": "Impaired glucose tolerance (disorder)",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "R73.03",
+        "description": "UMLS Standard Term: Impaired glucose tolerance (disorder)",
+        "aliases": [
+          "glucose intolerance"
+        ]
+      }
+    },
+    {
+      "id": "Dysglycemia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C1960636",
+        "umls_canonical": "Dysglycemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Dysglycemia",
+        "aliases": [
+          "dysglycemia"
+        ]
+      }
+    },
+    {
+      "id": "Diabetes mellitus type 1 stage 3",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C5847622",
+        "umls_canonical": "Diabetes mellitus type 1 stage 3",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "Represents manifestations of the typical clinical symptoms and signs of Type 1 diabetes mellitus, which may include polyuria, polydipsia, weight loss, fatigue, diabetic ketoacidosis (DKA), and others.",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Stage 3 of type 1 diabetes mellitus"
+        ]
+      }
+    },
+    {
+      "id": "clinical symptoms",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "clinical symptoms",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Severe dehydration",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C3472181",
+        "umls_canonical": "Severe dehydration",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Severe dehydration",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "weakness in patients with type 1 diabetes mellitus",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "weakness in patients with type 1 diabetes mellitus",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "fatigue in patients with type 1 diabetes mellitus",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "fatigue in patients with type 1 diabetes mellitus",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "mental status changes in patients with type 1 diabetes mellitus",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "mental status changes in patients with type 1 diabetes mellitus",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Hyperglycemia",
+      "labels": [
+        "Clinical Metric",
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0020456",
+        "umls_canonical": "Hyperglycemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "R73.9",
+        "description": "UMLS Standard Term: Hyperglycemia",
+        "aliases": [
+          "hyperglycemia"
+        ]
+      }
+    },
+    {
+      "id": "Weight Loss",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C1262477",
+        "umls_canonical": "Weight Loss",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "Snížení tělesné hmotnosti během časového intervalu.",
+        "aliases": [
+          "weight loss"
+        ]
+      }
+    },
+    {
+      "id": "Blurred vision",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0344232",
+        "umls_canonical": "Blurred vision",
+        "umls_semantic_type": "Finding (T033)",
+        "description": "Lack of sharpness of vision resulting in the inability to see fine detail. [https://orcid.org/0000-0002-0736-9199]",
+        "aliases": [
+          "blurred vision"
+        ]
+      }
+    },
+    {
+      "id": "Diabetic Ketoacidosis",
+      "labels": [
+        "Disease",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0011880",
+        "umls_canonical": "Diabetic Ketoacidosis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Diabetic Ketoacidosis",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Diabetic ketoacidosis",
+          "diabetic ketoacidosis"
+        ]
+      }
+    },
+    {
+      "id": "honeymoon phase",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "honeymoon phase",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Plasma fasting glucose measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0583513",
+        "umls_canonical": "Plasma fasting glucose measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "UMLS Standard Term: Plasma fasting glucose measurement",
+        "aliases": [
+          "fasting plasma glucose"
+        ]
+      }
+    },
+    {
+      "id": "glycosylated hemoglobin",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "glycosylated hemoglobin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Oral Glucose Tolerance Test",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0029161",
+        "umls_canonical": "Oral Glucose Tolerance Test",
+        "umls_semantic_type": "Diagnostic Procedure (T060)",
+        "description": "UMLS Standard Term: Oral Glucose Tolerance Test",
+        "aliases": [
+          "oral glucose tolerance test"
+        ]
+      }
+    },
+    {
+      "id": "Autoantibodies",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_cui": "C0004358",
+        "umls_canonical": "Autoantibodies",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Immunologic Factor (T129)",
+        "description": "UMLS Standard Term: Autoantibodies",
+        "aliases": [
+          "autoantibodies"
+        ]
+      }
+    },
+    {
+      "id": "C-peptide",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "C-peptide",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "genetic markers",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "genetic markers",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Plasma random glucose measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0583512",
+        "umls_canonical": "Plasma random glucose measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "UMLS Standard Term: Plasma random glucose measurement",
+        "aliases": [
+          "random glucose"
+        ]
+      }
+    },
+    {
+      "id": "symptoms",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "symptoms",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "autoimmune destruction of beta cells",
+      "labels": [
+        "Disease",
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "autoimmune destruction of beta cells",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": [
+          "Autoimmune destruction of beta cells"
+        ]
+      }
+    },
+    {
+      "id": "islet cell antibody",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_cui": "C0063900",
+        "umls_canonical": "islet cell antibody",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Immunologic Factor (T129)",
+        "description": "UMLS Standard Term: islet cell antibody",
+        "aliases": [
+          "antibodies to islet cells"
+        ]
+      }
+    },
+    {
+      "id": "Glutamic Acid Decarboxylase Antibody",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_cui": "C0443891",
+        "umls_canonical": "Glutamic Acid Decarboxylase Antibody",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Immunologic Factor (T129)",
+        "description": "UMLS Standard Term: Glutamic Acid Decarboxylase Antibody",
+        "aliases": [
+          "antibodies to glutamic acid decarboxylase"
+        ]
+      }
+    },
+    {
+      "id": "antibodies to islet antigen 2",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "antibodies to islet antigen 2",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "antibodies to zinc transporter 8",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "antibodies to zinc transporter 8",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "younger age at presentation",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "younger age at presentation",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Polydipsia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0085602",
+        "umls_canonical": "Polydipsia",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R63.1",
+        "description": "UMLS Standard Term: Polydipsia",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Polyuria",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0032617",
+        "umls_canonical": "Polyuria",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R35",
+        "description": "UMLS Standard Term: Polyuria",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Insulin shock therapy",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0021646",
+        "umls_canonical": "Insulin shock therapy",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "UMLS Standard Term: Insulin shock therapy",
+        "aliases": [
+          "insulin therapy"
+        ]
+      }
+    },
+    {
+      "id": "dietary management",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "dietary management",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": [
+          "Dietary management"
+        ]
+      }
+    },
+    {
+      "id": "Glycemic Control",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C5392125",
+        "umls_canonical": "Glycemic Control",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "Strategie pro regulaci hladiny krevní glukózy. Patří sem podávání inzulinu, dietoterapie a cvičení.",
+        "aliases": [
+          "glucose control"
+        ]
+      }
+    },
+    {
+      "id": "Basal-bolus insulin therapy",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Basal-bolus insulin therapy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "patients with type 1 diabetes",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "patients with type 1 diabetes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "longer-acting insulin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "longer-acting insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "continuous subcutaneous infusion of rapid-acting insulin",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "continuous subcutaneous infusion of rapid-acting insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "postprandial glucose excursions",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "postprandial glucose excursions",
+        "description": "Raw uncanonicalized concept: postprandial glucose excursions (Fallback due to ontology mismatch)",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "aliases": []
+      }
+    },
+    {
+      "id": "shorter-acting insulin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "shorter-acting insulin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "carbohydrate counting",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "carbohydrate counting",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "patients with diabetes who take multiple daily injections",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "patients with diabetes who take multiple daily injections",
+        "description": "Raw uncanonicalized concept: patients with diabetes who take multiple daily injections (Fallback due to ontology mismatch)",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "aliases": []
+      }
+    },
+    {
+      "id": "automated insulin delivery systems",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "automated insulin delivery systems",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "HbA1C levels",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "HbA1C levels",
+        "description": "Raw uncanonicalized concept: HbA1C levels (Fallback due to ontology mismatch)",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hybrid closed-loop systems",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "hybrid closed-loop systems",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": [
+          "Hybrid closed-loop systems"
+        ]
+      }
+    },
+    {
+      "id": "Hypoglycemia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0020615",
+        "umls_canonical": "Hypoglycemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E16.2",
+        "description": "UMLS Standard Term: Hypoglycemia",
+        "aliases": [
+          "hypoglycemia"
+        ]
+      }
+    },
+    {
+      "id": "nocturnal hypoglycemia",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "nocturnal hypoglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hypoglycemia unawareness",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "hypoglycemia unawareness",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "pramlintide",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0537551",
+        "umls_canonical": "pramlintide",
+        "umls_semantic_type": "Amino Acid, Peptide, or Protein (T116), Pharmacologic Substance (T121), Hormone (T125)",
+        "rxnorm_id": "139953",
+        "description": "A peptide analogue of human amylin with 3 proline substitutions at positions 25, 28 and 29, with antihyperglycemic activity. By mimicking amylin, pramlintide slows gastric emptying, inhibits digestive secretions (gastric acid, pancreatic enzymes, and bile), reduces glucagon secretion, and increases satiety; all of these actions are mediated mostly by glucose-sensitive areas in the brain stem. The overall result is a decrease in blood glucose levels. The use of pramlintide may cause an increased risk of insulin-induced hypoglycemia.",
+        "aliases": [
+          "Pramlintide"
+        ]
+      }
+    },
+    {
+      "id": "amylin analogue",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "amylin analogue",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "patients with diabetes",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "patients with diabetes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hypertension",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "hypertension",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Chronic Kidney Diseases",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C1561643",
+        "umls_canonical": "Chronic Kidney Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "N18",
+        "description": "<p>You have two kidneys, each about the size of your fist. Their main job is to filter your blood. They remove wastes and extra water, which become urine. They also keep the body's chemicals balanced, help control blood pressure, and make hormones.</p> <p>Chronic kidney disease (CKD) means that your kidneys are damaged and can't filter blood as they should. This damage can cause wastes to build up in your body. It can also cause other problems that can harm your health. Diabetes and high blood pressure are the most common causes of CKD.</p> <p>The kidney damage occurs slowly over many years. Many people don't have any symptoms until their kidney disease is very advanced. <a href=\"https://medlineplus.gov/kidneytests.html\">Blood and urine tests</a> are the only way to know if you have kidney disease.</p> <p>Treatments cannot cure kidney disease, but they may slow kidney disease. They include <a href=\"https://medlineplus.gov/bloodpressuremedicines.html\">medicines to lower blood pressure</a>, control <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, and lower <a href=\"https://medlineplus.gov/cholesterol.html\">cholesterol</a>. CKD may still get worse over time. Sometimes it can lead to <a href=\"https://medlineplus.gov/kidneyfailure.html\">kidney failure</a>. If your kidneys fail, you will need <a href=\"https://medlineplus.gov/dialysis.html\">dialysis</a> or a <a href=\"https://medlineplus.gov/kidneytransplantation.html\">kidney transplantation</a>.</p> <p>You can take steps to keep your kidneys healthier longer:</p> <ul> <li>Choose foods with less <a href=\"https://medlineplus.gov/sodium.html\">salt</a> (sodium)</li> <li><a href=\"https://medlineplus.gov/howtopreventhighbloodpressure.html\">Control your blood pressure</a>; your health care provider can tell you what your blood pressure should be</li> <li>Keep your blood sugar in the target range, if you have <a href=\"https://medlineplus.gov/diabetes.html\">diabetes</a></li> <li>Limit the amount of alcohol you drink</li> <li>Choose foods that are healthy for your heart: fruits, vegetables, whole grains, and low-fat dairy foods</li> <li>Lose weight if you are overweight</li> <li>Be physically active</li> <li>Don't smoke</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+        "aliases": [
+          "chronic kidney disease"
+        ]
+      }
+    },
+    {
+      "id": "albuminuria",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "albuminuria",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "reduced glomerular filtration rate",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "reduced glomerular filtration rate",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Formal diabetes education",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Formal diabetes education",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diabetes self-management education and support",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Diabetes self-management education and support",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Education",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Education",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "pharmacologic therapy",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "pharmacologic therapy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diabetes mellitus diet education",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0562216",
+        "umls_canonical": "Diabetes mellitus diet education",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "UMLS Standard Term: Diabetes mellitus diet education",
+        "aliases": [
+          "Diabetes education"
+        ]
+      }
+    },
+    {
+      "id": "Individualized medical nutrition therapy",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Individualized medical nutrition therapy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "physician counseling",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "physician counseling",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Diet",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Diet",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "overall glycemic control",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "overall glycemic control",
+        "description": "Raw uncanonicalized concept: overall glycemic control (Fallback due to ontology mismatch)",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Regular physical activity",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Regular physical activity",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": [
+          "regular physical activity"
+        ]
+      }
+    },
+    {
+      "id": "exercise",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "exercise",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "physical activity",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "physical activity",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Resistance Training",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0872279",
+        "umls_canonical": "Resistance Training",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "Druh cvičebního programu na budování síly, který vyžaduje, aby sval vyvíjel sílu proti nějaké formě odporu, jako je hmotnost, napínací pásky, voda nebo nepohyblivé předměty. Odporové cvičení je kombinací statických a dynamických kontrakcí zahrnujících zkrácení a prodloužení kosterních svalů.",
+        "aliases": [
+          "strength training"
+        ]
+      }
+    },
+    {
+      "id": "Finding of blood glucose level",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0428554",
+        "umls_canonical": "Finding of blood glucose level",
+        "umls_semantic_type": "Laboratory or Test Result (T034)",
+        "description": "UMLS Standard Term: Finding of blood glucose level",
+        "aliases": [
+          "blood glucose levels"
+        ]
+      }
+    },
+    {
+      "id": "Neuropathy",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0442874",
+        "umls_canonical": "Neuropathy",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "G62.9",
+        "description": "A disorder affecting the cranial nerves or the peripheral nervous system. It manifests with pain, tingling, numbness, and muscle weakness. It may be the result of physical injury, toxic substances, viral diseases, diabetes, renal failure, cancer, and drugs.",
+        "aliases": [
+          "neuropathy"
+        ]
+      }
+    },
+    {
+      "id": "retinopathy",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "retinopathy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "10 g monofilament test",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "10 g monofilament test",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "pinprick testing",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "pinprick testing",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "temperature testing",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "temperature testing",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Nasal vibration test",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0234871",
+        "umls_canonical": "Nasal vibration test",
+        "umls_semantic_type": "Diagnostic Procedure (T060)",
+        "description": "UMLS Standard Term: Nasal vibration test",
+        "aliases": [
+          "vibration testing"
+        ]
+      }
+    },
+    {
+      "id": "calluses",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "calluses",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "podiatric care",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "podiatric care",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "circulatory impairment",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "circulatory impairment",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "ulcers",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "ulcers",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "dry, scaly skin",
+      "labels": [
+        "Anatomical Site"
+      ],
+      "properties": {
+        "umls_canonical": "dry, scaly skin",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "lanolin",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_cui": "C0023024",
+        "umls_canonical": "lanolin",
+        "umls_semantic_type": "Organic Chemical (T109), Pharmacologic Substance (T121)",
+        "rxnorm_id": "6227",
+        "description": "UMLS Standard Term: lanolin",
+        "aliases": []
+      }
+    },
+    {
+      "id": "bunion",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "bunion",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "foot deformity",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "foot deformity",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "neuropathic foot ulcers",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "neuropathic foot ulcers",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Debridement",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0011079",
+        "umls_canonical": "Debridement",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "UMLS Standard Term: Debridement",
+        "aliases": []
+      }
+    },
+    {
+      "id": "antibiotics",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "antibiotics",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "neuropathic joint",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "neuropathic joint",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "short leg braces",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "short leg braces",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "molded shoes",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "molded shoes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "sponge-rubber arch supports",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "sponge-rubber arch supports",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "prostheses",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "prostheses",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "insulin delivery",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "insulin delivery",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Pancreas Transplantation",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0030275",
+        "umls_canonical": "Pancreas Transplantation",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "UMLS Standard Term: Pancreas Transplantation",
+        "aliases": [
+          "Pancreas transplantation"
+        ]
+      }
+    },
+    {
+      "id": "Islets of Langerhans Transplantation",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0079646",
+        "umls_canonical": "Islets of Langerhans Transplantation",
+        "umls_semantic_type": "Therapeutic or Preventive Procedure (T061)",
+        "description": "UMLS Standard Term: Islets of Langerhans Transplantation",
+        "aliases": [
+          "pancreatic islet cell transplantation",
+          "transplantation of pancreatic islet cells"
+        ]
+      }
+    },
+    {
+      "id": "donislecel",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "donislecel",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Portal vein structure",
+      "labels": [
+        "Anatomical Site"
+      ],
+      "properties": {
+        "umls_cui": "C0032718",
+        "umls_canonical": "Portal vein structure",
+        "umls_semantic_type": "Body Part, Organ, or Organ Component (T023)",
+        "description": "UMLS Standard Term: Portal vein structure",
+        "aliases": [
+          "portal vein"
+        ]
+      }
+    },
+    {
+      "id": "stem-cell derived islet cell preparations",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "stem-cell derived islet cell preparations",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "zimislecel",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "zimislecel",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Type 1 Diabetes treatment",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Type 1 Diabetes treatment",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "symptoms of Diabetes mellitus",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "symptoms of Diabetes mellitus",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Plasma Glucose Measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0202042",
+        "umls_canonical": "Plasma Glucose Measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "Glucose Plasma Concentration (GPC) measurement is an essential diagnostic modality for different types of carbohydrate metabolism derangements including diabetes mellitus. The disordered carbohydrate metabolism that underlies diabetes manifests as hyperglycemia. Plasma glucose concentrations in healthy individuals vary with age. Normal fasting plasma glucose intervals (in the morning after an overnight fast) in children are 3.3 - 5.6 mmol/L (60-100 mg/dL); adult range - 4.1- 5.9 mmol/L (74-106 mg/dL). GPCs are approximately 11% higher than whole blood if the hematocrit is normal. Glucose concentrations in heparinized plasma are reported to be 5% lower than in serum.",
+        "aliases": [
+          "Plasma glucose"
+        ]
+      }
+    },
+    {
+      "id": "continuous glucose monitoring",
+      "labels": [
+        "Clinical Metric",
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "continuous glucose monitoring",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": [
+          "Continuous Glucose Monitors"
+        ]
+      }
+    },
+    {
+      "id": "medications that induce hypoglycemia",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "medications that induce hypoglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "tighter glycemic control",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "tighter glycemic control",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Glucose levels",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "Glucose levels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "medications",
+      "labels": [
+        "Drug"
+      ],
+      "properties": {
+        "umls_canonical": "medications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "rxnorm_id": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "blood glucose level testing",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "blood glucose level testing",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "self-monitoring of blood glucose levels",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "self-monitoring of blood glucose levels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Real-time continuous glucose monitoring",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Real-time continuous glucose monitoring",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Continuous glucose monitoring systems",
+      "labels": [
+        "Device"
+      ],
+      "properties": {
+        "umls_canonical": "Continuous glucose monitoring systems",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Intermittently scanned continuous glucose monitoring",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "Intermittently scanned continuous glucose monitoring",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Hemoglobin A1c measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C0474680",
+        "umls_canonical": "Hemoglobin A1c measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "<p>A1C is a blood test for <a href=\"https://medlineplus.gov/diabetestype2.html\">type 2 diabetes</a> and <a href=\"https://medlineplus.gov/prediabetes.html\">prediabetes</a>. It measures your average blood glucose, or <a href=\"https://medlineplus.gov/bloodglucose.html\">blood sugar</a>, level over the past 3 months. Doctors may use the A1C alone or in combination with other diabetes tests to make a diagnosis. They also use the A1C to see how well you are managing your diabetes. This test is different from the blood sugar checks that people with diabetes do every day.</p> <p>Your A1C test result is given in percentages. The higher the percentage, the higher your blood sugar levels have been:</p> <ul> <li>A normal A1C level is below 5.7%</li> <li>Prediabetes is between 5.7 to 6.4%. Having prediabetes is a risk factor for getting type 2 diabetes. People with prediabetes may need retests every year.</li> <li>Type 2 diabetes is above 6.5%</li> <li>If you have diabetes, you should have the A1C test at least twice a year. The A1C goal for many people with diabetes is below 7. It may be different for you. Ask what your goal should be. If your A1C result is too high, you may need to change your diabetes care plan.</li> </ul> <p class=\"\">NIH: National Institute of Diabetes and Digestive and Kidney Diseases</p>",
+        "aliases": [
+          "Hemoglobin A1C (HbA1C)",
+          "Hemoglobin A1C (HbA1C) levels"
+        ]
+      }
+    },
+    {
+      "id": "low red blood cell turnover",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "low red blood cell turnover",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Vitamin B12 deficiency anemia",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C2004521",
+        "umls_canonical": "Vitamin B12 deficiency anemia",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "D51",
+        "description": "Evidence of vitamin B12 deficiency anemia.",
+        "aliases": [
+          "vitamin B12 deficiency anemia"
+        ]
+      }
+    },
+    {
+      "id": "Falsely normal HbA1C values",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "Falsely normal HbA1C values",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "increased red blood cell turnover",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "increased red blood cell turnover",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hemolytic anemias",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "hemolytic anemias",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "HbS disease",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "HbS disease",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Hemoglobinopathies",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0019045",
+        "umls_canonical": "Hemoglobinopathies",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "D58.2",
+        "description": "UMLS Standard Term: Hemoglobinopathies",
+        "aliases": [
+          "hemoglobinopathies"
+        ]
+      }
+    },
+    {
+      "id": "HbC disease",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "HbC disease",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "hemoglobinopathy",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "hemoglobinopathy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Deficiency anemias",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0041782",
+        "umls_canonical": "Deficiency anemias",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Deficiency anemias",
+        "icd10_code": "NONE",
+        "aliases": [
+          "deficiency anemias"
+        ]
+      }
+    },
+    {
+      "id": "Fructosamine",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_cui": "C0060765",
+        "umls_canonical": "Fructosamine",
+        "umls_semantic_type": "Organic Chemical (T109)",
+        "description": "An amino sugar formed when glucose non-enzymatically reacts with the N-terminal amino group of proteins. The fructose moiety is derived from glucose by the classical Amadori rearrangement.",
+        "aliases": []
+      }
+    },
+    {
+      "id": "other glycosylated proteins",
+      "labels": [
+        "Biomarker"
+      ],
+      "properties": {
+        "umls_canonical": "other glycosylated proteins",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Ketoacidosis",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0220982",
+        "umls_canonical": "Ketoacidosis",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Ketoacidosis",
+        "icd10_code": "NONE",
+        "aliases": [
+          "ketoacidosis"
+        ]
+      }
+    },
+    {
+      "id": "Nausea",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0027497",
+        "umls_canonical": "Nausea",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R11.0",
+        "description": "UMLS Standard Term: Nausea",
+        "aliases": [
+          "nausea"
+        ]
+      }
+    },
+    {
+      "id": "Vomiting",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0042963",
+        "umls_canonical": "Vomiting",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R11.1",
+        "description": "UMLS Standard Term: Vomiting",
+        "aliases": [
+          "vomiting"
+        ]
+      }
+    },
+    {
+      "id": "Abdominal Pain",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_cui": "C0000737",
+        "umls_canonical": "Abdominal Pain",
+        "umls_semantic_type": "Sign or Symptom (T184)",
+        "icd10_code": "R10.9",
+        "description": "Pocit nevolnosti, obtíží nebo bolesti v břišní oblasti; obvykle při funkčních poruchách, tkáňových poraněních nebo nemocech.",
+        "aliases": [
+          "abdominal pain"
+        ]
+      }
+    },
+    {
+      "id": "cold or flu-like symptoms",
+      "labels": [
+        "Symptom"
+      ],
+      "properties": {
+        "umls_canonical": "cold or flu-like symptoms",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "autoimmune comorbidities specific to type 1 diabetes",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "autoimmune comorbidities specific to type 1 diabetes",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "chronic hyperglycemia",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "chronic hyperglycemia",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Peripheral vascular complication",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0161817",
+        "umls_canonical": "Peripheral vascular complication",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "description": "UMLS Standard Term: Peripheral vascular complication",
+        "icd10_code": "NONE",
+        "aliases": [
+          "vascular complications"
+        ]
+      }
+    },
+    {
+      "id": "small vessels",
+      "labels": [
+        "Anatomical Site"
+      ],
+      "properties": {
+        "umls_canonical": "small vessels",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Large blood vessel structure",
+      "labels": [
+        "Anatomical Site"
+      ],
+      "properties": {
+        "umls_cui": "C0225990",
+        "umls_canonical": "Large blood vessel structure",
+        "umls_semantic_type": "Body Part, Organ, or Organ Component (T023)",
+        "description": "UMLS Standard Term: Large blood vessel structure",
+        "aliases": [
+          "large vessels"
+        ]
+      }
+    },
+    {
+      "id": "nephropathy",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "nephropathy",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Thyroid Diseases",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0040128",
+        "umls_canonical": "Thyroid Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "E07.9",
+        "description": "UMLS Standard Term: Thyroid Diseases",
+        "aliases": [
+          "Thyroid disease",
+          "thyroid disease"
+        ]
+      }
+    },
+    {
+      "id": "Celiac Disease",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0007570",
+        "umls_canonical": "Celiac Disease",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "K90.0",
+        "description": "UMLS Standard Term: Celiac Disease",
+        "aliases": [
+          "Celiac disease",
+          "celiac disease"
+        ]
+      }
+    },
+    {
+      "id": "Anemia, Pernicious",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0002892",
+        "umls_canonical": "Anemia, Pernicious",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "D51.0",
+        "description": "UMLS Standard Term: Anemia, Pernicious",
+        "aliases": [
+          "pernicious anemia"
+        ]
+      }
+    },
+    {
+      "id": "Autoimmune Diseases",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0004364",
+        "umls_canonical": "Autoimmune Diseases",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "M30-M36",
+        "description": "Poruchy charakterizované tvorbou protilátek, které reagují s hostitelskými tkáněmi nebo s imunitními efektorovými buňkami, které jsou autoreaktivní k endogenním peptidům.",
+        "aliases": [
+          "autoimmune diseases"
+        ]
+      }
+    },
+    {
+      "id": "dilated and comprehensive eye examination",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "dilated and comprehensive eye examination",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "foot examination with pulses, reflexes, temperature, pinprick sensation, vibration, and monofilament testing",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_canonical": "foot examination with pulses, reflexes, temperature, pinprick sensation, vibration, and monofilament testing",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "spot urine albumin-to-creatinine ratio",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "spot urine albumin-to-creatinine ratio",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "estimated glomerular filtration rate (eGFR)",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_canonical": "estimated glomerular filtration rate (eGFR)",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Heart failure",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_cui": "C0018801",
+        "umls_canonical": "Heart failure",
+        "umls_semantic_type": "Disease or Syndrome (T047)",
+        "icd10_code": "I50",
+        "description": "UMLS Standard Term: Heart failure",
+        "aliases": [
+          "heart failure"
+        ]
+      }
+    },
+    {
+      "id": "Plasma B natriuretic peptide measurement",
+      "labels": [
+        "Clinical Metric"
+      ],
+      "properties": {
+        "umls_cui": "C1446047",
+        "umls_canonical": "Plasma B natriuretic peptide measurement",
+        "umls_semantic_type": "Laboratory Procedure (T059)",
+        "description": "UMLS Standard Term: Plasma B natriuretic peptide measurement",
+        "aliases": [
+          "measurement of a natriuretic peptide"
+        ]
+      }
+    },
+    {
+      "id": "microvascular complications",
+      "labels": [
+        "Disease"
+      ],
+      "properties": {
+        "umls_canonical": "microvascular complications",
+        "umls_cui": "NONE",
+        "umls_semantic_type": "Unknown",
+        "description": "",
+        "icd10_code": "NONE",
+        "aliases": []
+      }
+    },
+    {
+      "id": "Screening procedure",
+      "labels": [
+        "Treatment Procedure"
+      ],
+      "properties": {
+        "umls_cui": "C0220908",
+        "umls_canonical": "Screening procedure",
+        "umls_semantic_type": "Diagnostic Procedure (T060)",
+        "description": "Evaluation strategies used to identify risk for conditions, diagnose disease early, and monitor change/progression over time.",
+        "aliases": [
+          "Screening"
+        ]
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "autoimmune pancreatic beta-cell destruction",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 97.35
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Diabetes Mellitus",
+      "type": "is_a",
+      "properties": {
+        "confidence": 99.3
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "absent or severely deficient insulin production",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 97.75
+      }
+    },
+    {
+      "start": "patients with type 1 diabetes mellitus younger than 30 years",
+      "end": "DR3-DQ2.5 haplotype",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 95.55
+      }
+    },
+    {
+      "start": "T cell-mediated immune response",
+      "end": "beta-cell destruction",
+      "type": "cause_of",
+      "properties": {
+        "confidence": 96.6
+      }
+    },
+    {
+      "start": "beta-cell destruction",
+      "end": "insulitis",
+      "type": "relation",
+      "properties": {
+        "confidence": 94.6
+      }
+    },
+    {
+      "start": "Coxsackievirus",
+      "end": "Diabetes Mellitus, Insulin-Dependent",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 93.0
+      }
+    },
+    {
+      "start": "Rubella",
+      "end": "beta cells",
+      "type": "has_anatomic_site",
+      "properties": {
+        "confidence": 83.67
+      }
+    },
+    {
+      "start": "Rubella",
+      "end": "beta-cell destruction",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 94.55
+      }
+    },
+    {
+      "start": "latent autoimmune diabetes of adulthood",
+      "end": "Diabetes, Autoimmune",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.95
+      }
+    },
+    {
+      "start": "Insulin dependent diabetes mellitus type 1B",
+      "end": "Diabetes Mellitus, Insulin-Dependent",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.95
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "islet cell autoantibodies",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 70.5
+      }
+    },
+    {
+      "start": "insulin autoantibodies",
+      "end": "Diabetes Mellitus, Insulin-Dependent",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 93.9
+      }
+    },
+    {
+      "start": "islet cell autoantibodies",
+      "end": "Diabetes Mellitus, Insulin-Dependent",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "teplizumab",
+      "end": "Monoclonal Antibodies",
+      "type": "is_a",
+      "properties": {
+        "confidence": 98.95
+      }
+    },
+    {
+      "start": "autoimmune response",
+      "end": "beta-cell destruction",
+      "type": "cause_of",
+      "properties": {
+        "confidence": 97.05
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "beta-cell destruction",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 83.85
+      }
+    },
+    {
+      "start": "Diabetes mellitus type 1 stage 1",
+      "end": "≥ 2 islet autoantibodies",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 97.35
+      }
+    },
+    {
+      "start": "Diabetes mellitus type 1 stage 2",
+      "end": "Impaired glucose tolerance (disorder)",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Diabetes mellitus type 1 stage 2",
+      "end": "Dysglycemia",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "Diabetes mellitus type 1 stage 3",
+      "end": "clinical symptoms",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 92.25
+      }
+    },
+    {
+      "start": "Severe dehydration",
+      "end": "weakness in patients with type 1 diabetes mellitus",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Severe dehydration",
+      "end": "fatigue in patients with type 1 diabetes mellitus",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 91.75
+      }
+    },
+    {
+      "start": "Severe dehydration",
+      "end": "mental status changes in patients with type 1 diabetes mellitus",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 94.2
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "Weight Loss",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 82.22
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "Blurred vision",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Diabetic Ketoacidosis",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "honeymoon phase",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Plasma fasting glucose measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 82.89
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "glycosylated hemoglobin",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Oral Glucose Tolerance Test",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Autoantibodies",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "C-peptide",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "genetic markers",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 92.3
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Plasma random glucose measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 93.45
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "symptoms",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 91.3
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "autoimmune destruction of beta cells",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.15
+      }
+    },
+    {
+      "start": "autoimmune destruction of beta cells",
+      "end": "islet cell antibody",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "autoimmune destruction of beta cells",
+      "end": "Glutamic Acid Decarboxylase Antibody",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "autoimmune destruction of beta cells",
+      "end": "antibodies to islet antigen 2",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "autoimmune destruction of beta cells",
+      "end": "antibodies to zinc transporter 8",
+      "type": "has_biomarker",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "younger age at presentation",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 94.05
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Polydipsia",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 95.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Polyuria",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Insulin shock therapy",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 98.55
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "dietary management",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Glycemic Control",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 92.25
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Basal-bolus insulin therapy",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.15
+      }
+    },
+    {
+      "start": "patients with type 1 diabetes",
+      "end": "longer-acting insulin",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.6
+      }
+    },
+    {
+      "start": "patients with type 1 diabetes",
+      "end": "continuous subcutaneous infusion of rapid-acting insulin",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.6
+      }
+    },
+    {
+      "start": "shorter-acting insulin",
+      "end": "postprandial glucose excursions",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "shorter-acting insulin",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "carbohydrate counting",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.8
+      }
+    },
+    {
+      "start": "patients with diabetes who take multiple daily injections",
+      "end": "automated insulin delivery systems",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "HbA1C levels",
+      "end": "automated insulin delivery systems",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.0
+      }
+    },
+    {
+      "start": "HbA1C levels",
+      "end": "hybrid closed-loop systems",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "hybrid closed-loop systems",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.55
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "hybrid closed-loop systems",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "nocturnal hypoglycemia",
+      "end": "hybrid closed-loop systems",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "hypoglycemia unawareness",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 94.3
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "nocturnal hypoglycemia",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "pramlintide",
+      "end": "amylin analogue",
+      "type": "is_a",
+      "properties": {
+        "confidence": 98.55
+      }
+    },
+    {
+      "start": "patients with diabetes",
+      "end": "pramlintide",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.55
+      }
+    },
+    {
+      "start": "hypertension",
+      "end": "patients with type 1 diabetes",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 92.3
+      }
+    },
+    {
+      "start": "Chronic Kidney Diseases",
+      "end": "albuminuria",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Chronic Kidney Diseases",
+      "end": "reduced glomerular filtration rate",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 97.05
+      }
+    },
+    {
+      "start": "patients with type 1 diabetes",
+      "end": "Formal diabetes education",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Diabetes self-management education and support",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Education",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "pharmacologic therapy",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 92.25
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Diabetes mellitus diet education",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 69.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Individualized medical nutrition therapy",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "physician counseling",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 91.25
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "dietary management",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.55
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Diet",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 92.25
+      }
+    },
+    {
+      "start": "overall glycemic control",
+      "end": "Regular physical activity",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Regular physical activity",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 56.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "exercise",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "physical activity",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Resistance Training",
+      "end": "physical activity",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Finding of blood glucose level",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 93.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Neuropathy",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 95.55
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "retinopathy",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.6
+      }
+    },
+    {
+      "start": "Neuropathy",
+      "end": "10 g monofilament test",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Neuropathy",
+      "end": "pinprick testing",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 94.55
+      }
+    },
+    {
+      "start": "Neuropathy",
+      "end": "temperature testing",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Neuropathy",
+      "end": "Nasal vibration test",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 94.25
+      }
+    },
+    {
+      "start": "calluses",
+      "end": "podiatric care",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "circulatory impairment",
+      "end": "calluses",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 90.25
+      }
+    },
+    {
+      "start": "circulatory impairment",
+      "end": "ulcers",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 94.25
+      }
+    },
+    {
+      "start": "dry, scaly skin",
+      "end": "lanolin",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "bunion",
+      "end": "foot deformity",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "neuropathic foot ulcers",
+      "end": "Debridement",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "neuropathic foot ulcers",
+      "end": "antibiotics",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 89.5
+      }
+    },
+    {
+      "start": "neuropathic joint",
+      "end": "short leg braces",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "neuropathic joint",
+      "end": "molded shoes",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "neuropathic joint",
+      "end": "sponge-rubber arch supports",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 92.35
+      }
+    },
+    {
+      "start": "neuropathic joint",
+      "end": "prostheses",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 82.53
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "insulin delivery",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 84.3
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Islets of Langerhans Transplantation",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Pancreas Transplantation",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.1
+      }
+    },
+    {
+      "start": "donislecel",
+      "end": "Portal vein structure",
+      "type": "administered_via",
+      "properties": {
+        "confidence": 96.3
+      }
+    },
+    {
+      "start": "stem-cell derived islet cell preparations",
+      "end": "Hyperglycemia",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "zimislecel",
+      "end": "Hyperglycemia",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "donislecel",
+      "end": "Hyperglycemia",
+      "type": "decreases",
+      "properties": {
+        "confidence": 100.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "stem-cell derived islet cell preparations",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "zimislecel",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "donislecel",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 84.3
+      }
+    },
+    {
+      "start": "Hyperglycemia",
+      "end": "Type 1 Diabetes treatment",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.5
+      }
+    },
+    {
+      "start": "symptoms of Diabetes mellitus",
+      "end": "Type 1 Diabetes treatment",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 95.4
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Plasma Glucose Measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "continuous glucose monitoring",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 94.0
+      }
+    },
+    {
+      "start": "medications that induce hypoglycemia",
+      "end": "Hypoglycemia",
+      "type": "has_adverse_effect",
+      "properties": {
+        "confidence": 93.75
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "tighter glycemic control",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 93.1
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Glucose levels",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 94.95
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "medications",
+      "type": "treated_by",
+      "properties": {
+        "confidence": 91.3
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Finding of blood glucose level",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 92.2
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "blood glucose level testing",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "self-monitoring of blood glucose levels",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "HbA1C levels",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Real-time continuous glucose monitoring",
+      "end": "Continuous glucose monitoring systems",
+      "type": "is_a",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Intermittently scanned continuous glucose monitoring",
+      "end": "Continuous glucose monitoring systems",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.2
+      }
+    },
+    {
+      "start": "Hypoglycemia",
+      "end": "continuous glucose monitoring",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "Hemoglobin A1c measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "patients with type 1 diabetes",
+      "end": "Hemoglobin A1c measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "low red blood cell turnover",
+      "end": "Vitamin B12 deficiency anemia",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 94.25
+      }
+    },
+    {
+      "start": "Falsely normal HbA1C values",
+      "end": "increased red blood cell turnover",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 97.05
+      }
+    },
+    {
+      "start": "increased red blood cell turnover",
+      "end": "hemolytic anemias",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "HbS disease",
+      "end": "Hemoglobinopathies",
+      "type": "is_a",
+      "properties": {
+        "confidence": 98.55
+      }
+    },
+    {
+      "start": "increased red blood cell turnover",
+      "end": "Hemoglobinopathies",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 94.55
+      }
+    },
+    {
+      "start": "HbC disease",
+      "end": "hemoglobinopathy",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.2
+      }
+    },
+    {
+      "start": "Vitamin B12 deficiency anemia",
+      "end": "Deficiency anemias",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.2
+      }
+    },
+    {
+      "start": "Fructosamine",
+      "end": "other glycosylated proteins",
+      "type": "relation",
+      "properties": {
+        "confidence": 80.72
+      }
+    },
+    {
+      "start": "Ketoacidosis",
+      "end": "Nausea",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 90.9
+      }
+    },
+    {
+      "start": "Ketoacidosis",
+      "end": "Vomiting",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Ketoacidosis",
+      "end": "Abdominal Pain",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Ketoacidosis",
+      "end": "cold or flu-like symptoms",
+      "type": "has_finding",
+      "properties": {
+        "confidence": 95.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "autoimmune comorbidities specific to type 1 diabetes",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 93.7
+      }
+    },
+    {
+      "start": "chronic hyperglycemia",
+      "end": "Peripheral vascular complication",
+      "type": "cause_of",
+      "properties": {
+        "confidence": 97.35
+      }
+    },
+    {
+      "start": "Peripheral vascular complication",
+      "end": "small vessels",
+      "type": "has_anatomic_site",
+      "properties": {
+        "confidence": 93.5
+      }
+    },
+    {
+      "start": "Peripheral vascular complication",
+      "end": "Large blood vessel structure",
+      "type": "has_anatomic_site",
+      "properties": {
+        "confidence": 95.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "retinopathy",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.6
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "nephropathy",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.6
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Neuropathy",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 97.05
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Thyroid Diseases",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Celiac Disease",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 96.0
+      }
+    },
+    {
+      "start": "Diabetes Mellitus, Insulin-Dependent",
+      "end": "Anemia, Pernicious",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 94.5
+      }
+    },
+    {
+      "start": "Thyroid Diseases",
+      "end": "Diabetes Mellitus, Insulin-Dependent",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 95.4
+      }
+    },
+    {
+      "start": "Celiac Disease",
+      "end": "Autoimmune Diseases",
+      "type": "is_a",
+      "properties": {
+        "confidence": 97.35
+      }
+    },
+    {
+      "start": "Celiac Disease",
+      "end": "Diabetes Mellitus, Insulin-Dependent",
+      "type": "co_occurs_with",
+      "properties": {
+        "confidence": 81.45
+      }
+    },
+    {
+      "start": "retinopathy",
+      "end": "dilated and comprehensive eye examination",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "foot examination with pulses, reflexes, temperature, pinprick sensation, vibration, and monofilament testing",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 95.55
+      }
+    },
+    {
+      "start": "Neuropathy",
+      "end": "foot examination with pulses, reflexes, temperature, pinprick sensation, vibration, and monofilament testing",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 95.7
+      }
+    },
+    {
+      "start": "nephropathy",
+      "end": "spot urine albumin-to-creatinine ratio",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.45
+      }
+    },
+    {
+      "start": "nephropathy",
+      "end": "estimated glomerular filtration rate (eGFR)",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 95.55
+      }
+    },
+    {
+      "start": "Heart failure",
+      "end": "Plasma B natriuretic peptide measurement",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 96.75
+      }
+    },
+    {
+      "start": "Diabetes Mellitus",
+      "end": "microvascular complications",
+      "type": "increases_risk_of",
+      "properties": {
+        "confidence": 70.5
+      }
+    },
+    {
+      "start": "microvascular complications",
+      "end": "Screening procedure",
+      "type": "has_evaluation",
+      "properties": {
+        "confidence": 68.0
+      }
+    }
+  ]
+}
