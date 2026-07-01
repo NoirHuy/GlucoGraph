@@ -16,7 +16,7 @@ def get_db_driver():
         try:
             _driver.verify_connectivity()
         except Exception as e:
-            print(f"⚠️ Kết nối Neo4j hiện tại bị mất hoặc không phản hồi: {e}. Đang thử kết nối lại...")
+            print(f"[Neo4j] Ket noi Neo4j hien tai bi mat: {e}. Dang thu ket noi lai...")
             try:
                 _driver.close()
             except Exception:
@@ -35,14 +35,14 @@ def get_db_driver():
                 )
                 driver.verify_connectivity()
                 _driver = driver
-                print("✅ Đã kết nối thành công tới Neo4j!")
+                print("[Neo4j] Da ket noi thanh cong toi Neo4j!")
                 break
             except Exception as e:
-                print(f"⚠️ Thử kết nối tới Neo4j lần {i+1}/{retries} thất bại: {e}")
+                print(f"[Neo4j] Thu ket noi toi Neo4j lan {i+1}/{retries} that bai: {e}")
                 if i < retries - 1:
                     time.sleep(delay)
                 else:
-                    print("❌ Không thể kết nối tới Neo4j sau nhiều lần thử.")
+                    print("[Neo4j] Khong the ket noi toi Neo4j sau nhieu lan thu.")
                     _driver = None
                     
     return _driver

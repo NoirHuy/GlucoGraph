@@ -1,3 +1,12 @@
+import sys
+try:
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
+    if hasattr(sys.stderr, 'reconfigure'):
+        sys.stderr.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
 import json
 import re
 import os
@@ -26,102 +35,242 @@ except Exception as e:
     print(f"❌ Error configuring Groq AI for CDSS: {e}")
 
 
-# TRANSLATION_MAP has been removed to implement dynamic translation and verification.
+# COMMON_TRANSLATIONS maps common Neo4j node IDs to Vietnamese medical terms
+COMMON_TRANSLATIONS = {
+    "diabetes mellitus": "Bệnh đái tháo đường",
+    "diabetes mellitus, non-insulin-dependent": "Bệnh Đái tháo đường tuýp 2",
+    "diabetes mellitus, insulin-dependent": "Bệnh Đái tháo đường tuýp 1",
+    "metformin": "Metformin",
+    "liraglutide": "Liraglutide",
+    "pioglitazone": "Pioglitazone",
+    "insulin": "Insulin",
+    "chronic kidney disease": "Suy thận mạn",
+    "end-stage renal disease": "Suy thận giai đoạn cuối",
+    "diabetic nephropathy": "Bệnh thận đái tháo đường",
+    "patients at risk of acidemia": "Bệnh nhân có nguy cơ nhiễm toan",
+    "acidosis, lactic": "Nhiễm toan lactic",
+    "vitamin b12 malabsorption": "Kém hấp thu vitamin B12",
+    "obesity": "Béo phì",
+    "heart failure": "Suy tim",
+    "lisinopril": "Lisinopril",
+    "valsartan": "Valsartan",
+    "carvedilol": "Carvedilol",
+    "insulin resistance": "Đề kháng Insulin",
+    "polyuria": "Tiểu nhiều",
+    "polydipsia": "Khát nhiều",
+    "hypoglycemia": "Hạ đường huyết",
+    "hyperglycemia": "Tăng đường huyết",
+    "pregnancy": "Thai kỳ",
+    "pregnancy, 1st trimester": "Thai kỳ 3 tháng đầu",
+    "hyperthyroidism": "Cường giáp",
+    "gout": "Bệnh Gout",
+    "peptic ulcer": "Loét dạ dày tá tràng",
+    "nsaids": "Thuốc chống viêm không steroid (NSAIDs)",
+    "colchicine": "Colchicine",
+    "tirzepatide": "Tirzepatide"
+}
+
+_translation_cache = {}
+
+def translate_node_id(node_id: str) -> str:
+    if not node_id:
+        return ""
+    node_id_clean = str(node_id).strip()
+    node_id_lower = node_id_clean.lower()
+    
+    # 1. Check COMMON_TRANSLATIONS first
+    if node_id_lower in COMMON_TRANSLATIONS:
+        return COMMON_TRANSLATIONS[node_id_lower]
+        
+    # 2. Check global cache next
+    if node_id_lower in _translation_cache:
+        return _translation_cache[node_id_lower]
+        
+    # Fast translation prompt using Llama
+    prompt = f"Bạn là trợ lý dịch thuật thuật ngữ y khoa Việt - Anh chuyên nghiệp. Hãy dịch thuật ngữ y khoa tiếng Anh sau đây sang tiếng Việt chuẩn y văn Việt Nam, dịch thật ngắn gọn, chỉ trả về đúng kết quả dịch (từ 1 đến 5 từ), không thêm bất kỳ giải thích, dấu ngoặc hay dấu chấm câu nào khác:\n\nThuật ngữ: \"{node_id_clean}\""
+    
+    try:
+        # Call model to get dynamic accurate translation using fast 8b model
+        translated = call_llm_api(prompt, system_prompt="Dịch thuật ngữ y khoa ngắn gọn sang tiếng Việt.", model_size="8b", force_groq=True)
+        cleaned = translated.replace('"', '').replace("'", "").strip()
+        # Fallback to capitalize first letter
+        if cleaned and not cleaned.lower().startswith("error") and len(cleaned) < 60:
+            _translation_cache[node_id_lower] = cleaned
+            return cleaned
+    except Exception as e:
+        print(f"⚠️ Dynamic LLM translation failed for '{node_id_clean}': {e}")
+        
+    _translation_cache[node_id_lower] = node_id_clean
+    return node_id_clean
+
+
+def translate_multiple_terms(terms: list[str]) -> dict[str, str]:
+    """Translates a list of medical terms to Vietnamese in a single batched LLM call."""
+    results = {}
+    to_translate = []
+    
+    for term in terms:
+        if not term:
+            continue
+        term_clean = str(term).strip()
+        term_lower = term_clean.lower()
+        
+        if term_lower in COMMON_TRANSLATIONS:
+            results[term_lower] = COMMON_TRANSLATIONS[term_lower]
+        elif term_lower in _translation_cache:
+            results[term_lower] = _translation_cache[term_lower]
+        else:
+            to_translate.append(term_clean)
+            
+    if not to_translate:
+        return results
+        
+    # Translate all remaining terms in a single prompt!
+    prompt = (
+        "Bạn là trợ lý dịch thuật thuật ngữ y khoa Việt - Anh chuyên nghiệp. Hãy dịch danh sách thuật ngữ y khoa tiếng Anh sau đây sang tiếng Việt chuẩn y văn Việt Nam.\n"
+        "Hãy dịch thật ngắn gọn (từ 1 đến 5 từ), không thêm giải thích. Trả về kết quả dưới dạng JSON object với key là thuật ngữ tiếng Anh gốc và value là từ đã dịch sang tiếng Việt.\n\n"
+        f"Danh sách thuật ngữ: {json.dumps(to_translate, ensure_ascii=False)}"
+    )
+    
+    try:
+        # Use fast 8b model on Groq for json output translation
+        response = call_llm_api(prompt, system_prompt="Dịch thuật ngữ y khoa ngắn gọn sang tiếng Việt.", response_format="json", model_size="8b", force_groq=True)
+        translated_dict = json.loads(response)
+        if isinstance(translated_dict, dict):
+            for k, v in translated_dict.items():
+                k_lower = k.lower()
+                cleaned_v = str(v).replace('"', '').replace("'", "").strip()
+                _translation_cache[k_lower] = cleaned_v
+                results[k_lower] = cleaned_v
+    except Exception as e:
+        print(f"⚠️ Batched LLM translation failed: {e}")
+        # Fallback will occur automatically in subsequent translate_node_id calls
+            
+    return results
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # LLM API CALLER — Groq primary, OpenRouter rotation fallback
 # ─────────────────────────────────────────────────────────────────────────────
 
-def call_llm_api(prompt: str, system_prompt: str = "", response_format: str = "text", model_size: str = "70b") -> str:
-    """Unified LLM API caller supporting Groq and OpenRouter failover rotation."""
+def call_llm_api(prompt: str, system_prompt: str = "", response_format: str = "text", model_size: str = "70b", force_groq: bool = False) -> str:
+    """Unified LLM API caller supporting Groq primary (with Qwen 32B reasoning) and OpenRouter failover rotation."""
     global _groq_cooldown_8b, _groq_cooldown_70b
 
-    # Define provider-specific models based on size
-    groq_model = "llama-3.1-8b-instant" if model_size == "8b" else "llama-3.3-70b-versatile"
-    openrouter_model = "meta-llama/llama-3.1-8b-instruct" if model_size == "8b" else "meta-llama/llama-3.3-70b-instruct"
+    # Helper to clean reasoning tags from output
+    def clean_thinking_tags(text: str) -> str:
+        if not text:
+            return ""
+        # Remove standard <think>...</think> tags
+        text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
+        # Remove any stray unclosed <think> or </think> tags
+        text = re.sub(r'<think>.*', '', text, flags=re.DOTALL)
+        text = text.replace("</think>", "")
+        return text.strip()
 
-    # Determine which cooldown to use
-    is_8b = (model_size == "8b")
-    cooldown_until = _groq_cooldown_8b if is_8b else _groq_cooldown_70b
+    # Define provider-specific models
+    openrouter_model = "qwen/qwen3.5-flash-02-23"
+    
+    # Select fast 8b model or reasoning qwen/qwen3-32b model on Groq
+    if model_size == "8b":
+        groq_model = "llama-3.1-8b-instant"
+    else:
+        groq_model = "qwen/qwen3-32b"
 
-    # 1. Try Groq if key is available and not in cooldown
+    errors = []
+
+    # 1. Try Groq first (extremely fast and supports qwen/qwen3-32b)
     groq_key = os.environ.get("GROQ_API_KEY", "").strip()
-    if groq_key and time.time() > cooldown_until:
-        try:
-            # Set max_retries=0 to fail fast on rate limits instead of SDK retrying
-            g_client = Groq(api_key=groq_key, max_retries=0)
-            messages = []
-            if system_prompt:
-                messages.append({"role": "system", "content": system_prompt})
-            messages.append({"role": "user", "content": prompt})
-            kwargs = {
-                "model": groq_model,
-                "messages": messages,
-                "temperature": 0.1 if response_format == "json" else 0.0,
-            }
-            if response_format == "json":
-                kwargs["response_format"] = {"type": "json_object"}
-            response = g_client.chat.completions.create(**kwargs)
-            return response.choices[0].message.content.strip()
-        except Exception as e:
-            err_str = str(e).lower()
-            if "429" in err_str or "rate limit" in err_str or "limit reached" in err_str:
-                # Trigger a 10-minute cooldown for the specific size
-                if is_8b:
-                    _groq_cooldown_8b = time.time() + 600
-                else:
-                    _groq_cooldown_70b = time.time() + 600
-                print(f"⚠️ Groq {groq_model} rate limit (429) hit. Entering 10-minute cooldown. Fallback to OpenRouter... Error: {e}")
-            else:
-                print(f"⚠️ Groq API call failed: {e}. Falling back to OpenRouter...")
-
-    # 2. Try OpenRouter Key Rotation Pool
-    openrouter_keys = []
-    for i in range(1, 21):
-        key_name = f"OPENROUTER_API_KEY_{i}" if i > 1 else "OPENROUTER_API_KEY"
-        key_val = os.environ.get(key_name, "").strip()
-        if key_val and key_val not in openrouter_keys:
-            openrouter_keys.append(key_val)
-    # Also scan all env vars for OPENROUTER_API_KEY_*
-    for k in os.environ:
-        if k.startswith("OPENROUTER_API_KEY"):
-            val = os.environ[k].strip()
-            if val and val not in openrouter_keys:
-                openrouter_keys.append(val)
-
-    if openrouter_keys:
-        for idx, api_key in enumerate(openrouter_keys):
+    if groq_key:
+        cooldown = _groq_cooldown_8b if model_size == "8b" else _groq_cooldown_70b
+        if time.time() > cooldown:
             try:
-                headers = {
-                    "Authorization": f"Bearer {api_key}",
-                    "Content-Type": "application/json",
-                    "HTTP-Referer": "http://localhost",
-                    "X-Title": "CDSS GraphRAG Engine",
-                }
+                print(f"  [LLM API] Trying Groq model {groq_model}...")
+                g_client = Groq(api_key=groq_key, max_retries=0)
                 messages = []
                 if system_prompt:
                     messages.append({"role": "system", "content": system_prompt})
                 messages.append({"role": "user", "content": prompt})
-                payload = {
-                    "model": openrouter_model,
+                
+                kwargs = {
+                    "model": groq_model,
                     "messages": messages,
                     "temperature": 0.1 if response_format == "json" else 0.0,
                 }
-                with httpx.Client(timeout=45.0) as http_client:
-                    r = http_client.post(
-                        "https://openrouter.ai/api/v1/chat/completions",
-                        headers=headers,
-                        json=payload,
-                    )
-                    if r.status_code == 200:
-                        return r.json()["choices"][0]["message"]["content"].strip()
-                    else:
-                        raise Exception(f"OpenRouter returned {r.status_code}: {r.text[:200]}")
+                if response_format == "json":
+                    kwargs["response_format"] = {"type": "json_object"}
+                
+                response = g_client.chat.completions.create(**kwargs)
+                msg = response.choices[0].message
+                if hasattr(msg, "reasoning_content") and msg.reasoning_content:
+                    print(f"  [LLM THINKING] {msg.reasoning_content.strip()}")
+                return clean_thinking_tags(msg.content)
             except Exception as e:
-                print(f"⚠️ OpenRouter key {idx+1} failover: {e}")
+                err_str = str(e).lower()
+                if "429" in err_str or "rate limit" in err_str or "limit reached" in err_str:
+                    if model_size == "8b":
+                        _groq_cooldown_8b = time.time() + 300.0
+                    else:
+                        _groq_cooldown_70b = time.time() + 300.0
+                    print(f"⚠️ Groq rate limit hit for {groq_model}. Entering 5-minute cooldown.")
+                err_msg = f"Groq primary failed: {e}"
+                print(f"⚠️ {err_msg}")
+                errors.append(err_msg)
 
-    raise Exception("No active LLM API key (Groq or OpenRouter) available.")
+    # 2. Try OpenRouter as fallback
+    if not force_groq:
+        openrouter_keys = []
+        for i in range(1, 21):
+            key_name = f"OPENROUTER_API_KEY_{i}" if i > 1 else "OPENROUTER_API_KEY"
+            key_val = os.environ.get(key_name, "").strip()
+            if key_val and key_val not in openrouter_keys:
+                openrouter_keys.append(key_val)
+        for k in os.environ:
+            if k.startswith("OPENROUTER_API_KEY"):
+                val = os.environ[k].strip()
+                if val and val not in openrouter_keys:
+                    openrouter_keys.append(val)
+
+        print(f"  [LLM API] Fallback to OpenRouter. Total keys: {len(openrouter_keys)}")
+        if openrouter_keys:
+            for idx, api_key in enumerate(openrouter_keys):
+                try:
+                    print(f"  [LLM API] Trying OpenRouter key {idx+1}/{len(openrouter_keys)} for model {openrouter_model}")
+                    headers = {
+                        "Authorization": f"Bearer {api_key}",
+                        "Content-Type": "application/json",
+                        "HTTP-Referer": "http://localhost",
+                        "X-Title": "CDSS GraphRAG Engine",
+                    }
+                    messages = []
+                    if system_prompt:
+                        messages.append({"role": "system", "content": system_prompt})
+                    messages.append({"role": "user", "content": prompt})
+                    payload = {
+                        "model": openrouter_model,
+                        "messages": messages,
+                        "temperature": 0.1 if response_format == "json" else 0.0,
+                        "max_tokens": 2500,
+                    }
+                    if response_format == "json":
+                        payload["response_format"] = {"type": "json_object"}
+                    with httpx.Client(timeout=45.0) as http_client:
+                        r = http_client.post(
+                            "https://openrouter.ai/api/v1/chat/completions",
+                            headers=headers,
+                            json=payload,
+                        )
+                        if r.status_code == 200:
+                            return clean_thinking_tags(r.json()["choices"][0]["message"]["content"])
+                        else:
+                            raise Exception(f"OpenRouter returned {r.status_code}: {r.text[:150]}")
+                except Exception as e:
+                    err_msg = f"OpenRouter fallback key {idx+1} failed: {e}"
+                    print(f"⚠️ {err_msg}")
+                    errors.append(err_msg)
+
+    err_details = " | ".join(errors) if errors else "No keys configured."
+    raise Exception(f"All LLM APIs failed. ({err_details})")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -409,6 +558,29 @@ def check_term_coverage(term: str) -> bool:
         return False
 
 
+def is_term_covered_by_matched_nodes(term: str, matched_nodes: list[str]) -> bool:
+    """Uses LLM to verify if a missing term is already synonymously covered by matched Neo4j entities."""
+    if not matched_nodes:
+        return False
+    
+    system_prompt = (
+        "You are a medical vocabulary expert. Verify if a given medical term is synonymously or category-wise "
+        "covered by a list of already matched database concepts. "
+        "For example, 'Renal Insufficiency' or 'Kidney Disease' is covered if the list contains 'Chronic Kidney Diseases'. "
+        "Respond with ONLY 'YES' or 'NO'."
+    )
+    prompt = f"Term to verify: \"{term}\"\nMatched nodes:\n{json.dumps(matched_nodes, ensure_ascii=False)}"
+    
+    try:
+        response = call_llm_api(prompt, system_prompt=system_prompt, model_size="70b")
+        ans = response.strip().upper()
+        if "YES" in ans:
+            return True
+    except Exception as e:
+        print(f"⚠️ Error verifying term coverage: {e}")
+    return False
+
+
 def get_no_data_response(missing_str: str, matched_nodes: list[str], pipeline_logs: list[str]) -> dict:
     """Helper to return a clean 'No database data' fallback structure when relevant data is missing."""
     alert_msg = f"Bệnh lý/thuốc '{missing_str}' chưa được nạp vào cơ sở dữ liệu Neo4j."
@@ -440,6 +612,110 @@ def get_no_data_response(missing_str: str, matched_nodes: list[str], pipeline_lo
     }
 
 
+def check_is_valid_clinical_case(text: str) -> tuple[str, str]:
+    """
+    Evaluates if the input text is suitable for the CDSS system.
+    Returns a tuple (status, message).
+    status can be:
+      - "valid": It is a valid clinical case scenario related to diabetes/metabolic diseases.
+      - "invalid_format": It is not a clinical case description (e.g. greeting, chat, or generic question).
+      - "out_of_scope": It is a clinical text/case, but completely unrelated to diabetes/metabolic disorders.
+    """
+    if not text or len(text.strip()) < 15:
+        return "invalid_format", "Vui lòng nhập đầy đủ thông tin ca lâm sàng (tối thiểu 15 ký tự) để hệ thống CDSS tiến hành phân tích."
+
+    prompt = (
+        "Bạn là trợ lý y khoa chuyên phân loại và đánh giá tính hợp lệ của văn bản lâm sàng nhập vào hệ thống CDSS hỗ trợ điều trị ĐÁI THÁO ĐƯỜNG.\n"
+        "Nhiệm vụ: Phân tích đoạn văn bản đầu vào của người dùng và xác định trạng thái của nó:\n"
+        "1. Nếu văn bản là câu hỏi trò chuyện thông thường, lời chào, hoặc câu hỏi ngoài lĩnh vực y khoa, hãy phân loại là \"invalid_format\".\n"
+        "2. Nếu văn bản mô tả ca bệnh lâm sàng hoặc hỏi về điều trị bệnh, nhưng hoàn toàn KHÔNG liên quan đến Đái tháo đường (Diabetes), các biến chứng đái tháo đường (bệnh thận, võng mạc, tim mạch liên quan), hoặc các thuốc tiểu đường, hãy phân loại là \"out_of_scope\".\n"
+        "3. Nếu văn bản mô tả ca lâm sàng hợp lệ và CÓ liên quan đến Đái tháo đường hoặc các tình trạng đi kèm của bệnh nhân đái tháo đường, hãy phân loại là \"valid\".\n\n"
+        "Văn bản đầu vào:\n"
+        f"\"{text}\"\n\n"
+        "Hãy trả về kết quả dưới dạng JSON object với 2 trường:\n"
+        "1. \"status\": \"valid\", \"invalid_format\" hoặc \"out_of_scope\"\n"
+        "2. \"reason\": Giải thích lý do bằng tiếng Việt ngắn gọn:\n"
+        "   - Nếu \"invalid_format\": Giải thích ngắn gọn tại sao không phải ca lâm sàng.\n"
+        "   - Nếu \"out_of_scope\": Tạo một câu phản hồi chuẩn theo mẫu: \"Hệ thống hiện tại chỉ hỗ trợ tra cứu và quyết định lâm sàng trong phạm vi bệnh Đái tháo đường. Thông tin về [tên bệnh lý cụ thể] và [tên thuốc cụ thể] nằm ngoài phạm vi cơ sở dữ liệu tri thức của hệ thống.\" (hãy điền đúng tên bệnh và thuốc xuất hiện trong văn bản của người dùng vào các chỗ ngoặc vuông, ví dụ: 'bệnh hen phế quản và thuốc Salbutamol').\n"
+        "   - Nếu \"valid\": Để trống."
+    )
+    try:
+        # Call fast 8b model on Groq
+        response = call_llm_api(prompt, system_prompt="Phân loại phạm vi ca lâm sàng.", response_format="json", model_size="8b", force_groq=True)
+        res_dict = json.loads(response)
+        if isinstance(res_dict, dict):
+            status = str(res_dict.get("status", "valid")).strip().lower()
+            reason = str(res_dict.get("reason", "")).strip()
+            if status not in {"valid", "invalid_format", "out_of_scope"}:
+                status = "valid"
+            return status, reason
+    except Exception as e:
+        print(f"⚠️ Error checking clinical case validity: {e}")
+    
+    # Fallback to valid if check fails to avoid blocking valid scenarios
+    return "valid", ""
+
+
+def get_invalid_case_response(warning_msg: str, pipeline_logs: list[str]) -> dict:
+    """Helper to return a warning response when the input text is not a valid clinical case."""
+    return {
+        "matched_entities": [],
+        "alert": {
+            "active": True,
+            "title": "⚠️ HỆ THỐNG CDSS: YÊU CẦU NHẬP CA LÂM SÀNG",
+            "rule": warning_msg,
+        },
+        "differential_diagnosis": {
+            "condition_a": "Không có dữ liệu",
+            "condition_b": "Không có dữ liệu",
+            "prose_a": "Vui lòng nhập mô tả ca lâm sàng thực tế của bệnh nhân (ví dụ: tuổi, giới tính, triệu chứng, tiền sử bệnh, hoặc đề xuất kê đơn thuốc) để hệ thống CDSS tiến hành phân tích đối chiếu đồ thị tri thức.",
+            "prose_b": "Hệ thống hỗ trợ ra quyết định lâm sàng (CDSS) yêu cầu thông tin đầu vào là hồ sơ/ca bệnh cụ thể, không hỗ trợ trả lời các câu hỏi trò chuyện thông thường hoặc hỏi đáp lý thuyết.",
+            "distinguishing_factor": "Đầu vào không đủ dữ kiện lâm sàng để phân tích đối chiếu."
+        },
+        "graph_path": [],
+        "evidence_triples": [],
+        "recommendations": [
+            {
+                "type": "exclude",
+                "title": "Yêu cầu nhập lại ca lâm sàng",
+                "desc": "Vui lòng nhập văn bản mô tả cụ thể tình trạng bệnh nhân và thuốc đang cân nhắc điều trị.",
+                "relation": "SYSTEM_ACTION"
+            }
+        ],
+        "logs": pipeline_logs
+    }
+
+
+def get_out_of_scope_response(warning_msg: str, pipeline_logs: list[str]) -> dict:
+    """Helper to return an out-of-scope response when the topic is unrelated to Diabetes."""
+    return {
+        "matched_entities": [],
+        "alert": {
+            "active": True,
+            "title": "⚠️ HỆ THỐNG CDSS: NGOÀI PHẠM VI HỖ TRỢ",
+            "rule": warning_msg,
+        },
+        "differential_diagnosis": {
+            "condition_a": "Ngoài phạm vi hỗ trợ",
+            "condition_b": "Ngoài phạm vi hỗ trợ",
+            "prose_a": warning_msg,
+            "prose_b": "Hệ thống hỗ trợ ra quyết định lâm sàng (CDSS) này chỉ được nạp dữ liệu tri thức chuyên biệt cho bệnh Đái tháo đường (Diabetes Mellitus) và các biến chỉ định liên quan.",
+            "distinguishing_factor": "Bệnh lý hoặc thuốc đang truy vấn không nằm trong cơ sở dữ liệu Neo4j của hệ thống."
+        },
+        "graph_path": [],
+        "evidence_triples": [],
+        "recommendations": [
+            {
+                "type": "exclude",
+                "title": "Bệnh lý ngoài danh mục",
+                "desc": warning_msg,
+                "relation": "SYSTEM_ACTION"
+            }
+        ],
+        "logs": pipeline_logs
+    }
+
+
 def generate_medical_decision(clinical_text: str, patient_id: str) -> dict:
     """
     4-Stage GraphRAG CDSS pipeline:
@@ -450,6 +726,16 @@ def generate_medical_decision(clinical_text: str, patient_id: str) -> dict:
     """
     import datetime
     ts = datetime.datetime.now().strftime("%H:%M:%S")
+    
+    # ── Check input validity and scope ──
+    status, warning_msg = check_is_valid_clinical_case(clinical_text)
+    if status == "invalid_format":
+        pipeline_logs = [f"[{ts} WARNING] Ca lâm sàng không hợp lệ: {warning_msg}"]
+        return get_invalid_case_response(warning_msg, pipeline_logs)
+    elif status == "out_of_scope":
+        pipeline_logs = [f"[{ts} WARNING] Ngoài phạm vi hỗ trợ: {warning_msg}"]
+        return get_out_of_scope_response(warning_msg, pipeline_logs)
+
     pipeline_logs = [
         f"[{ts} INFO] Stage 1: Fetching all KG nodes from Neo4j...",
     ]
@@ -495,7 +781,8 @@ def generate_medical_decision(clinical_text: str, patient_id: str) -> dict:
                 "controlled clinical trial", "finding", "findings", "symptom", "symptoms"
             }:
                 if not check_term_coverage(term_str):
-                    missing_terms.append(term_str)
+                    if not is_term_covered_by_matched_nodes(term_str, matched_nodes):
+                        missing_terms.append(term_str)
 
     if not has_coverage or missing_terms:
         missing_str = ", ".join(missing_terms) if missing_terms else "bệnh lý liên quan"
@@ -542,11 +829,12 @@ REASONING INSTRUCTIONS:
 1. CIRCUIT BREAKER: If ANY triple with relation CONTRAINDICATED_WITH exists above, activate the alert with the exact drug/condition pair from that triple.
 
 2. BIỆN LUẬN CHẨN ĐOÁN (DIAGNOSTIC REASONING): Đối chiếu các triệu chứng lâm sàng của bệnh nhân với các bộ ba tri thức Neo4j được cung cấp ở trên để lập luận chẩn đoán:
-   - `condition_a`: Bệnh được chẩn đoán xác định là CÓ mắc.
-   - `prose_a`: Viết 2-3 câu tiếng Việt giải thích tại sao chẩn đoán CÓ bệnh này, dựa trên các bộ ba tri thức cụ thể khớp với triệu chứng thực tế của bệnh nhân làm bằng chứng (ví dụ: bệnh nhân có triệu chứng X khớp với bộ ba Y trong đồ thị).
-   - `condition_b`: Bệnh cần biện luận loại trừ là KHÔNG mắc (hoặc ít nghĩ đến nhất).
-   - `prose_b`: Viết 2-3 câu tiếng Việt giải thích tại sao KHÔNG nghĩ đến bệnh này, dựa trên việc thiếu các bằng chứng hoặc bộ ba tri thức liên quan trong đồ thị, hoặc do các dấu hiệu sinh hiệu/chỉ số xét nghiệm lâm sàng không khớp.
+   - `condition_a`: **BẮT BUỘC** điền tên một bệnh/tình trạng lâm sàng CÓ MẶT trong ca lâm sàng này — trích từ ca lâm sàng hoặc từ các thực thể đã khớp trong đồ thị. KHÔNG BAO GIỜ được điền "Không có dữ liệu".
+   - `prose_a`: Viết 2-3 câu tiếng Việt giải thích tại sao chẩn đoán CÓ bệnh này, dựa trên các bộ ba tri thức cụ thể khớp với triệu chứng thực tế của bệnh nhân làm bằng chứng. Nếu không có triple chẩn đoán trong đồ thị, hãy suy luận dựa trên thông tin lâm sàng được cung cấp trong ca lâm sàng.
+   - `condition_b`: **BẮT BUỘC** điền tên một bệnh cần biện luận loại trừ — có thể là bệnh đồng mắc, biến chứng hoặc chẩn đoán thay thế dựa trên bối cảnh lâm sàng. KHÔNG BAO GIỜ được điền "Không có dữ liệu".
+   - `prose_b`: Viết 2-3 câu tiếng Việt giải thích tại sao KHÔNG nghĩ đến bệnh này hoặc cần theo dõi thêm, dựa trên việc thiếu các bằng chứng bộ ba tri thức hoặc các dấu hiệu lâm sàng không khớp.
    - `distinguishing_factor`: Viết một câu ngắn kết luận chẩn đoán xác định bệnh nào và loại trừ bệnh nào dựa trên bằng chứng đồ thị cốt lõi.
+   - **LƯU Ý ĐẶC BIỆT**: Nếu Circuit Breaker đã kích hoạt (có CONTRAINDICATED_WITH), hãy dùng các bệnh lý và thuốc trong triple CCĐ làm chủ đề chẩn đoán phân biệt. Ví dụ: condition_a = bệnh nền của bệnh nhân, condition_b = tình trạng cần loại trừ hoặc biến chứng tiềm ẩn.
 
 3. GRAPH PATH (linear chain): Trace symptom → disease → treatment using ONLY concepts and connections from the graph data above.
    - "title" field: ALWAYS translate to standard Vietnamese medical terms.
@@ -827,9 +1115,253 @@ CRITICAL OUTPUT RULES:
                 existing_keys.add((s_lower, r_lower, o_lower))
         result["evidence_triples"] = cleaned_evidence_triples
 
+        # Collect all unique terms that will need translation to pre-fetch them in a single batch
+        terms_to_translate = set()
+        for mn in matched_nodes:
+            terms_to_translate.add(mn)
+        for t in scored_triples:
+            terms_to_translate.add(t["subject"])
+            terms_to_translate.add(t["object"])
+        if "graph_path" in result and isinstance(result["graph_path"], list):
+            for node in result["graph_path"]:
+                if "edge" not in node:
+                    orig_id = node.get("original_id", "")
+                    if orig_id:
+                        terms_to_translate.add(orig_id)
+        if "evidence_triples" in result and isinstance(result["evidence_triples"], list):
+            for t in result["evidence_triples"]:
+                orig_sub = t.get("original_subject_id", "")
+                orig_obj = t.get("original_object_id", "")
+                if orig_sub:
+                    terms_to_translate.add(orig_sub)
+                if orig_obj:
+                    terms_to_translate.add(orig_obj)
+        
+        # Batch translate everything at once! (Puts them in _translation_cache)
+        if terms_to_translate:
+            translate_multiple_terms(list(terms_to_translate))
+
+        # ── Validate recommendations: flag (not delete) entries that can't be grounded in the graph ──
+        # The LLM writes Vietnamese display names which often don't directly match English Neo4j node IDs.
+        # We add a _verified flag for transparency but NEVER delete recommendations.
+        if "recommendations" in result and isinstance(result["recommendations"], list):
+            for rec in result["recommendations"]:
+                rec_title = str(rec.get("title", "")).strip()
+                rec_drug  = str(rec.get("drug", "")).strip()
+                resolved_title = resolve_id(rec_title)
+                resolved_drug  = resolve_id(rec_drug) if rec_drug else None
+                if resolved_title or resolved_drug:
+                    rec["_verified"] = True
+                    if resolved_title:
+                        rec["_verified_node"] = resolved_title
+                else:
+                    rec["_verified"] = False
+                    hallucinated_elements.append(f"Recommendation '{rec_title}' not found in Neo4j graph nodes (kept, flagged)")
+
+        # ── Validate differential_diagnosis: flag conditions not verifiable in the graph ──
+        # Content is NEVER removed — this is LLM clinical reasoning, not graph facts.
+        # We only annotate with a verified flag so the frontend can show an informational badge.
+        if "differential_diagnosis" in result and isinstance(result["differential_diagnosis"], dict):
+            dd = result["differential_diagnosis"]
+            condition_a = str(dd.get("condition_a", "")).strip()
+            condition_b = str(dd.get("condition_b", "")).strip()
+
+            # Pre-translate all matched nodes to Vietnamese (only at most 5-7 nodes, so very fast)
+            ground_truth_vietnamese = []
+            for mn in matched_nodes:
+                ground_truth_vietnamese.append(mn.lower())
+                translated = translate_node_id(mn)
+                if translated:
+                    ground_truth_vietnamese.append(translated.lower())
+
+            # For scored triples, only use instant lookups (COMMON_TRANSLATIONS and _translation_cache)
+            # NEVER call the dynamic LLM translator inside a 50+ item loop.
+            def safe_translate_lookup(term: str) -> str:
+                t_lower = term.lower().strip()
+                if t_lower in COMMON_TRANSLATIONS:
+                    return COMMON_TRANSLATIONS[t_lower]
+                if t_lower in _translation_cache:
+                    return _translation_cache[t_lower]
+                return None
+
+            for t in scored_triples:
+                sub = t["subject"].lower()
+                obj = t["object"].lower()
+                ground_truth_vietnamese.extend([sub, obj])
+                
+                # Check instant lookups
+                trans_sub = safe_translate_lookup(t["subject"])
+                trans_obj = safe_translate_lookup(t["object"])
+                if trans_sub:
+                    ground_truth_vietnamese.append(trans_sub.lower())
+                if trans_obj:
+                    ground_truth_vietnamese.append(trans_obj.lower())
+
+            # De-duplicate
+            ground_truth_vietnamese = list(set(ground_truth_vietnamese))
+
+            def is_condition_grounded(name: str) -> bool:
+                if not name or name in {"Không có dữ liệu", "N/A", ""}:
+                    return False
+                if resolve_id(name):
+                    return True
+                
+                # Jaccard overlap check at the word level for maximum robustness with Vietnamese phrases
+                name_words = set(name.lower().replace(",", " ").replace("(", " ").replace(")", " ").split())
+                if not name_words:
+                    return False
+                
+                for gt in ground_truth_vietnamese:
+                    gt_words = set(gt.replace(",", " ").replace("(", " ").replace(")", " ").split())
+                    if not gt_words:
+                        continue
+                    intersection = name_words.intersection(gt_words)
+                    union = name_words.union(gt_words)
+                    jaccard = len(intersection) / len(union)
+                    if jaccard >= 0.35:
+                        return True
+                return False
+
+            dd["condition_a_verified"] = is_condition_grounded(condition_a)
+            dd["condition_b_verified"] = is_condition_grounded(condition_b)
+            if not dd["condition_a_verified"]:
+                hallucinated_elements.append(f"Differential condition_a '{condition_a}' not verifiable in Neo4j (kept, flagged)")
+            if not dd["condition_b_verified"]:
+                hallucinated_elements.append(f"Differential condition_b '{condition_b}' not verifiable in Neo4j (kept, flagged)")
+
         if hallucinated_elements:
             print(f"⚠️ Hallucination detected and filtered/corrected in LLM response: {hallucinated_elements}")
             pipeline_logs.append(f"[{ts} WARNING] Trình chặn ảo giác phát hiện và làm sạch các liên kết không có trong đồ thị: {', '.join(hallucinated_elements)}.")
+
+        # Post-process translations and normalize alert
+        # 1. Translate empty or English fields in graph_path
+        if "graph_path" in result and isinstance(result["graph_path"], list):
+            for node in result["graph_path"]:
+                if "edge" not in node:
+                    node_title = node.get("title", "")
+                    orig_id = node.get("original_id", "")
+                    if not node_title or node_title.lower() == orig_id.lower():
+                        node["title"] = translate_node_id(orig_id)
+
+        # 2. Translate empty or English fields in evidence_triples
+        if "evidence_triples" in result and isinstance(result["evidence_triples"], list):
+            for t in result["evidence_triples"]:
+                sub = t.get("subject", "")
+                orig_sub = t.get("original_subject_id", "")
+                obj = t.get("object", "")
+                orig_obj = t.get("original_object_id", "")
+                
+                if not sub or sub.lower() == orig_sub.lower():
+                    t["subject"] = translate_node_id(orig_sub)
+                if not obj or obj.lower() == orig_obj.lower():
+                    t["object"] = translate_node_id(orig_obj)
+
+        # 3. Normalize alert title and rule to fix LLM typos/hallucinations (e.g. "NGWṬ MẬCh", "NGẬT MẬCH" or similar placeholders)
+        # ── HARD GUARD: Force alert.active = False if no CONTRAINDICATED_WITH triple is in Neo4j scored_triples ──
+        # The LLM may hallucinate a contraindication from its training data even when the drug does NOT exist in our graph.
+        # We never trust alert.active = true from the LLM alone — we validate against the ground-truth scored_triples.
+        real_contraindication_triples = [
+            t for t in scored_triples
+            if t.get("relation", "").upper() == "CONTRAINDICATED_WITH"
+        ]
+        if "alert" in result and isinstance(result["alert"], dict):
+            if result["alert"].get("active") and not real_contraindication_triples:
+                # LLM hallucinated a contraindication that has no backing triple in Neo4j — suppress it
+                result["alert"]["active"] = False
+                result["alert"]["title"] = "ℹ️ Không phát hiện chống chỉ định trong cơ sở tri thức"
+                result["alert"]["rule"] = "Không tìm thấy cạnh CONTRAINDICATED_WITH nào liên quan đến các thực thể được nhận dạng trong đồ thị Neo4j. Hệ thống không thể xác nhận chống chỉ định này."
+                pipeline_logs.append(f"[{ts} WARNING] LLM hallucinated alert.active=true but NO CONTRAINDICATED_WITH triple found in scored_triples. Alert suppressed.")
+                print(f"⛔ Alert suppressed: LLM claimed contraindication but no matching Neo4j triple found in {len(scored_triples)} scored triples.")
+
+        if "alert" in result and isinstance(result["alert"], dict) and result["alert"].get("active"):
+            title = result["alert"].get("title", "")
+            rule = result["alert"].get("rule", "")
+            
+            def clean_spelling(text: str) -> str:
+                if not isinstance(text, str):
+                    return text
+                text = text.replace("NGẬT MẠCH", "NGẮT MẠCH")
+                text = text.replace("NGẬT MẬCH", "NGẮT MẠCH")
+                text = text.replace("NGẬT MẬCh", "NGẮT MẠCH")
+                text = text.replace("NGWṬ MẬCh", "NGẮT MẠCH")
+                text = text.replace("ngật mạch", "ngắt mạch")
+                text = text.replace("ngật mập", "ngắt mạch")
+                text = text.replace("ngắt mập", "ngắt mạch")
+                text = text.replace("Chống chỉ dùng", "Chống chỉ định dùng")
+                text = re.sub(r'^[←\-\s⚠🛑]+', '🛑 ', text)
+                return text
+
+            # ── Anti-Hallucination: Override alert with ground-truth from Neo4j triples ──
+            # The LLM may generalize a specific drug (e.g. "pioglitazone") to its drug class
+            # (e.g. "Thiazolidinediones"). We always re-derive alert content from verified scored_triples.
+            contraindication_triples = [
+                t for t in scored_triples
+                if t.get("relation", "").upper() == "CONTRAINDICATED_WITH"
+            ]
+            if contraindication_triples:
+                ct = contraindication_triples[0]
+                drug_name = ct["object"] if ct.get("object_type", "").lower() in {"drug", "treatment_procedure"} else ct["subject"]
+                disease_name = ct["subject"] if ct.get("subject_type", "").lower() in {"disease", "clinical_finding", "symptom"} else ct["object"]
+
+                # If LLM used a different name (e.g. drug class), show both for UX clarity
+                llm_drug_mention = title.split(":", 1)[1].strip().lstrip("🛑 ").strip() if ":" in title else ""
+                # Clean up LLM phrasing so we only extract the actual drug class name or drug name
+                llm_drug_mention_clean = llm_drug_mention.replace("Chống chỉ định dùng", "").replace("chống chỉ định dùng", "").strip()
+                llm_drug_mention_clean = re.sub(r'^[🛑⚠️\s\-→\(\)]+', '', llm_drug_mention_clean).strip(" ()")
+
+                if (llm_drug_mention_clean
+                        and llm_drug_mention_clean.lower() != drug_name.lower()
+                        and len(llm_drug_mention_clean) < 60
+                        and not any(c in llm_drug_mention_clean for c in ["{", "}", "[", "]"])):
+                    display_name = f"{drug_name} ({llm_drug_mention_clean})"
+                else:
+                    display_name = drug_name
+
+                result["alert"]["title"] = f"🛑 KÍCH HOẠT NGẮT MẠCH: Chống chỉ định dùng {display_name}"
+                result["alert"]["rule"] = f"[{disease_name}] → (CONTRAINDICATED_WITH) → [{drug_name}]"
+            else:
+                result["alert"]["title"] = clean_spelling(title)
+                if rule:
+                    rule = rule.replace("->", "→").replace("-->", "→").replace("→→", "→")
+                    result["alert"]["rule"] = clean_spelling(rule)
+
+        # 4. Recursively clean common LLM-generated Vietnamese spelling typos in the entire result JSON
+        def clean_vietnamese_typos(text: str) -> str:
+            if not isinstance(text, str):
+                return text
+            typos = {
+                "Chần đoạn": "Chẩn đoán",
+                "chần đoạn": "chẩn đoán",
+                "đải thảo đượng": "đái tháo đường",
+                "Đải thảo đượng": "Đái tháo đường",
+                "đải thảo": "đái tháo",
+                "Đải thảo": "Đái tháo",
+                "đượng": "đường",
+                "ại thảo": "nhiễm toan",
+                "nguy cấu": "nguy cơ",
+                "Nguy cấu": "Nguy cơ",
+                "lỗc": "lọc",
+                "thần": "thận",
+                "thập thập": "thấp",
+                "thập": "thấp",
+                "đực": "được",
+                "khắp": "khớp",
+                "tuyp": "tuýp",
+            }
+            for typo, correction in typos.items():
+                text = text.replace(typo, correction)
+            return text
+
+        def recursive_clean_typos(data):
+            if isinstance(data, dict):
+                return {k: recursive_clean_typos(v) for k, v in data.items()}
+            elif isinstance(data, list):
+                return [recursive_clean_typos(item) for item in data]
+            elif isinstance(data, str):
+                return clean_vietnamese_typos(data)
+            return data
+
+        result = recursive_clean_typos(result)
 
         pipeline_logs.append(f"[{ts} SUCCESS] Stage 4 complete. CDSS decision generated from {len(scored_triples)} graph triples.")
         return result
@@ -839,7 +1371,7 @@ CRITICAL OUTPUT RULES:
         print(f"❌ Error in Stage 4 CDSS inference: {e}")
         print(f"   Raw LLM response: {repr(raw_response)[:500] if raw_response else 'None'}")
         pipeline_logs.append(f"[{ts} ERROR] Stage 4 failed: {e}. Activating safety fallback.")
-        return get_mock_fallback(patient_id, clinical_text, matched_nodes, pipeline_logs)
+        return get_mock_fallback(patient_id, clinical_text, matched_nodes, pipeline_logs, error_message=str(e))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -851,17 +1383,21 @@ def get_mock_fallback(
     clinical_text: str,
     matched_nodes: list[str] = None,
     pipeline_logs: list[str] = None,
+    error_message: str = None,
 ) -> dict:
     """
     Last-resort safety fallback when both Neo4j and ALL LLM APIs are offline.
     Returns a generic error structure instead of misleading clinical content.
     """
+    rule_msg = "Vui lòng kiểm tra kết nối API (Groq / OpenRouter) và thử lại."
+    if error_message:
+        rule_msg = f"Chi tiết lỗi hệ thống: {error_message}"
     return {
         "matched_entities": matched_nodes or [],
         "alert": {
             "active": False,
             "title": "⚠️ HỆ THỐNG LLM NGOẠI TUYẾN — Không thể phân tích",
-            "rule": "Vui lòng kiểm tra kết nối API (Groq / OpenRouter) và thử lại.",
+            "rule": rule_msg,
         },
         "differential_diagnosis": {
             "condition_a": "Không xác định",
@@ -948,10 +1484,17 @@ Target Relationship Types (MUST BE UPPERCASE, e.g. [:TREATED_BY]):
 - ADMINISTERED_VIA
 - DISPENSES
 
-All nodes have an 'id' property representing their canonical English name (e.g. n.id = "Diabetes Mellitus, Non-Insulin-Dependent" or n.id = "pioglitazone").
+Target Node Properties:
+- id: Canonical English name of the node (e.g. n.id = "Diabetes Mellitus")
+- aliases: Alternative names/synonyms list (e.g. n.aliases = ["DPP-4 inhibitors"])
+- umls_cui: UMLS Concept Unique Identifier (CUI) code (e.g. n.umls_cui = "C0011849"). You MUST use this property if the user asks for CUI or "mã CUI" of a concept.
+- description: Brief description of the concept (e.g. n.description)
+- umls_semantic_type: Semantic type (e.g. n.umls_semantic_type)
 
-CRITICAL CASING RULE:
-You MUST write the node ID property exactly as listed in the "Matched entities in the Knowledge Graph for this question" context if present. Do NOT change its casing (e.g. if the context says - Node ID: "pioglitazone", you must write `id: "pioglitazone"` (lowercase), not `"Pioglitazone"`).
+CRITICAL OUTPUT INSTRUCTIONS:
+1. Return ONLY the raw Cypher query, with no explanations, no prefix, and no suffix. Start the query directly with MATCH or other valid Cypher keywords. Do NOT include markdown code block formatting (do NOT wrap it in ```cypher).
+2. If the user asks for CUI or "mã CUI", query and return the `umls_cui` property (e.g. `RETURN n.id, n.umls_cui`).
+3. You MUST write the node ID property exactly as listed in the "Matched entities in the Knowledge Graph for this question" context if present. Do NOT change its casing (e.g. if the context says - Node ID: "pioglitazone", you must write `id: "pioglitazone"` (lowercase), not `"Pioglitazone"`).
 
 Few-Shot Examples:
 Question: "Thuốc nào chống chỉ định với bệnh suy tim?"
@@ -965,6 +1508,9 @@ Cypher: MATCH (d:Disease {id: "Diabetes Mellitus, Non-Insulin-Dependent"})-[:CO_
 
 Question: "Thuốc pioglitazone có tác dụng phụ gì?"
 Cypher: MATCH (d:Drug {id: "pioglitazone"})-[:HAS_ADVERSE_EFFECT]->(s:Symptom) RETURN s.id AS AdverseEffect
+
+Question: "tìm mã CUI của bệnh tiểu đường"
+Cypher: MATCH (d:Disease) WHERE d.id IN ["Diabetes Mellitus", "Diabetes Mellitus, Non-Insulin-Dependent", "Diabetes Mellitus, Insulin-Dependent"] RETURN d.id AS Disease, d.umls_cui AS CUI
 """
 
     # Stage 0: Entity Matching to provide exact ID hints to the LLM
@@ -1000,9 +1546,14 @@ Cypher: MATCH (d:Drug {id: "pioglitazone"})-[:HAS_ADVERSE_EFFECT]->(s:Symptom) R
         # Stage 2: Guardrails & Validation
         pipeline_logs.append(f"[{ts} INFO] Giai đoạn 2: Kiểm duyệt bảo mật câu lệnh Cypher...")
         
-        # Block write/destructive keywords
+        # Block write/destructive keywords (matching whole words only using regex word boundaries)
         blocked_keywords = ["CREATE", "MERGE", "DELETE", "REMOVE", "SET", "DROP", "APOC", "CALL", "LOAD", "CSV", "WRITE"]
-        has_blocked = any(kw in cypher_query.upper() for kw in blocked_keywords)
+        has_blocked = False
+        query_upper = cypher_query.upper()
+        for kw in blocked_keywords:
+            if re.search(r'\b' + re.escape(kw) + r'\b', query_upper):
+                has_blocked = True
+                break
         
         # Extract relations and validate
         extracted_rels = re.findall(r'\[:([A-Z_]+)\]', cypher_query)

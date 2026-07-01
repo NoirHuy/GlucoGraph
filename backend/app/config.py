@@ -2,12 +2,13 @@ import os
 from pydantic_settings import BaseSettings
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
+# Resolve the absolute path to .env in the parent root directory
+env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.env"))
+load_dotenv(env_path)
 
 class Settings(BaseSettings):
     # Cấu hình Neo4j
-    NEO4J_URI: str = "bolt://cdss_graph:7687"
+    NEO4J_URI: str = "bolt://localhost:7687"
     NEO4J_USER: str = "neo4j"
     NEO4J_PASSWORD: str = "password"
     
@@ -16,7 +17,7 @@ class Settings(BaseSettings):
     # -------------------------------------------
 
     class Config:
-        env_file = ".env"
+        env_file = env_path
         extra = "ignore"
 
     def __init__(self, **values):

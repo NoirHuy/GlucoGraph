@@ -4,25 +4,13 @@ import axios from 'axios';
 // Patient default dataset for initial loading / pre-filling
 const patientDetails = {
   robert: {
-    name: "Robert Chen",
-    ageSex: "65 tuổi | Nam",
-    bmiHb: "BMI: 28.5 | HbA1c: 8.4%",
-    complication: "Suy thận mạn độ 3",
-    input: "Bệnh nhân nam, 65 tuổi, có biểu hiện khát nhiều, tiểu nhiều. Đường huyết đói bình thường."
+    input: "Bệnh nhân nam, 68 tuổi, chẩn đoán Đái tháo đường tuýp 2 kèm suy thận mạn tiến triển với mức lọc cầu thận eGFR = 28 mL/phút/1.73m2. Bác sĩ đang cân nhắc kê đơn Metformin 500mg để kiểm soát đường huyết."
   },
   emily: {
-    name: "Emily Watson",
-    ageSex: "28 tuổi | Nữ",
-    bmiHb: "BMI: 22.1 | Có thai tuần 12",
-    complication: "Cường giáp thai kỳ",
-    input: "Bệnh nhân nữ, 28 tuổi, đang mang thai tuần thứ 12, sút cân nhanh, hồi hộp đánh trống ngực, run tay, nhịp tim 110 lần/phút."
+    input: "Bệnh nhân nữ, 55 tuổi, Đái tháo đường tuýp 2 kèm béo phì độ 1 (BMI = 31.5) và suy tim phân suất tống máu giảm (HFrEF). Cần tư vấn lựa chọn thuốc hạ đường huyết tối ưu có lợi ích tim mạch và cân nặng."
   },
   john: {
-    name: "John Doe",
-    ageSex: "45 tuổi | Nam",
-    bmiHb: "BMI: 26.2 | Khớp sưng đau cấp",
-    complication: "Loét dạ dày tá tràng tiến triển",
-    input: "Bệnh nhân nam, 45 tuổi, sưng đau dữ dội khớp bàn ngón chân cái bên phải khởi phát cấp tính sau bữa ăn nhiều hải sản. Tiền sử loét dạ dày tá tràng."
+    input: "Bệnh nhân nam, 19 tuổi, nhập viện vì khát nhiều, tiểu nhiều, sụt cân 5kg trong 2 tuần. Kết quả xét nghiệm: C-peptide thấp, kháng thể kháng tế bào đảo tụy GAD65 dương tính."
   }
 };
 
@@ -195,55 +183,55 @@ function App() {
   const getFallbackMock = (pId) => {
     if (pId === "emily") {
       return {
-        alert: { active: true, title: "🛑 KÍCH HOẠT NGẮT MẠCH: Chống chỉ định dùng Methimazole", rule: "[Thai kỳ 3 tháng đầu] → (has_contraindicated_drug) → [Methimazole]" },
+        alert: { active: false, title: "", rule: "" },
         differential_diagnosis: {
-          condition_a: "Basedow (Graves disease)", condition_b: "Cường giáp thai kỳ thoáng qua (GTT)",
+          condition_a: "Đái tháo đường tuýp 2 + Béo phì + Suy tim", condition_b: "Suy tim sung huyết đơn thuần",
           features: [
-            { characteristic: "TRAb (Kháng thể)", val_a: "Dương tính (+)", val_b: "Âm tính (-)" },
-            { characteristic: "Diễn tiến", val_a: "Nặng dần không tự lui", val_b: "Tự thoái lui sau tuần 14-18" }
+            { characteristic: "Đường huyết đói / HbA1c", val_a: "Tăng cao (HbA1c > 8%)", val_b: "Bình thường" },
+            { characteristic: "Triệu chứng suy tim", val_a: "Mệt mỏi, khó thở khi gắng sức", val_b: "Giống nhau" }
           ]
         },
-        graph_path: [{ title: "Mang thai 12 tuần" }, { edge: "manifestation_of" }, { title: "Cường giáp thai kỳ" }, { edge: "has_contraindicated_drug" }, { title: "Methimazole" }],
+        graph_path: [{ title: "Diabetes Mellitus, Non-Insulin-Dependent" }, { edge: "PREFERRED_OVER" }, { title: "pioglitazone" }],
         recommendations: [
-          { type: "recommend", title: "Propylthiouracil (PTU)", desc: "Khuyên dùng thay thế an toàn trong 3 tháng đầu thai kỳ.", relation: "may_be_treated_by" },
-          { type: "contraindicate", title: "Methimazole", desc: "Chống chỉ định do nguy cơ dị tật thai nhi.", relation: "has_contraindicated_drug" }
+          { type: "recommend", title: "GLP-1 RA (Liraglutide / Semaglutide)", desc: "Ưu tiên lựa chọn để hỗ trợ giảm cân và bảo vệ tim mạch.", relation: "PREFERRED_OVER" },
+          { type: "recommend", title: "SGLT2i (Empagliflozin / Dapagliflozin)", desc: "Ưu tiên lựa chọn giúp cải thiện suy tim và kiểm soát đường huyết.", relation: "PREFERRED_OVER" },
+          { type: "contraindicate", title: "Pioglitazone", desc: "Tránh sử dụng do làm tăng nguy cơ giữ nước và tiến triển suy tim.", relation: "CONTRAINDICATED_WITH" }
         ],
-        logs: ["Kích hoạt ngắt mạch khẩn cấp cho thai phụ..."]
+        logs: ["Đã phân tích các lựa chọn điều trị tối ưu dựa trên biến chứng Suy tim và Béo phì của bệnh nhân."]
       };
     } else if (pId === "john") {
       return {
-        alert: { active: true, title: "🛑 KÍCH HOẠT NGẮT MẠCH: Chống chỉ định dùng NSAIDs", rule: "[Loét dạ dày tiến triển] → (has_contraindicated_drug) → [NSAIDs]" },
+        alert: { active: false, title: "", rule: "" },
         differential_diagnosis: {
-          condition_a: "Viêm khớp nhiễm khuẩn", condition_b: "Viêm khớp Gout cấp tính",
+          condition_a: "Đái tháo đường tuýp 1 (Tự miễn)", condition_b: "Đái tháo đường tuýp 2 (Kháng insulin)",
           features: [
-            { characteristic: "Tinh thể dịch khớp", val_a: "Vi mủ, vi khuẩn (+)", val_b: "Tinh thể Urate hình kim (-)" },
-            { characteristic: "Acid Uric máu", val_a: "Bình thường", val_b: "Tăng cao (> 420)" }
+            { characteristic: "Kháng thể GAD65", val_a: "Dương tính (+)", val_b: "Âm tính (-)" },
+            { characteristic: "Định lượng C-peptide", val_a: "Giảm mạnh / Triệt tiêu", val_b: "Bình thường hoặc Tăng" }
           ]
         },
-        graph_path: [{ title: "Sưng khớp ngón chân" }, { edge: "manifestation_of" }, { title: "Gout cấp" }, { edge: "has_contraindicated_drug" }, { title: "NSAIDs" }],
+        graph_path: [{ title: "Diabetes Mellitus, Insulin-Dependent" }, { edge: "HAS_BIOMARKER" }, { title: "GAD65 autoantibodies" }],
         recommendations: [
-          { type: "recommend", title: "Colchicine liều thấp", desc: "Kê đơn an toàn cho niêm mạc dạ dày.", relation: "may_be_treated_by" },
-          { type: "contraindicate", title: "NSAIDs", desc: "Chống chỉ định tuyệt đối do nguy cơ chảy máu dạ dày.", relation: "has_contraindicated_drug" }
+          { type: "recommend", title: "Liệu pháp Insulin suốt đời", desc: "Điều trị bắt buộc đối với ĐTĐ tuýp 1 do thiếu hụt insulin tuyệt đối.", relation: "TREATED_BY" },
+          { type: "recommend", title: "Giám sát Glucose liên tục (CGM)", desc: "Khuyên dùng để kiểm soát đường huyết tối ưu.", relation: "RECOMMEND" }
         ],
-        logs: ["Circuit Breaker kích hoạt thành công..."]
+        logs: ["Đã đối chiếu Biomarker GAD65 và C-peptide để chẩn đoán phân biệt ĐTĐ tuýp 1."]
       };
     } else {
       return {
-        alert: { active: true, title: "🛑 KÍCH HOẠT NGẮT MẠCH: Chống chỉ định dùng Metformin", rule: "[Suy thận mạn] → (has_contraindicated_drug) → [Metformin]" },
+        alert: { active: true, title: "🛑 KÍCH HOẠT NGẮT MẠCH: Chống chỉ định dùng Metformin", rule: "[Suy thận mạn] → (CONTRAINDICATED_WITH) → [metformin]" },
         differential_diagnosis: {
-          condition_a: "Đái tháo đường", condition_b: "Đái tháo nhạt",
+          condition_a: "Đái tháo đường tuýp 2 kèm suy thận", condition_b: "Nhiễm toan lactic do thuốc",
           features: [
-            { characteristic: "Đường huyết đói", val_a: "Cao (≥ 7.0 mmol/L)", val_b: "Bình thường" },
-            { characteristic: "Cơ chế", val_a: "Thiếu/Kháng Insulin", val_b: "Thiếu/Kháng ADH" }
+            { characteristic: "Mức lọc cầu thận eGFR", val_a: "28 mL/phút/1.73m2 (Giảm nặng)", val_b: "Bình thường" },
+            { characteristic: "Chỉ định Metformin", val_a: "Chống chỉ định tuyệt đối", val_b: "Không liên quan" }
           ]
         },
-        graph_path: [{ title: "Triệu chứng: Khát nhiều" }, { edge: "manifestation_of" }, { title: "Đái tháo nhạt" }, { edge: "anatomical_site" }, { title: "Tuyến yên" }],
+        graph_path: [{ title: "Suy thận mạn" }, { edge: "CONTRAINDICATED_WITH" }, { title: "metformin" }],
         recommendations: [
-          { type: "recommend", title: "Liệu pháp Insulin thay thế", desc: "Lựa chọn thay thế tối ưu cho bệnh nhân suy thận.", relation: "may_be_treated_by" },
-          { type: "recommend", title: "Desmopressin (DDAVP)", desc: "Điều trị thay thế đặc hiệu đái tháo nhạt trung ương.", relation: "may_be_treated_by" },
-          { type: "contraindicate", title: "Metformin", desc: "Chống chỉ định do eGFR giảm gây tích tụ axit lactic.", relation: "has_contraindicated_drug" }
+          { type: "recommend", title: "Insulin", desc: "Liệu pháp thay thế an toàn khi eGFR < 30.", relation: "TREATED_BY" },
+          { type: "contraindicate", title: "Metformin", desc: "Chống chỉ định tuyệt đối do eGFR giảm gây tích tụ axit lactic.", relation: "CONTRAINDICATED_WITH" }
         ],
-        logs: ["Circuit Breaker kích hoạt thành công..."]
+        logs: ["Circuit Breaker kích hoạt thành công: Đã phát hiện chống chỉ định Metformin ở bệnh nhân suy thận eGFR < 30."]
       };
     }
   };
@@ -296,6 +284,16 @@ function App() {
               Tư vấn Đái tháo đường
             </button>
           </div>
+
+          <div className="p-md border border-amber-200 dark:border-amber-900 bg-amber-50/50 dark:bg-amber-950/20 m-sm rounded-lg shadow-sm">
+            <div className="flex gap-sm text-amber-600 dark:text-amber-400 items-start">
+              <span className="material-symbols-outlined text-xl flex-shrink-0 mt-0.5" style={{fontVariationSettings: "'FILL' 1"}}>warning</span>
+              <p className="text-xs leading-relaxed font-semibold">
+                <span className="font-bold uppercase tracking-wider block mb-0.5 text-[9px] opacity-80">Khuyến cáo y khoa:</span>
+                Hệ thống chỉ mang tính chất tham khảo và không thay thế kết luận chính xác từ bác sĩ.
+              </p>
+            </div>
+          </div>
         </aside>
 
         {/* Dynamic content canvas */}
@@ -313,22 +311,12 @@ function App() {
                       <span className="material-symbols-outlined mr-sm text-primary dark:text-emerald-400">edit_document</span>
                       Nhập tình huống lâm sàng CDSS
                     </h2>
-                    {/* Active Patient Details Banner */}
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mt-1 text-xs text-gray-500 dark:text-gray-400">
-                      <span className="font-bold text-slate-700 dark:text-slate-200">{activePatient.name}</span>
-                      <span>•</span>
-                      <span>{activePatient.ageSex}</span>
-                      <span>•</span>
-                      <span>{activePatient.bmiHb}</span>
-                      <span>•</span>
-                      <span className="text-rose-500 font-semibold bg-rose-50 dark:bg-rose-950/30 px-2 py-0.5 rounded border border-rose-100 dark:border-rose-900/30">{activePatient.complication}</span>
-                    </div>
                   </div>
-                  <div className="flex items-center gap-xs self-start md:self-center">
+                  <div className="flex flex-wrap items-center gap-xs self-start md:self-center">
                     <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">Thử nhanh các ca:</span>
-                    <button onClick={() => handlePatientChange('robert')} className={`text-xs border px-3 py-1 rounded-full font-medium transition-all ${patientId === 'robert' ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 border-gray-300 dark:border-slate-600'}`}>Robert</button>
-                    <button onClick={() => handlePatientChange('emily')} className={`text-xs border px-3 py-1 rounded-full font-medium transition-all ${patientId === 'emily' ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 border-gray-300 dark:border-slate-600'}`}>Emily</button>
-                    <button onClick={() => handlePatientChange('john')} className={`text-xs border px-3 py-1 rounded-full font-medium transition-all ${patientId === 'john' ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 border-gray-300 dark:border-slate-600'}`}>John</button>
+                    <button onClick={() => handlePatientChange('robert')} className={`text-xs border px-3 py-1 rounded-full font-medium transition-all ${patientId === 'robert' ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 border-gray-300 dark:border-slate-600'}`}>Ca 1 (Chống chỉ định)</button>
+                    <button onClick={() => handlePatientChange('emily')} className={`text-xs border px-3 py-1 rounded-full font-medium transition-all ${patientId === 'emily' ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 border-gray-300 dark:border-slate-600'}`}>Ca 2 (Phối hợp tối ưu)</button>
+                    <button onClick={() => handlePatientChange('john')} className={`text-xs border px-3 py-1 rounded-full font-medium transition-all ${patientId === 'john' ? 'bg-primary text-white border-primary dark:bg-emerald-600 dark:border-emerald-600' : 'bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 border-gray-300 dark:border-slate-600'}`}>Ca 3 (Chẩn đoán phân biệt)</button>
                   </div>
                 </div>
 
@@ -412,8 +400,8 @@ function App() {
                           </h3>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
                             {/* Card A */}
-                            <div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 p-md flex flex-col gap-sm">
-                              <div className="flex items-center gap-2">
+                            <div className="rounded-xl border border-slate-200 dark:border-slate-700 p-md flex flex-col gap-sm bg-slate-50 dark:bg-slate-900">
+                              <div className="flex items-center gap-2 flex-wrap">
                                 <span className="w-3 h-3 rounded-full bg-rose-400 flex-shrink-0"></span>
                                 <span className="font-bold text-slate-800 dark:text-white text-sm">{result.differential_diagnosis.condition_a}</span>
                               </div>
@@ -423,10 +411,10 @@ function App() {
                               </p>
                             </div>
                             {/* Card B */}
-                            <div className="rounded-xl border-2 border-emerald-300 dark:border-emerald-700 bg-emerald-50/50 dark:bg-emerald-950/20 p-md flex flex-col gap-sm">
-                              <div className="flex items-center gap-2">
-                                <span className="w-3 h-3 rounded-full bg-emerald-500 flex-shrink-0"></span>
-                                <span className="font-bold text-emerald-800 dark:text-emerald-300 text-sm">
+                            <div className="rounded-xl border-2 border-emerald-300 dark:border-emerald-700 p-md flex flex-col gap-sm bg-emerald-50/50 dark:bg-emerald-950/20">
+                              <div className="flex items-center gap-2 flex-wrap">
+                                <span className="w-3 h-3 rounded-full flex-shrink-0 bg-emerald-500"></span>
+                                <span className="font-bold text-sm text-emerald-800 dark:text-emerald-300">
                                   {result.differential_diagnosis.condition_b}
                                   <span className="material-symbols-outlined text-xs align-middle ml-1 text-emerald-500" style={{fontVariationSettings: "'FILL' 1"}}>check_circle</span>
                                 </span>
@@ -482,11 +470,6 @@ function App() {
                                 <div key={nIdx} className="flex flex-col items-center flex-shrink-0">
                                   <span className="text-[9px] px-2 py-0.5 text-slate-600 dark:text-emerald-300 bg-white dark:bg-slate-950 rounded-full border border-slate-200 dark:border-slate-800 font-mono font-bold whitespace-nowrap flex items-center gap-1">
                                     {node.edge}
-                                    {node.confidence !== undefined && (
-                                      <span className={`text-[8px] font-extrabold px-1 rounded-full ${node.confidence >= 90 ? 'text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50' : node.confidence >= 70 ? 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/50' : 'text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50'}`}>
-                                        {node.confidence.toFixed(0)}%
-                                      </span>
-                                    )}
                                   </span>
                                   <div className="flex items-center mt-1">
                                     <div className="h-[2px] w-8 bg-blue-300 dark:bg-slate-600"></div>
@@ -494,10 +477,12 @@ function App() {
                                   </div>
                                 </div>
                               ) : (
-                                <div key={nIdx} className={`border-2 ${colorClass} px-3 py-1.5 rounded-xl flex flex-col items-start shadow-sm flex-shrink-0 max-w-[160px]`}>
+                                <div key={nIdx} className={`border-2 ${colorClass} px-3 py-1.5 rounded-xl flex flex-col items-start shadow-sm flex-shrink-0 max-w-[200px]`}>
                                   <div className="flex items-center gap-1.5">
-                                    <span className={`w-2 h-2 rounded-full ${dotClass} flex-shrink-0`}></span>
-                                    <span className="font-semibold text-xs text-slate-800 dark:text-white leading-tight">{node.title}</span>
+                                    <span className={`w-2.5 h-2.5 rounded-full ${dotClass} flex-shrink-0`}></span>
+                                    <span className="font-semibold text-xs text-slate-800 dark:text-white leading-tight">
+                                      {(node.original_id && node.original_id !== node.title) ? `${node.original_id} (${node.title})` : node.title}
+                                    </span>
                                   </div>
                                   <div className="flex gap-1 flex-wrap mt-1">
                                     {node.node_type && <span className="text-[8px] font-bold uppercase bg-white/70 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 px-1 py-0.5 rounded">{node.node_type}</span>}
@@ -521,17 +506,15 @@ function App() {
                               <div key={idx} className="flex flex-wrap items-center justify-between bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-lg px-2.5 py-1.5 text-xs font-mono shadow-sm w-full gap-2">
                                 <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
                                   <span className={`w-2 h-2 rounded-full flex-shrink-0 ${nodeTypeDot[t.subject_type] || 'bg-slate-400'}`}></span>
-                                  <span className="text-slate-700 dark:text-slate-200 font-medium" title={t.subject}>{t.subject}</span>
+                                  <span className="text-slate-700 dark:text-slate-200 font-medium" title={t.original_subject_id || t.subject}>
+                                    {(t.original_subject_id && t.original_subject_id !== t.subject) ? `${t.original_subject_id} (${t.subject})` : t.subject}
+                                  </span>
                                   <span className="text-blue-500 dark:text-blue-400 font-bold whitespace-nowrap shrink-0">→ {t.relation} →</span>
                                   <span className={`w-2 h-2 rounded-full flex-shrink-0 ${nodeTypeDot[t.object_type] || 'bg-slate-400'}`}></span>
-                                  <span className="text-slate-700 dark:text-slate-200 font-medium" title={t.object}>{t.object}</span>
-                                </div>
-                                {t.confidence !== undefined && (
-                                  <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded flex items-center gap-0.5 shrink-0 ${t.confidence >= 90 ? 'bg-emerald-100 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/50' : t.confidence >= 70 ? 'bg-amber-100 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800/50' : 'bg-rose-100 dark:bg-rose-950/50 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800/50'}`} title="Độ tin cậy y văn (FCS) từ Multi-Agent Debate">
-                                    <span className="material-symbols-outlined text-[10px] shrink-0">shield</span>
-                                    {t.confidence.toFixed(1) === '100.0' ? '100' : t.confidence.toFixed(1)}%
+                                  <span className="text-slate-700 dark:text-slate-200 font-medium" title={t.original_object_id || t.object}>
+                                    {(t.original_object_id && t.original_object_id !== t.object) ? `${t.original_object_id} (${t.object})` : t.object}
                                   </span>
-                                )}
+                                </div>
                               </div>
                             );
                             return (
